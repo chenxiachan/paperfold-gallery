@@ -1051,6 +1051,32 @@
    "de": {
     "topic": "LPIPS-Werte für Mip-NeRF360-Szenen"
    }
+  },
+  "S0.F1.cap": {
+   "note": "teaser caption, now read with the abstract: the point is real-time rendering at top quality; de typo Radiant, paper-wide terms",
+   "en": {
+    "takeaway": "Real-time rendering of radiance fields matches the best quality at competitive optimization times",
+    "reason": "This rests on a 3D Gaussian scene representation with a real-time differentiable renderer",
+    "topic": "Real-time rendering"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们的方法实现了辐射场的实时渲染，其质量与先前质量最佳的方法⟦a0 (Barron et al., 2022)⟧相当，而所需的优化时间可与先前最快的方法⟦a1 (Fridovich-Keil and Yu et al., 2022; Müller et al., 2022)⟧相媲美。"
+    },
+    "takeaway": "辐射场实时渲染，质量顶尖，优化时间与最快方法相当",
+    "reason": "关键在于3D高斯场景表示与实时可微渲染器的结合",
+    "topic": "实时渲染"
+   },
+   "de": {
+    "sentences": {
+     "0": "Unser Verfahren erreicht Echtzeit-Rendering von Radiance Fields mit einer Qualität, die dem bisherigen Verfahren mit der besten Qualität ⟦a0 (Barron et al., 2022)⟧ entspricht, wobei die Optimierungszeiten mit denen der schnellsten bisherigen Verfahren ⟦a1 (Fridovich-Keil and Yu et al., 2022; Müller et al., 2022)⟧ mithalten können.",
+     "1": "Der Schlüssel zu dieser Leistung ist eine neuartige Szenendarstellung aus 3D-Gaussians in Verbindung mit einem echtzeitfähigen differenzierbaren Renderer, der sowohl die Szenenoptimierung als auch die Synthese neuer Ansichten erheblich beschleunigt.",
+     "2": "Bei Trainingszeiten, die mit denen von InstantNGP ⟦a2 (Müller et al., 2022)⟧ vergleichbar sind, erreichen wir eine ähnliche Qualität wie diese; während dies die maximale Qualität ist, die sie erreichen, erzielen wir durch 51 Minuten Training eine Qualität auf dem Stand der Technik, die sogar etwas besser ist als die von Mip-NeRF360 ⟦a3 (Barron et al., 2022)⟧."
+    },
+    "takeaway": "Echtzeit-Rendering von Radiance Fields erreicht Spitzenqualität bei konkurrenzfähigen Optimierungszeiten",
+    "reason": "Dies beruht auf einer Szenendarstellung aus 3D-Gaussians mit einem echtzeitfähigen differenzierbaren Renderer",
+    "topic": "Echtzeit-Rendering"
+   }
   }
  },
  "sections": {

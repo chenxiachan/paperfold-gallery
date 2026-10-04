@@ -1748,6 +1748,40 @@
     "topic": "少样本示例",
     "takeaway": "思维链提示对少样本示例数量的变化保持鲁棒"
    }
+  },
+  "S0.F1.cap": {
+   "note": "teaser caption, now read with the abstract: the reason over-read 'highlighted'; distinct topics; de commonsense term",
+   "en": {
+    "takeaway": "Chain-of-thought examples tackle complex arithmetic, commonsense, and symbolic reasoning tasks",
+    "reason": "Each example highlights its chain-of-thought reasoning process",
+    "topic": "Chain-of-thought examples"
+   },
+   "zh": {
+    "takeaway": "思维链示例：处理复杂的算术、常识与符号推理任务",
+    "reason": "每个示例都突出显示了其思维链推理过程",
+    "topic": "思维链示例"
+   },
+   "de": {
+    "sentences": {
+     "0": "Chain-of-Thought-Prompting versetzt große Sprachmodelle in die Lage, komplexe arithmetische, Commonsense- und symbolische Schlussfolgerungsaufgaben zu bewältigen.",
+     "1": "Die Gedankenketten sind hervorgehoben."
+    },
+    "takeaway": "Chain-of-Thought-Beispiele für komplexe arithmetische, Commonsense- und symbolische Aufgaben",
+    "reason": "Jedes Beispiel hebt seine Gedankenkette hervor",
+    "topic": "Chain-of-Thought-Beispiele"
+   }
+  },
+  "S0.F2.cap": {
+   "note": "teaser caption, now read with the abstract: distinct topic",
+   "en": {
+    "topic": "PaLM 540B"
+   },
+   "zh": {
+    "topic": "PaLM 540B"
+   },
+   "de": {
+    "topic": "PaLM 540B"
+   }
   }
  },
  "sections": {
