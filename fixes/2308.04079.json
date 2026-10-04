@@ -1,0 +1,1317 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "de terminology: novel-view synthesis -> Synthese neuer Ansichten",
+   "de": {
+    "sentences": {
+     "0": "Radiance-Field-Methoden haben kürzlich die Synthese neuer Ansichten von Szenen revolutioniert, die mit mehreren Fotos oder Videos aufgenommen wurden.",
+     "3": "Wir führen drei Schlüsselelemente ein, die es uns ermöglichen, modernste visuelle Qualität bei wettbewerbsfähigen Trainingszeiten zu erreichen und insbesondere eine hochwertige Echtzeit-Synthese neuer Ansichten (⟦a4 $\\geq 30$⟧ fps) in 1080p-Auflösung zu erlauben."
+    }
+   }
+  },
+  "S1.p1.1": {
+   "note": "zh4: 'optimization with SOTA quality and competitive training times' mistranslated; de4: redundant 'qualitativ hochwertigster visueller Qualität'; zh terminology: ray-marching -> 光线步进",
+   "zh": {
+    "sentences": {
+     "1": "相比之下，近期的神经辐射场（NeRF）方法建立在连续场景表示之上，通常使用体光线步进优化多层感知机（MLP），以对捕获的场景进行新视角合成。",
+     "4": "我们提出一种结合两者优点的新方法：我们的3D高斯表示能够以最先进（SOTA）的视觉质量和有竞争力的训练时间完成优化，而我们基于瓦片的泼溅方案确保在多个已发表数据集⟦a8 (Knapitsch et al., 2017; Hedman et al., 2018; Barron et al., 2022)⟧上以SOTA质量实现1080p分辨率的实时渲染（见图⟦a9 1⟧）。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "1": "Im Gegensatz dazu bauen neuere Neural Radiance Field (NeRF)-Methoden auf kontinuierlichen Szenenrepräsentationen auf und optimieren typischerweise ein Multi-Layer Perceptron (MLP) mittels volumetrischem Ray-Marching zur Synthese neuer Ansichten aufgenommener Szenen.",
+     "4": "Wir führen einen neuen Ansatz ein, der das Beste aus beiden Welten kombiniert: Unsere 3D-Gauß-Repräsentation erlaubt Optimierung mit visueller Qualität auf dem Stand der Technik (SOTA) und konkurrenzfähigen Trainingszeiten, während unsere kachelbasierte Splatting-Lösung Echtzeit-Rendering in SOTA-Qualität für 1080p-Auflösung auf mehreren bereits veröffentlichten Datensätzen ⟦a8 (Knapitsch et al., 2017; Hedman et al., 2018; Barron et al., 2022)⟧ gewährleistet (siehe Abb. ⟦a9 1⟧)."
+    }
+   }
+  },
+  "S1.p3.1": {
+   "note": "zh8: it is inspired by tile-based rasterization (following recent work), not inspired by recent work; de terminology: Kugelflächenfunktionen; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "8": "我们方法的第三个也是最后一个要素是实时渲染解决方案，它使用快速GPU排序算法，受基于瓦片的光栅化启发，并沿袭了近期工作⟦a16 (Lassner and Zollhofer, 2021)⟧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "1": "Zuerst führen wir 3D-Gaussians als flexible und ausdrucksstarke Szenenrepräsentation ein.",
+     "2": "Wir beginnen mit derselben Eingabe wie frühere NeRF-ähnliche Methoden, d. h. mit Structure-from-Motion (SfM) ⟦a12 (Snavely et al., 2006)⟧ kalibrierten Kameras, und initialisieren die Menge der 3D-Gaussians mit der spärlichen Punktwolke, die als Teil des SfM-Prozesses kostenlos entsteht.",
+     "5": "Wir zeigen, dass 3D-Gaussians eine hervorragende Wahl sind, da sie eine differenzierbare volumetrische Repräsentation darstellen, aber auch sehr effizient rasterisiert werden können, indem man sie in 2D projiziert und standardmäßiges ⟦a14 $\\alpha$⟧-Blending mit einem äquivalenten Bildentstehungsmodell wie NeRF anwendet.",
+     "6": "Die zweite Komponente unserer Methode ist die Optimierung der Eigenschaften der 3D-Gaussians, d. h. 3D-Position, Opazität ⟦a15 $\\alpha$⟧, anisotrope Kovarianz und Koeffizienten der Kugelflächenfunktionen (SH), verzahnt mit adaptiven Dichtesteuerungsschritten, bei denen wir während der Optimierung 3D-Gaussians hinzufügen und gelegentlich entfernen.",
+     "7": "Das Optimierungsverfahren erzeugt eine einigermaßen kompakte, unstrukturierte und präzise Repräsentation der Szene (1-5 Millionen Gaussians für alle getesteten Szenen)."
+    },
+    "takeaway": "Drei Komponenten: 3D-Gaussians aus SfM-Punkten, verzahnte Optimierung, kachelbasierte Rasterisierung",
+    "reason": "Gaussians sind differenzierbare volumetrische Repräsentationen, die sich in 2D projizieren und mit Alpha blenden lassen, passend zu NeRFs Bildentstehungsmodell",
+    "topic": "3D-Gaussians"
+   }
+  },
+  "S1.I1.i1.p1.1": {
+   "note": "de terminology: 3D Gaussians -> Gaussians throughout",
+   "de": {
+    "sentences": {
+     "0": "Die Einführung anisotroper 3D-Gaussians als hochwertige, unstrukturierte Repräsentation von Radiance Fields."
+    },
+    "takeaway": "Anisotrope 3D-Gaussians bilden eine hochwertige unstrukturierte Radiance-Field-Repräsentation",
+    "topic": "Anisotrope 3D-Gaussians"
+   }
+  },
+  "S1.I1.i3.p1.1": {
+   "note": "de0: 'Backpropagation erreicht' wrong verb; terminology",
+   "de": {
+    "sentences": {
+     "0": "Ein schneller, differenzierbarer Rendering-Ansatz für die GPU, der sichtbarkeitsbewusst ist, anisotropes Splatting und schnelle Backpropagation ermöglicht, um eine hochwertige Synthese neuer Ansichten zu erzielen."
+    }
+   }
+  },
+  "S1.p5.1": {
+   "note": "de terminology: Synthese neuer Ansichten; de terminology: 3D Gaussians -> Gaussians throughout",
+   "de": {
+    "sentences": {
+     "0": "Unsere Ergebnisse auf bereits veröffentlichten Datensätzen zeigen, dass wir unsere 3D-Gaussians aus Multi-View-Aufnahmen optimieren und gleiche oder bessere Qualität als die besten bisherigen impliziten Radiance-Field-Ansätze erreichen können.",
+     "1": "Wir können zudem Trainingsgeschwindigkeiten und Qualität ähnlich den schnellsten Methoden erreichen und bieten insbesondere das erste Echtzeit-Rendering mit hoher Qualität für die Synthese neuer Ansichten."
+    }
+   }
+  },
+  "S2.p1.1": {
+   "note": "topic aligned with English (the unit is the related-work roadmap); topic aligned with English; takeaway over budget",
+   "zh": {
+    "topic": "相关工作"
+   },
+   "de": {
+    "takeaway": "Die verwandten Arbeiten umfassen traditionelle Rekonstruktion, punktbasiertes Rendering und Radiance Fields, beschränkt auf direkt Relevantes",
+    "topic": "verwandten Arbeiten"
+   }
+  },
+  "S2.SS1.p1.1": {
+   "note": "zh: English term left, 运动恢复结构 as elsewhere; zh5: unreconstructed regions are 未重建, not 不可重建",
+   "zh": {
+    "sentences": {
+     "1": "运动恢复结构（SfM）的出现⟦a21 (Snavely et al., 2006)⟧开辟了一个全新的领域，可以用一组照片合成新视角。",
+     "5": "这些方法在许多情况下产生了出色的结果，但通常无法从未重建区域或“过度重建”中完全恢复，后者指MVS生成了并不存在的几何。"
+    },
+    "reason": "SfM让一组照片能合成新视角，多视图立体则实现了完整三维重建"
+   }
+  },
+  "S2.SS2.p1.1": {
+   "note": "de terminology: novel-view synthesis -> Synthese neuer Ansichten",
+   "de": {
+    "sentences": {
+     "0": "Deep-Learning-Techniken wurden früh für die Synthese neuer Ansichten eingesetzt ⟦a25 (Zhou et al., 2016; Flynn et al., 2016)⟧; CNNs wurden verwendet, um Blending-Gewichte zu schätzen ⟦a26 (Hedman et al., 2018)⟧, oder für Lösungen im Texturraum ⟦a27 (Thies et al., 2019; Riegler and Koltun, 2020)⟧."
+    },
+    "takeaway": "Frühe CNN-basierte Synthese neuer Ansichten leidet unter MVS-Geometrie und zeitlichem Flackern"
+   }
+  },
+  "S2.SS2.p2.1": {
+   "note": "subject: the SOTA is Mip-NeRF360, not NeRF; reason said 'despite' though IS/PE serve quality; de topic was a clause; de terminology: novel-view synthesis -> Synthese neuer Ansichten",
+   "en": {
+    "takeaway": "Mip-NeRF360 leads in quality, but training and rendering times remain extremely high",
+    "reason": "Volumetric ray-marching needs many samples, and NeRF's large MLP hurts speed even as importance sampling and positional encoding improve quality"
+   },
+   "zh": {
+    "takeaway": "Mip-NeRF360质量最先进，但训练与渲染时间仍然极高",
+    "reason": "体光线步进需大量采样，NeRF虽以重要性采样与位置编码提升质量，但大型MLP拖慢速度"
+   },
+   "de": {
+    "sentences": {
+     "0": "Volumetrische Repräsentationen für die Synthese neuer Ansichten wurden durch Soft3D ⟦a28 (Penner and Zhang, 2017)⟧ eingeführt; anschließend wurden Deep-Learning-Techniken in Verbindung mit volumetrischem Ray-Marching vorgeschlagen ⟦a29 (Sitzmann et al., 2019; Henzler et al., 2019)⟧, die auf einem kontinuierlichen differenzierbaren Dichtefeld zur Repräsentation der Geometrie aufbauen.",
+     "3": "Der Erfolg von NeRF hat zu einer Explosion von Folgemethoden geführt, die Qualität und Geschwindigkeit adressieren, oft durch die Einführung von Regularisierungsstrategien; der aktuelle State of the Art in der Bildqualität für die Synthese neuer Ansichten ist Mip-NeRF360 ⟦a31 (Barron et al., 2022)⟧."
+    },
+    "takeaway": "Mip-NeRF360 liefert State-of-the-Art-Qualität, doch Trainings- und Rendering-Zeiten bleiben extrem hoch",
+    "reason": "Volumetrisches Ray-Marching benötigt viele Abtastungen, und NeRFs großes MLP bremst die Geschwindigkeit, während Importance Sampling und Positionskodierung die Qualität verbessern",
+    "topic": "Rendering-Zeiten"
+   }
+  },
+  "S2.SS2.p4.1": {
+   "note": "de terminology: Kugelflächenfunktionen",
+   "de": {
+    "sentences": {
+     "1": "Beide stützen sich auf Kugelflächenfunktionen: Ersteres, um Richtungseffekte direkt zu repräsentieren, Letzteres, um seine Eingaben in das Farbnetzwerk zu kodieren."
+    }
+   }
+  },
+  "S2.SS3.p1.1": {
+   "note": "zh terminology: splatting -> 泼溅",
+   "zh": {
+    "sentences": {
+     "3": "关于高质量基于点渲染的开创性工作通过“泼溅”范围大于一个像素的点图元（例如圆盘或椭圆盘、椭球体或面元）解决了这些问题⟦a42 (Zwicker et al., 2001b; Botsch et al., 2005; Ren et al., 2002; Pfister et al., 2000)⟧。"
+    },
+    "reason": "以大于像素的圆盘、椭球等图元进行泼溅可解决这些问题"
+   }
+  },
+  "S2.SS3.p3.1": {
+   "note": "zh topic aligned to the unit's point (image formation model); zh terminology: volume rendering -> 体渲染",
+   "zh": {
+    "sentences": {
+     "0": "基于点的⟦a45 $\\alpha$⟧混合与NeRF风格体渲染本质上共享相同的成像模型。",
+     "1": "具体而言，颜色⟦a46 $C$⟧由沿射线的体渲染给出："
+    },
+    "takeaway": "基于点的⟦a45 $\\alpha$⟧混合与NeRF体渲染成像模型相同",
+    "reason": "两者都沿射线通过体渲染计算颜色⟦a46 $C$⟧",
+    "topic": "成像模型"
+   }
+  },
+  "S2.SS3.p3.3": {
+   "note": "zh terminology: volume rendering -> 体渲染",
+   "zh": {
+    "takeaway": "体渲染方程可改写为另一种形式",
+    "topic": "体渲染方程"
+   }
+  },
+  "S2.SS3.p3.4": {
+   "note": "zh0: unnatural word order",
+   "zh": {
+    "sentences": {
+     "0": "典型的基于点的神经方法（例如⟦a51 (Kopanas et al., 2021; Kopanas et al., 2022)⟧）通过混合与像素重叠的⟦a53 $\\mathcal{N}$⟧个有序点来计算像素的颜色⟦a52 $C$⟧："
+    }
+   }
+  },
+  "S2.SS3.p4.1": {
+   "note": "topic over budget and duplicated elsewhere; aligned in all languages",
+   "en": {
+    "topic": "discrete geometry"
+   },
+   "zh": {
+    "topic": "离散几何"
+   },
+   "de": {
+    "topic": "diskrete Geometrie"
+   }
+  },
+  "S2.SS3.p5.1": {
+   "note": "'backpropagates all splats' unclear: gradients flow to all splats; de1: 'Blendung' means glare; zh terminology: splat -> 泼溅",
+   "en": {
+    "takeaway": "Our rasterizer respects visibility order, passes gradients to all splats, and handles anisotropic ones"
+   },
+   "zh": {
+    "sentences": {
+     "1": "然而，鉴于上述分析，我们希望在排序后的泼溅上保持（近似的）传统⟦a63 $\\alpha$⟧混合，以获得体表示的优势：与它们顺序无关的方法不同，我们的光栅化尊重可见性顺序。",
+     "2": "此外，我们对一个像素内的所有泼溅反向传播梯度，并对各向异性的泼溅进行光栅化。"
+    },
+    "takeaway": "本文光栅化器遵循可见性顺序，回传全部泼溅梯度且支持各向异性"
+   },
+   "de": {
+    "sentences": {
+     "1": "Angesichts der obigen Analyse wollen wir jedoch ein (näherungsweise) konventionelles ⟦a63 $\\alpha$⟧-Blending auf sortierten Splats beibehalten, um die Vorteile volumetrischer Darstellungen zu nutzen: Unsere Rasterisierung respektiert die Sichtbarkeitsreihenfolge im Gegensatz zu deren ordnungsunabhängiger Methode."
+    },
+    "takeaway": "Unser Rasterizer respektiert die Sichtbarkeitsreihenfolge, propagiert Gradienten aller Splats zurück und verarbeitet anisotrope Splats"
+   }
+  },
+  "S2.SS3.p6.1": {
+   "note": "'diffusion point methods' is wrong (diffuse rendering track); reason misdescribed the tile-based renderer",
+   "en": {
+    "takeaway": "Prior point-based methods need MVS geometry or handle only single objects with masks",
+    "reason": "Our 3D Gaussians avoid MVS geometry and render in real time with a tile-based algorithm"
+   },
+   "zh": {
+    "takeaway": "先前基于点的方法需MVS几何，或仅能借助掩码处理单个物体",
+    "reason": "我们的3D高斯无需MVS几何，并借助基于瓦片的渲染算法实现实时渲染"
+   },
+   "de": {
+    "takeaway": "Frühere punktbasierte Methoden benötigen MVS-Geometrie oder verarbeiten nur Einzelobjekte mit Masken",
+    "reason": "Unsere 3D-Gaussians vermeiden MVS-Geometrie und erreichen Echtzeitrendering dank eines kachelbasierten Rendering-Algorithmus"
+   }
+  },
+  "S2.SS3.p8.1": {
+   "note": "zh0: performance capture is 表演捕捉, not 性能捕捉; de0: 'Sehaufgaben' unidiomatic",
+   "zh": {
+    "sentences": {
+     "0": "在人体表演捕捉领域，3D高斯已被用于表示捕捉到的人体⟦a71 (Stoll et al., 2011; Rhodin et al., 2015)⟧；最近它们还与体光线步进结合用于视觉任务⟦a72 (Wang et al., 2023)⟧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Im Bereich der menschlichen Bewegungserfassung wurden 3D-Gaussians verwendet, um erfasste menschliche Körper darzustellen ⟦a71 (Stoll et al., 2011; Rhodin et al., 2015)⟧; in jüngerer Zeit wurden sie mit volumetrischem Ray-Marching für Aufgaben des maschinellen Sehens eingesetzt ⟦a72 (Wang et al., 2023)⟧."
+    }
+   }
+  },
+  "S2.F2.cap": {
+   "note": "topic not verbatim in takeaway",
+   "en": {
+    "topic": "sparse SfM points"
+   },
+   "zh": {
+    "topic": "稀疏SfM点"
+   }
+  },
+  "S3.p1.1": {
+   "note": "zh2: volumetric splats are not voxels (体素); zh3: directional appearance is 方向相关; de2: 'reasonably' is einigermaßen, not vernünftig; zh terminology: tile -> 瓦片 throughout; zh terminology: splat -> 泼溅",
+   "zh": {
+    "sentences": {
+     "2": "这形成了对3D场景相当紧凑的表示，部分原因是高度各向异性的体积泼溅可以紧凑地表示精细结构。",
+     "3": "辐射场的方向相关外观分量（颜色）按照标准做法用球谐函数（SH）表示⟦a77 (Fridovich-Keil and Yu et al., 2022; Müller et al., 2022)⟧。",
+     "5": "我们方法高效的关键在于瓦片光栅化器（第⟦a80 6⟧节），它能够对各向异性泼溅进行⟦a81 $\\alpha$⟧混合，并借助快速排序遵循可见性顺序。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "2": "Daraus ergibt sich eine einigermaßen kompakte Repräsentation der 3D-Szene, zum Teil weil stark anisotrope volumetrische Splats genutzt werden können, um feine Strukturen kompakt darzustellen."
+    }
+   }
+  },
+  "S4.p1.1": {
+   "note": "zh: 'without normals' is 无法向, not 无定向; de terminology: Synthese neuer Ansichten",
+   "zh": {
+    "takeaway": "从无法向的稀疏 SfM 点优化场景表示"
+   },
+   "de": {
+    "sentences": {
+     "0": "Unser Ziel ist es, eine Szenenrepräsentation zu optimieren, die eine hochwertige Synthese neuer Ansichten ausgehend von einer dünnen Menge von (SfM-)Punkten ohne Normalen ermöglicht."
+    }
+   }
+  },
+  "S4.p2.1": {
+   "note": "de1: 'Dünnheit' unidiomatic; de: world space is not 'Weltraum' (outer space)",
+   "de": {
+    "sentences": {
+     "1": "Angesichts der extremen Spärlichkeit der SfM-Punkte ist es sehr schwierig, Normalen zu schätzen.",
+     "4": "Unsere Gaussians sind durch eine vollständige 3D-Kovarianzmatrix ⟦a86 $\\Sigma$⟧ definiert, die im Weltkoordinatensystem ⟦a87 (Zwicker et al., 2001a)⟧ um den Punkt (Mittelwert) ⟦a88 $\\mu$⟧ zentriert ist:"
+    }
+   }
+  },
+  "S4.p3.2": {
+   "note": "zh topic '$\\times$2' meaningless",
+   "zh": {
+    "topic": "方差矩阵"
+   }
+  },
+  "S4.p4.1": {
+   "note": "de terminology: Radiance Field",
+   "de": {
+    "sentences": {
+     "0": "Ein naheliegender Ansatz wäre, die Kovarianzmatrix ⟦a98 $\\Sigma$⟧ direkt zu optimieren, um 3D-Gaussians zu erhalten, die das Radiance Field repräsentieren."
+    }
+   }
+  },
+  "S5.p1.1": {
+   "note": "de: 'Freisicht-Synthese' is not a term; de topic was a cut clause; de terminology: 3D Gaussians -> Gaussians throughout",
+   "de": {
+    "sentences": {
+     "0": "Den Kern unseres Ansatzes bildet der Optimierungsschritt, der eine dichte Menge von 3D-Gaussians erzeugt, die die Szene für die Synthese beliebiger Ansichten genau repräsentieren.",
+     "1": "Zusätzlich zu den Positionen ⟦a108 $p$⟧, ⟦a109 $\\alpha$⟧ und der Kovarianz ⟦a110 $\\Sigma$⟧ optimieren wir auch SH-Koeffizienten, die die Farbe ⟦a111 $c$⟧ jeder Gaussian repräsentieren, um die ansichtsabhängige Erscheinung der Szene korrekt zu erfassen.",
+     "2": "Die Optimierung dieser Parameter ist mit Schritten verzahnt, die die Dichte der Gaussians steuern, um die Szene besser zu repräsentieren."
+    },
+    "takeaway": "Die Optimierung erzeugt dichte 3D-Gaussians, die Szenen für die Synthese beliebiger Ansichten genau repräsentieren",
+    "topic": "3D-Gaussians"
+   }
+  },
+  "S5.SS1.p1.1": {
+   "note": "zh topic '几何' too generic",
+   "zh": {
+    "topic": "错位几何"
+   }
+  },
+  "S5.SS1.p3.1": {
+   "note": "exponential activation is applied to the covariance scale, it does not 'scale covariance'; de topic was a clause",
+   "en": {
+    "takeaway": "Sigmoid activation constrains ⟦a114 $\\alpha$⟧; exponential activation handles the covariance scale"
+   },
+   "zh": {
+    "takeaway": "Sigmoid约束⟦a114 $\\alpha$⟧，指数激活用于协方差尺度"
+   },
+   "de": {
+    "takeaway": "Sigmoid beschränkt ⟦a114 $\\alpha$⟧, eine Exponentialaktivierung dient der Kovarianzskala",
+    "topic": "Sigmoid"
+   }
+  },
+  "S5.SS2.p1.1": {
+   "note": "topic over budget; topics name densification in all languages; zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout",
+   "en": {
+    "takeaway": "Densification runs every 100 iterations, and transparent Gaussians are removed",
+    "topic": "Densification"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们从 SfM 得到的初始稀疏点集出发，然后应用我们的方法自适应地控制高斯的数量及其单位体积内的密度⟦a120⟧，使我们能够从初始的稀疏高斯集合转变为更稠密、能更好地表示场景且参数正确的集合。",
+     "1": "在优化预热之后（见第 ⟦a121 7.1⟧ 节），我们每 100 次迭代进行一次致密化，并移除任何本质上透明的高斯，即 ⟦a122 $\\alpha$⟧ 低于阈值 ⟦a123 $\\epsilon_{\\alpha}$⟧ 的高斯。"
+    },
+    "takeaway": "每100次迭代致密化并移除透明高斯",
+    "topic": "致密化"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir beginnen mit dem anfänglichen Satz dünn besetzter Punkte aus SfM und wenden dann unsere Methode an, um die Anzahl der Gaussians und ihre Dichte pro Volumeneinheit adaptiv zu steuern⟦a120⟧, wodurch wir von einem anfänglichen dünn besetzten Satz von Gaussians zu einem dichteren Satz gelangen, der die Szene besser repräsentiert und korrekte Parameter aufweist.",
+     "1": "Nach dem Optimierungs-Warm-up (siehe Abschnitt ⟦a121 7.1⟧) verdichten wir alle 100 Iterationen und entfernen alle Gaussians, die im Wesentlichen transparent sind, d. h. deren ⟦a122 $\\alpha$⟧ unter einem Schwellenwert ⟦a123 $\\epsilon_{\\alpha}$⟧ liegt."
+    },
+    "takeaway": "Verdichtung erfolgt alle 100 Iterationen, transparente Gaussians werden entfernt",
+    "topic": "Verdichtung"
+   }
+  },
+  "S5.SS2.p2.1": {
+   "note": "zh1: garbled '区域的区域'; de: positional gradients are Positionsgradienten, not 'position-dependent gradients'; zh terminology: Gaussians -> 高斯 as in the rest of the paper; zh terminology: over-reconstruction -> 过度重建; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "0": "我们对高斯的自适应控制需要填充空白区域。",
+     "1": "它关注缺少几何特征（“欠重建”）的区域，但也关注高斯在场景中覆盖大片范围的区域（这通常对应“过度重建”）。",
+     "3": "直观上，这很可能是因为它们对应尚未被很好重建的区域，而优化试图移动高斯来纠正这一点。"
+    },
+    "takeaway": "欠重建与过度重建区域均呈现大视图空间位置梯度",
+    "reason": "两者都重建不佳，优化会移动高斯来加以纠正"
+   },
+   "de": {
+    "sentences": {
+     "0": "Unsere adaptive Steuerung der Gaussians muss leere Bereiche auffüllen.",
+     "1": "Sie konzentriert sich auf Regionen mit fehlenden geometrischen Merkmalen („Unterrekonstruktion“), aber auch auf Regionen, in denen Gaussians große Flächen der Szene abdecken (was oft „Überrekonstruktion“ entspricht).",
+     "2": "Wir beobachten, dass beide große Positionsgradienten im Ansichtsraum aufweisen.",
+     "3": "Intuitiv liegt das wahrscheinlich daran, dass sie Regionen entsprechen, die noch nicht gut rekonstruiert sind, und die Optimierung versucht, die Gaussians zu verschieben, um dies zu korrigieren."
+    },
+    "takeaway": "Unter- und Überrekonstruktion zeigen große Positionsgradienten im Ansichtsraum",
+    "reason": "Beide sind schlecht rekonstruiert, weshalb die Optimierung die Gaussians zur Korrektur verschiebt",
+    "topic": "Positionsgradienten"
+   }
+  },
+  "S5.SS2.p3.1": {
+   "note": "de: positional gradients are Positionsgradienten; topic tied to the threshold, as in English; zh topic duplicated the previous unit; tied to the threshold as in English; zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "0": "由于这两种情况都是致密化的良好候选，我们对视图空间位置梯度平均幅值超过阈值 ⟦a124 $\\tau_{\\textrm{pos}}$⟧ 的高斯进行致密化，在我们的测试中该阈值设为 ⟦a125 $0.0002$⟧。"
+    },
+    "takeaway": "平均位置梯度超过阈值的高斯被致密化",
+    "topic": "阈值"
+   },
+   "de": {
+    "sentences": {
+     "0": "Da beide Fälle gute Kandidaten für eine Verdichtung sind, verdichten wir Gaussians mit einem durchschnittlichen Betrag der Positionsgradienten im Ansichtsraum oberhalb eines Schwellenwerts ⟦a124 $\\tau_{\\textrm{pos}}$⟧, den wir in unseren Tests auf ⟦a125 $0.0002$⟧ setzen."
+    },
+    "takeaway": "Gaussians, deren mittlerer Positionsgradient den Schwellenwert ⟦a124 $\\tau_{\\textrm{pos}}$⟧ übersteigt, werden verdichtet",
+    "topic": "Schwellenwert"
+   }
+  },
+  "S5.F4.cap": {
+   "note": "zh2: 'splat' rendered as 椭球 (ellipsoid); reason said geometry is cloned; the Gaussian is cloned; zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout",
+   "en": {
+    "reason": "Insufficiently covered small-scale geometry gets its Gaussian cloned; geometry covered by one large splat gets it split"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们的自适应高斯致密化方案。",
+     "1": "上行（欠重建）：当小尺度几何（黑色轮廓）覆盖不足时，我们克隆相应的高斯。",
+     "2": "下行（过度重建）：如果小尺度几何由一个大的泼溅表示，我们将其一分为二。"
+    },
+    "takeaway": "欠重建时克隆高斯，过度重建时将大泼溅一分为二",
+    "reason": "小尺度几何覆盖不足时克隆相应高斯，由单个大泼溅表示时则将其拆分"
+   },
+   "de": {
+    "sentences": {
+     "0": "Unser adaptives Schema zur Verdichtung von Gaussians.",
+     "1": "Obere Zeile (Unterrekonstruktion): Wenn kleinskalige Geometrie (schwarze Kontur) unzureichend abgedeckt ist, klonen wir die jeweilige Gaussian."
+    },
+    "takeaway": "Unterrekonstruktion klont eine Gaussian, Überrekonstruktion teilt einen großen Splat in zwei",
+    "reason": "Bei unzureichend abgedeckter kleinskaliger Geometrie wird die Gaussian geklont, bei einem einzigen großen Splat wird dieser aufgeteilt"
+   }
+  },
+  "S5.SS2.p5.1": {
+   "note": "de: positional gradient is Positionsgradient; zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "0": "对于位于欠重建区域的小高斯，我们需要覆盖必须创建的新几何。",
+     "1": "为此，更可取的做法是克隆这些高斯，即简单地创建一个相同大小的副本，并沿位置梯度方向移动它。"
+    },
+    "takeaway": "欠重建区域的小高斯被克隆并沿位置梯度移动",
+    "topic": "小高斯"
+   },
+   "de": {
+    "sentences": {
+     "0": "Für kleine Gaussians in unterrekonstruierten Regionen müssen wir die neue Geometrie abdecken, die erzeugt werden muss.",
+     "1": "Dafür ist es vorzuziehen, die Gaussians zu klonen, indem wir einfach eine Kopie derselben Größe erstellen und sie in Richtung des Positionsgradienten verschieben."
+    },
+    "takeaway": "Kleine Gaussians in unterrekonstruierten Regionen werden geklont und entlang des Gradienten verschoben",
+    "topic": "Kleine Gaussians"
+   }
+  },
+  "S5.SS2.p6.1": {
+   "note": "zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "0": "另一方面，位于高方差区域的大高斯需要被拆分为更小的高斯。",
+     "1": "我们用两个新高斯替换这类高斯，并将其尺度除以一个因子 ⟦a127 $\\phi~=~1.6$⟧，该因子是我们通过实验确定的。",
+     "2": "我们还以原始 3D 高斯作为 PDF 进行采样来初始化它们的位置。"
+    },
+    "takeaway": "高方差区域的大高斯被拆分，尺度除以1.6",
+    "reason": "其位置通过以原始3D高斯为PDF采样来初始化"
+   },
+   "de": {
+    "sentences": {
+     "0": "Andererseits müssen große Gaussians in Regionen mit hoher Varianz in kleinere Gaussians aufgeteilt werden.",
+     "1": "Wir ersetzen solche Gaussians durch zwei neue und teilen ihre Skala durch einen Faktor ⟦a127 $\\phi~=~1.6$⟧, den wir experimentell bestimmt haben.",
+     "2": "Wir initialisieren außerdem ihre Position, indem wir die ursprüngliche 3D-Gaussian als PDF zum Sampling verwenden."
+    },
+    "takeaway": "Große Gaussians in Regionen hoher Varianz werden aufgeteilt, Skala geteilt durch ⟦a127 $\\phi~=~1.6$⟧",
+    "reason": "Ihre Positionen werden durch Sampling aus der ursprünglichen 3D-Gaussian als PDF initialisiert"
+   }
+  },
+  "S5.SS2.p7.1": {
+   "note": "zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout; de: world space is not 'Weltraum' (outer space)",
+   "zh": {
+    "sentences": {
+     "0": "在第一种情况下，我们检测并处理同时增加系统总体积和高斯数量的需求，而在第二种情况下，我们保持总体积不变但增加高斯的数量。",
+     "1": "与其他体积表示类似，我们的优化可能会陷入靠近输入相机的漂浮物之中；在我们的情况中，这可能导致高斯密度不合理的增加。",
+     "2": "一种有效的抑制高斯数量增长的方法是每 ⟦a129 $N=3000$⟧ 次迭代将 ⟦a128 $\\alpha$⟧ 值设为零附近。",
+     "3": "随后优化会在需要的高斯上增大 ⟦a130 $\\alpha$⟧，同时允许我们的剔除方法如上所述移除 ⟦a131 $\\alpha$⟧ 小于 ⟦a132 $\\epsilon_{\\alpha}$⟧ 的高斯。",
+     "4": "高斯可能缩小或增大并与其他高斯显著重叠，但我们定期移除世界空间中非常大的高斯以及视图空间中占位很大的高斯。",
+     "5": "该策略总体上对高斯的总数实现了良好的控制。",
+     "6": "我们模型中的高斯始终是欧几里得空间中的图元；与其他方法 ⟦a133 (Barron et al., 2022; Fridovich-Keil and Yu et al., 2022)⟧ 不同，我们不需要针对远处或大的高斯进行空间压缩、扭曲或投影策略。"
+    },
+    "reason": "相机附近漂浮物会不合理地提高密度，故每3000次迭代重置α并定期移除大高斯"
+   },
+   "de": {
+    "sentences": {
+     "0": "Im ersten Fall erkennen und behandeln wir die Notwendigkeit, sowohl das Gesamtvolumen des Systems als auch die Anzahl der Gaussians zu erhöhen, während wir im zweiten Fall das Gesamtvolumen bewahren, aber die Anzahl der Gaussians erhöhen.",
+     "2": "Eine wirksame Möglichkeit, den Anstieg der Anzahl der Gaussians zu moderieren, besteht darin, den ⟦a128 $\\alpha$⟧-Wert alle ⟦a129 $N=3000$⟧ Iterationen nahe null zu setzen.",
+     "3": "Die Optimierung erhöht dann den ⟦a130 $\\alpha$⟧ für die Gaussians, bei denen dies erforderlich ist, während sie zulässt, dass unser Culling-Ansatz Gaussians mit ⟦a131 $\\alpha$⟧ kleiner als ⟦a132 $\\epsilon_{\\alpha}$⟧ wie oben beschrieben entfernt.",
+     "4": "Gaussians können schrumpfen oder wachsen und sich erheblich mit anderen überlappen, aber wir entfernen regelmäßig Gaussians, die im Weltkoordinatensystem sehr groß sind, und solche, die einen großen Footprint im Ansichtsraum haben.",
+     "5": "Diese Strategie führt zu einer insgesamt guten Kontrolle über die Gesamtzahl der Gaussians.",
+     "6": "Die Gaussians in unserem Modell bleiben zu allen Zeiten Primitive im euklidischen Raum; im Gegensatz zu anderen Methoden ⟦a133 (Barron et al., 2022; Fridovich-Keil and Yu et al., 2022)⟧ benötigen wir keine Raumkompaktierung, Verzerrung oder Projektionsstrategien für entfernte oder große Gaussians."
+    },
+    "reason": "Floaters nahe den Kameras können die Dichte ungerechtfertigt erhöhen, daher wird ⟦a128 $\\alpha$⟧ alle ⟦a129 $N=3000$⟧ Iterationen nahe null zurückgesetzt und große Gaussians werden regelmäßig entfernt"
+   }
+  },
+  "S6.p2.1": {
+   "note": "zh topic not verbatim in takeaway; de: 'tilerbasiert' is not a word, tile-based -> kachelbasiert",
+   "zh": {
+    "takeaway": "瓦片光栅化器一次预排序整幅图像而非逐像素排序",
+    "topic": "瓦片光栅化器"
+   },
+   "de": {
+    "sentences": {
+     "0": "Um diese Ziele zu erreichen, entwerfen wir einen kachelbasierten Rasterizer für Gaussian-Splats, inspiriert von jüngeren Software-Rasterisierungsansätzen ⟦a136 (Lassner and Zollhofer, 2021)⟧, der Primitive für ein gesamtes Bild auf einmal vorsortiert und so den Aufwand für das Sortieren pro Pixel vermeidet, der frühere ⟦a137 $\\alpha$⟧-Blending-Lösungen behinderte ⟦a138 (Kopanas et al., 2021; Kopanas et al., 2022)⟧."
+    },
+    "takeaway": "Kachelbasierter Rasterizer sortiert Primitive für das ganze Bild vor, nicht pro Pixel",
+    "topic": "Kachelbasierter Rasterizer"
+   }
+  },
+  "S6.p3.1": {
+   "note": "de0: ungrammatical 'zu culling'; zh2: 'trivially reject' is 直接剔除",
+   "zh": {
+    "sentences": {
+     "2": "此外，我们使用保护带直接剔除位于极端位置的高斯（即均值接近近平面且远在视锥体之外的高斯），因为计算它们的投影二维协方差会不稳定。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Unsere Methode beginnt damit, den Bildschirm in 16⟦a141 $\\times$⟧16 Kacheln aufzuteilen, und führt dann ein Culling der 3D-Gaussians gegen das View-Frustum und jede Kachel durch.",
+     "1": "Konkret behalten wir nur Gaussians, deren 99%-Konfidenzintervall das View-Frustum schneidet."
+    }
+   }
+  },
+  "S6.p4.1": {
+   "note": "de takeaway garbled; topic 'Pro Kachel' meaningless",
+   "de": {
+    "takeaway": "Kachellisten werden je Thread-Block von vorne nach hinten rasterisiert, bis ⟦a144 $\\alpha$⟧ sättigt",
+    "topic": "Kachellisten"
+   }
+  },
+  "S6.p5.1": {
+   "note": "re-traversal is the chosen cheap solution, not a cost; zh terminology: tile -> 瓦片 throughout; de terminology: Rasterisierung; de terminology: 3D Gaussians -> Gaussians throughout",
+   "en": {
+    "reason": "This lets the method learn scenes of arbitrary depth complexity without scene-specific tuning; the backward pass re-traverses per-tile lists"
+   },
+   "zh": {
+    "sentences": {
+     "5": "为避免由此带来的动态内存管理开销，我们选择改为再次遍历逐瓦片列表；我们可以复用前向传播中已排序的高斯数组和瓦片范围。"
+    },
+    "reason": "这样无需场景特定超参数调优即可学习任意深度复杂度的场景，反向传播时再次遍历逐瓦片列表"
+   },
+   "de": {
+    "sentences": {
+     "0": "Während der Rasterisierung ist die Sättigung von ⟦a148 $\\alpha$⟧ das einzige Abbruchkriterium.",
+     "5": "Um den damit verbundenen Aufwand für dynamische Speicherverwaltung zu vermeiden, durchlaufen wir stattdessen die Listen pro Kachel erneut; wir können das sortierte Array der Gaussians und die Kachelbereiche aus dem Vorwärtsdurchlauf wiederverwenden."
+    },
+    "reason": "So lassen sich Szenen beliebiger Tiefenkomplexität ohne szenenspezifisches Tuning erlernen, der Rückwärtsdurchlauf durchläuft die Listen pro Kachel erneut"
+   }
+  },
+  "S6.p6.1": {
+   "note": "zh topic (literal α) not verbatim in takeaway; zh takeaway over budget; zh terminology: tile -> 瓦片 throughout",
+   "zh": {
+    "sentences": {
+     "0": "遍历从影响该瓦片中任意像素的最后一个点开始，并且点加载到共享内存同样以协作方式进行。"
+    },
+    "takeaway": "反向传播逆序重新遍历瓦片列表，由最终累积⟦a151 $\\alpha$⟧恢复中间不透明度",
+    "topic": "中间不透明度"
+   }
+  },
+  "S6.F5.cap": {
+   "note": "takeaway over budget; zh topic not verbatim in takeaway",
+   "en": {
+    "takeaway": "Qualitative comparisons with prior methods and ground truth on Mip-NeRF360, Deep Blending, Tanks&Temples"
+   },
+   "zh": {
+    "takeaway": "与先前方法及真值的定性比较，涵盖Mip-NeRF360、Deep Blending与Tanks&Temples"
+   },
+   "de": {
+    "takeaway": "Qualitative Vergleiche mit früheren Methoden und Ground Truth auf Mip-NeRF360, Deep Blending, Tanks&Temples"
+   }
+  },
+  "S7.T2.cap": {
+   "note": "takeaway said PSNR 'starts from' points; topic over budget; zh topic '100K' meaningless; de takeaway garbled",
+   "en": {
+    "takeaway": "PSNR scores on Synthetic NeRF, with ours starting from 100K random points",
+    "topic": "Synthetic NeRF"
+   },
+   "zh": {
+    "takeaway": "Synthetic NeRF 上的 PSNR 分数，本方法从 100K 个随机初始化点起步",
+    "topic": "Synthetic NeRF"
+   },
+   "de": {
+    "takeaway": "PSNR-Werte auf Synthetic NeRF, unsere Methode startet mit 100K zufällig initialisierten Punkten",
+    "topic": "Synthetic NeRF"
+   }
+  },
+  "S7.SS1.p1.1": {
+   "note": "topic over budget; de topic was a list fragment",
+   "en": {
+    "topic": "CUDA rasterization kernels"
+   },
+   "zh": {
+    "topic": "CUDA 光栅化内核"
+   },
+   "de": {
+    "topic": "CUDA-Rasterisierungskernel"
+   }
+  },
+  "S7.SS1.SSS0.Px1.p1.1": {
+   "note": "topic 'resolution warm-up' was not in the takeaway; de1: added 'by a factor of two', not in the source",
+   "en": {
+    "takeaway": "Resolution warm-up: optimization starts 4 times smaller, upsampling after 250 and 500 iterations",
+    "topic": "Resolution warm-up"
+   },
+   "zh": {
+    "takeaway": "分辨率预热：从小4倍分辨率起步，250与500次迭代后上采样"
+   },
+   "de": {
+    "sentences": {
+     "1": "Konkret starten wir die Optimierung mit einer viermal kleineren Bildauflösung und skalieren nach 250 und 500 Iterationen jeweils einmal hoch."
+    }
+   }
+  },
+  "S7.SS1.SSS0.Px1.p2.1": {
+   "note": "topic not verbatim in takeaway; zh: SH band is 频带, not 波段",
+   "en": {
+    "topic": "SH optimization"
+   },
+   "zh": {
+    "sentences": {
+     "3": "为克服该问题，我们首先仅优化零阶分量，然后每1000次迭代引入一个SH频带，直到表示出全部4个SH频带。"
+    },
+    "takeaway": "SH优化从零阶分量开始，每1000次迭代加一个频带",
+    "topic": "SH优化"
+   },
+   "de": {
+    "topic": "SH-Optimierung"
+   }
+  },
+  "S7.T3.cap": {
+   "note": "zh takeaway garbled; topic cut ('PSNR消融采用手')",
+   "zh": {
+    "takeaway": "PSNR消融将高分辨率输入手动下采样至既定渲染分辨率",
+    "topic": "手动下采样"
+   }
+  },
+  "S7.SS2.SSS0.Px2.p2.1": {
+   "note": "'Errors use' unclear; zh topic '测试划分' cut",
+   "en": {
+    "takeaway": "PSNR, L-PIPS and SSIM are computed on Mip-NeRF360's train/test split"
+   },
+   "zh": {
+    "topic": "训练/测试划分"
+   },
+   "de": {
+    "takeaway": "PSNR, L-PIPS und SSIM werden auf der Trainings-/Testaufteilung von Mip-NeRF360 berechnet"
+   }
+  },
+  "S7.SS2.SSS0.Px2.p4.1": {
+   "note": "'never reach' overstates the source; zh topic aligned with English; de1: 'm' reads as metres",
+   "en": {
+    "reason": "Mip-NeRF360 needed 48 hours training and 10s/frame, versus our 35-45min; other fast methods do not reach SOTA quality"
+   },
+   "zh": {
+    "takeaway": "完全收敛模型的质量与 Mip-NeRF360 持平或略优",
+    "topic": "完全收敛模型"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir erreichen eine vergleichbare Qualität wie InstantNGP und Plenoxels nach 5-10 min Training, aber zusätzliche Trainingszeit erlaubt es uns, SOTA-Qualität zu erreichen, was bei den anderen schnellen Methoden nicht der Fall ist."
+    },
+    "reason": "Mip-NeRF360 brauchte 48 Stunden Training und 10s/Frame, gegenüber unseren 35-45min; andere schnelle Methoden erreichen keine SOTA-Qualität"
+   }
+  },
+  "S7.SS2.SSS0.Px2.p5.1": {
+   "note": "de1: dashes removed",
+   "de": {
+    "sentences": {
+     "1": "Wir sehen, dass in einigen Fällen selbst Mip-NeRF360 verbleibende Artefakte aufweist, die unsere Methode vermeidet (z. B. Unschärfe in der Vegetation, etwa in Bicycle und Stump, oder an den Wänden in Room)."
+    }
+   }
+  },
+  "S7.SS2.SSS0.Px3.p1.1": {
+   "note": "takeaway missed the unit's point (SOTA from random init); reason was commentary not in the source; zh: en dashes in number ranges",
+   "en": {
+    "takeaway": "Even from 100K random Gaussians, synthetic Blender scenes reach state-of-the-art results",
+    "reason": "Pruned to about 6-10K Gaussians, models grow to 200-500K after 30K iterations and render at 180-300 FPS",
+    "topic": "100K random Gaussians"
+   },
+   "zh": {
+    "sentences": {
+     "3": "我们的方法快速自动地将它们修剪为约6至10K个有意义的高斯。",
+     "4": "经过30K次迭代后，训练模型的最终规模达到每个场景约200至500K个高斯。",
+     "7": "训练后的合成场景以180至300 FPS渲染。"
+    },
+    "takeaway": "即使从100K个随机高斯起步，合成Blender场景也达到最先进结果",
+    "reason": "先剪枝至约6-10K个高斯，30K次迭代后增至约200-500K个，渲染速度达180-300 FPS",
+    "topic": "100K个随机高斯"
+   },
+   "de": {
+    "takeaway": "Selbst ab 100K zufälligen Gaussians erreichen synthetische Blender-Szenen State-of-the-Art-Ergebnisse",
+    "reason": "Auf etwa 6-10K Gaussians ausgedünnt, wachsen die Modelle nach 30K Iterationen auf 200-500K und rendern mit 180-300 FPS",
+    "topic": "100K zufälligen Gaussians"
+   }
+  },
+  "S7.SS2.SSS0.Px4.p1.1": {
+   "note": "reason restated the takeaway; now gives the evidence (1/4 of the points, 3.8 MB vs 9 MB); topic vague; zh5: 'two degrees of SH' mistranslated as 两个自由度; de terminology: 3D Gaussians -> Gaussians throughout",
+   "en": {
+    "reason": "Against highly compact point-based models, they surpass reported metrics with one-fourth of the points: 3.8 MB versus 9 MB",
+    "topic": "fewer parameters"
+   },
+   "zh": {
+    "sentences": {
+     "5": "我们指出，在此实验中，与他们类似，我们只使用了两阶球谐函数。"
+    },
+    "reason": "对比高度紧凑的点模型，以约四分之一点数超越其报告指标，模型3.8 MB对9 MB",
+    "topic": "参数更少"
+   },
+   "de": {
+    "sentences": {
+     "0": "Im Vergleich zu früheren expliziten Szenendarstellungen sind die in unserer Optimierung verwendeten anisotropen Gaussians in der Lage, komplexe Formen mit einer geringeren Anzahl von Parametern zu modellieren."
+    },
+    "takeaway": "Anisotrope Gaussians modellieren komplexe Formen mit weniger Parametern als frühere explizite Darstellungen",
+    "reason": "Gegenüber hochkompakten punktbasierten Modellen übertreffen sie die berichteten Metriken mit einem Viertel der Punkte: 3,8 MB statt 9 MB"
+   }
+  },
+  "S7.SS3.p1.1": {
+   "note": "de 'abgetestet' wrong word; zh takeaway over budget; zh terminology: splat -> 泼溅; de terminology: densification -> Verdichtung as in Sec. 5.2",
+   "zh": {
+    "sentences": {
+     "1": "具体而言，我们测试算法的以下几个方面：来自 SfM 的初始化、我们的致密化策略、各向异性协方差、我们允许无限数量的泼溅拥有梯度这一事实，以及球谐函数的使用。"
+    },
+    "takeaway": "消融五项：SfM 初始化、致密化、各向异性协方差、无限泼溅梯度、球谐函数"
+   },
+   "de": {
+    "sentences": {
+     "1": "Konkret testen wir die folgenden Aspekte unseres Algorithmus: die Initialisierung aus SfM, unsere Verdichtungsstrategien, die anisotrope Kovarianz, die Tatsache, dass wir einer unbegrenzten Anzahl von Splats Gradienten erlauben, und die Verwendung von Kugelflächenfunktionen."
+    },
+    "takeaway": "Ablationen prüfen fünf algorithmische Entscheidungen: SfM-Initialisierung, Verdichtung, anisotrope Kovarianz, unbegrenzte Splat-Gradienten, Kugelflächenfunktionen",
+    "topic": "fünf algorithmische Entscheidungen"
+   }
+  },
+  "S7.F7.cap": {
+   "note": "zh topic 'SfM' too vague",
+   "zh": {
+    "topic": "SfM 点初始化"
+   }
+  },
+  "S7.F8.cap": {
+   "note": "topic not verbatim in takeaway (all three languages); zh terminology: densification -> 致密化; de terminology: densification -> Verdichtung as in Sec. 5.2",
+   "en": {
+    "topic": "Densification ablation"
+   },
+   "zh": {
+    "sentences": {
+     "0": "针对“克隆”和“分裂”两种情况的致密化策略消融（第⟦a182 5⟧节）。"
+    },
+    "takeaway": "致密化消融对比克隆与分裂策略",
+    "topic": "致密化消融"
+   },
+   "de": {
+    "sentences": {
+     "0": "Ablation der Verdichtungsstrategie für die beiden Fälle \"clone\" und \"split\" (Abschnitt ⟦a182 5⟧)."
+    },
+    "takeaway": "Die Verdichtungs-Ablation vergleicht die Strategien Clone und Split",
+    "topic": "Verdichtungs-Ablation"
+   }
+  },
+  "S7.SS3.SSS0.Px2.p1.1": {
+   "note": "cloning speeds convergence on thin structures, not 'thin structures'; de1: awkward word order; zh: split is 分裂 (分割 reads as segmentation); de terminology: densification -> Verdichtung as in Sec. 5.2",
+   "zh": {
+    "sentences": {
+     "0": "接下来我们评估两种致密化方法，更具体地说，是第⟦a183 5⟧节中描述的克隆与分裂策略。",
+     "2": "结果表明，分裂大高斯对于如图⟦a184 8⟧所示的背景良好重建非常重要，而克隆小高斯而不是分裂它们，则可以实现更好且更快的收敛，尤其是当场景中出现细结构时。"
+    },
+    "takeaway": "分裂大高斯有助于背景重建，克隆小高斯加速细结构收敛"
+   },
+   "de": {
+    "sentences": {
+     "0": "Als Nächstes bewerten wir unsere beiden Verdichtungsmethoden, genauer gesagt die in Abschnitt ⟦a183 5⟧ beschriebene Klon- und Split-Strategie.",
+     "1": "Wir deaktivieren jede Methode separat und optimieren mit dem ansonsten unveränderten Verfahren."
+    },
+    "takeaway": "Das Aufteilen großer Gaussians verbessert die Hintergrundrekonstruktion, das Klonen kleiner Gaussians beschleunigt die Konvergenz dünner Strukturen",
+    "reason": "Jede Verdichtungsmethode wurde separat deaktiviert, während die übrige Optimierung unverändert blieb, wodurch ihr Beitrag zu Qualität und Geschwindigkeit isoliert wird"
+   }
+  },
+  "S7.F9.cap": {
+   "note": "reason wrongly blamed 'restricted densification'; the ablation limits gradient-receiving splats",
+   "en": {
+    "reason": "A cap of 10 gradient-receiving Gaussians is compared against the full method, which has no such limit"
+   },
+   "zh": {
+    "reason": "将接收梯度的高斯上限设为10，并与无此限制的完整方法比较"
+   },
+   "de": {
+    "reason": "Ein Limit von 10 gradientenempfangenden Gaussians wird mit der vollständigen Methode ohne solches Limit verglichen"
+   }
+  },
+  "S7.SS3.SSS0.Px3.p1.1": {
+   "note": "takeaway used the table label 'Limited-BW' unexplained; reason gave no reason; topic '11dB' meaningless; zh1: 高两倍 means three times",
+   "en": {
+    "takeaway": "Limiting gradients to the 10 front-most points cost 11dB PSNR on Truck",
+    "reason": "The severe approximation in the gradient computation made optimization unstable; Garden shows the visual outcome",
+    "topic": "front-most points"
+   },
+   "zh": {
+    "sentences": {
+     "1": "在该测试中，我们选择N=10，是Pulsar中默认值的两倍，但由于梯度计算中的严重近似，它导致了不稳定的优化。"
+    },
+    "takeaway": "仅对最前10个点回传梯度，使Truck的PSNR下降11dB",
+    "reason": "梯度计算中的严重近似导致优化不稳定，Garden展示了视觉结果",
+    "topic": "最前10个点"
+   },
+   "de": {
+    "takeaway": "Gradienten nur für die 10 vordersten Punkte kosten auf Truck 11dB PSNR",
+    "reason": "Die grobe Approximation der Gradientenberechnung machte die Optimierung instabil, Garden zeigt das visuelle Ergebnis",
+    "topic": "vordersten Punkte"
+   }
+  },
+  "S7.SS3.SSS0.Px4.p1.1": {
+   "note": "de terminology: 3D Gaussians -> Gaussians throughout",
+   "de": {
+    "sentences": {
+     "0": "Eine wichtige algorithmische Entscheidung in unserer Methode ist die Optimierung der vollständigen Kovarianzmatrix für die 3D-Gaussians.",
+     "1": "Um die Wirkung dieser Entscheidung zu zeigen, führen wir eine Ablation durch, bei der wir die Anisotropie entfernen, indem wir einen einzelnen skalaren Wert optimieren, der den Radius der 3D-Gaussian auf allen drei Achsen steuert.",
+     "3": "Wir beobachten, dass die Anisotropie die Fähigkeit der 3D-Gaussian, sich an Oberflächen auszurichten, deutlich verbessert, was wiederum eine viel höhere Renderingqualität bei gleicher Punktzahl ermöglicht."
+    },
+    "takeaway": "Die Optimierung der vollständigen Kovarianz-Anisotropie verbessert Oberflächenausrichtung und Renderingqualität der 3D-Gaussians"
+   }
+  },
+  "S7.F10.cap": {
+   "note": "zh1: volumetric splats are not voxels (体素); 'splat' left in English; zh terminology: splat -> 泼溅; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "1": "使用各向异性的体积泼溅能够对精细结构进行建模，并对视觉质量产生显著影响。"
+    },
+    "takeaway": "各向异性泼溅能建模精细结构并显著提升视觉质量",
+    "topic": "各向异性泼溅"
+   },
+   "de": {
+    "sentences": {
+     "2": "Beachten Sie, dass wir Ficus zu Illustrationszwecken in beiden Konfigurationen auf höchstens 5k Gaussians beschränkt haben."
+    },
+    "reason": "Zur Illustration wurde Ficus in beiden Anisotropie-Konfigurationen auf höchstens 5k Gaussians begrenzt"
+   }
+  },
+  "S7.SS4.p1.1": {
+   "note": "de topic was a clause",
+   "de": {
+    "topic": "Artefakte"
+   }
+  },
+  "S7.SS4.p2.1": {
+   "note": "de topic was a clause; zh2: 'more principled' is not 更严格",
+   "zh": {
+    "sentences": {
+     "2": "更合理的剔除方法将能缓解这些伪影。"
+    }
+   },
+   "de": {
+    "topic": "Popping-Artefakte"
+   }
+  },
+  "S7.SS4.p4.1": {
+   "note": "'far exceeds' overstates 'significantly higher'; 20 GB is a training peak; reason misread 'point cloud compression'; de topic was a clause; zh2: awkward word order; en dashes in number ranges",
+   "en": {
+    "takeaway": "Memory consumption is significantly higher than NeRF-based solutions, peaking above 20 GB in training",
+    "reason": "A careful low-level implementation and point cloud compression techniques could reduce it substantially"
+   },
+   "zh": {
+    "sentences": {
+     "2": "然而，通过对优化逻辑进行精细的底层实现（类似InstantNGP），这一数字可以显著降低。",
+     "3": "渲染已训练的场景需要足够的GPU内存来存储完整模型（大规模场景为数百兆字节），并需要额外30至500MB用于光栅化器，具体取决于场景大小和图像分辨率。"
+    },
+    "takeaway": "内存消耗显著高于基于NeRF的方案，训练峰值超20GB",
+    "reason": "精细的底层实现与点云压缩技术可大幅降低内存"
+   },
+   "de": {
+    "sentences": {
+     "3": "Das Rendern der trainierten Szene erfordert ausreichend GPU-Speicher, um das vollständige Modell zu speichern (mehrere hundert Megabyte für groß angelegte Szenen), sowie zusätzliche 30-500 MB für den Rasterizer, abhängig von Szenengröße und Bildauflösung."
+    },
+    "takeaway": "Der Speicherverbrauch liegt deutlich über NeRF-basierten Lösungen, beim Training mit Spitzen über 20 GB",
+    "reason": "Eine sorgfältige Low-Level-Implementierung und Punktwolkenkompression könnten ihn erheblich reduzieren",
+    "topic": "Speicherverbrauch"
+   }
+  },
+  "S7.F11.cap": {
+   "note": "topic 'failure artifacts' was not in the takeaway; 'where' implied the same region; zh topic not in takeaway",
+   "en": {
+    "takeaway": "Failure artifacts: coarse anisotropic Gaussians lose detail, while Mip-NeRF360 shows floaters"
+   },
+   "zh": {
+    "takeaway": "失败伪影：粗糙的各向异性高斯丢失细节，Mip-NeRF360则有漂浮物",
+    "topic": "失败伪影"
+   },
+   "de": {
+    "takeaway": "Fehlerartefakte: Grobe anisotrope Gaussians verlieren Details, Mip-NeRF360 zeigt dagegen Floaters",
+    "topic": "Fehlerartefakte"
+   }
+  },
+  "S7.F12.cap": {
+   "note": "topic duplicated another unit; de topic was cut",
+   "en": {
+    "topic": "little training overlap"
+   },
+   "zh": {
+    "topic": "重叠少的视角"
+   },
+   "de": {
+    "topic": "geringer Trainingsüberlappung"
+   }
+  },
+  "S8.p1.1": {
+   "note": "de 'wirklich echtes' redundant",
+   "de": {
+    "takeaway": "Erstes echtes Echtzeit-Rendering von Radiance Fields in hoher Qualität für vielfältige Szenen"
+   }
+  },
+  "S8.p2.1": {
+   "note": "zh terminology: splat -> 泼溅",
+   "zh": {
+    "sentences": {
+     "0": "我们选择3D高斯图元，既保留了体渲染的优化特性，又直接支持快速的基于泼溅的光栅化。"
+    },
+    "takeaway": "3D高斯图元兼具快速泼溅与体渲染优化特性"
+   }
+  },
+  "S8.p3.1": {
+   "note": "grammar ('training time is Python')",
+   "en": {
+    "takeaway": "Most training time is spent in Python; only rasterization uses CUDA"
+   },
+   "zh": {
+    "takeaway": "大部分训练时间耗在Python上，仅光栅化使用CUDA"
+   }
+  },
+  "S8.p5.1": {
+   "note": "zh0: ungrammatical sentence",
+   "zh": {
+    "sentences": {
+     "0": "我们的高斯能否用于对捕获场景进行网格重建，将是一个值得探究的问题。"
+    }
+   }
+  },
+  "S8.p6.1": {
+   "note": "de 'übereinstimmt' odd for matching quality",
+   "de": {
+    "takeaway": "Erste Echtzeit-Lösung für Radiance Fields mit der Qualität der besten teuren Methoden"
+   }
+  },
+  "A1.p1.1": {
+   "note": "zh: English 'world/view space' left; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "sentences": {
+     "0": "回顾一下，⟦a196 $\\Sigma$⟧/⟦a197 $\\Sigma^{\\prime}$⟧ 分别是高斯在世界空间/视图空间中的协方差矩阵，⟦a198 $q$⟧ 是旋转，⟦a199 $s$⟧ 是缩放，⟦a200 $W$⟧ 是视图变换，⟦a201 $J$⟧ 是投影变换仿射近似的雅可比矩阵。"
+    },
+    "reason": "世界/视图空间协方差 ⟦a196 $\\Sigma$⟧/⟦a197 $\\Sigma^{\\prime}$⟧ 依赖旋转 ⟦a198 $q$⟧、缩放 ⟦a199 $s$⟧、视图变换 ⟦a200 $W$⟧ 与雅可比 ⟦a201 $J$⟧"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zur Erinnerung: ⟦a196 $\\Sigma$⟧/⟦a197 $\\Sigma^{\\prime}$⟧ sind die Kovarianzmatrizen der Gaussian im Welt- bzw. Sichtraum, ⟦a198 $q$⟧ ist die Rotation und ⟦a199 $s$⟧ die Skalierung, ⟦a200 $W$⟧ ist die Sichttransformation und ⟦a201 $J$⟧ die Jacobi-Matrix der affinen Approximation der projektiven Transformation."
+    }
+   }
+  },
+  "A1.p2.1": {
+   "note": "zh reason garbled (equations multiplied, verb missing)",
+   "zh": {
+    "reason": "写成 ⟦a212 $\\Sigma=MM^{T}$⟧ 后，导数按链式法则分解为 ⟦a213 $\\frac{d\\Sigma}{ds}=\\frac{d\\Sigma}{dM}\\frac{dM}{ds}$⟧ 与 ⟦a214 $\\frac{d\\Sigma}{dq}=\\frac{d\\Sigma}{dM}\\frac{dM}{dq}$⟧"
+   }
+  },
+  "A3.SS0.SSS0.Px1.p1.1": {
+   "note": "zh terminology: splat -> 泼溅; zh: English 'Gaussian' left untranslated; zh terminology: forward pass -> 前向传播",
+   "zh": {
+    "sentences": {
+     "0": "我们的设计基于小泼溅高负载的假设，并为此进行优化：在开始时对每一帧使用基数排序对泼溅排序一次。",
+     "2": "我们通过在每个泼溅重叠的每个16⟦a226 $\\times$⟧16瓦片中实例化该泼溅，来为每个瓦片创建一个泼溅列表。",
+     "3": "这导致需要处理的高斯数量适度增加，但这一增加被更简单的控制流和优化GPU基数排序的高并行性所摊销⟦a227 (Merrill and Grimshaw, 2010)⟧。",
+     "4": "我们为每个泼溅实例分配一个最多64位的键，其中低32位编码其投影深度，高位编码其重叠瓦片的索引。",
+     "6": "因此，通过一次基数排序即可并行为所有泼溅直接解决深度排序。",
+     "7": "排序后，我们可以通过识别排序数组中具有相同瓦片ID的范围的起点和终点，高效地生成每个瓦片要处理的高斯列表。",
+     "9": "与⟦a228 (Lassner and Zollhofer, 2021)⟧相比，我们的光栅化因此完全消除了顺序的图元处理步骤，并生成更紧凑的每瓦片列表以供前向传播中遍历。"
+    },
+    "takeaway": "每帧用基数排序对泼溅排序一次",
+    "reason": "每个泼溅的键低32位为投影深度，高位为重叠瓦片索引，从而并行解决所有泼溅的深度排序"
+   }
+  },
+  "alg2.cap": {
+   "note": "zh: English 'Gaussian' left untranslated; de: world space is not 'Weltraum' (outer space)",
+   "zh": {
+    "sentences": {
+     "0": "3D 高斯的GPU软件光栅化⟦a230 $w$⟧，⟦a231 $h$⟧：要光栅化的图像宽度和高度⟦a232 $M$⟧，⟦a233 $S$⟧：世界空间中的高斯均值和协方差⟦a234 $C$⟧，⟦a235 $A$⟧：高斯颜色和不透明度⟦a236 $V$⟧：当前相机的视图配置"
+    },
+    "takeaway": "算法2定义3D 高斯的GPU软件光栅化输入"
+   },
+   "de": {
+    "sentences": {
+     "0": "GPU-Software-Rasterisierung von 3D-Gaussians ⟦a230 $w$⟧, ⟦a231 $h$⟧: Breite und Höhe des zu rasterisierenden Bildes ⟦a232 $M$⟧, ⟦a233 $S$⟧: Gaussian-Mittelwerte und Kovarianzen im Weltkoordinatensystem ⟦a234 $C$⟧, ⟦a235 $A$⟧: Gaussian-Farben und Opazitäten ⟦a236 $V$⟧: Ansichtskonfiguration der aktuellen Kamera"
+    }
+   }
+  },
+  "A3.SS0.SSS0.Px2.p1.1": {
+   "note": "takeaway missed the paragraph's point (the numerical-stability measures); zh terminology: Gaussians -> 高斯; zh terminology: backward pass -> 反向传播; de terminology: 3D Gaussians -> Gaussians throughout",
+   "en": {
+    "takeaway": "Skipping, clamping and early stopping keep backward opacity division numerically stable",
+    "reason": "Updates with ⟦a238 $\\alpha<\\epsilon$⟧ are skipped, ⟦a241 $\\alpha$⟧ is clamped at ⟦a242 $0.99$⟧, and blending stops before accumulated opacity exceeds ⟦a243 $0.9999$⟧",
+    "topic": "opacity division"
+   },
+   "zh": {
+    "sentences": {
+     "0": "在反向传播过程中，我们通过将前向传播中累积的不透明度反复除以每个高斯的⟦a237 $\\alpha$⟧，来重建梯度计算所需的中间不透明度值。",
+     "2": "为了解决这个问题，在前向和反向传播中，我们跳过任何满足⟦a238 $\\alpha<\\epsilon$⟧的混合更新（我们将⟦a239 $\\epsilon$⟧取为⟦a240 $\\frac{1}{255}$⟧），并且还从上方将⟦a241 $\\alpha$⟧钳制到⟦a242 $0.99$⟧。",
+     "3": "最后，在一个高斯被纳入前向光栅化过程之前，我们计算若将其纳入时的累积不透明度，并在其可能超过⟦a243 $0.9999$⟧之前停止从前到后的混合。"
+    },
+    "takeaway": "跳过、钳制与提前停止使反向传播中的不透明度除法保持数值稳定",
+    "reason": "跳过⟦a238 $\\alpha<\\epsilon$⟧的更新，将⟦a241 $\\alpha$⟧钳制在⟦a242 $0.99$⟧，并在累积不透明度超过⟦a243 $0.9999$⟧前停止混合",
+    "topic": "不透明度除法"
+   },
+   "de": {
+    "sentences": {
+     "0": "Während des Rückwärtsdurchlaufs rekonstruieren wir die für die Gradientenberechnung benötigten intermediären Opazitätswerte, indem wir die akkumulierte Opazität aus dem Vorwärtsdurchlauf wiederholt durch das ⟦a237 $\\alpha$⟧ jeder Gaussian teilen.",
+     "3": "Schließlich berechnen wir, bevor eine Gaussian in den Vorwärts-Rasterisierungsdurchlauf aufgenommen wird, die akkumulierte Opazität, wenn wir sie aufnehmen würden, und stoppen das Front-to-Back-Blending, bevor es ⟦a243 $0.9999$⟧ überschreiten kann."
+    },
+    "takeaway": "Überspringen, Begrenzen und frühes Stoppen halten die Opazitätsdivision im Rückwärtsdurchlauf numerisch stabil",
+    "reason": "Aktualisierungen mit ⟦a238 $\\alpha<\\epsilon$⟧ werden übersprungen, ⟦a241 $\\alpha$⟧ wird bei ⟦a242 $0.99$⟧ begrenzt, und das Blending stoppt, bevor die akkumulierte Opazität ⟦a243 $0.9999$⟧ übersteigt",
+    "topic": "Opazitätsdivision"
+   }
+  },
+  "A4.p1.1": {
+   "note": "takeaway over budget; the averages are the authors' own Mip-NeRF360 runs; zh takeaway '表4, 9' lost the range; en dashes removed",
+   "en": {
+    "takeaway": "Tables 4-9 list per-scene error metrics for all techniques and real scenes",
+    "reason": "Copied Mip-NeRF360 numbers are listed beside the authors' own Mip-NeRF360 runs, which average PSNR 27.58, SSIM 0.790, LPIPS 0.240"
+   },
+   "zh": {
+    "sentences": {
+     "0": "表⟦a244 4⟧至⟦a245 9⟧列出了我们在所有考察方法和真实场景上评估所收集的各项误差指标。"
+    },
+    "takeaway": "表4至表9列出所有方法在真实场景上的逐场景误差指标",
+    "reason": "除复制的Mip-NeRF360数值外，还列出作者自行运行的Mip-NeRF360结果，其平均PSNR 27.58、SSIM 0.790、LPIPS 0.240"
+   },
+   "de": {
+    "sentences": {
+     "0": "Die Tabellen ⟦a244 4⟧ bis ⟦a245 9⟧ listen die verschiedenen gesammelten Fehlermetriken für unsere Evaluation über alle betrachteten Verfahren und realen Szenen auf."
+    },
+    "takeaway": "Die Tabellen 4 bis 9 listen Fehlermetriken pro Szene für alle Verfahren und realen Szenen",
+    "reason": "Neben übernommenen Mip-NeRF360-Zahlen stehen eigene Mip-NeRF360-Läufe der Autoren mit Mittelwerten von PSNR 27,58, SSIM 0,790 und LPIPS 0,240"
+   }
+  },
+  "S1.p2.1": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "SOTA NeRF"
+   }
+  },
+  "A4.T4.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "Mip-NeRF360 SSIM scores",
+    "takeaway": "Mip-NeRF360 SSIM scores are tabulated, with $†$ copied from the original paper"
+   },
+   "zh": {
+    "topic": "Mip-NeRF360场景SSIM分数"
+   },
+   "de": {
+    "topic": "SSIM-Werte für Mip-NeRF360-Szenen"
+   }
+  },
+  "A4.T5.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "Mip-NeRF360 PSNR scores",
+    "takeaway": "Mip-NeRF360 PSNR scores are tabulated, with $†$ copied from the original paper"
+   },
+   "zh": {
+    "topic": "Mip-NeRF360场景PSNR分数"
+   },
+   "de": {
+    "topic": "PSNR-Werte für Mip-NeRF360-Szenen"
+   }
+  },
+  "A4.T6.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "Mip-NeRF360 LPIPS scores",
+    "takeaway": "Mip-NeRF360 LPIPS scores are tabulated, with $†$ copied from the original paper"
+   },
+   "zh": {
+    "topic": "Mip-NeRF360场景LPIPS分数"
+   },
+   "de": {
+    "topic": "LPIPS-Werte für Mip-NeRF360-Szenen"
+   }
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "section topic over budget; aligned with zh/de; de section takeaway ungrammatical ('mit ... Echtzeit')",
+   "en": {
+    "topic": "3D Gaussian Splatting"
+   },
+   "de": {
+    "takeaway": "3D Gaussian Splatting ermöglicht die Synthese neuer Ansichten in Echtzeit bei 1080p mit Spitzenqualität"
+   }
+  },
+  "S2.SS1": {
+   "note": "zh topic was a cut fragment ('基于图像'); de topic cut mid-phrase",
+   "zh": {
+    "takeaway": "基于图像的重建与渲染能恢复几何，却留下未重建与过度重建区域",
+    "topic": "重建与渲染"
+   },
+   "de": {
+    "topic": "Bildbasierte Verfahren"
+   }
+  },
+  "S2.SS2": {
+   "note": "overclaim: ours equals or surpasses Mip-NeRF360 quality, does not beat NeRF methods on both; overclaim fixed as in English; topic aligned; overclaim fixed as in English; topic was cut mid-phrase",
+   "en": {
+    "takeaway": "Neural rendering advances speed and quality; ours equals or beats their quality in real time"
+   },
+   "zh": {
+    "takeaway": "神经渲染在速度与质量上不断进步，本文方法以实时渲染达到或超越其质量",
+    "topic": "神经渲染"
+   },
+   "de": {
+    "takeaway": "Neuronales Rendering verbessert Tempo und Qualität, unser Verfahren erreicht oder übertrifft deren Qualität in Echtzeit",
+    "topic": "Neuronales Rendering"
+   }
+  },
+  "S2.SS3": {
+   "note": "zh topic aligned with English (point-based rendering); de takeaway: English 'Differentiable' left, '3D-Gaußsche'",
+   "zh": {
+    "topic": "可微点渲染"
+   },
+   "de": {
+    "takeaway": "Differenzierbares punktbasiertes Rendering bleibt von MVS abhängig und verfehlt Echtzeitqualität, was 3D-Gaussians motiviert",
+    "topic": "punktbasiertes Rendering"
+   }
+  },
+  "S3": {
+   "note": "topic aligned with English; zh terminology: tile -> 瓦片 throughout",
+   "zh": {
+    "takeaway": "稀疏SfM点优化为3D高斯，由瓦片光栅化器实时渲染",
+    "topic": "3D高斯"
+   }
+  },
+  "S4": {
+   "note": "zh takeaway added 'compact' (not in English)",
+   "zh": {
+    "takeaway": "带各向异性协方差的 3D 高斯是可微、可优化的场景表示"
+   }
+  },
+  "S5": {
+   "note": "de topic was a cut clause ('Die Optimierung erzeugt'); de terminology: 3D Gaussians -> Gaussians throughout",
+   "de": {
+    "title": "Optimierung mit adaptiver Dichtesteuerung der 3D-Gaussians",
+    "takeaway": "Die Optimierung erzeugt dichte 3D-Gaussians und verzahnt Parameterschritte mit der Dichtesteuerung",
+    "topic": "3D-Gaussians"
+   }
+  },
+  "S5.SS1": {
+   "note": "topic aligned with English; de topic 'Geometrie per SGD' meaningless alone",
+   "zh": {
+    "topic": "3D高斯优化"
+   },
+   "de": {
+    "topic": "Optimierung"
+   }
+  },
+  "S5.SS2": {
+   "note": "de takeaway anglicism ('passend zu fitten'); topic cut; zh terminology: Gaussians -> 高斯 as in the rest of the paper; de terminology: 3D Gaussians -> Gaussians throughout",
+   "zh": {
+    "title": "高斯的自适应控制"
+   },
+   "de": {
+    "title": "Adaptive Steuerung der Gaussians",
+    "takeaway": "Adaptive Steuerung verdichtet Gaussians und dünnt sie aus, um Szenen abzubilden",
+    "topic": "Adaptive Steuerung"
+   }
+  },
+  "S6": {
+   "note": "unclear phrasing ('unbounded gradient-carrying Gaussian splats'); title: 高斯分布 -> 高斯; takeaway follows English; 'tilerbasiert' is not German; takeaway follows English",
+   "en": {
+    "takeaway": "A tile-based differentiable rasterizer sorts fast and passes gradients to any number of splats"
+   },
+   "zh": {
+    "title": "面向高斯的快速可微光栅化器",
+    "takeaway": "基于瓦片的可微光栅化器排序快速，且接收梯度的泼溅数量不受限制"
+   },
+   "de": {
+    "takeaway": "Ein kachelbasierter differenzierbarer Rasterizer sortiert schnell und gibt Gradienten an beliebig viele Splats weiter",
+    "topic": "kachelbasierter differenzierbarer Rasterizer"
+   }
+  },
+  "S7": {
+   "note": "zh topic '实现' too generic",
+   "zh": {
+    "topic": "渲染质量"
+   }
+  },
+  "S7.SS1": {
+   "note": "section topic over budget; unit below now carries the CUDA kernels; zh takeaway had no subject; de topic cut mid-phrase ('PyTorch mit eigenen')",
+   "en": {
+    "topic": "PyTorch"
+   },
+   "zh": {
+    "takeaway": "方法用 PyTorch 与自定义 CUDA 光栅化内核实现，并带交互式查看器"
+   },
+   "de": {
+    "topic": "PyTorch"
+   }
+  },
+  "S7.SS1.SSS0.Px1": {
+   "note": "en topic cut mid-phrase ('... warm-up and'); zh: SH band is 频带, not 波段",
+   "en": {
+    "topic": "Lower-resolution warm-up"
+   },
+   "zh": {
+    "takeaway": "低分辨率预热与渐进式SH频带稳定优化"
+   }
+  },
+  "S7.SS2.SSS0.Px1": {
+   "note": "grammar: 'synthetic Blender' lacked its noun",
+   "en": {
+    "takeaway": "13 real scenes plus the synthetic Blender dataset test the method with one hyperparameter configuration"
+   }
+  },
+  "S7.SS2.SSS0.Px3": {
+   "note": "section topic duplicated the unit topic; aligned with English",
+   "zh": {
+    "topic": "合成场景"
+   },
+   "de": {
+    "topic": "synthetischen Blender-Szenen"
+   }
+  },
+  "S7.SS2.SSS0.Px4": {
+   "note": "understated: they surpass the compact models' reported metrics; follows English; topic '点数' vague; follows English",
+   "en": {
+    "takeaway": "Anisotropic Gaussians beat compact point-based models' metrics using one-fourth of their points"
+   },
+   "zh": {
+    "takeaway": "各向异性高斯以四分之一点数超越紧凑点模型的指标",
+    "topic": "各向异性高斯"
+   },
+   "de": {
+    "takeaway": "Anisotrope Gaussians übertreffen die Metriken kompakter punktbasierter Modelle mit einem Viertel der Punkte",
+    "topic": "Anisotrope Gaussians"
+   }
+  },
+  "S7.SS3": {
+   "note": "en topic cut mid-phrase ('Ablations isolate SfM'); topic aligned with English; de terminology: densification -> Verdichtung as in Sec. 5.2",
+   "en": {
+    "topic": "Ablations"
+   },
+   "de": {
+    "takeaway": "Ablationen isolieren SfM-Initialisierung, Verdichtung, anisotrope Kovarianz, unbegrenzte Splat-Gradienten und Kugelflächenfunktionen",
+    "topic": "Ablationen"
+   }
+  },
+  "S7.SS3.SSS0.Px1": {
+   "note": "unclear ('matters ... not catastrophic failure'); follows English",
+   "en": {
+    "takeaway": "Without SfM initialization the method avoids failure but degrades mainly in the background",
+    "topic": "SfM initialization"
+   },
+   "de": {
+    "takeaway": "Ohne SfM-Initialisierung versagt die Methode nicht, verschlechtert sich aber vor allem im Hintergrund"
+   }
+  },
+  "S7.SS3.SSS0.Px2": {
+   "note": "zh topic cut ('分割大高斯重'); split is 分裂; cloning speeds convergence on thin structures, not 'thin structures'; de terminology: densification -> Verdichtung as in Sec. 5.2",
+   "zh": {
+    "takeaway": "分裂大高斯以重建背景，克隆小高斯加速细结构收敛",
+    "topic": "大高斯"
+   },
+   "de": {
+    "title": "Verdichtung",
+    "takeaway": "Aufteilen großer Gaussians rekonstruiert den Hintergrund, Klonen kleiner Gaussians beschleunigt die Konvergenz dünner Strukturen"
+   }
+  },
+  "S7.SS3.SSS0.Px3": {
+   "note": "zh takeaway reversed: gradients are skipped AFTER the N front-most points; title had English 'splat'; de topic cut mid-phrase",
+   "zh": {
+    "title": "带梯度泼溅的无限深度复杂度",
+    "takeaway": "仅为最前⟦a185 $N$⟧个点计算梯度会降低质量并使优化不稳定"
+   },
+   "de": {
+    "topic": "Gradienten"
+   }
+  },
+  "S7.SS3.SSS0.Px4": {
+   "note": "de terminology: 3D Gaussians -> Gaussians throughout",
+   "de": {
+    "takeaway": "Die vollständige anisotrope Kovarianzoptimierung verbessert die Ausrichtung der 3D-Gaussians und die Renderingqualität erheblich"
+   }
+  },
+  "S7.SS3.SSS0.Px5": {
+   "note": "de topic was a clause",
+   "de": {
+    "topic": "Kugelflächenfunktionen"
+   }
+  },
+  "S7.SS4": {
+   "note": "section topic duplicated a unit topic; aligned with English; de takeaway ungrammatical ('Artefakte, Popping, sowie'); topic a list fragment",
+   "zh": {
+    "topic": "局限"
+   },
+   "de": {
+    "takeaway": "3D Gaussian Splatting hat Grenzen bei Artefakten, Popping, Speicherbedarf und Lernrate",
+    "topic": "Grenzen"
+   }
+  },
+  "S8": {
+   "note": "en topic cut mid-phrase ('First real-time, high-quality'); topic tidied",
+   "en": {
+    "topic": "radiance field rendering"
+   },
+   "de": {
+    "topic": "Echtzeit-Rendering"
+   }
+  },
+  "A3.SS0.SSS0.Px1": {
+   "note": "zh terminology: splat -> 泼溅",
+   "zh": {
+    "takeaway": "每帧用基数排序并行完成所有泼溅的深度排序"
+   }
+  },
+  "A3.SS0.SSS0.Px2": {
+   "note": "en topic cut ('Skipping tiny alpha'); zh topic cut ('跳过微小α、钳'); literal α replaced by marker",
+   "en": {
+    "takeaway": "Skipping tiny opacities, clamping ⟦a241 $\\alpha$⟧ and early stopping ensure numerical stability",
+    "topic": "numerical stability"
+   },
+   "zh": {
+    "takeaway": "跳过极小不透明度、钳制⟦a241 $\\alpha$⟧并提前停止，保证光栅化的数值稳定性",
+    "topic": "数值稳定性"
+   }
+  },
+  "A4": {
+   "note": "en topic cut ('Per-scene SSIM, PSNR'); zh topic cut; title consistent with other appendix titles; de topic cut ('Tabellen mit SSIM, PSNR')",
+   "en": {
+    "takeaway": "Per-scene error metric tables give SSIM, PSNR and LPIPS for all techniques and real scenes",
+    "topic": "error metric tables"
+   },
+   "zh": {
+    "title": "逐场景误差指标",
+    "takeaway": "逐场景误差指标表给出所有方法在真实场景上的SSIM、PSNR与LPIPS",
+    "topic": "误差指标表"
+   },
+   "de": {
+    "takeaway": "Fehlermetriktabellen pro Szene geben SSIM, PSNR und LPIPS für alle Verfahren und realen Szenen an",
+    "topic": "Fehlermetriktabellen"
+   }
+  }
+ }
+}

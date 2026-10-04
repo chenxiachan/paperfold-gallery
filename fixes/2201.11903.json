@@ -1,0 +1,2044 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "en takeaway ungrammatical (chain of thought is ... steps that improves); de topic cut with verb; de duplicated 'Beispiele als Beispiele'",
+   "en": {
+    "takeaway": "A chain of thought, a series of intermediate reasoning steps, improves complex reasoning",
+    "topic": "chain of thought"
+   },
+   "de": {
+    "sentences": {
+     "1": "Insbesondere zeigen wir, wie solche Schlussfolgerungsfähigkeiten in ausreichend großen Sprachmodellen auf natürliche Weise durch eine einfache Methode namens Chain-of-Thought-Prompting entstehen, bei der einige Gedankenketten-Demonstrationen als Beispiele im Prompt bereitgestellt werden."
+    },
+    "takeaway": "Die Gedankenkette, eine Reihe von Zwischenschritten des Schlussfolgerns, verbessert komplexes Schlussfolgern",
+    "topic": "Gedankenkette"
+   }
+  },
+  "abstract1.2": {
+   "note": "zh: stray literal brackets around PaLM 540B, GSM8K, GPT-3; de topic cut with verb",
+   "zh": {
+    "sentences": {
+     "2": "例如，仅用八个思维链示例提示PaLM 540B，就在数学应用题基准GSM8K上达到了最先进的准确率，甚至超过了带有验证器的微调GPT-3。"
+    },
+    "reason": "PaLM 540B用八个思维链示例在GSM8K上达到最先进水平，超过带验证器的微调GPT-3"
+   },
+   "de": {
+    "topic": "Chain-of-Thought-Prompting"
+   }
+  },
+  "S1.p1.1": {
+   "note": "overstated: source says scaling 'has not proved sufficient for high performance', not that it fails; de terminology",
+   "en": {
+    "takeaway": "Scaling model size alone is not sufficient for arithmetic, commonsense, and symbolic reasoning",
+    "reason": "Larger models improve performance and sample efficiency, but this has not yielded high performance on challenging reasoning tasks"
+   },
+   "zh": {
+    "takeaway": "仅扩大模型规模不足以在算术、常识和符号推理上取得高性能",
+    "reason": "更大模型虽提升性能和样本效率，但在挑战性推理任务上仍未取得高性能"
+   },
+   "de": {
+    "takeaway": "Die Skalierung der Modellgröße allein reicht für arithmetisches, commonsense-basiertes und symbolisches Schlussfolgern nicht aus",
+    "reason": "Größere Modelle verbessern Leistung und Stichprobeneffizienz, erzielen bei anspruchsvollen Schlussfolgerungsaufgaben aber noch keine hohe Leistung",
+    "topic": "Skalierung der Modellgröße",
+    "sentences": {
+     "2": "Allerdings hat sich die alleinige Vergrößerung der Modellgröße als nicht ausreichend erwiesen, um bei anspruchsvollen Aufgaben wie arithmetischem, commonsense-basiertem und symbolischem Schlussfolgern hohe Leistungen zu erzielen ⟦a3 (Rae et al., 2021)⟧."
+    }
+   }
+  },
+  "S1.p2.1": {
+   "note": "zh topic over budget; de terminology",
+   "zh": {
+    "topic": "少样本提示"
+   },
+   "de": {
+    "sentences": {
+     "0": "Diese Arbeit untersucht, wie die Schlussfolgerungsfähigkeit großer Sprachmodelle durch eine einfache Methode erschlossen werden kann, die von zwei Ideen motiviert ist.",
+     "1": "Erstens können Techniken für arithmetisches Schlussfolgern davon profitieren, natürlichsprachliche Begründungen zu erzeugen, die zur endgültigen Antwort führen."
+    },
+    "reason": "Die Erzeugung von Begründungen hilft beim arithmetischen Schlussfolgern, während Prompting Few-Shot-Lernen ohne aufgabenspezifische Feinabstimmung ermöglicht"
+   }
+  },
+  "S1.p3.1": {
+   "note": "en takeaway over budget; de left 'input, chain of thought, output' untranslated, 'Ein Chain of Thought', broken construction in sentence 2; de terminology",
+   "en": {
+    "takeaway": "Chain-of-thought prompting combines rationales with few-shot prompting via ⟦a10 $\\langle$⟧input, chain of thought, output⟦a11 $\\rangle$⟧ triples"
+   },
+   "de": {
+    "sentences": {
+     "2": "Die traditionelle Few-Shot-Prompting-Methode aus ⟦a8 Brown et al. (2020)⟧ funktioniert schlecht bei Aufgaben, die Schlussfolgerungsfähigkeiten erfordern, und verbessert sich mit zunehmender Größe des Sprachmodells oft nicht wesentlich ⟦a9 (Rae et al., 2021)⟧.",
+     "4": "Konkret untersuchen wir die Fähigkeit von Sprachmodellen, Few-Shot-Prompting für Schlussfolgerungsaufgaben durchzuführen, wenn ein Prompt aus Tripeln besteht: ⟦a10 $\\langle$⟧Eingabe, Gedankenkette, Ausgabe⟦a11 $\\rangle$⟧.",
+     "5": "Eine Gedankenkette ist eine Reihe natürlichsprachlicher Zwischenschritte des Schlussfolgerns, die zur endgültigen Ausgabe führen, und wir bezeichnen diesen Ansatz als Chain-of-Thought-Prompting."
+    },
+    "takeaway": "Chain-of-Thought-Prompting kombiniert begründungsgestütztes Training und Few-Shot-Prompting mit ⟦a10 $\\langle$⟧Eingabe, Gedankenkette, Ausgabe⟦a11 $\\rangle$⟧-Tripeln",
+    "reason": "Dies vermeidet kostspielige Begründungsannotation und die schlechte Schlussfolgerungsleistung von Standard-Prompting"
+   }
+  },
+  "S1.p4.1": {
+   "note": "en takeaway over budget, reason ungrammatical ('Prompting only needs no'); zh takeaway over budget; zh 'c.f.' rendered as 'see'; de sentence 3 ungrammatical; de terminology",
+   "en": {
+    "reason": "A prompting-only approach needs no large training dataset, and one checkpoint can serve many tasks",
+    "takeaway": "Chain-of-thought prompting beats standard prompting across reasoning benchmarks, achieving state-of-the-art GSM8K accuracy"
+   },
+   "zh": {
+    "sentences": {
+     "3": "这项工作凸显了大语言模型如何能够通过少量带有任务相关自然语言数据的示例进行学习（对比：通过大型训练数据集自动学习输入与输出背后的模式）。"
+    },
+    "takeaway": "思维链提示在算术、常识和符号基准上超越标准提示，GSM8K达最先进"
+   },
+   "de": {
+    "sentences": {
+     "3": "Diese Arbeit unterstreicht, wie große Sprachmodelle aus wenigen Beispielen mit natürlichsprachlichen Daten über die Aufgabe lernen können (vgl. das automatische Erlernen der Muster, die Eingaben und Ausgaben zugrunde liegen, anhand eines großen Trainingsdatensatzes).",
+     "0": "Wir präsentieren empirische Evaluierungen auf Benchmarks für arithmetisches, commonsense-basiertes und symbolisches Schlussfolgern, die zeigen, dass Chain-of-Thought-Prompting Standard-Prompting übertrifft, manchmal in beeindruckendem Maße."
+    },
+    "reason": "Ein reiner Prompting-Ansatz benötigt keinen großen Trainingsdatensatz, und ein einziger Checkpoint kann viele Aufgaben bewältigen"
+   }
+  },
+  "S2.p1.1": {
+   "note": "de: 'Textproblem' for math word problem, standard is Textaufgabe",
+   "de": {
+    "sentences": {
+     "0": "Betrachten Sie den eigenen Denkprozess beim Lösen einer komplizierten Schlussfolgerungsaufgabe, etwa einer mehrstufigen mathematischen Textaufgabe."
+    }
+   }
+  },
+  "S2.p2.1": {
+   "note": "de: Textproblem -> Textaufgabe; distinct topic",
+   "de": {
+    "sentences": {
+     "0": "⟦a17 Figure 1⟧ zeigt ein Beispiel, in dem ein Modell eine Gedankenkette erzeugt, um eine mathematische Textaufgabe zu lösen, die es andernfalls falsch beantwortet hätte."
+    },
+    "topic": "schrittweises Denken"
+   },
+   "en": {
+    "topic": "step-by-step thought"
+   },
+   "zh": {
+    "topic": "逐步思考"
+   }
+  },
+  "S2.I1.i2.p1.1": {
+   "note": "zh: 'suggesting' rendered as 提示, which means prompting in this paper; distinct topic",
+   "zh": {
+    "sentences": {
+     "0": "第二，思维链为模型行为提供了一个可解释的窗口，揭示模型可能如何得出某个答案，并提供机会去排查推理路径在哪里出错（尽管完整刻画支撑某个答案的模型计算仍是一个未决问题）。"
+    },
+    "topic": "模型行为"
+   },
+   "en": {
+    "topic": "model behavior"
+   },
+   "de": {
+    "topic": "Modellverhalten"
+   }
+  },
+  "S2.I1.i3.p1.1": {
+   "note": "de: commonsense reasoning rendered as Alltagsvernunft; Textproblem -> Textaufgabe",
+   "de": {
+    "sentences": {
+     "0": "Drittens kann Chain-of-Thought-Schlussfolgern für Aufgaben wie mathematische Textaufgaben, Commonsense-Schlussfolgern und symbolische Manipulation verwendet werden und ist potenziell (zumindest prinzipiell) auf jede Aufgabe anwendbar, die Menschen mithilfe von Sprache lösen können."
+    },
+    "takeaway": "Chain-of-Thought-Schlussfolgern eignet sich für mathematische, Commonsense- und symbolische Aufgaben"
+   }
+  },
+  "S2.I1.i4.p1.1": {
+   "note": "takeaway's 'it' had no referent; zh takeaway lacked an object; de 'handelsüblich' means commercially sold, not off-the-shelf",
+   "en": {
+    "takeaway": "Chain-of-thought examples in few-shot prompts readily elicit such reasoning in large models",
+    "topic": "Chain-of-thought examples"
+   },
+   "zh": {
+    "takeaway": "在少样本提示中加入思维链示例即可在大模型中引出推理"
+   },
+   "de": {
+    "sentences": {
+     "0": "Schließlich lässt sich Chain-of-Thought-Schlussfolgern in ausreichend großen, sofort verfügbaren Sprachmodellen ohne Weiteres hervorrufen, indem man einfach Gedankenketten-Sequenzen in die Beispiele des Few-Shot-Promptings aufnimmt."
+    },
+    "takeaway": "Chain-of-Thought-Beispiele in Few-Shot-Prompts rufen solches Schlussfolgern in großen Modellen ohne Weiteres hervor"
+   }
+  },
+  "S2.p4.1": {
+   "note": "de: commonsense reasoning term",
+   "de": {
+    "sentences": {
+     "0": "In empirischen Experimenten werden wir den Nutzen von Chain-of-Thought-Prompting für arithmetisches Schlussfolgern (⟦a19 Section 3⟧), Commonsense-Schlussfolgern (⟦a20 Section 4⟧) und symbolisches Schlussfolgern (⟦a21 Section 5⟧) beobachten."
+    },
+    "takeaway": "Experimente werden zeigen, dass Chain-of-Thought-Prompting arithmetischem, commonsense-basiertem und symbolischem Schlussfolgern nützt"
+   }
+  },
+  "S3.p1.1": {
+   "note": "zh topic not in takeaway",
+   "zh": {
+    "takeaway": "思维链提示配540B模型在算术推理上媲美微调模型"
+   }
+  },
+  "S3.SS1.p1.1": {
+   "de": {
+    "sentences": {
+     "0": "Wir untersuchen Chain-of-Thought-Prompting für verschiedene Sprachmodelle an mehreren Benchmarks."
+    },
+    "takeaway": "Chain-of-Thought-Prompting wird über Sprachmodelle und Benchmarks hinweg untersucht",
+    "reason": "Der Aufbau umfasst mehrere Modelle und mehrere Schlussfolgerungs-Benchmarks",
+    "topic": "Chain-of-Thought-Prompting"
+   },
+   "note": "de terminology (standard term used throughout)"
+  },
+  "S3.SS1.p2.1": {
+   "note": "reason added content (MAWPS as 'a common benchmark collection' is not in the unit); topics over budget",
+   "en": {
+    "reason": "SVAMP varies problem structure, ASDiv is diverse, and AQuA contains algebraic word problems",
+    "topic": "word problem benchmarks"
+   },
+   "zh": {
+    "reason": "SVAMP结构多变，ASDiv题目多样，AQuA为代数应用题",
+    "topic": "应用题基准"
+   },
+   "de": {
+    "reason": "SVAMP variiert die Aufgabenstruktur, ASDiv ist vielfältig und AQuA enthält algebraische Textaufgaben",
+    "topic": "Benchmarks für mathematische Textaufgaben"
+   }
+  },
+  "S3.SS1.p3.1": {
+   "note": "zh topic over budget",
+   "zh": {
+    "takeaway": "标准提示给出少样本问答对，模型直接作答",
+    "topic": "标准提示"
+   }
+  },
+  "S3.SS1.p4.1": {
+   "note": "zh 'evaluation split' as 评估划分; de doubled 'erfolgreich erfolgreiches' and garbled AQuA clause; de terminology; distinct topic",
+   "zh": {
+    "sentences": {
+     "2": "由于大多数数据集只有评估集，我们手动编写了一组八个带思维链的少样本示例用于提示，⟦a36 Figure 1⟧（右）展示了其中一个思维链示例，完整的示例集见附录⟦a37 Table 20⟧。"
+    },
+    "topic": "思维链"
+   },
+   "de": {
+    "sentences": {
+     "4": "Um zu untersuchen, ob Chain-of-Thought-Prompting in dieser Form über eine Reihe mathematischer Textaufgaben hinweg erfolgreich Schlussfolgern hervorrufen kann, verwendeten wir diesen einen Satz von acht Gedankenketten-Beispielen für alle Benchmarks außer AQuA, das Multiple-Choice-Fragen statt freier Antworten verwendet.",
+     "0": "Chain-of-Thought-Prompting."
+    },
+    "takeaway": "Chain-of-Thought-Prompting erweitert jedes Beispiel um eine Gedankenkette",
+    "topic": "Gedankenkette"
+   },
+   "en": {
+    "topic": "chain of thought",
+    "takeaway": "Each few-shot exemplar is augmented with a chain of thought for its answer"
+   }
+  },
+  "S3.SS1.p5.1": {
+   "note": "zh topic too generic; de terminology",
+   "zh": {
+    "topic": "五类语言模型"
+   },
+   "de": {
+    "sentences": {
+     "5": "Wir sampeln von den Modellen mittels gieriger Dekodierung (obwohl Folgearbeiten zeigen, dass Chain-of-Thought-Prompting durch die Mehrheitsentscheidung der finalen Antwort über viele gesampelte Generierungen verbessert werden kann ⟦a46 (Wang et al., 2022a)⟧)."
+    }
+   }
+  },
+  "S3.F4.cap": {
+   "note": "zh takeaway over budget; de terminology; distinct topic",
+   "zh": {
+    "takeaway": "挑战性数学问题上，思维链推理是随模型规模出现的涌现能力",
+    "topic": "模型规模"
+   },
+   "de": {
+    "sentences": {
+     "1": "Bemerkenswert ist, dass Chain-of-Thought-Schlussfolgern eine emergente Fähigkeit zunehmender Modellskalierung ist."
+    },
+    "takeaway": "Chain-of-Thought-Schlussfolgern ist eine emergente Fähigkeit zunehmender Modellskalierung bei anspruchsvollen mathematischen Problemen",
+    "topic": "Modellskalierung"
+   },
+   "en": {
+    "topic": "model scale"
+   }
+  },
+  "S3.SS2.p2.1": {
+   "note": "zh topic not verbatim; de reason had no verb",
+   "zh": {
+    "topic": "更复杂的问题"
+   },
+   "de": {
+    "reason": "Auf GSM8K hat sich die Leistung mehr als verdoppelt, während SingleOp mit einem Schritt negative oder sehr kleine Verbesserungen zeigte"
+   }
+  },
+  "S3.SS2.p3.1": {
+   "note": "en takeaway and topic over budget; zh 'compares favorably' rendered as 优于 (outperforms), but PaLM stays 2% below SOTA on AQuA and ASDiv",
+   "en": {
+    "takeaway": "Chain-of-thought prompting with GPT-3 175B and PaLM 540B rivals prior finetuned state-of-the-art models",
+    "topic": "finetuned state-of-the-art models"
+   },
+   "zh": {
+    "sentences": {
+     "0": "第三，通过GPT-3 175B和PaLM 540B进行的思维链提示与先前的最先进水平相比表现出色，后者通常是在带标注的训练数据集上微调任务专用模型。"
+    },
+    "takeaway": "GPT-3 175B和PaLM 540B的思维链提示可比肩先前微调的最先进模型",
+    "topic": "最先进模型"
+   },
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting mit GPT-3 175B und PaLM 540B hält mit dem bisherigen Stand der Technik mit"
+   }
+  },
+  "S3.SS2.p4.1": {
+   "note": "takeaways over budget in all three languages; de terminology",
+   "en": {
+    "takeaway": "Correct answers had sound chains of thought; 54% of wrong-answer chains had major errors"
+   },
+   "zh": {
+    "takeaway": "正确答案的思维链几乎都正确，错误答案中54%有重大错误"
+   },
+   "de": {
+    "takeaway": "Richtige Antworten hatten fast immer korrekte Gedankenketten, bei falschen wiesen 54% schwere Fehler auf",
+    "sentences": {
+     "3": "Die Zusammenfassung dieser Analyse ist, dass 46% der Gedankenketten bis auf kleinere Fehler (Rechnerfehler, Symbolzuordnungsfehler oder ein fehlender Schlussfolgerungsschritt) nahezu korrekt waren und dass die anderen 54% der Gedankenketten schwerwiegende Fehler im semantischen Verständnis oder in der Kohärenz aufwiesen (siehe ⟦a60 Section D.2⟧).",
+     "4": "Um einen kleinen Einblick zu geben, warum Skalierung die Fähigkeit zum Chain-of-Thought-Schlussfolgern verbessert, führten wir eine ähnliche Analyse der von PaLM 62B gemachten Fehler durch und untersuchten, ob diese Fehler durch Skalierung auf PaLM 540B behoben wurden."
+    }
+   }
+  },
+  "S3.SS3.p1.1": {
+   "note": "de wrong article (der Gedankenketten-Prompting); topic included a verb",
+   "de": {
+    "sentences": {
+     "0": "Der beobachtete Nutzen des Chain-of-Thought-Promptings wirft die natürliche Frage auf, ob dieselben Leistungsverbesserungen auch durch andere Arten des Promptings erzielt werden können."
+    },
+    "takeaway": "Ablationsstudie prüft drei Variationen des Chain-of-Thought-Promptings",
+    "topic": "Ablationsstudie"
+   }
+  },
+  "S3.SS3.p2.1": {
+   "note": "de topic a cut fragment; sentence 2 garbled and dropped 'in chain of thought'; de terminology",
+   "de": {
+    "sentences": {
+     "2": "⟦a63 Figure 5⟧ zeigt, dass Prompting mit nur der Gleichung bei GSM8K kaum hilft, was impliziert, dass die Semantik der GSM8K-Fragen zu anspruchsvoll ist, um sie ohne die natürlichsprachlichen Schlussfolgerungsschritte der Gedankenkette direkt in eine Gleichung zu übersetzen.",
+     "1": "Ein Grund dafür, warum Chain-of-Thought-Prompting hilfreich sein könnte, ist, dass es die mathematische Gleichung erzeugt, die ausgewertet werden soll, und daher testen wir eine Variation, bei der das Modell angewiesen wird, vor der Antwort nur eine mathematische Gleichung auszugeben."
+    },
+    "takeaway": "Nur-Gleichung-Prompting hilft bei GSM8K kaum",
+    "topic": "Nur-Gleichung-Prompting",
+    "reason": "Die Semantik der GSM8K-Fragen lässt sich ohne natürlichsprachige Schlussfolgerungsschritte kaum in eine Gleichung übersetzen"
+   }
+  },
+  "S3.SS3.p3.1": {
+   "note": "de: reasoning term (Gedankenketten-Argumentation); de terminology",
+   "de": {
+    "sentences": {
+     "2": "Um den Effekt variabler Berechnung vom Chain-of-Thought-Schlussfolgern zu isolieren, testen wir eine Konfiguration, bei der das Modell angewiesen wird, nur eine Folge von Punkten (⟦a67 $\\ldots$⟧) auszugeben, deren Anzahl der Anzahl der Zeichen in der zur Lösung des Problems erforderlichen Gleichung entspricht.",
+     "3": "Diese Variante schneidet etwa so ab wie die Baseline, was darauf hindeutet, dass variabler Rechenaufwand allein nicht der Grund für den Erfolg des Chain-of-Thought-Promptings ist und dass ein Nutzen darin zu liegen scheint, Zwischenschritte in natürlicher Sprache auszudrücken."
+    }
+   }
+  },
+  "S3.SS3.p4.1": {
+   "note": "zh topic not in takeaway; de reasoning term; de terminology",
+   "zh": {
+    "topic": "答案后思维链"
+   },
+   "de": {
+    "sentences": {
+     "3": "Diese Variante schneidet etwa so ab wie die Baseline, was darauf hindeutet, dass das in der Gedankenkette verkörperte sequenzielle Schlussfolgern aus Gründen nützlich ist, die über die bloße Aktivierung von Wissen hinausgehen.",
+     "1": "Ein weiterer potenzieller Nutzen des Chain-of-Thought-Promptings könnte einfach darin bestehen, dass solche Prompts dem Modell einen besseren Zugriff auf während des Vortrainings erworbenes relevantes Wissen ermöglichen."
+    },
+    "reason": "Das in der Gedankenkette verkörperte sequenzielle Schlussfolgern ist über die bloße Aktivierung vortrainierten Wissens hinaus nützlich"
+   }
+  },
+  "S3.F6.cap": {
+   "note": "zh subject is the prompting method; de terminology",
+   "zh": {
+    "takeaway": "思维链提示因示例而异，但优于标准提示"
+   },
+   "de": {
+    "sentences": {
+     "0": "Chain-of-Thought-Prompting weist für verschiedene Prompt-Beispiele Varianz auf (wie erwartet), übertrifft jedoch das Standard-Prompting sowohl für verschiedene Annotatoren als auch für verschiedene Beispiele."
+    },
+    "takeaway": "Chain-of-Thought-Prompting variiert je nach Prompt-Beispielen, übertrifft aber Standard-Prompting",
+    "reason": "Der Vorteil hält über verschiedene Annotatoren sowie verschiedene Beispiele hinweg"
+   }
+  },
+  "S3.SS4.p1.1": {
+   "zh": {
+    "sentences": {
+     "0": "对示例的敏感性是提示方法的一个关键考量，例如改变少样本示例的排列会使GPT-3在SST-2上的准确率从接近随机水平（54.3%）波动到接近当前最优水平（93.4%）⟦a68 (Zhao et al., 2021)⟧。",
+     "2": "除上述使用标注者A撰写的思维链的结果外，本文另外两位合著者（标注者B和C）为同一组少样本示例独立撰写了思维链（见⟦a69 Appendix H⟧）。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)",
+   "de": {
+    "reason": "Prompt-Empfindlichkeit ist ein bekanntes Problem, daher variieren die Autoren, wer die Schlussfolgerungsketten in den Beispielen schreibt"
+   }
+  },
+  "S3.SS4.p2.1": {
+   "zh": {
+    "sentences": {
+     "1": "尽管不同思维链标注之间存在差异，这在使用基于示例的提示时是意料之中的⟦a75 (Le Scao and Rush, 2021; Reynolds and McDonell, 2021; Zhao et al., 2021)⟧，但所有思维链提示集都大幅优于标准基线。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)",
+   "de": {
+    "sentences": {
+     "1": "Obwohl es Varianz zwischen verschiedenen Gedankenketten-Annotationen gibt, wie bei beispielbasiertem Prompting zu erwarten ist ⟦a75 (Le Scao and Rush, 2021; Reynolds and McDonell, 2021; Zhao et al., 2021)⟧, übertreffen alle Mengen von Gedankenketten-Prompts die Standard-Baseline deutlich."
+    },
+    "takeaway": "Alle Gedankenketten-Prompts übertreffen die Standard-Baseline deutlich",
+    "topic": "Standard-Baseline"
+   }
+  },
+  "S3.SS4.p3.1": {
+   "note": "factual: three sets of eight exemplars, not eight; de reason ungrammatical; zh terminology",
+   "en": {
+    "takeaway": "Three random sets of eight GSM8K training exemplars also substantially outperform standard prompting",
+    "topic": "GSM8K training exemplars"
+   },
+   "zh": {
+    "takeaway": "从GSM8K训练集随机采样的三组示例也大幅优于标准提示",
+    "topic": "GSM8K训练集",
+    "sentences": {
+     "0": "为确认成功的思维链提示对其他示例集同样有效，我们还用三组各八个从GSM8K训练集中随机采样的示例进行了实验，这些示例来自独立来源（该数据集中的示例本身已包含类似思维链的推理步骤）。⟦a76⟧ ⟦a77 Figure 6⟧表明，这些提示的表现与我们手工撰写的示例相当，同样大幅优于标准提示。"
+    },
+    "reason": "这些独立来源的示例本身已含推理步骤，且与手工撰写的表现相当"
+   },
+   "de": {
+    "sentences": {
+     "0": "Um zu bestätigen, dass erfolgreiches Chain-of-Thought-Prompting auch mit anderen Beispielsätzen funktioniert, führen wir außerdem Experimente mit drei Sätzen von je acht Beispielen durch, die zufällig aus dem GSM8K-Trainingssatz gezogen wurden, einer unabhängigen Quelle (die Beispiele in diesem Datensatz enthielten bereits Schlussfolgerungsschritte wie eine Gedankenkette).⟦a76⟧ ⟦a77 Figure 6⟧ zeigt, dass diese Prompts vergleichbar mit unseren manuell geschriebenen Beispielen abschnitten und Standard-Prompting ebenfalls deutlich übertrafen."
+    },
+    "takeaway": "GSM8K-Trainingsbeispiele in drei Zufallssätzen übertreffen Standard-Prompting ebenfalls deutlich",
+    "topic": "GSM8K-Trainingsbeispiele",
+    "reason": "Diese Beispiele aus unabhängiger Quelle enthielten bereits Schlussfolgerungsschritte und schnitten vergleichbar mit den manuell geschriebenen ab"
+   }
+  },
+  "S3.SS4.p4.1": {
+   "zh": {
+    "sentences": {
+     "0": "除了对标注者、独立撰写的思维链、不同示例以及各种语言模型的鲁棒性之外，我们还发现用于算术推理的思维链提示对不同示例顺序和不同示例数量也具有鲁棒性（见⟦a78 Section A.2⟧）。"
+    },
+    "takeaway": "算术推理的思维链提示对示例顺序和数量鲁棒",
+    "reason": "这将鲁棒性发现扩展到标注者、思维链、示例和语言模型之外"
+   },
+   "note": "zh terminology (standard term used throughout)",
+   "de": {
+    "sentences": {
+     "0": "Neben der Robustheit gegenüber Annotatoren, unabhängig geschriebenen Gedankenketten, verschiedenen Beispielen und diversen Sprachmodellen stellen wir außerdem fest, dass Chain-of-Thought-Prompting für arithmetisches Schlussfolgern robust gegenüber verschiedenen Beispielreihenfolgen und variierender Anzahl von Beispielen ist (siehe ⟦a78 Section A.2⟧)."
+    },
+    "takeaway": "Chain-of-Thought-Prompting für arithmetisches Schlussfolgern ist robust gegenüber Beispielreihenfolgen und -anzahlen"
+   }
+  },
+  "S4.p1.1": {
+   "note": "de: 'Chain of Thought' left in English, commonsense reasoning term, wrong pronoun gender",
+   "de": {
+    "sentences": {
+     "0": "Obwohl sich die Gedankenkette besonders für mathematische Textaufgaben eignet, macht ihre sprachbasierte Natur sie tatsächlich auf eine breite Klasse von Problemen des Commonsense-Schlussfolgerns anwendbar, die das Schlussfolgern über physische und menschliche Interaktionen unter der Annahme allgemeinen Hintergrundwissens beinhalten.",
+     "1": "Commonsense-Schlussfolgern ist entscheidend für die Interaktion mit der Welt und liegt weiterhin außerhalb der Reichweite aktueller Systeme des natürlichen Sprachverständnisses ⟦a79 (Talmor et al., 2021)⟧."
+    },
+    "takeaway": "Die Gedankenkette eignet sich breit für Commonsense-Schlussfolgern, nicht nur für mathematische Textaufgaben",
+    "reason": "Ihre sprachbasierte Natur eignet sich für das Schlussfolgern über physische und menschliche Interaktionen mit allgemeinem Hintergrundwissen, was aktuelle Systeme noch nicht beherrschen",
+    "topic": "Commonsense-Schlussfolgern"
+   }
+  },
+  "S4.p2.1": {
+   "note": "de sentence 4 ungrammatical ('ein satzbezogener Sportaussage'); commonsense term; zh 注释 -> 标注",
+   "zh": {
+    "sentences": {
+     "6": "⟦a84 Figure 3⟧展示了所有数据集中带有思维链标注的示例。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir betrachten fünf Datensätze, die vielfältige Arten des Commonsense-Schlussfolgerns abdecken.",
+     "2": "Das populäre CSQA ⟦a80 (Talmor et al., 2019)⟧ stellt Commonsense-Fragen über die Welt, die komplexe Semantik betreffen und oft Vorwissen erfordern.",
+     "4": "Wir wählen zwei spezialisierte Evaluationsdatensätze aus der BIG-bench-Initiative ⟦a82 (BIG-bench collaboration, 2021)⟧: Date Understanding, bei dem ein Datum aus einem gegebenen Kontext abgeleitet werden muss, und Sports Understanding, bei dem zu bestimmen ist, ob ein auf Sport bezogener Satz plausibel oder unplausibel ist."
+    },
+    "takeaway": "Fünf Datensätze decken vielfältige Arten des Commonsense-Schlussfolgerns ab: CSQA, StrategyQA, Date Understanding, Sports Understanding, SayCan",
+    "topic": "Arten des Commonsense-Schlussfolgerns"
+   }
+  },
+  "S4.p3.1": {
+   "note": "zh topic over budget; de topic not verbatim; de sentence 3 repeats 'Beispiele als Beispiele'; zh terminology",
+   "zh": {
+    "takeaway": "为全部五个数据集构建了带手写思维链的少样本示例",
+    "topic": "手写思维链",
+    "sentences": {
+     "2": "对于CSQA和StrategyQA，我们从训练集中随机选择示例，并手动为它们编写思维链，用作少样本示例。",
+     "3": "两个BIG-bench任务没有训练集，因此我们选择评估集中的前十个示例作为少样本示例，并在评估集的其余部分上报告数值。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "3": "Die beiden BIG-bench-Aufgaben haben keine Trainingssätze, daher wählten wir die ersten zehn Beispiele des Evaluationssatzes als Few-Shot-Beispiele aus und berichten Zahlen für den Rest des Evaluationssatzes."
+    },
+    "takeaway": "Manuell verfasste Gedankenketten ergänzen die Few-Shot-Beispiele aller fünf Datensätze",
+    "topic": "Manuell verfasste Gedankenketten"
+   }
+  },
+  "S4.p4.1": {
+   "note": "de: commonsense term",
+   "de": {
+    "sentences": {
+     "4": "Diese Ergebnisse zeigen, dass Chain-of-Thought-Prompting auch die Leistung bei Aufgaben verbessern kann, die eine Reihe von Fähigkeiten zum Commonsense-Schlussfolgern erfordern (wobei zu beachten ist, dass der Zugewinn bei CSQA minimal war)."
+    },
+    "takeaway": "Chain-of-Thought-Prompting übertraf Standard-Prompting bei allen Commonsense-Aufgaben, am größten bei PaLM 540B",
+    "topic": "Commonsense-Aufgaben"
+   }
+  },
+  "S4.F7.cap": {
+   "note": "de: commonsense term",
+   "de": {
+    "sentences": {
+     "0": "Chain-of-Thought-Prompting verbessert auch die Fähigkeiten von Sprachmodellen zum Commonsense-Schlussfolgern."
+    },
+    "takeaway": "Chain-of-Thought-Prompting verbessert die Commonsense-Fähigkeiten von Sprachmodellen, gezeigt für PaLM",
+    "topic": "Commonsense-Fähigkeiten"
+   }
+  },
+  "S5.p1.1": {
+   "note": "zh topic not distinct; de terminology",
+   "zh": {
+    "topic": "符号推理"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir zeigen, dass Chain-of-Thought-Prompting Sprachmodelle nicht nur in die Lage versetzt, symbolische Schlussfolgerungsaufgaben zu bearbeiten, die in der Standard-Prompting-Einstellung herausfordernd sind, sondern auch die Längengeneralisierung auf Inferenzzeit-Eingaben begünstigt, die länger sind als die in den Few-Shot-Beispielen gesehenen."
+    },
+    "reason": "Es lässt Sprachmodelle symbolische Aufgaben lösen, die Standard-Prompting nicht bewältigt, und über die Few-Shot-Beispiele hinaus auf längere Inferenzzeit-Eingaben generalisieren"
+   }
+  },
+  "S5.SS0.SSS0.Px1.p2.1": {
+   "note": "en reason over budget and 'two-step names' should be two-word names; de terminology",
+   "en": {
+    "reason": "Exemplars use two-word names and fewer flips, while OOD examples use three- or four-word names or more flips"
+   },
+   "zh": {
+    "reason": "示例使用两词姓名和较少抛掷，域外评估使用3到4词姓名或更多抛掷"
+   },
+   "de": {
+    "reason": "Beispiele haben Namen aus zwei Wörtern und wenige Würfe, OOD-Beispiele Namen aus drei oder vier Wörtern oder mehr Würfe",
+    "sentences": {
+     "0": "Da die Konstruktion dieser Aufgaben zum symbolischen Schlussfolgern wohldefiniert ist, betrachten wir für jede Aufgabe einen In-Domain-Testsatz, dessen Beispiele dieselbe Anzahl von Schritten wie die Trainings- bzw. Few-Shot-Beispiele hatten, sowie einen Out-of-Domain-Testsatz (OOD), dessen Evaluationsbeispiele mehr Schritte als die Beispiele hatten.",
+     "1": "Bei der Verkettung der letzten Buchstaben sieht das Modell nur Beispiele von Namen mit zwei Wörtern und führt dann die Verkettung der letzten Buchstaben bei Namen mit 3 und 4 Wörtern durch.⟦a95⟧ Dasselbe machen wir für die Anzahl möglicher Würfe in der Münzwurfaufgabe.",
+     "3": "Wir erstellen erneut manuell Gedankenketten für die Few-Shot-Beispiele jeder Aufgabe, die in ⟦a96 Figure 3⟧ angegeben sind."
+    }
+   }
+  },
+  "S5.SS0.SSS0.Px2.p1.1": {
+   "note": "zh topic a fragment; de 'Coin Flip' untranslated, informal 'beachte'; de terminology",
+   "zh": {
+    "topic": "域内求解率"
+   },
+   "de": {
+    "sentences": {
+     "1": "Mit PaLM 540B führt Chain-of-Thought-Prompting zu Lösungsraten von nahezu 100% (wobei Standard-Prompting die Münzwurfaufgabe mit PaLM 540 bereits löst, mit LaMDA 137B jedoch nicht).",
+     "2": "Zu beachten ist, dass diese In-Domain-Evaluierungen insofern „Spielzeugaufgaben“ sind, als perfekte Lösungsstrukturen bereits durch die Gedankenketten in den Few-Shot-Beispielen vorgegeben sind; das Modell muss lediglich dieselben Schritte mit den neuen Symbolen im Testbeispiel wiederholen."
+    },
+    "reason": "Dies sind Spielzeugaufgaben, deren Lösungsstruktur aus den Beispielen kopiert wird, doch kleine Modelle scheitern bis 100B Parameter"
+   }
+  },
+  "S5.SS0.SSS0.Px2.p2.1": {
+   "note": "zh topic too generic; de 'Chain of Thought' untranslated, awkward 'OOD-symbolische'",
+   "zh": {
+    "topic": "上升曲线"
+   },
+   "de": {
+    "takeaway": "Symbolische OOD-Aufgaben zeigen mit Chain-of-Thought-Prompting aufwärts skalierende Kurven",
+    "reason": "Standard-Prompting scheitert bei beiden OOD-Aufgaben, daher ermöglicht die Gedankenkette ausreichend großen Modellen eine Längengeneralisierung über gesehene Ketten hinaus"
+   }
+  },
+  "S6.p1.1": {
+   "note": "en/zh 'via off-the-shelf prompting' unclear; de commonsense term; zh terminology",
+   "en": {
+    "takeaway": "Chain-of-thought prompting of off-the-shelf models improves arithmetic, commonsense and symbolic reasoning"
+   },
+   "zh": {
+    "takeaway": "思维链提示仅靠提示现成模型即可提升算术、常识与符号推理",
+    "sentences": {
+     "1": "我们首先看到，思维链提示在算术推理上大幅提升了性能，其提升远强于消融实验，且对不同标注者、示例和大语言模型都具有鲁棒性（⟦a99 Section 3⟧）。"
+    },
+    "reason": "提升远强于消融实验，且对不同标注者、示例和大语言模型鲁棒，无需微调"
+   },
+   "de": {
+    "sentences": {
+     "2": "Anschließend haben Experimente zum Commonsense-Schlussfolgern unterstrichen, dass die sprachliche Natur des Chain-of-Thought-Schlussfolgerns es allgemein anwendbar macht (⟦a100 Section 4⟧)."
+    },
+    "takeaway": "Chain-of-Thought-Prompting verbessert arithmetisches, commonsense-basiertes und symbolisches Schlussfolgern durch Prompting gebrauchsfertiger Modelle"
+   }
+  },
+  "S6.p2.1": {
+   "note": "reason implied flat curves themselves make standard prompting a lower bound; the bound comes from chain of thought scaling where standard prompting is flat",
+   "en": {
+    "reason": "Where standard prompting has flat scaling curves, chain of thought scales steeply, so standard prompting only lower-bounds capabilities"
+   },
+   "zh": {
+    "reason": "在标准提示缩放曲线平坦之处，思维链提示急剧上升，故标准提示只给出能力下界"
+   },
+   "de": {
+    "reason": "Wo Standard-Prompting flache Skalierungskurven hat, steigen sie mit Chain-of-Thought-Prompting steil an, Standard-Prompting liefert also nur eine untere Schranke"
+   }
+  },
+  "S6.p3.1": {
+   "note": "takeaway misstated limitations ('costly to annotate' is only for finetuning; omitted the 'is it really reasoning' caveat); de typo 'schussfolgert', non-word 'prohibit'",
+   "en": {
+    "takeaway": "Chain of thought may not be genuine reasoning and has no guarantee of correctness",
+    "reason": "Annotation could be prohibitive for finetuning, and emergence only at large scales makes serving costly"
+   },
+   "zh": {
+    "takeaway": "思维链未必是真正的推理，且无法保证正确",
+    "reason": "用于微调时标注成本可能过高，且仅在大模型上涌现，导致服务成本高昂"
+   },
+   "de": {
+    "sentences": {
+     "0": "Was die Einschränkungen betrifft, so halten wir zunächst fest, dass die Gedankenkette zwar die Denkprozesse menschlicher Schlussfolgernder nachahmt, dies aber nicht die Frage beantwortet, ob das neuronale Netz tatsächlich „schlussfolgert“, was wir als offene Frage belassen.",
+     "1": "Zweitens sind die Kosten für die manuelle Erweiterung von Beispielen um Gedankenketten im Few-Shot-Szenario zwar minimal, doch solche Annotationskosten könnten für die Feinabstimmung unerschwinglich sein (obwohl dies möglicherweise durch synthetische Datengenerierung oder Zero-Shot-Generalisierung überwunden werden könnte)."
+    },
+    "takeaway": "Die Gedankenkette ist nicht unbedingt echtes Schlussfolgern und garantiert keine Korrektheit",
+    "reason": "Für die Feinabstimmung könnten Annotationskosten unerschwinglich sein, und die Entstehung erst bei großen Modellen macht den Einsatz teuer"
+   }
+  },
+  "S7.p1.1": {
+   "note": "en takeaway ungrammatical (missing verb)",
+   "en": {
+    "takeaway": "Appendix C covers extended related work; this section describes the two most relevant directions"
+   }
+  },
+  "S7.p2.1": {
+   "note": "de: 'Mathematikaufgaben in Textform' for math word problems; reason repeated 'begründeten ... Begründungen'",
+   "de": {
+    "sentences": {
+     "1": "⟦a105 Ling et al. (2017)⟧ begründen die Idee, natürlichsprachliche Begründungen zu nutzen, um mathematische Textaufgaben über eine Reihe von Zwischenschritten zu lösen."
+    },
+    "reason": "Ling et al. führten natürlichsprachliche Begründungen ein, Cobbe et al. skalierten sie per Finetuning, und Nye et al. sagten Zwischenberechnungsergebnisse vorher"
+   }
+  },
+  "S7.p3.1": {
+   "note": "reason added 'unexplored' (the source only calls output augmentation orthogonal); en takeaway over budget",
+   "en": {
+    "takeaway": "Prior prompting methods augment inputs; this work augments outputs with a chain of thought",
+    "reason": "Learned prompts and task instructions modify the input side, while augmenting outputs is an orthogonal direction",
+    "topic": "Prior prompting methods"
+   },
+   "zh": {
+    "reason": "学习提示与任务指令等修改的是输入侧，而增强输出是与之正交的方向",
+    "topic": "已有提示工作"
+   },
+   "de": {
+    "sentences": {
+     "1": "Seit der Popularisierung des Few-Shot-Promptings durch ⟦a110 Brown et al. (2020)⟧ haben mehrere allgemeine Ansätze die Prompting-Fähigkeit von Modellen verbessert, etwa das automatische Erlernen von Prompts ⟦a111 (Lester et al., 2021)⟧ oder das Geben von Anweisungen an Modelle, die eine Aufgabe beschreiben ⟦a112 (Wei et al., 2022a; Sanh et al., 2022; Ouyang et al., 2022)⟧."
+    },
+    "reason": "Gelernte Prompts und Aufgabenanweisungen ändern die Eingabeseite, während die Erweiterung der Ausgaben eine orthogonale Richtung ist"
+   }
+  },
+  "S8.p1.1": {
+   "note": "reason was wrong: this is the conclusion, no experiments 'follow'; it now states the unit's finding (emergence with scale)",
+   "en": {
+    "reason": "Chain-of-thought reasoning emerges with model scale, letting large models solve reasoning tasks that otherwise have flat scaling curves"
+   },
+   "zh": {
+    "reason": "思维链推理随模型规模涌现，使足够大的模型能完成原本缩放曲线平坦的推理任务"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir haben Chain-of-Thought-Prompting als eine einfache und breit anwendbare Methode zur Verbesserung des Schlussfolgerns in Sprachmodellen untersucht.",
+     "1": "Durch Experimente zum arithmetischen, symbolischen und Commonsense-Schlussfolgern stellen wir fest, dass Chain-of-Thought-Schlussfolgern eine emergente Eigenschaft der Modellskalierung ist, die ausreichend große Sprachmodelle in die Lage versetzt, Schlussfolgerungsaufgaben zu bearbeiten, die andernfalls flache Skalierungskurven aufweisen.",
+     "2": "Die Erweiterung des Spektrums an Schlussfolgerungsaufgaben, die Sprachmodelle bearbeiten können, wird hoffentlich weitere Arbeiten zu sprachbasierten Ansätzen für das Schlussfolgern anregen."
+    },
+    "takeaway": "Chain-of-Thought-Prompting ist eine einfache, breit anwendbare Methode, um das Schlussfolgern von Sprachmodellen zu verbessern",
+    "reason": "Chain-of-Thought-Schlussfolgern entsteht mit der Modellgröße und lässt große Modelle Schlussfolgerungsaufgaben mit sonst flachen Skalierungskurven lösen"
+   }
+  },
+  "Sx2.I1.i1.p1.1": {
+   "note": "takeaway invented content and typo 'NeurlPS'; the unit only heads the block of questions for all authors; English reason was a stray quote mark",
+   "en": {
+    "takeaway": "The first checklist block addresses all authors",
+    "topic": "all authors",
+    "reason": ""
+   },
+   "zh": {
+    "takeaway": "清单第一部分面向所有作者",
+    "topic": "所有作者"
+   },
+   "de": {
+    "takeaway": "Der erste Checklistenblock richtet sich an alle Autoren",
+    "topic": "alle Autoren"
+   }
+  },
+  "Sx2.I1.i1.I1.i1.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i1.I1.i2.p1.1": {
+   "note": "topic named a section number instead of the subject; English reason was a stray quote mark",
+   "en": {
+    "topic": "Limitations",
+    "reason": ""
+   },
+   "zh": {
+    "topic": "局限性"
+   },
+   "de": {
+    "topic": "Grenzen"
+   }
+  },
+  "Sx2.I1.i1.I1.i3.p1.1": {
+   "note": "en/zh topic was an adjective; zh/de mistranslated 'in a factual manner' (as factual statements)",
+   "en": {
+    "topic": "chain of thought"
+   },
+   "zh": {
+    "sentences": {
+     "2": "然而有一点需要考虑，即生成的思维链并非总是符合事实，这一点在 ⟦a115 Section D.1⟧ 中作为局限性指出（并请注意，我们不建议将此类思维链当作事实来使用，也不建议在任何现实场景中使用）。"
+    },
+    "topic": "思维链"
+   },
+   "de": {
+    "sentences": {
+     "2": "Eine Überlegung ist jedoch, dass die generierte Gedankenkette nicht immer faktentreu ist, was in ⟦a115 Section D.1⟧ als Einschränkung vermerkt ist (und beachten Sie, dass wir nicht vorschlagen, solche Gedankenketten als Tatsachenaussagen oder in irgendeinem realen Szenario zu verwenden)."
+    }
+   }
+  },
+  "Sx2.I1.i1.I1.i4.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i2.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i2.I1.i1.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i2.I1.i2.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i3.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i3.I1.i1.p1.1": {
+   "note": "overstated: the authors supplied inputs, outputs and targets, not code; reason wrongly said proprietary models limit reproducibility (the unit says GPT-3 results are fully reproducible despite them)",
+   "en": {
+    "takeaway": "Inputs, outputs, and targets are included, and GPT-3 results are fully reproducible",
+    "reason": "They cover LaMDA and GPT-3, and Section E.1 discusses reproducibility further"
+   },
+   "zh": {
+    "takeaway": "已附输入、输出和目标，GPT-3 结果可完全复现",
+    "reason": "材料涵盖 LaMDA 和 GPT-3，E.1 节进一步讨论可复现性"
+   },
+   "de": {
+    "takeaway": "Eingaben, Ausgaben und Ziele sind beigefügt, und die GPT-3-Ergebnisse sind vollständig reproduzierbar",
+    "reason": "Sie umfassen LaMDA und GPT-3, und Abschnitt E.1 erörtert die Reproduzierbarkeit weiter"
+   }
+  },
+  "Sx2.I1.i3.I1.i2.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i3.I1.i3.p1.1": {
+   "note": "zh takeaway garbled",
+   "zh": {
+    "takeaway": "以多个随机种子的标准差作为误差棒报告"
+   }
+  },
+  "Sx2.I1.i3.I1.i4.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i4.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i4.I1.i1.p1.1": {
+   "note": "takeaway said creators are cited; the unit says the anonymized models will be cited in the camera-ready version; topics not verbatim",
+   "en": {
+    "takeaway": "Two anonymized models will be cited in the camera-ready version",
+    "reason": "The models were anonymized on the recommendation of the NeurIPS chairs",
+    "topic": "camera-ready version"
+   },
+   "zh": {
+    "takeaway": "两个匿名化模型将在最终版本中被引用",
+    "reason": "这两个模型按 NeurIPS 主席的建议进行了匿名化"
+   },
+   "de": {
+    "takeaway": "Die druckfertige Version wird zwei anonymisierte Modelle zitieren",
+    "reason": "Die Modelle wurden auf Empfehlung der NeurIPS-Vorsitzenden anonymisiert",
+    "topic": "druckfertige Version"
+   }
+  },
+  "Sx2.I1.i4.I1.i2.p1.1": {
+   "note": "topic named a section number; English reason was a stray quote mark",
+   "en": {
+    "topic": "Asset licenses",
+    "reason": ""
+   },
+   "zh": {
+    "topic": "资产许可证"
+   },
+   "de": {
+    "topic": "Lizenzen der Ressourcen"
+   }
+  },
+  "Sx2.I1.i4.I1.i3.p1.1": {
+   "note": "topic not the subject; zh coin flip named 抛硬币 everywhere else; de left dataset names untranslated; English reason was a stray quote mark",
+   "en": {
+    "topic": "New assets",
+    "reason": ""
+   },
+   "zh": {
+    "sentences": {
+     "1": "[是] 抛硬币和末字母拼接数据集是仅有的新资产，它们在补充材料中给出。"
+    },
+    "takeaway": "新资产为抛硬币与末字母拼接数据集",
+    "topic": "新资产"
+   },
+   "de": {
+    "sentences": {
+     "1": "[Yes] Die Datensätze zum Münzwurf und zur Verkettung der letzten Buchstaben sind die einzigen neuen Ressourcen und im Zusatzmaterial enthalten."
+    },
+    "takeaway": "Neue Ressourcen sind die Datensätze zum Münzwurf und zur Verkettung der letzten Buchstaben, im Zusatzmaterial enthalten",
+    "topic": "Neue Ressourcen"
+   }
+  },
+  "Sx2.I1.i4.I1.i4.p1.1": {
+   "note": "English reason was a stray quote mark; distinct topic",
+   "en": {
+    "reason": "",
+    "topic": "Consent"
+   },
+   "zh": {
+    "topic": "知情同意",
+    "takeaway": "未收集人类数据，知情同意不适用"
+   },
+   "de": {
+    "topic": "Einwilligung"
+   }
+  },
+  "Sx2.I1.i4.I1.i5.p1.1": {
+   "note": "English reason was a stray quote mark; distinct topic",
+   "en": {
+    "reason": "",
+    "topic": "Personally identifiable information"
+   },
+   "zh": {
+    "topic": "可识别信息"
+   },
+   "de": {
+    "topic": "Personenbezogene Informationen"
+   }
+  },
+  "Sx2.I1.i5.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i5.I1.i1.p1.1": {
+   "note": "English reason was a stray quote mark; distinct topic",
+   "en": {
+    "reason": ""
+   },
+   "de": {
+    "topic": "Anweisungen"
+   }
+  },
+  "Sx2.I1.i5.I1.i2.p1.1": {
+   "note": "English reason was a stray quote mark",
+   "en": {
+    "reason": ""
+   }
+  },
+  "Sx2.I1.i5.I1.i3.p1.1": {
+   "note": "English reason was a stray quote mark; distinct topic",
+   "en": {
+    "reason": ""
+   },
+   "de": {
+    "topic": "Löhne und Entschädigung"
+   }
+  },
+  "A1.SS1.p1.1": {
+   "note": "topic 'small models' did not name the unit's subject (emergence); de 'Chain of Thought' untranslated; de terminology",
+   "en": {
+    "topic": "Chain-of-thought success"
+   },
+   "zh": {
+    "topic": "涌现性"
+   },
+   "de": {
+    "sentences": {
+     "1": "Eine Vergrößerung von Sprachmodellen bringt nachweislich Vorteile wie verbesserte Leistung und Stichprobeneffizienz ⟦a121 (Kaplan et al., 2020)⟧, doch Chain-of-Thought-Schlussfolgern ist insofern emergent, als sein Erfolg nicht allein durch Extrapolation der Leistung kleiner Modelle vorhergesagt werden kann, da die Gedankenkette die Leistung der meisten Modelle mit weniger als 10B Parametern sogar verschlechtert.",
+     "0": "Der Befund, dass erfolgreiches Chain-of-Thought-Schlussfolgern vorhersehbar erst bei bestimmten Modellmaßstäben entsteht, ist faszinierend."
+    },
+    "takeaway": "Der Erfolg der Gedankenkette ist emergent und aus kleinen Modellen nicht vorhersagbar",
+    "reason": "Die Gedankenkette verschlechtert die Leistung der meisten Modelle unter 10B Parametern, daher scheitert die Extrapolation von kleinen Modellen aus",
+    "topic": "Erfolg der Gedankenkette"
+   }
+  },
+  "A1.SS1.p2.1": {
+   "note": "en '45 manual errors' misreads '45 errors, read manually'",
+   "en": {
+    "takeaway": "A manual error analysis categorized 45 errors made by PaLM 62B",
+    "topic": "error analysis"
+   },
+   "de": {
+    "sentences": {
+     "2": "Die Kategorie „Sonstige“ umfasste Halluzinationen, repetitive Ausgaben und Symbolzuordnungsfehler."
+    }
+   }
+  },
+  "A1.SS1.p3.1": {
+   "note": "en takeaway dropped 'a substantial portion'; zh rendered it as 大部分 (most); zh topic not verbatim",
+   "en": {
+    "takeaway": "Scaling PaLM to 540B fixed a substantial portion of errors in all three categories"
+   },
+   "zh": {
+    "sentences": {
+     "0": "如⟦a123 Figure 9⟧所示，将PaLM扩展到540B参数后，三个类别中相当一部分错误都得到了修正。"
+    },
+    "takeaway": "PaLM扩展到540B修正了三类错误中的相当一部分",
+    "topic": "PaLM扩展到540B"
+   },
+   "de": {
+    "takeaway": "Die Skalierung von PaLM auf 540B behob einen beträchtlichen Teil der Fehler in allen drei Kategorien"
+   }
+  },
+  "A1.F9.cap": {
+   "note": "zh 大部分 (most) for 'a substantial portion'; topics too generic; distinct topic",
+   "en": {
+    "takeaway": "Scaling PaLM to 540B fixed a substantial portion of PaLM 62B errors",
+    "topic": "PaLM 62B errors"
+   },
+   "zh": {
+    "sentences": {
+     "3": "将PaLM扩展到540B修正了各类别中相当一部分错误。"
+    },
+    "takeaway": "扩展到540B可修正相当一部分PaLM 62B的错误",
+    "topic": "PaLM 62B的错误"
+   },
+   "de": {
+    "sentences": {
+     "2": "Die Kategorie „Sonstige“ umfasst Halluzinationen, repetitive Ausgaben und Symbolzuordnungsfehler."
+    },
+    "topic": "Fehler von PaLM 62B",
+    "takeaway": "Die Skalierung von PaLM auf 540B behob einen beträchtlichen Teil der Fehler von PaLM 62B"
+   }
+  },
+  "A1.SS1.p4.1": {
+   "note": "zh topic not verbatim; de 'analysierbar' for parseable; de terminology",
+   "zh": {
+    "topic": "小型语言模型"
+   },
+   "de": {
+    "sentences": {
+     "4": "Schließlich beobachteten wir qualitativ, dass kleine Sprachmodelle oft keine auswertbare endgültige Antwort erzeugten, sei es aufgrund von Wiederholungen oder aufgrund von Logik, die nie zu einer endgültigen Antwort gelangte.",
+     "2": "Wie in ⟦a125 Section 5⟧ gezeigt, scheiterten kleine Sprachmodelle selbst bei symbolischen Schlussfolgerungsaufgaben, die nur eine Generalisierung auf neue Beispiele mit derselben in den Few-Shot-Beispielen vorgegebenen logischen Struktur der Gedankenkette erfordern."
+    },
+    "reason": "Die Generalisierung symbolischen Schlussfolgerns scheiterte weiterhin, Arithmetik erfordert ausreichenden Maßstab, und Ausgaben hatten Wiederholungen oder keine auswertbare Antwort"
+   }
+  },
+  "A1.SS1.p5.1": {
+   "note": "de 'Chain of Thought' untranslated",
+   "de": {
+    "takeaway": "Der Skalierungserfolg der Gedankenkette umfasst wahrscheinlich eine Vielzahl emergenter Fähigkeiten",
+    "sentences": {
+     "0": "Zusammenfassend ist der Erfolg des Chain-of-Thought-Schlussfolgerns infolge des Modellmaßstabs ein kompliziertes Phänomen, das wahrscheinlich eine Vielzahl emergenter Fähigkeiten umfasst (semantisches Verständnis, Symbolzuordnung, beim Thema bleiben, arithmetische Fähigkeit, Treue usw.)."
+    }
+   }
+  },
+  "A1.F10.cap": {
+   "note": "zh topic not verbatim; distinct topic",
+   "zh": {
+    "takeaway": "PaLM扩展到540B后，62B时的语义和缺步错误得到修正"
+   },
+   "en": {
+    "topic": "missing-step errors"
+   },
+   "de": {
+    "topic": "Fehler durch fehlende Schritte"
+   }
+  },
+  "A1.SS2.p1.1": {
+   "note": "topic not in takeaway (all languages); de 'Chain of Thought' untranslated; zh terminology",
+   "en": {
+    "takeaway": "Given known prompt sensitivity, robustness experiments test how sensitive chain of thought is"
+   },
+   "zh": {
+    "takeaway": "鉴于提示敏感性，鲁棒性实验检验思维链的敏感程度",
+    "sentences": {
+     "4": "为了分析思维链对提示工程的敏感程度，我们针对多种因素进行了鲁棒性实验。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "4": "Um zu analysieren, wie empfindlich die Gedankenkette auf Prompt-Engineering reagiert, führten wir Robustheitsexperimente bezüglich verschiedener Faktoren durch.",
+     "2": "Die allgemeine Vorgehensweise, mit der wir Chain-of-Thought-Annotationen erstellten, bestand darin, acht Beispiele aus dem Trainingsset zu nehmen und den Schlussfolgerungsprozess in mehrere Schritte zu zerlegen, die zur endgültigen Antwort führen."
+    },
+    "takeaway": "Angesichts bekannter Prompt-Empfindlichkeit prüfen Robustheitsexperimente, wie empfindlich die Gedankenkette ist",
+    "reason": "Chain-of-Thought-Annotationen entstanden, indem acht Trainingsbeispiele in mehrstufiges Schlussfolgern zur endgültigen Antwort zerlegt wurden"
+   }
+  },
+  "A1.I1.i1.p1.1": {
+   "note": "zh topic not verbatim; de 'Chain of Thought'/'Chains' untranslated, sentence 4 garbled; zh terminology",
+   "zh": {
+    "takeaway": "三位不同标注者的思维链均大幅优于基线",
+    "sentences": {
+     "1": "我们首先分析对三位不同标注者的鲁棒性（⟦a130 Section 3.4⟧和⟦a131 Figure 6⟧）。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "2": "Obwohl die Leistung beachtlich variiert (was wir später diskutieren werden), schnitt die Gedankenkette für alle drei Annotatoren auf acht Datensätzen zum arithmetischen, commonsense-basierten und symbolischen Schlussfolgern deutlich besser ab als die Baseline (⟦a132 Table 6⟧ und ⟦a133 Table 7⟧).",
+     "4": "Daher wurden die Annotationen im jeweils eigenen sprachlichen „Gedankenketten“-Schreibstil der Annotatoren verfasst.",
+     "3": "Ähnlich wie beim Annotationsprozess in ⟦a134 Cobbe et al. (2021)⟧ erhielten die Annotatoren keine spezifischen Anweisungen zum Verfassen der Chain-of-Thought-Annotationen, außer den schrittweisen Schlussfolgerungsprozess aufzuschreiben, der zur endgültigen Antwort führte."
+    },
+    "takeaway": "Drei verschiedene Annotatoren: Die Gedankenkette übertrifft die Baseline deutlich",
+    "reason": "Die Annotatoren erhielten nur die Vorgabe, schrittweise zu schlussfolgern, sodass die Gedankenketten den jeweils eigenen Schreibstil widerspiegeln"
+   }
+  },
+  "A1.I1.i2.p1.1": {
+   "note": "topic not in takeaway (all languages); en missing article; de English 'Reasoning-Chains', 'Chain of Thought', 'Crowd-Compute-Arbeiter'",
+   "en": {
+    "takeaway": "Crowdworker-written GSM8K chains also beat the baseline on all four arithmetic datasets",
+    "topic": "Crowdworker-written GSM8K chains"
+   },
+   "zh": {
+    "topic": "众包GSM8K思维链"
+   },
+   "de": {
+    "sentences": {
+     "1": "Der GSM8K-Datensatz ⟦a135 (Cobbe et al., 2021)⟧ bietet praktischerweise ein Trainingsset mit Schlussfolgerungsketten, die von Crowdworkern geschrieben wurden, was es uns ermöglicht zu untersuchen, ob die Gedankenkette auch mit Schlussfolgerungsketten aus einer unabhängigen Quelle ohne Machine-Learning-Hintergrund funktioniert.",
+     "2": "Daher wählten wir zufällig drei Sets von jeweils acht Beispielen mit Gedankenketten aus GSM8K aus.",
+     "3": "Diese Chain-of-Thought-Annotationen übertrafen die Baseline ebenfalls deutlich für alle vier arithmetischen Datensätze (⟦a136 Table 6⟧), was darauf hindeutet, dass die Gedankenkette nicht von einem bestimmten Satz von Annotatoren abhängt."
+    },
+    "takeaway": "Von Crowdworkern verfasste GSM8K-Gedankenketten übertreffen die Baseline ebenfalls auf allen vier arithmetischen Datensätzen",
+    "reason": "Dies deutet darauf hin, dass die Gedankenkette nicht von einem bestimmten Satz von Annotatoren der ursprünglichen Prompting-Quelle abhängt",
+    "topic": "GSM8K-Gedankenketten"
+   }
+  },
+  "A1.I1.i3.p1.1": {
+   "note": "de topic not verbatim",
+   "de": {
+    "topic": "Verschiedene Beispielsets"
+   }
+  },
+  "A1.I1.i5.p1.1": {
+   "note": "en topic not verbatim; de reason ungrammatical",
+   "en": {
+    "takeaway": "Chain-of-thought gains generally held with a varying number of exemplars"
+   },
+   "de": {
+    "reason": "Vorläufige Experimente zeigten, dass Standard-Prompting auch mit 16 statt 8 Beispielen nicht mit Chain-of-Thought-Prompting gleichzog"
+   }
+  },
+  "A1.I1.i6.p1.1": {
+   "note": "topic not in takeaway; reason stated a cause the authors only propose to investigate; de 'Chain of Thought'",
+   "en": {
+    "takeaway": "Same prompts improve all three language models, except GPT-3 on CSQA and StrategyQA",
+    "reason": "Gains did not transfer perfectly across models, a limitation that future work could trace to pre-training data or architecture"
+   },
+   "zh": {
+    "takeaway": "相同提示提升全部三个语言模型，但GPT-3在CSQA和StrategyQA上除外",
+    "reason": "收益未能在模型间完美迁移，这是一项局限，未来可研究预训练数据与架构的影响"
+   },
+   "de": {
+    "sentences": {
+     "3": "Die Tatsache, dass sich die Gewinne durch die Gedankenkette nicht perfekt zwischen den Modellen übertrugen, ist eine Einschränkung; weitere Arbeiten könnten untersuchen, warum und wie unterschiedliche Vortrainingsdatensätze und Modellarchitekturen den Leistungsgewinn durch Chain-of-Thought-Prompting beeinflussen."
+    },
+    "takeaway": "Dieselben Prompts verbessern alle drei Sprachmodelle, außer GPT-3 bei CSQA und StrategyQA",
+    "reason": "Die Gewinne übertrugen sich nicht perfekt zwischen Modellen, eine Einschränkung, deren Ursachen in Vortrainingsdaten oder Architektur künftige Arbeiten klären könnten",
+    "topic": "Sprachmodelle"
+   }
+  },
+  "A1.SS2.p3.1": {
+   "note": "de 'Chain of Thought' untranslated",
+   "de": {
+    "sentences": {
+     "5": "In vorläufigen Experimenten versuchten wir, Sprachmodelle mithilfe von Gedankenketten dazu zu befähigen, die Reihenfolge einer Liste von 5 Elementen umzukehren.",
+     "6": "Während zwei Co-Autoren trotz ihrer besten Bemühungen keine Chain-of-Thought-Prompts schreiben konnten, die die Aufgabe lösten, konnte ein dritter Co-Autor eine Gedankenkette schreiben, die die Aufgabe perfekt löste."
+    }
+   }
+  },
+  "A1.SS2.p4.1": {
+   "note": "en topic over budget; de 'Chain-of-Thought-Ketten' (chain-of-thought chains)",
+   "en": {
+    "takeaway": "Robustly generating chain-of-thought annotations is future work",
+    "topic": "chain-of-thought annotations"
+   },
+   "de": {
+    "sentences": {
+     "1": "Eine Idee hierfür könnte zum Beispiel sein, ein großes Sprachmodell zu verwenden, um Gedankenketten durch Prompting automatisch zu generieren (und dies möglicherweise über einen Validierungssatz zu optimieren)."
+    }
+   }
+  },
+  "A1.SS3.p1.1": {
+   "note": "zh topic not verbatim and '曲线平时' misreads as 'usually'",
+   "zh": {
+    "takeaway": "任务难、模型大、缩放曲线平坦时，思维链提示帮助最大"
+   }
+  },
+  "A1.SS3.p2.1": {
+   "note": "en takeaway and reason over budget, and the authors hedge ('perhaps supported'); de takeaway over budget",
+   "en": {
+    "takeaway": "Arithmetic results perhaps support this: gains peak for PaLM 540B on GSM8K",
+    "reason": "GSM8K is multi-step with a flat curve, while gains stay small on easy MAWPS subsets where PaLM 540B scores at least 90%"
+   },
+   "zh": {
+    "takeaway": "算术结果或支持该直觉：PaLM 540B在GSM8K上增益最大",
+    "reason": "GSM8K多步且曲线平坦；MAWPS简单子集上PaLM 540B已达90%以上，增益很小"
+   },
+   "de": {
+    "takeaway": "Die arithmetischen Ergebnisse stützen dies womöglich: Am größten ist der Gewinn für PaLM 540B auf GSM8K",
+    "reason": "GSM8K ist mehrstufig mit flacher Kurve, auf einfachen MAWPS-Teilmengen bleiben die Gewinne klein, da PaLM 540B dort mindestens 90% erreicht"
+   }
+  },
+  "A1.SS3.p3.1": {
+   "note": "en topic cut ('Chain-of-thought'); zh takeaway 'any such task' had no referent",
+   "en": {
+    "takeaway": "Chain-of-thought prompting could apply to any task humans solve via a chain of thought",
+    "topic": "Chain-of-thought prompting"
+   },
+   "zh": {
+    "takeaway": "思维链提示原则上可用于任何人类借助思维链解决的任务",
+    "topic": "思维链提示"
+   }
+  },
+  "A1.SS4.p1.1": {
+   "note": "de 'Gleichungs-Prompting' dropped 'only'; same term as in 3.3; de terminology",
+   "de": {
+    "takeaway": "Nur-Gleichung-Prompting hilft bei einfachen Datensätzen, aber nicht bei GSM8K",
+    "topic": "Nur-Gleichung-Prompting",
+    "sentences": {
+     "0": "Das Prompting nur mit der Gleichung als Zwischenschritt hilft bei vielen Datensätzen, besonders wenn die Datensätze nur wenige Schlussfolgerungsschritte erfordern (SVAMP, ASDiv, MAWPS)."
+    }
+   }
+  },
+  "A1.SS4.p3.1": {
+   "note": "de 'argumentieren' for reasoning",
+   "de": {
+    "sentences": {
+     "0": "Es ist schwierig für das Modell, die gesamte Semantik direkt in eine einzige Gleichung zu übersetzen, aber die Gedankenkette ermöglicht es ihm, mithilfe von Zwischenschritten in natürlicher Sprache besser über jeden Teil der Frage zu schlussfolgern."
+    }
+   }
+  },
+  "A2.p2.1": {
+   "note": "zh topic not verbatim; de terminology",
+   "zh": {
+    "takeaway": "外部计算器可提升多数算术任务的准确率"
+   },
+   "de": {
+    "sentences": {
+     "0": "Bei den Benchmarks zum arithmetischen Schlussfolgern waren einige Gedankenketten (zusammen mit den erzeugten Gleichungen) korrekt, außer dass das Modell eine arithmetische Operation falsch ausführte."
+    }
+   }
+  },
+  "A2.T1.cap": {
+   "note": "en reason called the table 'figures'; de terminology",
+   "en": {
+    "reason": "Metrics are accuracy, with a post-hoc external calculator and comparisons against prior best numbers"
+   },
+   "de": {
+    "sentences": {
+     "0": "Chain-of-Thought-Prompting übertrifft Standard-Prompting bei verschiedenen großen Sprachmodellen auf fünf Benchmarks zum arithmetischen Schlussfolgern."
+    },
+    "takeaway": "Chain-of-Thought-Prompting übertrifft Standard-Prompting auf fünf Benchmarks zum arithmetischen Schlussfolgern",
+    "topic": "arithmetischen Schlussfolgern"
+   }
+  },
+  "A2.T2.cap": {
+   "note": "de 'Chain of Thought' untranslated; de terminology; distinct topic",
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting ist eine emergente Fähigkeit der Modellgröße bei Arithmetik-Benchmarks",
+    "sentences": {
+     "0": "Standard-Prompting im Vergleich zu Chain-of-Thought-Prompting auf fünf Benchmarks zum arithmetischen Schlussfolgern."
+    },
+    "topic": "Arithmetik-Benchmarks"
+   }
+  },
+  "A2.T3.cap": {
+   "note": "topics not verbatim",
+   "en": {
+    "topic": "MAWPS problems"
+   },
+   "zh": {
+    "topic": "MAWPS简单问题"
+   }
+  },
+  "A2.T4.cap": {
+   "note": "topics not verbatim; de commonsense term; distinct topic",
+   "en": {
+    "takeaway": "Chain-of-thought prompting is an emergent ability of model scale on commonsense reasoning benchmarks"
+   },
+   "zh": {
+    "takeaway": "思维链提示在常识推理基准上是模型规模的涌现能力"
+   },
+   "de": {
+    "sentences": {
+     "0": "Standard-Prompting im Vergleich zu Chain-of-Thought-Prompting auf fünf Benchmarks zum Commonsense-Schlussfolgern."
+    },
+    "takeaway": "Chain-of-Thought-Prompting ist bei Commonsense-Benchmarks eine emergente Fähigkeit der Modellgröße",
+    "topic": "Commonsense-Benchmarks"
+   }
+  },
+  "A2.T5.cap": {
+   "note": "topics not verbatim; en reason ungrammatical; de 'Chain of Thought'",
+   "en": {
+    "takeaway": "Chain of thought enables length generalization to longer examples on symbolic manipulation tasks",
+    "reason": "Standard and chain-of-thought prompting are compared on two such tasks"
+   },
+   "zh": {
+    "takeaway": "思维链在符号操作任务上支持长度泛化"
+   },
+   "de": {
+    "takeaway": "Die Gedankenkette ermöglicht Längengeneralisierung auf längere Inferenzbeispiele bei symbolischen Aufgaben"
+   }
+  },
+  "A2.T6.cap": {
+   "note": "zh '仅等式' vs '仅方程' used in 3.3; de 'Chain of Thought', 'Equation only' untranslated, reasoning term; de terminology",
+   "zh": {
+    "sentences": {
+     "2": "“仅方程”的表现介于标准提示与思维链提示之间，因为它允许通过方程进行中间推理步骤，但没有利用自然语言。"
+    },
+    "reason": "仅方程介于标准提示与思维链之间，标注者或示例方差下思维链仍领先",
+    "topic": "消融设置"
+   },
+   "de": {
+    "sentences": {
+     "1": "Die Gedankenkette übertrifft Ablationen im Allgemeinen deutlich.",
+     "2": "„Nur Gleichung“ liegt zwischen Standard-Prompting und Chain-of-Thought-Prompting, da es Zwischenschritte des Schlussfolgerns über Gleichungen erlaubt, aber keine natürliche Sprache nutzt.",
+     "0": "Ablations- und Robustheitsergebnisse für Datensätze zum arithmetischen Schlussfolgern.",
+     "3": "Chain-of-Thought-Prompting hat (wie erwartet) Varianz, wenn es mit von verschiedenen Annotatoren geschriebenen Prompts oder mit anderen Beispielen verwendet wird, übertrifft Standard-Prompting aber weiterhin um einen großen Abstand.",
+     "4": "Die angegebene Standardabweichung gilt für unterschiedliche Reihenfolgen der Few-Shot-Prompting-Beispiele mit fünf verschiedenen Zufallsseeds."
+    },
+    "takeaway": "Die Gedankenkette übertrifft Ablationen beim arithmetischen Schlussfolgern deutlich",
+    "reason": "„Nur Gleichung“ liegt zwischen Standard-Prompting und Gedankenkette, und trotz Annotator- oder Beispielvarianz bleibt die Gedankenkette vorn",
+    "topic": "Ablationen"
+   }
+  },
+  "A2.T7.cap": {
+   "note": "de 'Chain of Thought' untranslated; commonsense and reasoning terms; de terminology",
+   "de": {
+    "sentences": {
+     "0": "Ablations- und Robustheitsergebnisse für vier Datensätze zum Commonsense- und symbolischen Schlussfolgern.",
+     "1": "Die Gedankenkette übertrifft Ablationen im Allgemeinen deutlich.",
+     "2": "Chain-of-Thought-Prompting hat (wie erwartet) Varianz, wenn es mit von verschiedenen Annotatoren geschriebenen Prompts oder mit anderen Beispielen verwendet wird, übertrifft Standard-Prompting aber weiterhin um einen großen Abstand.",
+     "3": "Die angegebene Standardabweichung gilt für unterschiedliche Reihenfolgen der Few-Shot-Prompting-Beispiele mit fünf verschiedenen Zufallsseeds."
+    },
+    "takeaway": "Die Gedankenkette übertrifft Ablationen bei Datensätzen zum Commonsense- und symbolischen Schlussfolgern",
+    "reason": "Varianz durch Annotatoren oder Beispiele besteht, doch die Gedankenkette schlägt Standard-Prompting weiterhin deutlich",
+    "topic": "Commonsense- und symbolischen Schlussfolgern"
+   }
+  },
+  "A3.p1.1": {
+   "note": "zh 中间语言步骤 reads as 'steps of an intermediate language'; de terminology",
+   "zh": {
+    "sentences": {
+     "0": "思维链提示是一种通用方法，它受到若干先前研究方向的启发：提示、自然语言解释、程序合成与执行、数值与逻辑推理，以及自然语言中间步骤。"
+    },
+    "reason": "它借鉴了若干先前方向：提示、自然语言解释、程序合成与执行、数值与逻辑推理以及自然语言中间步骤"
+   },
+   "de": {
+    "sentences": {
+     "0": "Chain-of-Thought-Prompting ist ein allgemeiner Ansatz, der von mehreren früheren Richtungen inspiriert ist: Prompting, Erklärungen in natürlicher Sprache, Programmsynthese und -ausführung, numerisches und logisches Schlussfolgern sowie Zwischenschritte in natürlicher Sprache."
+    },
+    "reason": "Es stützt sich auf mehrere frühere Richtungen: Prompting, Erklärungen in natürlicher Sprache, Programmsynthese und -ausführung, numerisches und logisches Schlussfolgern sowie Zwischenschritte in natürlicher Sprache"
+   }
+  },
+  "A3.SS2.p1.1": {
+   "note": "takeaway missed the unit's point (chain of thought comes before the answer and aims at decomposition); de topic a fragment, wrong compound",
+   "en": {
+    "takeaway": "Unlike natural language explanations, chain of thought comes before the answer and targets decomposition",
+    "reason": "Explanations mainly serve interpretability and come during or after the prediction; for chain of thought, interpretability is a side effect",
+    "topic": "natural language explanations"
+   },
+   "zh": {
+    "takeaway": "与自然语言解释不同，思维链出现在答案之前，旨在分解推理",
+    "reason": "自然语言解释主要服务于可解释性，且与预测同时或在其后给出；对思维链而言可解释性只是附带效果",
+    "topic": "自然语言解释"
+   },
+   "de": {
+    "sentences": {
+     "5": "Im Vergleich dazu konzentriert sich unsere Arbeit auf eine Reihe arithmetischer, commonsense-basierter und symbolischer Aufgaben, die mehrstufiges Schlussfolgern erfordern."
+    },
+    "takeaway": "Anders als Erklärungen in natürlicher Sprache steht die Gedankenkette vor der Antwort und dient der Zerlegung",
+    "reason": "Erklärungen dienen vor allem der Interpretierbarkeit und entstehen während oder nach der Vorhersage, bei der Gedankenkette ist Interpretierbarkeit nur ein Nebeneffekt",
+    "topic": "Erklärungen in natürlicher Sprache"
+   }
+  },
+  "A3.SS3.p1.1": {
+   "note": "zh topic a fragment; de 'Chain of Thought'",
+   "zh": {
+    "topic": "特定领域原语"
+   },
+   "de": {
+    "reason": "Die Gedankenkette ist damit prinzipiell für jede Text-zu-Text-NLP-Aufgabe relevant, nicht nur für ausführbare Programme"
+   }
+  },
+  "A3.SS4.p1.1": {
+   "note": "zh '长手模块操作' is meaningless; 'longhand module operations' means long-hand modular arithmetic",
+   "zh": {
+    "sentences": {
+     "3": "此处最相关的工作或许是⟦a177 Recchia (2021)⟧，它表明微调能够实现竖式取模运算，而这在此前对执行者而言一直很困难。"
+    }
+   }
+  },
+  "A3.SS5.p1.1": {
+   "note": "takeaway gave only the background; the unit's claim is that prompting alone elicits intermediate steps without training; de terminology",
+   "en": {
+    "takeaway": "Unlike prior training or finetuning, prompting alone elicits intermediate steps in large off-the-shelf models",
+    "reason": "This needs no large labeled annotations, and one model handles many reasoning tasks without gradient updates"
+   },
+   "zh": {
+    "takeaway": "无需训练或微调，仅靠提示即可在现成大模型中激发中间步骤",
+    "reason": "这无需大量标注，且单个模型无需梯度更新即可完成多种推理任务"
+   },
+   "de": {
+    "takeaway": "Anders als Training oder Finetuning ruft bloßes Prompting Zwischenschritte in großen, vortrainierten Modellen hervor",
+    "reason": "Dies erfordert keine großen Mengen gelabelter Annotationen, und ein einzelnes Modell bewältigt viele Schlussfolgerungsaufgaben ohne Gradienten-Updates",
+    "sentences": {
+     "3": "Im Vergleich zu diesen Trainings- oder Finetuningmethoden zeigt unsere Arbeit, dass verschiedene Fähigkeiten zum Schlussfolgern in natürlicher Sprache bei vortrainierten Sprachmodellen ausreichender Größe einfach durch Prompting hervorgerufen werden können.",
+     "4": "Dieses Prompting-Setup ist wichtig, weil es Zwischenschritt-Schlussfolgern ohne eine große Zahl gelabelter Annotationen ermöglicht und weil ein einzelnes Modell eine Reihe von Schlussfolgerungsaufgaben ohne jegliche Gradienten-Updates bewältigen kann."
+    }
+   }
+  },
+  "A4.SS1.p1.1": {
+   "note": "zh topic meaningless alone",
+   "zh": {
+    "topic": "GSM8K思维链"
+   }
+  },
+  "A4.I1.i1.p1.1": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "陈述不够明确"
+   }
+  },
+  "A4.I1.i2.p1.1": {
+   "note": "topics not verbatim; de topic over budget, 'nicht zusammenhängend' for unrelated",
+   "en": {
+    "takeaway": "One chain made a correct but unrelated statement"
+   },
+   "zh": {
+    "takeaway": "一条思维链给出正确但无关的陈述",
+    "topic": "无关的陈述"
+   },
+   "de": {
+    "sentences": {
+     "0": "Eine machte eine korrekte, aber sachfremde Aussage (gezeigt in ⟦a188 Table 9⟧: „correct but unrelated statement“)."
+    },
+    "takeaway": "Eine Kette machte eine korrekte, aber sachfremde Aussage",
+    "topic": "sachfremde Aussage"
+   }
+  },
+  "A4.I1.i3.p1.1": {
+   "note": "topics not verbatim; de topic a cut fragment",
+   "en": {
+    "takeaway": "Two chains had imperfect equations omitting steps but stayed understandable",
+    "topic": "imperfect equations"
+   },
+   "zh": {
+    "takeaway": "两条思维链等式不完善、省略步骤，但仍可理解",
+    "topic": "等式不完善"
+   },
+   "de": {
+    "takeaway": "Zwei Ketten hatten unvollkommene Gleichungen mit ausgelassenen Schritten, blieben aber verständlich",
+    "topic": "unvollkommene Gleichungen"
+   }
+  },
+  "A4.I1.i4.p1.1": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "语义颠倒"
+   }
+  },
+  "A4.T8.cap": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "正确思维链"
+   }
+  },
+  "A4.SS1.p2.1": {
+   "note": "zh missing 的; de commonsense term, 'Gedankenketten-Schlussfolgern'",
+   "zh": {
+    "sentences": {
+     "0": "尽管我们发现，对于最终答案正确的数学问题，思维链推理大多是正确的，但这很可能是因为对于自由回答题而言，靠巧合得出正确最终答案很难。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Obwohl wir feststellen, dass das Chain-of-Thought-Schlussfolgern für Mathematikfragen, bei denen die endgültige Antwort korrekt war, meistens korrekt ist, liegt dies wahrscheinlich daran, dass es bei Fragen mit freier Antwort schwer ist, durch Zufall zur korrekten endgültigen Antwort zu gelangen.",
+     "1": "Bei Multiple-Choice- oder binären Klassifikationsproblemen war es viel wahrscheinlicher, dass Modelle über einen fehlerhaften Schlussfolgerungspfad zur korrekten Antwort gelangten (z. B. bei allen von uns evaluierten Datensätzen zum Commonsense-Schlussfolgern)."
+    },
+    "reason": "Bei freien Mathematikantworten sind zufällig korrekte Antworten schwer, daher muss die Faktizität von Ketten auf Commonsense-Datensätzen künftig analysiert werden"
+   }
+  },
+  "A4.T9.cap": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "思维链不完善"
+   }
+  },
+  "A4.SS2.p1.1": {
+   "note": "en topic not verbatim and over budget; zh takeaway garbled",
+   "en": {
+    "takeaway": "50 incorrect GSM8K outputs from LaMDA 137B were manually categorized by needed correction",
+    "topic": "incorrect GSM8K outputs"
+   },
+   "zh": {
+    "takeaway": "按所需修正人工归类LaMDA 137B的50个GSM8K错误输出",
+    "topic": "GSM8K错误输出"
+   }
+  },
+  "A4.SS2.p2.1": {
+   "note": "reason claimed small edits repair 'most' incorrect chains; they repair 46%",
+   "en": {
+    "reason": "The aim is to show which changes would make a chain of thought correct, to guide future improvements"
+   },
+   "zh": {
+    "reason": "目的是说明哪些修改能使思维链正确，以指导模型的改进"
+   },
+   "de": {
+    "reason": "Ziel ist zu zeigen, welche Änderungen eine Gedankenkette korrekt machen würden, um künftige Verbesserungen zu leiten"
+   }
+  },
+  "A4.I2.i2.p1.1": {
+   "note": "zh topic a fragment",
+   "zh": {
+    "topic": "符号映射错误"
+   }
+  },
+  "A4.I2.i3.p1.1": {
+   "note": "topics not verbatim; en topic over budget",
+   "en": {
+    "takeaway": "22% of errors were one-step-missing errors, chains lacking a single reasoning step",
+    "topic": "one-step-missing errors"
+   },
+   "zh": {
+    "takeaway": "22%的错误为缺失一步错误，即思维链只缺一个步骤",
+    "topic": "缺失一步错误"
+   }
+  },
+  "A4.SS2.p4.1": {
+   "note": "factual: 54% is 27 of all 50 chains, not 54% of the remaining ones",
+   "en": {
+    "takeaway": "The remaining 27 of 50 chains of thought (54%) needed substantial edits"
+   },
+   "zh": {
+    "takeaway": "其余27条思维链（占50条的54%）需大幅修改才能正确"
+   },
+   "de": {
+    "takeaway": "Die übrigen 27 von 50 Gedankenketten (54%) brauchten umfangreiche Änderungen"
+   }
+  },
+  "A4.T11.cap": {
+   "note": "de topic not verbatim",
+   "de": {
+    "takeaway": "Tabelle 11 zeigt fehlerhafte Gedankenketten, die mehrere Fehler enthalten und umfangreiche Änderungen erfordern"
+   }
+  },
+  "A4.SS2.p5.1": {
+   "note": "topics were adjective phrases",
+   "en": {
+    "topic": "reasoning processes"
+   },
+   "zh": {
+    "topic": "推理过程"
+   },
+   "de": {
+    "topic": "Denkprozesse"
+   }
+  },
+  "A4.F11.cap": {
+   "note": "topic did not name the subject (exemplar count)",
+   "en": {
+    "topic": "exemplar count"
+   },
+   "de": {
+    "topic": "Beispielanzahl"
+   }
+  },
+  "A4.T12.cap": {
+   "note": "en topic cut mid-phrase; zh topic over budget; de left 'Math-Word-Problem-Benchmarks' in English",
+   "en": {
+    "topic": "word problem benchmarks"
+   },
+   "zh": {
+    "topic": "应用题基准"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zusammenfassung der in dieser Arbeit verwendeten Benchmarks für mathematische Textaufgaben, mit Beispielen."
+    },
+    "takeaway": "Benchmarks für mathematische Textaufgaben werden mit Beispielen und Evaluierungsanzahlen zusammengefasst",
+    "topic": "Benchmarks für mathematische Textaufgaben"
+   }
+  },
+  "Ax1.p1.1": {
+   "note": "topics: zh too generic, de named the version step",
+   "zh": {
+    "topic": "小错字"
+   },
+   "de": {
+    "topic": "kleinen Tippfehler"
+   }
+  },
+  "Ax1.p2.1": {
+   "note": "zh topic too narrow",
+   "zh": {
+    "topic": "Codex与UL2结果"
+   }
+  },
+  "Ax1.p3.1": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "图3错字"
+   }
+  },
+  "Ax1.p4.1": {
+   "note": "en topic not verbatim; de topic a list; de 'Rohdaten' for raw results",
+   "en": {
+    "takeaway": "V2 to V3 added GPT-3 results, SVAMP, AQuA, SayCan, ablations, FAQ, raw results"
+   },
+   "de": {
+    "sentences": {
+     "5": "Ablationen für Commonsense- und symbolisches Schlussfolgern hinzugefügt (⟦a209 Table 7⟧).",
+     "7": "Rohergebnisse in ⟦a211 Appendix B⟧ hinzugefügt."
+    },
+    "takeaway": "V2 auf V3 ergänzte GPT-3, SVAMP, AQuA, SayCan, Ablationen, FAQ und Rohergebnisse",
+    "topic": "GPT-3"
+   }
+  },
+  "Ax1.p5.1": {
+   "note": "zh topic too narrow",
+   "zh": {
+    "topic": "PaLM结果"
+   }
+  },
+  "Ax1.SS1.p1.1": {
+   "note": "zh topic an adjective; de en dash between table refs, English 'off-the-shelf', 'Supplementary Material'",
+   "zh": {
+    "takeaway": "尽管使用两个非公开大语言模型，三项措施保障可复现性",
+    "topic": "可复现性"
+   },
+   "de": {
+    "sentences": {
+     "1": "Erstens stellen wir die exakten Eingabe-Prompts für alle Aufgaben in ⟦a213 Table 20⟧ bis ⟦a214 Table 27⟧ in ⟦a215 Appendix G⟧ bereit (und betonen, dass wir kein Finetuning durchführen und lediglich Prompting auf gebrauchsfertige Sprachmodelle anwenden).",
+     "3": "Schließlich stellen wir die exakten Eingaben, Ziele und Vorhersagen für LaMDA 137B für jede Aufgabe als Zip-Datei im Zusatzmaterial zur Verfügung."
+    }
+   }
+  },
+  "Ax1.SS2.p1.1": {
+   "note": "de topic a cut fragment",
+   "de": {
+    "takeaway": "Alle drei Sprachmodelle wurden ausschließlich mit Prompting-basierter Inferenz ausgewertet",
+    "topic": "Prompting-basierter Inferenz"
+   }
+  },
+  "Ax1.SS3.p1.1": {
+   "note": "zh topic too generic; de commonsense term, 'Section 4' left in English; de terminology",
+   "zh": {
+    "topic": "细节和许可"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir listen die Details und Lizenzen für alle in diesem Beitrag verwendeten Arithmetik- und Commonsense-Datensätze auf.",
+     "1": "Die Datensätze für symbolisches Schlussfolgern wurden synthetisch erstellt, wie in ⟦a217 Section 4⟧ beschrieben."
+    },
+    "takeaway": "Details und Lizenzen aller Arithmetik- und Commonsense-Datensätze sind aufgeführt",
+    "reason": "Datensätze für symbolisches Schlussfolgern wurden stattdessen synthetisch erstellt, wie in Abschnitt 4 beschrieben"
+   }
+  },
+  "Ax1.I1.i1.p1.1": {
+   "note": "reason claimed both datasets come via the UW page; the URL is given for AddSub only",
+   "en": {
+    "reason": "AddSub links to the University of Washington arithmetic page; only MultiArith's license is specified"
+   },
+   "zh": {
+    "reason": "AddSub链接到华盛顿大学算术页面，且仅注明了MultiArith的许可证"
+   },
+   "de": {
+    "reason": "AddSub verweist auf die Arithmetikseite der University of Washington, und nur für MultiArith ist die Lizenz angegeben"
+   }
+  },
+  "Ax1.I2.i2.p1.1": {
+   "note": "topics not verbatim",
+   "en": {
+    "takeaway": "StrategyQA uses the open-domain setting, a question-only set, from BIG-bench"
+   },
+   "zh": {
+    "takeaway": "StrategyQA 使用 BIG-bench 开放域设置下的仅问题集"
+   }
+  },
+  "Ax1.I2.i4.p1.1": {
+   "note": "de topic named the license, not the dataset",
+   "de": {
+    "topic": "SayCan-Datensatz"
+   }
+  },
+  "A6.T15.cap": {
+   "note": "de commonsense term",
+   "de": {
+    "reason": "Die Beispiele veranschaulichen, wie die Zwischenschritte des Modells bei dieser Commonsense-Aufgabe gelingen oder scheitern können"
+   }
+  },
+  "A6.T16.cap": {
+   "note": "de commonsense term",
+   "de": {
+    "reason": "Die Beispiele veranschaulichen, wie die Zwischenschritte des Modells bei dieser Commonsense-Aufgabe gelingen oder scheitern können"
+   }
+  },
+  "A6.T17.cap": {
+   "note": "de commonsense term",
+   "de": {
+    "reason": "Die Beispiele veranschaulichen, wie die Zwischenschritte des Modells bei dieser Commonsense-Aufgabe gelingen oder scheitern können"
+   }
+  },
+  "A6.T18.cap": {
+   "note": "de commonsense term",
+   "de": {
+    "reason": "Die Beispiele veranschaulichen, wie die Zwischenschritte des Modells bei dieser Commonsense-Aufgabe gelingen oder scheitern können"
+   }
+  },
+  "A6.T19.cap": {
+   "note": "zh topic too narrow",
+   "zh": {
+    "topic": "SayCan规划"
+   }
+  },
+  "A7.T20.cap": {
+   "note": "en topic over budget; zh topic not distinct; zh terminology",
+   "en": {
+    "topic": "word problem datasets"
+   },
+   "zh": {
+    "topic": "应用题数据集",
+    "sentences": {
+     "0": "用于数学应用题完整思维链提示的少样本示例。",
+     "1": "这组示例用于除 AQuA 之外的所有数学应用题数据集。"
+    },
+    "takeaway": "一套示例适用于除 AQuA 外的数学应用题数据集",
+    "reason": "AQuA 需要自己的示例，另行单独给出"
+   }
+  },
+  "A7.T21.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于 AQuA 完整思维链提示的少样本示例。"
+    },
+    "reason": "AQuA 是被排除在共享示例集之外的唯一数学数据集"
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A7.T22.cap": {
+   "note": "zh: 最后一个字母拼接 vs 末字母拼接 everywhere else; topic over budget",
+   "zh": {
+    "sentences": {
+     "0": "用于末字母拼接任务完整思维链提示的少样本示例。"
+    },
+    "takeaway": "为末字母拼接任务给出了思维链提示",
+    "topic": "末字母拼接"
+   }
+  },
+  "A7.T23.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于抛硬币任务完整思维链提示的少样本示例。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A7.T24.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于 CSQA 完整思维链提示的少样本示例。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A7.T25.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于 StrategyQA 完整思维链提示的少样本示例。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A7.T26.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于日期理解任务完整思维链提示的少样本示例。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A7.T27.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于体育理解任务完整思维链提示的少样本示例。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A7.T28.cap": {
+   "zh": {
+    "sentences": {
+     "0": "用于 SayCan 机器人规划任务完整思维链提示的少样本示例。"
+    }
+   },
+   "note": "zh terminology (standard term used throughout)"
+  },
+  "A8.T29.cap": {
+   "note": "de 'Wenige-Beispiele-Exemplare' is not German; straight quotes; de terminology",
+   "de": {
+    "sentences": {
+     "0": "Few-Shot-Beispiele für den vollständigen Chain-of-Thought-Prompt für mathematische Textaufgaben.",
+     "1": "Diese Beispiele sind dieselben wie in ⟦a245 Table 20⟧, außer dass die Gedankenketten von einem anderen Annotator verfasst wurden („Annotator B“ statt „Annotator A“).",
+     "2": "Die Annotatoren waren Mitautoren und mit dem Ziel des Chain-of-Thought-Promptings vertraut."
+    },
+    "reason": "Die Beispiele entsprechen denen in Tabelle 20, nur der Annotator unterscheidet sich, und die Annotatoren waren Mitautoren, die mit dem Chain-of-Thought-Prompting vertraut waren"
+   }
+  },
+  "A8.T30.cap": {
+   "note": "de 'Wenige-Beispiele-Exemplare' is not German; straight quotes; de terminology",
+   "de": {
+    "sentences": {
+     "0": "Few-Shot-Beispiele für den vollständigen Chain-of-Thought-Prompt für mathematische Textaufgaben.",
+     "1": "Diese Beispiele sind dieselben wie in ⟦a246 Table 20⟧, außer dass die Gedankenketten von einem anderen Annotator verfasst wurden („Annotator C“ statt „Annotator A“)."
+    },
+    "reason": "Diese Beispiele entsprechen denen in Tabelle 20, abgesehen vom Wechsel des Annotators"
+   }
+  },
+  "S2.I1.i1.p1.1": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "multi-step problems"
+   },
+   "zh": {
+    "topic": "多步问题"
+   },
+   "de": {
+    "topic": "mehrstufige Probleme"
+   }
+  },
+  "S2.p3.1": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "attractive properties"
+   },
+   "zh": {
+    "topic": "吸引人的特性"
+   },
+   "de": {
+    "topic": "attraktive Eigenschaften"
+   }
+  },
+  "A4.SS3.p1.1": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "少样本示例",
+    "takeaway": "思维链提示对少样本示例数量的变化保持鲁棒"
+   }
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "zh: standard term; de: topic was cut with a verb",
+   "zh": {
+    "takeaway": "思维链提示让大语言模型具备推理能力并取得显著提升"
+   },
+   "de": {
+    "topic": "Chain-of-Thought-Prompting"
+   }
+  },
+  "S1": {
+   "note": "de: reasoning term",
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting erschließt die Schlussfolgerungsfähigkeit großer Sprachmodelle mittels Few-Shot-Beispielen"
+   }
+  },
+  "S2": {
+   "note": "de title: hyphenation as everywhere else",
+   "de": {
+    "title": "Chain-of-Thought-Prompting"
+   }
+  },
+  "S3.SS1": {
+   "note": "de: method term; 'Rechenbenchmarks' for math word problem benchmarks",
+   "de": {
+    "takeaway": "Fünf Benchmarks für Textaufgaben, fünf Sprachmodellfamilien und Standard- versus Chain-of-Thought-Prompting",
+    "topic": "Benchmarks für Textaufgaben"
+   }
+  },
+  "S3.SS2": {
+   "note": "en and de section takeaways over budget",
+   "en": {
+    "takeaway": "Chain-of-thought prompting is emergent, gains more on harder problems, and beats prior state of the art"
+   },
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting ist eine emergente Fähigkeit, hilft bei schwierigeren Problemen mehr und übertrifft den bisherigen Stand der Technik"
+   }
+  },
+  "S3.SS3": {
+   "note": "de takeaway garbled and topic was a verb phrase",
+   "de": {
+    "takeaway": "Ablationen zeigen: Die Gedankenkette selbst bringt die Gewinne, nicht bloße Gleichungen, variabler Rechenaufwand oder nachträgliches Schlussfolgern",
+    "topic": "Gedankenkette"
+   }
+  },
+  "S3.SS4": {
+   "note": "zh topic cut ('思维链提示对'); de topic included a verb",
+   "zh": {
+    "takeaway": "思维链提示对标注者、示例、顺序与数量均鲁棒",
+    "topic": "思维链提示"
+   },
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting ist robust gegenüber Annotatoren, Beispielen, Reihenfolgen und Beispielanzahl",
+    "topic": "Chain-of-Thought-Prompting"
+   }
+  },
+  "S4": {
+   "note": "de: Alltagsvernunft (common sense) is not commonsense reasoning",
+   "de": {
+    "title": "Commonsense-Schlussfolgern",
+    "takeaway": "Chain-of-Thought-Prompting verbessert das Commonsense-Schlussfolgern, PaLM 540B erreicht starke Ergebnisse",
+    "topic": "Commonsense-Schlussfolgern"
+   }
+  },
+  "S5": {
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting ermöglicht symbolisches Schlussfolgern und Längengeneralisierung über die Beispiellängen hinaus"
+   },
+   "note": "de terminology"
+  },
+  "S5.SS0.SSS0.Px1": {
+   "note": "zh topic cut ('思维链提示在')",
+   "zh": {
+    "topic": "玩具符号任务"
+   }
+  },
+  "S5.SS0.SSS0.Px2": {
+   "note": "zh topic a fragment",
+   "zh": {
+    "topic": "思维链提示"
+   }
+  },
+  "S8": {
+   "note": "de title 'Schlussfolgerungen' clashes with the reasoning term; de 'des Reasoning'",
+   "de": {
+    "title": "Fazit",
+    "takeaway": "Chain-of-Thought-Prompting ist eine einfache, breit anwendbare Methode, um das Schlussfolgern von Sprachmodellen zu verbessern"
+   }
+  },
+  "Sx1": {
+   "note": "topic was a verb phrase ('The authors thank'); Sid Maxwell flagged the mistake, he did not correct it",
+   "en": {
+    "takeaway": "The authors thank colleagues for paper feedback, discussions, and flagging a manual error analysis mistake",
+    "topic": "colleagues"
+   },
+   "zh": {
+    "takeaway": "致谢同事对论文的反馈、讨论及指出人工错误分析中的错误"
+   },
+   "de": {
+    "takeaway": "Die Autoren danken Kollegen für Feedback, Diskussionen und den Hinweis auf einen Fehler in der manuellen Fehleranalyse",
+    "topic": "Kollegen"
+   }
+  },
+  "Sx2": {
+   "note": "zh title: standard name of the NeurIPS checklist",
+   "zh": {
+    "title": "检查清单"
+   }
+  },
+  "A1.SS1": {
+   "note": "titles lost the question mark; de 'Chain of Thought' untranslated",
+   "zh": {
+    "title": "为什么增大模型规模能改善思维链提示？"
+   },
+   "de": {
+    "title": "Warum verbessert eine größere Modellskala das Chain-of-Thought-Prompting?",
+    "takeaway": "Der Erfolg der Gedankenkette entsteht mit dem Modellmaßstab, vermutlich über mehrere emergente Fähigkeiten"
+   }
+  },
+  "A1.SS2": {
+   "note": "titles lost the question mark; de topic 'Chain of Thought' untranslated; zh 稳健 -> 鲁棒 as elsewhere",
+   "zh": {
+    "title": "提示工程的作用是什么？",
+    "takeaway": "提示工程仍有影响，思维链对多种提示变化鲁棒"
+   },
+   "de": {
+    "title": "Welche Rolle spielt Prompt-Engineering?",
+    "takeaway": "Prompt-Engineering bleibt wichtig, doch die Gedankenkette ist robust gegenüber vielen Prompt-Variationen",
+    "topic": "Prompt-Engineering"
+   }
+  },
+  "A1.SS3": {
+   "note": "titles lost the question mark; de title stilted",
+   "zh": {
+    "title": "思维链提示能否提升我感兴趣任务的表现？"
+   },
+   "de": {
+    "title": "Verbessert Chain-of-Thought-Prompting die Leistung bei meiner Aufgabe?"
+   }
+  },
+  "A1.SS4": {
+   "note": "overstated: equation only 'did not improve performance substantially', it did not fail; titles lost the question mark; de reasoning term",
+   "en": {
+    "takeaway": "Equation-only prompting barely helps on GSM8K, whose semantics are hard to translate directly into one equation"
+   },
+   "zh": {
+    "title": "为什么仅用方程提示对某些算术推理数据集不够？",
+    "takeaway": "仅用方程提示在GSM8K上帮助不大：语义难以直接转化为一个方程"
+   },
+   "de": {
+    "title": "Warum reicht Prompting nur mit der Gleichung für einige Datensätze zum arithmetischen Schlussfolgern nicht aus?",
+    "takeaway": "Nur-Gleichung-Prompting hilft bei GSM8K kaum, da sich die Semantik schwer direkt in eine Gleichung übersetzen lässt",
+    "topic": "Nur-Gleichung-Prompting"
+   }
+  },
+  "A2": {
+   "note": "zh title repeated the appendix number the reader already shows",
+   "zh": {
+    "title": "全部实验结果"
+   }
+  },
+  "A3.SS2": {
+   "note": "zh section takeaway did not render the English one; de 'Natürliche Spracherklärungen' is wrong German, topic a fragment",
+   "zh": {
+    "takeaway": "思维链提示先推理后作答，有别于自然语言解释",
+    "topic": "自然语言解释"
+   },
+   "de": {
+    "takeaway": "Chain-of-Thought-Prompting schlussfolgert vor der Antwort und unterscheidet sich darin von Erklärungen in natürlicher Sprache",
+    "topic": "Erklärungen in natürlicher Sprache"
+   }
+  },
+  "A3.SS3": {
+   "note": "en takeaway garbled ('program synthesis execution'); zh topic a fragment",
+   "en": {
+    "takeaway": "Chain of thought generalizes the reasoning of program execution to open-domain natural language"
+   },
+   "zh": {
+    "topic": "自然语言推理"
+   },
+   "de": {
+    "takeaway": "Die Gedankenkette überträgt das Schlussfolgern der Programmausführung auf offene natürliche Sprache"
+   }
+  },
+  "A3.SS5": {
+   "note": "zh 中间语言步骤 reads as 'steps of an intermediate language'",
+   "zh": {
+    "title": "自然语言中间步骤",
+    "takeaway": "通过提示即可激发自然语言中间步骤，无需训练或微调",
+    "topic": "中间步骤"
+   }
+  },
+  "A4.SS1": {
+   "note": "en grammar ('7 imperfect of 50'); de topic an adjective phrase",
+   "en": {
+    "takeaway": "Correct chains of thought from LaMDA 137B are mostly sound, with 7 of 50 imperfect"
+   },
+   "de": {
+    "topic": "Korrekte Gedankenketten"
+   }
+  },
+  "A4.SS2": {
+   "note": "factual: 'mostly need calculator, symbol mapping, or missing-step fixes' is wrong; those cover 46% (8+16+22), while 54% need substantial edits; de takeaway garbled",
+   "en": {
+    "takeaway": "Of incorrect GSM8K chains of thought, 46% need only small fixes, while 54% need substantial edits",
+    "topic": "incorrect GSM8K chains"
+   },
+   "zh": {
+    "takeaway": "GSM8K错误思维链中46%只需小修，54%需大幅修改"
+   },
+   "de": {
+    "takeaway": "Von den fehlerhaften GSM8K-Gedankenketten brauchen 46% nur kleine Korrekturen, 54% umfangreiche Änderungen",
+    "topic": "fehlerhaften GSM8K-Gedankenketten"
+   }
+  },
+  "Ax1": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "五个版本"
+   }
+  },
+  "Ax1.SS1": {
+   "note": "zh topic an adjective; de title dropped 'statement'",
+   "zh": {
+    "takeaway": "公开提示、GPT-3 API运行与LaMDA 137B预测以保障可复现性",
+    "topic": "可复现性"
+   },
+   "de": {
+    "title": "Erklärung zur Reproduzierbarkeit"
+   }
+  },
+  "Ax1.SS2": {
+   "note": "zh topic too generic; de topic included a verb",
+   "zh": {
+    "topic": "提示推理"
+   },
+   "de": {
+    "topic": "Prompting-Inferenz"
+   }
+  },
+  "Ax1.SS3": {
+   "note": "zh topic too generic; de commonsense term",
+   "zh": {
+    "topic": "细节和许可"
+   },
+   "de": {
+    "takeaway": "Details und Lizenzen aller genutzten Arithmetik- und Commonsense-Datensätze sind aufgeführt"
+   }
+  },
+  "Ax1.SS3.SSS0.Px1": {
+   "note": "de reasoning term; topic too generic",
+   "de": {
+    "title": "Arithmetisches Schlussfolgern",
+    "takeaway": "Datensätze, Quellen, Lizenzen und Repositories für arithmetisches Schlussfolgern sind zur Reproduzierbarkeit aufgelistet",
+    "topic": "arithmetisches Schlussfolgern"
+   }
+  },
+  "Ax1.SS3.SSS0.Px2": {
+   "note": "de commonsense term",
+   "de": {
+    "title": "Commonsense-Schlussfolgern",
+    "takeaway": "Datensätze zum Commonsense-Schlussfolgern sind mit Quellen und Lizenzen aufgelistet",
+    "topic": "Commonsense-Schlussfolgern"
+   }
+  },
+  "A7": {
+   "note": "zh and de topics were cut fragments ('给出了所有任', 'Für jede Aufgabe und'); en topic over budget; de title repeated the appendix label",
+   "en": {
+    "takeaway": "Full chain-of-thought prompts are given for every task and dataset used",
+    "topic": "Full chain-of-thought prompts"
+   },
+   "zh": {
+    "topic": "思维链提示"
+   },
+   "de": {
+    "title": "Anhang: Vollständige Prompts",
+    "topic": "Chain-of-Thought-Prompts"
+   }
+  },
+  "A8": {
+   "note": "zh title dropped 'Appendix:', topic too generic; de title left 'Appendix' in English, topic over budget",
+   "zh": {
+    "title": "附录：MWP的替代标注者",
+    "topic": "替代标注者"
+   },
+   "de": {
+    "title": "Anhang: Alternative Annotatoren für MWP",
+    "topic": "Alternative Annotatoren"
+   }
+  }
+ }
+}

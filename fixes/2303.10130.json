@@ -1,0 +1,1480 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "reason hedged as the authors do ('could have'); zh left 'capabilities' untranslated; de rubric term",
+   "en": {
+    "reason": "Exposure spans most workers and all wage levels, so they could have considerable economic, social, and policy implications"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们研究大型语言模型（LLM），例如生成式预训练 Transformer（GPT），对美国劳动力市场的潜在影响，重点关注由 LLM 驱动的软件相对于 LLM 自身所增加的能力。",
+     "1": "我们使用一套新的评分标准，结合人类专业知识和 GPT-4 的分类，根据职业与 LLM 能力的匹配程度对其进行评估。",
+     "4": "预计影响遍及所有工资水平，其中高收入工作对 LLM 能力及 LLM 驱动软件的暴露度可能更高。"
+    },
+    "reason": "暴露覆盖多数劳动者和所有工资水平，因此可能带来重大的经济、社会和政策影响"
+   },
+   "de": {
+    "sentences": {
+     "1": "Mithilfe einer neuen Bewertungsrubrik bewerten wir Berufe anhand ihrer Übereinstimmung mit den Fähigkeiten von LLMs und integrieren dabei sowohl menschliche Expertise als auch GPT-4-Klassifikationen."
+    },
+    "reason": "Die Exposition betrifft die meisten Beschäftigten und alle Lohnniveaus, daher könnten LLMs erhebliche wirtschaftliche, soziale und politische Folgen haben"
+   }
+  },
+  "S1.p1.1": {
+   "note": "reason invented a causal link (sequential data -> interchangeable use); zh topic not distinct; de terms unquoted",
+   "en": {
+    "reason": "LLMs span many architectures and data types, but the paper treats LLMs and GPTs alike, akin to ChatGPT's GPT-3.5 models"
+   },
+   "zh": {
+    "reason": "LLM涵盖多种架构和数据类型，但本文将LLM与GPT大体互换使用，以ChatGPT中的GPT-3.5模型为参照",
+    "topic": "生成式AI"
+   },
+   "de": {
+    "sentences": {
+     "4": "Wir untersuchen LLMs mit text- und codegenerierenden Fähigkeiten, verwenden den Begriff „generative KI“, um zusätzlich Modalitäten wie Bilder oder Audio einzuschließen, und bezeichnen mit „LLM-gestützte Software“ Werkzeuge, die auf LLMs aufbauen oder LLMs mit anderen generativen KI-Modellen kombinieren."
+    },
+    "reason": "LLMs umfassen viele Architekturen und Datenarten, doch der Artikel verwendet LLMs und GPTs weitgehend austauschbar, orientiert an den GPT-3.5-Modellen in ChatGPT"
+   }
+  },
+  "S1.p2.1": {
+   "note": "zh implied the authors developed the complementary technologies",
+   "zh": {
+    "sentences": {
+     "0": "不过，我们的研究动机较少来自这些模型本身的进展，更多来自我们在围绕这些模型发展起来的互补技术中所看到的广度、规模和能力。"
+    }
+   }
+  },
+  "S1.p3.1": {
+   "note": "zh takeaway ungrammatical and topic not in it; standard terms for labor-augmenting/displacing; de typo 'Aufgabencxposition'",
+   "zh": {
+    "sentences": {
+     "2": "我们将暴露定义为潜在经济影响的代理指标，而不区分劳动增强型效应与劳动替代型效应。"
+    },
+    "takeaway": "新评分标准衡量任务暴露度，作为潜在经济影响的代理指标",
+    "topic": "任务暴露度"
+   },
+   "de": {
+    "takeaway": "Eine neue Rubrik misst die Aufgabenexposition gegenüber LLMs als Proxy für potenzielle wirtschaftliche Auswirkungen",
+    "topic": "Aufgabenexposition"
+   }
+  },
+  "S1.p4.1": {
+   "note": "topic 'jobs' says nothing; de 'haben ... exponiert' reads as perfect tense; zh 劳动生产力 -> 劳动生产率",
+   "en": {
+    "topic": "19% of jobs"
+   },
+   "zh": {
+    "sentences": {
+     "0": "为构建我们的主要暴露数据集，我们同时收集了人类标注和GPT-4分类，所用提示经过调优，以与作者标注的一组样本标签保持一致。",
+     "2": "这一暴露指标反映的是对使人类劳动更高效的技术能力的估计；然而，社会、经济、监管及其他决定因素意味着，技术可行性并不能保证劳动生产率或自动化方面的结果。"
+    },
+    "topic": "19%的工作"
+   },
+   "de": {
+    "sentences": {
+     "3": "Unsere Analyse zeigt, dass bei etwa 19% der Arbeitsplätze mindestens 50% der Aufgaben exponiert sind, wenn man sowohl aktuelle Modellfähigkeiten als auch erwartete, darauf aufbauende Werkzeuge berücksichtigt.",
+     "4": "Menschliche Einschätzungen legen nahe, dass nur bei 3% der US-Arbeitnehmer mehr als die Hälfte ihrer Aufgaben gegenüber LLMs exponiert ist, wenn man bestehende Sprach- und Codefähigkeiten ohne zusätzliche Software oder Modalitäten betrachtet.",
+     "5": "Unter Berücksichtigung anderer generativer Modelle und ergänzender Technologien zeigen unsere menschlichen Schätzungen, dass bei bis zu 49% der Arbeitnehmer die Hälfte oder mehr ihrer Aufgaben gegenüber LLMs exponiert sein könnte."
+    },
+    "takeaway": "Bei etwa 19% der Arbeitsplätze ist mindestens die Hälfte der Aufgaben gegenüber LLMs exponiert",
+    "topic": "19% der Arbeitsplätze"
+   }
+  },
+  "S1.p5.1": {
+   "note": "zh dropped 'work' ('types of work'); Job Zones rendered consistently as 职业区",
+   "zh": {
+    "sentences": {
+     "0": "我们的研究结果在人工标注和GPT-4标注下都一致表明，大多数职业都表现出一定程度的LLM暴露，且不同类型工作的暴露程度各异。",
+     "3": "遵循⟦a10 Autor et al., 2022a ()⟧，我们按“职业区”（Job Zones）考察进入门槛，发现职业对LLM的暴露随工作准备难度的增加而略微上升。"
+    }
+   }
+  },
+  "S1.p6.1": {
+   "note": "zh 人工常规性 (artificial) mistranslates 'manual routineness'",
+   "zh": {
+    "sentences": {
+     "1": "我们考察的大多数其他技术暴露度量都与我们偏好的暴露度量在统计上显著相关，而手工常规性和机器人暴露的度量则呈负相关。"
+    },
+    "reason": "手工常规性与机器人暴露负相关，28%至40%变异未被解释"
+   }
+  },
+  "S1.p7.1": {
+   "note": "de reason dropped the hedge; Baumol's cost disease in standard German",
+   "de": {
+    "sentences": {
+     "1": "Der Zusammenhang zwischen dem Produktivitätswachstum im vergangenen Jahrzehnt und der Gesamt-LLM-Exposition erscheint schwach, was auf ein mögliches optimistisches Szenario hindeutet, in dem künftige Produktivitätsgewinne durch LLMs etwaige Effekte der Baumolschen Kostenkrankheit nicht verschärfen ⟦a12 (Baumol,, 2012; Aghion et al.,, 2018)⟧."
+    },
+    "reason": "Der schwache Zusammenhang zwischen früherem Produktivitätswachstum und LLM-Exposition deutet an, dass Produktivitätsgewinne die Kostenkrankheit möglicherweise nicht verschärfen"
+   }
+  },
+  "S1.p8.1": {
+   "note": "takeaway stated as fact what the authors say these traits imply; clumsy compound; zh/de general-purpose technology term unified",
+   "en": {
+    "takeaway": "Pervasive, persistent impacts that grow with complementary technologies imply GPTs are general-purpose technologies"
+   },
+   "zh": {
+    "sentences": {
+     "3": "总体而言，这些特征意味着生成式预训练Transformer（GPTs）是通用技术（GPTs）。⟦a14⟧ ⟦a15 (Bresnahan and Trajtenberg,, 1995; Lipsey et al.,, 2005)⟧。"
+    },
+    "takeaway": "影响普遍持久且随互补技术扩大，表明GPTs是通用技术",
+    "topic": "通用技术"
+   },
+   "de": {
+    "sentences": {
+     "3": "Zusammen genommen implizieren diese Eigenschaften, dass Generative Pre-trained Transformers (GPTs) Allzwecktechnologien (General-Purpose Technologies, GPTs) sind.⟦a14⟧ ⟦a15 (Bresnahan and Trajtenberg,, 1995; Lipsey et al.,, 2005)⟧."
+    },
+    "takeaway": "Allgegenwärtige, anhaltende und mit komplementären Technologien wachsende Wirkungen legen nahe, dass GPTs Allzwecktechnologien sind",
+    "topic": "Allzwecktechnologien"
+   }
+  },
+  "S1.p9.1": {
+   "note": "zh/de general-purpose technology term unified (通用技术, Allzwecktechnologie); zh 'subset software' awkward; de 'ihre Bahn'",
+   "zh": {
+    "sentences": {
+     "0": "⟦a16 (Goldfarb et al.,, 2023)⟧认为机器学习作为一个大类很可能是通用技术。",
+     "1": "我们的证据支持更广泛的影响，因为即使是机器学习软件的某些子集，也能独立满足通用技术的标准。",
+     "3": "此外，我们展示了LLM作为通用技术的潜力。",
+     "5": "与其他通用技术一样，这些算法的许多潜力将出现在广泛的经济上有价值的用例中，包括创造新型工作⟦a17 (Acemoglu and Restrepo,, 2018; Autor et al., 2022a, )⟧。"
+    },
+    "takeaway": "机器学习软件的子集也独立满足通用技术标准"
+   },
+   "de": {
+    "sentences": {
+     "0": "⟦a16 (Goldfarb et al.,, 2023)⟧ argumentieren, dass maschinelles Lernen als breite Kategorie wahrscheinlich eine Allzwecktechnologie ist.",
+     "1": "Unsere Evidenz stützt eine breitere Wirkung, da selbst Teilmengen von Software für maschinelles Lernen die Kriterien für den Status einer Allzwecktechnologie unabhängig erfüllen.",
+     "3": "Darüber hinaus zeigen wir das Allzweckpotenzial von LLMs auf.",
+     "5": "Wie bei anderen Allzwecktechnologien wird ein Großteil des Potenzials dieser Algorithmen in einer breiten Palette wirtschaftlich wertvoller Anwendungsfälle entstehen, einschließlich der Schaffung neuer Arten von Arbeit ⟦a17 (Acemoglu and Restrepo,, 2018; Autor et al., 2022a, )⟧."
+    },
+    "takeaway": "Selbst Teilmengen von Software für maschinelles Lernen erfüllen unabhängig die Kriterien einer Allzwecktechnologie",
+    "reason": "Wenn „GPTs are GPTs“ gilt, könnte ihre Entwicklung für politische Entscheidungsträger schwer vorherzusagen und zu regulieren sein"
+   }
+  },
+  "S1.p10.1": {
+   "note": "topic 'prior work' misnamed a roadmap paragraph; 'validation' was the comparison with earlier efforts",
+   "en": {
+    "takeaway": "Paper structure: prior work, methods, results, comparison with earlier efforts, discussion and conclusion",
+    "topic": "Paper structure"
+   },
+   "zh": {
+    "takeaway": "论文结构：先前工作、方法、结果、与早期研究比较、讨论与结论",
+    "topic": "论文结构"
+   },
+   "de": {
+    "takeaway": "Gliederung der Arbeit: frühere Arbeiten, Methoden, Ergebnisse, Vergleich mit früheren Ansätzen, Diskussion und Fazit",
+    "topic": "Gliederung der Arbeit"
+   }
+  },
+  "S2.SS1.p1.1": {
+   "note": "takeaway listed broad capabilities as a cause of progress; de 'Breite LLMs' ungrammatical",
+   "en": {
+    "takeaway": "Generative AI progress, driven by scale, has produced broadly capable LLMs"
+   },
+   "zh": {
+    "takeaway": "规模扩展推动生成式AI进步，催生能力广泛的LLM",
+    "topic": "生成式AI进步",
+    "sentences": {
+     "2": "通用的最先进LLM，如LaMDA ⟦a25 (Thoppilan et al.,, 2022)⟧和GPT-4 ⟦a26 (OpenAI, 2023b, )⟧，在翻译、分类、创意写作和代码生成等多种应用中表现出色，而这些能力此前需要由专家工程师使用特定领域数据开发专门的任务专用模型。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "2": "Breit einsetzbare, hochmoderne LLMs wie LaMDA ⟦a25 (Thoppilan et al.,, 2022)⟧ und GPT-4 ⟦a26 (OpenAI, 2023b, )⟧ zeichnen sich in vielfältigen Anwendungen wie Übersetzung, Klassifikation, kreativem Schreiben und Codegenerierung aus, also Fähigkeiten, die zuvor spezialisierte, aufgabenspezifische Modelle erforderten, die von erfahrenen Ingenieuren mit domänenspezifischen Daten entwickelt wurden."
+    },
+    "takeaway": "Der Fortschritt generativer KI, getrieben durch Skalierung, hat breit einsetzbare LLMs hervorgebracht",
+    "topic": "Fortschritt generativer KI"
+   }
+  },
+  "S2.SS1.p2.1": {
+   "note": "reason chained causes wrongly (fine-tuning did not enable component integration)",
+   "en": {
+    "reason": "Fine-tuning and human feedback improved steerability; at the limit, LLMs may perform any task typically done at a computer"
+   },
+   "zh": {
+    "reason": "微调和人类反馈强化学习提升了可操控性；推到极致，LLM或能执行任何通常在计算机上完成的任务",
+    "sentences": {
+     "4": "推到极致，这些趋势预示着这样一个世界：LLM或许能够执行通常在计算机上完成的任何任务。"
+    }
+   },
+   "de": {
+    "reason": "Feintuning und menschliches Feedback verbesserten die Steuerbarkeit; im Extremfall könnten LLMs jede typische Computeraufgabe ausführen"
+   }
+  },
+  "S2.SS1.p3.1": {
+   "note": "zh takeaway misparsed 'building blocks for additional tools, driving adoption'",
+   "zh": {
+    "takeaway": "LLM是构建额外工具的多用途模块，推动实际采用"
+   }
+  },
+  "S2.SS2.p1.1": {
+   "note": "de subject-verb agreement; 'routineverzerrt' spelling",
+   "de": {
+    "sentences": {
+     "1": "Das Konzept des qualifikationsverzerrten technologischen Wandels und das Aufgabenmodell der Automatisierung, die häufig als Standardrahmen zum Verständnis des Technologieeinflusses auf Arbeit gelten, entstammen der Forschung, die zeigte, dass technologischer Fortschritt die Nachfrage nach qualifizierten gegenüber unqualifizierten Arbeitskräften erhöht ⟦a35 (Katz and Murphy,, 1992)⟧.",
+     "3": "Diese Forschungsrichtung hat gezeigt, dass Arbeitskräfte mit Routinetätigkeiten und repetitiven Aufgaben einem höheren Risiko technologiebedingter Verdrängung ausgesetzt sind, ein Phänomen, das als routineverzerrter technologischer Wandel bekannt ist."
+    },
+    "reason": "Qualifikations- und routineverzerrter technologischer Wandel zeigen relative Lohnrückgänge für auf Routinetätigkeiten spezialisierte Arbeitskräfte"
+   }
+  },
+  "S2.SS2.p2.1": {
+   "note": "'exposure tends to diversify' misreads 'is diversified within occupations'; zh topic not verbatim; de gender error",
+   "en": {
+    "takeaway": "Prior approaches estimate AI-occupation overlap; task exposure tends to vary within occupations"
+   },
+   "zh": {
+    "topic": "AI与职业重叠"
+   },
+   "de": {
+    "sentences": {
+     "1": "Zu diesen Methoden gehören die Zuordnung von Patentbeschreibungen zu Tätigkeitsbeschreibungen von Arbeitskräften ⟦a39 (Webb,, 2020; Meindl et al.,, 2021)⟧, die Verknüpfung von KI-Fähigkeiten mit in der O*NET-Datenbank dokumentierten beruflichen Fähigkeiten ⟦a40 (Felten et al.,, 2018; Felten et al.,, 2023)⟧, die Abstimmung von KI-Aufgabenbenchmarks mit Tätigkeiten von Arbeitskräften über kognitive Fähigkeiten ⟦a41 (Tolan et al.,, 2021)⟧, die Kennzeichnung des Automatisierungspotenzials für eine Teilmenge US-amerikanischer Berufe und die Schätzung dieses Potenzials für alle übrigen US-amerikanischen Berufe mithilfe von Machine-Learning-Klassifikatoren ⟦a42 (Frey and Osborne,, 2017)⟧, die Modellierung von Automatisierung auf Aufgabenebene und die Aggregation der Ergebnisse zu Erkenntnissen auf Berufsebene ⟦a43 (Arntz et al.,, 2017)⟧, die Erhebung von Expertenprognosen ⟦a44 (Grace et al.,, 2018)⟧ und, am relevantesten für diese Arbeit, die Entwicklung eines neuen Bewertungsrasters zur Beurteilung von Arbeitstätigkeiten hinsichtlich ihrer Eignung für maschinelles Lernen ⟦a45 (Brynjolfsson et al.,, 2018; Brynjolfsson et al.,, 2023)⟧."
+    },
+    "takeaway": "Frühere Ansätze schätzen die Überschneidung von KI und Berufen; die Exposition variiert innerhalb der Berufe"
+   }
+  },
+  "S2.SS2.p3.1": {
+   "note": "de topic was a whole clause",
+   "de": {
+    "topic": "Allzwecktechnologien"
+   }
+  },
+  "S3.SS1.p1.1": {
+   "note": "de left 'Task(s)' and the DWA example in English; zh 脚本 -> 剧本",
+   "zh": {
+    "sentences": {
+     "1": "DWA是完成任务过程中一项综合性行动，例如“研究剧本以确定项目要求”。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir verwenden die O*NET 27.2-Datenbank ⟦a56 (O*NET,, 2023)⟧, die Informationen zu 1.016 Berufen enthält, einschließlich ihrer jeweiligen Detailed Work Activities (DWAs) und Aufgaben (Tasks).",
+     "1": "Eine DWA ist eine umfassende Handlung, die Teil der Erledigung einer Aufgabe ist, etwa „Drehbücher studieren, um Projektanforderungen zu bestimmen“.",
+     "2": "Eine Aufgabe hingegen ist eine berufsspezifische Arbeitseinheit, die mit keiner, einer oder mehreren DWAs verbunden sein kann.",
+     "3": "Tabelle ⟦a57 1⟧ zeigt eine Auswahl von Aufgaben und DWAs."
+    },
+    "takeaway": "O*NET 27.2 liefert Aufgaben und Detailed Work Activities für 1.016 Berufe",
+    "reason": "Eine DWA ist eine breite Handlung innerhalb einer Aufgabe, während eine Aufgabe berufsspezifisch ist und mit mehreren DWAs oder keiner verbunden sein kann"
+   }
+  },
+  "S3.I1.i1.p1.1": {
+   "note": "de left 'Tasks' and 'task description' in English",
+   "de": {
+    "sentences": {
+     "0": "19.265 Aufgaben, jeweils bestehend aus einer „Aufgabenbeschreibung“ (task description) und einem zugehörigen Beruf, und"
+    },
+    "takeaway": "Der Aufgabendatensatz umfasst 19.265 Aufgaben mit Beschreibungen und Berufen",
+    "reason": "Jede Aufgabenbeschreibung ist mit dem Beruf verknüpft, der sie ausführt",
+    "topic": "Aufgabendatensatz"
+   }
+  },
+  "S3.I1.i2.p1.1": {
+   "note": "de left 'Tasks' in English",
+   "de": {
+    "sentences": {
+     "0": "2.087 DWAs, wobei die meisten DWAs mit einer oder mehreren Aufgaben verbunden sind und Aufgaben mit einer oder mehreren DWAs verbunden sein können, obwohl einige Aufgaben gar keine zugehörige DWA haben."
+    },
+    "takeaway": "Der DWA-Datensatz umfasst 2.087 Aktivitäten, meist mit Aufgaben verknüpft",
+    "reason": "Aufgaben können mehreren DWAs zugeordnet sein, doch einige Aufgaben haben überhaupt keine zugehörige DWA"
+   }
+  },
+  "S3.T1.cap": {
+   "note": "topics not verbatim / fragments; zh 赌场笼子工作人员 is a literal mistranslation; de occupations and 'Tasks' left in English",
+   "en": {
+    "topic": "Aggregating over activities"
+   },
+   "zh": {
+    "sentences": {
+     "1": "我们看到，仅对活动进行汇总并不精确：例如，我们会预期赌场兑换处工作人员（Gambling Cage Workers）需要亲自到场、动用一定体力来完成给定的DWA，而在线商家则仅用计算机即可完成同一活动。"
+    },
+    "takeaway": "跨职业仅做活动汇总并不精确",
+    "reason": "赌场兑换处工作人员须亲自完成DWA，在线商家仅用计算机即可完成",
+    "topic": "活动汇总"
+   },
+   "de": {
+    "sentences": {
+     "0": "Auswahl von Berufen, Aufgaben und Detailed Work Activities aus der O*NET-Datenbank.",
+     "1": "Wir sehen, dass eine Aggregation allein über Aktivitäten unpräzise ist, was sich darin zeigt, dass wir erwarten würden, dass Kassierer in Spielbanken (Gambling Cage Workers) die gegebene DWA persönlich und mit einem gewissen körperlichen Einsatz ausführen, während wir erwarten würden, dass Online-Händler (Online Merchants) dieselbe Aktivität ausschließlich mit einem Computer ausführen."
+    },
+    "reason": "Kassierer in Spielbanken führen eine DWA persönlich aus, Online-Händler dieselbe Aktivität ausschließlich per Computer",
+    "topic": "Aggregation allein über Aktivitäten"
+   }
+  },
+  "S3.SS2.p1.1": {
+   "note": "zh crosswalk sentence ambiguous; de 'Crosswalk', 'Task', and 'dokumentiert' (legal status)",
+   "zh": {
+    "sentences": {
+     "2": "我们使用BLS推荐的O*NET对照表 ⟦a59 (BLS, 2023b, )⟧，将O*NET任务及DWA数据集与源自当前人口调查（Current Population Survey, CPS）的BLS劳动力人口统计数据 ⟦a60 (BLS, 2023a, )⟧ 相关联。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "2": "Wir verwenden den von der BLS empfohlenen Umsteigeschlüssel (Crosswalk) zu O*NET ⟦a59 (BLS, 2023b, )⟧, um den O*NET-Aufgaben- und DWA-Datensatz mit den BLS Labor Force Demographics ⟦a60 (BLS, 2023a, )⟧ zu verknüpfen, die aus der Current Population Survey (CPS) abgeleitet werden.",
+     "3": "Beide Datenquellen werden von der US-Regierung erhoben und erfassen in erster Linie Beschäftigte, die nicht selbstständig sind, einen legalen Aufenthaltsstatus haben und in der sogenannten formellen Wirtschaft tätig sind."
+    }
+   }
+  },
+  "S3.SS3.p1.1": {
+   "note": "de gender error ('eines Expositions-Rubrik'); de topic contained a verb",
+   "de": {
+    "sentences": {
+     "0": "Wir präsentieren unsere Ergebnisse auf Grundlage einer Expositionsrubrik, in der wir Exposition als Maß dafür definieren, ob der Zugang zu einem LLM oder einem LLM-gestützten System die Zeit, die ein Mensch für die Ausführung einer bestimmten DWA oder die Erledigung einer Aufgabe benötigt, um mindestens 50 Prozent reduzieren würde."
+    },
+    "topic": "Exposition"
+   }
+  },
+  "S3.SS3.p3.1": {
+   "note": "zh topic not verbatim in its takeaway",
+   "zh": {
+    "topic": "时间缩减阈值"
+   }
+  },
+  "S3.T2.cap": {
+   "note": "de reason called the table a figure caption; de topic contained a verb",
+   "de": {
+    "reason": "Die Tabellenbeschriftung nennt Übereinstimmungs- und Korrelationswerte von Modell und Mensch, mit GPT-4 unter Rubrik 1 und Gewichten, die sich zu eins summieren",
+    "topic": "Kernaufgaben"
+   }
+  },
+  "S3.SS3.p4.1": {
+   "note": "zh topic not in its takeaway",
+   "zh": {
+    "topic": "人类与GPT-4标注"
+   }
+  },
+  "S3.I5.i1.p1.1": {
+   "note": "de topic contained a verb",
+   "de": {
+    "topic": "Menschliche Bewertungen"
+   }
+  },
+  "S3.I5.i2.p1.1": {
+   "note": "en topic 'GPT-4 ratings' not in the takeaway; de topic contained a verb",
+   "en": {
+    "takeaway": "GPT-4 ratings covered all task-occupation pairs, using a slightly modified rubric"
+   },
+   "zh": {
+    "takeaway": "GPT-4评分覆盖全部任务与职业配对，采用略作修改的评分标准"
+   },
+   "de": {
+    "takeaway": "GPT-4-Bewertungen erfassten alle Aufgabe-Beruf-Paare mit einer leicht geänderten Rubrik",
+    "topic": "GPT-4-Bewertungen"
+   }
+  },
+  "S3.SS3.p5.1": {
+   "note": "zh wrote alpha/beta/zeta as plain text instead of copying the markers",
+   "zh": {
+    "takeaway": "三种暴露度指标：⟦a67 $\\alpha$⟧为下界，⟦a68 $\\beta$⟧居中，⟦a69 $\\zeta$⟧为上界",
+    "reason": "⟦a68 $\\beta$⟧为E1加0.5*E2，以折减需互补工具的任务，未说明时即默认指标"
+   }
+  },
+  "S3.SS4.SSS1.p1.1": {
+   "note": "reason invented 'objective measurement'; the unit's reason is the annotators' narrow occupational background; en topic not verbatim",
+   "en": {
+    "reason": "Annotators familiar with LLMs lack occupational diversity, so they may misjudge LLM performance in unfamiliar occupations",
+    "topic": "Subjective labeling"
+   },
+   "zh": {
+    "reason": "标注者熟悉LLM但职业背景单一，可能误判LLM在陌生职业中的表现"
+   },
+   "de": {
+    "reason": "Die mit LLMs vertrauten Annotatoren sind beruflich nicht divers und könnten die LLM-Leistung in fremden Berufen falsch einschätzen"
+   }
+  },
+  "S3.SS4.SSS2.p1.1": {
+   "note": "zh topic too generic; zh table/figure order; de reason 'Labels zu führen' ungrammatical",
+   "zh": {
+    "sentences": {
+     "8": "尽管如此，我们观察到，在职业层面，人类评分与GPT-4评分在大语言模型系统的总体暴露程度上高度一致（见表⟦a73 2⟧、图⟦a74 2⟧）。"
+    },
+    "topic": "评分标准措辞"
+   },
+   "de": {
+    "reason": "Prompt-Iteration verbesserte die Übereinstimmung, daher wurde die GPT-4-Rubrik bewusst angepasst, um das Modell zu vernünftigen Labels zu lenken, ohne Menschen zu beeinflussen"
+   }
+  },
+  "S3.F2.cap": {
+   "note": "zh sentence 6 repeated the whole caption; de article gender",
+   "zh": {
+    "sentences": {
+     "6": "在暴露评分的高端，人类平均而言更倾向于将某一职业评为暴露。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "5": "Wir präsentieren das rohe Streudiagramm und den Binscatter."
+    }
+   }
+  },
+  "S3.I6.i1.p1.1": {
+   "note": "de topic was a genitive fragment; reasons were over budget (en 27, de 31 words)",
+   "de": {
+    "topic": "Validität des aufgabenbasierten Rahmens",
+    "reason": "Berufe lassen sich womöglich nicht vollständig in Aufgaben zerlegen, Teilaufgaben sind unterschiedlich automatisierbar und Aufgaben bauen aufeinander auf, was die Analyse entwerten könnte"
+   },
+   "en": {
+    "reason": "Occupations may not fully decompose into tasks, subtasks vary in automatability, and tasks depend on precursors, which could invalidate the analysis"
+   },
+   "zh": {
+    "reason": "职业未必可完全分解为任务，子任务可自动化程度不一，任务间存在前置依赖，这些都可能使暴露分析失效"
+   }
+  },
+  "S3.I6.i2.p1.1": {
+   "note": "reason chained causes wrongly (consistent agreement does not follow from unclear logic) and was 31 words",
+   "en": {
+    "takeaway": "Annotators' lack of occupational expertise caused unclear task interpretation and label discrepancies",
+    "reason": "Annotators rarely knew which occupations each DWA mapped to, leaving aggregation logic unclear; extra labels were collected for strongly disputed pairs"
+   },
+   "zh": {
+    "takeaway": "标注者缺乏职业专业知识，导致任务解读不清与标签差异",
+    "reason": "标注者大多不了解各DWA对应的职业，致使聚合逻辑不清；对分歧显著的任务/职业对补充了标签"
+   },
+   "de": {
+    "takeaway": "Fehlende berufliche Expertise der Annotatoren führte zu unklarer Aufgabeninterpretation und Kennzeichnungsunstimmigkeiten",
+    "reason": "Die Annotatoren kannten die den DWAs zugeordneten Berufe meist nicht, daher blieb die Aggregationslogik unklar; für stark strittige Paare wurden zusätzliche Kennzeichnungen erhoben"
+   }
+  },
+  "S3.I6.i4.p1.1": {
+   "note": "topic 'disagreement' too generic",
+   "en": {
+    "topic": "Sources of disagreement"
+   }
+  },
+  "S4.p1.1": {
+   "note": "zh/de terminology: 通用技术, Co-Invention",
+   "zh": {
+    "sentences": {
+     "0": "通用技术相对罕见，其特征是普遍渗透、随时间不断改进，以及伴随显著的共同发明和溢出效应⟦a79 (Lipsey et al.,, 2005)⟧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Allzwecktechnologien sind relativ selten und zeichnen sich durch ihre Allgegenwart, ihre Verbesserung im Laufe der Zeit sowie durch erhebliche Co-Invention und Spillover-Effekte aus ⟦a79 (Lipsey et al.,, 2005)⟧."
+    }
+   }
+  },
+  "S4.p2.1": {
+   "note": "topic 'GPT-4 annotations' did not name the unit (testing pervasiveness by task evaluation); zh 通用技术",
+   "en": {
+    "topic": "Task evaluation"
+   },
+   "zh": {
+    "sentences": {
+     "0": "在现阶段，通用技术的一些标准比其他标准更容易评估。",
+     "1": "我们在这一早期阶段的主要重点是检验LLM对经济具有普遍渗透性影响这一假设，这与⟦a80 (Goldfarb et al.,, 2023)⟧所采取的方法类似，后者通过职位发布分析机器学习的扩散，以评估其作为通用技术的地位。"
+    },
+    "topic": "任务评估"
+   },
+   "de": {
+    "topic": "Aufgabenbewertung"
+   }
+  },
+  "S4.p3.1": {
+   "note": "the authors say LLMs 'have the potential to' affect occupations; zh 通用技术",
+   "en": {
+    "takeaway": "LLMs could significantly affect diverse US occupations, a key general-purpose technology attribute"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们的发现表明，基于任务层面的能力，LLM有可能显著影响美国经济中多种多样的职业，展现出通用技术的一项关键属性。"
+    },
+    "takeaway": "LLM可能显著影响美国多种职业，这是通用技术的关键属性"
+   },
+   "de": {
+    "takeaway": "LLMs könnten vielfältige US-Berufe erheblich betreffen, ein zentrales Merkmal von Allzwecktechnologien"
+   }
+  },
+  "S4.SS1.p1.1": {
+   "note": "zh wrote alpha/zeta as plain text instead of markers; topics no longer depend on a formula",
+   "en": {
+    "takeaway": "Average occupation-level exposure is 15% under ⟦a83 $\\alpha$⟧, over 50% under ⟦a86 $\\zeta$⟧",
+    "topic": "occupation-level exposure",
+    "reason": "Human and GPT-4 annotations agree, tagging 14 to 15% of tasks exposed; 80% of workers have 10% or more of tasks exposed"
+   },
+   "zh": {
+    "takeaway": "职业层面平均暴露度：⟦a83 $\\alpha$⟧下约15%，⟦a86 $\\zeta$⟧下超过50%",
+    "topic": "平均暴露度"
+   },
+   "de": {
+    "takeaway": "Die durchschnittliche Exposition auf Berufsebene liegt bei 15% unter ⟦a83 $\\alpha$⟧ und über 50% unter ⟦a86 $\\zeta$⟧",
+    "topic": "Exposition auf Berufsebene"
+   }
+  },
+  "S4.SS1.p3.1": {
+   "note": "'realizing exposure' is not the point (realizing the potential is); users learn when to trust outputs, not to trust more; de topic over budget; Co-Invention",
+   "en": {
+    "takeaway": "Realizing LLMs' task potential requires incorporating them into broader systems",
+    "reason": "Co-invention and human oversight barriers may slow diffusion, but users will likely learn when and how to trust outputs"
+   },
+   "zh": {
+    "reason": "共同发明与人类监督障碍可能减缓扩散，但用户可能逐渐学会何时及如何信任输出"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wie bei Allzwecktechnologien üblich, können Barrieren der Co-Invention zunächst die schnelle Diffusion von GPTs in wirtschaftliche Anwendungen behindern."
+    },
+    "takeaway": "Die Ausschöpfung des Aufgabenpotenzials von LLMs erfordert ihre Integration in umfassendere Systeme",
+    "reason": "Barrieren der Co-Invention und menschlicher Aufsicht könnten die Diffusion verlangsamen, doch Nutzer lernen wohl, wann und wie sie Ausgaben vertrauen können",
+    "topic": "umfassendere Systeme"
+   }
+  },
+  "S4.T3.cap": {
+   "note": "de topic not verbatim in its takeaway",
+   "de": {
+    "topic": "Kernaufgaben"
+   }
+  },
+  "S4.SS2.p2.1": {
+   "note": "zh typo 高低暴露度 (should be 低暴露度)",
+   "zh": {
+    "sentences": {
+     "2": "尽管存在许多高暴露度的低工资职业和低暴露度的高工资职业，但分箱散点图的总体趋势表明，工资越高，对LLM的暴露度越高。⟦a98⟧"
+    }
+   }
+  },
+  "S4.T4.cap": {
+   "note": "takeaway covered only the last table row; the table lists the most exposed occupations per measure",
+   "en": {
+    "takeaway": "Table 4 lists the most exposed occupations under each measure, plus the most variable",
+    "topic": "most exposed occupations"
+   },
+   "zh": {
+    "takeaway": "表4列出各指标下的高暴露职业及暴露变异最大的职业",
+    "topic": "高暴露职业"
+   },
+   "de": {
+    "takeaway": "Tabelle 4 listet die am stärksten exponierten Berufe je Maß sowie die variabelsten",
+    "topic": "am stärksten exponierten Berufe"
+   }
+  },
+  "S4.F4.cap": {
+   "note": "de 'mittlerer Jahreslohn' is mean, not median; topic not verbatim",
+   "de": {
+    "sentences": {
+     "1": "Diese Plots vergleichen die Exposition gegenüber LLMs und teilweise LLM-gestützter Software (⟦a105 $\\beta$⟧) auf Berufsebene mit dem Logarithmus der Gesamtbeschäftigung innerhalb eines Berufs und dem Logarithmus des Median-Jahreslohns der Berufe."
+    },
+    "takeaway": "Abbildung 4 vergleicht die Exposition mit logarithmierter Beschäftigung und logarithmiertem Median-Jahreslohn",
+    "topic": "Median-Jahreslohn"
+   }
+  },
+  "S4.SS3.p1.1": {
+   "note": "reason reversed the regression (exposure is regressed on skill importance)",
+   "en": {
+    "reason": "Skill importance is normalized first; exposure measures ⟦a107 $\\alpha$⟧, ⟦a108 $\\beta$⟧, and ⟦a109 $\\zeta$⟧ are then regressed on it"
+   },
+   "zh": {
+    "reason": "先将技能重要性标准化，再以其为解释变量，对暴露度量⟦a107 $\\alpha$⟧、⟦a108 $\\beta$⟧和⟦a109 $\\zeta$⟧做回归，以衡量关联强度"
+   },
+   "de": {
+    "reason": "Die Fähigkeitsbedeutung wird zuerst normalisiert; dann werden die Expositionsmaße ⟦a107 $\\alpha$⟧, ⟦a108 $\\beta$⟧ und ⟦a109 $\\zeta$⟧ auf sie regressiert"
+   }
+  },
+  "S4.SS3.p2.1": {
+   "note": "associations stated as causal effects; topic 'exposure' too generic",
+   "en": {
+    "takeaway": "Science and critical thinking skills associate strongly negatively with exposure; programming and writing positively",
+    "topic": "critical thinking skills"
+   },
+   "zh": {
+    "takeaway": "科学与批判性思维技能与暴露强负相关，编程与写作强正相关",
+    "topic": "批判性思维"
+   },
+   "de": {
+    "takeaway": "Naturwissenschaft und kritisches Denken hängen stark negativ mit der Exposition zusammen, Programmieren und Schreiben positiv",
+    "topic": "kritisches Denken"
+   }
+  },
+  "S4.T5.cap": {
+   "note": "topic 'skill importance' was not in the takeaway; de gender",
+   "en": {
+    "takeaway": "Occupation-level exposure is regressed on skill importance for each O*NET Basic skill plus programming"
+   },
+   "zh": {
+    "takeaway": "职业暴露度对每项O*NET基本技能及编程的技能重要性做回归"
+   },
+   "de": {
+    "takeaway": "Berufsbezogene Exposition wird auf die Fähigkeitsbedeutung jedes O*NET-Basic-Skills plus Programmieren regressiert"
+   }
+  },
+  "S4.SS4.p1.1": {
+   "note": "de topic was a clause",
+   "de": {
+    "topic": "Jobzonen"
+   }
+  },
+  "S4.SS4.p2.1": {
+   "note": "reason had the wrong subject: 34.5% is the share of workers, not of occupations",
+   "en": {
+    "reason": "The worker share in occupations over 50% ⟦a120 $\\beta$⟧-exposed peaks at 34.5% in Job Zone 4, then 26.45% in Zone 5"
+   },
+   "zh": {
+    "reason": "⟦a120 $\\beta$⟧暴露度超50%职业中的劳动者占比在职业区4达34.5%，职业区5降至26.45%"
+   },
+   "de": {
+    "reason": "Der Anteil der Arbeitnehmer in Berufen mit über 50% ⟦a120 $\\beta$⟧-Exposition erreicht 34,5% in Jobzone 4 und sinkt auf 26,45% in Jobzone 5",
+    "topic": "Expositionsmaße"
+   }
+  },
+  "S4.T6.cap": {
+   "note": "zh topic not verbatim; de 'Median des mittleren' and ungrammatical reason",
+   "zh": {
+    "topic": "GPT平均暴露度"
+   },
+   "de": {
+    "sentences": {
+     "1": "Für jede Jobzone geben wir außerdem den Median der Median-Jahreseinkommen der zugehörigen Berufe in USD sowie die Gesamtzahl der Arbeitnehmer in allen Berufen dieser Jobzone in Tausend an."
+    },
+    "reason": "Bei der Expositionsberechnung sind die Gewichte aller Aufgaben gleich"
+   }
+  },
+  "S4.SS4.SSS1.p1.1": {
+   "note": "de 'Stellvertreter' for proxy",
+   "de": {
+    "sentences": {
+     "0": "Da die Einordnung in eine Job Zone sowohl die erforderliche Ausbildung, die selbst ein Proxy für den Erwerb von Fertigkeiten ist, als auch die erforderliche Vorbereitung berücksichtigt, suchen wir nach Daten, um diese Variablen zu trennen."
+    }
+   }
+  },
+  "S4.SS4.SSS1.p2.1": {
+   "note": "'most exposed' overstated 'more exposed than those without credentials'; de 'Berufsabschluss' means vocational certificate, not professional degree",
+   "en": {
+    "takeaway": "Bachelor's, Master's, and professional degree holders are more exposed than those without credentials",
+    "reason": "Jobs needing no on-the-job training appear to pay more yet are more exposed; the least exposed need the most training"
+   },
+   "zh": {
+    "takeaway": "学士、硕士及专业学位持有者比无学历者暴露度更高",
+    "reason": "无需在职培训的工作似乎收入更高但暴露度也更高；暴露度最低的工作所需培训最多"
+   },
+   "de": {
+    "sentences": {
+     "0": "Unsere Analyse legt nahe, dass Personen mit Bachelor-, Master- und berufsqualifizierenden Hochschulabschlüssen (Professional Degrees) stärker LLMs und LLM-gestützter Software ausgesetzt sind als solche ohne formale Bildungsabschlüsse (siehe Tabelle ⟦a124 7⟧).",
+     "1": "Interessanterweise stellen wir auch fest, dass Personen, die ein Studium begonnen, aber keinen Abschluss erworben haben, ein hohes Maß an Exposition gegenüber LLMs und LLM-gestützter Software aufweisen.",
+     "2": "Bei der Untersuchung der Tabelle, die Zugangsbarrieren zeigt, beobachten wir, dass die Berufe mit der geringsten Exposition die meiste Ausbildung erfordern, was potenziell eine geringere Rendite (gemessen am Median-Einkommen) bietet, sobald die Kompetenz erreicht ist."
+    },
+    "takeaway": "Hochschulabsolventen sind LLMs stärker ausgesetzt als Personen ohne formalen Abschluss",
+    "reason": "Berufe ohne Einarbeitung am Arbeitsplatz scheinen besser bezahlt, sind aber stärker exponiert; die am wenigsten exponierten erfordern die meiste Ausbildung",
+    "topic": "Hochschulabsolventen"
+   }
+  },
+  "S4.T7.cap": {
+   "note": "de 'Median des mittleren Jahres-Einkommens' (median of median, not of mean)",
+   "de": {
+    "sentences": {
+     "1": "Neben den Expositionswerten zeigen wir den Median der Median-Jahreseinkommen für jeden Beruf sowie die Gesamtzahl der Arbeitskräfte in jeder Gruppe in Tausenden."
+    }
+   }
+  },
+  "S5.SS1.p1.1": {
+   "note": "zh topic not verbatim in its takeaway",
+   "zh": {
+    "takeaway": "本文建立在职业AI与自动化暴露的先前研究之上"
+   }
+  },
+  "S5.I1.i1.p1.1": {
+   "note": "zh takeaway garbled the two contrasts (routine/non-routine, manual/cognitive)",
+   "zh": {
+    "takeaway": "O*NET等职业分类刻画常规/非常规与手工/认知任务内容",
+    "topic": "职业分类"
+   }
+  },
+  "S5.I1.i6.p1.1": {
+   "note": "zh topic not in its takeaway; de topic 'Eignung' meaningless alone",
+   "zh": {
+    "takeaway": "评分标准评估工人活动的机器学习适宜性（SML）"
+   },
+   "de": {
+    "takeaway": "Ein Bewertungsraster beurteilt Arbeitstätigkeiten auf ihre Eignung für maschinelles Lernen",
+    "topic": "Eignung für maschinelles Lernen"
+   }
+  },
+  "S5.SS1.p2.1": {
+   "note": "zh topic was a cut marker '表⟦a131'",
+   "zh": {
+    "takeaway": "表⟦a131 8⟧给出多项先前暴露度研究的汇总统计",
+    "topic": "汇总统计"
+   },
+   "de": {
+    "topic": "zusammenfassende Statistiken"
+   }
+  },
+  "S5.SS1.p4.1": {
+   "note": "takeaway restated the previous paragraph and wrote E2 as math; the unit defines how ratings are coded; de rubric term",
+   "en": {
+    "takeaway": "Exposure ratings score full exposure 1, no exposure 0, partial exposure (E2) 0.5",
+    "reason": "GPT-4 scores the rubric under two slightly different prompts with very similar results; humans score the first",
+    "topic": "Exposure ratings"
+   },
+   "zh": {
+    "takeaway": "暴露度评级：完全暴露记1，无暴露记0，部分暴露（E2）记0.5",
+    "reason": "GPT-4用两种略有不同的提示词评分，结果非常相似；人工按第一种评分标准评分",
+    "topic": "暴露度评级"
+   },
+   "de": {
+    "sentences": {
+     "0": "GPT-4 Exposure Rating 1 entspricht unserer allgemeinen Expositionsrubrik, wie sie von GPT-4 bewertet wurde, wobei volles Expositionspotenzial als 1 kodiert wird, kein Expositionspotenzial als 0 und teilweise Exposition (E2 in unserem Kennzeichnungsschema) als 0,5.",
+     "3": "Human Exposure Rating repräsentiert dieselbe Rubrik wie in GPT-4 Exposure Rating 1, wird jedoch, wie in einem früheren Abschnitt des Papiers diskutiert, von Menschen bewertet."
+    },
+    "takeaway": "Expositionsbewertungen kodieren volle Exposition als 1, keine als 0, teilweise (E2) als 0,5",
+    "reason": "GPT-4 bewertet mit zwei leicht verschiedenen Prompts bei sehr ähnlichen Ergebnissen; Menschen bewerten nach der ersten Rubrik",
+    "topic": "Expositionsbewertungen"
+   }
+  },
+  "S5.SS1.p5.1": {
+   "note": "zh topic '软件' cut from a phrase",
+   "zh": {
+    "topic": "软件和AI测量"
+   }
+  },
+  "S5.SS1.p7.1": {
+   "note": "authors say low correlations 'could potentially be explained' by approach differences, not that they stem from them",
+   "en": {
+    "takeaway": "Low correlations with ability-based and occupation-scored efforts could stem from differences in approaches"
+   },
+   "zh": {
+    "takeaway": "与能力法和职业评分法的低相关性可能源于方法差异"
+   },
+   "de": {
+    "takeaway": "Niedrige Korrelationen mit fähigkeitsbasierten und berufsbewerteten Arbeiten könnten auf unterschiedlichen Ansätzen beruhen"
+   }
+  },
+  "S5.SS1.p8.1": {
+   "note": "topic 'unexplained variance' not verbatim in the takeaway",
+   "en": {
+    "takeaway": "Regressions explain 60.7% to 72.8%, leaving 28% to 40% unexplained variance"
+   },
+   "zh": {
+    "takeaway": "回归解释60.7%至72.8%，仍有28%至40%未解释方差"
+   },
+   "de": {
+    "takeaway": "Regressionen erklären 60,7% bis 72,8%, es bleiben 28% bis 40% unerklärte Varianz",
+    "topic": "unerklärte Varianz"
+   }
+  },
+  "S5.T8.cap": {
+   "note": "zh takeaway dropped co-authors (Autor, Osborne); SML term consistent with 5.1 list",
+   "zh": {
+    "takeaway": "表8汇总了Webb、Acemoglu与Autor、SML、Felten及Frey与Osborne的测量",
+    "sentences": {
+     "2": "我们纳入了⟦a144 (Webb,, 2020)⟧的所有测量、来自⟦a145 (Acemoglu and Autor, 2011a, )⟧的标准化常规认知与体力评分（均值可能因职业组匹配不完善而略微偏离0）、来自⟦a146 (Brynjolfsson and Mitchell,, 2017; Brynjolfsson et al.,, 2018; Brynjolfsson et al.,, 2023)⟧的机器学习适宜性、来自⟦a147 (Felten et al.,, 2018)⟧的AI职业暴露度，以及来自⟦a148 (Frey and Osborne,, 2017)⟧的自动化暴露度。"
+    }
+   }
+  },
+  "S5.T9.cap": {
+   "note": "de spelling 'routine manuellen'",
+   "de": {
+    "sentences": {
+     "2": "Jedes Maß wird in seiner ursprünglichen Skala beibehalten, mit Ausnahme der routinekognitiven und routinemanuellen Werte von ⟦a149 (Acemoglu and Autor, 2011a, )⟧."
+    }
+   }
+  },
+  "S6.SS1.p2.1": {
+   "note": "reason wrote the difference as 'alpha minus zeta' (wrong sign) and repeated the source's typo 'mean zeta of 0.14' (direct exposure); de 'out of the box'",
+   "en": {
+    "reason": "The gap between ⟦a156 $\\alpha$⟧ and ⟦a157 $\\zeta$⟧ means is 0.42 (GPT-4) and 0.32 (human), over twice the 0.14 mean direct exposure"
+   },
+   "zh": {
+    "reason": "⟦a156 $\\alpha$⟧与⟦a157 $\\zeta$⟧的均值差GPT-4为0.42、人工为0.32，超过LLM自身平均直接暴露0.14的两倍"
+   },
+   "de": {
+    "sentences": {
+     "3": "Während unsere Ergebnisse nahelegen, dass diese Modelle von Haus aus für einen bedeutenden Anteil von Arbeitskräften und Aufgaben relevant sind, legen sie auch nahe, dass die von ihnen hervorgebrachten Softwareinnovationen eine viel breitere Wirkung entfalten könnten."
+    },
+    "reason": "Die Mittelwertdifferenz zwischen ⟦a156 $\\alpha$⟧ und ⟦a157 $\\zeta$⟧ beträgt 0,42 (GPT-4) und 0,32 (Menschen), mehr als das Doppelte der direkten mittleren Exposition von 0,14"
+   }
+  },
+  "S6.SS1.p3.1": {
+   "note": "de topic 'LLM-Übernahme' reads as 'LLM takeover'; zh topic generic",
+   "zh": {
+    "topic": "模型采用"
+   },
+   "de": {
+    "takeaway": "Frühe qualitative Belege zeigen eine zunehmend breite LLM-Adoption",
+    "topic": "LLM-Adoption"
+   }
+  },
+  "S6.SS1.p4.1": {
+   "note": "en and de topics not verbatim in their takeaways; zh 失准 for misalignment",
+   "en": {
+    "takeaway": "Widespread LLM adoption requires addressing bottlenecks of trust, habits, cost, and safety",
+    "topic": "Widespread LLM adoption"
+   },
+   "zh": {
+    "sentences": {
+     "4": "从这个意义上说，采用可能取决于大语言模型相关的一些伦理与安全风险的进展：偏见、事实捏造和未对齐，仅举几例⟦a162 OpenAI, 2023a ()⟧。"
+    },
+    "takeaway": "大语言模型的广泛采用需解决信任、习惯、成本与安全瓶颈",
+    "reason": "采用程度因数据可得性、监管和权力分布而在各部门间不同，需更深入探究",
+    "topic": "广泛采用"
+   },
+   "de": {
+    "takeaway": "Breite LLM-Adoption erfordert die Beseitigung von Engpässen bei Vertrauen, Gewohnheiten, Kosten und Sicherheit",
+    "topic": "Breite LLM-Adoption"
+   }
+  },
+  "S6.SS1.p5.1": {
+   "note": "takeaway merged two separate possibilities (time savings over quality; augmentation before automation); de 'Beschäftigungen'",
+   "en": {
+    "takeaway": "Adoption may favor time savings over quality, and augmentation may precede automation"
+   },
+   "zh": {
+    "takeaway": "采用或更重节省时间而非质量，增强可能先于自动化"
+   },
+   "de": {
+    "sentences": {
+     "2": "Eine Form, die dies annehmen könnte, ist eine Augmentationsphase, in der Arbeitsplätze zunächst prekärer werden (z. B. werden Autorinnen und Autoren zu Freelancern), bevor sie vollständig automatisiert werden."
+    },
+    "takeaway": "Die Adoption könnte Zeitersparnis vor Qualität stellen, und Augmentation könnte der Automatisierung vorausgehen",
+    "reason": "Arbeitsplätze könnten zunächst prekärer werden, etwa wenn Autorinnen und Autoren zu Freelancern werden, bevor sie vollständig automatisiert werden"
+   }
+  },
+  "S6.SS2.p1.1": {
+   "note": "zh takeaway claimed causation ('may exacerbate') where the paper reports a link; reason turned inequality into a downstream effect",
+   "en": {
+    "reason": "Its exposure results call for societal and policy preparedness; prior work suggests education, training, and safety-net reforms"
+   },
+   "zh": {
+    "takeaway": "自动化技术曾被关联到经济不平等与劳动力扰动",
+    "reason": "本文暴露结果表明社会与政策需提前准备；先前研究建议教育、培训与安全网改革"
+   },
+   "de": {
+    "reason": "Die Expositionsergebnisse erfordern gesellschaftliche und politische Vorbereitung; frühere Arbeiten nennen Bildung, Weiterbildung und Reformen der sozialen Sicherung"
+   }
+  },
+  "S7.p1.1": {
+   "note": "topic 'jobs' says nothing; de structure 'haben ... exponiert'; de rubric term",
+   "en": {
+    "topic": "19% of jobs"
+   },
+   "zh": {
+    "topic": "19%的工作"
+   },
+   "de": {
+    "sentences": {
+     "1": "Mithilfe einer neuen Bewertungsrubrik zum Verständnis der Fähigkeiten von LLMs und ihrer potenziellen Effekte auf Arbeitsplätze haben wir festgestellt, dass die meisten Berufe ein gewisses Maß an Exposition gegenüber LLMs aufweisen, wobei höher bezahlte Berufe im Allgemeinen mehr Tätigkeiten mit hoher Exposition umfassen."
+    },
+    "takeaway": "Bei etwa 19 % der Arbeitsplätze sind mindestens 50 % der Tätigkeiten gegenüber LLMs exponiert",
+    "topic": "19 % der Arbeitsplätze"
+   }
+  },
+  "S7.p2.1": {
+   "note": "zh general-purpose technology term (通用技术)",
+   "zh": {
+    "sentences": {
+     "0": "我们的研究旨在凸显大语言模型的通用技术潜力及其对美国劳动者的可能影响。"
+    },
+    "takeaway": "大语言模型具通用技术潜力，但社会与监管因素同样关键",
+    "topic": "通用技术潜力"
+   }
+  },
+  "S7.SS2.p1.1": {
+   "note": "takeaway was ungrammatical (taxonomies do not 'generalize past today'); the verse is a call to action",
+   "en": {
+    "takeaway": "The authors urge pioneering taxonomies and gathering policymakers to generalize past today",
+    "topic": "pioneering taxonomies"
+   },
+   "zh": {
+    "takeaway": "作者呼吁创建开创性分类体系、汇聚政策制定者，超越当下"
+   },
+   "de": {
+    "takeaway": "Die Autoren rufen zu bahnbrechenden Taxonomien und gemeinsamer Politik auf, um über das Heute hinauszudenken",
+    "topic": "bahnbrechenden Taxonomien"
+   }
+  },
+  "Sx1.p1.1": {
+   "note": "de typo 'Aufgabencxposition'; de 'werden ... gedankt' ungrammatical; zh topic too generic",
+   "zh": {
+    "topic": "暴露度标注"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir danken der Gruppe von Annotatoren, die uns bei der Annotation der Aufgabenexposition geholfen haben, darunter Muhammad Ahmed Saeed, Bongane Zitha, Merve Özen Şenen, J.J. und Peter Hoeschele."
+    },
+    "takeaway": "Dank an Annotatoren und Forschungsassistenten für Annotationen der Aufgabenexposition",
+    "reason": "Die genannten Annotatoren halfen bei der Annotation der Aufgabenexposition, während andere Forschungsassistenz und Feedback zum Artikel leisteten",
+    "topic": "Annotatoren und Forschungsassistenten"
+   }
+  },
+  "A1.SS1.p2.1": {
+   "note": "de 'Fakten aus weniger als einem Jahr' ungrammatical, 'zusammentragen' wrong verb",
+   "de": {
+    "sentences": {
+     "1": "Das Modell kann zudem keine aktuellen Fakten (solche, die weniger als ein Jahr alt sind) abrufen, es sei denn, sie sind in der Eingabe enthalten."
+    },
+    "reason": "Es kann keine aktuellen Fakten abrufen, die jünger als ein Jahr sind, außer sie stehen in der Eingabe"
+   }
+  },
+  "A1.SS1.p4.1": {
+   "note": "topic carried the article",
+   "en": {
+    "topic": "taxonomy"
+   },
+   "de": {
+    "topic": "Taxonomie"
+   }
+  },
+  "A1.SS1.p5.1": {
+   "note": "en dash in the translated heading replaced by a colon",
+   "zh": {
+    "sentences": {
+     "0": "## E0：无暴露"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "## E0: Keine Exposition"
+    }
+   }
+  },
+  "A1.SS1.p8.1": {
+   "note": "en dash in the translated heading replaced by a colon",
+   "zh": {
+    "sentences": {
+     "0": "## E1：直接暴露"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "## E1: Direkte Exposition"
+    }
+   }
+  },
+  "A1.SS1.p10.1": {
+   "note": "en dash in the translated heading replaced by a colon",
+   "zh": {
+    "sentences": {
+     "0": "## E2：由LLM驱动应用产生的暴露"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "## E2: Exposition durch LLM-gestützte Anwendungen"
+    }
+   }
+  },
+  "A1.SS1.p13.1": {
+   "note": "en dash in the translated heading replaced by a colon",
+   "zh": {
+    "sentences": {
+     "0": "## E3：给定图像能力时的暴露度"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "## E3: Exposition bei Bildfähigkeiten"
+    }
+   }
+  },
+  "A1.SS1.p6.1": {
+   "note": "reason turned 'cannot' into a prohibition ('must not')",
+   "en": {
+    "reason": "Direct access via ChatGPT or the Playground cannot cut completion time at equivalent quality by half"
+   },
+   "zh": {
+    "reason": "通过ChatGPT等界面直接使用LLM，无法在同等质量下将完成时间减半"
+   },
+   "de": {
+    "reason": "Direkter Zugang über ChatGPT oder den Playground kann die Bearbeitungszeit bei gleicher Qualität nicht halbieren"
+   }
+  },
+  "A1.SS1.p7.1": {
+   "note": "de topic over budget (5 words)",
+   "de": {
+    "topic": "hoher menschlicher Interaktion"
+   }
+  },
+  "A1.SS1.p11.1": {
+   "note": "tasks do not 'halve'; completion time does (de 'Aufgaben halbieren sich')",
+   "en": {
+    "takeaway": "For E2 tasks, only conceivable LLM-powered software halves completion time"
+   },
+   "zh": {
+    "takeaway": "E2任务需借助可设想的LLM驱动软件才能将时间减半"
+   },
+   "de": {
+    "takeaway": "Bei E2-Aufgaben halbiert erst denkbare LLM-gestützte Software die Bearbeitungszeit"
+   }
+  },
+  "A1.SS1.p14.1": {
+   "note": "topic 'image capabilities' not in the takeaway",
+   "en": {
+    "takeaway": "E3 assumes an LLM plus image capabilities: viewing, captioning, and creating images"
+   },
+   "zh": {
+    "takeaway": "E3假设LLM加图像能力：查看、描述与创建图像"
+   },
+   "de": {
+    "takeaway": "E3 setzt ein LLM plus Bildfähigkeiten voraus: Bilder ansehen, beschriften und erzeugen"
+   }
+  },
+  "A1.SS1.p16.1": {
+   "note": "grammar: the task is labeled E0",
+   "en": {
+    "takeaway": "Inspectors' equipment repair task is labeled E0 for lack of physicality"
+   }
+  },
+  "A1.SS1.p17.1": {
+   "note": "grammar: the task is labeled E1; de case error",
+   "en": {
+    "takeaway": "Computer research scientists' technology innovation task is labeled E1"
+   },
+   "de": {
+    "sentences": {
+     "1": "Kennzeichnung (E0/E1/E2/E3): E1 Erklärung: Das Modell kann theoretische Expertise während des Trainings als Teil seiner allgemeinen Wissensbasis erlernen, und die anzupassenden Prinzipien können in der Texteingabe für das Modell erfasst werden."
+    }
+   }
+  },
+  "A1.SS1.p18.1": {
+   "note": "takeaway cited 'system barriers', which belong to the next example; this one is E2 for no-diff",
+   "en": {
+    "takeaway": "Scheduling dining reservations is labeled E2, since existing automation leaves no LLM difference",
+    "reason": "Resy already automates it, though one could build a tool letting the LLM book on Resy"
+   },
+   "zh": {
+    "takeaway": "安排用餐预订标为E2，因现有自动化使LLM无差异",
+    "reason": "Resy已实现自动化，但可构建让LLM在Resy上代为预订的工具"
+   },
+   "de": {
+    "takeaway": "Tischreservierungen werden als E2 gekennzeichnet, da ein LLM gegenüber bestehender Automatisierung keinen Mehrwert bietet",
+    "reason": "Resy automatisiert dies bereits, doch man könnte ein Werkzeug bauen, mit dem das LLM über Resy reserviert"
+   }
+  },
+  "A1.SS1.p19.1": {
+   "note": "de left '(system)' in English",
+   "de": {
+    "sentences": {
+     "2": "Allerdings müssten sich viele Menschen darauf einlassen, neue technologische Werkzeuge zu nutzen, um dies zu erreichen (System)."
+    }
+   }
+  },
+  "A1.SS1.p20.1": {
+   "note": "grammar: the task is labeled E2",
+   "en": {
+    "takeaway": "Allergists' prescribing task is labeled E2, needing a human in the loop"
+   }
+  },
+  "A2.SSx1.p1.1": {
+   "note": "de topic was a clause",
+   "de": {
+    "topic": "Grundfertigkeiten"
+   }
+  },
+  "A2.I2.i1.p1.1": {
+   "note": "dash in the translation replaced by a colon, as in the other skill definitions",
+   "zh": {
+    "sentences": {
+     "0": "批判性思维：运用逻辑与推理来识别解决问题的替代方案、结论或方法的优势与劣势。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Kritisches Denken: Logik und Schlussfolgerungen nutzen, um Stärken und Schwächen alternativer Lösungen, Schlussfolgerungen oder Ansätze für Probleme zu erkennen."
+    }
+   }
+  },
+  "A2.I2.i2.p1.1": {
+   "note": "dash in the translation replaced by a colon, as in the other skill definitions",
+   "zh": {
+    "sentences": {
+     "0": "主动学习：理解新信息对当前及未来问题解决与决策的意涵。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Aktives Lernen: Die Implikationen neuer Informationen sowohl für die gegenwärtige als auch für die zukünftige Problemlösung und Entscheidungsfindung verstehen."
+    }
+   }
+  },
+  "A2.I2.i3.p1.1": {
+   "note": "dash in the translation replaced by a colon, as in the other skill definitions",
+   "zh": {
+    "sentences": {
+     "0": "学习策略：在学习或教授新事物时，选择并使用适合情境的培训或教学方法与程序。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Lernstrategien: Auswahl und Anwendung von Trainings- und Lehrmethoden sowie Verfahren, die für die Situation geeignet sind, wenn Neues gelernt oder gelehrt wird."
+    }
+   }
+  },
+  "A2.I2.i4.p1.1": {
+   "note": "dash in the translation replaced by a colon, as in the other skill definitions",
+   "zh": {
+    "sentences": {
+     "0": "监控：监控或评估自己、其他个人或组织的绩效，以做出改进或采取纠正措施。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Überwachung: Überwachung und Bewertung der Leistung der eigenen Person, anderer Personen oder Organisationen, um Verbesserungen vorzunehmen oder Korrekturmaßnahmen zu ergreifen."
+    }
+   }
+  },
+  "A2.I3.i1.p1.1": {
+   "note": "spaced hyphen replaced by a colon, as in the other skill definitions",
+   "de": {
+    "sentences": {
+     "0": "Programmierung: Computerprogramme für verschiedene Zwecke schreiben."
+    }
+   }
+  },
+  "A2.T10.cap": {
+   "note": "de left 'Exposure' in English and wrote 'Median des mittleren'; zh missing 的; de topic a fragment",
+   "zh": {
+    "sentences": {
+     "1": "除暴露度得分外，我们还展示了每个职业的年收入中位数的中位数，以及每组工人的总数（以千计）。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Mittlere Expositionswerte für Berufe, gruppiert nach der für den Einstieg in den Beruf typischerweise erforderlichen Ausbildung.",
+     "1": "Neben den Expositionswerten zeigen wir den Median der Median-Jahreseinkommen für jeden Beruf sowie die Gesamtzahl der Beschäftigten in jeder Gruppe in Tausend."
+    },
+    "takeaway": "Mittlere Expositionswerte, gruppiert nach typischer Ausbildung für den Berufseinstieg",
+    "reason": "Median der Jahreseinkommen und Gesamtzahl der Beschäftigten in Tausend stehen neben den Expositionswerten jedes Berufs",
+    "topic": "Ausbildung für den Berufseinstieg"
+   }
+  },
+  "A3.p1.1": {
+   "note": "takeaway claimed high exposure in nearly all industries; the paper says potential is present everywhere with wide heterogeneity, high only in some",
+   "en": {
+    "takeaway": "Exposure potential appears across nearly all 3-digit NAICS industries, with wide heterogeneity"
+   },
+   "zh": {
+    "takeaway": "几乎所有三位数NAICS行业都存在暴露潜力，且异质性大",
+    "topic": "NAICS行业"
+   },
+   "de": {
+    "sentences": {
+     "0": "Die Abbildungen ⟦a169 6⟧ und ⟦a170 7⟧ zeigen die insgesamt beschäftigungsgewichtete relative Exposition von 3-stelligen NAICS-Branchen nach Einschätzung menschlicher Bewerter bzw. von GPT-4 (basierend auf unserer Expositionsrubrik)."
+    },
+    "takeaway": "Expositionspotenzial besteht in nahezu allen 3-stelligen NAICS-Branchen, bei großer Heterogenität"
+   }
+  },
+  "A3.p2.1": {
+   "note": "zh sentence 2 asserted a high correlation exists (the paper finds none); de 'unzusammenhängend' means incoherent",
+   "zh": {
+    "sentences": {
+     "2": "如果已经快速增长的高生产率行业与暴露度高度相关，则可能意味着鲍莫尔成本病的加剧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "6": "Das Produktivitätswachstum seit 2012 und die Exposition gegenüber LLM-Technologien scheinen nicht zusammenzuhängen.⟦a174⟧"
+    },
+    "reason": "Wären schnell wachsende Branchen am stärksten exponiert, könnte sich die Baumol-Kostenkrankheit verschärfen, doch Exposition und Produktivitätswachstum seit 2012 scheinen nicht zusammenzuhängen"
+   }
+  },
+  "A4.T11.cap": {
+   "note": "topic 'exposed tasks' not in the takeaway",
+   "en": {
+    "topic": "34 occupations"
+   }
+  },
+  "S4.F3.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "affected occupations"
+   },
+   "zh": {
+    "topic": "受影响职业"
+   },
+   "de": {
+    "topic": "betroffenen Berufen"
+   }
+  },
+  "S4.F5.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "exposure ratings"
+   },
+   "zh": {
+    "topic": "暴露度评分"
+   }
+  },
+  "A2.SSx4.p1.1": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "cross-functional skills"
+   },
+   "zh": {
+    "topic": "跨职能技能"
+   },
+   "de": {
+    "topic": "funktionsübergreifenden Fähigkeiten"
+   }
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "80% of workers have at least 10% of tasks affected, not 'most work tasks'",
+   "en": {
+    "takeaway": "LLMs like GPTs could affect tasks of most U.S. workers and show general-purpose technology traits",
+    "topic": "general-purpose technology"
+   },
+   "zh": {
+    "takeaway": "GPT类大语言模型可能影响多数美国劳动者的部分任务，具备通用技术特征",
+    "topic": "通用技术"
+   },
+   "de": {
+    "takeaway": "LLMs wie GPTs könnten Aufgaben der meisten US-Beschäftigten betreffen und Merkmale von Allzwecktechnologien zeigen",
+    "topic": "Allzwecktechnologien"
+   }
+  },
+  "S1": {
+   "note": "work is exposed to LLMs, not LLMs exposed; zh reversed it; de 'universelle Technologien' -> Allzwecktechnologien",
+   "en": {
+    "takeaway": "US work shows broad exposure to LLMs and LLM-powered software, suggesting GPTs are general-purpose technologies"
+   },
+   "zh": {
+    "takeaway": "美国工作广泛暴露于LLM及LLM驱动软件，GPTs或为通用技术",
+    "topic": "LLM驱动软件"
+   },
+   "de": {
+    "takeaway": "Die US-Arbeitswelt ist LLMs und LLM-gestützter Software breit exponiert, was GPTs als Allzwecktechnologien nahelegt",
+    "topic": "LLM-gestützter Software"
+   }
+  },
+  "S2.SS1": {
+   "note": "topic 'LLMs are advancing' was a clause fragment; zh topic 'LLM' not distinct",
+   "en": {
+    "topic": "building blocks"
+   },
+   "zh": {
+    "topic": "通用构建模块"
+   }
+  },
+  "S2.SS2": {
+   "note": "zh takeaway dropped co-invention and drifted from the English; de topic was a clause; Allzwecktechnologie",
+   "zh": {
+    "takeaway": "自动化研究表明常规任务面临替代，共同发明塑造通用技术的劳动效应",
+    "topic": "自动化研究"
+   },
+   "de": {
+    "takeaway": "Die Automatisierungsforschung zeigt die Verdrängung von Routinetätigkeiten; Co-Invention prägt Arbeitsmarkteffekte von Allzwecktechnologien",
+    "topic": "Automatisierungsforschung"
+   }
+  },
+  "S3.SS1": {
+   "note": "zh left 'occupation' in English; de title awkward",
+   "zh": {
+    "takeaway": "分析基于O*NET中1,016种职业的任务与详细工作活动"
+   },
+   "de": {
+    "title": "Daten zu Tätigkeiten und Aufgaben nach Beruf in den USA"
+   }
+  },
+  "S3.SS2": {
+   "note": "en topic was 5 words (budget 3); zh dropped demographics",
+   "en": {
+    "topic": "BLS and CPS"
+   },
+   "zh": {
+    "takeaway": "工资、就业与人口统计数据来自BLS和CPS",
+    "topic": "BLS和CPS"
+   }
+  },
+  "S3.SS3": {
+   "note": "threshold is 'at least half'; zh wrote beta as plain text instead of the marker; de topic was a fragment",
+   "en": {
+    "takeaway": "Exposure measures whether LLMs cut task time by at least half; ⟦a68 $\\beta$⟧ is the default measure"
+   },
+   "zh": {
+    "takeaway": "暴露度衡量LLM能否将任务时间至少减半，⟦a68 $\\beta$⟧为默认指标"
+   },
+   "de": {
+    "topic": "Exposition"
+   }
+  },
+  "S3.SS4.SSS1": {
+   "note": "topic was an adjective fragment; zh title",
+   "en": {
+    "topic": "human labeling"
+   },
+   "zh": {
+    "title": "人类主观判断"
+   },
+   "de": {
+    "topic": "menschliche Kennzeichnung"
+   }
+  },
+  "S3.SS4.SSS2": {
+   "note": "de topic named the wrong side of the comparison",
+   "de": {
+    "topic": "GPT-4-Bewertungen"
+   }
+  },
+  "S3.SS4.SSS3": {
+   "note": "de topic contained article and verb",
+   "de": {
+    "topic": "aufgabenbasierte Expositionsanalyse"
+   }
+  },
+  "S4": {
+   "note": "zh general-purpose technology term (通用技术) and a distinct topic",
+   "zh": {
+    "takeaway": "LLM可能影响美国多种职业，体现通用技术的关键属性",
+    "topic": "美国多种职业"
+   }
+  },
+  "S4.SS1": {
+   "note": "15% is direct (alpha) exposure per occupation; '80% of workers affected' overstated exposure as impact; zh wrote plain Greek letters and drifted from the English",
+   "en": {
+    "takeaway": "About 15% of tasks per occupation are directly exposed; 80% of workers exceed 10% exposure",
+    "topic": "80% of workers"
+   },
+   "zh": {
+    "takeaway": "每个职业约15%的任务直接暴露，80%的劳动者至少10%任务暴露",
+    "topic": "80%的劳动者"
+   },
+   "de": {
+    "takeaway": "Rund 15% der Aufgaben je Beruf sind direkt exponiert; 80% der Beschäftigten haben mindestens 10% exponierte Aufgaben",
+    "topic": "80% der Beschäftigten"
+   }
+  },
+  "S4.SS2": {
+   "note": "de topic contained a verb",
+   "de": {
+    "topic": "LLM-Exposition"
+   }
+  },
+  "S4.SS3": {
+   "note": "regression associations were stated as causal effects ('lower', 'raise'); zh topic cut mid-phrase",
+   "en": {
+    "takeaway": "Exposure is lower with science and critical thinking skills, higher with programming and writing",
+    "topic": "critical thinking skills"
+   },
+   "zh": {
+    "takeaway": "科学与批判性思维技能对应较低暴露，编程与写作对应较高暴露",
+    "topic": "批判性思维"
+   },
+   "de": {
+    "takeaway": "Naturwissenschaft und kritisches Denken gehen mit geringerer Exposition einher, Programmieren und Schreiben mit höherer",
+    "topic": "kritisches Denken"
+   }
+  },
+  "S4.SS4": {
+   "note": "zh topic too generic; de topic contained a verb",
+   "zh": {
+    "topic": "职业区"
+   },
+   "de": {
+    "topic": "Jobzonen"
+   }
+  },
+  "S4.SS4.SSS1": {
+   "note": "zh said 'highest' where the paper says 'high'; topics; de title",
+   "en": {
+    "topic": "Degree holders"
+   },
+   "zh": {
+    "takeaway": "学位持有者与读过大学但无学位者暴露度较高"
+   },
+   "de": {
+    "title": "Typischer Bildungsabschluss für den Berufseinstieg",
+    "takeaway": "Hochschulabsolventen und Personen mit Studium ohne Abschluss weisen hohe LLM-Exposition auf",
+    "topic": "Hochschulabsolventen"
+   }
+  },
+  "S5.SS1": {
+   "note": "zh dropped the negative correlations",
+   "zh": {
+    "takeaway": "LLM暴露度与先前AI和软件指标正相关，与手工和自动化指标负相关"
+   }
+  },
+  "S6.SS2": {
+   "note": "zh topic cut mid-word '劳动者对大语'",
+   "zh": {
+    "topic": "政策准备"
+   }
+  },
+  "S6.SS3": {
+   "note": "topic carried the article",
+   "en": {
+    "topic": "US-only focus"
+   }
+  },
+  "S7": {
+   "note": "zh claimed broad impact (paper says exposure) and topic not distinct; de 'der Politik drohen Folgen' mistranslates 'policy implications looming'",
+   "zh": {
+    "takeaway": "大语言模型显现通用潜力，多数职业有一定暴露，政策影响凸显",
+    "topic": "通用潜力"
+   },
+   "de": {
+    "takeaway": "LLMs zeigen Allzweckpotenzial, die meisten Berufe sind teils exponiert, politische Implikationen zeichnen sich ab"
+   }
+  },
+  "S7.SS1": {
+   "note": "GPT-4's verse says nothing about general-purpose technologies",
+   "en": {
+    "takeaway": "GPT-4's version: GPTs generate profound transformations, permeating tasks and greatly impacting professions",
+    "topic": "GPT-4's version"
+   },
+   "zh": {
+    "takeaway": "GPT-4版本：GPTs引发深刻变革，渗透任务并重大影响各职业",
+    "topic": "GPT-4版本"
+   },
+   "de": {
+    "takeaway": "GPT-4s Version: GPTs bewirken tiefgreifende Veränderungen, durchdringen Aufgaben und beeinflussen Berufe stark",
+    "topic": "GPT-4s Version"
+   }
+  },
+  "S7.SS2": {
+   "note": "topic 'GPTs' not distinct; de takeaway drifted from the English",
+   "en": {
+    "topic": "Author-augmented conclusion"
+   },
+   "zh": {
+    "takeaway": "作者增补版：GPTs驱动变革，需新分类与政策远见",
+    "topic": "作者增补版"
+   },
+   "de": {
+    "takeaway": "Erweiterte Fassung der Autoren: GPTs treiben Wandel voran und erfordern neue Taxonomien und politische Weitsicht",
+    "topic": "Erweiterte Fassung der Autoren"
+   }
+  },
+  "Sx1": {
+   "note": "zh topic cut mid-phrase '众多标注者与'",
+   "zh": {
+    "topic": "众多标注者"
+   }
+  },
+  "A1.SS1": {
+   "note": "titles: 暴露度 as in 3.3; de title carried a stray number; de case error",
+   "zh": {
+    "title": "暴露度"
+   },
+   "de": {
+    "title": "Exposition",
+    "takeaway": "Die Expositionstaxonomie E0 bis E3 ordnet Aufgaben nach dem durch LLMs eingesparten Zeitaufwand ein"
+   }
+  },
+  "A2.SSx1": {
+   "note": "de topic was a clause",
+   "de": {
+    "topic": "Grundfertigkeiten"
+   }
+  },
+  "A2.SSx2": {
+   "note": "de topic named the wrong thing (section is 'Content')",
+   "de": {
+    "topic": "Inhalte"
+   }
+  },
+  "A3": {
+   "note": "the authors say exposure 'appears' uncorrelated",
+   "en": {
+    "takeaway": "Exposure spans nearly all industries and appears uncorrelated with recent productivity growth"
+   },
+   "zh": {
+    "takeaway": "暴露几乎覆盖所有行业，且与近期生产率增长似乎无关"
+   },
+   "de": {
+    "takeaway": "Die Exposition erstreckt sich über fast alle Branchen und scheint mit dem jüngsten Produktivitätswachstum unkorreliert"
+   }
+  },
+  "A4": {
+   "note": "topic contained a verb",
+   "en": {
+    "topic": "34 occupations"
+   }
+  }
+ }
+}

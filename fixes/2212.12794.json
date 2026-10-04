@@ -1,0 +1,3939 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "severe events rendered as generic extreme events; de 'schwerer Ereignisse' and 'operativ' inconsistent",
+   "zh": {
+    "sentences": {
+     "4": "我们表明，GraphCast在1380个验证目标中的90%上显著优于最准确的业务确定性系统，其预报还能更好地支持灾害性天气事件的预测，包括热带气旋、大气河和极端温度。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "4": "Wir zeigen, dass GraphCast die genauesten operationellen deterministischen Systeme bei 90 % von 1380 Verifikationszielen deutlich übertrifft und seine Vorhersagen eine bessere Vorhersage von Extremereignissen ermöglichen, darunter tropische Wirbelstürme, atmosphärische Flüsse und extreme Temperaturen."
+    }
+   }
+  },
+  "Sx1.p1.1": {
+   "note": "zh topic cut to ECMWF; zh time phrase odd; de left the ECMWF name in English",
+   "zh": {
+    "topic": "ECMWF的IFS",
+    "sentences": {
+     "0": "2022年10月中旬，UTC时间05:45，意大利博洛尼亚：欧洲中期天气预报中心（ECMWF）的新高性能计算设施刚刚投入运行。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Es ist 05:45 UTC Mitte Oktober 2022 in Bologna, Italien, und die neue Hochleistungsrechenanlage des Europäischen Zentrums für mittelfristige Wettervorhersage (ECMWF) hat gerade den Betrieb aufgenommen."
+    }
+   }
+  },
+  "Sx1.p2.1": {
+   "note": "zh topic not verbatim (NWP); zh sentence 3 garbled; de hurricane path should be Zugbahn",
+   "zh": {
+    "topic": "数值天气预报",
+    "sentences": {
+     "3": "NWP的成功源于严格且持续的研究实践，这些实践对天气现象的描述日益细致，也源于NWP能随计算资源的增加很好地提升准确性⟦a1 [3, 2]⟧。"
+    }
+   },
+   "de": {
+    "reason": "Rigorose Forschung und skalierende Rechenleistung haben Vorhersagen von Temperatur und Hurrikanzugbahnen stetig genauer gemacht",
+    "sentences": {
+     "4": "Infolgedessen ist die Genauigkeit der Wettervorhersagen Jahr für Jahr gestiegen, bis zu dem Punkt, an dem die Oberflächentemperatur oder die Zugbahn eines Hurrikans viele Tage im Voraus vorhergesagt werden können, eine Möglichkeit, die noch vor wenigen Jahrzehnten undenkbar war."
+    }
+   }
+  },
+  "Sx1.p4.1": {
+   "note": "en topic over budget; zh topic not verbatim; de topic cut mid-phrase; de gender error 'der Nowcasting'",
+   "en": {
+    "takeaway": "ML weather prediction (MLWP) trains forecast models directly from historical data",
+    "topic": "ML weather prediction"
+   },
+   "zh": {
+    "takeaway": "机器学习预报（MLWP）直接从历史数据训练预报模型",
+    "topic": "机器学习预报"
+   },
+   "de": {
+    "takeaway": "Die Wettervorhersage mit maschinellem Lernen trainiert Vorhersagemodelle direkt aus historischen Daten",
+    "topic": "Wettervorhersage mit maschinellem Lernen",
+    "sentences": {
+     "3": "In jüngster Zeit hat MLWP dazu beigetragen, die NWP-basierte Vorhersage in Bereichen zu verbessern, in denen die traditionelle NWP relativ schwach ist, zum Beispiel bei der subsaisonalen Hitzewellenvorhersage ⟦a3 [32]⟧ und dem Niederschlags-Nowcasting aus Radarbildern ⟦a4 [32, 33, 29, 8]⟧, wo genaue Gleichungen und robuste numerische Verfahren weniger verfügbar sind."
+    }
+   }
+  },
+  "Sx1.p5.1": {
+   "note": "reason put the near-IFS results at coarse resolutions, but those works reached them at 1.0 and 0.25 degrees; en/de topic not verbatim, de topic typo NLWP",
+   "en": {
+    "takeaway": "NWP systems like HRES remain most accurate in medium-range forecasting, but MLWP is advancing",
+    "reason": "Recent GNN, Fourier operator and Transformer models begin to approach IFS for a handful of variables up to seven days",
+    "topic": "medium-range forecasting"
+   },
+   "zh": {
+    "reason": "近期GNN、傅里叶神经算子和Transformer模型在少数变量、7天内已开始接近IFS"
+   },
+   "de": {
+    "takeaway": "NWP-Systeme wie HRES bleiben in der Mittelfristvorhersage am genauesten, doch MLWP-Methoden holen auf",
+    "reason": "Neuere GNN-, Fourier-Operator- und Transformer-Modelle nähern sich für einige Variablen und Vorlaufzeiten bis zu sieben Tagen dem IFS an",
+    "topic": "Mittelfristvorhersage"
+   }
+  },
+  "Sx1.F1.cap": {
+   "note": "en takeaway showed a literal '$$' (empty formula); topic 'grid' vague; de sentence 1 lost marker a16",
+   "en": {
+    "takeaway": "Model schematic: GraphCast encodes a grid of 227 variables per point into a multi-mesh",
+    "topic": "Model schematic"
+   },
+   "zh": {
+    "takeaway": "模型示意图：GraphCast将每点227个变量的网格编码到多网格",
+    "topic": "模型示意图"
+   },
+   "de": {
+    "takeaway": "Modellschema: GraphCast kodiert ein Gitter mit 227 Variablen pro Punkt in ein Multi-Mesh",
+    "topic": "Modellschema",
+    "sentences": {
+     "1": "(a) Der oder die eingegebenen Wetterzustände sind auf einem ⟦a16 $$⟧ Breiten-Längen-Gitter mit insgesamt ⟦a17 $721\\times 1440=1,038,240$⟧ Punkten definiert."
+    }
+   }
+  },
+  "Sx1.T1.cap": {
+   "note": "reason 'column counts' unclear; zh levels rendered as 层次 instead of 气压层",
+   "en": {
+    "reason": "The table lists all modeled variables and pressure levels, with each column's entry count in parentheses"
+   },
+   "zh": {
+    "takeaway": "记分卡评估仅包含粗体标出的天气变量和气压层",
+    "reason": "表中列出所有建模变量和气压层，括号内为各列的条目数",
+    "sentences": {
+     "0": "GraphCast建模的天气变量和气压层。",
+     "2": "粗体的变量和气压层表示纳入记分卡评估的变量和气压层。"
+    }
+   },
+   "de": {
+    "reason": "Die Tabelle listet alle modellierten Variablen und Druckniveaus auf, mit der Anzahl der Einträge je Spalte in Klammern"
+   }
+  },
+  "Sx2.p2.1": {
+   "note": "en topic over budget and en takeaway awkward; de reason garbled; de grid term Raster -> Gitter",
+   "en": {
+    "takeaway": "GraphCast predicts the next weather state, six hours ahead, from the two latest states",
+    "topic": "next weather state"
+   },
+   "de": {
+    "reason": "Ein Zustand ist ein ⟦a28 $721\\times 1440$⟧-Gitter aus Oberflächen- und Atmosphärenvariablen; beim Ausrollen werden Vorhersagen zurückgeführt, für beliebig lange Trajektorien",
+    "sentences": {
+     "1": "Ein einzelner Wetterzustand wird durch ein ⟦a27 $$⟧ Breiten-/Längengrad-Gitter (⟦a28 $721\\times 1440$⟧) dargestellt, was am Äquator etwa einer Auflösung von ⟦a29 $28\\times 28$⟧ Kilometern entspricht (⟦a30 Figure 1⟧a), wobei jeder Gitterpunkt eine Menge von Oberflächen- und Atmosphärenvariablen repräsentiert (aufgeführt in ⟦a31 Table 1⟧)."
+    }
+   }
+  },
+  "Sx2.p4.1": {
+   "note": "zh multi-mesh term: 多重网格 -> 多网格 (used everywhere else); de Raster -> Gitter",
+   "zh": {
+    "takeaway": "编码器将归一化网格变量映射到多网格的学习节点属性",
+    "sentences": {
+     "0": "编码器（⟦a35 Figure 1⟧d）使用单个GNN层，将输入网格上表示为节点属性的变量（归一化为零均值单位方差）映射到内部“多网格”表示上的学习节点属性。"
+    }
+   },
+   "de": {
+    "takeaway": "Der Encoder bildet normalisierte Gittervariablen auf erlernte Knotenattribute eines Multi-Mesh ab"
+   }
+  },
+  "Sx2.p5.1": {
+   "note": "en takeaway over budget; zh 多重网格 -> 多网格 and takeaway over budget",
+   "en": {
+    "takeaway": "The multi-mesh is a uniform global graph from six refinements of an icosahedron",
+    "topic": "multi-mesh"
+   },
+   "zh": {
+    "takeaway": "多网格是全球均匀的图，由正二十面体六次细化构建",
+    "topic": "多网格",
+    "sentences": {
+     "0": "多网格（⟦a36 Figure 1⟧g）是一个空间均匀、在全球具有高空间分辨率的图。",
+     "2": "多网格包含来自最高分辨率网格的40,962个节点，以及中间各图中创建的所有边的并集，形成一个边长各异的扁平边层级。"
+    }
+   }
+  },
+  "Sx2.p6.1": {
+   "note": "zh 多重网格 -> 多网格",
+   "zh": {
+    "takeaway": "处理器用16个不共享GNN层在多网格上传递消息",
+    "sentences": {
+     "0": "处理器（⟦a37 Figure 1⟧e）使用16个不共享的GNN层在多网格上执行学习的消息传递，从而以很少的消息传递步骤实现高效的局部和长程信息传播。"
+    }
+   }
+  },
+  "Sx2.p7.1": {
+   "note": "zh 多重网格 -> 多网格; de takeaway lacked the verb particle 'ab'; Raster -> Gitter",
+   "zh": {
+    "takeaway": "解码器将多网格特征作为残差更新映射回经纬度网格",
+    "sentences": {
+     "0": "解码器（⟦a38 Figure 1⟧f）将最终处理器层的学习特征从多网格表示映射回经纬度网格。"
+    }
+   },
+   "de": {
+    "takeaway": "Der Decoder bildet Multi-Mesh-Merkmale als Residuen-Update zurück auf das Breiten-/Längengrad-Gitter ab",
+    "sentences": {
+     "0": "Der Decoder (⟦a38 Figure 1⟧f) bildet die erlernten Merkmale der letzten Prozessorschicht aus der Multi-Mesh-Repräsentation zurück auf das Breiten-/Längengrad-Gitter ab."
+    }
+   }
+  },
+  "Sx2.p8.1": {
+   "note": "reason said N was increased using gradient descent; gradient descent minimizes the loss while N is scheduled",
+   "en": {
+    "takeaway": "GraphCast was trained on 39 years of ERA5 data with a multi-step MSE objective",
+    "reason": "The level-weighted MSE was minimized by gradient descent while ⟦a42 $N$⟧ rose from 1 to 12, six hours to three days"
+   },
+   "zh": {
+    "reason": "按垂直层加权的MSE用梯度下降最小化，⟦a42 $N$⟧从1逐步增至12（6小时至3天）"
+   },
+   "de": {
+    "reason": "Der nach Vertikalniveau gewichtete MSE wurde per Gradientenabstieg minimiert, während ⟦a42 $N$⟧ von 1 auf 12 stieg (sechs Stunden bis drei Tage)"
+   }
+  },
+  "Sx3.p1.1": {
+   "note": "de: RMSE rendered as MSE ('mittlerer quadratischer Fehler'), typo 'GüteMetriken', topic cut; weak/non-verbatim topics",
+   "en": {
+    "topic": "verified against HRES"
+   },
+   "zh": {
+    "topic": "与HRES对比验证"
+   },
+   "de": {
+    "takeaway": "GraphCast wird über viele Variablen, Niveaus und Vorlaufzeiten gegen HRES verifiziert",
+    "topic": "gegen HRES verifiziert",
+    "sentences": {
+     "0": "Wir verifizieren die Vorhersagegüte von GraphCast umfassend, indem wir seine Genauigkeit mit der von HRES über eine große Zahl von Variablen, Niveaus und Vorlaufzeiten vergleichen.",
+     "1": "Wir quantifizieren die jeweilige Güte von GraphCast, HRES und ML-Baselines mit zwei Gütemetriken: der Wurzel des mittleren quadratischen Fehlers (RMSE) und dem Anomaliekorrelationskoeffizienten (ACC)."
+    }
+   }
+  },
+  "Sx3.p2.1": {
+   "note": "topics cut ('level combinations', '69个', '69 von 227 Variablen'); de Scorecard gender; de 'Blurring' left in English",
+   "en": {
+    "takeaway": "Skill is evaluated on 69 of the 227 variable-level combinations",
+    "topic": "variable-level combinations"
+   },
+   "zh": {
+    "takeaway": "评估范围：227个变量与层次组合中的69个",
+    "topic": "评估范围",
+    "sentences": {
+     "0": "在GraphCast于每个格点预测的227个变量与层次组合中，我们在其中69个上评估了它相对HRES的技巧，这些组合对应WeatherBench⟦a45 [41]⟧的13个层次以及ECMWF记分卡⟦a46 [9]⟧中的变量；参见⟦a47 Table 1⟧中的粗体变量与层次，评估期内业务运行的HRES版本见补充材料⟦a48 Section 1.2⟧。"
+    }
+   },
+   "de": {
+    "takeaway": "Die Güte wird an 69 der 227 Kombinationen aus Variable und Niveau bewertet",
+    "topic": "69 der 227 Kombinationen",
+    "sentences": {
+     "0": "Von den 227 Variablen- und Niveaukombinationen, die GraphCast an jedem Gitterpunkt vorhersagt, bewerteten wir seine Güte gegenüber HRES für 69 davon, entsprechend den 13 Niveaus von WeatherBench⟦a45 [41]⟧ und Variablen aus der ECMWF-Scorecard ⟦a46 [9]⟧; siehe fettgedruckte Variablen und Niveaus in ⟦a47 Table 1⟧ und Supplement ⟦a48 Section 1.2⟧ dazu, welcher HRES-Zyklus während des Evaluationszeitraums operationell war.",
+     "2": "Zusätzlich zur im Haupttext berichteten aggregierten Leistung bietet Supplement ⟦a50 Section 7⟧ weitere detaillierte Evaluationen, einschließlich anderer Variablen, regionaler Leistung, Effekten von Breitengrad und Druckniveau, spektralen Eigenschaften, Unschärfe, Vergleichen mit anderen ML-basierten Vorhersagen und Effekten von Modelldesignentscheidungen."
+    }
+   }
+  },
+  "Sx3.p3.1": {
+   "note": "'grounds' / 锚定 / verankert unclear for 'is the ground truth for'; de left a dataset name in English",
+   "en": {
+    "takeaway": "ERA5 is ground truth for GraphCast, and HRES-fc0 for HRES, ensuring zero initial error"
+   },
+   "zh": {
+    "takeaway": "ERA5作为GraphCast的真值，HRES-fc0作为HRES的真值，确保初始误差为零"
+   },
+   "de": {
+    "takeaway": "ERA5 dient als Referenz für GraphCast, HRES-fc0 als Referenz für HRES, mit Anfangsfehler null",
+    "topic": "HRES-fc0",
+    "sentences": {
+     "3": "Stattdessen konstruierten wir einen Datensatz „HRES-Vorhersage bei Schritt 0“ (HRES-fc0), der als Referenzdaten für HRES dient."
+    }
+   }
+  },
+  "Sx3.p4.1": {
+   "note": "de takeaway misused 'abstimmen'; de 'Zielvorhersagezeiten' -> Vorlaufzeiten",
+   "de": {
+    "takeaway": "GraphCast wird ab 06z und 18z evaluiert, passend zum +3h-Vorausblick von HRES",
+    "sentences": {
+     "5": "Dieselbe Logik wandten wir bei der Wahl der Ziel-Vorlaufzeiten an und evaluieren Ziele nur alle 12h, um sicherzustellen, dass die Referenzdaten ERA5 und HRES denselben +3h-Vorausblick aufweisen (siehe Supplement ⟦a52 Section 5.2⟧)."
+    }
+   }
+  },
+  "Sx3.F2.cap": {
+   "note": "en topic over budget",
+   "en": {
+    "topic": "RMSE skill scores"
+   }
+  },
+  "Sx4.p1.1": {
+   "note": "en/de reason showed a literal '$$' (empty formula); de 'Vorhersagefähigkeit' (ability) for forecast skill",
+   "en": {
+    "reason": "Evaluation uses 10-day forecasts on a latitude/longitude grid at 13 vertical levels"
+   },
+   "zh": {
+    "reason": "评估基于经纬度网格、13个垂直层上的10天预报"
+   },
+   "de": {
+    "takeaway": "GraphCast hat global eine größere 10-Tage-Vorhersagegüte als HRES",
+    "topic": "Vorhersagegüte",
+    "reason": "Die Bewertung nutzt 10-Tage-Vorhersagen auf einem Breiten-Längen-Gitter mit 13 vertikalen Ebenen",
+    "sentences": {
+     "0": "Wir stellen fest, dass GraphCast eine größere Vorhersagegüte als HRES besitzt, wenn es anhand von 10-Tage-Vorhersagen bei einer horizontalen Auflösung von ⟦a56 $$⟧ für Breiten- und Längengrad und auf 13 vertikalen Ebenen bewertet wird."
+    }
+   }
+  },
+  "Sx4.p2.1": {
+   "note": "en grammar ('by 7% to 14% skill score'); de 'Fähigkeit/Fähigkeitswert' for skill/skill score",
+   "en": {
+    "takeaway": "GraphCast beats HRES on z500, improving RMSE skill score by about 7% to 14%",
+    "topic": "skill score"
+   },
+   "de": {
+    "takeaway": "GraphCast übertrifft HRES bei z500 um 7% bis 14% im RMSE-Skill-Score",
+    "topic": "RMSE-Skill-Score",
+    "sentences": {
+     "0": "⟦a57 Figure 2⟧a-c zeigen, wie GraphCast (blaue Linien) HRES (schwarze Linien) beim z500-Feld (Geopotential bei 500 ⟦a58 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧), dem „Headline“-Feld, hinsichtlich RMSE-Skill, RMSE-Skill-Score (d. h. der normierten RMSE-Differenz zwischen Modell ⟦a59 $A$⟧ und Baseline ⟦a60 $B$⟧, definiert als ⟦a61 $(\\mathrm{RMSE}_{A}-\\mathrm{RMSE}_{B})/\\mathrm{RMSE}_{B}$⟧) und ACC-Skill übertrifft.",
+     "2": "Die Abbildungen zeigen, dass GraphCast über alle Vorlaufzeiten hinweg bessere Skill-Scores aufweist, mit einer Verbesserung des Skill-Scores um etwa ⟦a63 $7\\%$⟧ bis ⟦a64 $14\\%$⟧."
+    }
+   }
+  },
+  "Sx4.p3.1": {
+   "note": "de sentence 3 garbled (Table 5 and p swapped); de 'Fähigkeit' for skill; 'Druckebenen'",
+   "de": {
+    "sentences": {
+     "0": "⟦a66 Figure 2⟧d fasst die RMSE-Skill-Scores für alle 1380 bewerteten Variablen und Druckniveaus über die 10-Tage-Vorhersagen in einem Format zusammen, das analog zur ECMWF-Scorecard ist.",
+     "1": "Die Zellfarben sind proportional zum Skill-Score, wobei Blau anzeigt, dass GraphCast die bessere Güte hatte, und Rot, dass HRES die höhere Güte hatte.",
+     "3": "Zur Methodik siehe Supplement ⟦a71 Section 5.4⟧, zu ⟦a73 $p$⟧-Werten, Teststatistiken und effektiven Stichprobenumfängen siehe Supplement ⟦a72 Table 5⟧."
+    }
+   }
+  },
+  "Sx4.p4.1": {
+   "note": "topics not verbatim (stratospheric vs stratosphere); reason tautological ('poorly weighted regions had the lowest weight')",
+   "en": {
+    "takeaway": "HRES wins lie mostly in the stratosphere; excluding 50 ⟦a75 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧ lifts GraphCast to 96.9%",
+    "reason": "These regions had the lowest training loss weight; excluding both 50 and 100 ⟦a77 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧ raises it to 99.7%",
+    "topic": "stratosphere"
+   },
+   "zh": {
+    "reason": "这些区域的训练损失权重最低；同时排除50和100 ⟦a77 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧后达99.7%"
+   },
+   "de": {
+    "takeaway": "HRES-Siege liegen meist in der Stratosphäre; ohne 50 ⟦a75 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧ steigt GraphCast auf 96,9%",
+    "reason": "Diese Regionen hatten das niedrigste Gewicht im Trainingsverlust; ohne 50 und 100 ⟦a77 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧ werden 99,7% erreicht",
+    "topic": "Stratosphäre"
+   }
+  },
+  "Sx4.p5.1": {
+   "note": "'Even optimally blurred, GraphCast beats blurred HRES' misreads that both were optimally blurred; de 'Fähigkeit' for skill",
+   "en": {
+    "takeaway": "Optimally blurred GraphCast beats optimally blurred HRES on 88.0% of targets",
+    "topic": "optimally blurred HRES"
+   },
+   "zh": {
+    "takeaway": "最优模糊后，GraphCast仍在88.0%目标上胜过同样最优模糊的HRES",
+    "topic": "最优模糊"
+   },
+   "de": {
+    "takeaway": "Auch nach optimaler Unschärfefilterung schlägt GraphCast HRES bei 88,0% der Ziele",
+    "topic": "optimaler Unschärfefilterung",
+    "sentences": {
+     "2": "Um zu bewerten, ob GraphCasts relativer Vorteil gegenüber HRES beim RMSE-Skill erhalten bleibt, wenn auch HRES seine Vorhersagen unscharf machen darf, passten wir Unschärfefilter an GraphCast und an HRES an, indem wir den RMSE gegenüber den jeweiligen Ground Truths der Modelle minimierten.",
+     "3": "Wir stellten fest, dass optimal unscharf gemachtes GraphCast bei ⟦a84 $88.0\\%$⟧ unserer 1380 Verifikationsziele eine höhere Güte als optimal unscharf gemachtes HRES besitzt, was im Allgemeinen mit unseren obigen Schlussfolgerungen übereinstimmt (siehe Supplemente ⟦a85 Section 7.4⟧)."
+    }
+   }
+  },
+  "Sx4.F3.cap": {
+   "note": "topics not verbatim; de 'Track-Fehler', 'Fähigkeiten' for skills; zh '误差差'",
+   "en": {
+    "takeaway": "Severe-event prediction: GraphCast versus HRES on cyclones, atmospheric rivers and extreme heat",
+    "topic": "Severe-event prediction"
+   },
+   "zh": {
+    "takeaway": "极端事件预测：GraphCast与HRES在气旋、大气河和极端高温上的比较",
+    "topic": "极端事件预测",
+    "reason": "图中绘制中位路径误差、配对误差差值、ivt RMSE以及扫描预报增益下的精确率-召回率",
+    "sentences": {
+     "4": "(b) GraphCast和HRES之间的气旋预报配对误差差值。",
+     "5": "x轴表示预报时效（天），y轴表示中位配对误差差值（km）。"
+    }
+   },
+   "de": {
+    "takeaway": "Vorhersage von Extremereignissen: GraphCast und HRES bei Zyklonen, atmosphärischen Flüssen und extremer Hitze",
+    "topic": "Vorhersage von Extremereignissen",
+    "reason": "Die Panels zeigen medianen Zugbahnfehler, gepaarte Fehlerdifferenz, ivt-RMSE und Precision-Recall bei variiertem Gain der Vorhersage",
+    "sentences": {
+     "2": "Die x-Achse stellt die Vorlaufzeiten (in Tagen) dar, und die y-Achse stellt den medianen Zugbahnfehler (in km) dar.",
+     "7": "(c) Güte der Vorhersage atmosphärischer Flüsse (ivt) für GraphCast und HRES."
+    }
+   }
+  },
+  "Sx5.p1.1": {
+   "note": "de 'schwerer Ereignisse' and 'Vorhersagefähigkeit'",
+   "de": {
+    "takeaway": "GraphCast wird bei der Vorhersage von Extremereignissen bewertet: tropische Zyklone, atmosphärische Flüsse und extreme Temperaturen",
+    "topic": "Vorhersage von Extremereignissen",
+    "sentences": {
+     "0": "Über die Bewertung der Vorhersagegüte von GraphCast im Vergleich zu HRES über eine breite Palette von Variablen und Vorlaufzeiten hinaus bewerten wir auch, wie seine Vorhersagen die Vorhersage von Extremereignissen unterstützen, darunter tropische Zyklone, atmosphärische Flüsse und extreme Temperaturen."
+    }
+   }
+  },
+  "Sx5.SSx1.p1.1": {
+   "note": "takeaway garbled the setup ('HRES versus IBTrACS as baseline'): HRES tracks are the baseline, both scored against IBTrACS; de topic cut; de 'Raten der echten Positiven', 'Bahnen'",
+   "en": {
+    "takeaway": "Cyclone tracks from a tracker are scored against IBTrACS, with HRES tracks as baseline"
+   },
+   "zh": {
+    "takeaway": "追踪算法生成的气旋路径以IBTrACS为准评估，HRES路径作基线"
+   },
+   "de": {
+    "takeaway": "Zyklonenzugbahnen aus einem Tracker werden gegen IBTrACS bewertet, mit HRES-Zugbahnen als Vergleichsbasis",
+    "reason": "Beide Modelle werden nur an Ereignissen bewertet, bei denen beide einen Wirbelsturm erkennen, bei ähnlichen Richtig-Positiv-Raten",
+    "topic": "Zyklonenzugbahnen",
+    "sentences": {
+     "3": "Als Vergleichsbasis verwendeten wir die operationellen Zugbahnen aus den Vorhersagen von HRES ⟦a94 $$⟧, die im TIGGE-Archiv gespeichert sind ⟦a95 [8, 46]⟧, und maßen die Fehler beider Modelle gegenüber den Zugbahnen aus IBTrACS ⟦a96 [29, 28]⟧, einem separaten Reanalyse-Datensatz von Wirbelsturmbahnen, der aus verschiedenen Analyse- und Beobachtungsquellen zusammengeführt wurde.",
+     "4": "In Übereinstimmung mit der etablierten Evaluierung der Vorhersage tropischer Wirbelstürme ⟦a97 [20]⟧ evaluieren wir alle Zugbahnen, wenn sowohl GraphCast als auch HRES einen Wirbelsturm erkennen, wodurch sichergestellt wird, dass beide Modelle anhand derselben Ereignisse bewertet werden, und wir verifizieren, dass die Richtig-Positiv-Raten beider Modelle ähnlich sind."
+    }
+   }
+  },
+  "Sx5.SSx1.p2.1": {
+   "note": "significance applies to the paired error difference from 18 h to 4.75 days, not to the median error; topics 'GraphCast' / cut 'GraphCast hat'",
+   "en": {
+    "takeaway": "GraphCast has lower track error than HRES, significant from 18 hours to 4.75 days",
+    "topic": "lower track error"
+   },
+   "zh": {
+    "takeaway": "GraphCast路径误差低于HRES，18小时至4.75天差异显著",
+    "topic": "路径误差",
+    "reason": "两个模型的逐路径误差相关，因此也度量了逐路径配对误差差值",
+    "sentences": {
+     "1": "由于HRES和GraphCast的逐路径误差相关，我们还度量了两个模型之间的逐路径配对误差差值，并发现GraphCast在18小时至4.75天的预报时效上显著优于HRES，如⟦a99 Figure 3⟧b所示。",
+     "2": "误差棒显示中位数的自助法95%置信区间（详见补充材料⟦a100 Section 8.1⟧）。"
+    }
+   },
+   "de": {
+    "takeaway": "GraphCast hat einen geringeren Zugbahnfehler als HRES, signifikant von 18 Stunden bis 4,75 Tagen",
+    "topic": "geringeren Zugbahnfehler",
+    "reason": "Die Fehler pro Zugbahn beider Modelle sind korreliert, daher wird auch die gepaarte Fehlerdifferenz pro Zugbahn gemessen",
+    "sentences": {
+     "0": "⟦a98 Figure 3⟧a zeigt, dass GraphCast von 2018 bis 2021 einen geringeren medianen Zugbahnfehler als HRES aufweist.",
+     "1": "Da die Fehler pro Zugbahn für HRES und GraphCast korreliert sind, maßen wir zusätzlich die gepaarte Fehlerdifferenz pro Zugbahn zwischen den beiden Modellen und stellten fest, dass GraphCast für Vorlaufzeiten von 18 Stunden bis 4,75 Tagen signifikant besser als HRES ist, wie in ⟦a99 Figure 3⟧b gezeigt wird."
+    }
+   }
+  },
+  "Sx5.SSx2.p1.1": {
+   "note": "SOURCE: sentence 1 holds two sentences, so zh/de sentences 1-3 were shifted by one (sentence 3 held two); realigned. zh said the gain 'rises to 10%'. Reason invented a causal claim and omitted the result",
+   "en": {
+    "takeaway": "Atmospheric rivers carry most poleward water vapor and bring 30%-65% of U.S. West Coast precipitation",
+    "reason": "Their ivt strength indicates beneficial rain or catastrophic damage, and GraphCast predicts ivt better than HRES"
+   },
+   "zh": {
+    "reason": "其ivt强度指示有益降水还是灾难性破坏，GraphCast的ivt预测优于HRES",
+    "sentences": {
+     "1": "其强度可以用垂直积分水汽输送ivt来表征⟦a102 [38, 37]⟧，以指示某次事件将带来有益降水还是与灾难性破坏相关⟦a103 [7]⟧。ivt可以由水平风速（u和v）与比湿（q）的非线性组合计算得到，而GraphCast对这些变量进行预测。",
+     "2": "我们在冷季（10月至次年4月）、大气河最频繁出现的时期，对北美沿海和东太平洋区域的GraphCast预报进行评估。",
+     "3": "尽管GraphCast并未专门针对大气河特征进行训练，⟦a104 Figure 3⟧c显示GraphCast相比HRES改进了ivt的预测，改进幅度从短预报时效的25%到较长预报时效的10%（详见补充材料⟦a105 Section 8.2⟧）。"
+    }
+   },
+   "de": {
+    "takeaway": "Atmosphärische Flüsse transportieren den Großteil des polwärts gerichteten Wasserdampfs und liefern 30%-65% des Niederschlags der US-Westküste",
+    "reason": "Ihre ivt-Stärke zeigt nutzbringenden Niederschlag oder katastrophale Schäden an, und GraphCast sagt ivt besser vorher als HRES",
+    "sentences": {
+     "1": "Ihre Stärke lässt sich durch den vertikal integrierten Wasserdampftransport ivt charakterisieren ⟦a102 [38, 37]⟧, der anzeigt, ob ein Ereignis nutzbringenden Niederschlag bringt oder mit katastrophalen Schäden verbunden ist ⟦a103 [7]⟧. ivt kann aus der nichtlinearen Kombination der horizontalen Windgeschwindigkeit (u und v) und der spezifischen Feuchte (q) berechnet werden, die GraphCast vorhersagt.",
+     "2": "Wir bewerten GraphCast-Vorhersagen über dem Küstengebiet Nordamerikas und dem östlichen Pazifik während der kalten Monate (Oktober bis April), in denen atmosphärische Flüsse am häufigsten auftreten.",
+     "3": "Obwohl GraphCast nicht speziell darauf trainiert wurde, atmosphärische Flüsse zu charakterisieren, zeigt ⟦a104 Figure 3⟧c, dass GraphCast die Vorhersage von ivt im Vergleich zu HRES verbessert, von 25% bei kurzer Vorlaufzeit bis zu 10% bei längeren Horizonten (siehe Supplemente ⟦a105 Section 8.2⟧ für Details)."
+    }
+   }
+  },
+  "Sx5.SSx3.p1.1": {
+   "note": "zh topic cut from the middle of '精确率-召回率曲线'; de 'Fähigkeit' (ability) for skill; distinct topic",
+   "zh": {
+    "topic": "2t极端事件"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir bewerten die Güte von HRES und GraphCast bei der Vorhersage von Ereignissen oberhalb der obersten 2% der Klimatologie über Ort, Tageszeit und Monat des Jahres, für 2t bei Vorlaufzeiten von 12 Stunden, 5 Tagen und 10 Tagen, für Landregionen der Nord- und Südhalbkugel in den Sommermonaten."
+    }
+   },
+   "en": {
+    "topic": "2t extremes"
+   }
+  },
+  "Sx5.SSx3.p2.1": {
+   "note": "zh topic 'GraphCast' says nothing; zh takeaway dropped 'precision-recall'",
+   "zh": {
+    "takeaway": "5天和10天时效下GraphCast的精确率-召回率曲线优于HRES",
+    "topic": "精确率召回率"
+   }
+  },
+  "Sx6.p1.1": {
+   "note": "en 'trained through 2017 to 2020' unclear; de takeaway garbled ('bis 2017 bis 2020'); de spelling 'Wetter Muster', 'ENSO Zyklus'",
+   "en": {
+    "takeaway": "Four GraphCast variants, trained on data ending 2017 to 2020, are tested on 2021",
+    "topic": "GraphCast variants"
+   },
+   "zh": {
+    "takeaway": "训练数据截至2017至2020年的四个GraphCast变体在2021年数据上测试",
+    "topic": "GraphCast变体",
+    "reason": "重新训练可捕捉ENSO等随时间变化的天气型及气候变化影响"
+   },
+   "de": {
+    "takeaway": "Vier GraphCast-Varianten mit Trainingsdaten bis 2017, 2018, 2019 bzw. 2020 werden auf 2021 getestet",
+    "topic": "GraphCast-Varianten",
+    "sentences": {
+     "0": "GraphCast kann regelmäßig mit aktuellen Daten neu trainiert werden, was ihm prinzipiell ermöglicht, Wettermuster zu erfassen, die sich mit der Zeit ändern, wie den ENSO-Zyklus und andere Oszillationen, sowie Effekte des Klimawandels."
+    }
+   }
+  },
+  "Sx6.F4.cap": {
+   "note": "en topic over budget; de 'y Achse', 'x Achse' and other compounds without hyphens",
+   "en": {
+    "takeaway": "Figure 4 plots z500 RMSE skill scores by training end year and lead time",
+    "topic": "training end year"
+   },
+   "de": {
+    "sentences": {
+     "2": "Die y-Achse repräsentiert RMSE-Skill-Scores auf Testdaten von 2021 für z500 in Bezug auf GraphCast, trainiert bis vor 2018, über Vorlaufzeiten (x-Achse).",
+     "3": "Die vertikale gestrichelte Linie repräsentiert 3,5 Tage, wo die HRES-06z/18z-Vorhersagen enden.",
+     "4": "Die schwarze Linie repräsentiert HRES, wobei Vorlaufzeiten früher und später als 3,5 Tage von den 06z/18z- bzw. 00z/12z-Initialisierungen stammen."
+    }
+   }
+  },
+  "Sx7.p1.1": {
+   "note": "'untrained severe event performance' ambiguous and turning point stated as fact (authors: 'we believe'); de topic cut; de 'potenzielles Nutzenpotenzial'",
+   "en": {
+    "reason": "Severe-event skill without targeted training shows robustness; the authors see a turning point in weather forecasting"
+   },
+   "zh": {
+    "reason": "其未经专门训练的极端事件预报表现证明了稳健性，作者认为这是天气预报的转折点"
+   },
+   "de": {
+    "topic": "MLWP",
+    "reason": "Seine Güte bei Extremereignissen ohne gezieltes Training belegt Robustheit; die Autoren sehen einen Wendepunkt der Wettervorhersage",
+    "sentences": {
+     "1": "Darüber hinaus belegt die Leistung von GraphCast bei der Vorhersage von Extremereignissen, für die es nicht direkt trainiert wurde, seine Robustheit und seinen potenziellen Nutzen für nachgelagerte Anwendungen."
+    }
+   }
+  },
+  "Sx7.p2.1": {
+   "note": "en takeaway and reason showed a literal '$$' (empty formula)",
+   "en": {
+    "takeaway": "GraphCast uses 36.7 million parameters and coarser resolution than HRES",
+    "reason": "ERA5's native resolution and hardware limits constrained it, but it could scale with more compute and higher resolution data"
+   }
+  },
+  "Sx7.p3.1": {
+   "note": "'handles uncertainty poorly' stronger than the authors' 'key limitation in how uncertainty is handled'; de topic not verbatim; de 'verwischen' for blurring (Unschärfe elsewhere)",
+   "en": {
+    "takeaway": "Uncertainty handling is a key limitation: GraphCast is deterministic, unlike the ENS ensemble",
+    "topic": "Uncertainty handling"
+   },
+   "zh": {
+    "takeaway": "不确定性处理是关键局限：GraphCast为确定性模型，不同于ENS集合",
+    "topic": "不确定性处理"
+   },
+   "de": {
+    "takeaway": "Der Umgang mit Unsicherheit ist eine zentrale Grenze: GraphCast ist deterministisch, anders als das Ensemble ENS",
+    "topic": "Umgang mit Unsicherheit",
+    "reason": "Seine MSE-Zielfunktion macht Vorhersagen unscharf, daher ist der Aufbau von Systemen mit expliziter Unsicherheitsmodellierung der entscheidende nächste Schritt",
+    "sentences": {
+     "4": "Im Gegensatz dazu ermutigt die MSE-Trainingszielfunktion von GraphCast das Modell, seine Unsicherheit durch räumliche Unschärfe seiner Vorhersagen auszudrücken, was seinen Wert für manche Anwendungen einschränken kann."
+    }
+   }
+  },
+  "Sx7.p5.1": {
+   "note": "topics 'GraphCast' / cut 'GraphCast eröffnet' do not name the point",
+   "en": {
+    "topic": "new directions"
+   },
+   "zh": {
+    "topic": "开辟新方向"
+   },
+   "de": {
+    "topic": "neue Richtungen"
+   }
+  },
+  "Sx8.p1.1": {
+   "note": "reason invented 'without restriction' (not stated; the unit is about public code and data licences); de left the ECMWF name in English",
+   "en": {
+    "reason": "Training and evaluation data come from public ECMWF archives under CC BY 4.0, plus IBTrACS version 4"
+   },
+   "zh": {
+    "topic": "代码与权重",
+    "reason": "训练与评估数据来自CC BY 4.0许可的ECMWF公开存档及IBTrACS第4版"
+   },
+   "de": {
+    "reason": "Die Daten stammen aus öffentlichen ECMWF-Archiven unter CC BY 4.0 sowie aus IBTrACS Version 4",
+    "sentences": {
+     "1": "Diese Arbeit verwendete öffentlich verfügbare Daten des Europäischen Zentrums für mittelfristige Wettervorhersage (ECMWF)."
+    }
+   }
+  },
+  "Sx9.p1.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "建议与反馈"
+   }
+  },
+  "Sx10.p1.1": {
+   "note": "zh topic too narrow; de topic cut",
+   "zh": {
+    "topic": "补充材料"
+   },
+   "de": {
+    "topic": "ergänzenden Materialien"
+   }
+  },
+  "S1.p1.1": {
+   "note": "takeaway made HRES and HRES-fc0 both 'baseline ground truth': HRES is the baseline, HRES-fc0 its ground truth",
+   "en": {
+    "takeaway": "GraphCast trains on ECMWF archives; HRES is the baseline, with HRES-fc0 as its ground truth"
+   },
+   "zh": {
+    "takeaway": "GraphCast用ECMWF档案训练，以HRES为基线，HRES-fc0为其真值"
+   },
+   "de": {
+    "takeaway": "GraphCast trainiert mit ECMWF-Archiven; HRES ist die Baseline, HRES-fc0 deren Ground Truth"
+   }
+  },
+  "S1.p2.1": {
+   "note": "topics not verbatim; the unit's point is the archive/dataset terminology",
+   "en": {
+    "takeaway": "Datasets versus archives: datasets are subsets built from ECMWF and IBTrACS archives",
+    "topic": "Datasets versus archives"
+   },
+   "zh": {
+    "takeaway": "数据集与档案之分：数据集是由ECMWF与IBTrACS档案构建的子集",
+    "topic": "数据集与档案"
+   },
+   "de": {
+    "takeaway": "Datensätze versus Archive: Datensätze sind Teilmengen aus ECMWF- und IBTrACS-Archiven",
+    "topic": "Datensätze versus Archive"
+   }
+  },
+  "S1.SS1.p1.1": {
+   "note": "en topic not verbatim; de topic 5 words; zh 'cycle' as 周期 (IFS cycle = 版本)",
+   "en": {
+    "takeaway": "The ERA5 archive holds global weather from 1959 to present in hourly steps",
+    "topic": "ERA5 archive"
+   },
+   "zh": {
+    "takeaway": "ERA5存档涵盖1959年至今的全球天气，时间间隔1小时",
+    "topic": "ERA5存档",
+    "reason": "它基于HRES模型42r1版本，置于ECMWF的4D-Var同化系统中，同化12小时观测窗口",
+    "sentences": {
+     "1": "ERA5存档基于再分析，使用了ECMWF在2016年大部分时间投入业务运行的HRES模型（42r1版本）（见⟦a130 Table 3⟧），并置于ECMWF的4D-Var数据同化系统之中。"
+    }
+   },
+   "de": {
+    "takeaway": "Das ERA5-Archiv enthält das globale Wetter von 1959 bis heute in stündlichen Schritten",
+    "topic": "ERA5-Archiv"
+   }
+  },
+  "S1.T2.cap": {
+   "note": "topics not verbatim / de topic cut; de 'den Präfix'",
+   "en": {
+    "takeaway": "Table of ECMWF variables: type, names, parameter IDs, and input or predicted role",
+    "topic": "ECMWF variables"
+   },
+   "zh": {
+    "takeaway": "ECMWF变量表：类型、名称、参数ID及输入或预测角色",
+    "topic": "ECMWF变量"
+   },
+   "de": {
+    "takeaway": "Tabelle der ECMWF-Variablen: Typ, Namen, Parameter-IDs sowie Eingabe- oder Vorhersagerolle",
+    "topic": "ECMWF-Variablen",
+    "sentences": {
+     "3": "Die Spalte „ECMWF Parameter ID“ ist die numerische Bezeichnung des ECMWF und kann verwendet werden, um die URL für die Beschreibung der Variable durch das ECMWF zu konstruieren, indem sie als Suffix an das folgende Präfix angehängt wird, wobei „ID“ durch den numerischen Code ersetzt wird: https://apps.ecmwf.int/codes/grib/param-db/?id=ID."
+    }
+   }
+  },
+  "S1.T3.cap": {
+   "note": "en/zh takeaway showed a literal '$$'; de takeaway carried an empty formula; zh/de sentence 0 ungrammatical; zh cycle term",
+   "en": {
+    "takeaway": "Table lists the IFS cycles operated since 2016 and their roles",
+    "topic": "IFS cycles"
+   },
+   "zh": {
+    "takeaway": "该表列出2016年以来运行的IFS版本及其作用",
+    "topic": "IFS版本",
+    "reason": "各列给出版本号、运行日期、ERA5同化用途及GraphCast比较基线年份",
+    "sentences": {
+     "0": "2016年以来⟦a135 $$⟧分辨率的IFS版本。",
+     "1": "该表列出了所有以⟦a136 $$⟧经纬度分辨率运行的IFS版本。",
+     "2": "各列分别表示IFS版本号、其运行日期、是否用于ERA5的数据同化，以及在我们的结果评估中用作与GraphCast比较基线的年份。",
+     "3": "完整的版本发布计划见⟦a137 https://www.ecmwf.int/en/forecasts/documentation-and-support/changes-ecmwf-model⟧。"
+    }
+   },
+   "de": {
+    "takeaway": "Die Tabelle führt die seit 2016 betriebenen IFS-Zyklen und ihre Rolle auf",
+    "topic": "IFS-Zyklen",
+    "sentences": {
+     "0": "IFS-Zyklen mit ⟦a135 $$⟧ Auflösung seit 2016."
+    }
+   }
+  },
+  "S1.SS2.SSS0.Px1.p1.1": {
+   "note": "de sentence 2: subject-verb mismatch and 'sphärische Harmonische' for spherical harmonics",
+   "de": {
+    "sentences": {
+     "2": "Die Vorhersagen wurden in ihrer nativen Darstellung heruntergeladen (die Kugelflächenfunktionen und ein oktaedrisches reduziertes Gauß-Gitter verwendet, TCo1279 ⟦a138 [36]⟧), die grob einer Breiten-/Längengrad-Auflösung von ⟦a139 $$⟧ entspricht."
+    }
+   }
+  },
+  "S1.SS2.SSS0.Px2.p1.1": {
+   "note": "en topic over budget; de topic generic; de sentence 0 dropped 'HRES'",
+   "en": {
+    "topic": "HRES-fc0 ground truth"
+   },
+   "de": {
+    "topic": "HRES-fc0",
+    "sentences": {
+     "0": "Zur Bewertung der Vorhersagegüte der operationellen HRES-Vorhersagen haben wir einen Referenzdatensatz, „HRES-fc0“, auf Basis des operationellen HRES-Vorhersagearchivs des ECMWF erstellt."
+    }
+   }
+  },
+  "S1.SS2.SSS0.Px3.p1.1": {
+   "note": "reason tied the weights to 'easier comparison' (that motivates the filling); de typo 'Vorhersazeiten'",
+   "en": {
+    "reason": "Side-to-side neighbors weigh 1 and diagonal ones 0.5; the rare NaNs in z850 and z925 had no measurable impact"
+   },
+   "zh": {
+    "reason": "边相邻像素权重为1，对角相邻为0.5；z850和z925中罕见的NaN对性能无可测影响"
+   },
+   "de": {
+    "reason": "Seitliche Nachbarn erhielten Gewicht 1, diagonale 0,5; die seltenen NaN-Werte in z850 und z925 hatten keine messbare Auswirkung",
+    "sentences": {
+     "1": "Diese NaN-Werte scheinen gleichmäßig über den Zeitraum 2016-2021 und über die Vorhersagezeiten verteilt zu sein."
+    }
+   }
+  },
+  "S1.SS3.p1.1": {
+   "note": "de plural 'tropischer Zyklonen'",
+   "de": {
+    "sentences": {
+     "0": "Für unsere Analyse der Vorhersage tropischer Zyklone verwendeten wir das Archiv IBTrACS ⟦a149 [28, 29, 31, 30]⟧, um den Referenzdatensatz zu konstruieren."
+    }
+   }
+  },
+  "S1.SS3.p2.1": {
+   "note": "en/de takeaway carried a broken '$' formula",
+   "en": {
+    "takeaway": "The TIGGE archive supplies HRES baseline cyclone tracks from the operational tracker",
+    "topic": "TIGGE archive"
+   },
+   "de": {
+    "takeaway": "Das TIGGE-Archiv liefert die HRES-Baseline-Zyklonenzugbahnen des operationellen Trackers",
+    "topic": "TIGGE-Archiv"
+   }
+  },
+  "S2.SS1.p1.1": {
+   "note": "SOURCE: sentence 0 holds two sentences, so de sentences were shifted by one (sentence 4 held two); realigned. de topic not verbatim",
+   "de": {
+    "takeaway": "Standardisierte Begriffe wie date-time und Zulu-Zeit klären die verwirrende Zeitnotation in Vorhersagen",
+    "topic": "Zeitnotation in Vorhersagen",
+    "sentences": {
+     "0": "Die in der Vorhersage verwendete Zeitnotation kann verwirrend sein, da sie eine Reihe verschiedener Zeitsymbole umfasst, z. B. zur Bezeichnung der initialen Vorhersagezeit, der Gültigkeitszeit, des Vorhersagehorizonts usw. Daher führen wir zur Klarheit und Einfachheit einige standardisierte Begriffe und Notationen ein.",
+     "1": "Wir bezeichnen einen bestimmten Zeitpunkt als „date-time“, angegeben durch Kalenderdatum und UTC-Zeit.",
+     "2": "Zum Beispiel bedeutet 2018-06-21_18:00:00 den 21. Juni 2018 um 18:00 UTC.",
+     "3": "Zur Abkürzung verwenden wir manchmal auch die Zulu-Konvention, d. h. 00z, 06z, 12z, 18z bedeuten 00:00, 06:00, 12:00 bzw. 18:00 UTC.",
+     "4": "Weiterhin definieren wir die folgenden Symbole:"
+    }
+   }
+  },
+  "S2.I1.i1.p1.1": {
+   "note": "topics not verbatim; de topic only the symbol; de typo 'Vorhersazeitschrittindex'",
+   "en": {
+    "takeaway": "⟦a157 $t$⟧ is the forecast time step index, counting steps since initialization",
+    "topic": "forecast time step"
+   },
+   "zh": {
+    "takeaway": "⟦a157 $t$⟧ 是预报时间步索引，计自初始化以来的步数",
+    "topic": "预报时间步"
+   },
+   "de": {
+    "takeaway": "⟦a157 $t$⟧ indiziert die Vorhersageschritte seit der Initialisierung",
+    "topic": "Vorhersageschritte",
+    "sentences": {
+     "0": "⟦a157 $t$⟧: Vorhersagezeitschrittindex, der die Anzahl der Schritte seit der Initialisierung der Vorhersage indiziert."
+    }
+   }
+  },
+  "S2.I1.i2.p1.1": {
+   "note": "zh used 预报时效 for the horizon T, the term the paper uses for lead time; de topic only the symbol",
+   "zh": {
+    "takeaway": "⟦a158 $T$⟧ 是预报时长，即一次预报的总步数",
+    "topic": "预报时长",
+    "sentences": {
+     "0": "⟦a158 $T$⟧：预报时长，表示一次预报中的总步数。"
+    }
+   },
+   "de": {
+    "topic": "Vorhersagehorizont"
+   }
+  },
+  "S2.I1.i3.p1.1": {
+   "note": "de topic only the symbol",
+   "de": {
+    "topic": "Gültigkeitszeit"
+   }
+  },
+  "S2.I1.i4.p1.1": {
+   "note": "de topic only the symbol",
+   "de": {
+    "topic": "Vorhersageinitialisierungszeit"
+   }
+  },
+  "S2.I1.i5.p1.1": {
+   "note": "de topic only the symbol",
+   "de": {
+    "topic": "Vorhersageschrittdauer"
+   }
+  },
+  "S2.I1.i6.p1.1": {
+   "note": "en/zh takeaway used raw math instead of the unit's marker; zh '提前时间' -> 预报时效 (paper-wide term); de topic only the symbol",
+   "en": {
+    "takeaway": "⟦a162 $\\tau$⟧ is the forecast lead time, the elapsed time ⟦a163 $\\tau=t\\Delta d$⟧",
+    "topic": "forecast lead time"
+   },
+   "zh": {
+    "takeaway": "⟦a162 $\\tau$⟧ 是预报时效，即预报中已经过的时间 ⟦a163 $\\tau=t\\Delta d$⟧",
+    "topic": "预报时效",
+    "sentences": {
+     "0": "⟦a162 $\\tau$⟧：预报时效，表示预报中已经过的时间（即 ⟦a163 $\\tau=t\\Delta d$⟧）。"
+    }
+   },
+   "de": {
+    "takeaway": "⟦a162 $\\tau$⟧ ist die Vorlaufzeit der Vorhersage, die verstrichene Zeit ⟦a163 $\\tau=t\\Delta d$⟧",
+    "topic": "Vorlaufzeit",
+    "sentences": {
+     "0": "⟦a162 $\\tau$⟧: Vorlaufzeit der Vorhersage, die die in der Vorhersage verstrichene Zeit darstellt (d. h. ⟦a163 $\\tau=t\\Delta d$⟧)."
+    }
+   }
+  },
+  "S2.SS2.p1.1": {
+   "note": "reason wrote T as a plain letter instead of the unit's markers",
+   "en": {
+    "reason": "Applying ⟦a170 $\\Phi$⟧ autoregressively ⟦a171 $T$⟧ times yields a trajectory of ⟦a169 $T$⟧ future states"
+   },
+   "de": {
+    "reason": "Die ⟦a171 $T$⟧-fache autoregressive Anwendung von ⟦a170 $\\Phi$⟧ liefert eine Trajektorie von ⟦a169 $T$⟧ zukünftigen Wetterzuständen"
+   }
+  },
+  "S2.SS2.p2.1": {
+   "note": "en/de takeaway ended with raw math not taken from a marker",
+   "en": {
+    "takeaway": "Model ⟦a172 $\\phi$⟧ forecasts future weather from current and past partial observations"
+   },
+   "de": {
+    "takeaway": "Das Modell ⟦a172 $\\phi$⟧ sagt zukünftiges Wetter aus aktuellen und vergangenen partiellen Beobachtungen vorher"
+   }
+  },
+  "S2.SS2.p3.1": {
+   "note": "de article 'die Skill'",
+   "de": {
+    "sentences": {
+     "0": "Wir bewerten die Vorhersagequalität, also den Skill, von ⟦a187 $\\phi$⟧, indem wir quantifizieren, wie gut die vorhergesagte Trajektorie ⟦a188 $\\hat{X}^{d+\\Delta d:d+T\\Delta d}$⟧ mit der Ground-Truth-Trajektorie ⟦a189 $X^{d+\\Delta d:d+T\\Delta d}$⟧ übereinstimmt."
+    }
+   }
+  },
+  "S2.SS2.p4.1": {
+   "note": "topics not verbatim; zh horizon term",
+   "en": {
+    "takeaway": "Data and forecasts use ⟦a193 $\\Delta d=6$⟧ hours and a 10-day forecast horizon, ⟦a194 $T=40$⟧ steps",
+    "topic": "forecast horizon"
+   },
+   "zh": {
+    "takeaway": "数据与预报步长为⟦a193 $\\Delta d=6$⟧小时，预报时长10天，共⟦a194 $T=40$⟧步",
+    "topic": "预报时长"
+   },
+   "de": {
+    "takeaway": "Daten und Vorhersagen nutzen ⟦a193 $\\Delta d=6$⟧ Stunden und einen Vorhersagehorizont von 10 Tagen, also ⟦a194 $T=40$⟧ Schritte",
+    "topic": "Vorhersagehorizont"
+   }
+  },
+  "S2.SS3.p1.1": {
+   "note": "reason invented a rationale ('must be scored against a consistent representation'); de 'der Skill'; zh topic not in takeaway",
+   "en": {
+    "reason": "ERA5 is treated as the true representation of the surface and atmospheric weather state"
+   },
+   "zh": {
+    "reason": "ERA5被视为地表和大气天气状态的真值表示",
+    "takeaway": "ERA5作为训练与评估的真值，HRES-fc0用于评估HRES",
+    "topic": "真值"
+   },
+   "de": {
+    "reason": "ERA5 gilt als Ground-Truth-Repräsentation des Oberflächen- und Atmosphärenwetterzustands",
+    "sentences": {
+     "1": "Wie in ⟦a198 Section 1.2⟧ beschrieben, verwendeten wir den HRES-fc0-Datensatz als Ground Truth für die Bewertung der Güte von HRES."
+    }
+   }
+  },
+  "S2.SS3.p3.1": {
+   "note": "zh 'top-of-atmosphere radiation' mistranslated as 平顶大气辐射 and grid/mesh as 网格/网格; topics not verbatim / bare number",
+   "en": {
+    "topic": "227 targets"
+   },
+   "zh": {
+    "topic": "227个目标",
+    "reason": "地形、海陆掩膜和大气层顶辐射等静态与外部变量也作为输入上下文",
+    "sentences": {
+     "3": "静态/外部变量包括经纬网格/多网格的几何结构、地形（地表位势）、海陆掩膜和大气层顶辐射等信息。"
+    }
+   }
+  },
+  "S2.SS3.p4.1": {
+   "note": "takeaway carried raw math for a plain number; topics 'per-grid-point' / not verbatim",
+   "en": {
+    "takeaway": "The full state ⟦a212 $X^{t}$⟧ holds 235,680,480 values, indexed by grid point and variable",
+    "topic": "full state"
+   },
+   "zh": {
+    "takeaway": "完整状态⟦a212 $X^{t}$⟧含235,680,480个值，按网格点和变量索引",
+    "topic": "完整状态"
+   },
+   "de": {
+    "takeaway": "Der vollständige Zustand ⟦a212 $X^{t}$⟧ enthält 235.680.480 Werte, indiziert nach Gitterpunkt und Variable",
+    "topic": "vollständige Zustand"
+   }
+  },
+  "S3.p1.1": {
+   "note": "zh topic not in takeaway; zh takeaway dropped forecast generation and architecture",
+   "zh": {
+    "takeaway": "GraphCast按预报生成、架构、图结构、编码器、处理器、解码器和归一化逐项详述",
+    "topic": "预报生成"
+   }
+  },
+  "S3.SS1.p1.1": {
+   "note": "zh topic over budget",
+   "zh": {
+    "topic": "学习模拟器"
+   }
+  },
+  "S3.SS1.p1.2": {
+   "note": "SOURCE: one sentence split across p1.2 and p1.3; zh moved p1.3's marker a225 into p1.2. Takeaway used raw $T$ not in this unit",
+   "en": {
+    "takeaway": "Applying GraphCast iteratively produces forecasts of arbitrary length",
+    "topic": "arbitrary length"
+   },
+   "zh": {
+    "takeaway": "迭代应用GraphCast可生成任意长度的预报",
+    "topic": "任意长度",
+    "sentences": {
+     "0": "如⟦a224 Equation 3⟧中那样，我们可以迭代应用GraphCast来生成一个预报"
+    }
+   },
+   "de": {
+    "takeaway": "Die iterative Anwendung von GraphCast erzeugt Vorhersagen beliebiger Länge",
+    "topic": "beliebiger Länge"
+   }
+  },
+  "S3.SS1.p1.3": {
+   "note": "zh sentences shifted by one (sentence 0 held sentence 1, sentence 2 was empty); realigned",
+   "zh": {
+    "sentences": {
+     "0": "其长度⟦a225 $T$⟧可以任意设定。",
+     "1": "这在⟦a226 Figure 1⟧b,c中有所展示。",
+     "2": "我们在早期实验中发现，两个输入状态比一个输入状态性能更好，而三个输入状态带来的提升不足以证明其增加的内存占用是合理的。"
+    }
+   }
+  },
+  "S3.SS2.p1.1": {
+   "note": "reason misattributed the contrast with CNNs/Transformers (the source contrasts interaction range and scaling, not the finite-element analogy)",
+   "en": {
+    "reason": "Graph structure allows interactions over any range, unlike local CNNs, and scales better than all-to-all Transformers"
+   },
+   "zh": {
+    "reason": "图结构允许任意范围的交互，不像CNN局限于局部，也比全连接的Transformer更易扩展"
+   },
+   "de": {
+    "reason": "Die Graphstruktur erlaubt Interaktionen beliebiger Reichweite, anders als lokale CNNs, und skaliert besser als Transformer mit All-zu-All-Interaktionen",
+    "sentences": {
+     "4": "Und während Transformer ⟦a231 [48]⟧ ebenfalls beliebig weitreichende Berechnungen durchführen können, skalieren sie nicht gut mit sehr großen Eingaben (z. B. den über 1 Million Gitterpunkten in GraphCasts globalen Eingaben) aufgrund der quadratischen Speicherkomplexität, die durch die Berechnung von All-zu-All-Interaktionen entsteht."
+    }
+   }
+  },
+  "S3.SS2.p2.1": {
+   "note": "de spelling Multimesh -> Multi-Mesh; distinct topic",
+   "de": {
+    "takeaway": "GraphCasts interne Multi-Mesh-Repräsentation ermöglicht weitreichende Interaktionen in wenigen Message-Passing-Schritten",
+    "topic": "Multi-Mesh-Repräsentation",
+    "sentences": {
+     "0": "Die Art und Weise, wie wir die Fähigkeit der GNNs nutzen, beliebige sparse Interaktionen zu modellieren, besteht darin, GraphCasts interne Multi-Mesh-Repräsentation einzuführen, die weitreichende Interaktionen innerhalb weniger Message-Passing-Schritte ermöglicht und im Allgemeinen eine homogene räumliche Auflösung über den Globus aufweist."
+    }
+   },
+   "zh": {
+    "topic": "长距离交互"
+   }
+  },
+  "S3.SS2.p3.1": {
+   "note": "de spelling Multimesh -> Multi-Mesh",
+   "de": {
+    "takeaway": "Das Multi-Mesh überlagert Kanten aus sechs Ikosaeder-Verfeinerungen mit 40.962 Knoten und 81.920 Flächen",
+    "topic": "Multi-Mesh",
+    "sentences": {
+     "0": "Unser Multi-Mesh wird konstruiert, indem zunächst ein reguläres Ikosaeder (12 Knoten und 20 Flächen) iterativ 6-mal unterteilt wird, um eine Hierarchie ikosaedrischer Meshes mit insgesamt 40.962 Knoten und 81.920 Flächen in der höchsten Auflösung zu erhalten.",
+     "3": "⟦a233 Figure 1⟧g zeigt jedes einzelne verfeinerte Mesh, und ⟦a234 Figure 1⟧e zeigt das vollständige Multi-Mesh."
+    }
+   }
+  },
+  "S3.SS2.p4.1": {
+   "note": "reason said long-range edges produce the output update (the decoder adds it to the input state); de takeaway lacked 'ab'; Multimesh spelling",
+   "en": {
+    "reason": "Long-range edges spread information efficiently; the decoded output is added to the input state, ⟦a240 $\\hat{X}^{t+k+1}=\\hat{X}^{t+k}+\\hat{Y}^{t+k}$⟧"
+   },
+   "zh": {
+    "reason": "长距离边使信息高效传播；解码输出与输入状态相加，得到 ⟦a240 $\\hat{X}^{t+k+1}=\\hat{X}^{t+k}+\\hat{Y}^{t+k}$⟧"
+   },
+   "de": {
+    "takeaway": "Der Encoder bildet das Gitter aufs Multi-Mesh ab, 16 Prozessorschichten tauschen Nachrichten aus, der Decoder bildet zurück ab",
+    "reason": "Weitreichende Kanten verbreiten Informationen effizient; die dekodierte Ausgabe wird zum Eingangszustand addiert, ⟦a240 $\\hat{X}^{t+k+1}=\\hat{X}^{t+k}+\\hat{Y}^{t+k}$⟧",
+    "sentences": {
+     "0": "GraphCasts Encoder (⟦a235 Figure 1⟧d) bildet zunächst die Eingabedaten vom ursprünglichen Breiten-Längen-Gitter auf gelernte Merkmale auf dem Multi-Mesh ab, wobei ein GNN mit gerichteten Kanten von den Gitterpunkten zum Multi-Mesh verwendet wird.",
+     "1": "Der Prozessor (⟦a236 Figure 1⟧e) verwendet dann ein 16 Schichten tiefes GNN, um gelerntes Message-Passing auf dem Multi-Mesh durchzuführen, was aufgrund der weitreichenden Kanten eine effiziente Ausbreitung von Informationen durch den Raum ermöglicht.",
+     "2": "Der Decoder (⟦a237 Figure 1⟧f) bildet dann die finale Multi-Mesh-Repräsentation mithilfe eines GNN mit gerichteten Kanten zurück auf das Breiten-Längen-Gitter ab und kombiniert diese Gitter-Repräsentation ⟦a238 $\\hat{Y}^{t+k}$⟧ mit dem Eingangszustand ⟦a239 $\\hat{X}^{t+k}$⟧, um die Ausgabevorhersage ⟦a240 $\\hat{X}^{t+k+1}=\\hat{X}^{t+k}+\\hat{Y}^{t+k}$⟧ zu bilden."
+    }
+   }
+  },
+  "S3.SS2.p5.1": {
+   "note": "zh topic cut ('类似网格')",
+   "zh": {
+    "takeaway": "编码器和解码器可处理任意类网格离散化，不限于规则直线网格",
+    "topic": "类网格离散化"
+   }
+  },
+  "S3.SS2.p6.1": {
+   "note": "reason said IFS produces 'the same forecast'; IFS makes a finer-resolution, finer-step 10-day forecast",
+   "en": {
+    "reason": "By contrast, ECMWF's IFS runs on an 11,664-core cluster and takes about an hour for its 10-day forecast"
+   },
+   "de": {
+    "reason": "Im Gegensatz dazu läuft ECMWFs IFS auf einem Cluster mit 11.664 Kernen und braucht etwa eine Stunde für seine 10-Tage-Vorhersage"
+   }
+  },
+  "S3.SS3.p1.1": {
+   "note": "de takeaway garbled ('Das Gitter kodiert zum Multi-Mesh'), English 'Latitude-Longitude' left in de, reason lacked 'ab'; zh takeaway over budget; grid = 格点",
+   "de": {
+    "takeaway": "GraphCast nutzt Encode-Process-Decode-GNNs: Encoder aufs Multi-Mesh, Message-Passing im Prozessor, Decoder zurück aufs Gitter",
+    "reason": "Der Encoder bildet Oberflächen- und Atmosphärenmerkmale auf das Multi-Mesh ab, der Decoder sie zurück auf das Breiten-Längen-Ausgabegitter",
+    "sentences": {
+     "0": "GraphCast wird mit GNNs in einer Konfiguration aus „Encode-Process-Decode“ implementiert, wobei der Encoder (Oberflächen- und Atmosphären-)Merkmale auf dem Breiten-Längen-Eingabegitter auf ein Multi-Mesh abbildet, der Prozessor viele Runden des Message-Passing auf dem Multi-Mesh durchführt und der Decoder die Multi-Mesh-Merkmale zurück auf das Breiten-Längen-Ausgabegitter abbildet (siehe ⟦a248 Figure 1⟧)."
+    }
+   },
+   "zh": {
+    "takeaway": "GraphCast用编码-处理-解码GNN：格点编码到多网格，处理器传消息，解码回格点"
+   }
+  },
+  "S3.SS3.p2.1": {
+   "note": "topics 'The model operates' / 'Das Modell arbeitet' / '模型' say nothing",
+   "en": {
+    "takeaway": "The model's graph ⟦a249 $\\mathcal{G}(\\mathcal{V}^{\\text{G}},\\mathcal{V}^{\\text{M}},\\mathcal{E}^{\\text{M}},\\mathcal{E}^{\\text{G2M}},\\mathcal{E}^{\\text{M2G}})$⟧ has grid nodes, mesh nodes and three edge sets",
+    "topic": "model's graph"
+   },
+   "zh": {
+    "takeaway": "模型的图⟦a249 $\\mathcal{G}(\\mathcal{V}^{\\text{G}},\\mathcal{V}^{\\text{M}},\\mathcal{E}^{\\text{M}},\\mathcal{E}^{\\text{G2M}},\\mathcal{E}^{\\text{M2G}})$⟧包含格点、网格节点及三类边",
+    "topic": "模型的图"
+   },
+   "de": {
+    "takeaway": "Der Graph des Modells ⟦a249 $\\mathcal{G}(\\mathcal{V}^{\\text{G}},\\mathcal{V}^{\\text{M}},\\mathcal{E}^{\\text{M}},\\mathcal{E}^{\\text{G2M}},\\mathcal{E}^{\\text{M2G}})$⟧ umfasst Gitter- und Mesh-Knoten sowie drei Kantenmengen",
+    "topic": "Graph des Modells"
+   }
+  },
+  "S3.SS3.SSS0.Px1.p1.1": {
+   "note": "zh grid node = 格点 (was the same word as mesh node); reason invented a forward reference, the unit's content is the 474 features",
+   "en": {
+    "reason": "Each node holds two weather states, forcings over three steps and constants: 474 input features"
+   },
+   "zh": {
+    "takeaway": "⟦a250 $\\mathcal{V^{\\text{G}}}$⟧ 是格点 ⟦a251 $v^{\\text{G}}_{i}$⟧ 的集合",
+    "topic": "格点",
+    "reason": "每个格点含两个时刻的天气状态、三个时刻的强迫项和常数，共474个输入特征",
+    "sentences": {
+     "0": "⟦a250 $\\mathcal{V^{\\text{G}}}$⟧ 表示包含每个格点 ⟦a251 $v^{\\text{G}}_{i}$⟧ 的集合。",
+     "1": "每个格点表示给定经纬度点 ⟦a252 $i$⟧ 处大气的一个垂直切片。",
+     "2": "与每个格点 ⟦a253 $v^{\\text{G}}_{i}$⟧ 相关联的特征为 ⟦a254 $\\mathbf{v}^{\\text{G,features}}_{i}=[\\mathbf{x}^{t-1}_{i},\\mathbf{x}^{t}_{i},\\mathbf{f}^{t-1}_{i},\\mathbf{f}^{t}_{i},\\mathbf{f}^{t+1}_{i},\\mathbf{c}_{i}]$⟧，其中 ⟦a255 $\\mathbf{x}^{t}_{i}$⟧ 是对应于格点 ⟦a257 $v^{\\text{G}}_{i}$⟧ 的随时间变化的天气状态 ⟦a256 $X^{t}$⟧，并且包含全部37个大气层的所有预测数据变量以及地表变量。",
+     "6": "在 ⟦a260 $$⟧ 分辨率下，总共有 ⟦a261 $721\\times 1440=1,038,240$⟧ 个格点，每个格点具有 (5 个地表变量 + 6 个大气变量 ⟦a262 $\\times$⟧ 37 层) ⟦a263 $\\times$⟧ 2 个时间步 + 5 个强迫项 ⟦a264 $\\times$⟧ 3 个时间步 + 5 个常数 = 474 个输入特征。"
+    }
+   },
+   "de": {
+    "reason": "Jeder Knoten enthält zwei Wetterzustände, Antriebe über drei Schritte und Konstanten: 474 Eingangsmerkmale"
+   }
+  },
+  "S3.SS3.SSS0.Px2.p1.1": {
+   "note": "reason used raw math instead of the unit's markers; de wrote R=6 and M^6 as plain text; de 'Supplementary'",
+   "en": {
+    "reason": "Refinement splits each triangle into 4, adding edge-midpoint nodes reprojected to the unit sphere, so ⟦a275 $M^{6}$⟧ holds 40,962 nodes"
+   },
+   "de": {
+    "takeaway": "Die Mesh-Knoten bilden ein ⟦a274 $R=6$⟧-fach verfeinertes ikosaedrisches Mesh mit 40.962 Knoten und je 3 Merkmalen",
+    "reason": "Die Verfeinerung teilt jedes Dreieck in 4, fügt Kantenmittelpunkt-Knoten hinzu und projiziert sie auf die Einheitskugel, sodass ⟦a275 $M^{6}$⟧ 40.962 Knoten enthält",
+    "sentences": {
+     "4": "GraphCast arbeitet mit einem Mesh, das ⟦a274 $R=6$⟧ mal verfeinert wurde, ⟦a275 $M^{6}$⟧, was 40.962 Mesh-Knoten ergibt (siehe Supplement ⟦a276 Table 4⟧), jeder mit den 3 Eingabemerkmalen."
+    }
+   }
+  },
+  "S3.T4.cap": {
+   "note": "de takeaway wrote R as plain text instead of the marker",
+   "de": {
+    "takeaway": "Die Multi-Mesh-Statistiken tabellieren Knoten- und Kantenzahlen pro Verfeinerungsstufe ⟦a277 $R$⟧"
+   }
+  },
+  "S3.SS3.SSS0.Px3.p1.1": {
+   "note": "zh 多重网格 -> 多网格; de topic not verbatim",
+   "zh": {
+    "takeaway": "网格边在所有细化层级上添加，构成联合的多网格",
+    "topic": "多网格",
+    "sentences": {
+     "4": "由此得到的、包含所有细化层级边的联合集合的图，就是我们所说的“多网格”。",
+     "5": "关于细化层级中所有单个网格以及完整多网格的图示，见 ⟦a289 Figure 1⟧e,g。"
+    }
+   },
+   "de": {
+    "topic": "gemeinsamen Multi-Mesh"
+   }
+  },
+  "S3.SS3.SSS0.Px3.p2.1": {
+   "note": "topics not verbatim; zh sentence 1 redundant ('之差...向量差')",
+   "en": {
+    "takeaway": "Each of 327,660 mesh edges carries 4 edge features from node positions",
+    "topic": "edge features"
+   },
+   "zh": {
+    "takeaway": "327,660条网格边各带4个由节点位置得到的边特征",
+    "topic": "边特征",
+    "sentences": {
+     "1": "这包括边的长度，以及在接收方局部坐标系中计算的发送方与接收方节点三维位置的向量差。"
+    }
+   }
+  },
+  "S3.SS3.SSS0.Px4.p1.1": {
+   "note": "zh rendered grid nodes and mesh nodes with the same word ('将发送方网格节点连接到接收方网格节点'); de topic cut; de 'Features' left in English",
+   "zh": {
+    "sentences": {
+     "0": "⟦a295 $\\mathcal{E}^{\\text{G2M}}$⟧ 是单向边，将发送方格点连接到接收方网格节点。",
+     "1": "若网格节点与格点之间的距离小于或等于网格 ⟦a298 $M^{6}$⟧ 中边长的 0.6 倍⟦a297⟧，则添加一条边 ⟦a296 $e^{\\text{G2M}}_{v^{\\text{G}}_{\\text{s}}\\rightarrow v^{\\text{M}}_{\\text{r}}}$⟧（见 ⟦a299 Figure 1⟧），这确保每个格点至少连接到一个网格节点。"
+    }
+   },
+   "de": {
+    "takeaway": "GraphCast besitzt 1.618.746 Grid2Mesh-Kanten mit je 4 Eingabemerkmalen",
+    "topic": "Grid2Mesh-Kanten",
+    "sentences": {
+     "2": "Merkmale ⟦a300 $\\mathbf{e}^{\\text{G2M,features}}_{v^{\\text{G}}_{\\text{s}}\\rightarrow v^{\\text{M}}_{\\text{r}}}$⟧ werden auf die gleiche Weise konstruiert wie diejenigen für die Mesh-Kanten.",
+     "3": "Dies ergibt insgesamt 1.618.746 Grid2Mesh-Kanten mit jeweils 4 Eingabemerkmalen."
+    }
+   }
+  },
+  "S3.SS3.SSS0.Px5.p1.1": {
+   "note": "zh grid point/grid node = 格点, mesh node = 网格节点 (both were 网格...)",
+   "zh": {
+    "reason": "每个⟦a306 $721\\times 1440$⟧经纬度格点连接三个网格节点",
+    "sentences": {
+     "0": "⟦a301 $\\mathcal{E}^{\\text{M2G}}$⟧ 是单向边，连接发送方网格节点与接收方格点。",
+     "1": "对于每个格点，我们找到网格 ⟦a302 $M^{6}$⟧ 中包含它的三角形面，并添加三条形如 ⟦a303 $e^{\\text{M2G}}_{v^{\\text{M}}_{\\text{s}}\\rightarrow v^{\\text{G}}_{\\text{r}}}$⟧ 的 Mesh2Grid 边，以将该格点连接到与该面相邻的三个网格节点（见 ⟦a304 Figure 1⟧）。",
+     "3": "这样共得到 3,114,720 条 Mesh2Grid 边（每个 ⟦a306 $721\\times 1440$⟧ 经纬度格点连接三个网格节点），每条边有四个输入特征。"
+    }
+   }
+  },
+  "S3.SS4.SSS0.Px1.p1.1": {
+   "note": "zh listed 'grid nodes, mesh nodes, grid-to-mesh, mesh-to-grid' as 网格节点、网格节点、网格到网格、网格到网格; reason said 'applied uniformly' though there is one MLP per type",
+   "en": {
+    "reason": "Embedding is the encoder's first step, with one MLP for each node and edge type"
+   },
+   "zh": {
+    "takeaway": "五个 MLP 将格点、网格节点与各类边的特征嵌入固定大小隐空间",
+    "reason": "嵌入是编码器的第一步，每类节点与边各用一个MLP",
+    "sentences": {
+     "0": "作为编码器的一部分，我们首先使用五个多层感知机（MLP）将每个格点、网格节点、网格边、格点到网格的边以及网格到格点的边的特征嵌入到一个固定大小的隐空间中，"
+    }
+   },
+   "de": {
+    "reason": "Die Einbettung ist der erste Schritt des Encoders, mit je einem MLP pro Knoten- und Kantentyp"
+   }
+  },
+  "S3.SS4.SSS0.Px2.p1.1": {
+   "note": "zh grid/mesh nodes indistinguishable; '二分子图' -> 二部子图; de 'Maschenknoten', 'Nachrichtendurchlauf'",
+   "zh": {
+    "takeaway": "在 Grid2Mesh 二部子图上单步消息传递，把格点状态传给网格节点",
+    "reason": "先用相邻格点与网格节点的信息更新 Grid2Mesh 边",
+    "sentences": {
+     "0": "接下来，为了把大气状态的信息从格点传递到网格节点，我们在连接格点与网格节点的 Grid2Mesh 二部子图 ⟦a307 $\\mathcal{G}_{\\text{G2M}}(\\mathcal{V}^{\\text{G}},\\mathcal{V}^{\\text{M}},\\mathcal{E}^{\\text{G2M}})$⟧ 上执行单步消息传递。"
+    }
+   },
+   "de": {
+    "takeaway": "Ein einzelner Message-Passing-Schritt über den bipartiten Grid2Mesh-Teilgraphen überträgt Gitterknotenzustände auf Mesh-Knoten",
+    "reason": "Die Grid2Mesh-Kanten werden zuerst anhand von Informationen aus ihren benachbarten Gitter- und Mesh-Knoten aktualisiert",
+    "sentences": {
+     "0": "Als Nächstes führen wir einen einzelnen Message-Passing-Schritt über den bipartiten Grid2Mesh-Teilgraphen ⟦a307 $\\mathcal{G}_{\\text{G2M}}(\\mathcal{V}^{\\text{G}},\\mathcal{V}^{\\text{M}},\\mathcal{E}^{\\text{G2M}})$⟧ durch, der die Gitterknoten mit den Mesh-Knoten verbindet, um Informationen über den Zustand der Atmosphäre von den Gitterknoten auf die Mesh-Knoten zu übertragen."
+    }
+   }
+  },
+  "S3.SS4.SSS0.Px2.p1.2": {
+   "note": "de 'Maschenknoten' -> Mesh-Knoten",
+   "de": {
+    "takeaway": "Mesh-Knoten werden durch Aggregation aller eingehenden Grid2Mesh-Kanten aktualisiert",
+    "topic": "Mesh-Knoten",
+    "sentences": {
+     "0": "Dann wird jeder der Mesh-Knoten aktualisiert, indem Informationen von allen Kanten aggregiert werden, die an diesem Mesh-Knoten eintreffen:"
+    }
+   }
+  },
+  "S3.SS4.SSS0.Px2.p2.1": {
+   "note": "zh grid nodes = 格点",
+   "zh": {
+    "takeaway": "格点无入边，更新时不聚合",
+    "topic": "格点",
+    "reason": "格点在 Grid2Mesh 子图中不接收任何边，故无需聚合",
+    "sentences": {
+     "0": "每个格点也会被更新，但不进行聚合，因为格点在 Grid2Mesh 子图中不是任何边的接收端，"
+    }
+   }
+  },
+  "S3.SS4.SSS0.Px2.p2.2": {
+   "note": "de topic was a clause fragment",
+   "de": {
+    "topic": "Residualverbindung"
+   }
+  },
+  "S3.SS5.p1.1": {
+   "note": "zh reason said 'not grid nodes and grid-to-grid connections' with the same word for both; de 'Grid-Knoten'",
+   "zh": {
+    "topic": "深度GNN",
+    "reason": "它只作用于网格节点和网格边，不涉及格点及格点与网格之间的连接"
+   },
+   "de": {
+    "reason": "Er arbeitet nur auf Mesh-Knoten und Mesh-Kanten und schließt Gitterknoten und Gitter-zu-Mesh-Verbindungen aus"
+   }
+  },
+  "S3.SS5.SSS0.Px1.p1.2": {
+   "note": "en topic not verbatim",
+   "en": {
+    "topic": "Mesh node updates"
+   }
+  },
+  "S3.SS6.p1.1": {
+   "note": "reason invented a 'compression'; zh reason unreadable ('网格到网格压缩，把网格表示转换为网格级预测')",
+   "en": {
+    "reason": "It reverses the encoder's grid-to-mesh mapping, turning mesh representations into predictions on the grid"
+   },
+   "zh": {
+    "reason": "它与编码器的格点到网格映射相反，把网格表示转换为格点上的预测"
+   },
+   "de": {
+    "reason": "Er kehrt die Gitter-zu-Mesh-Abbildung des Encoders um und wandelt Mesh-Repräsentationen in Vorhersagen auf dem Gitter um"
+   }
+  },
+  "S3.SS6.SSS0.Px1.p1.2": {
+   "note": "zh grid nodes = 格点",
+   "zh": {
+    "takeaway": "先更新边，再聚合到格点",
+    "topic": "格点",
+    "reason": "每个格点聚合所有到达该格点的边的信息",
+    "sentences": {
+     "0": "随后它更新每个格点，聚合到达该格点的所有边的信息："
+    }
+   }
+  },
+  "S3.SS6.SSS0.Px1.p2.1": {
+   "note": "zh grid nodes = 格点",
+   "zh": {
+    "takeaway": "添加残差连接，仅对格点重新赋值",
+    "reason": "从此刻起只需格点",
+    "sentences": {
+     "0": "这里同样添加残差连接，为简化记号重新赋值变量，这次只针对格点，因为从此刻起只需它们："
+    }
+   }
+  },
+  "S3.SS6.SSS0.Px2.p1.1": {
+   "note": "reason described a mesh-to-grid mapping, but this final MLP acts per grid node; zh grid node",
+   "en": {
+    "reason": "It is the final step of the decoder, applied separately at each grid node",
+    "topic": "final MLP"
+   },
+   "zh": {
+    "takeaway": "最终MLP生成每个格点的预测",
+    "topic": "最终MLP",
+    "reason": "这是解码器的最后一步，在每个格点上分别执行",
+    "sentences": {
+     "0": "最后，每个格点的预测⟦a321 $\\mathbf{\\hat{y}}_{i}$⟧由另一个MLP生成，"
+    }
+   },
+   "de": {
+    "reason": "Dies ist der letzte Schritt des Decoders, separat an jedem Gitterknoten angewandt"
+   }
+  },
+  "S3.SS6.SSS0.Px2.p1.2": {
+   "note": "reason invented 'prior rollout schemes'; de takeaway 'the state adds'; topics not verbatim",
+   "en": {
+    "takeaway": "The next state ⟦a323 $\\hat{X}^{t+1}$⟧ is the input state plus the per-node prediction ⟦a324 $\\hat{Y}^{t}$⟧",
+    "reason": "The MLP outputs all 227 predicted variables per grid node, as in prior learned simulators",
+    "topic": "next state"
+   },
+   "zh": {
+    "topic": "下一状态",
+    "reason": "MLP输出每个格点的全部227个预测变量，做法与先前的学习型模拟器相同",
+    "sentences": {
+     "0": "其中包含该格点的全部227个预测变量。",
+     "1": "与⟦a322 [43, 39]⟧类似，下一个天气状态⟦a323 $\\hat{X}^{t+1}$⟧是通过将所有格点的逐节点预测⟦a324 $\\hat{Y}^{t}$⟧加到输入状态上计算得到的，"
+    }
+   },
+   "de": {
+    "takeaway": "Der nächste Zustand ⟦a323 $\\hat{X}^{t+1}$⟧ ist der Eingangszustand plus die Vorhersage pro Knoten ⟦a324 $\\hat{Y}^{t}$⟧",
+    "reason": "Das MLP gibt alle 227 vorhergesagten Variablen pro Gitterknoten aus, wie in früheren gelernten Simulatoren"
+   }
+  },
+  "S3.SS7.SSS0.Px2.p1.1": {
+   "note": "en topic over budget; zh/de reason wrote X as a plain letter",
+   "en": {
+    "takeaway": "Output normalization uses the per-level standard deviation of ⟦a329 $Y^{t}=X^{t+1}-X^{t}$⟧",
+    "topic": "Output normalization"
+   },
+   "zh": {
+    "takeaway": "输出归一化采用⟦a329 $Y^{t}=X^{t+1}-X^{t}$⟧逐气压层的标准差",
+    "topic": "输出归一化",
+    "reason": "模型预测差值⟦a326 $\\hat{Y}^{t}$⟧，推理时与⟦a327 $X^{t}$⟧相加得到⟦a328 $\\hat{X}^{t+1}$⟧"
+   },
+   "de": {
+    "takeaway": "Die Ausgabe-Normalisierung nutzt die Standardabweichung pro Druckniveau von ⟦a329 $Y^{t}=X^{t+1}-X^{t}$⟧",
+    "topic": "Ausgabe-Normalisierung",
+    "reason": "Das Modell sagt eine Differenz voraus, die bei der Inferenz zu ⟦a327 $X^{t}$⟧ addiert wird und ⟦a328 $\\hat{X}^{t+1}$⟧ ergibt"
+   }
+  },
+  "S3.SS7.SSS0.Px3.p1.1": {
+   "note": "zh grid node = 格点; 'Decoder' left in English",
+   "zh": {
+    "reason": "解码器最后一层输出227个值，对应每个格点的预测变量",
+    "sentences": {
+     "0": "GraphCast中的神经网络全部为MLP，具有一个隐藏层，隐藏层和输出层的大小均为512（但解码器MLP的最后一层除外，其输出大小为227，与每个格点所预测的变量数量相匹配）。",
+     "2": "所有MLP之后都接有一个LayerNorm⟦a335 [3]⟧层（解码器的MLP除外）。"
+    }
+   }
+  },
+  "S4.SS1.p1.1": {
+   "note": "de mistranslated 'test set' as 'Testsystem'",
+   "de": {
+    "sentences": {
+     "0": "Um reale Einsatzbedingungen nachzubilden, unter denen die Vorhersage nicht von Informationen aus der Zukunft abhängen kann, teilten wir die zur Entwicklung von GraphCast verwendeten Daten und die zur Prüfung seiner Leistung verwendeten Daten „kausal“ auf, insofern als das „Entwicklungsset“ nur frühere Daten enthielt als das „Testset“."
+    }
+   }
+  },
+  "S4.SS1.p2.1": {
+   "note": "en topic not verbatim; de 'Training 1979, 2015' (comma for range)",
+   "en": {
+    "takeaway": "The development set splits into a training set, 1979-2015, and validation, 2016-2017",
+    "topic": "training set"
+   },
+   "de": {
+    "takeaway": "Das Entwicklungsset teilt sich in Training 1979 bis 2015 und Validierung 2016 bis 2017",
+    "topic": "Entwicklungsset"
+   }
+  },
+  "S4.I1.i2.p1.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "初始日期时间"
+   }
+  },
+  "S4.I1.i3.p1.1": {
+   "note": "topics not verbatim; reason used raw math",
+   "en": {
+    "takeaway": "⟦a349 $j\\in J$⟧ is the variable index, including pressure level for atmospheric variables",
+    "topic": "variable index",
+    "reason": "Examples are z1000 and z850, and surface variables like 2t and msl"
+   },
+   "zh": {
+    "takeaway": "⟦a349 $j\\in J$⟧是变量索引，对大气变量还包括气压层",
+    "topic": "变量索引",
+    "reason": "例如z1000、z850，以及2t、msl等地面变量"
+   },
+   "de": {
+    "takeaway": "⟦a349 $j\\in J$⟧ ist der Variablenindex, bei atmosphärischen Variablen einschließlich Druckniveau",
+    "topic": "Variablenindex",
+    "reason": "Beispiele sind z1000 und z850 sowie Oberflächenvariablen wie 2t und msl"
+   }
+  },
+  "S4.I1.i4.p1.1": {
+   "note": "en/de takeaway carried broken raw math ('$i\\in G_{$$}$'); topics not verbatim",
+   "en": {
+    "takeaway": "⟦a351 $i\\in G_{$$}$⟧ are the grid coordinates, latitude and longitude, of each location",
+    "topic": "grid coordinates"
+   },
+   "zh": {
+    "takeaway": "⟦a351 $i\\in G_{$$}$⟧是各位置的网格坐标，即纬度和经度",
+    "topic": "网格坐标"
+   },
+   "de": {
+    "takeaway": "⟦a351 $i\\in G_{$$}$⟧ sind die Gitterkoordinaten, Breiten- und Längengrad, jedes Ortes",
+    "topic": "Gitterkoordinaten"
+   }
+  },
+  "S4.I1.i5.p1.1": {
+   "note": "en/de takeaway raw math instead of the unit's markers; topics over budget / not distinct",
+   "en": {
+    "takeaway": "⟦a352 $\\hat{x}^{d_{0}+\\tau}_{j,i}$⟧ and ⟦a353 $x^{d_{0}+\\tau}_{j,i}$⟧ are prediction and target per variable-level, location and lead time",
+    "topic": "prediction and target"
+   },
+   "zh": {
+    "takeaway": "⟦a352 $\\hat{x}^{d_{0}+\\tau}_{j,i}$⟧和⟦a353 $x^{d_{0}+\\tau}_{j,i}$⟧是各变量层、位置和时效上的预测与目标值",
+    "topic": "预测与目标值"
+   },
+   "de": {
+    "takeaway": "⟦a352 $\\hat{x}^{d_{0}+\\tau}_{j,i}$⟧ und ⟦a353 $x^{d_{0}+\\tau}_{j,i}$⟧ sind Vorhersage- und Zielwerte je Variable-Druckniveau, Ort und Vorlaufzeit",
+    "topic": "Vorhersage- und Zielwerte"
+   }
+  },
+  "S4.I1.i6.p1.1": {
+   "note": "zh '时差' reads as jet lag/time zone offset; time differences = 时间差分",
+   "zh": {
+    "takeaway": "⟦a354 $s_{j}$⟧是逐变量层的时间差分逆方差",
+    "sentences": {
+     "0": "⟦a354 $s_{j}$⟧是逐变量层的时间差分逆方差，"
+    }
+   }
+  },
+  "S4.I1.i8.p1.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "网格单元面积"
+   }
+  },
+  "S4.SS2.p3.1": {
+   "note": "reason reversed the logic ('only 0.66% since HRES beats GraphCast there'); the weight is small, and HRES happens to be better there; de decimals; zh 时差; distinct topic",
+   "en": {
+    "reason": "Levels at or below 50 hPa, where HRES tends to do better, carry only 0.66% of the total weight"
+   },
+   "zh": {
+    "reason": "HRES往往更优的50 hPa及以下各层仅占总权重的0.66%",
+    "sentences": {
+     "0": "量⟦a357 $s_{j}=\\mathbb{V}_{i,t}\\left[x_{i,j}^{t+1}-x_{i,j}^{t}\\right]^{-1}$⟧是逐变量层的时间差分逆方差估计，旨在将（连续步上的）目标标准化为单位方差。"
+    },
+    "topic": "目标标准化"
+   },
+   "de": {
+    "reason": "Niveaus bei oder unter 50 hPa, wo HRES meist besser abschneidet, tragen nur 0,66 % des Gesamtgewichts",
+    "sentences": {
+     "6": "Wir haben die Verlustgewichte für die Oberflächenvariablen während der Modellentwicklung abgestimmt, um über alle Variablen hinweg eine ungefähr vergleichbare Validierungsleistung zu erzielen: Das Gewicht für 2t betrug 1,0, und die Gewichte für 10u, 10v, msl und tp betrugen jeweils 0,1, wie in ⟦a363 Figure 6⟧b gezeigt."
+    }
+   }
+  },
+  "S4.SS3.p1.1": {
+   "note": "de takeaway 'die vorhergesagte nächste Vorhersage' is circular",
+   "de": {
+    "takeaway": "Autoregressives Training speist den vorhergesagten nächsten Schritt als Eingabe zurück"
+   }
+  },
+  "S4.SS4.p1.1": {
+   "note": "takeaway covered only the clipping detail and the reason invented a stability rationale; the unit gives the whole optimizer setup",
+   "en": {
+    "takeaway": "Training uses mini-batch gradient descent with AdamW, weight decay 0.1 and gradient clipping at 32",
+    "topic": "mini-batch gradient descent",
+    "reason": "Batches of 32 ERA5 trajectories are sampled with replacement, and AdamW uses ⟦a368 $(\\text{beta1}=0.9,\\text{beta2}=0.95)$⟧"
+   },
+   "zh": {
+    "takeaway": "训练采用AdamW小批量梯度下降，权重衰减0.1，梯度裁剪上限32",
+    "topic": "梯度下降",
+    "reason": "从ERA5中有放回地采样32条轨迹组成批次，AdamW参数为⟦a368 $(\\text{beta1}=0.9,\\text{beta2}=0.95)$⟧"
+   },
+   "de": {
+    "takeaway": "Das Training nutzt Mini-Batch-Gradientenabstieg mit AdamW, Weight Decay 0,1 und Gradient Clipping bei 32",
+    "topic": "Mini-Batch-Gradientenabstieg",
+    "reason": "Batches aus 32 ERA5-Trajektorien werden mit Zurücklegen gezogen; AdamW nutzt ⟦a368 $(\\text{beta1}=0.9,\\text{beta2}=0.95)$⟧"
+   }
+  },
+  "S4.SS5.p1.1": {
+   "note": "de 'Lehrplan' for curriculum",
+   "de": {
+    "takeaway": "Das Curriculum-Training nutzte drei Phasen mit variierenden Lernraten und autoregressiven Schritten",
+    "topic": "Curriculum-Training",
+    "sentences": {
+     "0": "Das Training des Modells erfolgte mit einem Curriculum aus drei Phasen, die die Lernraten und die Anzahl der autoregressiven Schritte variierten."
+    }
+   }
+  },
+  "S4.SS6.p1.1": {
+   "note": "zh topic '32GB' says little",
+   "zh": {
+    "takeaway": "三项策略减少内存占用，使12步自回归适配32GB",
+    "topic": "内存占用"
+   }
+  },
+  "S4.SS7.p1.1": {
+   "note": "zh sentence 0 contained a fake marker '⟦32⟧'",
+   "zh": {
+    "sentences": {
+     "0": "按照上述逐步增加自回归步数的训练计划，GraphCast的训练在32块TPU设备上耗时约四周。"
+    }
+   }
+  },
+  "S5.p1.1": {
+   "note": "de topic cut ('kausal auf'); de 'Supplementary Materials' left in English",
+   "de": {
+    "topic": "Evaluationsprotokoll",
+    "sentences": {
+     "3": "⟦a389 Section 5.3⟧ gibt die Definition der Metriken an, mit denen wir die Güte in unseren Hauptergebnissen messen, sowie der Metriken, die in ergänzenden Ergebnissen in den Supplementen verwendet werden."
+    }
+   }
+  },
+  "S5.SS1.p1.1": {
+   "note": "de takeaway wrong ('trained on a period from 2017 to 2020'; the periods start in 1979 and end 2017 to 2020); zh topic",
+   "zh": {
+    "takeaway": "四个GraphCast版本的训练数据分别截至2017、2018、2019和2020年",
+    "topic": "GraphCast版本"
+   },
+   "de": {
+    "takeaway": "Vier GraphCast-Versionen werden auf Zeiträumen trainiert, die 2017, 2018, 2019 bzw. 2020 enden",
+    "topic": "GraphCast-Versionen"
+   }
+  },
+  "S5.SS2.SSS1.p1.1": {
+   "note": "de 'der Skill'; dataset name left in English",
+   "de": {
+    "sentences": {
+     "2": "Im Allgemeinen liefert die Verifikation eines Modells gegen seine eigene Analyse die besten Schätzungen der Güte ⟦a395 [45]⟧.",
+     "3": "Daher haben wir, statt HRES-Vorhersagen gegen ERA5 als Ground Truth zu bewerten, was bedeuten würde, dass selbst der nullte Schritt der HRES-Vorhersagen einen von null verschiedenen Fehler hätte, einen Datensatz „HRES-Vorhersage bei Schritt 0“ (HRES-fc0) konstruiert, der den initialen Zeitschritt von HRES-Vorhersagen bei zukünftigen Initialisierungen enthält (siehe ⟦a396 Section 1.2⟧)."
+    }
+   }
+  },
+  "S5.SS2.SSS2.p1.1": {
+   "note": "de 'Fähigkeiten' (abilities) for skills",
+   "de": {
+    "sentences": {
+     "0": "Beim Vergleich der Güte von GraphCast und HRES haben wir mehrere Entscheidungen getroffen, um Unterschiede zwischen den Datenassimilationsfenstern von ERA5 und HRES-fc0 zu kontrollieren."
+    }
+   }
+  },
+  "S5.SS2.SSS2.p2.1": {
+   "note": "de 'Vorhersagezeiten' for lead times (Vorlaufzeiten elsewhere)",
+   "de": {
+    "sentences": {
+     "3": "Bei Initialisierung aus einem Zustand mit größerem Lookahead erzielt GraphCast eine sichtbare Verbesserung, die bei längeren Vorlaufzeiten anhält, was unsere Wahl unterstützt, die Evaluierung aus 06z/18z zu initialisieren."
+    }
+   }
+  },
+  "S5.F10.cap": {
+   "note": "de 'Vorhersagezeit' and 'RMSE-Fähigkeit/Fähigkeitswert' for RMSE skill/skill score",
+   "de": {
+    "reason": "Die Verbesserung ist von kurzer bis langer Vorlaufzeit messbar, sodass 06z/18z vermeidet, dass GraphCast einen Vorteil erhält",
+    "sentences": {
+     "2": "Die Verbesserung ist von kurzer bis langer Vorlaufzeit messbar.",
+     "4": "Die x-Achse repräsentiert die Vorlaufzeit in 12-Stunden-Schritten über 10 Tage.",
+     "5": "Die y-Achse repräsentiert den RMSE-Skill oder den Skill-Score."
+    }
+   }
+  },
+  "S5.SS2.SSS2.p3.1": {
+   "note": "de 'Vorhersagezeit' for lead time",
+   "de": {
+    "sentences": {
+     "2": "Als praktisches Beispiel: Würden wir GraphCast und HRES initialisiert um 06z bei einer Vorlaufzeit von 6h (d. h. 12z) evaluieren, würde das Ziel für GraphCast einen +9h-Lookahead integrieren, während das Ziel für HRES nur einen +3h-Lookahead beinhalten würde.",
+     "3": "Bei gleicher Vorlaufzeit könnte dies zu einer schwierigeren Aufgabe für GraphCast führen."
+    }
+   }
+  },
+  "S5.SS2.SSS3.p1.1": {
+   "note": "topics 'GraphCast' say nothing; de 'Validität' for validity",
+   "en": {
+    "topic": "Fair HRES comparison"
+   },
+   "zh": {
+    "topic": "公平比较"
+   },
+   "de": {
+    "takeaway": "Ein fairer HRES-Vergleich erfordert GraphCast mit 06z- und 18z-Initialisierungs- und -Gültigkeitszeiten",
+    "topic": "fairer HRES-Vergleich",
+    "reason": "Vorlaufzeiten als Vielfache von 12⟦a400 $\\mathrm{h}$⟧ erzwingen, dass auch die Gültigkeitszeiten 06z und 18z sind",
+    "sentences": {
+     "0": "Wie oben dargelegt, erfordert ein fairer Vergleich mit HRES, dass wir GraphCast mit 06z- und 18z-Initialisierungen und mit Vorlaufzeiten auswerten, die Vielfache von 12⟦a400 $\\mathrm{h}$⟧ sind, was bedeutet, dass die Gültigkeitszeiten ebenfalls 06z und 18z sind."
+    }
+   }
+  },
+  "S5.SS2.SSS3.p2.1": {
+   "note": "de 'Validität' for validity",
+   "de": {
+    "reason": "Archivierte HRES-Vorhersagen mit 06z- und 18z-Initialisierung und -Gültigkeit existieren nur bis zu diesem Horizont, was die Auswertung bei 3,5 Tagen enden lässt",
+    "sentences": {
+     "0": "Für Vorlaufzeiten bis zu 3,75 Tagen sind archivierte HRES-Vorhersagen mit 06z- und 18z-Initialisierungs- und -Gültigkeitszeiten verfügbar, und wir verwenden diese, um bei diesen Vorlaufzeiten einen direkten Vergleich mit GraphCast durchzuführen."
+    }
+   }
+  },
+  "S5.SS2.SSS3.p3.1": {
+   "note": "topics 'HRES' / '4 Tagen' say little; de 'Validitätszeiten'",
+   "en": {
+    "topic": "Beyond 4 days"
+   },
+   "zh": {
+    "topic": "4天以后"
+   },
+   "de": {
+    "topic": "Ab 4 Tagen",
+    "sentences": {
+     "0": "Für Vorlaufzeiten von 4 Tagen und darüber sind archivierte HRES-Vorhersagen nur mit 00z- und 12z-Initialisierungen verfügbar, was angesichts unserer Vorlaufzeiten als Vielfache von 12 Stunden 00z- und 12z-Gültigkeitszeiten bedeutet."
+    }
+   }
+  },
+  "S5.SS2.SSS3.p4.1": {
+   "note": "zh '技能' for skill; de 'Validitätszeiten', 'eine höhere Skill'",
+   "zh": {
+    "sentences": {
+     "3": "我们预期这些差异在更长预报时效上仍会继续有利于HRES，且无论如何都会保持较小，因此我们认为，在GraphCast技巧高于HRES的情形中，这些差异不会损害我们的结论。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "1": "In ⟦a401 Figure 11⟧ sehen wir, dass die HRES-RMSEs bis zu Vorlaufzeiten von 3,5 Tagen im Mittel über 00z- und 12z-Initialisierungs-/Gültigkeitszeiten tendenziell kleiner sind als bei den 06z- und 18z-Zeiten, auf denen GraphCast ausgewertet wird.",
+     "3": "Wir erwarten, dass diese Differenzen auch bei längeren Vorlaufzeiten weiterhin HRES begünstigen und ohnehin klein bleiben, sodass sie unseres Erachtens unsere Schlussfolgerungen nicht gefährden, wenn GraphCast eine höhere Güte als HRES aufweist."
+    }
+   }
+  },
+  "S5.F11.cap": {
+   "note": "en takeaway ungrammatical; zh '技能得分' -> 技巧评分",
+   "en": {
+    "takeaway": "RMSE skill scores of HRES at 06z/18z are plotted relative to HRES at 00z/12z"
+   },
+   "zh": {
+    "takeaway": "绘出HRES 06z/18z相对00z/12z的RMSE技巧评分",
+    "topic": "RMSE技巧评分",
+    "sentences": {
+     "0": "HRES在06z/18z与HRES在00z/12z的RMSE技巧评分。",
+     "1": "图中显示了以06z/18z初始化的HRES（黑线）相对于以00z/12z初始化的HRES（灰线）的RMSE技巧评分随预报时效的变化。"
+    }
+   }
+  },
+  "S5.SS2.SSS3.p5.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "takeaway": "时效图标出3.5天切换点：HRES由06z/18z转为00z/12z",
+    "topic": "3.5天切换点"
+   }
+  },
+  "S5.SS2.SSS4.p1.1": {
+   "note": "reason 'HRES longer leads shifted' unclear",
+   "en": {
+    "reason": "Initializations span 2018-01-01_06:00:00 to 2018-12-31_18:00:00 UTC, shifted six hours earlier for long-lead HRES"
+   },
+   "zh": {
+    "reason": "初始化时间为2018-01-01_06:00:00至2018-12-31_18:00:00 UTC，长时效HRES提前6小时"
+   },
+   "de": {
+    "reason": "Die Initialisierungen reichen von 2018-01-01_06:00:00 bis 2018-12-31_18:00:00 UTC, für HRES bei langen Vorlaufzeiten sechs Stunden früher"
+   }
+  },
+  "S5.SS3.p1.1": {
+   "note": "zh '地面真值' (literally surface truth) and '技能'; de RMSE rendered as MSE",
+   "zh": {
+    "takeaway": "RMSE与ACC衡量各模型相对各自真值的技巧",
+    "topic": "RMSE与ACC",
+    "sentences": {
+     "0": "我们使用均方根误差（RMSE）和距平相关系数（ACC）来量化GraphCast、其他机器学习模型和HRES的技巧，二者均针对各模型各自的真值数据计算。",
+     "1": "RMSE衡量的是给定变量（以⟦a402 $j$⟧为索引）和给定预报时效⟦a403 $\\tau$⟧下预报与真值之间差异的大小（见⟦a404 Equation 20⟧）。",
+     "2": "ACC，即⟦a405 $\\mathcal{L}_{\\text{ACC}}^{j,\\tau}$⟧，定义于⟦a406 Equation 29⟧，衡量预报相对于气候态（即某地点和日期平均天气）的差异与真值相对于气候态的差异之间的相关性。",
+     "3": "对于技巧评分，我们使用模型⟦a407 $A$⟧与基线⟦a408 $B$⟧之间归一化的RMSE差值⟦a409 $(\\mathrm{RMSE}_{A}-\\mathrm{RMSE}_{B})/\\mathrm{RMSE}_{B}$⟧，以及归一化的ACC差值⟦a410 $(\\mathrm{ACC}_{A}-\\mathrm{ACC}_{B})/(1-\\mathrm{ACC}_{B})$⟧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir quantifizieren die Prognosegüte von GraphCast, anderen ML-Modellen und HRES anhand der Wurzel des mittleren quadratischen Fehlers (RMSE) und des Anomaliekorrelationskoeffizienten (ACC), die beide gegen die jeweiligen Ground-Truth-Daten der Modelle berechnet werden."
+    }
+   }
+  },
+  "S5.SS3.p2.1": {
+   "note": "reason invented a rationale ('avoids distorting errors'), not in the unit",
+   "en": {
+    "reason": "Errors are reported in each variable's physical units rather than normalized values"
+   },
+   "zh": {
+    "reason": "误差以各变量的物理单位报告，而非归一化值"
+   },
+   "de": {
+    "reason": "Fehler werden in den physikalischen Einheiten jeder Variable statt normiert angegeben"
+   }
+  },
+  "S5.SS3.SSS0.Px1.p1.1": {
+   "note": "reason said the RMSE aggregates over variables and lead times, but it is computed per variable and lead time (over initializations and grid points); de RMSE named as MSE",
+   "en": {
+    "reason": "The error is area-weighted over grid points and averaged over initialization date-times"
+   },
+   "zh": {
+    "topic": "纬度加权RMSE",
+    "reason": "误差在格点上按面积加权，并在起报时间上平均"
+   },
+   "de": {
+    "takeaway": "Für Variable ⟦a411 $x_{j}$⟧ und Vorlaufzeit ⟦a412 $\\tau=t\\Delta d$⟧ wird ein breitengewichteter RMSE verwendet",
+    "topic": "breitengewichteter RMSE",
+    "reason": "Der Fehler wird über die Gitterpunkte flächengewichtet und über die Initialisierungszeitpunkte gemittelt",
+    "sentences": {
+     "0": "Die Prognosegüte für eine gegebene Variable, ⟦a411 $x_{j}$⟧, und Vorlaufzeit, ⟦a412 $\\tau=t\\Delta d$⟧, quantifizierten wir mit einem breitengewichteten RMSE (Wurzel des mittleren quadratischen Fehlers), gegeben durch"
+    }
+   }
+  },
+  "S5.I1.i3.p1.1": {
+   "note": "en/de takeaway carried broken raw math; topics not verbatim; de 'Raster'",
+   "en": {
+    "takeaway": "⟦a416 $i\\in G_{$$}$⟧ are the grid coordinates, latitude and longitude, of each location",
+    "topic": "grid coordinates"
+   },
+   "zh": {
+    "takeaway": "⟦a416 $i\\in G_{$$}$⟧是各位置的网格坐标，即纬度与经度",
+    "topic": "网格坐标"
+   },
+   "de": {
+    "takeaway": "⟦a416 $i\\in G_{$$}$⟧ sind die Gitterkoordinaten, Breiten- und Längengrad, jedes Ortes",
+    "topic": "Gitterkoordinaten",
+    "sentences": {
+     "0": "⟦a416 $i\\in G_{$$}$⟧ die Ortskoordinaten (Breiten- und Längengrad) im Gitter sind,"
+    }
+   }
+  },
+  "S5.I1.i4.p1.1": {
+   "note": "en topic over budget; zh topic not verbatim",
+   "en": {
+    "takeaway": "⟦a417 $\\hat{x}^{d_{0}+\\tau}_{j,i}$⟧ and ⟦a418 $x^{d_{0}+\\tau}_{j,i}$⟧ are prediction and target per variable-level, location and lead time",
+    "topic": "prediction and target"
+   },
+   "zh": {
+    "takeaway": "⟦a417 $\\hat{x}^{d_{0}+\\tau}_{j,i}$⟧与⟦a418 $x^{d_{0}+\\tau}_{j,i}$⟧为各变量层、位置和时效上的预测与目标值",
+    "topic": "预测与目标值"
+   }
+  },
+  "S5.I1.i5.p1.1": {
+   "note": "zh topic not verbatim; de 'Raster' -> Gitter",
+   "zh": {
+    "topic": "网格单元面积"
+   },
+   "de": {
+    "takeaway": "⟦a419 $a_{i}$⟧ ist die Breiten-Längen-Gitterzellenfläche, auf Mittelwert eins normiert",
+    "topic": "Gitterzellenfläche",
+    "sentences": {
+     "0": "⟦a419 $a_{i}$⟧ die Fläche der Breiten-Längen-Gitterzelle (auf einen Mittelwert von eins über das Gitter normiert) ist, die mit der Breite variiert."
+    }
+   }
+  },
+  "S5.SS3.SSS0.Px2.p1.1": {
+   "note": "reason only restated the takeaway; the unit's added detail is that all means sit inside the root; zh takeaway ungrammatical",
+   "en": {
+    "reason": "All means are taken inside the square root in this spherical harmonic RMSE"
+   },
+   "zh": {
+    "takeaway": "经滤波、截断或分解的预测直接在球谐域计算RMSE",
+    "reason": "该球谐域RMSE的所有均值都在平方根内取"
+   },
+   "de": {
+    "reason": "Bei diesem RMSE werden alle Mittelwerte innerhalb der Quadratwurzel gebildet"
+   }
+  },
+  "S5.SS3.SSS0.Px2.p1.2": {
+   "note": "zh 'longitudinal wavenumber' m rendered as 经向 (meridional); it is the zonal wavenumber 纬向波数; de zonale Wellenzahl",
+   "zh": {
+    "sentences": {
+     "0": "这里⟦a421 $\\hat{f}^{d_{0}+\\tau}_{j,l,m}$⟧和⟦a422 $f^{d_{0}+\\tau}_{j,l,m}$⟧是总波数为⟦a423 $l$⟧、纬向波数为⟦a424 $m$⟧的球谐函数的预测系数和目标系数。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Hier sind ⟦a421 $\\hat{f}^{d_{0}+\\tau}_{j,l,m}$⟧ und ⟦a422 $f^{d_{0}+\\tau}_{j,l,m}$⟧ vorhergesagte und Ziel-Koeffizienten von Kugelflächenfunktionen mit Gesamtwellenzahl ⟦a423 $l$⟧ und zonaler Wellenzahl ⟦a424 $m$⟧."
+    }
+   }
+  },
+  "S5.SS3.SSS0.Px3.p1.1": {
+   "note": "topics generic",
+   "en": {
+    "topic": "Per-location RMSE"
+   },
+   "zh": {
+    "topic": "逐位置RMSE"
+   },
+   "de": {
+    "topic": "RMSE pro Ort"
+   }
+  },
+  "S5.SS3.SSS0.Px3.p1.3": {
+   "note": "en/zh/de takeaway carried broken raw math ('$|\\text{lon}(G_{$ $})|=1440$', '$0.25$')",
+   "en": {
+    "takeaway": "The longitude average divides by the 1440 distinct longitudes of the regular grid",
+    "topic": "distinct longitudes"
+   },
+   "zh": {
+    "takeaway": "经度平均除以规则网格中的1440个不同经度",
+    "topic": "1440个不同经度"
+   },
+   "de": {
+    "takeaway": "Die Längengrad-Mittelung teilt durch die 1440 verschiedenen Längengrade des regulären Gitters",
+    "topic": "1440 verschiedenen Längengrade"
+   }
+  },
+  "S5.SS3.SSS0.Px4.p1.1": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "地表高程"
+   }
+  },
+  "S5.SS3.SSS0.Px5.p1.1": {
+   "note": "zh sentence 0 contained a fake marker '⟦公式⟧'",
+   "zh": {
+    "sentences": {
+     "0": "该量定义为"
+    }
+   }
+  },
+  "S5.SS3.SSS0.Px6.p1.1": {
+   "note": "zh takeaway carried an equation cross-reference",
+   "en": {
+    "takeaway": "RMS-MBE quantifies the average magnitude of per-location biases"
+   },
+   "zh": {
+    "takeaway": "RMS-MBE量化逐位置偏差的平均大小"
+   }
+  },
+  "S5.SS3.SSS0.Px7.p1.1": {
+   "note": "reason went beyond the source ('would distort the comparison'); topics not verbatim",
+   "en": {
+    "reason": "Zero has a special meaning for bias, so the coefficient keeps the origin rather than centering",
+    "topic": "uncentered coefficient"
+   },
+   "zh": {
+    "topic": "非中心化系数",
+    "reason": "偏差中零点有特殊意义，故系数保留原点而不做中心化"
+   },
+   "de": {
+    "reason": "Null hat beim Bias eine besondere Bedeutung, daher behält der Koeffizient den Ursprung bei, statt zu zentrieren"
+   }
+  },
+  "S5.SS3.SSS0.Px8.p1.1": {
+   "note": "reason claimed ACC underlies all later verification; RMSE is the main metric; de 'Vorhersagezeit'",
+   "en": {
+    "reason": "It complements the RMSE as a second measure of forecast skill"
+   },
+   "zh": {
+    "reason": "它作为第二种技巧度量补充RMSE"
+   },
+   "de": {
+    "takeaway": "Der ACC wird pro Variable ⟦a441 $x_{j}$⟧ und Vorlaufzeit ⟦a442 $\\tau=t\\Delta d$⟧ berechnet",
+    "topic": "Vorlaufzeit",
+    "reason": "Er ergänzt den RMSE als zweites Maß der Vorhersagegüte",
+    "sentences": {
+     "0": "Wir berechneten außerdem den Anomaliekorrelationskoeffizienten für eine gegebene Variable, ⟦a441 $x_{j}$⟧, und Vorlaufzeit, ⟦a442 $\\tau=t\\Delta d$⟧, gemäß"
+    }
+   }
+  },
+  "S5.SS3.SSS0.Px8.p1.2": {
+   "note": "reason vague ('anchors each validity time'); de 'Höhe' for level",
+   "en": {
+    "reason": "The mean is taken per variable, level, location and day-of-year of the validity time"
+   },
+   "zh": {
+    "reason": "均值按变量、层次、位置及有效时刻所在的年积日分别取"
+   },
+   "de": {
+    "reason": "Das Mittel gilt je Variable, Niveau, Ort und Tag des Jahres der Gültigkeitszeit",
+    "sentences": {
+     "0": "wobei ⟦a443 $C^{d_{0}+\\tau}_{j,i}$⟧ das klimatologische Mittel für eine gegebene Variable, ein Niveau, Breiten- und Längengrad sowie für den Tag des Jahres ist, der die Gültigkeitszeit ⟦a444 $d_{0}+\\tau$⟧ enthält."
+    }
+   }
+  },
+  "S5.SS4.SSS1.p1.1": {
+   "note": "zh topic over budget; de 'Variablen-Level'",
+   "zh": {
+    "topic": "双侧t检验"
+   },
+   "de": {
+    "takeaway": "Gepaarte zweiseitige t-Tests mit Autokorrelationskorrektur testen GraphCast gegen HRES je Vorlaufzeit und Variablen-Niveau",
+    "sentences": {
+     "0": "Für jede Vorlaufzeit ⟦a445 $\\tau$⟧ und jedes Variablen-Niveau ⟦a446 $j$⟧ testen wir auf eine Mittelwertdifferenz zwischen den RMSEs pro Initialisierungszeit (definiert in ⟦a447 Equation 30⟧) für GraphCast und HRES."
+    }
+   }
+  },
+  "S5.SS4.SSS1.p2.1": {
+   "note": "topics carried raw math and were not verbatim",
+   "en": {
+    "topic": "inflation factors"
+   },
+   "de": {
+    "topic": "Inflationsfaktoren"
+   }
+  },
+  "S5.SS4.SSS1.p3.1": {
+   "note": "en topic over budget; zh topic not verbatim and 'Table 5' left in English",
+   "en": {
+    "topic": "significance test results"
+   },
+   "zh": {
+    "takeaway": "显著性检验的详细结果见表5",
+    "topic": "显著性检验",
+    "reason": "表5报告⟦a459 $p$⟧值、⟦a460 $t$⟧检验统计量与有效样本量⟦a461 $n_{\\text{eff}}$⟧"
+   }
+  },
+  "S5.SS4.SSS2.p1.2": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "差值"
+   }
+  },
+  "S5.SS4.SSS2.p2.1": {
+   "note": "reason 'HRES only runs at 00z and 12z' overstated (06z/18z HRES runs to 3.75 days); topics",
+   "en": {
+    "reason": "Beyond 4 days HRES exists only at 00z and 12z, so the two neighboring HRES RMSEs are interpolated"
+   },
+   "zh": {
+    "topic": "插值HRES RMSE",
+    "reason": "4天以上HRES只有00z和12z预报，故对前后两个HRES的RMSE插值"
+   },
+   "de": {
+    "topic": "interpolierten HRES-RMSEs",
+    "reason": "Ab 4 Tagen gibt es HRES nur zu 00z und 12z, daher werden die RMSEs der beiden benachbarten HRES-Vorhersagen interpoliert"
+   }
+  },
+  "S5.SS4.SSS2.p4.1": {
+   "note": "zh topic generic; de 'Fähigkeit' for skill",
+   "zh": {
+    "topic": "HRES平稳性"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wie dort erörtert, verringern sich diese systematischen Unterschiede jedoch mit wachsender Vorlaufzeit erheblich, und sie tendieren dazu, HRES zu begünstigen, sodass wir annehmen, dass ein Test von ⟦a472 $\\mathbb{E}[\\text{diff-RMSE}(j,\\tau,d_{0})]=0$⟧ auf der Grundlage von ⟦a473 $\\text{diff-RMSE}_{\\text{interp}}$⟧ in Fällen, in denen GraphCast eine höhere Güte als HRES zu haben scheint, konservativ ist."
+    }
+   }
+  },
+  "S5.SS4.SSS3.p1.1": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "置信区间"
+   }
+  },
+  "S5.SS4.SSS3.p2.1": {
+   "note": "topics not verbatim",
+   "en": {
+    "topic": "assume stationarity"
+   },
+   "zh": {
+    "topic": "假设平稳性"
+   }
+  },
+  "S5.SS4.SSS4.p1.1": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "技巧评分图"
+   }
+  },
+  "S5.SS4.SSS4.p1.2": {
+   "note": "topics carried raw math, over budget, not verbatim",
+   "en": {
+    "topic": "Interval arithmetic"
+   },
+   "de": {
+    "topic": "Intervallarithmetik"
+   }
+  },
+  "S6.F12.cap": {
+   "note": "zh '压力层' and '预见期' (paper-wide terms: 气压层, 预报时效); de 'Fläche' for pressure level; distinct topic",
+   "zh": {
+    "sentences": {
+     "2": "每个子图代表单个变量（对于大气变量，还代表气压层），如子图标题所示。",
+     "3": "x轴代表预报时效，以6小时为步长，覆盖10天。"
+    },
+    "topic": "RMSE技巧"
+   },
+   "de": {
+    "reason": "Jeder Teilplot deckt eine Variable und Druckfläche ab, die Pangu-Weather berichtet, wobei 10v als redundant zu 10u ausgeschlossen wurde",
+    "sentences": {
+     "5": "Die Variablen und Druckflächen wurden so gewählt, dass sie den von ⟦a488 [7]⟧ berichteten entsprechen."
+    },
+    "topic": "RMSE-Skills"
+   },
+   "en": {
+    "topic": "RMSE skill"
+   }
+  },
+  "S6.p1.1": {
+   "note": "de rendered lookahead as 'Vorlauf', confusable with Vorlaufzeit (lead time); zh '预见期'; zh topic",
+   "zh": {
+    "topic": "00z/12z初始化",
+    "sentences": {
+     "6": "由于两个模型都针对ERA5进行评估，它们的目标完全相同，特别是对于给定的预报时效，GraphCast和Pangu-Weather的目标都包含+3小时或+9小时的前瞻时间，从而可以进行公平比较。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "3": "Dadurch können beide Modelle mit denselben Eingaben initialisiert werden, die denselben Lookahead enthalten (+9 Stunden, siehe ⟦a492 Sections 5.2.2⟧ und ⟦a493 5.2.3⟧).",
+     "4": "Da die HRES-Initialisierung höchstens +3 Stunden Lookahead enthält, zeigen wir die Evaluation von HRES (gegen ERA5 oder gegen HRES-fc0) in diesem Vergleich nicht, selbst wenn sie von 00z/12z aus initialisiert wird, da dies HRES benachteiligen würde.",
+     "6": "Da beide Modelle gegen ERA5 evaluiert werden, sind ihre Ziele identisch; insbesondere enthält das Ziel für eine gegebene Vorlaufzeit sowohl für GraphCast als auch für Pangu-Weather +3 Stunden oder +9 Stunden Lookahead, was einen fairen Vergleich ermöglicht."
+    }
+   }
+  },
+  "S6.p2.1": {
+   "note": "de takeaway carried raw math with a decimal comma; zh '预见期'",
+   "zh": {
+    "reason": "地面变量误差早期低10-20%，长预报时效稳定在低约7-10%",
+    "sentences": {
+     "1": "对于地面变量（2t、10u、10v、msl），GraphCast在最初几天的误差约低10-20%，而在较长的预报时效趋于平缓，误差约低7-10%。",
+     "2": "在（共252个）指标中，Pangu-Weather仅有的两个优于GraphCast的指标是z500，在预报时效6和12小时处，GraphCast的平均RMSE高出⟦a498 $1.7\\%$⟧（⟦a499 Figure 12⟧a,e）。"
+    }
+   },
+   "de": {
+    "takeaway": "GraphCast übertrifft Pangu-Weather bei 99,2% der Ziele und verliert nur bei z500 nach 6 und 12 Stunden"
+   }
+  },
+  "S7.p1.1": {
+   "note": "zh topic generic; de 'Glättung' for blurring (Unschärfe elsewhere)",
+   "zh": {
+    "topic": "优势与局限"
+   },
+   "de": {
+    "reason": "Er gibt einen Überblick über Unterabschnitte zu zusätzlichen Variablen, disaggregierten Ergebnissen, Ablationen, optimaler Unschärfefilterung und Spektralanalysen",
+    "sentences": {
+     "4": "⟦a503 Section 7.4⟧ beschreibt detailliert den Ansatz der optimalen Unschärfefilterung, angewendet auf HRES und GraphCast, um sicherzustellen, dass die verbesserte Leistung von GraphCast nicht nur darauf zurückzuführen ist, dass es seine Vorhersagen unscharf machen kann.",
+     "5": "Er zeigt außerdem den Zusammenhang zwischen der Anzahl der autoregressiven Schritte in der Verlustfunktion und der Unschärfe und belegt damit, dass das autoregressive Training mehr bewirkt als nur eine optimale Unschärfe der Vorhersagen."
+    }
+   }
+  },
+  "S7.SS1.SSS1.p1.1": {
+   "note": "reason repeated the source's ACC skill score denominator '1 minus baseline RMSE', which contradicts the definition in Section 5.3 (1 minus baseline ACC); stated neutrally instead",
+   "en": {
+    "reason": "RMSE and ACC are each shown with a normalized skill score relative to HRES"
+   },
+   "zh": {
+    "reason": "RMSE与ACC均附有相对HRES的归一化技巧分数"
+   },
+   "de": {
+    "reason": "RMSE und ACC werden jeweils mit einem normierten Skill-Score relativ zu HRES gezeigt"
+   }
+  },
+  "S7.SS1.SSS2.p1.1": {
+   "note": "topics over budget / generic",
+   "en": {
+    "topic": "significance claims"
+   },
+   "zh": {
+    "topic": "显著性检验"
+   },
+   "de": {
+    "topic": "Signifikanzaussagen"
+   }
+  },
+  "S7.T5.cap": {
+   "note": "topics not verbatim",
+   "zh": {
+    "topic": "关键时效"
+   },
+   "de": {
+    "topic": "zentralen Vorlaufzeiten"
+   }
+  },
+  "S7.SS1.SSS3.p1.1": {
+   "note": "de takeaway garbled ('mit Daten bis 2017 bis 2020')",
+   "de": {
+    "takeaway": "Vier GraphCast-Varianten mit Trainingsdaten bis 2017, 2018, 2019 bzw. 2020, getestet auf 2021"
+   }
+  },
+  "S7.SS1.SSS3.p2.1": {
+   "note": "de 'Fähigkeit/Fähigkeitswert' (ability) for skill/skill score",
+   "de": {
+    "takeaway": "Varianten, die näher am Testjahr trainiert wurden, haben im Allgemeinen einen verbesserten Skill-Score gegenüber HRES",
+    "topic": "verbesserten Skill-Score",
+    "sentences": {
+     "0": "⟦a524 Figure 15⟧ zeigt die Güte und die Skill-Scores (in Bezug auf HRES) der vier Varianten von GraphCast für mehrere Variablen und ergänzt ⟦a525 Figure 4⟧a.",
+     "1": "Es gibt einen allgemeinen Trend, dass Varianten, die auf Jahre näher am Testjahr trainiert wurden, im Allgemeinen einen verbesserten Skill-Score gegenüber HRES aufweisen.",
+     "3": "Es ist auch wichtig anzumerken, dass HRES kein einzelnes NWP über die Jahre ist: es wird tendenziell ein- oder zweimal pro Jahr aktualisiert, mit im Allgemeinen zunehmender Güte bei z500 und anderen Feldern ⟦a526 [18, 22, 19, 20, 21]⟧.",
+     "4": "Dies kann auch dazu beitragen, warum GraphCast:⟦a527 $<$⟧2018 und GraphCast:⟦a528 $<$⟧2019 insbesondere bei der Testevaluation 2021 bei frühen Vorlaufzeiten niedrigere Skill-Scores gegenüber HRES aufweisen."
+    }
+   }
+  },
+  "S7.SS2.SSS1.p1.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "按区域评估"
+   }
+  },
+  "S7.F17.cap": {
+   "note": "topics 'RMSE' identical for two figures; de 'Höhenstufe' for level",
+   "en": {
+    "topic": "per region"
+   },
+   "zh": {
+    "topic": "按区域"
+   },
+   "de": {
+    "topic": "je Region",
+    "sentences": {
+     "1": "Jede Spalte steht für eine andere Variable (und Niveau), für einen repräsentativen Satz von Variablen."
+    }
+   }
+  },
+  "S7.F18.cap": {
+   "note": "topics 'RMSE' identical for two figures; de reason garbled",
+   "en": {
+    "topic": "ten further regions"
+   },
+   "zh": {
+    "topic": "另外十个区域"
+   },
+   "de": {
+    "topic": "zehn weitere Regionen",
+    "reason": "Sie entspricht der vorherigen Abbildung, zeigt aber Regionen in Antarktis, Afrika, Atlantik, Amerika, Pazifik, Indischem Ozean und Asien"
+   }
+  },
+  "S7.SS2.SSS2.p2.1": {
+   "note": "en takeaway clumsy; de takeaway ungrammatical ('GraphCasts Druckniveau schlechterer Skill'); zh 评分卡 -> 记分卡",
+   "en": {
+    "takeaway": "The level where GraphCast falls behind HRES varies with latitude, roughly tracking the tropopause"
+   },
+   "zh": {
+    "sentences": {
+     "3": "从⟦a544 Figure 2⟧中的记分卡可以看出，GraphCast在所评估的最低气压层（50hPa）上表现比HRES差。"
+    }
+   },
+   "de": {
+    "takeaway": "Das Druckniveau, ab dem GraphCast schlechter als HRES ist, hängt von der Breite ab und folgt grob der Tropopause"
+   }
+  },
+  "S7.SS2.SSS2.p3.1": {
+   "note": "de 'die Skill'",
+   "de": {
+    "takeaway": "Die verringerte stratosphärische Güte von GraphCast ist kaum verstanden, möglicherweise durch geringere Verlustgewichtung oder Unterschiede in der Datensatzvorhersagbarkeit",
+    "topic": "stratosphärische Güte",
+    "sentences": {
+     "0": "Die Gründe für die verringerte Güte von GraphCast in der Stratosphäre sind derzeit kaum verstanden."
+    }
+   }
+  },
+  "S7.F20.cap": {
+   "note": "en topic over budget",
+   "en": {
+    "takeaway": "Mean bias error of GraphCast at 12 hours, 2018 test set",
+    "topic": "12 hours"
+   }
+  },
+  "S7.F21.cap": {
+   "note": "en topic over budget",
+   "en": {
+    "takeaway": "Mean bias error of GraphCast at 2 days, 2018 test set",
+    "topic": "2 days"
+   }
+  },
+  "S7.F22.cap": {
+   "note": "en topic over budget",
+   "en": {
+    "takeaway": "Mean bias error of GraphCast at 10 days, 2018 test set",
+    "topic": "10 days"
+   }
+  },
+  "S7.SS2.SSS3.p4.1": {
+   "note": "reason invented an interpretation ('similar large-scale bias structures')",
+   "en": {
+    "reason": "The coefficient compares the two models' per-location mean bias errors at each lead time"
+   },
+   "zh": {
+    "reason": "该系数比较两个模型在各预报时效的逐地点平均偏差误差"
+   },
+   "de": {
+    "reason": "Der Koeffizient vergleicht die ortsbezogenen mittleren Bias-Fehler beider Modelle je Vorlaufzeit"
+   }
+  },
+  "S7.F24.cap": {
+   "note": "topic 'biases' duplicated the previous unit",
+   "en": {
+    "topic": "Correlation"
+   },
+   "de": {
+    "topic": "Korrelation"
+   }
+  },
+  "S7.SS2.SSS4.p2.1": {
+   "note": "zh typo '南海拔' (should be 高海拔); zh '重力位势' for geopotential (位势 elsewhere); topics 'HRES'; de 'Leistungsfähigkeit'",
+   "en": {
+    "topic": "near poles"
+   },
+   "zh": {
+    "takeaway": "HRES在极地、陆地和高海拔地区优于GraphCast",
+    "topic": "极地",
+    "reason": "GraphCast在这些区域的技巧随预报时效延长而提高，但较长时效下HRES仍在热带位势上领先",
+    "sentences": {
+     "0": "HRES优于GraphCast的显著区域包括两极附近（尤其是南极）的比湿、两极附近的位势、两极附近及许多陆地区域的2米温度，以及高地表海拔地区的若干地表或近地表变量（另见⟦a562 Section 7.2.5⟧）。",
+     "2": "然而在较长时效下，HRES在一些热带区域的位势上仍优于GraphCast。"
+    }
+   },
+   "de": {
+    "topic": "nahe den Polen",
+    "sentences": {
+     "1": "Die Güte von GraphCast in diesen Bereichen verbessert sich im Allgemeinen bei längeren Vorlaufzeiten."
+    }
+   }
+  },
+  "S7.SS2.SSS4.p3.1": {
+   "note": "en takeaway ungrammatical ('GraphCast times 06z/18z confront'); de topic; de 'Validierungszeiten'",
+   "en": {
+    "takeaway": "At 10 days, GraphCast at 06z/18z faces HRES at 00z/12z, confounding diurnal variables",
+    "topic": "10 days"
+   },
+   "de": {
+    "takeaway": "Bei 10 Tagen wird GraphCast zu 06z/18z mit HRES zu 00z/12z verglichen, was Tagesgangvariablen verfälscht",
+    "topic": "Bei 10 Tagen",
+    "sentences": {
+     "0": "Bei Vorlaufzeiten von 12 Stunden und 2 Tagen werden sowohl GraphCast als auch HRES zu 06z/18z-Initialisierungs- und Gültigkeitszeiten bewertet, bei Vorlaufzeiten von 10 Tagen müssen wir jedoch GraphCast zu 06z/18z mit HRES zu 00z/12z vergleichen (siehe ⟦a563 Section 5⟧)."
+    }
+   }
+  },
+  "S7.F25.cap": {
+   "note": "takeaway inexact (blue marks where GraphCast has greater skill); zh topic not verbatim; de 'leistungsfähiger'",
+   "en": {
+    "takeaway": "At 12 hours, blue marks where GraphCast beats HRES and red where HRES wins",
+    "topic": "12 hours"
+   },
+   "zh": {
+    "takeaway": "12小时时，蓝色为GraphCast胜出处，红色为HRES胜出处",
+    "topic": "12小时"
+   },
+   "de": {
+    "takeaway": "Bei 12 Stunden zeigt Blau, wo GraphCast HRES schlägt, und Rot, wo HRES vorn liegt",
+    "topic": "12 Stunden",
+    "sentences": {
+     "1": "Blau zeigt an, dass GraphCast eine höhere Güte hat als HRES, Rot, dass HRES die höhere Güte hat."
+    }
+   }
+  },
+  "S7.F26.cap": {
+   "note": "takeaway inexact; zh topic not verbatim; de 'leistungsfähiger'",
+   "en": {
+    "takeaway": "At 2 days, blue marks where GraphCast beats HRES and red where HRES wins",
+    "topic": "2 days"
+   },
+   "zh": {
+    "takeaway": "2天时，蓝色为GraphCast胜出处，红色为HRES胜出处",
+    "topic": "2天"
+   },
+   "de": {
+    "takeaway": "Bei 2 Tagen zeigt Blau, wo GraphCast HRES schlägt, und Rot, wo HRES vorn liegt",
+    "topic": "2 Tagen",
+    "sentences": {
+     "1": "Blau zeigt an, dass GraphCast eine höhere Güte hat als HRES, Rot, dass HRES die höhere Güte hat."
+    }
+   }
+  },
+  "S7.F27.cap": {
+   "note": "zh topic not verbatim; de 'leistungsfähiger'",
+   "zh": {
+    "topic": "10天"
+   },
+   "de": {
+    "sentences": {
+     "1": "Blau zeigt an, dass GraphCast eine höhere Güte hat als HRES, Rot, dass HRES die höhere Güte hat."
+    }
+   }
+  },
+  "S7.SS2.SSS5.p1.1": {
+   "note": "de 'Geschicklichkeit' (dexterity) for skill; de topic",
+   "de": {
+    "topic": "32 Höhenklassen",
+    "reason": "Dies folgt der Beobachtung, dass GraphCast bei 12 Stunden Vorlaufzeit in Regionen mit hoher Höhe offenbar eine verringerte Güte aufweist",
+    "sentences": {
+     "0": "In ⟦a565 Figure 25⟧ ist zu erkennen, dass GraphCast bei vielen Variablen mit 12 Stunden Vorlaufzeit in Regionen mit hoher Höhe offenbar eine verringerte Güte aufweist."
+    }
+   }
+  },
+  "S7.SS2.SSS5.p2.1": {
+   "note": "de 'Geschicklichkeit' for skill; topics over budget or meaningless ('相对HRES')",
+   "en": {
+    "topic": "drops with elevation"
+   },
+   "zh": {
+    "topic": "随海拔下降"
+   },
+   "de": {
+    "takeaway": "Bei kurzen Vorlaufzeiten sinkt GraphCasts Güte relativ zu HRES mit der Höhe",
+    "topic": "Güte relativ zu HRES",
+    "sentences": {
+     "0": "Bei kurzen Vorlaufzeiten und insbesondere bei 6 Stunden nimmt die Güte von GraphCast relativ zu HRES mit höherer Oberflächenhöhe tendenziell ab und fällt in den meisten Fällen bei ausreichend hohen Höhen unter die Güte von HRES."
+    }
+   }
+  },
+  "S7.SS2.SSS5.p3.1": {
+   "note": "topics not verbatim; de 'Drucklevel/Modelllevel' anglicisms",
+   "en": {
+    "takeaway": "Mixed coordinates, pressure levels and height above surface, may hinder GraphCast at high elevations",
+    "topic": "Mixed coordinates"
+   },
+   "zh": {
+    "takeaway": "坐标混用（气压层与离地高度）或在高海拔处拖累GraphCast",
+    "topic": "坐标混用"
+   },
+   "de": {
+    "takeaway": "Gemischte Koordinaten aus Druckniveaus und Höhe über Grund könnten GraphCast in großer Höhe behindern",
+    "topic": "Gemischte Koordinaten",
+    "sentences": {
+     "3": "In weiterführender Arbeit würden wir vorschlagen, das Modell stattdessen auf einer Teilmenge der nativen Modellniveaus von ERA5 statt auf Druckniveaus zu trainieren; diese verwenden ein hybrides Koordinatensystem ⟦a568 [14]⟧, das in den untersten Niveaus der Landoberfläche folgt, und dies könnte die Beziehung zwischen Oberflächen- und atmosphärischen Variablen leichter erlernbar machen, insbesondere bei hohen Oberflächenhöhen."
+    }
+   }
+  },
+  "S7.SS2.SSS5.p4.1": {
+   "note": "de 'Drucklevel'; topic 4 words",
+   "de": {
+    "takeaway": "Die unterirdische Interpolation von Druckniveau-Variablen könnte die Herausforderung bei hohen Höhen vergrößern",
+    "topic": "unterirdische Interpolation",
+    "sentences": {
+     "0": "Variablen, die Druckkoordinaten verwenden, werden unterirdisch interpoliert, wenn das Druckniveau den Oberflächendruck übersteigt."
+    }
+   }
+  },
+  "S7.SS2.SSS5.p5.1": {
+   "note": "zh topic not verbatim; de 'Geschicklichkeit' (dexterity) and 'Drucklevel'",
+   "zh": {
+    "topic": "损失权重"
+   },
+   "de": {
+    "takeaway": "Eine geringere Verlustgewichtung für niedrige Druckniveaus könnte die Güte in großer Höhe beeinträchtigen",
+    "topic": "geringere Verlustgewichtung",
+    "sentences": {
+     "0": "Schließlich ist unsere Verlustgewichtung für atmosphärische Variablen bei niedrigeren Druckniveaus geringer, und dies könnte die Güte an höher gelegenen Orten beeinträchtigen."
+    }
+   }
+  },
+  "S7.F28.cap": {
+   "note": "de 'Drucklevel'",
+   "de": {
+    "reason": "Für Druckniveau-Variablen wird die x-Achse beschnitten, um Oberflächen-Geopotenzialhöhen auszuschließen, bei denen die Variable typischerweise unterirdisch liegt",
+    "sentences": {
+     "1": "Für Druckniveau-Variablen beschneiden wir die x-Achse, um Oberflächen-Geopotenzialhöhen auszuschließen, bei denen die Variable typischerweise unterirdisch liegt (diejenigen, die größer sind als die mittlere Geopotenzialhöhe auf dem Druckniveau der Variable, angezeigt durch eine gepunktete vertikale Linie)."
+    }
+   }
+  },
+  "S7.SS3.SSS1.p2.1": {
+   "note": "zh 评分卡 -> 记分卡; de typo 'ablatierteen'",
+   "zh": {
+    "sentences": {
+     "0": "⟦a570 Figure 29⟧（左图）展示了GraphCast与消融模型的对比记分卡。",
+     "3": "中图展示了消融模型与HRES的对比记分卡，而右图比较了GraphCast与HRES，表明多网格对于GraphCast在5天以内预报时效的位势上超越HRES至关重要。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "⟦a570 Figure 29⟧ (linkes Feld) zeigt die Scorecard, die GraphCast mit dem ablatierten Modell vergleicht."
+    }
+   }
+  },
+  "S7.F29.cap": {
+   "note": "reason misread the panels (middle panel blue = ablated model beats HRES); zh 评分卡; de typo",
+   "en": {
+    "reason": "Blue cells mark where the first model of each pair wins, across variables and lead times"
+   },
+   "zh": {
+    "takeaway": "记分卡表明多网格边是在位势上超越HRES的必要条件",
+    "reason": "蓝色格子表示每组比较中前一个模型更优的变量和预报时效",
+    "sentences": {
+     "0": "比较GraphCast与无多网格边消融模型（左图）、消融模型与HRES（中图）以及GraphCast与HRES（右图）的记分卡。"
+    }
+   },
+   "de": {
+    "reason": "Blaue Zellen markieren, wo das jeweils erste Modell des Paares über Variablen und Vorlaufzeiten besser ist",
+    "sentences": {
+     "0": "Scorecards, die GraphCast mit dem ablatierten Modell ohne Multi-Mesh-Kanten (linkes Feld), das ablatierte Modell mit HRES (mittleres Feld) und GraphCast mit HRES (rechtes Feld) vergleichen."
+    }
+   }
+  },
+  "S7.SS4.SSS1.p1.1": {
+   "note": "reason invented that blurring is 'applied equally' (each model gets its own optimal filter); de 'Blurring'",
+   "en": {
+    "reason": "Both models' forecasts are optimally blurred before their RMSEs are compared again"
+   },
+   "zh": {
+    "reason": "两个模型的预报都先经最优模糊，再比较RMSE"
+   },
+   "de": {
+    "takeaway": "Optimale Unschärfefilterung ändert die Rangfolge von GraphCast und HRES selten, verkleinert aber ihren Abstand",
+    "topic": "Optimale Unschärfefilterung",
+    "reason": "Die Vorhersagen beider Modelle werden optimal unscharf gefiltert, bevor ihre RMSEs erneut verglichen werden",
+    "sentences": {
+     "0": "In ⟦a576 Figures 31⟧ und ⟦a577 32⟧ vergleichen wir den RMSE von HRES mit GraphCast, bevor und nachdem optimale Unschärfefilterung auf beide Modelle angewendet wurde.",
+     "1": "Wir können sehen, dass optimale Unschärfefilterung die Rangfolge der beiden Modelle selten ändert, den Abstand zwischen ihnen jedoch im Allgemeinen verringert."
+    }
+   }
+  },
+  "S7.F31.cap": {
+   "note": "de 'Fähigkeit/Fähigkeitswert' for skill/skill score",
+   "de": {
+    "takeaway": "Optimales Filtern im Vergleich anhand von RMSEs, RMSE-Skill-Scores und RMSE im Kugelflächenfunktionsbereich",
+    "sentences": {
+     "0": "Auswirkung optimaler Filterung auf den RMSE-Skill von GraphCast und HRES.",
+     "2": "Zeilen 1 und 3 zeigen RMSEs, Zeilen 2 und 4 zeigen RMSE-Skill-Scores relativ zu ungefiltertem HRES."
+    }
+   }
+  },
+  "S7.F32.cap": {
+   "note": "de 'Fähigkeitswert/Fähigkeit' for skill score/skill",
+   "de": {
+    "takeaway": "Gefilterte und ungefilterte Scorecards zeigen Skill-Scores, Blau für GraphCast, Rot für HRES",
+    "reason": "Die Farbe jeder Zelle kodiert das Vorzeichen des RMSE-Skill-Scores und unterscheidet so GraphCast-Siege von HRES-Siegen unter Filterung",
+    "sentences": {
+     "2": "In diesen Scorecards stellt die Farbe jeder Zelle den RMSE-Skill-Score dar, wobei Blau negative Werte repräsentiert (GraphCast hat die bessere Güte) und Rot positive Werte repräsentiert (HRES hat die bessere Güte)."
+    }
+   }
+  },
+  "S7.SS4.SSS2.p1.1": {
+   "note": "en topic over budget; de garbled 'Gesamtwohlzahlen' (Gesamtwellenzahl), 'sphärischer Harmonischenbereich'; zh/de longitudinal wavenumber = zonal (纬向), not 经向",
+   "en": {
+    "topic": "linear, homogeneous, isotropic"
+   },
+   "zh": {
+    "sentences": {
+     "1": "这类滤波器可以很容易地在球谐域中应用，在球谐域中它们对应于依赖于总波数、但不依赖于纬向波数的乘性滤波权重⟦a580 [12]⟧。"
+    }
+   },
+   "de": {
+    "reason": "Im Kugelflächenfunktionsbereich entsprechen sie multiplikativen Gewichten, die nur von der Gesamtwellenzahl abhängen",
+    "sentences": {
+     "1": "Diese Filter lassen sich leicht im Kugelflächenfunktionsbereich anwenden, wo sie multiplikativen Filtergewichten entsprechen, die von der Gesamtwellenzahl abhängen, nicht aber von der zonalen Wellenzahl ⟦a580 [12]⟧."
+    }
+   }
+  },
+  "S7.SS4.SSS2.p2.1": {
+   "note": "de garbled 'Gesamtwohlzahlen'; zh/de longitudinal wavenumber = zonal",
+   "zh": {
+    "sentences": {
+     "0": "对于每个初始化⟦a581 $d_{0}$⟧、预报时效⟦a582 $\\tau$⟧、变量和层次⟦a583 $j$⟧，我们对预测⟦a585 $\\hat{x}^{d_{0}+\\tau}_{j}$⟧和目标⟦a586 $x^{d_{0}+\\tau}_{j}$⟧应用了离散球谐变换⟦a584 [13]⟧，对每一对总波数⟦a589 $l$⟧和纬向波数⟦a590 $m$⟧得到球谐系数⟦a587 $\\hat{f}^{d_{0}+\\tau}_{j,l,m}$⟧和⟦a588 $f^{d_{0}+\\tau}_{j,l,m}$⟧。"
+    }
+   },
+   "de": {
+    "takeaway": "Vorhersagen und Ziele werden bis zur Gesamtwellenzahl ⟦a593 $l_{max}=719$⟧ transformiert",
+    "topic": "Gesamtwellenzahl",
+    "sentences": {
+     "0": "Für jede Initialisierung ⟦a581 $d_{0}$⟧, Vorlaufzeit ⟦a582 $\\tau$⟧, Variable und Niveau ⟦a583 $j$⟧ wandten wir eine diskrete Kugelflächenfunktionstransformation ⟦a584 [13]⟧ auf die Vorhersagen ⟦a585 $\\hat{x}^{d_{0}+\\tau}_{j}$⟧ und Ziele ⟦a586 $x^{d_{0}+\\tau}_{j}$⟧ an und erhielten Kugelflächenfunktionskoeffizienten ⟦a587 $\\hat{f}^{d_{0}+\\tau}_{j,l,m}$⟧ und ⟦a588 $f^{d_{0}+\\tau}_{j,l,m}$⟧ für jedes Paar aus Gesamtwellenzahl ⟦a589 $l$⟧ und zonaler Wellenzahl ⟦a590 $m$⟧.",
+     "1": "Um die ⟦a591 $$⟧ (28km) Auflösung unseres Gitters am Äquator aufzulösen, verwenden wir eine Dreiecksabschneidung bei Gesamtwellenzahl 719, was bedeutet, dass ⟦a592 $l$⟧ von 0 bis ⟦a593 $l_{max}=719$⟧ reicht und für jedes ⟦a594 $l$⟧ der Wert von ⟦a595 $m$⟧ von ⟦a596 $-l$⟧ bis ⟦a597 $l$⟧ reicht."
+    }
+   }
+  },
+  "S7.SS4.SSS2.p3.1": {
+   "note": "topic 'weight' vague; zh/de longitudinal wavenumber = zonal; de garbled 'Gesamtwohlzahlen'",
+   "en": {
+    "takeaway": "Each predicted coefficient is multiplied by a filter weight ⟦a599 $b^{\\tau}_{j,l}$⟧ fitted to minimize MSE",
+    "topic": "filter weight"
+   },
+   "zh": {
+    "takeaway": "每个预测系数乘以最小化MSE的滤波权重⟦a599 $b^{\\tau}_{j,l}$⟧",
+    "topic": "滤波权重",
+    "reason": "该滤波权重依赖总波数，而不依赖纬向波数⟦a600 $m$⟧",
+    "sentences": {
+     "0": "随后我们将每个预测系数⟦a598 $\\hat{f}^{d_{0}+\\tau}_{j,l,m}$⟧乘以滤波权重⟦a599 $b^{\\tau}_{j,l}$⟧，该权重与纬向波数⟦a600 $m$⟧无关。"
+    }
+   },
+   "de": {
+    "takeaway": "Jeder Koeffizient wird mit einem Filtergewicht ⟦a599 $b^{\\tau}_{j,l}$⟧ multipliziert, das den MSE minimiert",
+    "topic": "Filtergewicht",
+    "reason": "Das Filtergewicht hängt von der Gesamtwellenzahl ab, nicht von der zonalen Wellenzahl ⟦a600 $m$⟧",
+    "sentences": {
+     "0": "Anschließend multiplizierten wir jeden vorhergesagten Koeffizienten ⟦a598 $\\hat{f}^{d_{0}+\\tau}_{j,l,m}$⟧ mit einem Filtergewicht ⟦a599 $b^{\\tau}_{j,l}$⟧, das unabhängig von der zonalen Wellenzahl ⟦a600 $m$⟧ ist.",
+     "1": "Die Filtergewichte wurden mittels kleinsten Quadraten angepasst, um den mittleren quadratischen Fehler zu minimieren, wie im Kugelflächenfunktionsbereich berechnet:"
+    }
+   }
+  },
+  "S7.SS4.SSS2.p4.1": {
+   "note": "de 'sphärischer Harmonischenbereich' (Kugelflächenfunktionsbereich elsewhere)",
+   "de": {
+    "reason": "Das Anpassungsset überschneidet sich nicht mit dem Testset, und die Auswertung berechnet MSE im Kugelflächenfunktionsbereich",
+    "sentences": {
+     "1": "Bei der Auswertung der gefilterten Vorhersagen berechneten wir den MSE im Kugelflächenfunktionsbereich, wie in ⟦a601 Equation 22⟧ beschrieben."
+    }
+   }
+  },
+  "S7.SS4.SSS2.p5.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "按时效拟合"
+   }
+  },
+  "S7.SS4.SSS2.p6.1": {
+   "note": "de typo 'ortspezifische'",
+   "de": {
+    "takeaway": "Homogene Filter können ortsspezifische Merkmale wie Orographie nicht berücksichtigen",
+    "sentences": {
+     "1": "Da die Filter homogen sind, können sie ortsspezifische Merkmale wie Orographie oder Land-Meer-Grenzen nicht berücksichtigen und müssen daher zwischen übermäßiger Unschärfe vorhersagbarer hochauflösender Details an diesen Orten oder unzureichender Unschärfe unvorhersagbarer hochauflösender Details im Allgemeinen wählen."
+    }
+   }
+  },
+  "S7.SS4.SSS3.p1.1": {
+   "note": "takeaway said 'filter weights equal 20log10(b)'; that expression is the filter's power ratio in decibels; de 'gesamten Wellenzahl'",
+   "en": {
+    "takeaway": "The filter's power ratio in decibels is ⟦a604 $20\\log_{10}(b^{\\tau}_{j,l})$⟧ at wavelength ⟦a605 $C_{e}/l$⟧",
+    "topic": "power ratio"
+   },
+   "zh": {
+    "takeaway": "滤波器功率比的分贝值为⟦a604 $20\\log_{10}(b^{\\tau}_{j,l})$⟧，对应波长⟦a605 $C_{e}/l$⟧",
+    "topic": "功率比"
+   },
+   "de": {
+    "takeaway": "Das Leistungsverhältnis des Filters in Dezibel ist ⟦a604 $20\\log_{10}(b^{\\tau}_{j,l})$⟧ bei Wellenlänge ⟦a605 $C_{e}/l$⟧",
+    "topic": "Leistungsverhältnis",
+    "sentences": {
+     "1": "(Mit Bezug auf ⟦a603 Equation 35⟧ ist dies gleich ⟦a604 $20\\log_{10}(b^{\\tau}_{j,l})$⟧ für die Wellenlänge ⟦a605 $C_{e}/l$⟧, die der Gesamtwellenzahl ⟦a606 $l$⟧ entspricht.)"
+    }
+   }
+  },
+  "S7.SS4.SSS3.p2.1": {
+   "note": "de 'verwischt' for blurring (Unschärfe elsewhere)",
+   "de": {
+    "reason": "Längere Vorlaufzeiten erhöhen die Vorhersageunsicherheit und ihre räumliche Skala, sodass die Mittelung über die Unsicherheit mehr Unschärfe bewirkt"
+   }
+  },
+  "S7.SS4.SSS3.p3.1": {
+   "note": "topics not verbatim; de 'Verwischung' for blurring",
+   "en": {
+    "topic": "more blurring"
+   },
+   "zh": {
+    "topic": "更多模糊"
+   },
+   "de": {
+    "takeaway": "HRES benötigt im Allgemeinen stärkere Unschärfefilterung als GraphCast",
+    "topic": "stärkere Unschärfefilterung",
+    "reason": "Die Vorhersagen von GraphCast sind bereits bis zu einem gewissen Grad unscharf, die von HRES hingegen nicht",
+    "sentences": {
+     "0": "Wir sehen, dass HRES im Allgemeinen stärkere Unschärfefilterung benötigt als GraphCast, da die Vorhersagen von GraphCast bereits bis zu einem gewissen Grad unscharf sind (siehe ⟦a607 Section 7.5.3⟧), die von HRES hingegen nicht."
+    }
+   }
+  },
+  "S7.SS4.SSS3.p4.1": {
+   "note": "reason dropped 'exactly' (GraphCast did not learn to replicate the cutoff exactly)",
+   "en": {
+    "reason": "GraphCast did not learn to replicate the abrupt cutoff exactly, but the filters can implement it"
+   },
+   "zh": {
+    "reason": "GraphCast未能精确复现该截断，而滤波器可实现它"
+   },
+   "de": {
+    "reason": "GraphCast hat diesen abrupten Abbruch nicht exakt nachgebildet, doch die Filter können ihn umsetzen"
+   }
+  },
+  "S7.SS4.SSS3.p5.1": {
+   "note": "zh 'grid-to-mesh and mesh-to-grid' both rendered as 网格到网格",
+   "zh": {
+    "reason": "这些峰值滤除模型格点到网格与网格到格点变换引入的细小伪影",
+    "sentences": {
+     "1": "我们认为，这些峰值是在滤除GraphCast在这些波长附近引入的细小伪影，这些伪影是模型内部执行格点到网格与网格到格点变换的副作用。"
+    }
+   }
+  },
+  "S7.F34.cap": {
+   "note": "zh horizon rendered as 步长 (step size); distinct topic",
+   "zh": {
+    "takeaway": "最优滤波结果比较不同自回归训练步数的GraphCast模型",
+    "topic": "最优滤波",
+    "reason": "两行分别对比滤波与未滤波的RMSE以及相对12步模型的比较，圆圈标注各训练步数的等效预报时效",
+    "sentences": {
+     "0": "对训练至不同自回归步数的GraphCast进行最优滤波的结果。",
+     "3": "圆圈标示了每个模型训练所达到的自回归步数所对应的等效预报时效。"
+    }
+   }
+  },
+  "S7.SS4.SSS4.p2.1": {
+   "note": "zh horizon as 步长; de doubled 'zu' ('optimal zu unscharf zu machen'); distinct topic",
+   "zh": {
+    "takeaway": "训练步数越多，最优模糊化获益越少，且只在超出训练时效后显现",
+    "reason": "这表明自回归训练已教会模型在训练时效内最优模糊，超出后需进一步模糊化以最小化RMSE",
+    "sentences": {
+     "0": "在⟦a610 Figure 34⟧的第一行中，我们看到以更多自回归训练步数训练的模型从最优模糊化中获益更少，并且最优模糊化的收益通常只有在超过其训练步数所对应的预报时效之后才开始显现。",
+     "1": "这表明自回归训练能有效地教会模型在训练时效范围内进行最优模糊化，但超出该范围后需要进一步模糊化才能最小化RMSE。"
+    },
+    "topic": "训练时效"
+   },
+   "de": {
+    "sentences": {
+     "1": "Dies legt nahe, dass autoregressives Training dem Modell wirksam beibringt, bis zum Trainingshorizont optimal unscharf zu machen, dass darüber hinaus jedoch weitere Unschärfung erforderlich ist, um den RMSE zu minimieren."
+    },
+    "topic": "Längere autoregressive Horizonte"
+   },
+   "en": {
+    "topic": "training horizon"
+   }
+  },
+  "S7.SS4.SSS4.p3.1": {
+   "note": "zh horizon as 步长",
+   "zh": {
+    "takeaway": "最优模糊化无法替代更多步数的自回归训练，后者滤波后RMSE仍更低",
+    "reason": "该图第二行显示，即使应用最优模糊化，训练步数更多的模型仍保持RMSE优势",
+    "sentences": {
+     "0": "如果我们可以用最优模糊化这样简单的后处理策略来替代更多步数的训练，那将会很方便，但情况似乎并非如此：在⟦a611 Figure 34⟧的第二行中我们看到，即使在应用最优模糊化之后，更多步数的自回归训练仍能带来更低的RMSE。"
+    }
+   }
+  },
+  "S7.SS4.SSS4.p4.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "训练步数"
+   }
+  },
+  "S7.SS5.SSS1.p1.1": {
+   "note": "de garbled 'Gesamtwoahlzahlen'; de 'die Skill'; zh '技能'; zh topic generic",
+   "zh": {
+    "topic": "平均误差功率",
+    "reason": "谱形式（公式22）使我们能够比较GraphCast与HRES在最优滤波前后各空间尺度上的技巧",
+    "sentences": {
+     "0": "在⟦a612 Figures 35⟧和⟦a613 36⟧中，我们在最优滤波前后比较了GraphCast与HRES在一系列空间尺度上的技巧（详见⟦a614 Section 7.4⟧）。"
+    }
+   },
+   "de": {
+    "takeaway": "Der MSE zerlegt sich in Summen mittlerer Fehlerleistungen bei Gesamtwellenzahlen",
+    "reason": "Die spektrale Formulierung (⟦a615 Equation 22⟧) erlaubt es, die Güte von GraphCast und HRES über räumliche Skalen vor und nach optimaler Filterung zu vergleichen",
+    "sentences": {
+     "0": "In ⟦a612 Figures 35⟧ und ⟦a613 36⟧ vergleichen wir die Güte von GraphCast mit HRES über einen Bereich räumlicher Skalen, vor und nach optimaler Filterung (Details siehe ⟦a614 Section 7.4⟧).",
+     "1": "Der MSE lässt sich über seine spektrale Formulierung (⟦a615 Equation 22⟧) als Summe mittlerer Fehlerleistungen bei verschiedenen Gesamtwellenzahlen zerlegen:"
+    }
+   }
+  },
+  "S7.SS5.SSS1.p1.2": {
+   "note": "topics carried raw math; de garbled 'Gesamtwoahlzahl'",
+   "en": {
+    "topic": "total wavenumber"
+   },
+   "zh": {
+    "topic": "总波数"
+   },
+   "de": {
+    "takeaway": "Jede Gesamtwellenzahl ⟦a618 $l$⟧ entspricht der Wellenlänge ⟦a619 $C_{e}/l$⟧ mit ⟦a616 $l_{\\text{max}}=719$⟧",
+    "topic": "Gesamtwellenzahl",
+    "sentences": {
+     "1": "Jede Gesamtwellenzahl ⟦a618 $l$⟧ entspricht näherungsweise einer Wellenlänge ⟦a619 $C_{e}/l$⟧, wobei ⟦a620 $C_{e}$⟧ der Erdumfang ist."
+    }
+   }
+  },
+  "S7.SS5.SSS1.p2.1": {
+   "note": "zh topic over budget",
+   "zh": {
+    "topic": "功率密度"
+   }
+  },
+  "S7.SS5.SSS1.p3.1": {
+   "note": "takeaway dropped 'for the majority of variables'; zh '技能', de 'die Skill'",
+   "en": {
+    "takeaway": "From 2 days, GraphCast beats HRES at all wavelengths for most variables",
+    "topic": "all wavelengths"
+   },
+   "zh": {
+    "takeaway": "2天以上多数变量上GraphCast在所有波长均超越HRES",
+    "topic": "所有波长",
+    "sentences": {
+     "0": "在2天或更长的预报时效上，对于大多数变量，GraphCast在所有波长上一致优于HRES的技巧。"
+    }
+   },
+   "de": {
+    "takeaway": "Ab 2 Tagen übertrifft GraphCast HRES bei den meisten Variablen über alle Wellenlängen",
+    "topic": "alle Wellenlängen",
+    "sentences": {
+     "0": "Bei Vorlaufzeiten von 2 Tagen oder mehr übertrifft GraphCast für die Mehrheit der Variablen die Güte von HRES gleichmäßig über alle Wellenlängen."
+    }
+   }
+  },
+  "S7.SS5.SSS1.p4.1": {
+   "note": "zh '技能'; de 'eine größere Skill'",
+   "zh": {
+    "reason": "对于z500、t500、t850和u500等变量，GraphCast在此范围之外通常技巧更高",
+    "sentences": {
+     "0": "在12小时至1天的较短预报时效上，对于若干变量（包括z500、t500、t850和u500），HRES在约200至2000km的尺度范围内技巧高于GraphCast，而GraphCast在该范围之外通常技巧更高。"
+    }
+   },
+   "de": {
+    "reason": "Für Variablen wie z500, t500, t850 und u500 hat GraphCast außerhalb dieses Bereichs im Allgemeinen eine höhere Güte",
+    "sentences": {
+     "0": "Bei kürzeren Vorlaufzeiten von 12 Stunden bis 1 Tag hat HRES für eine Reihe von Variablen (darunter z500, t500, t850 und u500) bei Skalen im ungefähren Bereich von 200-2000km eine höhere Güte als GraphCast, wobei GraphCast außerhalb dieses Bereichs im Allgemeinen eine höhere Güte hat."
+    }
+   }
+  },
+  "S7.SS5.SSS2.p1.1": {
+   "note": "de 'Fähigkeit' for skill; 'gesamte Wellenzahl'",
+   "de": {
+    "takeaway": "Die Güte von GraphCast und HRES wird über einen Bereich räumlicher Auflösungen verglichen",
+    "reason": "RMSEs werden zwischen Vorhersagen und Zielen berechnet, die beide bei jeder Gesamtwellenzahl abgeschnitten sind, näherungsweise einer Wellenlänge ⟦a628 $C_{e}/l_{\\text{trunc}}$⟧",
+    "sentences": {
+     "0": "In ⟦a626 Figure 37⟧ vergleichen wir die Güte von GraphCast mit der von HRES, wenn sie über einen Bereich räumlicher Auflösungen hinweg bewertet werden.",
+     "1": "Konkret tragen wir bei jeder Gesamtwellenzahl ⟦a627 $l_{\\text{trunc}}$⟧ die RMSEs zwischen Vorhersagen und Zielen auf, die beide bei dieser Gesamtwellenzahl abgeschnitten sind."
+    }
+   }
+  },
+  "S7.SS5.SSS2.p3.1": {
+   "note": "zh topic not verbatim; en reason over budget",
+   "zh": {
+    "topic": "多数分辨率"
+   },
+   "en": {
+    "reason": "Exceptions: 2m temperature at some lead times, and t500 and u500 at 12 hours, where HRES wins at ⟦a635 $0.5^{\\circ}$⟧ to ⟦a636 $2.5^{\\circ}$⟧"
+   }
+  },
+  "S7.SS5.SSS2.p4.1": {
+   "note": "takeaway wrong: 0.28125 degrees IS ERA5's native resolution (evaluated instead of the 0.25 degree grid); de 'Fähigkeitsvergleich'",
+   "en": {
+    "takeaway": "Evaluating at ERA5's native ⟦a637 $0.28125^{\\circ}$⟧ resolution does not significantly change the skill comparison"
+   },
+   "zh": {
+    "takeaway": "按ERA5原生⟦a637 $0.28125^{\\circ}$⟧分辨率评估不会显著改变技巧比较"
+   },
+   "de": {
+    "takeaway": "Eine Bewertung bei der nativen ERA5-Auflösung ⟦a637 $0.28125^{\\circ}$⟧ ändert den Gütevergleich nicht wesentlich",
+    "topic": "Gütevergleich",
+    "sentences": {
+     "2": "In ⟦a639 Figure 37⟧ können wir sehen, dass eine Bewertung bei ⟦a640 $0.28125^{\\circ}$⟧ Auflösung statt bei ⟦a641 $$⟧ den Gütevergleich zwischen GraphCast und HRES nicht wesentlich beeinflusst."
+    }
+   }
+  },
+  "S7.F37.cap": {
+   "note": "de 'Weichzeichnung' for blurring and 'gesamte Wellenzahl'",
+   "de": {
+    "takeaway": "Abbildung 37 stellt RMSE gegen Gesamtwellenzahl und Wellenlänge vor und nach der Unschärfefilterung dar",
+    "topic": "Gesamtwellenzahl",
+    "sentences": {
+     "1": "Die x-Achsen zeigen die Gesamtwellenzahl und Wellenlänge, bei der sowohl Vorhersagen als auch Ziele abgeschnitten wurden.",
+     "3": "Wir geben Ergebnisse vor der optimalen Unschärfefilterung (Zeilen 1,3,5,7) und danach (Zeilen 2,4,6,8) an."
+    }
+   }
+  },
+  "S7.SS5.SSS3.p1.1": {
+   "note": "zh takeaway '三者' unclear; reason awkward",
+   "en": {
+    "reason": "It introduces a few notable spectral phenomena discussed next"
+   },
+   "zh": {
+    "takeaway": "图38比较GraphCast预测、ERA5目标与HRES-fc0的功率谱",
+    "reason": "它引出下文讨论的几个显著谱现象"
+   },
+   "de": {
+    "reason": "Er leitet einige bemerkenswerte spektrale Phänomene ein, die anschließend besprochen werden"
+   }
+  },
+  "S7.SS5.SSS3.Px1.p1.1": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "kurzen Wellenlängen"
+   }
+  },
+  "S7.SS5.SSS3.Px3.p1.1": {
+   "note": "stated as fact what the authors only believe; zh 'grid-to-mesh and mesh-to-grid' both rendered 网格到网格",
+   "en": {
+    "takeaway": "Peaks near 100km in GraphCast spectra are likely spurious grid-mesh artifacts",
+    "topic": "spurious grid-mesh artifacts"
+   },
+   "zh": {
+    "takeaway": "约100公里峰值很可能是格点与网格间变换的伪影",
+    "sentences": {
+     "1": "我们认为它们对应于GraphCast在每次自回归步骤中执行的内部格点到网格以及网格到格点变换所引入的细小虚假伪影。"
+    }
+   },
+   "de": {
+    "takeaway": "Spitzen nahe 100 km in GraphCast-Spektren sind vermutlich unechte Gitter-Mesh-Artefakte",
+    "topic": "unechte Gitter-Mesh-Artefakte"
+   }
+  },
+  "S7.SS5.SSS3.Px3.p2.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "总信号功率"
+   }
+  },
+  "S7.F38.cap": {
+   "note": "de garbled 'Gesamtwoahl'",
+   "de": {
+    "sentences": {
+     "1": "Für jede Variable zeigt die erste Zeile die Leistung bei jeder Gesamtwellenzahl auf einer doppelt logarithmischen Skala; die zweite Zeile zeigt die Leistung relativ zu den für GraphCast verwendeten ERA5-Zielen."
+    }
+   }
+  },
+  "S8.p1.1": {
+   "note": "en takeaway/reason were meta ('Section 8 adds detail', 'frames the appendix') and the de takeaway said something else; the unit's point is useful forecasts without task training, probed on three axes",
+   "en": {
+    "takeaway": "GraphCast gives useful severe-event forecasts though not trained for these tasks",
+    "topic": "severe-event forecasts",
+    "reason": "Each task probes a different axis: spatiotemporal structure, nonlinear combination of outputs, and rare extremes"
+   },
+   "zh": {
+    "takeaway": "GraphCast未专门训练，仍能为极端事件任务提供有用预报",
+    "topic": "极端事件",
+    "reason": "各任务从不同维度检验：时空结构、输出的非线性组合与罕见极端事件",
+    "sentences": {
+     "1": "我们注意到GraphCast并未专门针对这些下游任务进行训练，这表明除了技巧提升之外，GraphCast还为具有现实影响的任务提供了有用的预报，例如追踪气旋（⟦a650 Section 8.1⟧）、刻画大气河（⟦a651 Section 8.2⟧）以及分类极端温度（⟦a652 Section 8.3⟧）。"
+    }
+   },
+   "de": {
+    "reason": "Jede Aufgabe prüft eine andere Achse: räumlich-zeitliche Struktur, nichtlineare Kombination der Ausgaben und seltene Extreme",
+    "sentences": {
+     "0": "In diesem Abschnitt geben wir zusätzliche Details zu unserer Analyse der Vorhersage von Extremereignissen.",
+     "1": "Wir weisen darauf hin, dass GraphCast nicht speziell für diese nachgelagerten Aufgaben trainiert wurde, was zeigt, dass GraphCast über die verbesserte Vorhersagegüte hinaus nützliche Vorhersagen für Aufgaben mit realer Wirkung liefert, wie die Verfolgung von Zyklonen (⟦a650 Section 8.1⟧), die Charakterisierung atmosphärischer Flüsse (⟦a651 Section 8.2⟧) und die Klassifizierung extremer Temperaturen (⟦a652 Section 8.3⟧)."
+    }
+   }
+  },
+  "S8.SS1.p1.1": {
+   "note": "zh topic not in takeaway; zh sentence repeated each section number after its marker",
+   "zh": {
+    "topic": "评估协议",
+    "sentences": {
+     "0": "在本节中，我们详述用于气旋追踪的评估协议（补充材料⟦a653 Section 8.1.1⟧）和用于分析统计显著性的方法（补充材料⟦a654 Section 8.1.2⟧），提供额外结果（补充材料⟦a655 Section 8.1.3⟧），并描述我们的追踪器及其与ECMWF追踪器的差异（补充材料⟦a656 Section 8.1.4⟧）。"
+    }
+   }
+  },
+  "S8.SS1.SSS1.p1.1": {
+   "note": "de 'Vorlaufvorteil' (lead-time advantage) for lookahead advantage; en reason over budget",
+   "de": {
+    "sentences": {
+     "1": "Wie in den Ergänzungen ⟦a657 Section 5.2.2⟧ ausgeführt, wird GraphCast um 06z und 18z initialisiert, statt um 00z und 12z, um zu vermeiden, dass es einen Lookahead-Vorteil gegenüber HRES erhält."
+    }
+   },
+   "en": {
+    "reason": "GraphCast starts at 06z/18z but TIGGE HRES tracks at 00z/12z, so events are matched by detection at equal lead time"
+   }
+  },
+  "S8.SS1.SSS1.p2.1": {
+   "note": "zh '靶标' (shooting target) for targets; de 'Vorlauf' for lookahead (confusable with lead time)",
+   "zh": {
+    "takeaway": "共用IBTrACS目标使气旋误差可按6h预报时效报告",
+    "topic": "IBTrACS目标",
+    "sentences": {
+     "0": "由于我们相对于同一真值（即IBTrACS）计算误差，该评估不受补充材料⟦a661 Section 5.2.2⟧所述相同限制的约束，即两个模型的目标包含相同量的前瞻。",
+     "1": "这与本文大多数评估形成对比，其中HRES的目标（即HRES-fc0）包含+3h前瞻，而GraphCast的目标（来自ERA5）包含+3h或+9h，导致我们只报告具有匹配前瞻的预报时效（12h的倍数）的结果。",
+     "2": "在此，由于IBTrACS目标对两个模型相同，我们可以按6⟦a662 $\\mathrm{h}$⟧的增量报告性能随预报时效的变化。"
+    }
+   },
+   "de": {
+    "reason": "Anders als bei den übrigen Bewertungen mit abweichendem Lookahead nutzen beide Modelle hier dieselbe Referenz, daher gilt keine Lookahead-Beschränkung",
+    "sentences": {
+     "0": "Da wir den Fehler in Bezug auf dieselbe Referenz (d. h. IBTrACS) berechnen, unterliegt die Bewertung nicht denselben Einschränkungen, die in den Ergänzungen ⟦a661 Section 5.2.2⟧ beschrieben sind, d. h. die Ziele für beide Modelle enthalten denselben Lookahead.",
+     "1": "Dies steht im Gegensatz zu den meisten unserer Bewertungen in dieser Arbeit, bei denen die Ziele für HRES (d. h. HRES-fc0) einen Lookahead von +3h und die für GraphCast (aus ERA5) einen von +3h oder +9h enthalten, weshalb wir nur Ergebnisse für die Vorlaufzeiten mit übereinstimmendem Lookahead angeben (Vielfache von 12h)."
+    }
+   }
+  },
+  "S8.I1.i2.p1.1": {
+   "note": "zh/de topics generic or cut; de swapped the Figure 39 panel letters (per-model confidence is panel a, GraphCast-better-than-HRES is panel b)",
+   "zh": {
+    "topic": "置信度"
+   },
+   "de": {
+    "topic": "Konfidenz",
+    "sentences": {
+     "2": "Somit berichten wir zusätzlich zur Konfidenz pro Modell (siehe Supplement ⟦a666 Figure 39⟧a) die Konfidenz, dass GraphCast besser als HRES ist (siehe Supplement ⟦a665 Figure 39⟧b)."
+    }
+   }
+  },
+  "S8.SS1.SSS2.p3.1": {
+   "note": "de decimal point",
+   "de": {
+    "reason": "Ein Beispiel mit den Zyklonen A, B und C zieht A, A, B und mittelt die entsprechenden Stichproben mit Multiplizität zu 137,5"
+   }
+  },
+  "S8.SS1.SSS3.p1.1": {
+   "note": "reason said the validation set showed non-gaussian distributions; validation showed a few (tracker) outliers dominating the mean, the non-gaussian histograms are from the test years",
+   "en": {
+    "reason": "On validation years, a few outliers, often tracker errors, dominated the mean, so the median was chosen beforehand"
+   },
+   "zh": {
+    "reason": "验证年份中少数离群值（多源于跟踪器错误）主导了均值，故事先选用中位数"
+   },
+   "de": {
+    "reason": "In den Validierungsjahren dominierten wenige Ausreißer, oft Trackerfehler, den Mittelwert, daher wurde vorab der Median gewählt"
+   }
+  },
+  "S8.F39.cap": {
+   "note": "topics over budget",
+   "en": {
+    "topic": "mean error"
+   },
+   "zh": {
+    "topic": "平均误差"
+   },
+   "de": {
+    "topic": "Mittlerer Fehler"
+   }
+  },
+  "S8.SS1.SSS3.p2.1": {
+   "note": "takeaways over budget in all three languages; topics over budget / not verbatim",
+   "en": {
+    "takeaway": "With the final tracker, GraphCast's mean track error beats HRES significantly at 2 to 5 days",
+    "topic": "mean track error"
+   },
+   "zh": {
+    "takeaway": "使用最终跟踪器时，GraphCast平均路径误差也在2至5天显著优于HRES",
+    "topic": "平均路径误差"
+   },
+   "de": {
+    "takeaway": "Mit dem endgültigen Tracker schlägt auch GraphCasts mittlerer Zugbahnfehler HRES bei 2 bis 5 Tagen signifikant",
+    "topic": "mittlerer Zugbahnfehler"
+   }
+  },
+  "S8.F40.cap": {
+   "note": "en topic over budget",
+   "en": {
+    "topic": "error distributions"
+   }
+  },
+  "S8.SS1.SSS3.p3.1": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "机器学习模糊"
+   }
+  },
+  "S8.SS1.SSS3.p4.1": {
+   "note": "zh topic cut",
+   "zh": {
+    "topic": "超参数搜索"
+   }
+  },
+  "S8.F41.cap": {
+   "note": "en topic 6 words; zh topic generic",
+   "en": {
+    "topic": "comparable number"
+   },
+   "zh": {
+    "topic": "气旋数量"
+   }
+  },
+  "S8.SS1.SSS3.p5.1": {
+   "note": "topics over budget",
+   "en": {
+    "topic": "cyclone categories"
+   },
+   "de": {
+    "topic": "Zyklonkategorien"
+   }
+  },
+  "S8.F42.cap": {
+   "note": "topics identical for the two category figures; zh topic not verbatim",
+   "en": {
+    "takeaway": "Per-category cyclone performance is shown for categories 0-2",
+    "topic": "categories 0-2"
+   },
+   "zh": {
+    "takeaway": "0至2级气旋的分级表现",
+    "topic": "0至2级"
+   },
+   "de": {
+    "topic": "Kategorien 0 bis 2"
+   }
+  },
+  "S8.F43.cap": {
+   "note": "topics identical for the two category figures; zh topic not verbatim",
+   "en": {
+    "takeaway": "Per-category cyclone performance is shown for categories 3-5",
+    "topic": "categories 3-5"
+   },
+   "zh": {
+    "takeaway": "3至5级气旋的分级表现",
+    "topic": "3至5级"
+   },
+   "de": {
+    "topic": "Kategorien 3 bis 5"
+   }
+  },
+  "S8.SS1.SSS4.p1.1": {
+   "note": "reason invented '6h predictions instead of 12h': the source contrasts tracking from 0.25 degree predictions instead of 0.1 degree (resolution, formulas lost in extraction)",
+   "en": {
+    "reason": "Modifications reduce mistracked cyclones, but errors persist with lower-resolution predictions, and HRES tracks come straight from TIGGE"
+   },
+   "zh": {
+    "topic": "HRES追踪器",
+    "reason": "修改减少了误追踪，但因预测分辨率较低仍有追踪误差；HRES路径直接取自TIGGE"
+   },
+   "de": {
+    "reason": "Modifikationen verringern Fehlverfolgungen, doch bei gröber aufgelösten Vorhersagen bleiben Fehler; HRES-Zugbahnen stammen direkt aus TIGGE"
+   }
+  },
+  "S8.SS1.SSS4.p2.1": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "默认追踪器"
+   }
+  },
+  "S8.I2.i1.p1.1": {
+   "note": "zh sentence 0 swapped the units (278 hPa, 850 km instead of 278 km, 850 hPa); reason said the threshold is derived from wind",
+   "en": {
+    "reason": "The sign flips for the Southern Hemisphere, and vorticity is derived from horizontal wind"
+   },
+   "zh": {
+    "reason": "南半球阈值符号相反，涡度由水平风导出",
+    "sentences": {
+     "0": "涡度检查：局部极小值278 ⟦a688 $\\mathrm{k}\\mathrm{m}$⟧范围内850 ⟦a687 $\\mathrm{h}\\mathrm{P}\\mathrm{a}$⟧处的最大涡度在北半球大于⟦a689 $5\\cdot 10^{-5}$⟧ ⟦a690 $\\mathrm{s}^{-1}$⟧，或在南半球小于⟦a691 $-5\\cdot 10^{-5}$⟧⟦a692 $\\mathrm{s}^{-1}$⟧。"
+    }
+   },
+   "de": {
+    "reason": "Auf der Südhalbkugel kehrt sich das Vorzeichen um; die Vorticity wird aus dem horizontalen Wind abgeleitet"
+   }
+  },
+  "S8.I2.i2.p1.1": {
+   "note": "topics not verbatim",
+   "en": {
+    "takeaway": "Wind speed check: land candidates need 10⟦a693 $\\mathrm{m}$⟧ wind speed above 8 ⟦a695 $\\mathrm{m}\\mathrm{/}\\mathrm{s}$⟧",
+    "topic": "Wind speed check"
+   },
+   "zh": {
+    "takeaway": "风速检查：陆地候选需10 m风速大于8 m/s",
+    "topic": "风速检查"
+   },
+   "de": {
+    "takeaway": "Windgeschwindigkeitsprüfung: Landkandidaten benötigen eine 10-⟦a693 $\\mathrm{m}$⟧-Windgeschwindigkeit über 8 ⟦a695 $\\mathrm{m}\\mathrm{/}\\mathrm{s}$⟧",
+    "topic": "Windgeschwindigkeitsprüfung"
+   }
+  },
+  "S8.I2.i3.p1.1": {
+   "note": "topics not verbatim",
+   "en": {
+    "takeaway": "Thickness check: extratropical cyclones require a thickness maximum within 278 km",
+    "topic": "Thickness check"
+   },
+   "zh": {
+    "takeaway": "厚度检查：温带气旋需278 km内存在厚度最大值",
+    "topic": "厚度检查"
+   },
+   "de": {
+    "takeaway": "Dickenprüfung: Extratropische Zyklone erfordern ein Dickenmaximum innerhalb von 278 km",
+    "topic": "Dickenprüfung"
+   }
+  },
+  "S8.SS1.SSS4.Px1.p3.2": {
+   "note": "en topic ungrammatical fragment",
+   "en": {
+    "topic": "cyclone disappears"
+   }
+  },
+  "S8.SS1.SSS4.Px2.p1.1": {
+   "note": "zh replaced year-range dashes by commas ('2016, 2017', '1979, 2015'); zh topic",
+   "zh": {
+    "takeaway": "基于2016至2017年验证集的误追踪修改ECMWF追踪器",
+    "topic": "ECMWF追踪器",
+    "reason": "GraphCast在1979至2015年数据上训练，分析误追踪以指导修改"
+   }
+  },
+  "S8.I3.i1.p1.1": {
+   "note": "topics identical for the current-step and next-step radius",
+   "en": {
+    "takeaway": "Current-step vicinity radius was searched over ⟦a699 $445\\times f$⟧ values",
+    "topic": "Current-step vicinity radius"
+   },
+   "zh": {
+    "takeaway": "当前步半径（邻近范围）按⟦a699 $445\\times f$⟧搜索",
+    "topic": "当前步半径"
+   }
+  },
+  "S8.I3.i2.p1.1": {
+   "note": "topics identical for the current-step and next-step radius",
+   "en": {
+    "takeaway": "Next-step vicinity radius was searched over ⟦a700 $278\\times f$⟧ values",
+    "topic": "Next-step vicinity radius"
+   },
+   "zh": {
+    "takeaway": "下一步半径（邻近范围）按⟦a700 $278\\times f$⟧搜索",
+    "topic": "下一步半径"
+   }
+  },
+  "S8.I3.i3.p1.1": {
+   "note": "reason said the problem is the tracker's coarser resolution; it is GraphCast's coarser 0.25 degree winds versus a tracker tailored to finer predictions",
+   "en": {
+    "reason": "At GraphCast's coarser resolution wind steering sometimes hinders estimates, since wind is not spatially smooth"
+   },
+   "zh": {
+    "reason": "风非空间平滑，在GraphCast较粗分辨率下风引导有时妨碍估计"
+   },
+   "de": {
+    "reason": "Bei GraphCasts gröberer Auflösung behindert die Windsteuerung die Schätzungen manchmal, da der Wind räumlich nicht glatt ist"
+   }
+  },
+  "S8.I3.i4.p1.1": {
+   "note": "en typo 'misstracks'; zh topic not verbatim",
+   "en": {
+    "reason": "Multiple mistracks happened when the track sharply reversed course"
+   },
+   "zh": {
+    "topic": "方向变化角"
+   }
+  },
+  "S8.SS1.SSS4.Px2.p1.2": {
+   "note": "topics generic",
+   "en": {
+    "topic": "retuned tracker"
+   },
+   "zh": {
+    "topic": "丢弃气旋数"
+   }
+  },
+  "S8.SS2.p1.1": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "Intensität atmosphärischer Flüsse"
+   }
+  },
+  "S8.SS2.p1.2": {
+   "note": "takeaways carried raw math with \\penalty that cannot render (the source formulas are garbled)",
+   "en": {
+    "takeaway": "ivt integration uses surface gravity 9.80665 m/s² between 1000 and 300 hPa",
+    "topic": "ivt integration"
+   },
+   "zh": {
+    "takeaway": "ivt积分使用地表重力加速度9.80665 m/s²，积分范围为1000至300 hPa",
+    "topic": "ivt积分"
+   },
+   "de": {
+    "takeaway": "Die ivt-Integration nutzt die Erdbeschleunigung 9,80665 m/s² zwischen 1000 und 300 hPa",
+    "topic": "ivt-Integration"
+   }
+  },
+  "S8.SS2.p2.1": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "gemeinsamen Druckflächen"
+   }
+  },
+  "S8.SS2.p3.1": {
+   "note": "zh '地面真值'; de topic cut",
+   "zh": {
+    "reason": "这与其余评估方案一致，从而不以对方的真值来评分任一模型"
+   },
+   "de": {
+    "topic": "eigene Analyse"
+   }
+  },
+  "S8.SS2.p4.1": {
+   "note": "reason invented 'the strongest test of ivt prediction'; de topic cut; distinct topic",
+   "en": {
+    "reason": "This region and period, following previous work, have frequent atmospheric rivers"
+   },
+   "zh": {
+    "reason": "沿用先前工作，该区域和时段大气河频繁"
+   },
+   "de": {
+    "topic": "kalten Jahreszeit",
+    "reason": "Diese Region und dieser Zeitraum weisen, wie in früheren Arbeiten, häufig atmosphärische Flüsse auf"
+   }
+  },
+  "S8.F44.cap": {
+   "note": "en takeaway over budget; topics generic or cut",
+   "en": {
+    "takeaway": "GraphCast beats HRES on ivt skill by 25% early, 10% at longer lead times",
+    "topic": "ivt skill"
+   },
+   "zh": {
+    "topic": "ivt技巧"
+   },
+   "de": {
+    "topic": "ivt-Skill"
+   }
+  },
+  "S8.SS3.p2.1": {
+   "note": "reason tied the imbalance to the gain; the imbalance motivates precision-recall, the gain shifts the boundary; de 'reibungslos' (frictionless) for smoothly",
+   "en": {
+    "reason": "Precision-recall suits the imbalanced extremes problem, and the gain shifts the decision boundary between false negatives and positives"
+   },
+   "zh": {
+    "reason": "精确率-召回率适合不平衡的极端分类问题，增益则移动假阴性与假阳性之间的决策边界"
+   },
+   "de": {
+    "reason": "Precision-Recall eignet sich für das unausgeglichene Extremproblem, und der Gain verschiebt die Entscheidungsgrenze zwischen falsch Negativen und falsch Positiven",
+    "sentences": {
+     "4": "Der „Gain“ wird kontinuierlich von 0,8 bis 4,5 variiert."
+    }
+   }
+  },
+  "S8.SS3.p3.1": {
+   "note": "zh 'extratropical' rendered as 副热带以外 (outside the subtropics); zh '时间提前量' for lead time",
+   "zh": {
+    "takeaway": "分析涵盖2t、t850和z500，在热带以外陆地上按季节平均",
+    "topic": "热带以外陆地",
+    "sentences": {
+     "4": "我们还提供了更细粒度的预报时效比较，方法是通过选取SEDI得分最高的点来概括精确率-召回率曲线⟦a733 [35]⟧，并将其展示为预报时效的函数（⟦a734 Figure 46⟧）。"
+    }
+   }
+  },
+  "S8.F45.cap": {
+   "note": "takeaway misread the caption ('evaluation shows higher precision and recall is better')",
+   "en": {
+    "takeaway": "Detailed extremes evaluation, where higher precision and recall are better"
+   },
+   "zh": {
+    "takeaway": "详细极端事件评估，精确率和召回率越高越好"
+   },
+   "de": {
+    "takeaway": "Detaillierte Bewertung der Extreme, wobei höhere Precision und Recall besser sind"
+   }
+  },
+  "S8.F46.cap": {
+   "note": "zh '时间提前量' for lead time",
+   "zh": {
+    "takeaway": "极端事件SEDI得分：精确率-召回率曲线上的最大得分随预报时效变化",
+    "topic": "SEDI得分",
+    "sentences": {
+     "1": "极端预测精确率-召回率曲线（⟦a735 Figure 45⟧）上的最大SEDI得分作为预报时效的函数。"
+    }
+   }
+  },
+  "S7.F19.cap": {
+   "note": "en takeaway over budget",
+   "en": {
+    "takeaway": "Figure 19 maps normalized RMSE difference by pressure level and latitude, with tropopause lines"
+   }
+  },
+  "S8.SS3.p1.1": {
+   "note": "en reason over budget",
+   "en": {
+    "reason": "Climatology is per variable, month, time of day, location and level, removing daily and seasonal cycles, from each model's ground truth"
+   }
+  },
+  "Sx7.p4.1": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "同化数据"
+   }
+  },
+  "S1.F5.cap": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "红色方格"
+   },
+   "de": {
+    "topic": "Rote Quadrate"
+   }
+  },
+  "S4.F6.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "surface variable weights"
+   },
+   "zh": {
+    "topic": "地面变量权重"
+   },
+   "de": {
+    "topic": "Oberflächenvariablen"
+   }
+  },
+  "S4.SS2.p1.1": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "预报MSE"
+   }
+  },
+  "S4.SS2.p1.2": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "MSE公式"
+   }
+  },
+  "S5.SS4.SSS2.p3.1": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "插值差值"
+   }
+  },
+  "S7.F23.cap": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "lead time"
+   },
+   "zh": {
+    "topic": "时效"
+   }
+  },
+  "S7.SS3.SSS2.p1.1": {
+   "note": "distinct topic within its section",
+   "en": {
+    "topic": "lead time accuracy"
+   },
+   "zh": {
+    "topic": "短时效精度"
+   }
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "Section takeaway overstated (any operational forecast) and zh/de deviated; give the 90% of 1380 targets result",
+   "en": {
+    "takeaway": "GraphCast, learned from reanalysis, outperforms the most accurate operational systems on 90% of 1380 targets",
+    "topic": "GraphCast"
+   },
+   "zh": {
+    "takeaway": "GraphCast从再分析数据学习，在1380个验证目标的90%上优于最准确的业务系统",
+    "topic": "GraphCast"
+   },
+   "de": {
+    "takeaway": "GraphCast, aus Reanalysen gelernt, übertrifft die genauesten operationellen Systeme bei 90 % von 1380 Zielen",
+    "topic": "GraphCast"
+   }
+  },
+  "Sx1": {
+   "note": "zh topic not the English one; de takeaway clumsy ('Alternative des maschinellen Lernens')",
+   "zh": {
+    "topic": "中期天气预报"
+   },
+   "de": {
+    "takeaway": "GraphCast ist eine auf maschinellem Lernen basierende Alternative zur numerischen Wettervorhersage für die Mittelfristvorhersage",
+    "topic": "Mittelfristvorhersage"
+   }
+  },
+  "Sx3": {
+   "note": "'69 targets' wrong: 69 variable-level combinations (1380 targets with lead times)",
+   "en": {
+    "takeaway": "GraphCast is verified against HRES on 69 variable-level pairs using RMSE and ACC",
+    "topic": "RMSE and ACC"
+   },
+   "zh": {
+    "takeaway": "以RMSE与ACC在69个变量与层次组合上对比HRES验证GraphCast",
+    "topic": "RMSE与ACC"
+   },
+   "de": {
+    "takeaway": "GraphCast wird an 69 Variablen-Niveau-Kombinationen mit RMSE und ACC gegen HRES verifiziert",
+    "topic": "RMSE und ACC"
+   }
+  },
+  "Sx4": {
+   "note": "zh dropped the 1380 targets and the severe-event half",
+   "zh": {
+    "takeaway": "GraphCast在1380个验证目标的90.3%上优于HRES，极端事件预测也更好",
+    "topic": "验证目标"
+   }
+  },
+  "Sx5": {
+   "note": "de 'schwerer Ereignisse' unidiomatic; use Extremereignisse as elsewhere",
+   "de": {
+    "title": "Ergebnisse zur Vorhersage von Extremereignissen",
+    "takeaway": "GraphCast ermöglicht eine bessere Vorhersage von Extremereignissen wie tropischen Wirbelstürmen, atmosphärischen Flüssen und extremen Temperaturen",
+    "topic": "Vorhersage von Extremereignissen"
+   }
+  },
+  "Sx5.SSx1": {
+   "note": "en topic generic; de topic cut ('Zugbahnen tropischer')",
+   "en": {
+    "topic": "cyclone track forecasts"
+   },
+   "de": {
+    "topic": "Zugbahnen tropischer Wirbelstürme"
+   }
+  },
+  "Sx5.SSx2": {
+   "note": "zh dropped HRES and atmospheric rivers; de topic long",
+   "zh": {
+    "takeaway": "GraphCast的大气河ivt预测优于HRES，短时效提升达25%",
+    "topic": "大气河ivt预测"
+   },
+   "de": {
+    "takeaway": "GraphCast verbessert die ivt-Vorhersage atmosphärischer Flüsse gegenüber HRES, um bis zu 25% bei kurzer Vorlaufzeit",
+    "topic": "ivt-Vorhersage atmosphärischer Flüsse"
+   }
+  },
+  "Sx6": {
+   "note": "en topic cut ('GraphCast can be'); de 'Vorhersagefähigkeit'",
+   "en": {
+    "topic": "more recent data"
+   },
+   "de": {
+    "takeaway": "GraphCast kann mit aktuelleren Daten neu trainiert werden, um die Vorhersagegüte zu verbessern",
+    "topic": "aktuelleren Daten"
+   }
+  },
+  "Sx7": {
+   "note": "de dropped the limitations half of the takeaway",
+   "de": {
+    "takeaway": "GraphCast zeigt, dass MLWP konkurrenzfähig ist, doch deterministische Unsicherheitsbehandlung und Datenabhängigkeit begrenzen es",
+    "topic": "MLWP"
+   }
+  },
+  "Sx8": {
+   "note": "zh/de topics generic or cut",
+   "zh": {
+    "topic": "均已公开"
+   },
+   "de": {
+    "topic": "öffentlich verfügbar"
+   }
+  },
+  "Sx9": {
+   "note": "zh topic cut mid-word ('感谢Alphabet与ECMWF同')",
+   "zh": {
+    "topic": "建议与反馈"
+   }
+  },
+  "Sx10": {
+   "note": "zh topic too narrow; de topic cut",
+   "zh": {
+    "topic": "补充材料"
+   },
+   "de": {
+    "topic": "ergänzenden Materialien"
+   }
+  },
+  "S1": {
+   "note": "'split into source archives and derived datasets' misreads a terminology note as a split",
+   "en": {
+    "takeaway": "GraphCast is trained and evaluated on ECMWF archive subsets, with IBTrACS for cyclones",
+    "topic": "ECMWF archive subsets"
+   },
+   "zh": {
+    "takeaway": "GraphCast用ECMWF档案子集训练与评估，气旋另用IBTrACS",
+    "topic": "ECMWF档案"
+   },
+   "de": {
+    "takeaway": "GraphCast wird auf Teilmengen von ECMWF-Archiven trainiert und evaluiert, für Zyklone zusätzlich IBTrACS",
+    "topic": "Teilmengen von ECMWF-Archiven"
+   }
+  },
+  "S1.SS2": {
+   "note": "zh topic too generic; de topic cut",
+   "zh": {
+    "topic": "HRES基线"
+   },
+   "de": {
+    "topic": "HRES-Baseline"
+   }
+  },
+  "S1.SS2.SSS0.Px1": {
+   "note": "de title/takeaway word order ('HRES operationelle Vorhersagen')",
+   "de": {
+    "title": "Operationelle HRES-Vorhersagen",
+    "takeaway": "Operationelle HRES-Vorhersagen bilden den Baseline-Datensatz, herunterskaliert auf ERA5-Auflösung und 6-Stunden-Intervalle",
+    "topic": "Operationelle HRES-Vorhersagen"
+   }
+  },
+  "S1.SS2.SSS0.Px3": {
+   "note": "zh topic cut mid-word ('HRES 少量 NaN 经加'); '影响不可测' reads as 'unpredictable impact'",
+   "zh": {
+    "takeaway": "HRES 少量 NaN 经加权邻近平均填补，无可测影响",
+    "topic": "HRES 少量 NaN"
+   }
+  },
+  "S1.SS3": {
+   "note": "de plural 'tropischer Zyklonen' -> 'tropischer Zyklone'",
+   "de": {
+    "takeaway": "IBTrACS und TIGGE liefern die Referenz- und HRES-Datensätze zu Zugbahnen tropischer Zyklone",
+    "topic": "IBTrACS und TIGGE"
+   }
+  },
+  "S2": {
+   "note": "en takeaway misread three items as 'for weather state modeling'; de takeaway ungrammatical",
+   "en": {
+    "takeaway": "The section defines time notation, states the forecasting problem, and models ECMWF weather data",
+    "topic": "time notation"
+   },
+   "de": {
+    "takeaway": "Der Abschnitt definiert die Zeitnotation, formalisiert das Vorhersageproblem und beschreibt die Modellierung des Wetterzustands",
+    "topic": "Zeitnotation"
+   }
+  },
+  "S2.SS2": {
+   "note": "en topic cut ('Forecasting is modeled')",
+   "en": {
+    "topic": "autoregressive prediction"
+   }
+  },
+  "S2.SS3": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "ERA5-Zustände"
+   }
+  },
+  "S3": {
+   "note": "en/zh topics cut mid-list ('GraphCast's graphs, encoder', 'GraphCast的图结构、编')",
+   "en": {
+    "takeaway": "This section fully specifies the GraphCast model: graphs, encoder, processor, decoder, normalization",
+    "topic": "GraphCast model"
+   },
+   "zh": {
+    "takeaway": "本节完整描述GraphCast模型：图结构、编码器、处理器、解码器与归一化",
+    "topic": "GraphCast模型"
+   },
+   "de": {
+    "takeaway": "Der Abschnitt spezifiziert das GraphCast-Modell vollständig: Graphen, Encoder, Prozessor, Decoder, Normalisierung",
+    "topic": "GraphCast-Modell"
+   }
+  },
+  "S3.SS1": {
+   "note": "zh topic over budget; zh T as plain letter; de dropped 'one-step learned simulator'",
+   "zh": {
+    "takeaway": "GraphCast是单步学习模拟器，迭代生成任意长度⟦a225 $T$⟧的预报",
+    "topic": "学习模拟器"
+   },
+   "de": {
+    "takeaway": "GraphCast ist ein einschrittiger gelernter Simulator, iterativ angewandt für Vorhersagen beliebiger Länge ⟦a225 $T$⟧",
+    "topic": "gelernter Simulator"
+   }
+  },
+  "S3.SS2": {
+   "note": "de spelling Multimesh -> Multi-Mesh (used everywhere else)",
+   "de": {
+    "takeaway": "GraphCast nutzt ein Encoder-Prozessor-Decoder-GNN auf einem Multi-Mesh für effiziente globale Vorhersagen",
+    "topic": "Encoder-Prozessor-Decoder-GNN"
+   }
+  },
+  "S3.SS3": {
+   "note": "zh topic too generic; de topic cut ('... auf')",
+   "zh": {
+    "topic": "多网格图"
+   },
+   "de": {
+    "topic": "Multi-Mesh-Graphen"
+   }
+  },
+  "S3.SS3.SSS0.Px1": {
+   "note": "zh used 网格节点 for grid nodes and mesh nodes alike (two sections got the same title); grid node = 格点; de topic cut",
+   "zh": {
+    "title": "格点",
+    "takeaway": "格点按经纬度位置切分大气，每个含474个特征",
+    "topic": "格点"
+   },
+   "de": {
+    "topic": "Gitterknoten"
+   }
+  },
+  "S3.SS3.SSS0.Px3": {
+   "note": "zh 多重网格 -> 多网格; zh topic should name the mesh edges",
+   "zh": {
+    "takeaway": "网格边连接各细化层级，构成含327,660条边的多网格",
+    "topic": "网格边"
+   }
+  },
+  "S3.SS3.SSS0.Px4": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "Grid2Mesh-Kanten"
+   }
+  },
+  "S3.SS3.SSS0.Px5": {
+   "note": "zh grid point/mesh node distinction",
+   "zh": {
+    "takeaway": "Mesh2Grid 边经所属网格面连接每个格点与三个网格节点",
+    "topic": "Mesh2Grid 边"
+   }
+  },
+  "S3.SS4": {
+   "note": "zh '网格处理器' ambiguous; topic should match",
+   "zh": {
+    "takeaway": "编码器为仅在多网格上运行的处理器准备潜在表示",
+    "topic": "潜在表示"
+   }
+  },
+  "S3.SS4.SSS0.Px1": {
+   "note": "zh topic",
+   "zh": {
+    "topic": "隐空间"
+   }
+  },
+  "S3.SS4.SSS0.Px2": {
+   "note": "zh topic cut ('网格节点经一') and grid/mesh nodes indistinguishable; de 'Maschenknoten' vs Mesh-Knoten elsewhere",
+   "zh": {
+    "takeaway": "格点经一步Grid2Mesh消息传递将大气状态送入网格节点",
+    "topic": "Grid2Mesh消息传递"
+   },
+   "de": {
+    "title": "Grid2Mesh-GNN",
+    "takeaway": "Ein einzelner Message-Passing-Schritt über Grid2Mesh überträgt den Atmosphärenzustand von Gitter- auf Mesh-Knoten",
+    "topic": "Message-Passing-Schritt"
+   }
+  },
+  "S3.SS5": {
+   "note": "zh topic too generic",
+   "zh": {
+    "topic": "多网格子图"
+   }
+  },
+  "S3.SS6.SSS0.Px1": {
+   "note": "zh grid nodes = 格点",
+   "zh": {
+    "takeaway": "Mesh2Grid GNN 通过残差连接更新格点",
+    "topic": "Mesh2Grid GNN"
+   }
+  },
+  "S3.SS6.SSS0.Px2": {
+   "note": "topics not naming the point; zh grid node = 格点",
+   "en": {
+    "topic": "decoder MLP"
+   },
+   "zh": {
+    "takeaway": "解码器MLP为每个格点预测227个变量",
+    "topic": "解码器MLP"
+   }
+  },
+  "S3.SS7.SSS0.Px2": {
+   "note": "en topic cut ('GraphCast rescales its'); zh/de wrote Y as plain letter",
+   "en": {
+    "takeaway": "GraphCast rescales its predicted difference by per-level standard deviations of ⟦a329 $Y^{t}=X^{t+1}-X^{t}$⟧",
+    "topic": "predicted difference"
+   },
+   "zh": {
+    "takeaway": "GraphCast按⟦a329 $Y^{t}=X^{t+1}-X^{t}$⟧逐气压层的标准差缩放预测差值",
+    "topic": "预测差值"
+   },
+   "de": {
+    "takeaway": "GraphCast skaliert die vorhergesagte Differenz mit Standardabweichungen pro Druckniveau von ⟦a329 $Y^{t}=X^{t+1}-X^{t}$⟧",
+    "topic": "vorhergesagte Differenz"
+   }
+  },
+  "S4.SS1": {
+   "note": "de replaced the year ranges' dashes by commas ('Entwicklung 1979, 2017'), reading as lists of years; zh topic",
+   "zh": {
+    "topic": "数据划分"
+   },
+   "de": {
+    "takeaway": "Die Datenaufteilung ist kausal: Entwicklung 1979 bis 2017, Test 2018 bis 2021, Training 1979 bis 2015, Validierung 2016 bis 2017",
+    "topic": "Datenaufteilung"
+   }
+  },
+  "S4.SS2": {
+   "note": "en topic cut ('GraphCast minimizes a')",
+   "en": {
+    "topic": "area-normalized MSE"
+   }
+  },
+  "S4.SS3": {
+   "note": "zh topic '12步' says little; BPTT missing",
+   "zh": {
+    "takeaway": "GraphCast以自回归方式在12步上训练，并沿展开序列做时间反向传播",
+    "topic": "自回归方式"
+   }
+  },
+  "S4.SS4": {
+   "note": "en grammar ('GraphCast trained with')",
+   "en": {
+    "takeaway": "GraphCast was trained by mini-batch gradient descent with AdamW, weight decay and gradient clipping",
+    "topic": "gradient descent"
+   }
+  },
+  "S4.SS5": {
+   "note": "de 'Lehrplan' (school syllabus) for an ML curriculum",
+   "de": {
+    "title": "Curriculum-Trainingsplan",
+    "takeaway": "Das Training folgte einem dreiphasigen Curriculum mit variierenden Lernraten und autoregressiven Schritten",
+    "topic": "dreiphasigen Curriculum"
+   }
+  },
+  "S4.SS6": {
+   "note": "en topic cut ('GraphCast fits 12-step'); zh topic '32GB'",
+   "en": {
+    "topic": "12-step trajectories"
+   },
+   "zh": {
+    "topic": "12步轨迹"
+   }
+  },
+  "S5": {
+   "note": "zh topic cut ('评估协议采用')",
+   "zh": {
+    "topic": "评估协议"
+   }
+  },
+  "S5.SS1": {
+   "note": "de dropped the causal point ('each year forecast by a model trained only on earlier data')",
+   "de": {
+    "takeaway": "Vier kausale Aufteilungen sorgen dafür, dass jedes Jahr von einem nur auf früheren Daten trainierten GraphCast vorhergesagt wird",
+    "topic": "kausale Aufteilungen"
+   }
+  },
+  "S5.SS2.SSS1": {
+   "note": "en topic cut ('HRES is verified')",
+   "en": {
+    "topic": "HRES-fc0"
+   }
+  },
+  "S5.SS2.SSS3": {
+   "note": "de 'Validitätszeiten' (Gültigkeitszeit is the term used throughout); zh topic too generic",
+   "zh": {
+    "topic": "时刻优势"
+   },
+   "de": {
+    "title": "Abstimmung der Tageszeiten von Initialisierung und Gültigkeit"
+   }
+  },
+  "S5.SS3": {
+   "note": "zh '技能' for skill and dropped the skill scores",
+   "zh": {
+    "takeaway": "以RMSE和ACC衡量GraphCast技巧，并以相对HRES的归一化技巧评分比较",
+    "topic": "RMSE和ACC"
+   }
+  },
+  "S5.SS3.SSS0.Px1": {
+   "note": "de title rendered RMSE as MSE ('Mittlerer quadratischer Fehler'); zh topic; de 'latitudinal gewichtet'",
+   "zh": {
+    "topic": "纬度加权的RMSE"
+   },
+   "de": {
+    "title": "Wurzel des mittleren quadratischen Fehlers (RMSE)",
+    "takeaway": "Die Prognosegüte wird durch einen breitengewichteten RMSE quantifiziert, wobei die Wurzel innerhalb des Mittelwerts gezogen wird",
+    "topic": "breitengewichteten RMSE"
+   }
+  },
+  "S5.SS3.SSS0.Px2": {
+   "note": "de title left in English; zh topic",
+   "zh": {
+    "topic": "球谐域RMSE"
+   },
+   "de": {
+    "title": "Wurzel des mittleren quadratischen Fehlers (RMSE) im Kugelflächenfunktionsbereich"
+   }
+  },
+  "S5.SS3.SSS0.Px3": {
+   "note": "de title in English; zh topic",
+   "zh": {
+    "topic": "逐位置RMSE"
+   },
+   "de": {
+    "title": "Wurzel des mittleren quadratischen Fehlers (RMSE) pro Ort"
+   }
+  },
+  "S5.SS3.SSS0.Px4": {
+   "note": "de title rendered RMSE as MSE; zh topic",
+   "zh": {
+    "topic": "地表高程"
+   },
+   "de": {
+    "title": "Wurzel des mittleren quadratischen Fehlers (RMSE) nach Oberflächenhöhe"
+   }
+  },
+  "S5.SS3.SSS0.Px5": {
+   "note": "en topic over budget",
+   "en": {
+    "topic": "MBE per location"
+   }
+  },
+  "S5.SS3.SSS0.Px7": {
+   "note": "zh topic cut ('非中心化')",
+   "zh": {
+    "takeaway": "逐位置偏差相关采用非中心化系数",
+    "topic": "非中心化系数"
+   }
+  },
+  "S5.SS3.SSS0.Px8": {
+   "note": "de title left in English",
+   "de": {
+    "title": "Anomaliekorrelationskoeffizient (ACC)"
+   }
+  },
+  "S5.SS4.SSS1": {
+   "note": "de 'Variablen-Level'",
+   "de": {
+    "takeaway": "Gepaarte zweiseitige t-Tests mit Autokorrelationskorrektur vergleichen GraphCast und HRES je Vorlaufzeit und Variablen-Niveau"
+   }
+  },
+  "S5.SS4.SSS2": {
+   "note": "en topic cut ('Paired tests align')",
+   "en": {
+    "topic": "Paired tests"
+   }
+  },
+  "S5.SS4.SSS3": {
+   "note": "zh topic generic; de topic with article",
+   "zh": {
+    "topic": "RMSE 误差棒"
+   },
+   "de": {
+    "topic": "Fehlerbalken"
+   }
+  },
+  "S5.SS4.SSS4": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "RMSE技巧评分"
+   }
+  },
+  "S6": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "Pangu-Weather"
+   }
+  },
+  "S7": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "优势与局限"
+   }
+  },
+  "S7.SS1.SSS1": {
+   "note": "zh topic",
+   "zh": {
+    "topic": "RMSE 和 ACC"
+   }
+  },
+  "S7.SS1.SSS2": {
+   "note": "topics over budget / generic",
+   "en": {
+    "topic": "p-values"
+   },
+   "zh": {
+    "topic": "显著性检验"
+   },
+   "de": {
+    "topic": "p-Werte"
+   }
+  },
+  "S7.SS1.SSS3": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "更新数据"
+   }
+  },
+  "S7.SS2.SSS1": {
+   "note": "zh topic generic",
+   "zh": {
+    "topic": "分区域"
+   }
+  },
+  "S7.SS2.SSS2": {
+   "note": "zh topic",
+   "zh": {
+    "topic": "RMSE技巧"
+   }
+  },
+  "S7.SS2.SSS3": {
+   "note": "'biases shrink early' wrong: GraphCast's biases are smaller than HRES's up to about 6 days",
+   "en": {
+    "takeaway": "GraphCast's biases are smaller than HRES's up to about 6 days, then exceed them",
+    "topic": "GraphCast's biases"
+   },
+   "zh": {
+    "takeaway": "GraphCast偏差约6天内小于HRES，之后反超",
+    "topic": "GraphCast偏差"
+   },
+   "de": {
+    "takeaway": "Die Biases von GraphCast sind bis etwa 6 Tage kleiner als die von HRES, danach größer",
+    "topic": "Biases von GraphCast"
+   }
+  },
+  "S7.SS2.SSS5": {
+   "note": "de 'weniger geschickt' (dexterity) for lower skill",
+   "de": {
+    "takeaway": "GraphCast hat bei großen Oberflächenhöhen eine geringere Güte, besonders bei kurzen Vorlaufzeiten",
+    "topic": "großen Oberflächenhöhen"
+   }
+  },
+  "S7.SS4.SSS1": {
+   "note": "de 'Fähigkeiten' and English 'Blurring'",
+   "de": {
+    "title": "Auswirkung auf den Gütevergleich von GraphCast und HRES",
+    "takeaway": "Optimale Unschärfefilterung ändert die Rangfolge von GraphCast und HRES selten, verkleinert aber ihren Abstand",
+    "topic": "Optimale Unschärfefilterung"
+   }
+  },
+  "S7.SS4.SSS2": {
+   "note": "'GraphCast uses spherical harmonic filters' misattributes: the filters are fitted to both models for the blurring comparison",
+   "en": {
+    "takeaway": "Blurring filters, fitted in the spherical harmonic domain per lead time, minimize each model's RMSE",
+    "topic": "Blurring filters"
+   },
+   "zh": {
+    "takeaway": "模糊滤波器在球谐域按预报时效拟合，以最小化各模型RMSE",
+    "topic": "模糊滤波器"
+   },
+   "de": {
+    "takeaway": "Unschärfefilter werden im Kugelflächenfunktionsbereich je Vorlaufzeit angepasst, um den RMSE jedes Modells zu minimieren",
+    "topic": "Unschärfefilter"
+   }
+  },
+  "S7.SS4.SSS3": {
+   "note": "zh/de topics cut ('最优滤波器衰', 'Optimale Filter dämpfen')",
+   "zh": {
+    "topic": "最优滤波器"
+   },
+   "de": {
+    "topic": "Optimale Filter"
+   }
+  },
+  "S7.SS4.SSS4": {
+   "note": "zh rendered training horizon as 步长 (step size); horizon = number of training steps",
+   "zh": {
+    "title": "自回归训练步数与模糊化之间的关系",
+    "takeaway": "自回归训练教会模型在训练步数范围内最优模糊，但更多步数训练仍更优",
+    "topic": "自回归训练"
+   }
+  },
+  "S7.SS5.SSS1": {
+   "note": "takeaway dropped 'for most variables'; zh '技能'; de 'skalenspezifische Skill' and section number in title",
+   "en": {
+    "takeaway": "Spectral MSE decomposition shows GraphCast beating HRES at all wavelengths from 2 days, for most variables",
+    "topic": "Spectral MSE decomposition"
+   },
+   "zh": {
+    "takeaway": "谱分解显示，2天起多数变量上GraphCast在所有波长均优于HRES",
+    "topic": "谱分解"
+   },
+   "de": {
+    "title": "Spektrale Zerlegung des mittleren quadratischen Fehlers",
+    "takeaway": "Die spektrale MSE-Zerlegung zeigt: Ab 2 Tagen ist GraphCast bei den meisten Variablen auf allen Wellenlängen besser als HRES",
+    "topic": "spektrale MSE-Zerlegung"
+   }
+  },
+  "S7.SS5.SSS3": {
+   "note": "zh topic generic; de 'Weichzeichnung' and topic cut",
+   "zh": {
+    "topic": "功率谱"
+   },
+   "de": {
+    "takeaway": "GraphCasts Leistungsspektren zeigen Unschärfe und Spitzen um 100 km gegenüber ERA5 und HRES-fc0",
+    "topic": "Leistungsspektren"
+   }
+  },
+  "S7.SS5.SSS3.Px1": {
+   "note": "zh/de topics generic or cut",
+   "zh": {
+    "topic": "谱存在差异"
+   },
+   "de": {
+    "topic": "Spektren"
+   }
+  },
+  "S7.SS5.SSS3.Px2": {
+   "note": "en/zh topics cut mid-phrase; de topic over budget",
+   "en": {
+    "topic": "short-to-mid wavelengths"
+   },
+   "zh": {
+    "topic": "短至中波长"
+   },
+   "de": {
+    "topic": "Unschärfe"
+   }
+  },
+  "S7.SS5.SSS3.Px3": {
+   "note": "topics over budget; de title 'Peaks für GraphCast'; authors only 'believe' the peaks are artifacts",
+   "en": {
+    "takeaway": "GraphCast spectra show likely spurious 100km power peaks from grid-mesh transforms, contributing little power",
+    "topic": "100km power peaks"
+   },
+   "de": {
+    "title": "Spitzen bei GraphCast um 100 km Wellenlänge",
+    "topic": "unechte Leistungsspitzen"
+   }
+  },
+  "S8": {
+   "note": "de takeaway diverged from en ('Section 8 gives details'); zh too vague; de 'schwerer Ereignisse'",
+   "zh": {
+    "takeaway": "GraphCast未经极端事件训练，仍支持气旋追踪、大气河与极端温度分类",
+    "topic": "极端事件"
+   },
+   "de": {
+    "title": "Zusätzliche Ergebnisse zur Vorhersage von Extremereignissen",
+    "takeaway": "GraphCast, nicht auf Extremereignisse trainiert, unterstützt Zyklonenverfolgung, atmosphärische Flüsse und Extremtemperatur-Klassifikation",
+    "topic": "Extremereignisse"
+   }
+  },
+  "S8.SS1.SSS3": {
+   "note": "zh topic generic; de topic over budget",
+   "zh": {
+    "topic": "气旋路径预报"
+   },
+   "de": {
+    "topic": "Zyklonzugbahnen"
+   }
+  },
+  "S8.SS1.SSS4": {
+   "note": "de 'Reimplementierung von ECMWF' (of the organisation, not of its tracker); de topic cut",
+   "de": {
+    "takeaway": "Der GraphCast-Tracker ist eine modifizierte Reimplementierung des ECMWF-Trackers, doch Trackingfehler treten weiterhin auf",
+    "topic": "modifizierte Reimplementierung"
+   }
+  },
+  "S8.SS1.SSS4.Px1": {
+   "note": "zh/de topics",
+   "zh": {
+    "topic": "ECMWF追踪器"
+   },
+   "de": {
+    "topic": "ECMWF-Tracker"
+   }
+  },
+  "S8.SS1.SSS4.Px2": {
+   "note": "en typo 'misstracks'",
+   "en": {
+    "takeaway": "GraphCast's tracker was retuned to avoid cyclone mistracks",
+    "topic": "cyclone mistracks"
+   }
+  },
+  "S8.SS3": {
+   "note": "section takeaway asserted results the section does not contain (it defines the evaluation); en topic over budget",
+   "en": {
+    "takeaway": "Extreme heat and cold forecasts are scored as binary classification with precision-recall and SEDI",
+    "topic": "binary classification"
+   },
+   "zh": {
+    "takeaway": "极端高温与低温预测按二元分类评估，采用精确率-召回率曲线与SEDI",
+    "topic": "二元分类"
+   },
+   "de": {
+    "takeaway": "Extreme Hitze und Kälte werden als binäre Klassifikation mit Precision-Recall-Kurven und SEDI bewertet",
+    "topic": "binäre Klassifikation"
+   }
+  }
+ }
+}

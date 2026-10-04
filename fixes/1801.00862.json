@@ -1,0 +1,1117 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "en reason overstated ('only fully fault-tolerant'); en/zh topics not verbatim; zh NISQ term and circuit term; zh em dash; de NISQ expansion left in English; de comma splice",
+   "en": {
+    "reason": "Gate noise limits reliable NISQ circuits, so 100-qubit machines are only a step toward more powerful technology",
+    "topic": "more accurate gates"
+   },
+   "zh": {
+    "sentences": {
+     "0": "含噪中等规模量子（NISQ）技术将在不久的将来可用。",
+     "1": "拥有50至100个量子比特的量子计算机或许能够执行超越当今经典数字计算机能力的任务，但量子门中的噪声将限制可被可靠执行的量子电路的规模。",
+     "2": "NISQ设备将成为探索多体量子物理的有用工具，并可能有其他有益应用，但100量子比特的量子计算机不会立刻改变世界；我们应将其视为迈向未来更强大量子技术的重要一步。"
+    },
+    "reason": "门噪声限制NISQ电路的可靠规模，100量子比特的机器只是迈向更强大技术的一步",
+    "topic": "更精确的门"
+   },
+   "de": {
+    "sentences": {
+     "0": "Verrauschte Quantentechnologie mittlerer Größenordnung (Noisy Intermediate-Scale Quantum, NISQ) wird in naher Zukunft verfügbar sein.",
+     "2": "NISQ-Geräte werden nützliche Werkzeuge zur Erforschung der Vielteilchen-Quantenphysik sein und möglicherweise weitere nützliche Anwendungen haben, doch der 100-Qubit-Quantencomputer wird die Welt nicht sofort verändern; wir sollten ihn vielmehr als einen bedeutenden Schritt hin zu den leistungsfähigeren Quantentechnologien der Zukunft betrachten."
+    },
+    "reason": "Gatterrauschen begrenzt zuverlässige NISQ-Schaltkreise, daher sind 100-Qubit-Maschinen nur ein Schritt zu leistungsfähigerer Technologie"
+   }
+  },
+  "S1.p1.1": {
+   "note": "de terminology (Quantencomputing); 'die Akademia' is not German",
+   "de": {
+    "takeaway": "Quantencomputing zieht nun starke industrielle Investitionen an und überrascht die akademische Welt",
+    "sentences": {
+     "0": "Jetzt ist ein günstiger Zeitpunkt für eine fruchtbare Diskussion unter Forschern, Unternehmern, Managern und Investoren, die ein gemeinsames Interesse am Quantencomputing haben."
+    }
+   }
+  },
+  "S1.p2.1": {
+   "note": "takeaway overstated: author says we 'may feel confident', not 'certain'; zh topic not verbatim; zh s2 '令人乐观' changes the meaning; de terminology, 'abgewogen' and 'Vor diesem Hintergrund' mistranslate",
+   "en": {
+    "takeaway": "Quantum technology's long-term impact is likely, but near-term commercial potential is uncertain"
+   },
+   "zh": {
+    "takeaway": "量子技术长期影响可期，近期商业前景不确定",
+    "topic": "近期商业前景",
+    "sentences": {
+     "2": "这种不确定性固然助长了乐观情绪，但我们的乐观应当保持审慎。"
+    }
+   },
+   "de": {
+    "takeaway": "Der langfristige Einfluss der Quantentechnologie ist wahrscheinlich, das kurzfristige kommerzielle Potenzial jedoch unsicher",
+    "sentences": {
+     "0": "In diesem Artikel bewerte ich den aktuellen Stand und das zukünftige Potenzial des Quantencomputings.",
+     "1": "Da sich die Quantencomputing-Technologie so stark von der Informationstechnologie unterscheidet, die wir heute nutzen, können wir ihre zukünftigen Anwendungen nur sehr begrenzt erahnen oder vorhersagen, wann diese Anwendungen Wirklichkeit werden.",
+     "2": "Diese Unsicherheit befeuert zwar den Optimismus, doch sollte unser Optimismus durch Vorsicht gedämpft werden.",
+     "5": "Dennoch bin ich sicher, dass eine lebhafte Diskussion unter allen interessierten Parteien den Weg zu künftigem Fortschritt erhellen kann."
+    }
+   }
+  },
+  "S2.p1.1": {
+   "note": "reason overstated: we are 'acquiring and perfecting' the tools, not already possessing them",
+   "en": {
+    "reason": "We are acquiring tools to build and control entangled states too complex for digital simulation or existing theory"
+   },
+   "zh": {
+    "reason": "我们正在获得构建和控制高度纠缠量子态的工具，这些态复杂到超出数字模拟和现有理论的能力"
+   },
+   "de": {
+    "reason": "Wir erwerben gerade Werkzeuge, um hoch verschränkte Quantenzustände zu erzeugen und zu kontrollieren, die sich digitaler Simulation und bestehender Theorie entziehen"
+   }
+  },
+  "S2.p2.1": {
+   "note": "zh topic not verbatim in its takeaway",
+   "zh": {
+    "topic": "模拟自然界"
+   }
+  },
+  "S3.SS1.p2.1": {
+   "note": "takeaway drops the author's 'may' and is ungrammatical ('exceeds the atoms'); reason misstates what cannot be done (describe the processing, not process)",
+   "en": {
+    "takeaway": "Describing hundreds of entangled qubits may need more bits than the universe has atoms",
+    "reason": "Even in principle, no classical description of them, or of their processing, could ever be written down"
+   },
+   "zh": {
+    "takeaway": "描述几百个纠缠量子比特所需比特数可能超过可见宇宙原子数",
+    "reason": "即便在原则上，也永远无法用经典语言写下这种描述或忠实描述其处理过程"
+   },
+   "de": {
+    "takeaway": "Die Beschreibung einiger hundert verschränkter Qubits kann mehr Bits erfordern, als das Universum Atome hat",
+    "reason": "Selbst prinzipiell lässt sich weder diese Beschreibung aufschreiben noch die Verarbeitung der Qubits klassisch getreu beschreiben",
+    "sentences": {
+     "1": "Eine vollständige Beschreibung aller Korrelationen unter nur einigen hundert Qubits kann mehr Bits erfordern, als es Atome im sichtbaren Universum gibt."
+    }
+   }
+  },
+  "S3.SS1.p5.1": {
+   "note": "takeaway 'Hard NP-hard problems' redundant; reason reversed the logic (modest search speedup is why NP-hard stays hard); zh topic cut; zh s4 unnatural; de 'zwingende' mistranslates 'compelling'",
+   "en": {
+    "takeaway": "NP-hard problems are likely quantumly hard as well as classically hard",
+    "reason": "Such problems likely need exhaustive search, which quantum computers speed up only modestly"
+   },
+   "zh": {
+    "reason": "这类问题大概只能穷举搜索，而量子计算机对穷举搜索只能适度加速",
+    "topic": "NP难问题",
+    "sentences": {
+     "4": "对于这类困难的组合搜索问题，我们大概很难比穷举搜索解做得更好。"
+    }
+   },
+   "de": {
+    "takeaway": "NP-schwere Probleme sind wahrscheinlich auch quantenmechanisch schwer",
+    "reason": "Solche Probleme erfordern wohl erschöpfende Suche, die Quantencomputer nur geringfügig beschleunigen",
+    "sentences": {
+     "1": "Und es ist eine reizvolle Herausforderung, besser zu verstehen, welche Probleme klassisch schwer, aber quantenmechanisch leicht sind ⟦a2 [4, 5]⟧."
+    }
+   }
+  },
+  "S3.SS1.p6.1": {
+   "note": "takeaway 'defeats classical equations' is wrong: the equations are known but cannot be solved; zh s2 garbled ending; de s2 comma splice",
+   "en": {
+    "takeaway": "We know the equations for many entangled particles but cannot solve them"
+   },
+   "zh": {
+    "takeaway": "众多纠缠粒子的方程已知，却无法求解",
+    "topic": "众多纠缠粒子",
+    "sentences": {
+     "2": "我们高度确信这一理论是正确的，并且能够精确地写下其方程，即描述原子核与电子之间电磁相互作用的方程。"
+    }
+   },
+   "de": {
+    "takeaway": "Die Gleichungen vieler verschränkter Teilchen sind bekannt, aber nicht lösbar",
+    "sentences": {
+     "2": "Wir sind sehr zuversichtlich, dass diese Theorie korrekt ist, und wir können die Gleichungen präzise aufschreiben: Es sind die Gleichungen, die beschreiben, wie Atomkerne und Elektronen elektromagnetisch wechselwirken."
+    }
+   }
+  },
+  "S3.SS1.p7.1": {
+   "note": "reason: 35 years after Feynman's proposal, and we are 'just beginning to reach' the stage; zh topic 'Feynman' alone says nothing; de s0 missing commas",
+   "en": {
+    "reason": "Some 35 years after his proposal, quantum computers are just reaching the stage of useful solutions"
+   },
+   "zh": {
+    "reason": "在他提出设想约35年后，量子计算机才刚开始能为困难量子问题给出有用的解",
+    "topic": "Feynman的量子模拟"
+   },
+   "de": {
+    "reason": "Etwa 35 Jahre nach seinem Vorschlag erreichen Quantencomputer gerade erst das Stadium nützlicher Lösungen",
+    "sentences": {
+     "0": "Doch tatsächlich hatte der Physiker Richard Feynman schon Jahre, bevor Laughlin und Pines diese Worte schrieben, eine Widerlegung formuliert ⟦a6 [9]⟧."
+    }
+   }
+  },
+  "S4.SS1.p1.1": {
+   "note": "de terminology (Quantencomputing); German glosses for the English words the author defines",
+   "de": {
+    "sentences": {
+     "0": "Selbst wenn fehlertolerantes Quantencomputing noch ein ziemlich ferner Traum ist, treten wir jetzt in eine entscheidende neue Ära der Quantentechnologie ein.",
+     "2": "Das steht für Noisy Intermediate-Scale Quantum (verrauschte Quantentechnologie mittlerer Größenordnung).",
+     "3": "Hier bezieht sich „intermediate scale“ (mittlere Größenordnung) auf die Größe von Quantencomputern, die in den nächsten Jahren verfügbar sein werden, mit einer Anzahl von Qubits, die von 50 bis zu einigen hundert reicht.⟦a8⟧ 50 Qubits sind ein bedeutender Meilenstein, denn das geht über das hinaus, was durch Brute-Force-Simulation mit den leistungsfähigsten existierenden digitalen Supercomputern simuliert werden kann.⟦a9⟧ „Noisy“ (verrauscht) betont, dass wir keine perfekte Kontrolle über diese Qubits haben werden; das Rauschen wird ernste Grenzen dafür setzen, was Quantengeräte kurzfristig erreichen können."
+    }
+   }
+  },
+  "S4.SS1.p2.1": {
+   "note": "zh takeaway '改变世界者' unnatural; zh s0 '多纠缠粒子物理学' unnatural; distinct topic",
+   "zh": {
+    "takeaway": "NISQ是通往未来量子技术的一步，本身不会改变世界",
+    "sentences": {
+     "0": "物理学家对这项NISQ技术感到兴奋，因为它为我们提供了探索众多纠缠粒子物理的新工具。"
+    },
+    "topic": "未来量子技术"
+   },
+   "en": {
+    "topic": "future quantum technologies"
+   }
+  },
+  "S4.SS2.p1.1": {
+   "note": "en reason over budget (25 words); de takeaway/reason replaced the 0.1% figure by 'Schwelle' (threshold), a different concept",
+   "en": {
+    "reason": "Two-qubit gate errors exceed ⟦a12 $.1$⟧% and may worsen at scale, so noise swamps circuits far beyond 1000 gates until error correction arrives"
+   },
+   "de": {
+    "takeaway": "Gatterfehlerraten über ⟦a12 $.1$⟧% begrenzen NISQ-Schaltkreise auf etwa 1000 Gatter",
+    "reason": "Da Zwei-Qubit-Gatterfehler über ⟦a12 $.1$⟧% liegen und mit der Größe zunehmen können, übertönt das Rauschen das Signal in Schaltkreisen mit weit über 1000 Gattern, bis zur Quantenfehlerkorrektur"
+   }
+  },
+  "S5.p3.1": {
+   "note": "reason used 'but' where the source gives a cause ('because similar challenges'); de terminology",
+   "en": {
+    "reason": "These goals cannot be cleanly separated from quantum computing, since they face similar technological challenges"
+   },
+   "zh": {
+    "reason": "这些目标面临与量子计算相似的技术挑战，因而无法与之截然分开"
+   },
+   "de": {
+    "reason": "Diese Ziele lassen sich nicht sauber vom Quantencomputing trennen, da sie vor ähnlichen technologischen Herausforderungen stehen",
+    "sentences": {
+     "0": "Quantenkommunikation, Netzwerke, Zufallserweiterung und Sensorik lassen sich nicht sauber vom Quantencomputing trennen, weil alle diese quanteninformationsbezogenen Ziele vor ähnlichen technologischen Herausforderungen stehen."
+    }
+   }
+  },
+  "S6.p1.1": {
+   "note": "takeaway read as an instruction to the reader ('Focus on ...'); zh s1 redundant and garbled",
+   "en": {
+    "takeaway": "The author asks whether quantum computers will soon have widely used applications"
+   },
+   "zh": {
+    "takeaway": "作者关注量子计算机近期能否获得广泛应用",
+    "topic": "广泛应用",
+    "sentences": {
+     "1": "主要问题是：量子计算机何时能够比经典计算机更快地解决我们关心的问题，又是针对哪些问题？"
+    }
+   }
+  },
+  "S6.p3.1": {
+   "note": "takeaway said supremacy 'was' a milestone, as if achieved; the author calls it an impending milestone and a worthy goal; de s4 'weniger ... sondern' and calque 'weiter die Straße hinunter'",
+   "en": {
+    "takeaway": "Quantum supremacy is a worthy milestone, but commercially the task must be useful"
+   },
+   "zh": {
+    "takeaway": "量子霸权是值得追求的里程碑，但商业上任务须有用"
+   },
+   "de": {
+    "takeaway": "Quantenüberlegenheit ist ein lohnender Meilenstein, doch kommerziell muss die Aufgabe nützlich sein",
+    "sentences": {
+     "4": "Quantenüberlegenheit ist ein würdiges Ziel, das für Unternehmer und Investoren weniger wegen seiner intrinsischen Bedeutung bemerkenswert ist als vielmehr als Zeichen des Fortschritts hin zu wertvolleren Anwendungen in fernerer Zukunft."
+    }
+   }
+  },
+  "S6.p4.1": {
+   "note": "zh topic not verbatim in its takeaway",
+   "zh": {
+    "topic": "验证量子答案"
+   }
+  },
+  "S6.SS1.p1.1": {
+   "note": "zh terminology NP困难 -> NP难 (as in 3.1)",
+   "zh": {
+    "reason": "我们并不期望高效求解NP难问题的最坏情况，但近似求解对量子设备仍可能可行",
+    "sentences": {
+     "0": "我已经强调过，我们并不期望量子计算机能够高效地求解像组合优化问题这样的NP难问题的最坏情况实例；尽管如此，可以设想（虽然不能保证）量子设备将能够找到更好的近似解或更快地找到这样的近似解。"
+    }
+   }
+  },
+  "S6.SS1.p2.1": {
+   "note": "takeaway 'where a gap exists' unclear; zh takeaway ungrammatical; zh terminology NP难",
+   "en": {
+    "takeaway": "Quantum advantage for approximate solutions is plausible where classical methods leave a gap"
+   },
+   "zh": {
+    "takeaway": "经典方法留有差距时，求近似解的量子优势合理可期",
+    "reason": "对于许多问题，最佳经典近似与NP难的壁垒之间仍有巨大差距",
+    "sentences": {
+     "0": "对于某些优化问题，如果近似比足够接近于1⟦a30 [23]⟧，即使找到一个近似解也是NP难的，在这些情况下，我们不期望量子计算机能够对问题的困难实例高效地找到近似解。",
+     "1": "但对于许多问题，我们目前已知的最佳经典算法所达到的近似与NP难的壁垒之间存在很大差距。"
+    }
+   },
+   "de": {
+    "takeaway": "Ein Quantenvorteil bei approximativen Lösungen ist plausibel, wo klassische Methoden eine Lücke lassen"
+   }
+  },
+  "S6.SS1.p3.1": {
+   "note": "zh/de reason unnatural passive ('实验很快就会被尝试', 'werden versucht werden'); distinct topic",
+   "zh": {
+    "reason": "NISQ硬件可能不足以证明它，但很快就会有实验去尝试",
+    "topic": "开放问题"
+   },
+   "de": {
+    "reason": "NISQ-Hardware könnte sich als unzureichend erweisen, doch Experimente dazu stehen bald an",
+    "topic": "offene Frage"
+   },
+   "en": {
+    "topic": "open question"
+   }
+  },
+  "S6.SS1.p4.1": {
+   "note": "takeaway overstated ('solve optimization problems'): they seek approximate solutions, VQE targets quantum problems; zh topic 9 characters; de calque 'Nahzeit', case error",
+   "en": {
+    "takeaway": "Hybrid quantum-classical algorithms like QAOA and VQE seek approximate solutions"
+   },
+   "zh": {
+    "takeaway": "QAOA和VQE等量子-经典混合算法迭代寻求近似解",
+    "topic": "混合算法"
+   },
+   "de": {
+    "takeaway": "Hybride quantenklassische Algorithmen wie QAOA und VQE suchen approximative Lösungen",
+    "sentences": {
+     "0": "Das aufkommende Paradigma zur Lösung von Optimierungsproblemen mit kurzfristig verfügbarer Quantentechnologie ist eine Art hybrider quantenklassischer Algorithmus.",
+     "4": "Es kann aber auch auf Quantenprobleme angewendet werden, wie das Finden von Zuständen niedriger Energie in Vielteilchen-Quantensystemen (zum Beispiel großen Molekülen)."
+    }
+   }
+  },
+  "S6.SS1.p5.1": {
+   "note": "takeaway 'NISQ QAOA' unclear",
+   "en": {
+    "takeaway": "Nobody knows if QAOA or VQE on NISQ devices will beat classical algorithms"
+   },
+   "zh": {
+    "takeaway": "没人知道NISQ上的QAOA或VQE能否超越经典算法"
+   },
+   "de": {
+    "takeaway": "Niemand weiß, ob QAOA oder VQE auf NISQ-Geräten klassische Algorithmen übertreffen"
+   }
+  },
+  "S6.SS2.p1.1": {
+   "note": "topic 'hardware' too vague; de s0 mistranslated (said hardware becomes available that stimulates ...)",
+   "en": {
+    "topic": "Available hardware"
+   },
+   "zh": {
+    "topic": "可用硬件"
+   },
+   "de": {
+    "topic": "Verfügbare Hardware",
+    "sentences": {
+     "0": "Die Geschichte des klassischen Rechnens lehrt uns, dass neu verfügbare Hardware die Entwicklung neuer Algorithmen anregt und beschleunigt."
+    }
+   }
+  },
+  "S6.SS2.p3.1": {
+   "note": "reason overstated depth ('well below 100'; author: less than 100, maybe much less); zh stray spaces and garbled s1",
+   "en": {
+    "reason": "Circuits with many gates are too noisy to be useful, so experiments will keep depth below 100, maybe much less"
+   },
+   "zh": {
+    "takeaway": "不完美的NISQ门严重限制近期实验的计算能力",
+    "topic": "NISQ门",
+    "reason": "门数多的电路噪声过大而无用，因此近期实验的电路深度将低于100，甚至远低于100",
+    "sentences": {
+     "0": "但我再次强调，NISQ系统中不完美的门将严重限制其计算能力，因为包含许多门的电路噪声过大，无法给出有用的结果。",
+     "1": "近期实验将探索：在约100个量子比特、电路深度（时间步数）小于100（也许远小于100）的条件下，我们能做些什么。"
+    }
+   },
+   "de": {
+    "reason": "Schaltkreise mit vielen Gattern sind zu verrauscht, daher werden Experimente eine Tiefe unter 100 nutzen, vielleicht viel weniger"
+   }
+  },
+  "S6.SS3.p1.1": {
+   "note": "de spelling Quanten-Annealer; distinct topic",
+   "de": {
+    "takeaway": "D-Wave 2000Q ist ein 2000-Qubit-Quanten-Annealer, kein schaltungsbasierter Computer",
+    "topic": "D-Wave 2000Q",
+    "sentences": {
+     "2": "Vielmehr ist sie das, was wir einen Quanten-Annealer nennen; sie löst Optimierungsprobleme mit einer anderen Methode als der Ausführung eines Quantenschaltkreises, und sie löst diese Probleme oft erfolgreich."
+    }
+   },
+   "zh": {
+    "topic": "D-Wave 2000Q"
+   }
+  },
+  "S6.SS3.p2.1": {
+   "note": "de spelling Quanten-Annealer; de terminology",
+   "de": {
+    "takeaway": "Kein überzeugendes Argument zeigt, dass Quanten-Annealer die Lösungszeit verkürzen",
+    "topic": "Quanten-Annealer",
+    "reason": "Die Äquivalenz zum schaltungsbasierten Quantencomputing gilt nur für rauschfreie Qubits mit hohen Zusatzkosten, und die Skalierbarkeit von Annealern ist unbewiesen",
+    "sentences": {
+     "0": "Aber bis jetzt haben wir weder ein überzeugendes theoretisches Argument noch überzeugende experimentelle Belege dafür, dass Quanten-Annealer die Zeit bis zur Lösung im Vergleich zu bester klassischer Hardware, die die besten Algorithmen für dieselben Probleme ausführt, wirklich verkürzen können ⟦a37 [28, 29]⟧.",
+     "2": "Der Quanten-Annealer ist die verrauschte Version (mit ziemlich schlechter Qubit-Qualität im Fall der D-Wave-Maschine) dessen, was wir adiabatisches Quantencomputing nennen ⟦a38 [30]⟧.",
+     "4": "Das Argument, das die Äquivalenz von adiabatischem und schaltungsbasiertem Quantencomputing zeigt, gilt jedoch nur, wenn die adiabatische Methode in einer Form ausgeführt wird, die hohe Zusatzkosten an zusätzlichen physikalischen Qubits erfordert, was sich deutlich von der Art und Weise unterscheidet, wie Quanten-Annealer heute verwendet werden.",
+     "5": "In jedem Fall gilt dieses formale Argument nur für rauschfreie Qubits, und (im Gegensatz zum schaltungsbasierten Quantencomputing) haben wir kein gutes theoretisches Argument, das belegt, dass Quanten-Annealer skalierbar sind.",
+     "6": "Das heißt, für den Fall verrauschter Qubits wissen wir nicht, wie wir zeigen sollen, dass Quanten-Annealer weiterhin erfolgreich arbeiten, wenn die Problemgröße zunimmt, selbst wenn wir bereit sind, beträchtliche Zusatzkosten zu akzeptieren, um Robustheit gegen Rauschen zu erzwingen."
+    }
+   }
+  },
+  "S6.SS3.p3.1": {
+   "note": "takeaway 'may speed up' incomplete; topic 'annealing' too vague; de spelling Quanten-Annealer",
+   "en": {
+    "takeaway": "Stoquastic annealing may be classically simulable, but non-stoquastic annealers may achieve speedups",
+    "topic": "Stoquastic annealing"
+   },
+   "zh": {
+    "topic": "stoquastic退火"
+   },
+   "de": {
+    "sentences": {
+     "0": "Bisher wurden Quanten-Annealer überwiegend auf Fälle angewendet, in denen das Annealing stoquastisch ist, was bedeutet, dass es für einen klassischen Computer relativ einfach sein könnte, zu simulieren, was der Quanten-Annealer tut ⟦a40 [32, 33]⟧.",
+     "1": "Bald kommen nicht-stoquastische Quanten-Annealer, die größeres Potenzial haben könnten, Speedups gegenüber dem zu erreichen, was die besten klassischen Algorithmen leisten können."
+    }
+   }
+  },
+  "S6.SS3.p4.1": {
+   "note": "de spelling Quanten-Annealing; 'Macht'/'mächtig' wrong sense of 'power'",
+   "de": {
+    "takeaway": "Ob Quanten-Annealing leistungsfähig ist, ist theoretisch offen, daher sind weitere Experimente nötig",
+    "topic": "Quanten-Annealing",
+    "sentences": {
+     "0": "Da Theoretiker nicht geklärt haben, ob Quanten-Annealing leistungsfähig ist, sind weitere Experimente erforderlich.",
+     "1": "Experimente mit Quanten-Annealern in den nächsten Jahren werden wahrscheinlich recht aufschlussreich sein.",
+     "2": "Insbesondere sollten neben den Anwendungen von Quanten-Annealern auf klassische Optimierungsprobleme auch Anwendungen auf Quantensimulationsprobleme erforscht werden ⟦a41 [34]⟧."
+    }
+   }
+  },
+  "S6.SS4.p1.1": {
+   "note": "zh 'mitigation' rendered as 抑制 (suppression) and 应改用 overstated; standard 缓解",
+   "zh": {
+    "reason": "其开销过高，因此在NISQ时代，缓解噪声影响的方法可能更为重要",
+    "sentences": {
+     "2": "尽管如此，缓解噪声影响的方法可能是NISQ时代的一个重要考量。"
+    }
+   }
+  },
+  "S6.SS4.p2.1": {
+   "note": "1/G is the naive per-gate error requirement, not an 'error tolerance' (zh even said 容错阈值, a different concept); reason wrongly said a generic circuit survives a fault",
+   "en": {
+    "takeaway": "Requiring per-gate error rates below ⟦a43 $1/G$⟧ may be too pessimistic",
+    "reason": "For some problems and algorithms, a single fault need not make the whole computation fail",
+    "topic": "per-gate error rates"
+   },
+   "zh": {
+    "takeaway": "要求每门错误率低于⟦a43 $1/G$⟧可能过于悲观",
+    "reason": "至少对某些问题和算法而言，单个故障未必导致整个计算失败",
+    "topic": "每门错误率"
+   },
+   "de": {
+    "takeaway": "Fehlerraten pro Gatter unter ⟦a43 $1/G$⟧ zu fordern, ist möglicherweise zu pessimistisch",
+    "reason": "Zumindest für einige Probleme und Algorithmen muss ein einzelner Fehler nicht die ganze Berechnung scheitern lassen",
+    "topic": "Fehlerraten pro Gatter",
+    "sentences": {
+     "0": "Naiv könnte man erwarten, dass bei einem generischen Schaltkreis mit ⟦a42 $G$⟧ Gattern ein einzelner Fehler irgendwo im Schaltkreis die Berechnung scheitern lassen könnte; wäre das so, dann könnten wir den Schaltkreis nicht zuverlässig ausführen, wenn die Fehlerrate pro Gatter viel größer als ⟦a43 $1/G$⟧ ist."
+    }
+   }
+  },
+  "S6.SS4.p3.1": {
+   "note": "zh takeaway '失败关键位置' unnatural, topic cut; zh 抗噪; zh s0 '严重导致'; de Schaltkreis",
+   "zh": {
+    "takeaway": "某些量子模拟电路中，可致计算失败的位置很少",
+    "topic": "量子模拟电路",
+    "reason": "低深度、可容忍的最终测量误差或早期损害的衰减可使电路抗噪",
+    "sentences": {
+     "0": "特别是，对于物理学家感兴趣的某些量子模拟算法，只有相对较少的电路位置上的故障门会导致计算严重失败。",
+     "2": "这种抗噪性是一些张量网络构造的特征，这些构造可用于使用变分量子本征求解器求解量子优化问题⟦a44 [35, 36]⟧。"
+    }
+   },
+   "de": {
+    "takeaway": "Einige Quantensimulationsschaltkreise haben wenige fehlerkritische Stellen",
+    "topic": "Quantensimulationsschaltkreise",
+    "reason": "Geringe Tiefe, tolerierbarer finaler Messfehler oder abklingender früher Schaden können solche Schaltkreise rauschresistent machen",
+    "sentences": {
+     "0": "Insbesondere gibt es für einige der für Physiker interessanten Quantensimulationsalgorithmen nur eine relativ kleine Anzahl von Positionen im Schaltkreis, an denen ein fehlerhaftes Gatter die Berechnung schwerwiegend scheitern lassen kann.",
+     "1": "Dieses Merkmal könnte entstehen, weil der Schaltkreis eine geringe Tiefe hat und wir eine konstante Fehlerwahrscheinlichkeit pro Qubit im finalen Messergebnis tolerieren können, oder weil der durch einen früh im Schaltkreis auftretenden Fehler verursachte Schaden zu einem späteren Zeitpunkt abklingt."
+    }
+   }
+  },
+  "S6.SS4.p4.1": {
+   "note": "takeaway overstated ('classically simulable'; author: easier to simulate); de topic not verbatim; zh 抗噪 and 实验家/理论家; de Schaltkreis, Tradeoff -> Zielkonflikt",
+   "en": {
+    "takeaway": "Making circuits more noise resilient may also make them easier to simulate classically"
+   },
+   "zh": {
+    "takeaway": "使电路更抗噪，也可能使其更易被经典模拟",
+    "topic": "抗噪",
+    "reason": "实验家和理论家仍应寻求拓展NISQ技术计算能力的更好方法",
+    "sentences": {
+     "0": "在未来几年里，实验家和理论家通力合作，寻找使量子电路更加抗噪的更好方法，从而拓展NISQ技术的计算能力，这存在重大机遇。",
+     "1": "不过，我们应当警惕一种潜在的权衡：使量子电路更加抗噪，也可能使其更容易被经典模拟。"
+    }
+   },
+   "de": {
+    "takeaway": "Rauschresistentere Schaltkreise könnten auch leichter klassisch zu simulieren sein",
+    "topic": "Rauschresistentere Schaltkreise",
+    "sentences": {
+     "0": "Es gibt eine erhebliche Chance für Experimentalphysiker und Theoretiker, in den nächsten Jahren zusammenzuarbeiten, um bessere Wege zu finden, Quantenschaltkreise rauschresistent zu machen und so die Berechnungsreichweite der NISQ-Technologie zu erweitern.",
+     "1": "Wir sollten jedoch auf einen möglichen Zielkonflikt achten: Einen Quantenschaltkreis rauschresistenter zu machen, kann es auch einfacher machen, ihn klassisch zu simulieren."
+    }
+   }
+  },
+  "S6.SS5.p1.1": {
+   "note": "de 'Quanten maschinelles Lernen' is not German; quantenmaschinelles Lernen (as in 6.11)",
+   "de": {
+    "takeaway": "Quantenmaschinelles Lernen umfasst Quantenalgorithmen zur Beschleunigung der linearen Algebra",
+    "topic": "Quantenmaschinelles Lernen",
+    "sentences": {
+     "1": "Es gibt eine Vielzahl unterschiedlicher Auffassungen von „quantenmaschinellem Lernen“."
+    }
+   }
+  },
+  "S6.SS5.p2.1": {
+   "note": "topic repeated the section topic; de topic not verbatim; de spelling; zh/de s8 comma splice and unnatural phrasing",
+   "en": {
+    "topic": "easier to train"
+   },
+   "zh": {
+    "topic": "更易于训练",
+    "sentences": {
+     "8": "但我们其实并不知道；这又是一个值得一试、看看效果如何的机会。"
+    }
+   },
+   "de": {
+    "topic": "leichter zu trainieren",
+    "sentences": {
+     "0": "Zunächst jedoch werde ich das Potenzial des Quanten-Deep-Learnings kommentieren ⟦a46 [39]⟧.",
+     "8": "Aber wir wissen es nicht wirklich: Es ist eine weitere Gelegenheit, es zu versuchen und zu sehen, wie gut es funktioniert."
+    }
+   }
+  },
+  "S6.SS5.p3.1": {
+   "note": "en topic not verbatim; de spelling quantenmaschinelles Lernen",
+   "en": {
+    "takeaway": "Severe input/output bottlenecks confound quantum machine learning applications"
+   },
+   "de": {
+    "takeaway": "Schwere Eingabe- und Ausgabeengpässe beeinträchtigen Anwendungen des quantenmaschinellen Lernens",
+    "sentences": {
+     "0": "Ein möglicher Grund für Hoffnung auf das Potenzial des quantenmaschinellen Lernens beruht auf dem als QRAM bekannten Konzept, dem Quanten-Direktzugriffsspeicher.",
+     "2": "Doch typische Vorschläge für Anwendungen des quantenmaschinellen Lernens werden durch schwerwiegende Eingabe-/Ausgabe-Engpässe beeinträchtigt."
+    }
+   }
+  },
+  "S6.SS5.p4.1": {
+   "note": "takeaway overstated: author says 'might be very well suited' and 'unclear why' quantum would help today's applications, not that it does not",
+   "en": {
+    "takeaway": "Quantum deep learning may suit quantum tasks; its edge for today's applications is unclear"
+   },
+   "zh": {
+    "takeaway": "量子深度学习或适合量子任务，对当今主流应用的优势尚不明确"
+   },
+   "de": {
+    "takeaway": "Quanten-Deep-Learning eignet sich womöglich für Quantenaufgaben, sein Vorteil bei heutigen Anwendungen ist unklar",
+    "sentences": {
+     "1": "Vielleicht ist es natürlicher, über quantenmaschinelles Lernen in einem Umfeld nachzudenken, in dem sowohl die Eingabe als auch die Ausgabe Quantenzustände sind.",
+     "3": "Allgemeiner erscheint es plausibel, dass Quanten-Deep-Learning leistungsfähiger wäre als sein klassisches Gegenstück, wenn es darum geht, Wahrscheinlichkeitsverteilungen zu erlernen, bei denen die Quantenverschränkung eine bedeutende Rolle spielt."
+    }
+   }
+  },
+  "S6.SS5.p5.1": {
+   "note": "en/zh topic over budget; zh 量子退火机 -> 量子退火器 as in 6.3",
+   "en": {
+    "topic": "deep learning machine"
+   },
+   "zh": {
+    "topic": "深度学习机器",
+    "reason": "只要噪声不太大，量子退火器等专用设备可能就够用",
+    "sentences": {
+     "1": "它可能是一种专用设备，也许是一台量子退火器，只要噪声不太大。"
+    }
+   }
+  },
+  "S6.SS6.p3.1": {
+   "note": "takeaway blamed the quantum states themselves; the speedup risk is the cost of loading classical data; topics not verbatim",
+   "en": {
+    "takeaway": "HHL works on quantum states, and loading classical data may nullify its speedup",
+    "topic": "loading classical data"
+   },
+   "zh": {
+    "takeaway": "HHL作用于量子态，载入经典数据可能抵消其加速",
+    "topic": "载入经典数据"
+   },
+   "de": {
+    "takeaway": "HHL arbeitet mit Quantenzuständen, und das Laden klassischer Daten kann den Speedup zunichtemachen",
+    "topic": "Laden klassischer Daten"
+   }
+  },
+  "S6.SS6.p4.1": {
+   "note": "reason implied BQP-completeness suggests the applications; they were proposed separately; zh 前置条件子 -> 预条件子",
+   "en": {
+    "reason": "Any problem quantum computers solve efficiently can be encoded as matrix inversion; proposed uses include antenna design"
+   },
+   "zh": {
+    "reason": "任何量子计算机能高效求解的问题都可编码为矩阵求逆；已提出的用途包括天线设计",
+    "sentences": {
+     "3": "例如，我们可以用这一矩阵求逆算法求经典线性场方程⟦a68 [41, 42, 43]⟧的近似解（在空间格点上离散化场并施加合适的预条件子之后）。"
+    }
+   },
+   "de": {
+    "reason": "Jedes effizient quantenlösbare Problem lässt sich als Matrixinversion kodieren; vorgeschlagene Anwendungen umfassen etwa Antennendesign"
+   }
+  },
+  "S6.SS6.p5.1": {
+   "note": "zh takeaway dropped 'likely'",
+   "zh": {
+    "takeaway": "HHL在NISQ时代很可能不可行"
+   }
+  },
+  "S6.SS7.p1.1": {
+   "note": "takeaway dropped 'over the best currently known classical algorithm'",
+   "en": {
+    "takeaway": "A quantum algorithm exponentially outpaces known classical ones for high-value recommendation"
+   },
+   "zh": {
+    "takeaway": "量子算法在高价值推荐上较已知经典算法指数加速"
+   },
+   "de": {
+    "takeaway": "Ein Quantenalgorithmus übertrifft bekannte klassische Algorithmen bei hochwertigen Empfehlungen exponentiell"
+   }
+  },
+  "S6.SS7.p2.1": {
+   "note": "en/zh topic not verbatim (contained $P$); de article missing; de s0 'lassen P ... sein' is a calque",
+   "en": {
+    "topic": "preference matrix"
+   },
+   "zh": {
+    "topic": "偏好矩阵"
+   },
+   "de": {
+    "takeaway": "Die Empfehlung nutzt eine binäre Präferenzmatrix mit niedrigem Rang ⟦a82 $k$⟧",
+    "sentences": {
+     "0": "Um eine vereinfachte Version des Problems zu formulieren, betrachten wir ⟦a70 $m$⟧ Kunden und ⟦a71 $n$⟧ Produkte; ⟦a72 $P$⟧ sei eine binäre ⟦a73 $m\\times n$⟧ Präferenzmatrix, sodass ⟦a74 $P_{ai}=1$⟧ gilt, wenn Kunde ⟦a75 $a$⟧ Produkt ⟦a76 $i$⟧ mag, und ⟦a77 $P_{ai}=0$⟧, wenn Kunde ⟦a78 $a$⟧ Produkt ⟦a79 $i$⟧ nicht mag."
+    }
+   }
+  },
+  "S6.SS7.p3.1": {
+   "note": "zh s1/s2 unnatural word order; de 'sampelt' colloquial",
+   "zh": {
+    "sentences": {
+     "1": "第一阶段离线进行，构造偏好矩阵⟦a84 $P$⟧的一个低秩近似。",
+     "2": "第二阶段在线进行：一位新客户透露部分偏好，系统随即输出一个该客户很可能会喜欢的推荐。"
+    }
+   },
+   "de": {
+    "reason": "Sie zieht effizient Stichproben aus der Niedrigrang-Approximation von ⟦a84 $P$⟧, anstatt die vollständige Empfehlungsmatrix zu rekonstruieren",
+    "sentences": {
+     "6": "Stattdessen zieht er effizient Stichproben aus der Niedrigrang-Approximation von ⟦a87 $P$⟧."
+    }
+   }
+  },
+  "S6.SS7.p4.1": {
+   "note": "takeaway dropped 'probably' (too costly to validate in the NISQ era)",
+   "en": {
+    "takeaway": "No convincing argument rules out a classical algorithm; NISQ validation is likely too costly"
+   },
+   "zh": {
+    "takeaway": "尚无论证排除经典算法，NISQ验证很可能代价过高"
+   },
+   "de": {
+    "takeaway": "Kein überzeugendes Argument schließt einen klassischen Algorithmus aus, und die NISQ-Validierung ist wohl zu kostspielig"
+   }
+  },
+  "S6.SS8.p1.1": {
+   "note": "zh takeaway had plain X and m instead of the formula markers",
+   "zh": {
+    "takeaway": "半定规划在半正定⟦a95 $X$⟧上最大化⟦a96 $\\textrm{tr}\\left(CX\\right)$⟧，受⟦a97 $m$⟧个矩阵不等式约束"
+   }
+  },
+  "S6.SS8.p2.1": {
+   "note": "reason: 'which can be measured' referred to the matrix, it is the state that is measured; zh plain X; topic too vague; de Speedup",
+   "en": {
+    "reason": "The output is a density operator ⟦a102 $\\rho$⟧ approximating the optimal matrix ⟦a103 $X$⟧; repeated measurements reveal details of ⟦a104 $X$⟧",
+    "topic": "approximate solution"
+   },
+   "zh": {
+    "reason": "输出是近似最优矩阵⟦a103 $X$⟧的密度算子⟦a102 $\\rho$⟧，可反复测量以了解⟦a104 $X$⟧",
+    "topic": "近似解"
+   },
+   "de": {
+    "takeaway": "Ein Quantenalgorithmus findet eine Näherungslösung in ⟦a101 $\\textrm{polylog}(N)$⟧ Zeit, ein exponentieller Speedup",
+    "topic": "Näherungslösung",
+    "sentences": {
+     "0": "Ein kürzlich entdeckter Quantenalgorithmus ⟦a100 [46, 47]⟧ findet eine Näherungslösung des Problems in ⟦a101 $\\textrm{polylog}(N)$⟧ Zeit, ein exponentieller Speedup."
+    }
+   }
+  },
+  "S6.SS8.p3.1": {
+   "note": "de terminology (Speedup, Präparation)",
+   "de": {
+    "takeaway": "Der exponentielle Speedup hängt von der effizienten Präparation eines thermischen Gibbs-Zustands ab",
+    "sentences": {
+     "1": "Ob der exponentielle Speedup tatsächlich realisiert werden kann, hängt dann davon ab, ob dieser Gibbs-Zustand effizient mit einem Quantencomputer präpariert werden kann."
+    }
+   }
+  },
+  "S6.SS8.p4.1": {
+   "note": "en takeaway over budget (16 words); de terminology",
+   "en": {
+    "takeaway": "Exponential speedup holds if input matrices have low rank or thermalization is rapid",
+    "topic": "Exponential speedup"
+   },
+   "de": {
+    "takeaway": "Exponentieller Speedup ist realisierbar, wenn Eingabematrizen niedrigen Rang haben oder der Hamiltonoperator schnell thermalisiert",
+    "topic": "Exponentieller Speedup",
+    "sentences": {
+     "0": "Für semidefinite Programme mit der richtigen Struktur ist die effiziente Präparation des Gibbs-Zustands möglich, und daher ist der exponentielle Speedup wirklich realisierbar.",
+     "1": "Insbesondere erreicht der Quantenalgorithmus einen exponentiellen Speedup, wenn alle Eingabematrizen für das semidefinite Programm niedrigen Rang haben oder wenn das entsprechende Hamilton-System schnell thermalisiert."
+    }
+   }
+  },
+  "S6.SS8.p5.1": {
+   "note": "zh topic 'NISQ' generic; de Präparation",
+   "zh": {
+    "topic": "NISQ技术"
+   },
+   "de": {
+    "reason": "Die Präparation eines thermischen Zustands könnte intrinsische Robustheit gegenüber thermischem Rauschen verleihen oder durch Quanten-Annealing ausgeführt werden",
+    "sentences": {
+     "0": "Es ist faszinierend, dass der entscheidende Schritt im Quantenalgorithmus die Präparation eines thermischen Zustands bei einer von null verschiedenen Temperatur ist."
+    }
+   }
+  },
+  "S6.SS9.p1.1": {
+   "note": "reason: Feynman did not argue from the failed efforts, and the advantage only 'seems' clear; zh takeaway dropped the entangled matter; de topic cut mid-phrase",
+   "en": {
+    "reason": "Decades of failed efforts show strongly correlated matter is classically hard, so quantum computers seem to have a clear advantage"
+   },
+   "zh": {
+    "takeaway": "高度纠缠物质的量子模拟是量子计算机的天然舞台",
+    "topic": "高度纠缠物质",
+    "reason": "数十年努力未果表明强关联物质难以经典模拟，因此量子计算机似乎具有明显优势"
+   },
+   "de": {
+    "reason": "Jahrzehntelange gescheiterte Versuche zeigen, dass stark korrelierte Materie klassisch schwer zu simulieren ist, daher scheinen Quantencomputer klar im Vorteil",
+    "topic": "stark verschränkter Materie"
+   }
+  },
+  "S6.SS9.p2.1": {
+   "note": "en reason over budget (26 words) and 'solar energy may follow' garbled",
+   "en": {
+    "reason": "Accurate simulation of large molecules and exotic materials may be too costly without error correction, delaying new drugs and catalysts"
+   },
+   "zh": {
+    "reason": "没有纠错，精确模拟大分子和奇异材料可能代价过高，新药与新催化剂因而尚需时日"
+   },
+   "de": {
+    "reason": "Die genaue Simulation großer Moleküle und exotischer Materialien könnte ohne Fehlerkorrektur zu teuer sein, was neue Arzneimittel und Katalysatoren verzögert"
+   }
+  },
+  "S6.SS9.p3.1": {
+   "note": "takeaway 'reveal quantum chaos' overstated (author: valuable insights might be gleaned) and 'with of order' ungrammatical; de topic '100 Qubits'; zh s2 garbled order",
+   "en": {
+    "takeaway": "NISQ devices with about 100 qubits may yield insights into quantum chaos"
+   },
+   "zh": {
+    "takeaway": "约100量子比特的NISQ设备或可带来量子混沌新洞见",
+    "sentences": {
+     "2": "回顾一下颇有启发：经典混沌理论（经典动力系统对初始条件的极端敏感性，正是它使我们无法预报两周以后的天气）是在能够用经典计算机模拟混沌动力系统之后，于60年代和70年代迅速发展起来的。"
+    }
+   },
+   "de": {
+    "takeaway": "NISQ-Geräte mit etwa 100 Qubits könnten Einsichten in Quantenchaos liefern",
+    "topic": "Quantenchaos"
+   }
+  },
+  "S6.SS10.p1.1": {
+   "note": "zh s2 'physical system' rendered as 物质系统; de 'gate-basiert' -> gatterbasiert (Gatter used throughout)",
+   "zh": {
+    "sentences": {
+     "2": "相比之下，数字量子模拟器是一台基于门操作的通用量子计算机，经过适当编程后可以用来模拟任何我们感兴趣的物理系统，也可以用于其他目的。"
+    }
+   },
+   "de": {
+    "takeaway": "Analoge Simulatoren ahmen die Dynamik eines Modells nach, digitale Simulatoren sind universelle gatterbasierte Quantencomputer",
+    "sentences": {
+     "2": "Im Gegensatz dazu ist ein digitaler Quantensimulator ein gatterbasierter universeller Quantencomputer, der bei geeigneter Programmierung zur Simulation jedes beliebigen physikalischen Systems verwendet werden kann und auch für andere Zwecke eingesetzt werden kann."
+    }
+   }
+  },
+  "S6.SS10.p2.1": {
+   "note": "grammar ('so best suited')",
+   "en": {
+    "takeaway": "Analog simulators are hampered by imperfect control, so they best suit universal features"
+   }
+  },
+  "S7.p1.1": {
+   "note": "zh topic not verbatim; de 'soll' means 'is said to'",
+   "zh": {
+    "takeaway": "近期量子纠错实验将推进对噪声的理解与缓解"
+   },
+   "de": {
+    "reason": "Ein fehlerkorrigiertes Qubit dürfte in den nächsten Jahren erstmals überzeugend im Labor demonstriert werden"
+   }
+  },
+  "S7.p2.1": {
+   "note": "en topic over budget; de Quanteninformatik -> Quantencomputing",
+   "en": {
+    "topic": "physical qubits"
+   },
+   "de": {
+    "sentences": {
+     "0": "Dennoch ist das Lösen wirklich schwieriger Probleme (wie das Faktorisieren von Zahlen, die Tausende von Bits lang sind) mit fehlertolerantem Quantencomputing wegen der großen Anzahl benötigter physikalischer Qubits wahrscheinlich noch eine Weile nicht zu erwarten."
+    }
+   }
+  },
+  "S7.p3.1": {
+   "note": "de terminology (Quantencomputing)",
+   "de": {
+    "sentences": {
+     "2": "Bessere Gatter werden auch die Overheadkosten der Quantenfehlerkorrektur senken, wenn wir in Zukunft schließlich zum fehlertoleranten Quantencomputing übergehen.",
+     "3": "(Microsofts aktuelles Programm ⟦a113 [57]⟧, das auf die Weiterentwicklung des topologischen Quantencomputings ausgerichtet ist, gründet auf der Vorstellung, dass sich viel niedrigere Gatterfehlerraten irgendwann in der Zukunft deutlich auszahlen werden.)"
+    }
+   }
+  },
+  "S7.p4.1": {
+   "note": "de 'zwingende Probleme' mistranslates 'compelling problems' and is ungrammatical; 'Grundlagenwissenschaft', 'Engineering', 'Aussicht'",
+   "de": {
+    "takeaway": "Skalierbarkeit erfordert Fortschritte in Grundlagenforschung und Systemtechnik für Fehlertoleranz",
+    "reason": "Neue Erkenntnisse und Innovationen könnten die langfristigen Aussichten wesentlich verändern",
+    "sentences": {
+     "0": "Es ist wichtig zu erkennen, dass wir bedeutende Fortschritte, sowohl in der Grundlagenforschung als auch in der Systemtechnik, benötigen, um vollständig skalierbare fehlertolerante Quantencomputer zu erreichen.",
+     "1": "Daher stellt die Herausforderung der Skalierbarkeit Wissenschaftler und Ingenieure vor reizvolle Probleme.",
+     "2": "Weil wir noch einen so weiten Weg vor uns haben, können neue Erkenntnisse, Entwicklungen und Innovationen die langfristigen Aussichten wesentlich verändern."
+    }
+   }
+  },
+  "S8.p1.1": {
+   "note": "zh '不安妥协' unnatural for 'uneasy compromise'",
+   "zh": {
+    "takeaway": "本文是一种勉强折中的产物",
+    "topic": "勉强折中",
+    "sentences": {
+     "0": "本文是一种勉强折中的产物。"
+    }
+   }
+  },
+  "Sx1.p1.1": {
+   "note": "zh '量子计算商业主题演讲' misreads the meeting name; de topic over budget",
+   "zh": {
+    "takeaway": "本文源自2017年一场量子计算商业会议的主题演讲"
+   },
+   "de": {
+    "topic": "Keynote"
+   }
+  },
+  "S3.I1.i1.p1.1": {
+   "note": "de: keep the item number; intractable is not unsolvable",
+   "de": {
+    "sentences": {
+     "0": "(1) Quantenalgorithmen für klassisch schwer lösbare Probleme."
+    },
+    "takeaway": "Für klassisch als schwer geltende Probleme gibt es Quantenalgorithmen, etwa zur Primfaktorzerlegung"
+   },
+   "zh": {
+    "takeaway": "经典难解的问题已有量子算法，如整数因数分解"
+   }
+  },
+  "S3.I1.i2.p1.1": {
+   "note": "de: keep the item number; Sampling-Kraft is not German",
+   "de": {
+    "sentences": {
+     "0": "(2) Argumente aus der Komplexitätstheorie."
+    },
+    "takeaway": "Komplexitätstheoretische Argumente: Leicht präparierbare Quantenzustände erlauben superklassisches Sampling",
+    "topic": "superklassisches Sampling"
+   }
+  },
+  "S3.I1.i3.p1.1": {
+   "note": "the point is that this is the most persuasive argument; physicists do not know how to simulate, not cannot",
+   "en": {
+    "takeaway": "The most persuasive argument: no known classical algorithm can simulate a quantum computer",
+    "reason": "Even after decades of effort, physicists know no way to simulate quantum computers on digital computers",
+    "topic": "most persuasive argument"
+   },
+   "zh": {
+    "takeaway": "最有力的论据：没有已知经典算法能模拟量子计算机",
+    "reason": "物理学家努力了几十年，仍不知如何用数字计算机模拟量子计算机",
+    "topic": "最有力的论据"
+   },
+   "de": {
+    "sentences": {
+     "0": "(3) Kein bekannter klassischer Algorithmus kann einen Quantencomputer simulieren.",
+     "1": "Aber das vielleicht überzeugendste Argument dafür, dass Quantencomputing leistungsfähig ist, ist einfach, dass wir nicht wissen, wie man einen Quantencomputer mit einem Digitalcomputer simuliert; das gilt auch nach jahrzehntelangen Bemühungen von Physikern, bessere Wege zur Simulation von Quantensystemen zu finden."
+    },
+    "takeaway": "Das überzeugendste Argument: Kein bekannter klassischer Algorithmus kann einen Quantencomputer simulieren",
+    "reason": "Auch nach Jahrzehnten der Bemühungen wissen Physiker nicht, wie man Quantencomputer mit Digitalcomputern simuliert",
+    "topic": "überzeugendste Argument"
+   }
+  },
+  "S5.I1.i1.p1.1": {
+   "note": "de: keep the item number",
+   "de": {
+    "sentences": {
+     "0": "(1) Quantenresistente Kryptographie."
+    }
+   }
+  },
+  "S5.I1.i2.p1.1": {
+   "note": "reason joined two points with a wrong 'though'; de: flying qubits, item number",
+   "en": {
+    "reason": "Eavesdropping causes a detectable disturbance; a global quantum network could also share information among quantum devices"
+   },
+   "de": {
+    "sentences": {
+     "0": "(2) Quantenschlüsselverteilung, Quantennetzwerke und Quantenrepeater.",
+     "1": "Wir könnten auch fliegende Qubits, höchstwahrscheinlich Photonen, nutzen, um gemeinsame Schlüssel zu erzeugen, die zur Ver- und Entschlüsselung verwendet werden können."
+    },
+    "takeaway": "Quantenschlüsselverteilung erzeugt gemeinsame Schlüssel mit Photonen, doch weltweite Verschränkungsverteilung fehlt noch",
+    "reason": "Jedes Abhören erzeugt eine nachweisbare Störung; ein globales Quantennetzwerk könnte zudem Informationen zwischen Quantengeräten austauschen"
+   }
+  },
+  "S5.I1.i3.p1.1": {
+   "note": "en and zh reasons were not complete sentences; de: item number, unbiased sampling",
+   "en": {
+    "reason": "This works even with untrusted equipment, given no communication between spacelike separated parties or suitable hardness assumptions"
+   },
+   "zh": {
+    "reason": "即使不信任设备也可行，只需假设类空间隔各方无法通信，或计算难解性成立"
+   },
+   "de": {
+    "sentences": {
+     "0": "(3) Quantenzufallserweiterung.",
+     "3": "Zertifizierbarer Zufall hat viele potenzielle Anwendungen, beispielsweise für sichere Kommunikationsprotokolle, unverzerrtes statistisches Sampling und Monte-Carlo-Simulationen."
+    }
+   }
+  },
+  "S5.I1.i4.p1.1": {
+   "note": "'sensing can sense'; de: item number",
+   "en": {
+    "takeaway": "Quantum sensing detects weak forces with better sensitivity and resolution than other technologies"
+   },
+   "de": {
+    "sentences": {
+     "0": "(4) Quantensensorik."
+    }
+   }
+  },
+  "S8.I1.i1.p1.1": {
+   "note": "takeaway closer to the source; de topic was a fragment; zh: the paper-wide term for NISQ",
+   "en": {
+    "takeaway": "The opening NISQ era makes now a privileged time for science and technology",
+    "reason": "We will soon experiment with NISQ, but whether it speeds up widely useful problems is still unknown"
+   },
+   "zh": {
+    "sentences": {
+     "0": "如今是科学技术史上的一个特殊时期，因为我们正在见证NISQ时代（其中NISQ = noisy intermediate-scale quantum，即含噪中等规模量子）的开启。"
+    }
+   },
+   "de": {
+    "reason": "Bald werden wir mit NISQ-Technologie experimentieren; ob sie Probleme von breitem Interesse schneller löst, ist offen",
+    "topic": "NISQ-Ära"
+   }
+  },
+  "S8.I1.i2.p1.1": {
+   "note": "zh had a dash that broke the takeaway; en topic was not in the takeaway",
+   "en": {
+    "topic": "Hybrid quantum-classical algorithms"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们对于想尝试的事情有一些具体的想法，例如用量子经典混合算法求解优化问题，既包括经典问题也包括量子问题。"
+    },
+    "takeaway": "用量子经典混合算法求解优化问题，是值得一试的具体想法",
+    "topic": "混合算法"
+   }
+  },
+  "S8.I1.i3.p1.1": {
+   "note": "topics not verbatim or with an article",
+   "en": {
+    "topic": "Quantum algorithm development"
+   },
+   "de": {
+    "topic": "Entwicklung von Quantenalgorithmen"
+   }
+  },
+  "S8.I1.i4.p1.1": {
+   "note": "zh: the paper-wide term 抗噪; de: 'NISQ-Geräte der Ära' was wrong, topic was a fragment",
+   "zh": {
+    "sentences": {
+     "0": "尽管我们可能无法使用完整的量子纠错来保护NISQ时代的设备免受噪声影响，但我们应当在设计近期量子算法时考虑抗噪能力。",
+     "1": "精心设计的抗噪算法也许能扩展NISQ设备的计算能力。"
+    },
+    "takeaway": "近期量子算法的设计应考虑抗噪能力",
+    "topic": "抗噪能力"
+   },
+   "de": {
+    "sentences": {
+     "0": "Obwohl wir Geräte der NISQ-Ära wahrscheinlich nicht mit vollständiger Quantenfehlerkorrektur vor Rauschen schützen können, sollten wir kurzfristige Quantenalgorithmen mit Blick auf Rauschresistenz entwerfen."
+    },
+    "topic": "Rauschresistenz"
+   }
+  },
+  "S8.I1.i5.p1.1": {
+   "note": "zh takeaway was ungrammatical; de topic was a fragment",
+   "zh": {
+    "takeaway": "量子动力学是量子计算机有望显著胜过经典计算机的领域"
+   },
+   "de": {
+    "topic": "Quantendynamik"
+   }
+  },
+  "S8.I1.i6.p1.1": {
+   "note": "de topic was a fragment; Overhead-Aufwand is redundant",
+   "de": {
+    "sentences": {
+     "1": "Eine verbesserte Genauigkeit der Quantengates wird den Overhead der Quantenfehlerkorrektur senken, wenn sie schließlich implementiert wird."
+    },
+    "topic": "Gate-Fehlerraten"
+   }
+  },
+  "S8.I1.i7.p1.1": {
+   "note": "de topic was a fragment",
+   "de": {
+    "topic": "größere Erträge"
+   }
+  },
+  "S8.I1.i8.p1.1": {
+   "note": "en topic not in the takeaway; de: the paper-wide Quantencomputing, topic fragment, awkward last sentence",
+   "en": {
+    "topic": "Fault-tolerant quantum computing"
+   },
+   "zh": {
+    "topic": "容错量子计算"
+   },
+   "de": {
+    "sentences": {
+     "0": "Die wirklich transformativen Quantentechnologien der Zukunft werden wahrscheinlich fehlertolerant sein müssen, und wegen der sehr erheblichen Overhead-Kosten der Quantenfehlerkorrektur könnte die Ära des fehlertoleranten Quantencomputings noch recht fern sein.",
+     "2": "Während die Quantengemeinschaft eifrig die bevorstehende Gelegenheit ergreift, mit NISQ-Geräten zu experimentieren, dürfen wir das wesentliche langfristige Ziel nicht aus den Augen verlieren: den Beginn der fehlertoleranten Ära zu beschleunigen."
+    },
+    "takeaway": "Fehlertolerantes Quantencomputing könnte wegen hoher Kosten der Fehlerkorrektur noch fern sein",
+    "topic": "Fehlertolerantes Quantencomputing"
+   }
+  }
+ },
+ "sections": {
+  "S1": {
+   "note": "zh topic cut from the middle of the takeaway; de terminology Quantenrechnen -> Quantencomputing",
+   "zh": {
+    "topic": "近期商业前景"
+   },
+   "de": {
+    "takeaway": "Der langfristige Einfluss des Quantencomputings ist wahrscheinlich, das kurzfristige kommerzielle Potenzial jedoch unsicher"
+   }
+  },
+  "S3.SS1": {
+   "note": "zh topic cut from 量子计算机",
+   "zh": {
+    "topic": "量子计算机"
+   }
+  },
+  "S4.SS2": {
+   "note": "zh section takeaway said something else than the English one (gate error rate cap instead of quality vs count)",
+   "zh": {
+    "takeaway": "量子比特质量而非仅数量，限制NISQ电路的规模与能力",
+    "topic": "量子比特质量"
+   }
+  },
+  "S6": {
+   "note": "titles dropped the question mark of 'Quantum speedups?'",
+   "zh": {
+    "title": "量子加速？"
+   },
+   "de": {
+    "title": "Quanten-Speedups?"
+   }
+  },
+  "S6.SS1": {
+   "note": "de topic cut mid-phrase ('Optimierungslösungen finden')",
+   "de": {
+    "topic": "approximative Optimierungslösungen"
+   }
+  },
+  "S6.SS3": {
+   "note": "de 'Quanten Annealer' must be hyphenated; de takeaway said annealers lack scalability, the point is that it is unproven",
+   "de": {
+    "title": "Quanten-Annealing",
+    "takeaway": "Für Quanten-Annealer sind weder Speedup noch Skalierbarkeit belegt, daher sind Experimente erforderlich",
+    "topic": "Quanten-Annealer"
+   }
+  },
+  "S6.SS4": {
+   "note": "zh calque 噪声弹性 -> standard 抗噪; zh/de 'tradeoff' made explicit (easier classical simulation); de Schaltung -> Schaltkreis as in the rest of the paper",
+   "zh": {
+    "title": "抗噪量子电路",
+    "takeaway": "抗噪电路或可拓展NISQ能力，但可能更易被经典模拟",
+    "topic": "抗噪电路"
+   },
+   "de": {
+    "title": "Rauschresistente Quantenschaltkreise",
+    "takeaway": "Rauschresistente Schaltkreise könnten die Reichweite von NISQ erweitern, jedoch auf Kosten leichterer klassischer Simulierbarkeit",
+    "topic": "Rauschresistente Schaltkreise"
+   }
+  },
+  "S6.SS5": {
+   "note": "'classical advantages' ambiguous (means advantage on classical applications); de spelling Quanten-Deep-Learning",
+   "en": {
+    "takeaway": "Quantum deep learning may help quantum tasks, but advantages for today's classical applications are unclear"
+   },
+   "zh": {
+    "takeaway": "量子深度学习或有助于量子任务，对当今经典应用的优势尚不明确"
+   },
+   "de": {
+    "title": "Quanten-Deep-Learning",
+    "takeaway": "Quanten-Deep-Learning hilft womöglich bei Quantenaufgaben, Vorteile bei klassischen Anwendungen bleiben unklar",
+    "topic": "Quanten-Deep-Learning"
+   }
+  },
+  "S6.SS7": {
+   "note": "de topic did not name the section",
+   "de": {
+    "topic": "Quantenempfehlungssysteme"
+   }
+  },
+  "S6.SS8": {
+   "note": "de title was a malformed compound; de Speedup as elsewhere in section 6; de topic named a detail",
+   "de": {
+    "title": "Semidefinite Programmierung mit Quantencomputern",
+    "takeaway": "Semidefinite Programmierung mit Quantencomputern erreicht exponentiellen Speedup, wenn Gibbs-Zustände effizient präparierbar sind",
+    "topic": "Semidefinite Programmierung"
+   }
+  },
+  "S6.SS9": {
+   "note": "de section takeaway added 'hochentwickelter Materie' (highly developed matter), not in the English; topic cut",
+   "de": {
+    "takeaway": "Die Quantensimulation ist die natürliche Domäne für den Quantenvorteil",
+    "topic": "Quantensimulation"
+   }
+  },
+  "S6.SS10": {
+   "note": "zh topic cut from 模拟量子模拟器",
+   "zh": {
+    "takeaway": "模拟量子模拟虽终将被数字量子模拟取代，仍会沿用多年",
+    "topic": "模拟量子模拟"
+   }
+  },
+  "S7": {
+   "note": "de 'entmutigend' (discouraging) mistranslates 'daunting'",
+   "de": {
+    "title": "Der beschwerliche Aufstieg zur Skalierbarkeit"
+   }
+  },
+  "S8": {
+   "note": "de topic cut mid-phrase",
+   "de": {
+    "topic": "NISQ-Ära"
+   }
+  },
+  "Sx1": {
+   "note": "zh section takeaway did not follow the English one; zh topic meaningless ('本文源自2017年')",
+   "zh": {
+    "takeaway": "致谢交代主题演讲缘起、同事贡献及ARO、DOE、IARPA、NSF与Simons的资助",
+    "topic": "致谢"
+   }
+  }
+ }
+}

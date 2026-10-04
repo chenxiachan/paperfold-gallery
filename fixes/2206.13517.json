@@ -1,0 +1,540 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "takeaway only reported the code release, not the point of the abstract",
+   "en": {
+    "takeaway": "ProGen2 scales protein language models to 6.4B parameters on over a billion proteins",
+    "reason": "Results suggest growing emphasis must be placed on the data distribution provided to a protein sequence model",
+    "topic": "ProGen2"
+   },
+   "zh": {
+    "takeaway": "ProGen2将蛋白质语言模型扩展至64亿参数，数据涵盖超十亿条蛋白质",
+    "reason": "结果表明，需要越来越重视提供给蛋白质序列模型的数据分布",
+    "topic": "ProGen2"
+   },
+   "de": {
+    "takeaway": "ProGen2 skaliert Proteinsprachmodelle auf 6,4 Milliarden Parameter, trainiert auf über einer Milliarde Proteinen",
+    "reason": "Die Ergebnisse legen nahe, stärkeres Gewicht auf die Datenverteilung des Proteinsequenzmodells zu legen",
+    "topic": "ProGen2"
+   }
+  },
+  "S1.p3.1": {
+   "note": "de: wrong compound Proteins-Sprachmodelle",
+   "de": {
+    "sentences": {
+     "1": "Proteinsprachmodelle haben ihr Potenzial beim Repräsentationslernen für Klassifikations-, Regressions- und Generierungszwecke gezeigt ⟦a6 (Rives et al., 2021; Rao et al., 2021; Rao et al., 2019; Madani et al., 2020; Meier et al., 2021; Elnaggar et al., 2020; Brandes et al., 2022)⟧."
+    },
+    "reason": "Proteinsprachmodelle haben bereits ihr Potenzial beim Repräsentationslernen für Klassifikations-, Regressions- und Generierungszwecke gezeigt"
+   }
+  },
+  "S1.I1.i2.p1.1": {
+   "note": "topics were fragments cut mid-phrase",
+   "en": {
+    "topic": "biophysical properties"
+   },
+   "zh": {
+    "topic": "生物物理性质"
+   },
+   "de": {
+    "takeaway": "Vorhergesagte strukturelle und biophysikalische Eigenschaften dienen der Analyse der Generierungen",
+    "topic": "biophysikalische Eigenschaften"
+   }
+  },
+  "S2.SS0.SSS0.Px1.p1.1": {
+   "note": "de: Stichprobenentnahme is not the ML term for sampling",
+   "de": {
+    "sentences": {
+     "1": "Da Sprache eine natürliche Totalordnung über Symbole besitzt, kann die gemeinsame Verteilung über Symbole als Produkt von Konditionalverteilungen modelliert werden, was handhabbares Sampling und Likelihood-Schätzung ermöglicht."
+    },
+    "takeaway": "Kausale Sprachmodelle faktorisieren Sequenzverteilungen für handhabbares Sampling und skalieren gut"
+   }
+  },
+  "S2.SS0.SSS0.Px1.p4.1": {
+   "note": "de: Stichprobenentnahme is not the ML term for sampling",
+   "de": {
+    "sentences": {
+     "0": "Zweitens modelliert das Few-Shot-Lernen ⟦a10 (Brown et al., 2020)⟧ Aufgaben als autoregressives Sampling, bedingt auf eine kleine Menge von Beispielen (oder Shots)."
+    },
+    "takeaway": "Few-Shot-Lernen löst Aufgaben durch autoregressives Sampling, bedingt auf wenige Beispiele"
+   }
+  },
+  "S2.SS0.SSS0.Px1.p5.1": {
+   "note": "topics over budget and duplicating the paragraph above",
+   "en": {
+    "topic": "protein sequence modeling"
+   },
+   "zh": {
+    "topic": "自回归解码器"
+   }
+  },
+  "S2.SS0.SSS0.Px2.p3.1": {
+   "note": "zh: doubled 的",
+   "zh": {
+    "sentences": {
+     "5": "最后，ProteinMPNN⟦a23 (Dauparas et al., 2022)⟧采用旋转不变的消息传递网络来编码结构，随后进行新颖的顺序无关序列解码。"
+    }
+   }
+  },
+  "S2.T1.cap": {
+   "note": "topics over budget, and had to stay distinct from the hyper-parameter unit in 3.1",
+   "en": {
+    "takeaway": "Table 1 lists the hyper-parameter choices for ProGen2 models",
+    "topic": "hyper-parameter choices"
+   },
+   "zh": {
+    "takeaway": "表1列出ProGen2模型的超参数选择",
+    "topic": "超参数选择"
+   }
+  },
+  "S2.SS0.SSS0.Px3.p1.1": {
+   "note": "topic duplicated the one in 4.3; this unit contrasts ML with DMS",
+   "en": {
+    "topic": "DMS experiments"
+   },
+   "zh": {
+    "topic": "DMS实验"
+   },
+   "de": {
+    "topic": "DMS-Experimente",
+    "sentences": {
+     "3": "Auf Proteinsequenzen trainierte Modelle des maschinellen Lernens bieten eine alternative Möglichkeit, die funktionelle, d. h. die Fitnesslandschaft von Proteinsequenzen zu erfassen."
+    },
+    "takeaway": "Maschinelles Lernen auf Proteinsequenzen erfasst Fitnesslandschaften jenseits kostspieliger DMS-Experimente"
+   }
+  },
+  "S2.SS0.SSS0.Px3.p3.1": {
+   "note": "topic was not verbatim in the takeaway; de sentence 5 read as a literal \"tasks a model with\"",
+   "en": {
+    "takeaway": "ESM-1v, RITA and Tranception show autoregressive PLMs with retrieval predict fitness well"
+   },
+   "zh": {
+    "takeaway": "ESM-1v、RITA与Tranception表明结合检索的自回归PLM能良好预测适应度"
+   },
+   "de": {
+    "takeaway": "ESM-1v, RITA und Tranception zeigen, dass autoregressive PLMs mit Retrieval die Fitness gut vorhersagen",
+    "sentences": {
+     "5": "ESM-1v ⟦a29 (Meier et al., 2021)⟧ setzt ein über Masked-Language-Modeling trainiertes Transformer-Encoder-Modell ein, um die heuristische Likelihood von Mutationen relativ zu den Wildtyp-Sequenzen zu schätzen.",
+     "7": "Autoregressive PLMs wurden ebenfalls zur Fitnessvorhersage eingesetzt ⟦a30 (Shin et al., 2021)⟧."
+    }
+   }
+  },
+  "S3.SS1.p2.1": {
+   "note": "en reason carried raw, broken LaTeX instead of the formula marker; takeaway over budget",
+   "en": {
+    "takeaway": "The architecture uses a causal transformer decoder with rotary positional encodings and parallel circuits",
+    "reason": "Executing self-attention and feed-forward simultaneously, ⟦a37 $x_{t+1}=x_{t}+{\\rm attn}({\\rm ln}(x_{t}))+{\\rm mlp}({\\rm ln}(x_{t}))$⟧, improves communication overhead"
+   }
+  },
+  "S3.SS1.p3.1": {
+   "note": "en takeaway over budget",
+   "en": {
+    "takeaway": "Hyper-parameters follow Brown et al. (2020) with fewer layers and high-dimensional attention heads"
+   }
+  },
+  "S3.SS1.p1.1": {
+   "note": "zh topic repeated ProGen2 three times across the paper",
+   "zh": {
+    "topic": "自回归Transformer"
+   }
+  },
+  "S3.SS2.p1.1": {
+   "note": "de topic over budget",
+   "de": {
+    "topic": "BFD30 oder BFD90"
+   }
+  },
+  "S3.SS2.p2.1": {
+   "note": "zh: immune repertoire is 免疫组库",
+   "zh": {
+    "sentences": {
+     "1": "OAS 是来自八十项免疫组库测序研究的 15 亿条抗体序列的精选集合，包含来自六个物种（人、小鼠、大鼠、骆驼、兔和恒河猴）的重链和轻链序列。"
+    },
+    "reason": "使用 cov-mode 1 在 85% 一致性下聚类，从八十项免疫组库研究的 15 亿条序列中去除冗余"
+   }
+  },
+  "S3.SS3.p2.1": {
+   "note": "en topic was not verbatim in the takeaway",
+   "en": {
+    "topic": "JAXformer"
+   }
+  },
+  "S3.SS3.p3.1": {
+   "note": "en topic was not verbatim in the takeaway",
+   "en": {
+    "topic": "Adam"
+   }
+  },
+  "S3.SS3.p4.1": {
+   "note": "topics were not verbatim in the takeaway",
+   "en": {
+    "topic": "power-law cross-entropy"
+   },
+   "zh": {
+    "topic": "幂律关系"
+   }
+  },
+  "S3.SS3.p5.1": {
+   "note": "en topic was not verbatim in the takeaway",
+   "en": {
+    "topic": "Fine-tuning"
+   }
+  },
+  "S3.SS4.p1.1": {
+   "note": "de: invented participle \"finetunete\"; zh: citations moved to the terms they belong to",
+   "zh": {
+    "topic": "ProGen2序列",
+    "sentences": {
+     "8": "预测结构与PDB中观测蛋白质的相似性通过使用Foldseek⟦a73 (van Kempen et al., 2022)⟧计算TMscore⟦a72 (Zhang & Skolnick, 2004)⟧来衡量。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "6": "Für universelle Generierungen führten wir AlphaFold2 mit drei Recycles aus, während für Generierungen nach dem Finetuning nur ein Recycle verwendet wurde.",
+     "10": "Für Generierungen nach dem Finetuning berechneten wir die Sequenzidentität gegenüber dem Finetuning-Datensatz mit MMseqs2 ⟦a74 (Steinegger & Söding, 2017)⟧."
+    },
+    "takeaway": "5.000 universelle und 10.000 nach dem Finetuning erzeugte ProGen2-Sequenzen wurden gesampelt und strukturell vorhergesagt"
+   }
+  },
+  "S3.SS4.p2.1": {
+   "note": "de typo Schwerkettten; topics duplicated those of the OAS data unit",
+   "en": {
+    "topic": "prompted antibody sequences"
+   },
+   "zh": {
+    "topic": "提示抗体序列"
+   },
+   "de": {
+    "sentences": {
+     "3": "Weitere 470K Sequenzen voller Länge wurden generiert, indem die Sequenz mit einem Drei-Reste-Motiv initialisiert wurde, das häufig in menschlichen Schwerketten-Antikörpersequenzen beobachtet wird (EVQ)."
+    }
+   }
+  },
+  "S3.SS4.p4.1": {
+   "note": "zh topic over budget",
+   "zh": {
+    "topic": "蛋白质景观"
+   }
+  },
+  "S4.SS1.p2.1": {
+   "note": "topic was only a formula marker, so it is not readable alone",
+   "en": {
+    "topic": "training distribution"
+   },
+   "zh": {
+    "topic": "训练分布"
+   },
+   "de": {
+    "topic": "Trainingsverteilung"
+   }
+  },
+  "S4.F2.cap": {
+   "note": "topic duplicated the fine-tuning unit in 3.3",
+   "en": {
+    "topic": "Extended finetuning"
+   },
+   "zh": {
+    "topic": "延长微调"
+   }
+  },
+  "S4.SS2.p2.1": {
+   "note": "zh: citations placed on the terms they cite",
+   "zh": {
+    "sentences": {
+     "3": "对于每个结构，我们使用Foldseek⟦a113 (van Kempen et al., 2022)⟧在PDB⟦a112 (Berman et al., 2000)⟧中识别出结构上最相似的天然蛋白质。",
+     "4": "在图⟦a114 1⟧中，我们展示了与天然蛋白质的结构相似性（TMscore）和AlphaFold2预测置信度（pLDDT）之间的关系。"
+    },
+    "reason": "Foldseek将大多数预测结构匹配到PDB中的天然同源物"
+   }
+  },
+  "S4.SS2.p2.1~2": {
+   "note": "de: \"wider curvature\" was rendered as stronger curvature, the opposite",
+   "zh": {
+    "sentences": {
+     "3": "有趣的是，尽管生成的螺线管折叠的内侧面完全由β折叠组成（与天然蛋白质相同），其外侧面却同时结合了α螺旋和β折叠，导致中心角更大（曲率更宽）。",
+     "4": "此外，尽管采用了相似的折叠，生成蛋白质与天然蛋白质之间的序列同一性仅为11.2%。"
+    },
+    "reason": "生成序列外侧面结合α螺旋与β折叠，使曲率较天然蛋白质更宽"
+   },
+   "de": {
+    "sentences": {
+     "3": "Interessanterweise besteht die innere Fläche der erzeugten Solenoid-Faltung vollständig aus beta-Faltblättern (wie im natürlichen Protein), während die äußere Fläche sowohl alpha-Helices als auch beta-Faltblätter kombiniert, was zu einem größeren Mittelpunktswinkel (breiterer Krümmung) führt."
+    }
+   }
+  },
+  "S4.SS2.p2.1~3": {
+   "note": "zh reason was garbled (卷曲似)",
+   "zh": {
+    "reason": "一条序列在PDB中无结构匹配，另一条类似理想化的RTX结构域且β折叠延长",
+    "sentences": {
+     "0": "最相似的天然蛋白质是一种未表征蛋白（PDB ID 6OAW-A），TMscore仅为0.283，序列重叠也很少（同一性11.1%）。",
+     "3": "有趣的是，我们观察到该生成蛋白质类似于天然蛋白质的理想化版本，其β折叠延长、连接环缩短。"
+    }
+   }
+  },
+  "S4.F3.cap": {
+   "note": "zh topic was not verbatim in the takeaway",
+   "zh": {
+    "takeaway": "抗体中限制性更弱的采样降低聚集倾向并提升溶解度"
+   }
+  },
+  "S4.SS3.p3.1": {
+   "note": "de takeaway over budget",
+   "zh": {
+    "sentences": {
+     "2": "更小的模型，其对已观测进化数据分布的刻画更差，却能在零样本适应度预测上系统性地优于更大模型这一事实。",
+     "5": "我们的结果首次提供证据表明，这种效应不仅可以在单一蛋白质家族数据集的背景下成立，也可以在包含进化上多样蛋白质的大规模数据集背景下、并使用大规模 Transformer 模型时成立。"
+    }
+   },
+   "de": {
+    "takeaway": "Zero-Shot-Fitness erreicht ihr Maximum bei 764M Parametern, anders als die mit der Skalierung sinkende Perplexität",
+    "sentences": {
+     "0": "Interessanterweise stellen wir fest, dass mit zunehmender Modellkapazität die Leistung bei der Zero-Shot-Fitnessvorhersage (gemittelt über alle Datensätze in der engen Landschaft) bei 764M Parametern (ProGen2-base) ihren Höhepunkt erreicht, bevor sie mit immer größeren Modellen (ProGen2-large und ProGen2-xlarge) abnimmt.",
+     "2": "Die Tatsache, dass kleinere Modelle, die die beobachtete evolutionäre Datenverteilung schlechter erfassen, bei der Zero-Shot-Fitnessvorhersage systematisch größere Modelle übertreffen können."
+    }
+   }
+  },
+  "S4.SS3.p5.1": {
+   "note": "de takeaway over budget",
+   "de": {
+    "takeaway": "ProGen2-OAS schneidet bei der Antikörper-Fitness schlechter ab als Modelle auf universellen Datenbanken",
+    "sentences": {
+     "1": "Wir untersuchen die Zero-Shot-Fitnessvorhersage der Bindung (⟦a151 $K_{D}$⟧) und allgemeiner Eigenschaften (Expression und Schmelztemperatur ⟦a152 $T_{M}$⟧) von Antikörpern in Tabelle ⟦a153 5⟧.",
+     "2": "Proben aus Immunrepertoire-Sequenzierungsstudien erscheinen als intuitive Wahl für das Erlernen leistungsfähiger Repräsentationen, die für Aufgaben der Antikörper-Fitnessvorhersage nützlich sind ⟦a154 (Leem et al., 2022; Ruffolo et al., 2021)⟧."
+    }
+   }
+  },
+  "S5.T5.cap": {
+   "note": "zh: 免疫组库; de: Immunkompetenz-Repetoire is not the OAS term",
+   "zh": {
+    "sentences": {
+     "1": "使用来自免疫组库测序研究的去冗余蛋白质，OAS ⟦a155 Olsen et al. (2022a)⟧，并不会为抗体带来更好的适应度预测。"
+    },
+    "takeaway": "去冗余免疫组库蛋白质未能改进抗体适应度预测"
+   },
+   "de": {
+    "sentences": {
+     "1": "Die Verwendung redundanzreduzierter Proteine aus Immunrepertoire-Sequenzierungsstudien, OAS ⟦a155 Olsen et al. (2022a)⟧, führt nicht zu einer besseren Fitnessvorhersage für Antikörper."
+    }
+   }
+  },
+  "S5.p1.1": {
+   "note": "de: Proteins-Sprachmodelle and Proteintechnik; zh: viable sequences are 可行序列 as in the abstract",
+   "zh": {
+    "sentences": {
+     "3": "大型蛋白质语言模型可以生成可行序列的文库，从而扩展天然蛋白质的序列和结构空间。",
+     "2": "在我们的研究中，结果表明我们可以继续扩大模型规模（>6B参数），并在拟合天然序列分布方面看到相应的改进。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Proteinsprachmodelle könnten Fortschritte im Protein-Engineering und im Design ermöglichen, um kritische Probleme für die menschliche Gesundheit und die Umwelt zu lösen.",
+     "3": "Große Proteinsprachmodelle können Bibliotheken lebensfähiger Sequenzen generieren, die den Sequenz- und Strukturraum natürlicher Proteine erweitern.",
+     "7": "Bemerkenswert ist, dass Fitness, definiert als durchschnittlicher Spearman über die mehreren experimentellen Nasslabor-Datensätze in dieser Studie, ihre eigenen Verzerrungen mit sich bringt und möglicherweise nicht der einzige zuverlässige Faktor für die Bewertung von Modellen für das Protein-Engineering ist.",
+     "9": "Schließlich stellen wir unsere Suite von ProGen2-Modellen zur Verfügung, um KI-gesteuerte Protein-Engineering-Forschung unter ⟦a159 https://github.com/salesforce/progen⟧ zu ermöglichen."
+    }
+   }
+  },
+  "A1.T6.cap": {
+   "note": "sentence 1 was left untranslated in zh and de; zh topic over budget",
+   "zh": {
+    "sentences": {
+     "1": "ProGen2优于包括推理时检索模型在内的基线。"
+    },
+    "topic": "插入缺失"
+   },
+   "de": {
+    "sentences": {
+     "1": "ProGen2 übertrifft Baselines, einschließlich Modellen mit Retrieval zur Inferenzzeit."
+    }
+   }
+  },
+  "A1.T7.cap": {
+   "note": "en topic was not verbatim in the takeaway",
+   "en": {
+    "takeaway": "Antibody landscape tables give the full zero-shot fitness results",
+    "topic": "Antibody landscape tables"
+   }
+  },
+  "A1.T9.cap": {
+   "note": "topics were not verbatim in the takeaway",
+   "en": {
+    "takeaway": "Narrow landscape tables give the full zero-shot fitness results",
+    "topic": "Narrow landscape tables"
+   },
+   "de": {
+    "topic": "enge Landschaften"
+   }
+  },
+  "S1.I1.i1.p1.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "0": "我们训练了一套参数从1.51亿到64亿的模型（单个蛋白质transformer已发表的最大规模），使用不同的训练集，合计包含来自基因组、宏基因组和免疫组库数据库的10亿条蛋白质序列。"
+    },
+    "reason": "训练集来自基因组、宏基因组和免疫组库数据库"
+   }
+  },
+  "S1.I1.i3.p1.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "de": {
+    "sentences": {
+     "0": "Wir untersuchen die Fitnessvorhersage auf bestehenden experimentellen Datensätzen, die Hypothesen zur Rolle der Datenverteilung und des Alignments in der Proteinsprachmodellierung motivieren."
+    },
+    "takeaway": "Die Fitnessvorhersage wird auf bestehenden experimentellen Datensätzen untersucht",
+    "topic": "Fitnessvorhersage"
+   }
+  },
+  "S2.SS0.SSS0.Px2.p2.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "5": "通过以链类型和物种来源为条件，IgLM能够生成类似于天然免疫组库的多样化抗体集合。"
+    }
+   }
+  },
+  "S4.SS1.p1.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "0": "我们首先评估ProGen2捕捉天然序列分布的能力。",
+     "1": "具体而言，我们关注其预测未观测天然序列的能力，并以留出测试集上的困惑度来量化性能。"
+    }
+   }
+  },
+  "S4.SS2.p1.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "0": "鉴于ProGen2系列模型具有捕获已观察到的进化序列分布的能力，我们接下来评估了这些模型生成新序列的能力。"
+    }
+   }
+  },
+  "S4.SS2.p3.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "4": "正如预期，随着微调的延长，我们观察到与已观察到的进化序列的相似性更高（图⟦a123 2⟧A-B）。"
+    }
+   }
+  },
+  "S4.SS2.p3.1~2": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "0": "出现了类似的趋势：更严格的采样参数通常会产生更接近天然蛋白质的结构（图⟦a124 2⟧C-D）。",
+     "1": "在较新颖的结构中，多样性的主要来源是配体结合区域，而非结合区域则类似于天然蛋白质（图⟦a125 2⟧E-G）。",
+     "2": "在其中两个此类案例中，配体结合区域的AlphaFold2预测置信度较低，且相比最接近的天然同源物发生了重排（图⟦a126 2⟧E-F）。",
+     "3": "有趣的是，在这两个案例中，预测结构都呈现出适合配体的明显空腔，甚至模拟了天然蛋白质近端的二级结构。"
+    }
+   }
+  },
+  "S4.T3.cap": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "2": "ProGen2 模型在多种建模策略下优于或匹配其他基线方法，这表明提供给模型的已观测进化序列的分布及其固有偏置很可能起着重要作用。"
+    },
+    "reason": "已观测进化序列的分布及其固有偏置很可能起重要作用"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zero-Shot-Fitnessvorhersage auf engen experimentell gemessenen Fitnesslandschaften."
+    }
+   }
+  },
+  "S4.SS3.p4.1": {
+   "note": "terminology made consistent with the rest of the paper",
+   "zh": {
+    "sentences": {
+     "3": "经验上，我们发现一些提示性证据表明，在序列距离任何天然序列都更远的更广阔适应度景观中，更大的模型在适应度估计上优于较小的模型，见表⟦a149 4⟧。"
+    },
+    "reason": "距离天然序列远的低概率区域被较小模型描述得差，损害适应度估计和生成"
+   }
+  },
+  "S4.T4.cap": {
+   "note": "terminology made consistent with the rest of the paper",
+   "de": {
+    "sentences": {
+     "0": "Zero-Shot-Fitnessvorhersage in breiteren experimentellen Landschaften."
+    }
+   }
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "de used Protein-Sprachmodelle; topic now names the point",
+   "zh": {
+    "topic": "数据分布"
+   },
+   "de": {
+    "takeaway": "ProGen2 skaliert Proteinsprachmodelle auf 6,4 Milliarden Parameter und betont die Datenverteilung stärker als die Skalierung",
+    "topic": "Datenverteilung"
+   }
+  },
+  "S3.SS2": {
+   "note": "en takeaway and de topic over budget",
+   "en": {
+    "takeaway": "ProGen2 models pretrain on Uniref90 mixed with BFD30 or BFD90, plus OAS antibodies",
+    "topic": "ProGen2 models"
+   },
+   "de": {
+    "topic": "Uniref90, BFD30 oder BFD90"
+   }
+  },
+  "S4.SS2": {
+   "note": "en takeaway over budget; zh topic was a fragment; de left \"viable\" in English",
+   "en": {
+    "takeaway": "ProGen2 generates novel viable sequences in universal, fold-specific, and antibody settings",
+    "topic": "novel viable sequences"
+   },
+   "zh": {
+    "topic": "生成新序列"
+   },
+   "de": {
+    "takeaway": "ProGen2 erzeugt neue lebensfähige Sequenzen in universellen, faltungs- und antikörperspezifischen Szenarien, wobei Sampling-Parameter Neuheit und Entwickelbarkeit steuern",
+    "topic": "Sampling-Parameter"
+   }
+  },
+  "S4.SS3": {
+   "note": "de term spelled both ways in the paper",
+   "zh": {
+    "topic": "训练数据分布"
+   },
+   "de": {
+    "title": "Zero-Shot-Fitnessvorhersage",
+    "takeaway": "Die Zero-Shot-Fitnessvorhersage erreicht ihr Maximum unterhalb der größten ProGen2-Größe, die Trainingsdatenverteilung ist entscheidend",
+    "topic": "Zero-Shot-Fitnessvorhersage"
+   }
+  },
+  "S3.SS1": {
+   "note": "zh topic repeated ProGen2",
+   "zh": {
+    "topic": "自回归Transformer"
+   }
+  },
+  "S3.SS4": {
+   "note": "zh topic repeated ProGen2",
+   "zh": {
+    "topic": "ProGen2序列"
+   }
+  },
+  "S5": {
+   "note": "en topic repeated the one in the related-work section",
+   "en": {
+    "topic": "data alignment"
+   }
+  },
+  "A1": {
+   "note": "zh topic was cut mid-phrase",
+   "zh": {
+    "topic": "补充表格"
+   }
+  },
+  "S4.SS1": {
+   "note": "zh: natural sequences are 天然序列 elsewhere in the paper",
+   "zh": {
+    "takeaway": "更大的ProGen2模型在留出天然序列上困惑度更低"
+   }
+  }
+ }
+}

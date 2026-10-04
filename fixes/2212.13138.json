@@ -1,0 +1,2350 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "clarity: 'reinforcing evaluation' misread the source; zh topic not in takeaway; de USMLE term",
+   "en": {
+    "takeaway": "Human evaluations reveal important limitations, underscoring both evaluation frameworks and method development"
+   },
+   "zh": {
+    "takeaway": "人工评估揭示重要局限，凸显评估框架与方法研发的重要性"
+   },
+   "de": {
+    "sentences": {
+     "6": "Durch eine Kombination von Prompting-Strategien erreicht Flan-PaLM eine State-of-the-Art-Genauigkeit auf jedem Multiple-Choice-Datensatz von MultiMedQA (MedQA, MedMCQA, PubMedQA, MMLU klinische Themen), einschließlich 67,6% Genauigkeit auf MedQA (Fragen der US-Ärzteprüfung), womit der bisherige State of the Art um über 17% übertroffen wird.",
+     "8": "Um dies zu lösen, führen wir Instruction-Prompt-Tuning ein, einen parametereffizienten Ansatz, um LLMs mit wenigen Beispielen an neue Domänen anzupassen.",
+     "10": "Wir zeigen, dass Verständnis, Abruf von Wissen und medizinisches Schlussfolgern mit der Modellgröße und Instruction-Prompt-Tuning zunehmen, was auf den potenziellen Nutzen von LLMs in der Medizin hindeutet."
+    }
+   }
+  },
+  "S1.F1.cap": {
+   "note": "factual: unit never says Med-PaLM tops Flan-PaLM; it compares favorably with clinicians; distinct topic",
+   "en": {
+    "takeaway": "MultiMedQA benchmarks medical QA; Med-PaLM compares favorably with clinician answers",
+    "topic": "clinician answers"
+   },
+   "zh": {
+    "sentences": {
+     "5": "在我们的人工评估框架下，Med-PaLM对消费者医学问题的回答与临床医生生成的回答相比表现良好，证明了指令提示微调的有效性。"
+    },
+    "takeaway": "MultiMedQA评测医学问答，Med-PaLM回答与临床医生相比表现良好",
+    "topic": "临床医生"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir haben PaLM und seine instruktionsoptimierte Variante Flan-PaLM auf MultiMedQA evaluiert.",
+     "4": "Als Nächstes haben wir Instruction-Prompt-Tuning vorgeschlagen, um Flan-PaLM weiter an die medizinische Domäne anzupassen und so Med-PaLM zu erzeugen.",
+     "5": "Die Antworten von Med-PaLM auf medizinische Verbraucherfragen schnitten in unserem Rahmen zur menschlichen Bewertung günstig im Vergleich zu von Klinikern erstellten Antworten ab, was die Wirksamkeit von Instruction-Prompt-Tuning demonstriert."
+    },
+    "takeaway": "MultiMedQA prüft medizinische Fragebeantwortung, Med-PaLM schneidet gegenüber Klinikern günstig ab",
+    "reason": "Instruction-Prompt-Tuning erzeugte Med-PaLM, dessen Antworten in der menschlichen Bewertung günstig im Vergleich zu Klinikerantworten abschnitten",
+    "topic": "Klinikern"
+   }
+  },
+  "S1.p1.1": {
+   "note": "zh0 added 'within'; zh topic not in takeaway",
+   "zh": {
+    "sentences": {
+     "0": "医学是一项人文关怀的事业，语言促成了面向临床医生、研究人员和患者以及他们彼此之间的关键互动。"
+    },
+    "takeaway": "当今医学AI模型多为单任务系统，未充分利用语言"
+   }
+  },
+  "S1.p2.1": {
+   "note": "clarity: 'expressive medical applications'; zh primary care term",
+   "en": {
+    "takeaway": "LLMs, as foundation models, hold great promise for medical applications"
+   },
+   "zh": {
+    "sentences": {
+     "3": "此类模型在医学中有若干令人兴奋的潜在应用，包括知识检索、临床决策支持、关键发现总结、患者初级保健问题分诊等。"
+    },
+    "takeaway": "LLM作为基础模型在医学应用中前景广阔"
+   },
+   "de": {
+    "takeaway": "LLMs als Foundation Models sind für medizinische Anwendungen vielversprechend"
+   }
+  },
+  "S1.p4.1": {
+   "note": "de topic not verbatim",
+   "zh": {
+    "sentences": {
+     "3": "这造成了一个未满足的需求：需要一个广泛的医学问答基准来评估LLM回答的事实性、在医学和科学推理中运用专家知识、有用性、精确性、健康公平性，以及对接受模型输出为事实的人类可能造成的危害。"
+    }
+   },
+   "de": {
+    "topic": "medizinischen Fragebeantwortung"
+   }
+  },
+  "S1.p5.1": {
+   "note": "factual: seven datasets include HealthSearchQA, not seven plus it",
+   "en": {
+    "takeaway": "MultiMedQA spans seven medical QA datasets, including new HealthSearchQA"
+   },
+   "zh": {
+    "takeaway": "MultiMedQA涵盖七个医学问答数据集，含新增的HealthSearchQA"
+   },
+   "de": {
+    "takeaway": "MultiMedQA umfasst sieben medizinische QA-Datensätze, darunter das neue HealthSearchQA"
+   }
+  },
+  "S1.p6.1": {
+   "note": "factual: Flan-PaLM exceeds prior SOTA on MedQA, not MedQA itself; distinct topic",
+   "en": {
+    "takeaway": "Flan-PaLM with prompting sets SOTA, beating prior MedQA SOTA by over 17%",
+    "topic": "prior MedQA SOTA"
+   },
+   "zh": {
+    "takeaway": "Flan-PaLM结合提示达到SOTA，在MedQA上超此前SOTA逾17%",
+    "topic": "此前SOTA"
+   },
+   "de": {
+    "takeaway": "Flan-PaLM erreicht mit Prompting SOTA und übertrifft den bisherigen MedQA-SOTA um über 17%",
+    "topic": "bisherigen MedQA-SOTA"
+   }
+  },
+  "S1.p7.1": {
+   "note": "overstatement: answers were 'potentially' harmful; clarify comparison with clinicians",
+   "en": {
+    "takeaway": "Med-PaLM matches clinicians on consensus (92.6%) and potential harm (5.8%)",
+    "reason": "Instruction prompt tuning adapted Flan-PaLM, whose answers were 61.9% consensus-aligned and 29.7% potentially harmful"
+   },
+   "zh": {
+    "sentences": {
+     "0": "尽管Flan-PaLM在多项选择题上表现强劲，但其对消费者医学问题的回答揭示了关键差距。",
+     "2": "所得模型Med-PaLM在我们试点人工评估框架的各维度上表现令人鼓舞。"
+    },
+    "takeaway": "Med-PaLM在共识（92.6%）和潜在危害（5.8%）上与临床医生相当",
+    "reason": "指令提示微调适配了Flan-PaLM，其回答仅61.9%符合共识，29.7%可能有害"
+   },
+   "de": {
+    "sentences": {
+     "1": "Um dies zu beheben, schlagen wir Instruction-Prompt-Tuning vor, eine daten- und parametereffiziente Alignment-Technik, um Flan-PaLM weiter an die medizinische Domäne anzupassen.",
+     "2": "Das resultierende Modell, Med-PaLM, schneidet auf den Achsen unseres vorläufigen Rahmens für die menschliche Bewertung ermutigend ab."
+    },
+    "takeaway": "Med-PaLM liegt bei Konsens (92,6%) und potenziellem Schaden (5,8%) gleichauf mit Klinikern",
+    "reason": "Instruction-Prompt-Tuning passte Flan-PaLM an, dessen Antworten nur zu 61,9% konsenskonform und zu 29,7% potenziell schädlich waren"
+   }
+  },
+  "S1.p8.1": {
+   "note": "zh topic not in takeaway",
+   "zh": {
+    "takeaway": "临床应用前仍需公平性、公正性与偏见评估"
+   }
+  },
+  "S1.I1.i1.p1.1": {
+   "note": "topic not in takeaway",
+   "en": {
+    "takeaway": "The paper contributes evaluation approaches for LLMs in medical QA"
+   },
+   "zh": {
+    "takeaway": "论文贡献了LLM医学问答的评估方法"
+   }
+  },
+  "S1.I1.i1.I1.ix1.p1.1": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "0": "HealthSearchQA与MultiMedQA的整理 我们介绍HealthSearchQA，一个包含3375个常见搜索的消费者医学问题的数据集。",
+     "1": "我们将该数据集与六个其他现有的开放医学问答数据集一同呈现，涵盖医学考试、医学研究和消费者医学问题，作为一个多样化基准来评估LLM的临床知识和问答能力（见⟦a16 Section 3.1⟧）。"
+    }
+   }
+  },
+  "S1.I1.i1.I1.ix2.p1.1": {
+   "note": "de: 'Manipulation von Wissen', Reasoning, Erinnerung",
+   "zh": {
+    "sentences": {
+     "0": "人工评估试点框架 我们试点了一个由医生和普通用户进行评估的框架，以在多项选择数据集的准确率之外评估LLM表现的多个维度。"
+    },
+    "takeaway": "人工评估试点考察多项选择准确率之外的维度",
+    "topic": "人工评估"
+   },
+   "de": {
+    "sentences": {
+     "0": "Pilotframework zur menschlichen Bewertung Wir pilotieren ein Framework zur Evaluation durch Ärzte und Laien, um mehrere Achsen der LLM-Leistung jenseits der Genauigkeit auf Multiple-Choice-Datensätzen zu bewerten.",
+     "1": "Unsere Evaluation bewertet Antworten hinsichtlich der Übereinstimmung mit wissenschaftlichem und klinischem Konsens, der Wahrscheinlichkeit und des möglichen Ausmaßes von Schaden, des Leseverständnisses, des Abrufs relevanten klinischen Wissens, des Umgangs mit Wissen durch valides Schlussfolgern, der Vollständigkeit der Antworten, des Potenzials für Bias, der Relevanz und der Nützlichkeit (siehe ⟦a17 Section 3.2⟧)."
+    },
+    "takeaway": "Menschliche Bewertung prüft Achsen jenseits der Multiple-Choice-Genauigkeit",
+    "reason": "Ärzte und Laien beurteilen Konsens, Schaden, Verständnis, Abruf, Schlussfolgern, Vollständigkeit, Bias, Relevanz und Nützlichkeit",
+    "topic": "Menschliche Bewertung"
+   }
+  },
+  "S1.I1.i2.p1.1": {
+   "note": "zh grammar of takeaway",
+   "zh": {
+    "takeaway": "Flan-PaLM在MedQA、MedMCQA、PubMedQA上分别达67.6%、57.6%、79.0%"
+   }
+  },
+  "S1.I1.i3.p1.1": {
+   "note": "overstatement: Med-PaLM narrows (not closes) the gap on several axes",
+   "en": {
+    "takeaway": "Instruction prompt tuning builds Med-PaLM, narrowing gaps to clinicians on several axes",
+    "reason": "Flan-PaLM showed limits in scientific grounding, harm and bias; Med-PaLM narrows the gap, sometimes comparing favorably"
+   },
+   "zh": {
+    "sentences": {
+     "2": "我们的人工评估框架揭示了Flan-PaLM在科学依据、危害和偏见方面的局限性。"
+    },
+    "takeaway": "指令提示微调构建Med-PaLM，在若干维度缩小与临床医生的差距",
+    "reason": "Flan-PaLM在科学依据、危害和偏见上存在局限，Med-PaLM显著缩小差距，部分维度甚至更优"
+   },
+   "de": {
+    "sentences": {
+     "0": "Instruction-Prompt-Tuning zur Alignierung von LLMs an die medizinische Domäne Wir führen Instruction-Prompt-Tuning ein, eine einfache, daten- und parametereffiziente Technik zur Alignierung von LLMs an die sicherheitskritische medizinische Domäne (siehe ⟦a19 Section 3.3.3⟧).",
+     "1": "Wir nutzen dies, um Med-PaLM zu entwickeln, eine per Instruction-Prompt-Tuning angepasste Version von Flan-PaLM, die auf die medizinische Domäne spezialisiert ist.",
+     "2": "Unser Rahmen für die menschliche Bewertung offenbart Einschränkungen von Flan-PaLM bei wissenschaftlicher Fundierung, Schaden und Bias."
+    },
+    "takeaway": "Instruction-Prompt-Tuning schafft Med-PaLM und verringert auf mehreren Achsen die Lücke zu Klinikern",
+    "reason": "Flan-PaLM zeigte Grenzen bei wissenschaftlicher Fundierung, Schaden und Bias, Med-PaLM verringert die Lücke und schneidet teils sogar günstiger ab",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S1.I1.i4.p1.1": {
+   "note": "topic not in takeaway; unit says critical improvements are needed",
+   "en": {
+    "takeaway": "Critical improvements are needed before LLMs are viable for clinical use"
+   },
+   "zh": {
+    "sentences": {
+     "0": "通过人工评估揭示的LLM关键局限性 尽管我们的结果证明了LLM在医学中的潜力，但也表明必须进行若干关键改进，才能使这些模型可用于真实世界的临床应用。"
+    },
+    "takeaway": "LLM需关键改进才能用于真实临床应用"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zentrale Einschränkungen von LLMs, die durch unsere menschliche Bewertung offengelegt werden Zwar zeigen unsere Ergebnisse das Potenzial von LLMs in der Medizin, doch legen sie auch nahe, dass mehrere kritische Verbesserungen notwendig sind, um diese Modelle für reale klinische Anwendungen praktikabel zu machen."
+    },
+    "takeaway": "Kritische Verbesserungen sind nötig, bevor LLMs klinisch praktikabel sind",
+    "topic": "Kritische Verbesserungen"
+   }
+  },
+  "S2.SS0.SSS0.Px1.p1.1": {
+   "note": "zh: 'apparent' reasoning mistranslated as 'obvious'",
+   "zh": {
+    "sentences": {
+     "6": "这使它们能够快速泛化到未见任务，并在适当的提示策略下甚至表现出看似具备的推理能力⟦a27 [14, 47, 79, 91]⟧。"
+    },
+    "reason": "性能与数据效率随模型和数据集规模扩展，使其能泛化到未见任务，并在适当提示下看似具备推理能力"
+   }
+  },
+  "S2.SS0.SSS0.Px1.p2.1": {
+   "note": "zh: English 'community-wide' left; weak topic",
+   "zh": {
+    "sentences": {
+     "2": "为了考察 LLM 当前的局限性并量化人类与 LLM 语言能力之间的巨大差距，BIG-bench 作为一项社区范围的倡议被提出，用于对发表时被认为超出当前语言模型能力的任务进行基准测试⟦a29 [78]⟧。"
+    },
+    "topic": "隐式知识库"
+   }
+  },
+  "S2.SS0.SSS0.Px2.p1.1": {
+   "note": "en reason over budget; zh/de topics over budget or cut",
+   "en": {
+    "reason": "These models are small next to LLMs like GPT-3 and PaLM, though medical LLM proposals span assessment to summarisation"
+   },
+   "zh": {
+    "topic": "生物医学语料"
+   },
+   "de": {
+    "topic": "biomedizinische Korpora"
+   }
+  },
+  "S2.SS0.SSS0.Px2.p2.1": {
+   "note": "topics: zh vague, de cut mid-phrase",
+   "zh": {
+    "topic": "最接近的先例"
+   },
+   "de": {
+    "sentences": {
+     "1": "Insbesondere verwendeten ⟦a43 [50]⟧ Instruct GPT-3, ein instruktionsoptimiertes LLM ⟦a44 [63]⟧, und wandten zusätzlich Chain-of-Thought-Prompting ⟦a45 [91]⟧ an, um die Ergebnisse auf den Datensätzen MedQA, MedMCQA und PubMedQA zu verbessern."
+    },
+    "topic": "engsten Präzedenzfälle"
+   }
+  },
+  "S3.p1.1": {
+   "note": "zh topic cut mid-phrase",
+   "zh": {
+    "topic": "方法"
+   }
+  },
+  "S3.SS1.p1.1": {
+   "note": "en reason over budget",
+   "en": {
+    "reason": "Answering medical questions needs comprehension, accurate recall and use of expert knowledge; existing datasets cover exams, research and consumer queries"
+   }
+  },
+  "S3.SS1.p2.1": {
+   "note": "topic over budget/cut; de run-on",
+   "en": {
+    "takeaway": "Combining diverse medical QA datasets enables deeper LLM evaluation",
+    "topic": "medical QA datasets"
+   },
+   "zh": {
+    "topic": "问答数据集"
+   },
+   "de": {
+    "sentences": {
+     "3": "Die von uns zusammengeführten Datensätze prüfen unterschiedliche Fähigkeiten: Einige sind Multiple-Choice-Fragen, während andere Langformantworten erfordern; einige sind offene Domänen (bei denen Fragen beantwortet werden, ohne die verfügbaren Informationen auf eine vorab festgelegte Quelle zu beschränken), während andere geschlossene Domänen sind (bei denen Fragen durch Abrufen von Inhalten aus zugehörigem Referenztext beantwortet werden) und aus unterschiedlichen Quellen stammen."
+    },
+    "topic": "vielfältiger Datensätze"
+   }
+  },
+  "S3.T1.cap": {
+   "note": "topics over budget or not verbatim",
+   "en": {
+    "takeaway": "MultiMedQA datasets vary in format, size and domain",
+    "topic": "MultiMedQA datasets"
+   },
+   "zh": {
+    "takeaway": "MultiMedQA数据集在格式、规模和领域上各异",
+    "topic": "MultiMedQA数据集"
+   },
+   "de": {
+    "takeaway": "MultiMedQA-Datensätze unterscheiden sich in Format, Größe und Domäne",
+    "topic": "MultiMedQA-Datensätze"
+   }
+  },
+  "S3.SS1.SSS1.p1.1": {
+   "note": "de: 'MMLU clinical topics' left in English",
+   "zh": {
+    "sentences": {
+     "0": "MultiMedQA包含多项选择题问答数据集、需要对医学专业人员提出的问题给出较长篇回答的数据集，以及需要对非专业人员可能提出的问题给出较长篇回答的数据集。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "1": "Dazu gehören die Datensätze MedQA ⟦a50 [33]⟧, MedMCQA ⟦a51 [64]⟧, PubMedQA ⟦a52 [34]⟧, LiveQA ⟦a53 [1]⟧, MedicationQA ⟦a54 [2]⟧ und klinische MMLU-Themen ⟦a55 [29]⟧."
+    }
+   }
+  },
+  "S3.I2.i1.p1.1": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "0": "格式：多项选择题还是长篇回答题"
+    },
+    "takeaway": "第一个方面是格式：多项选择题与长篇回答"
+   }
+  },
+  "S3.I2.i5.p1.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "标签与元数据"
+   }
+  },
+  "S3.SS1.SSS1.p4.1": {
+   "note": "overgeneralization: answers 'often' came from non-clinicians; zh topic",
+   "en": {
+    "takeaway": "Reference long-form answers are unused: inconsistent sources, often not from clinicians"
+   },
+   "zh": {
+    "sentences": {
+     "0": "虽然MedMCQA、PubMedQA、LiveQA和MedicationQA提供了参考长篇答案或解释，但我们在本工作中并未使用它们。",
+     "5": "其次，鉴于医学领域对安全性的关键要求，我们认为重要的是超越使用BLEU等指标对长篇答案生成质量进行自动化衡量，转而采用涉及更细致的人工评估框架的方法，例如本研究提出的框架。"
+    },
+    "takeaway": "参考长篇答案未被使用：来源不一致，且常非临床医生提供",
+    "topic": "参考长篇答案"
+   },
+   "de": {
+    "takeaway": "Referenz-Langform-Antworten werden nicht verwendet: uneinheitliche Quellen, oft nicht von Klinikern"
+   }
+  },
+  "S3.SS1.SSS1.Px1.p1.1": {
+   "note": "topic 'development' meaningless; de USMLE name",
+   "en": {
+    "topic": "MedQA"
+   },
+   "de": {
+    "sentences": {
+     "0": "Der MedQA-Datensatz ⟦a57 [33]⟧ besteht aus Fragen im Stil der US-Ärzteprüfung (USMLE), die mit einer Auswahl von 4 oder 5 möglichen Antworten aus dem National Medical Board Examination in den USA gewonnen wurden."
+    },
+    "topic": "MedQA"
+   }
+  },
+  "S3.SS1.SSS1.Px2.p1.1": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "0": "MedMCQA数据集包含来自印度医学入学考试（AIIMS/NEET）的超过19.4万道四选项多项选择题⟦a58 [64]⟧。"
+    }
+   }
+  },
+  "S3.SS1.SSS1.Px3.p1.1": {
+   "note": "de topic cut",
+   "zh": {
+    "sentences": {
+     "0": "PubMedQA数据集⟦a59 [34]⟧由1k个专家标注的问答对组成，其任务是在给定问题以及作为上下文的PubMed摘要的情况下，生成是/否/可能的多项选择题答案。"
+    }
+   },
+   "de": {
+    "topic": "PubMedQA"
+   }
+  },
+  "S3.SS1.SSS1.Px5.p1.1": {
+   "note": "reason implied reference answers are used for judging (paper says they are not)",
+   "en": {
+    "reason": "Curated for TREC 2017, it pairs questions people sent to the NLM with answers from sources like the NIH website"
+   },
+   "zh": {
+    "reason": "该数据集为TREC 2017构建，问题由公众提交给NLM，答案取自NIH网站等可信来源"
+   },
+   "de": {
+    "reason": "Für TREC 2017 kuratiert, verbindet er an die NLM gerichtete Fragen mit Antworten aus Quellen wie der NIH-Website"
+   }
+  },
+  "S3.SS1.SSS1.Px6.p1.1": {
+   "note": "reason not from unit; use annotations and long-form evaluation",
+   "en": {
+    "reason": "It annotates drug focus and interactions, and models are evaluated on long-form answers to its test questions"
+   },
+   "zh": {
+    "reason": "数据集标注了药物重点与相互作用，模型需对其测试集问题生成长篇回答"
+   },
+   "de": {
+    "reason": "Er annotiert Arzneimittelfokus und Interaktionen, und Modelle werden an langen Antworten auf seine Testfragen bewertet"
+   }
+  },
+  "S3.SS1.SSS1.Px7.p1.1": {
+   "note": "'medical conditions' mistranslated (de Bedingungen, zh 医学状况)",
+   "zh": {
+    "sentences": {
+     "1": "该数据集以种子病症及其相关症状为基础构建。"
+    },
+    "reason": "通过种子病症与症状检索公开的搜索引擎问题，这些问题会展示给输入种子词的用户"
+   },
+   "de": {
+    "sentences": {
+     "1": "Der Datensatz wurde anhand von Ausgangserkrankungen und ihren zugehörigen Symptomen kuratiert."
+    },
+    "reason": "Ausgangserkrankungen und Symptome dienten zum Abruf öffentlich verfügbarer Suchmaschinenfragen, die Nutzern bei Eingabe dieser Begriffe angezeigt wurden"
+   }
+  },
+  "S3.SS2.p1.1": {
+   "note": "de topic cut",
+   "de": {
+    "sentences": {
+     "0": "Hier beschreiben wir unser vorgeschlagenes Rahmenwerk zur menschlichen Bewertung von langen Antworten auf medizinische Fragen."
+    },
+    "takeaway": "Ein Rahmenwerk zur menschlichen Bewertung langer medizinischer Antworten wird vorgeschlagen",
+    "topic": "menschlichen Bewertung"
+   }
+  },
+  "S3.SS2.SSS1.p1.1": {
+   "note": "zh topic distinct from section",
+   "zh": {
+    "sentences": {
+     "0": "虽然多项选择题上的客观准确率指标是衡量模型性能的稳健手段，但它们遗漏了若干重要细节。"
+    },
+    "topic": "人工评估框架"
+   }
+  },
+  "S3.SS2.SSS1.p2.1": {
+   "note": "zh duplicated word (possibility and possibility)",
+   "zh": {
+    "sentences": {
+     "1": "我们通过对英国、美国和印度临床医生的焦点小组和访谈，识别出额外的评估维度⟦a66 [60]⟧，并将框架条目扩展至涵盖与科学共识的一致性、危害的可能性与发生概率、答案的完整性与缺失性以及偏见的可能性等概念。"
+    }
+   }
+  },
+  "S3.T2.cap": {
+   "note": "de topic is a clause fragment",
+   "de": {
+    "topic": "Kliniker"
+   }
+  },
+  "S3.SS2.SSS1.p3.1": {
+   "note": "en: items were refined, the raters' approaches converged",
+   "en": {
+    "takeaway": "Three clinicians refined the framework; then one of nine clinicians rated each answer"
+   },
+   "zh": {
+    "takeaway": "三位临床医生完善框架后，由九位临床医生之一单独评分"
+   },
+   "de": {
+    "takeaway": "Drei Kliniker verfeinerten den Rahmen, danach bewertete je einer von neun Klinikern jede Antwort"
+   }
+  },
+  "S3.SS2.SSS2.p1.1": {
+   "note": "raters were India-based, not necessarily Indian; de topic fragment",
+   "en": {
+    "takeaway": "Five India-based lay users without medical background rated answer helpfulness and utility"
+   },
+   "zh": {
+    "sentences": {
+     "0": "为了评估对消费者医学问题的回答是否有帮助和实用，我们额外进行了一项普通用户（非专家）评估。"
+    },
+    "takeaway": "五名位于印度的非专家普通用户评估回答的帮助性和实用性"
+   },
+   "de": {
+    "sentences": {
+     "0": "Um die Hilfreichkeit und den Nutzen der Antworten auf die medizinischen Verbraucherfragen zu bewerten, führten wir zusätzlich eine Bewertung durch Laiennutzer (Nicht-Experten) durch."
+    },
+    "takeaway": "Fünf in Indien ansässige Laien ohne medizinischen Hintergrund bewerteten Hilfreichkeit und Nutzen der Antworten",
+    "topic": "Laien"
+   }
+  },
+  "S3.T3.cap": {
+   "note": "zh terminology; de topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "对普通用户在消费者医学问答数据集中评估回答实用性时所依据的不同维度的总结。"
+    },
+    "takeaway": "普通用户沿各维度评估消费者医学问题回答的实用性"
+   },
+   "de": {
+    "topic": "Laiennutzer"
+   }
+  },
+  "S3.SS3.p1.1": {
+   "note": "de topic over budget",
+   "de": {
+    "takeaway": "Der Abschnitt beschreibt LLMs und Anpassungstechniken für die medizinische Domäne",
+    "topic": "Anpassungstechniken"
+   }
+  },
+  "S3.SS3.SSS1.Px2.p1.1": {
+   "note": "9.4% is an average gain; takeaway over budget",
+   "en": {
+    "takeaway": "Instruction tuning lets Flan-PaLM beat PaLM by 9.4% on average, reaching SOTA"
+   },
+   "zh": {
+    "takeaway": "指令微调使Flan-PaLM平均超PaLM 9.4%，并在多个基准达最先进"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zusätzlich zu den PaLM-Basismodellen betrachteten wir auch das von ⟦a74 [15]⟧ eingeführte instruktionsoptimierte Gegenstück.",
+     "1": "Diese Modelle werden mittels Instruction-Tuning trainiert, das heißt durch Finetuning des Modells auf einer Sammlung von Datensätzen, in denen jedem Beispiel eine Kombination aus Instruktionen und/oder Few-Shot-Exemplaren vorangestellt ist."
+    },
+    "takeaway": "Durch Instruction-Tuning schlägt Flan-PaLM das Basismodell PaLM im Mittel um 9,4% und erreicht SOTA",
+    "topic": "Instruction-Tuning"
+   }
+  },
+  "S3.SS3.SSS1.Px2.p2.1": {
+   "note": "topic not in takeaway; takeaway over budget",
+   "en": {
+    "takeaway": "PaLM and Flan-PaLM were studied at three model sizes: 8B, 62B and 540B"
+   },
+   "zh": {
+    "takeaway": "PaLM与Flan-PaLM考察了8B、62B和540B三种模型规模"
+   },
+   "de": {
+    "takeaway": "PaLM und Flan-PaLM wurden in drei Modellgrößen betrachtet: 8B, 62B und 540B",
+    "topic": "drei Modellgrößen"
+   }
+  },
+  "S3.SS3.SSS2.p1.1": {
+   "note": "reason was an unsupported spin; unit's point is data-efficient alignment",
+   "en": {
+    "takeaway": "Scarce medical data favors data-efficient alignment via prompting and prompt tuning",
+    "reason": "Safety-critical medicine needs domain alignment, but end-to-end finetuning needs large in-domain data that medicine lacks",
+    "topic": "data-efficient alignment"
+   },
+   "zh": {
+    "sentences": {
+     "3": "因此，在本研究中我们聚焦于建立在提示 ⟦a81 [12]⟧和提示微调 ⟦a82 [45]⟧之上的数据高效对齐策略。"
+    },
+    "takeaway": "医学数据稀缺，故采用基于提示与提示微调的数据高效对齐",
+    "reason": "安全关键的医学需要领域对齐，但端到端微调需要大量域内数据，而医学数据稀缺",
+    "topic": "数据高效对齐"
+   },
+   "de": {
+    "takeaway": "Knappe medizinische Daten sprechen für dateneffiziente Ausrichtung per Prompting und Prompt-Tuning",
+    "reason": "Sicherheitskritische Medizin erfordert Domänenanpassung, doch End-to-End-Finetuning braucht große domäneninterne Datenmengen, die fehlen",
+    "topic": "dateneffiziente Ausrichtung"
+   }
+  },
+  "S3.SS3.SSS2.Px1.p1.1": {
+   "note": "terminology consistency",
+   "de": {
+    "sentences": {
+     "2": "Der bemerkenswerte Erfolg des In-Context-Few-Shot-Lernens hat die Entwicklung vieler Prompting-Strategien angeregt, darunter Scratchpad ⟦a84 [61]⟧, Chain-of-Thought ⟦a85 [91]⟧ und Least-to-Most-Prompting ⟦a86 [100]⟧, insbesondere für mehrstufige Berechnungs- und Schlussfolgerungsprobleme wie Mathematikaufgaben ⟦a87 [17]⟧.",
+     "3": "In dieser Studie konzentrierten wir uns auf Standard-Few-Shot-, Chain-of-Thought- und Self-Consistency-Prompting, wie im Folgenden erläutert."
+    }
+   }
+  },
+  "S3.SS3.SSS2.Px2.p1.1": {
+   "note": "de topic cut",
+   "de": {
+    "sentences": {
+     "0": "Die standardmäßige Few-Shot-Prompting-Strategie wurde von ⟦a88 [12]⟧ eingeführt.",
+     "1": "Hierbei wird der Prompt an das Modell so gestaltet, dass er wenige Few-Shot-Beispiele enthält, die die Aufgabe durch textbasierte Demonstrationen beschreiben.",
+     "5": "Das Gegenstück des Zero-Shot-Promptings umfasst typischerweise nur eine Anweisung, die die Aufgabe beschreibt, ohne zusätzliche Beispiele.",
+     "6": "⟦a89 [12]⟧ beobachtete, dass Zero-Shot-Prompting nur mäßig mit der Modellgröße skalierte, während die Leistung beim Few-Shot-Prompting schneller zunahm."
+    },
+    "takeaway": "Few-Shot-Prompting bettet Eingabe-Ausgabe-Demonstrationen in den Prompt ein, anders als Zero-Shot-Anweisungen",
+    "reason": "Die Beispielzahl ist durch das Eingabekontextfenster des Modells begrenzt, und die Leistung skalierte mit der Modellgröße schneller als bei Zero-Shot",
+    "topic": "Few-Shot-Prompting"
+   }
+  },
+  "S3.SS3.SSS2.Px2.p2.1": {
+   "note": "de typo 'datasettspezifische'; topic cut; distinct topic",
+   "zh": {
+    "sentences": {
+     "3": "对于消费者医学问答数据集，我们通常使用5个输入-输出示例，但考虑到还需要在提示文本中容纳摘要上下文，PubMedQA的示例数量减少到3个或更少。"
+    },
+    "topic": "临床医生"
+   },
+   "de": {
+    "sentences": {
+     "0": "In dieser Studie arbeiteten wir mit einem Gremium qualifizierter Kliniker zusammen, um die besten Demonstrationsbeispiele zu identifizieren und die Few-Shot-Prompts zu erstellen.",
+     "2": "Die Anzahl der Few-Shot-Demonstrationen variierte je nach Datensatz."
+    },
+    "takeaway": "Kliniker erstellten datensatzspezifische Few-Shot-Prompts, meist 5 Beispiele, aber 3 oder weniger für PubMedQA",
+    "topic": "Few-Shot-Prompts"
+   }
+  },
+  "S3.SS3.SSS2.Px3.p1.1": {
+   "note": "zh0 lacked a main verb; de Reasoning anglicism, topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "由 ⟦a92 [91]⟧ 提出的思维链（CoT）是指为提示中的每个少样本示例补充逐步分解，以及一组通向最终答案的连贯中间推理步骤。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Chain-of-Thought (CoT), eingeführt von ⟦a92 [91]⟧, besteht darin, jedes Few-Shot-Beispiel im Prompt um eine schrittweise Zerlegung und eine kohärente Menge von Zwischenschritten der Argumentation hin zur endgültigen Antwort zu ergänzen.",
+     "2": "⟦a93 [91]⟧ zeigte, dass CoT-Prompting in ausreichend großen Sprachmodellen Fähigkeiten zum Schlussfolgern hervorrufen und die Leistung bei Aufgaben wie mathematischen Problemen ⟦a94 [17]⟧ dramatisch verbessern kann.",
+     "3": "Darüber hinaus scheint das Auftreten solchen CoT-Schlussfolgerns eine emergente Fähigkeit ⟦a95 [90]⟧ von LLMs zu sein."
+    },
+    "takeaway": "Chain-of-Thought ergänzt Few-Shot-Beispiele um schrittweise Zwischenschritte des Schlussfolgerns",
+    "reason": "Es ahmt menschliches mehrstufiges Schlussfolgern nach und entsteht in ausreichend großen Sprachmodellen, wodurch Mathematik- und STEM-Aufgaben verbessert werden",
+    "topic": "Chain-of-Thought"
+   }
+  },
+  "S3.SS3.SSS2.Px3.p2.1": {
+   "note": "topic 'medical questions' vague; de Reasoning",
+   "en": {
+    "topic": "CoT prompts"
+   },
+   "zh": {
+    "topic": "思维链提示"
+   },
+   "de": {
+    "sentences": {
+     "0": "Viele der in dieser Studie untersuchten medizinischen Fragen erfordern komplexes mehrstufiges Schlussfolgern, wodurch sie sich gut für CoT-Prompting-Techniken eignen."
+    },
+    "reason": "Medizinische Fragen erfordern mehrstufiges Schlussfolgern, wodurch sie sich gut für CoT-Prompt-Demonstrationen eignen",
+    "topic": "CoT-Prompts"
+   }
+  },
+  "S3.SS3.SSS2.Px4.p1.1": {
+   "note": "reason claimed strong gains here; source cites gains in prior work [47]",
+   "en": {
+    "reason": "Medicine offers multiple reasoning routes to the right answer; marginalizing them out can yield the most consistent answer"
+   },
+   "zh": {
+    "sentences": {
+     "2": "这一思想由⟦a98 [88]⟧提出，名称为“自洽性”。",
+     "5": "自洽性提示策略在⟦a99 [47]⟧中带来了特别显著的提升，我们在包含多项选择题的数据集MedQA、MedMCQA、PubMedQA和MMLU上采用了相同的方法。"
+    },
+    "takeaway": "自洽性采样多个输出并取多数投票",
+    "reason": "医学中通向正确答案的推理路径可能有多条，将其边缘化可得到最一致的答案"
+   },
+   "de": {
+    "reason": "In der Medizin kann es mehrere Wege zur richtigen Antwort geben, deren Marginalisierung die konsistenteste Antwort liefern kann"
+   }
+  },
+  "S3.SS3.SSS2.Px5.p2.1": {
+   "note": "de grammar ('dem Eingabe'), awkward 'aus hartem Text', takeaway",
+   "de": {
+    "sentences": {
+     "0": "Diese Verwendung von Soft-Prompts lässt sich von den diskreten, textbasierten „harten“ Few-Shot-Prompts abgrenzen, die von LLMs wie GPT-3 ⟦a102 [12]⟧ populär gemacht wurden.",
+     "4": "Das Prompt-Tuning von ⟦a105 [45]⟧ kann als Vereinfachung dieser Idee betrachtet werden, indem die lernbaren Parameter auf diejenigen beschränkt werden, die eine kleine Anzahl von Tokens repräsentieren, die der Eingabe als Soft-Prompt vorangestellt werden."
+    },
+    "takeaway": "Soft-Prompt-Tuning braucht nur Dutzende Beispiele und wird bei großen Modellen dem Finetuning ebenbürtig"
+   }
+  },
+  "S3.F2.cap": {
+   "note": "de: exemplars are clinician-written, not 'clinical'",
+   "de": {
+    "sentences": {
+     "0": "Instruction-Prompt-Tuning für Med-PaLM Wir verwenden Anweisungen und Beispiele von einem Gremium qualifizierter Kliniker für jeden der Datensätze zur Beantwortung medizinischer Verbraucherfragen und nutzen sie, um Flan-PaLM per Instruction-Prompt-Tuning anzupassen."
+    },
+    "takeaway": "Med-PaLM ist ein per Instruction-Prompt-Tuning auf von Klinikern verfassten Beispielen angepasstes Flan-PaLM",
+    "reason": "Anweisungen und Beispiele von Klinikern für Datensätze zu medizinischen Verbraucherfragen richten zusätzliche Prompt-Parameter auf die medizinische Domäne aus"
+   }
+  },
+  "S3.SS3.SSS3.p1.1": {
+   "note": "reason contained raw citation text '[89, 15]'",
+   "en": {
+    "reason": "Using CoT data in finetuning led to robust improvements on tasks requiring reasoning"
+   },
+   "zh": {
+    "reason": "在微调中使用CoT数据能稳健提升需要推理的任务表现"
+   },
+   "de": {
+    "sentences": {
+     "1": "Insbesondere zeigte Flan-PaLM die Vorteile der Verwendung von CoT-Daten beim Finetuning, was zu robusten Verbesserungen bei Aufgaben führte, die Schlussfolgerungen erforderten."
+    },
+    "reason": "Finetuning mit CoT-Daten führte zu robusten Verbesserungen bei Aufgaben, die Schlussfolgern erfordern",
+    "topic": "Multi-Task-Instruction-Finetuning"
+   }
+  },
+  "S3.SS3.SSS3.p2.1": {
+   "note": "'prompting' ambiguous with the technique; over budget",
+   "en": {
+    "takeaway": "Flan-PaLM shows key gaps on consumer medical questions, motivating extra training on medical data"
+   },
+   "de": {
+    "sentences": {
+     "0": "Angesichts der starken Leistung des Instruction-Tunings bauten wir in dieser Arbeit primär auf dem Modell Flan-PaLM auf.",
+     "1": "Wie jedoch in ⟦a110 Section 4.5⟧ diskutiert, offenbarte unsere menschliche Bewertung zentrale Lücken in der Leistung von Flan-PaLM auf den Datensätzen zur Beantwortung medizinischer Verbraucherfragen, selbst mit Few-Shot-Prompting."
+    },
+    "reason": "Die menschliche Bewertung in Abschnitt 4.5 deckte diese Lücken in Flan-PaLM selbst mit Few-Shot-Prompting auf"
+   }
+  },
+  "S3.SS3.SSS3.p3.1": {
+   "note": "de broken phrase 'Rechen- und Kosten', 'klinischer Daten' wrong",
+   "de": {
+    "sentences": {
+     "0": "Für dieses zusätzliche Training verwendeten wir Prompt-Tuning anstelle von Full-Model-Finetuning, angesichts der Rechenkosten und der Kosten für die Datenerstellung durch Kliniker.",
+     "2": "Konkret verwenden wir den durch Prompt-Tuning erlernten Soft-Prompt nicht als Ersatz für einen aufgabenspezifischen, von Menschen entwickelten Prompt, sondern setzen den Soft-Prompt als initiales Präfix ein, das über mehrere medizinische Datensätze hinweg geteilt wird und auf das der relevante aufgabenspezifische, von Menschen entwickelte Prompt (bestehend aus Anweisungen und/oder Few-Shot-Beispielen, die Chain-of-Thought-Beispiele sein können) zusammen mit der eigentlichen Frage und/oder dem Kontext folgt."
+    },
+    "takeaway": "Instruction-Prompt-Tuning setzt einen geteilten Soft-Prompt vor aufgabenspezifische Hard-Prompts",
+    "reason": "Prompt-Tuning wurde wegen der Rechenkosten und der Kosten für die Datenerstellung durch Kliniker gegenüber Full-Model-Finetuning gewählt",
+    "topic": "Soft-Prompt"
+   }
+  },
+  "S3.SS3.SSS3.p4.1": {
+   "note": "terminology consistency",
+   "de": {
+    "sentences": {
+     "0": "Wir bezeichnen diese Methode des Prompt-Tunings als „Instruction-Prompt-Tuning“.",
+     "1": "Instruction-Prompt-Tuning kann somit als ein leichtgewichtiger Weg (daten-, parameter- und recheneffizient sowohl beim Training als auch bei der Inferenz) gesehen werden, ein Modell darauf zu trainieren, Anweisungen in einer oder mehreren Domänen zu befolgen.",
+     "2": "In unserem Setting passte Instruction-Prompt-Tuning LLMs besser an die spezifische Art von Anweisungen an, die in der von uns adressierten Familie medizinischer Datensätze verwendet werden."
+    },
+    "takeaway": "Instruction-Prompt-Tuning ist ein leichtgewichtiger Weg, Modelle auf Domänenanweisungen zu trainieren",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S3.SS3.SSS3.p5.1": {
+   "note": "takeaway over budget and stated 'first' without the authors' hedge",
+   "en": {
+    "takeaway": "Instruction prompt tuning is a hard-soft hybrid: soft prompt before full hard prompt",
+    "reason": "To the authors' knowledge, it is the first published soft prompt prefixed to a full hard prompt",
+    "topic": "hard-soft hybrid"
+   },
+   "zh": {
+    "takeaway": "指令提示微调属硬软混合：在完整硬提示前加软提示",
+    "reason": "据作者所知，这是首个在完整硬提示前加软提示的已发表示例"
+   },
+   "de": {
+    "sentences": {
+     "0": "Angesichts der Kombination von Soft-Prompt und Hard-Prompt kann Instruction-Prompt-Tuning als eine Art des „Hard-Soft-Hybrid-Prompt-Tuning“ ⟦a111 [52]⟧ betrachtet werden, neben bestehenden Techniken, die harte Anker-Tokens in einen Soft-Prompt einfügen ⟦a112 [53]⟧, gelernte Soft-Tokens in einen Hard-Prompt einfügen ⟦a113 [28]⟧ oder einen gelernten Soft-Prompt als Präfix für einen kurzen Zero-Shot-Hard-Prompt verwenden ⟦a114 [26, 96]⟧.",
+     "1": "Nach unserem besten Wissen ist unseres das erste veröffentlichte Beispiel für das Lernen eines Soft-Prompts, der einem vollständigen Hard-Prompt vorangestellt wird, der eine Mischung aus Anweisungen und Few-Shot-Beispielen enthält."
+    },
+    "takeaway": "Instruction-Prompt-Tuning ist ein Hard-Soft-Hybrid: Soft-Prompt vor vollständigem Hard-Prompt",
+    "reason": "Nach bestem Wissen der Autoren ist dies das erste veröffentlichte Beispiel eines Soft-Prompts vor einem vollständigen Hard-Prompt",
+    "topic": "Hard-Soft-Hybrid"
+   }
+  },
+  "S3.SS3.SSS4.p1.1": {
+   "note": "zh: 'unlikely to harm' became 'not harming'; zh takeaway awkward; de recall",
+   "zh": {
+    "sentences": {
+     "1": "这些示例被有效地用于指导模型生成更符合医学领域要求的文本，包括良好的医学理解、临床知识回忆以及不太可能危害患者的医学知识推理。"
+    },
+    "takeaway": "基于少量示例的指令提示微调使Flan-PaLM适应医学领域",
+    "reason": "精选示例教授医学理解、临床知识回忆和不太可能危害患者的推理"
+   },
+   "de": {
+    "sentences": {
+     "0": "Um Flan-PaLM an den medizinischen Bereich anzupassen, wandten wir Instruction-Prompt-Tuning auf eine kleine Menge von Beispielen an.",
+     "1": "Diese Beispiele wurden wirksam eingesetzt, um das Modell anzuweisen, Textgenerierungen zu erzeugen, die besser mit den Anforderungen des medizinischen Bereichs übereinstimmen, mit guten Beispielen für medizinisches Verständnis, den Abruf klinischen Wissens und das Schlussfolgern über medizinisches Wissen, das wahrscheinlich nicht zu einer Schädigung von Patienten führt."
+    },
+    "takeaway": "Instruction-Prompt-Tuning auf Beispielen passt Flan-PaLM an den medizinischen Bereich an",
+    "reason": "Kuratierte Beispiele lehren medizinisches Verständnis, den Abruf klinischen Wissens und Schlussfolgern, das Patienten wahrscheinlich nicht schadet"
+   }
+  },
+  "S3.SS3.SSS4.p2.1": {
+   "note": "de primary care term; distinct topic",
+   "de": {
+    "sentences": {
+     "1": "Diese Kliniker waren in den USA und Großbritannien ansässig und hatten Fachkenntnisse in der Primärversorgung, Chirurgie, Inneren Medizin und Pädiatrie.",
+     "4": "Es blieben 40 Beispiele aus HealthSearchQA, MedicationQA und LiveQA übrig, die für das Training mit Instruction-Prompt-Tuning verwendet wurden."
+    }
+   },
+   "zh": {
+    "topic": "示例答案"
+   }
+  },
+  "S3.SS3.SSS4.p3.1": {
+   "note": "en topic over budget",
+   "en": {
+    "takeaway": "Med-PaLM and Flan-PaLM were evaluated on MultiMedQA's consumer medical datasets",
+    "topic": "consumer medical datasets"
+   },
+   "de": {
+    "sentences": {
+     "1": "⟦a115 Figure 2⟧ gibt einen Überblick über unseren Ansatz des Instruction-Prompt-Tunings für Med-PaLM."
+    }
+   }
+  },
+  "S4.F3.cap": {
+   "note": "de topic vague",
+   "de": {
+    "topic": "Flan-PaLM 540B"
+   }
+  },
+  "S4.SS1.p1.1": {
+   "note": "factual: reason invented 'a fifth of its score' (20.1 points is far more); distinct topic",
+   "en": {
+    "reason": "MedQA here has USMLE-style questions with four options, scored by multiple-choice accuracy"
+   },
+   "zh": {
+    "reason": "MedQA由4选项的USMLE风格题目构成，指标为选择题准确率",
+    "topic": "4选项MedQA"
+   },
+   "de": {
+    "reason": "MedQA besteht hier aus Fragen im USMLE-Stil mit vier Optionen, gemessen wird die Multiple-Choice-Genauigkeit"
+   }
+  },
+  "S4.SS2.p2.1": {
+   "note": "zh: English 'Figure 2' left; zh takeaway grammar",
+   "zh": {
+    "sentences": {
+     "1": "结果总结于下方的图2中。"
+    },
+    "takeaway": "Flan-PaLM在PubMedQA上达79.0%，超BioGPT 0.8%"
+   }
+  },
+  "S4.T4.cap": {
+   "note": "topic cut with unbalanced parenthesis",
+   "en": {
+    "topic": "best performing models"
+   },
+   "zh": {
+    "topic": "最佳表现模型"
+   },
+   "de": {
+    "topic": "leistungsstärksten Modelle"
+   }
+  },
+  "S4.F4.cap": {
+   "note": "zh topic precision",
+   "zh": {
+    "topic": "MMLU临床主题"
+   },
+   "de": {
+    "sentences": {
+     "0": "Vergleich der SOTA-LLMs bei klinischen MMLU-Themen: Flan-PaLM erzielt eine State-of-the-Art-Leistung bei klinischen MMLU-Themen."
+    },
+    "takeaway": "Flan-PaLM erzielt State-of-the-Art-Leistung bei klinischen MMLU-Themen",
+    "topic": "klinischen MMLU-Themen"
+   }
+  },
+  "S4.SS4.SSS0.Px1.p1.1": {
+   "note": "de terminology",
+   "de": {
+    "sentences": {
+     "0": "Über alle Modellgrößen hinweg beobachteten wir, dass das instruktionsoptimierte Flan-PaLM-Modell das Baseline-PaLM-Modell bei allen drei Datensätzen übertraf, MedQA, MedMCQA und PubMedQA.",
+     "5": "Diese Ergebnisse belegten die starken Vorteile des Instruction-Tunings."
+    }
+   }
+  },
+  "S4.SS4.SSS0.Px1.p2.1": {
+   "note": "en reason over budget; zh topic not verbatim",
+   "en": {
+    "reason": "Med-PaLM targeted long-form generation, but instruction tuning's multiple-choice success makes in-domain instruction prompt tuning look promising"
+   },
+   "zh": {
+    "reason": "Med-PaLM旨在改进长文本生成，但领域无关指令微调在选择题上的成功使领域内指令提示微调显得有前景",
+    "topic": "选择题准确率"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir haben noch keine gründliche Analyse der Wirkung von Instruction-Prompt-Tuning auf die Multiple-Choice-Genauigkeit abgeschlossen; unsere Analyse in diesem Abschnitt betrifft Flan-PaLM, nicht Med-PaLM.",
+     "1": "Med-PaLM (per Instruction-Prompt-Tuning angepasstes Flan-PaLM) wurde entwickelt, um die in ⟦a133 Section 4.5⟧ vorgestellten Ergebnisse von Flan-PaLM bei der Langtextgenerierung zu verbessern, indem das Modell besser an die medizinische Domäne angepasst wird.",
+     "2": "Angesichts des Erfolgs von domänenunabhängigem Instruction-Tuning für die Multiple-Choice-Fragebeantwortung erscheint jedoch domänenspezifisches Instruction-Prompt-Tuning vielversprechend, und wir präsentieren ein vorläufiges Ergebnis in ⟦a134 Section A.6⟧."
+    },
+    "takeaway": "Die Wirkung von Instruction-Prompt-Tuning auf Multiple-Choice-Genauigkeit ist noch nicht gründlich analysiert",
+    "reason": "Med-PaLM sollte die Langtextgenerierung verbessern, doch der Erfolg des Instruction-Tunings bei Multiple-Choice lässt domänenspezifisches Instruction-Prompt-Tuning vielversprechend erscheinen"
+   }
+  },
+  "S4.SS4.SSS0.Px2.p1.1": {
+   "note": "zh '提升2倍' reads as tripling; de topic cut",
+   "zh": {
+    "sentences": {
+     "1": "我们观察到，在PaLM和Flan-PaLM中，将模型从8B扩展到540B时性能约翻了一番。"
+    }
+   },
+   "de": {
+    "topic": "Leistungsverbesserungen"
+   }
+  },
+  "S4.SS4.SSS0.Px3.p1.1": {
+   "note": "topic named the baseline, not CoT; zh English 'few-shot'",
+   "en": {
+    "topic": "CoT prompting"
+   },
+   "zh": {
+    "sentences": {
+     "0": "⟦a137 6⟧总结了使用CoT提示的结果，并与使用Flan-PaLM 540B模型的少样本提示策略进行了比较。",
+     "1": "有些出乎意料的是，在MedQA、MedMCQA和PubMedQA这三个多项选择数据集上，我们并未观察到CoT相较标准少样本提示策略带来改进。"
+    },
+    "takeaway": "CoT提示在三个数据集上未优于少样本提示",
+    "topic": "CoT提示"
+   },
+   "de": {
+    "topic": "CoT-Prompting"
+   }
+  },
+  "S4.T6.cap": {
+   "note": "topic not verbatim; reason had a false 'so'",
+   "en": {
+    "reason": "Results cover MultiMedQA's multiple-choice medical QA datasets, broken out by model size and prompting strategy",
+    "topic": "CoT performance"
+   },
+   "zh": {
+    "sentences": {
+     "0": "Flan-PaLM模型在MultiMedQA多项选择医学问答数据集上，不同模型规模变体采用少样本和思维链（CoT）提示的性能总结。"
+    },
+    "takeaway": "表6总结不同规模Flan-PaLM的少样本与CoT性能",
+    "topic": "CoT性能"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zusammenfassung der Leistung von Flan-PaLM-Modellen mit Few-Shot- und Chain-of-Thought (CoT)-Prompting über verschiedene Modellgrößenvarianten hinweg auf den Multiple-Choice-Datensätzen zur medizinischen Fragebeantwortung in MultiMedQA."
+    },
+    "reason": "Die Ergebnisse umfassen die Multiple-Choice-Datensätze zur medizinischen Fragebeantwortung in MultiMedQA, aufgeschlüsselt nach Modellgröße und Prompting-Strategie",
+    "topic": "CoT-Leistung"
+   }
+  },
+  "S4.SS4.SSS0.Px4.p1.1": {
+   "note": "grammar 'drops PubMedQA'; topic named the baseline",
+   "en": {
+    "takeaway": "Self-consistency beats few-shot prompting on MedQA and MedMCQA but lowers PubMedQA performance",
+    "reason": "The authors fixed 11 chain-of-thought paths and marginalized to the most consistent answer, improving MedQA by over 7%",
+    "topic": "Self-consistency"
+   },
+   "zh": {
+    "topic": "自洽性"
+   },
+   "de": {
+    "sentences": {
+     "0": "⟦a139 [88]⟧ zeigte, dass Self-Consistency-Prompting helfen kann, wenn CoT-Prompting die Leistung verschlechtert.",
+     "5": "Mit dieser Strategie beobachteten wir signifikante Verbesserungen gegenüber der standardmäßigen Few-Shot-Prompting-Strategie für das Flan-PaLM 540B-Modell auf den Datensätzen MedQA und MedMCQA.",
+     "6": "Insbesondere beim MedQA-Datensatz beobachteten wir eine Verbesserung von mehr als 7% durch Self-Consistency.",
+     "7": "Etwas unerwartet führte Self-Consistency beim PubMedQA-Datensatz jedoch zu einem Leistungsabfall."
+    },
+    "takeaway": "Self-Consistency bringt Zugewinne auf MedQA und MedMCQA, aber Verluste auf PubMedQA",
+    "reason": "Die Autoren legten 11 Chain-of-Thought-Pfade fest und marginalisierten zur konsistentesten Antwort, was MedQA um über 7% verbesserte",
+    "topic": "Self-Consistency"
+   }
+  },
+  "S4.SS4.SSS0.Px4.p2.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "示例回答"
+   },
+   "de": {
+    "topic": "Beispielantworten"
+   }
+  },
+  "S4.T7.cap": {
+   "note": "topic not verbatim; distinct topic",
+   "en": {
+    "topic": "model sizes"
+   },
+   "zh": {
+    "topic": "模型规模"
+   },
+   "de": {
+    "sentences": {
+     "0": "Zusammenfassung der Leistung von Flan-PaLM mit und ohne Self-Consistency-Prompting (SC) über verschiedene Modellgrößenvarianten auf den Multiple-Choice-Datensätzen."
+    },
+    "takeaway": "Die Flan-PaLM-Leistung mit und ohne Self-Consistency wird über Modellgrößen zusammengefasst",
+    "topic": "Modellgrößen"
+   }
+  },
+  "S4.T8.cap": {
+   "note": "topics not verbatim",
+   "zh": {
+    "takeaway": "展示了支持Flan-PaLM 540B多项选择答案的MedQA解释示例"
+   },
+   "de": {
+    "topic": "Beispielbegründungen"
+   }
+  },
+  "S4.F5.cap": {
+   "note": "accuracy rises only on non-deferred questions; zh 延迟 (delay) mistranslates defer",
+   "en": {
+    "takeaway": "Selective prediction: deferring more raises Flan-PaLM 540B accuracy on non-deferred questions",
+    "topic": "Selective prediction"
+   },
+   "zh": {
+    "sentences": {
+     "0": "选择性预测分析：对Flan-PaLM 540B模型在自洽性下拒答行为的分析。",
+     "1": "我们观察到，如果我们基于自洽性的不确定性阈值更频繁地拒答，模型在其作答的问题上会变得越来越准确。"
+    },
+    "takeaway": "选择性预测：拒答越多，Flan-PaLM 540B在作答问题上越准确",
+    "reason": "随着更多问题被拒答，模型在作答问题上的准确率上升"
+   },
+   "de": {
+    "sentences": {
+     "0": "Selektive Vorhersageanalyse Analyse des Zurückstellungsverhaltens des Flan-PaLM 540B-Modells mit Self-Consistency.",
+     "1": "Wir beobachten, dass das Modell bei Fragen, die es nicht zurückstellt, zunehmend genauer wird, wenn wir mithilfe eines auf Self-Consistency basierenden Unsicherheitsschwellenwerts häufiger zurückstellen."
+    },
+    "takeaway": "Selektive Vorhersage: Häufigeres Zurückstellen erhöht die Genauigkeit von Flan-PaLM 540B bei beantworteten Fragen",
+    "topic": "Selektive Vorhersage"
+   }
+  },
+  "S4.SS4.SSS0.Px5.p1.1": {
+   "note": "overstatement: paper calls uncertainty estimates 'one solution'; zh 保留 means keep",
+   "en": {
+    "takeaway": "LLMs can generate false statements; communicating uncertainty estimates is one solution"
+   },
+   "zh": {
+    "sentences": {
+     "0": "LLM能够生成长篇、连贯且复杂的文本。",
+     "2": "尤其在医疗环境中，这类失效模式需要被仔细审查，而在真实世界应用中，不太可能为真的生成内容不应输出。",
+     "4": "因此，一种解决方案是让LLM在给出回应的同时传达不确定性估计。"
+    },
+    "takeaway": "LLM可能生成与事实不符的陈述，一种解决方案是传达不确定性估计",
+    "reason": "真实场景可能需要扣下不太可能为真的输出，或转而求助专家"
+   },
+   "de": {
+    "takeaway": "LLMs können falsche Aussagen generieren, eine Lösung ist die Kommunikation von Unsicherheitsschätzungen",
+    "reason": "In realen Anwendungen müssen wahrscheinlich falsche Generierungen eventuell zurückgehalten oder an Expertinnen und Experten verwiesen werden"
+   }
+  },
+  "S4.SS4.SSS0.Px5.p2.1": {
+   "note": "takeaway over budget; reason dropped the hedge 'seem to'",
+   "en": {
+    "takeaway": "Selective prediction by self-consistency votes reaches 82.5% MedQA accuracy at 0.45 deferral",
+    "reason": "The uncertainty measure may be reasonable and LLMs seem to encode medical uncertainty, but the analysis is preliminary"
+   },
+   "zh": {
+    "sentences": {
+     "1": "我们构建了一个选择性预测任务⟦a143 [82]⟧，使用自洽性中与给定答案相匹配的解码数量作为不确定性的度量，并在模型置信度不足时拒绝给出该答案。",
+     "2": "我们使用Flan-PaLM 540B模型，结合思维链提示与自洽性，进行了41次解码的实验。",
+     "3": "我们在⟦a144 5⟧中观察到，随着拒答比例的上升（即提供预测所需的“置信度”更高），模型在MedQA上的表现随之提升，在拒答比例为0.45时准确率达到82.5%。",
+     "4": "这表明我们的响应不确定性度量可能是合理的，也表明LLM似乎编码了其在医学领域知识上的不确定性。"
+    },
+    "takeaway": "基于自洽性投票的选择性预测在拒答比例0.45时MedQA准确率达82.5%",
+    "reason": "该不确定性度量或许合理，LLM似乎编码了医学知识的不确定性，但分析尚属初步"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir erstellten eine selektive Vorhersageaufgabe ⟦a143 [82]⟧, verwendeten die Anzahl der Decodierungen, die mit einer gegebenen Antwort übereinstimmen, aus der Self-Consistency als Maß für Unsicherheit und nutzten sie, um die Antwort zurückzuhalten, wenn das Modell nicht angemessen zuversichtlich war.",
+     "2": "Wir führten das Experiment mit 41 Decodierungen des Flan-PaLM 540B-Modells mit Chain-of-Thought-Prompting und Self-Consistency durch."
+    },
+    "takeaway": "Selektive Vorhersage per Self-Consistency-Stimmen erreicht 82,5% MedQA-Genauigkeit bei 0,45 Zurückhaltungsanteil",
+    "reason": "Das Unsicherheitsmaß könnte angemessen sein, LLMs scheinen medizinische Unsicherheit zu kodieren, doch die Analyse ist vorläufig"
+   }
+  },
+  "S4.SS5.p1.1": {
+   "note": "zh topic vague",
+   "zh": {
+    "sentences": {
+     "2": "这些选出的问题与用于指令提示微调以生成Med-PaLM的示例问题不重叠。"
+    },
+    "reason": "HealthSearchQA提供100题，LiveQA与MedicationQA各20题，且与Med-PaLM微调示例不重叠",
+    "topic": "人工评估基准"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir wählten zufällig 100 Fragen aus HealthSearchQA, 20 Fragen aus LiveQA und 20 Fragen aus MedicationQA als einen kleineren Benchmark für langformige Antworten für eine detaillierte menschliche Bewertung aus."
+    },
+    "takeaway": "140 langformige Verbraucherfragen bildeten den Benchmark der menschlichen Bewertung"
+   }
+  },
+  "S4.SS5.p2.1": {
+   "note": "topics vague or fragment; de 'Table 2' untranslated",
+   "en": {
+    "topic": "Nine clinicians"
+   },
+   "zh": {
+    "topic": "九名临床医生"
+   },
+   "de": {
+    "takeaway": "Neun Kliniker bewerteten verblindet Antworten von Klinikern, Flan-PaLM und Med-PaLM entlang der Achsen von Tabelle 2",
+    "topic": "Neun Kliniker"
+   }
+  },
+  "S4.SS5.SSS0.Px1.p1.1": {
+   "note": "topic not verbatim; 'ungrounded' overstated 'not sufficient'; distinct topic",
+   "en": {
+    "takeaway": "Med-PaLM matches clinicians at 92.9% scientific consensus agreement, versus Flan-PaLM's 61.9%",
+    "reason": "Generic instruction tuning alone was not enough for grounded answers; instruction prompt tuning aligned Med-PaLM"
+   },
+   "zh": {
+    "sentences": {
+     "4": "这表明，仅靠通用指令微调不足以产生有科学和临床依据的答案。",
+     "5": "然而，我们观察到92.9%的Med-PaLM答案被判定为符合科学共识，这展示了指令提示微调作为一种对齐技术对于产生有科学依据答案的强大能力。"
+    },
+    "reason": "仅靠通用指令微调不足以产生有依据的答案，指令提示微调则使Med-PaLM答案有科学依据",
+    "topic": "科学共识",
+    "takeaway": "Med-PaLM科学共识一致率达92.9%，与临床医生相当，Flan-PaLM仅61.9%"
+   },
+   "de": {
+    "sentences": {
+     "5": "Wir beobachteten jedoch, dass 92,9 % der Antworten von Med-PaLM als im Einklang mit dem wissenschaftlichen Konsens beurteilt wurden, was die Stärke von Instruction-Prompt-Tuning als Alignment-Technik zur Erzeugung wissenschaftlich fundierter Antworten zeigt."
+    },
+    "takeaway": "Med-PaLM stimmt wie Kliniker zu 92,9 % mit dem wissenschaftlichen Konsens überein, Flan-PaLM nur zu 61,9 %",
+    "reason": "Generisches Instruction-Tuning allein reichte für fundierte Antworten nicht aus, Instruction-Prompt-Tuning richtete Med-PaLM darauf aus",
+    "topic": "wissenschaftlichen Konsens"
+   }
+  },
+  "S4.SS5.SSS0.Px1.p2.1": {
+   "note": "topic not verbatim / vague",
+   "en": {
+    "topic": "past scientific consensus"
+   },
+   "zh": {
+    "takeaway": "大语言模型可能反映过时共识而非当今科学共识",
+    "topic": "过时共识"
+   }
+  },
+  "S4.F6.cap": {
+   "note": "zh topic",
+   "zh": {
+    "topic": "共识一致率"
+   }
+  },
+  "S4.SS5.SSS0.Px2.p1.1": {
+   "note": "topic 'evidence' meaningless alone",
+   "en": {
+    "takeaway": "Clinicians rated answers for evidence of comprehension, retrieval and reasoning, correct or incorrect",
+    "topic": "evidence of comprehension"
+   },
+   "zh": {
+    "takeaway": "临床医生评定答案中理解、检索与推理的正误证据",
+    "topic": "正误证据"
+   },
+   "de": {
+    "topic": "Verständnis, Abrufen und Schlussfolgern"
+   }
+  },
+  "S4.SS5.SSS0.Px2.p2.1": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "0": "我们发现，专家生成的答案仍明显优于Flan-PaLM，不过通过指令提示微调后Med-PaLM的表现有所提升。",
+     "3": "然而，经指令提示微调的Med-PaLM模型得分为95.4%，缩小了模型相对于临床医生的劣势。"
+    },
+    "takeaway": "临床医生仍更优，但指令提示微调让Med-PaLM更接近"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir stellten fest, dass von Experten generierte Antworten erneut deutlich überlegen waren gegenüber Flan-PaLM, wenngleich die Leistung durch Instruction-Prompt-Tuning für Med-PaLM verbessert wurde.",
+     "3": "Das durch Instruction-Prompt-Tuning angepasste Med-PaLM-Modell erreichte jedoch 95,4 % und verringerte damit die Unterlegenheit des Modells gegenüber Klinikern."
+    },
+    "takeaway": "Kliniker blieben überlegen, doch Instruction-Prompt-Tuning brachte Med-PaLM näher heran"
+   }
+  },
+  "S4.F7.cap": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "3": "然而，经指令提示微调的Med-PaLM模型得分为95.4%，缩小了模型相对于临床医生的劣势。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "3": "Das durch Instruction-Prompt-Tuning angepasste Med-PaLM-Modell erreichte jedoch 95,4 % und verringerte damit die Unterlegenheit des Modells gegenüber Klinikern."
+    }
+   }
+  },
+  "S4.T9.cap": {
+   "note": "topic not verbatim",
+   "en": {
+    "topic": "HealthSearchQA questions"
+   },
+   "de": {
+    "topic": "HealthSearchQA-Fragen"
+   }
+  },
+  "S4.SS5.SSS0.Px3.p1.1": {
+   "note": "topic not verbatim",
+   "en": {
+    "topic": "completeness and correctness"
+   }
+  },
+  "S4.SS5.SSS0.Px3.p2.1": {
+   "note": "reason dropped 'seemed'; de takeaway over budget; distinct topic",
+   "en": {
+    "reason": "Surprisingly, instruction prompt tuning seemed to further raise inappropriate or incorrect content",
+    "topic": "Clinicians"
+   },
+   "zh": {
+    "sentences": {
+     "2": "令人意外的是，指令提示微调似乎进一步损害了性能，Med-PaLM答案中有18.7%被判定包含不当或错误内容。"
+    },
+    "reason": "令人意外的是，指令提示微调似乎反而增加了不当或错误内容",
+    "topic": "临床医生"
+   },
+   "de": {
+    "sentences": {
+     "2": "Überraschenderweise schien Instruction-Prompt-Tuning die Leistung weiter zu verschlechtern, da 18,7 % der Med-PaLM-Antworten als mit unangemessenen oder inkorrekten Inhalten behaftet beurteilt wurden."
+    },
+    "takeaway": "Inkorrekte Inhalte: Kliniker 1,4 %, Flan-PaLM 16,1 %, Med-PaLM 18,7 %",
+    "reason": "Überraschenderweise schien Instruction-Prompt-Tuning unangemessene oder inkorrekte Inhalte weiter zu erhöhen",
+    "topic": "Kliniker"
+   }
+  },
+  "S4.SS5.SSS0.Px3.p3.1": {
+   "note": "de takeaway over budget",
+   "zh": {
+    "sentences": {
+     "0": "另一方面，我们观察到指令提示微调有助于改善模型在遗漏重要信息方面的表现。"
+    },
+    "takeaway": "指令提示微调将信息缺失从47.2%降至15.1%，接近临床医生的11.1%"
+   },
+   "de": {
+    "sentences": {
+     "0": "Andererseits beobachteten wir, dass Instruction-Prompt-Tuning die Modellleistung hinsichtlich der Auslassung wichtiger Informationen verbesserte."
+    },
+    "takeaway": "Instruction-Prompt-Tuning senkte fehlende Informationen von 47,2 % auf 15,1 %, nahe den 11,1 % der Kliniker"
+   }
+  },
+  "S4.SS5.SSS0.Px3.p4.1": {
+   "note": "source offers this only as a potential explanation",
+   "en": {
+    "takeaway": "A possible explanation: longer answers reduce omissions but raise incorrect content risk"
+   },
+   "zh": {
+    "sentences": {
+     "0": "对这些观察结果的一种可能解释是，指令提示微调使Med-PaLM模型生成的答案比Flan-PaLM模型详细得多，从而减少了重要信息的遗漏。"
+    },
+    "takeaway": "一种可能解释：答案更长，减少遗漏但增加错误内容风险"
+   },
+   "de": {
+    "sentences": {
+     "0": "Eine mögliche Erklärung für diese Beobachtungen ist, dass Instruction-Prompt-Tuning das Med-PaLM-Modell lehrt, deutlich detailliertere Antworten als das Flan-PaLM-Modell zu generieren, wodurch die Auslassung wichtiger Informationen verringert wird."
+    },
+    "takeaway": "Mögliche Erklärung: Längere Antworten verringern Auslassungen, erhöhen aber das Risiko inkorrekter Inhalte",
+    "topic": "Längere Antworten"
+   }
+  },
+  "S4.F8.cap": {
+   "note": "topic not verbatim; zh0 added 'analysis' and mistranslated incorrect",
+   "en": {
+    "takeaway": "Incorrect content: clinicians 1.4%, Flan-PaLM 16.1%, Med-PaLM 18.7%",
+    "topic": "Incorrect content"
+   },
+   "zh": {
+    "sentences": {
+     "0": "临床医生对答案内容的评估：(a) 答案中错误内容的存在情况，以及 (b) 答案中缺失内容的存在情况。"
+    },
+    "takeaway": "错误内容：临床医生1.4%，Flan-PaLM 16.1%，Med-PaLM 18.7%"
+   },
+   "de": {
+    "takeaway": "Inkorrekte Inhalte: Kliniker 1,4 %, Flan-PaLM 16,1 %, Med-PaLM 18,7 %",
+    "topic": "Inkorrekte Inhalte"
+   }
+  },
+  "S4.T10.cap": {
+   "note": "zh 'can complement' stronger than 'may'",
+   "zh": {
+    "takeaway": "Med-PaLM答案或可补充HealthSearchQA中不完整的医生答案"
+   }
+  },
+  "S4.SS5.SSS0.Px4.p1.1": {
+   "note": "de grammar (subject switched to 'wir'; case and number); zh awkward; harm vs injury",
+   "zh": {
+    "sentences": {
+     "0": "我们试图识别依据生成答案采取行动可能带来的潜在危害的严重程度与可能性。",
+     "1": "我们要求评分者假设模型的输出可能导致临床医生或消费者/患者采取行动，并估计可能由此造成的身心健康相关危害的可能严重程度与可能性。",
+     "2": "我们以AHRQ Common Formats ⟦a150 [93]⟧作为评分者选择选项的依据，该文件提供了危害严重程度的选项，从死亡、严重或危及生命的伤害，到中度、轻度或无危害。",
+     "3": "我们承认，这种危害定义更常用于分析医疗服务提供过程中产生的危害，而且即便在此类情境中（对危害发生背景的了解要具体得多），医生对危害严重程度的估计也常存在显著差异⟦a151 [86]⟧。"
+    },
+    "takeaway": "评分者用AHRQ量表估计危害严重程度与可能性"
+   },
+   "de": {
+    "sentences": {
+     "1": "Wir baten die Bewertenden anzunehmen, dass die Ausgaben der Modelle zu Handlungen von Klinikern oder Verbrauchern/Patienten führen könnten, und den möglichen Schweregrad und die Wahrscheinlichkeit körperlicher oder psychischer gesundheitsbezogener Schäden einzuschätzen, die daraus resultieren könnten.",
+     "2": "Die Auswahloptionen für die Bewertenden basierten wir auf den AHRQ Common Formats ⟦a150 [93]⟧, die Optionen zur Einstufung des Schweregrads von Schaden bieten, von Tod und schwerer oder lebensbedrohlicher Verletzung über mäßigen bis zu leichtem oder keinem Schaden."
+    }
+   }
+  },
+  "S4.SS5.SSS0.Px4.p2.1": {
+   "note": "en takeaway over budget; distinct topic",
+   "en": {
+    "takeaway": "Instruction prompt tuning cut potentially harmful answers from 29.7% (Flan-PaLM) to 5.9% (Med-PaLM)"
+   },
+   "zh": {
+    "sentences": {
+     "1": "29.7%的Flan-PaLM回答被判定为可能导致危害，而Med-PaLM的这一数字降至5.9%，与临床医生生成的回答相当，后者也有5.7%的案例被判定为可能造成危害。"
+    },
+    "takeaway": "指令提示微调将潜在危害从29.7%降至5.9%",
+    "topic": "指令提示微调"
+   },
+   "de": {
+    "sentences": {
+     "0": "Trotz der breiten Definition und der Subjektivität der Bewertungen beobachteten wir, dass Instruction-Prompt-Tuning sicherere Antworten erzeugte, die sowohl die geschätzte Wahrscheinlichkeit als auch den Schweregrad verringerten."
+    },
+    "takeaway": "Instruction-Prompt-Tuning senkte den potenziellen Schaden von 29,7% der Flan-PaLM-Antworten auf 5,9% für Med-PaLM",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S4.SS5.SSS0.Px4.p3.1": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "0": "同样，在危害可能性维度上，指令提示微调使Med-PaLM的回答与专家生成的答案相匹配。"
+    },
+    "takeaway": "Med-PaLM危害可能性与专家答案相当",
+    "topic": "危害可能性"
+   },
+   "de": {
+    "sentences": {
+     "0": "Ebenso ermöglichte Instruction-Prompt-Tuning auf den Achsen der Schadenswahrscheinlichkeit, dass Med-PaLM-Antworten mit den von Experten erstellten Antworten übereinstimmten."
+    }
+   }
+  },
+  "S4.F9.cap": {
+   "note": "de reason attributed 5.7% to Med-PaLM (it is the clinicians' rate); topic vague",
+   "en": {
+    "takeaway": "Potential harm: 29.7% of Flan-PaLM answers versus 5.9% for Med-PaLM",
+    "reason": "Med-PaLM's rate was on par with clinician-generated answers, judged potentially harmful in 5.7% of cases",
+    "topic": "Potential harm"
+   },
+   "zh": {
+    "sentences": {
+     "0": "临床医生对答案潜在危害的评估：(a)可能危害的程度和(b)危害的可能性。",
+     "1": "29.7%的Flan-PaLM回答被判定为可能导致危害，而Med-PaLM的这一数字降至5.9%，与临床医生生成的回答相当，后者也有5.7%的案例被判定为可能造成危害。"
+    },
+    "takeaway": "潜在危害：Flan-PaLM为29.7%，Med-PaLM为5.9%",
+    "reason": "Med-PaLM危害率与临床医生回答的5.7%相当",
+    "topic": "潜在危害"
+   },
+   "de": {
+    "takeaway": "Potenzieller Schaden: 29,7% bei Flan-PaLM gegenüber 5,9% bei Med-PaLM",
+    "reason": "Die Rate von Med-PaLM lag gleichauf mit den von Klinikern erstellten Antworten, die in 5,7% der Fälle als potenziell schädigend galten",
+    "topic": "Potenzieller Schaden"
+   }
+  },
+  "S4.SS5.SSS0.Px5.p1.1": {
+   "note": "zh topic not verbatim",
+   "zh": {
+    "topic": "偏见答案"
+   }
+  },
+  "S4.F10.cap": {
+   "note": "topic vague; de 'clinical' vs 'clinician' evaluation",
+   "en": {
+    "takeaway": "Possible bias: 7.9% of Flan-PaLM answers versus 0.8% of Med-PaLM answers",
+    "topic": "Possible bias"
+   },
+   "zh": {
+    "takeaway": "可能的偏见：Flan-PaLM占7.9%，Med-PaLM占0.8%",
+    "topic": "可能的偏见"
+   },
+   "de": {
+    "sentences": {
+     "0": "Klinikerbewertung möglicher Verzerrung in Antworten: Es wurde festgestellt, dass Flan-PaLM-Antworten in 7,9 % der Fälle verzerrte Informationen enthielten."
+    },
+    "takeaway": "Mögliche Verzerrung: 7,9 % der Flan-PaLM-Antworten gegenüber 0,8 % bei Med-PaLM",
+    "topic": "Mögliche Verzerrung"
+   }
+  },
+  "S4.SS5.SSS0.Px6.p1.1": {
+   "note": "zh sentence gained a marker absent from the source; topics fragments",
+   "en": {
+    "topic": "Lay users"
+   },
+   "zh": {
+    "sentences": {
+     "1": "结果总结于下方的图10中。"
+    },
+    "takeaway": "普通用户判定Med-PaLM有帮助的比例为80.3%，Flan-PaLM为60.6%",
+    "topic": "普通用户"
+   },
+   "de": {
+    "topic": "Laien"
+   }
+  },
+  "S4.SS5.SSS0.Px6.p2.1": {
+   "note": "zh terminology (lay users)",
+   "zh": {
+    "sentences": {
+     "0": "普通用户评估一致再现了指令提示微调在生成对用户有帮助的答案方面的优势，同时也表明，要接近人类临床医生所提供输出的质量仍有大量工作要做。"
+    },
+    "takeaway": "指令提示微调的优势在普通用户评估中成立，但临床医生仍更优",
+    "reason": "普通用户评分再现了有帮助性的提升，但与人类临床医生输出质量之间仍有明显差距",
+    "topic": "指令提示微调"
+   },
+   "de": {
+    "sentences": {
+     "0": "Die Laienbewertung reproduzierte durchgängig die Vorteile des Instruction-Prompt-Tunings, Antworten zu erzeugen, die für Nutzer hilfreich sind, und zeigte zugleich, dass noch erhebliche Arbeit nötig ist, um die Qualität der von menschlichen Klinikern gelieferten Ausgaben anzunähern."
+    },
+    "takeaway": "Die Vorteile des Instruction-Prompt-Tunings gelten auch bei der Laienbewertung, doch Kliniker bleiben überlegen",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S4.F11.cap": {
+   "note": "en grammar 'closes intent gap to 94.0%'",
+   "en": {
+    "takeaway": "Med-PaLM addresses query intent in 94.0% of answers, near clinicians' 95.9%",
+    "topic": "query intent"
+   },
+   "zh": {
+    "sentences": {
+     "0": "答案的普通用户评估（a）有帮助性（b）对查询意图的回应程度。Flan-PaLM的答案仅在60.6%的情况下被发现有帮助。"
+    },
+    "takeaway": "Med-PaLM回应查询意图的比例达94.0%，接近临床医生的95.9%",
+    "topic": "查询意图"
+   },
+   "de": {
+    "takeaway": "Med-PaLM erfasst die Anfrageabsicht in 94,0 % der Antworten, nahe den 95,9 % der Kliniker",
+    "topic": "Anfrageabsicht"
+   }
+  },
+  "S5.p1.1": {
+   "note": "reason 'only when' overstated the authors' 'may'",
+   "en": {
+    "reason": "The authors suggest strong performance may emerge when large scale meets effective instruction prompt tuning"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们的结果表明，医学问答上的强劲表现可能是LLM结合有效的指令提示微调后所涌现出的一种能力⟦a155 [90]⟧。"
+    },
+    "reason": "强劲表现可能在大规模与有效的指令提示微调相结合时涌现"
+   },
+   "de": {
+    "takeaway": "Starke medizinische Fragebeantwortung könnte eine emergente Fähigkeit von LLMs mit Instruction-Prompt-Tuning sein",
+    "reason": "Starke Leistung könnte entstehen, wenn Skalierung mit effektivem Instruction-Prompt-Tuning zusammenkommt"
+   }
+  },
+  "S5.p2.1": {
+   "note": "topic 'Accuracy' vague; de over budget and typo; distinct topic",
+   "en": {
+    "takeaway": "Scaling PaLM from 8B to 540B roughly doubled accuracy; instruction tuning helped further",
+    "topic": "Scaling PaLM"
+   },
+   "zh": {
+    "sentences": {
+     "0": "首先，我们观察到明显的规模效应，当我们将PaLM模型从80亿参数扩展到5400亿参数时，准确率约翻了一番。"
+    },
+    "takeaway": "PaLM规模扩展使准确率约翻倍，指令微调进一步提升",
+    "topic": "规模扩展"
+   },
+   "de": {
+    "sentences": {
+     "4": "Darüber hinaus war auch Instruction-Tuning wirksam, wobei die Flan-PaLM-Modelle bei allen Größenvarianten auf allen Multiple-Choice-Datensätzen besser abschnitten als die PaLM-Modelle."
+    },
+    "takeaway": "Die Skalierung von PaLM von 8 auf 540 Milliarden verdoppelte etwa die Genauigkeit, Instruction-Tuning half zusätzlich",
+    "topic": "Skalierung von PaLM"
+   }
+  },
+  "S5.p3.1": {
+   "note": "reason 'real capability' went beyond the source",
+   "en": {
+    "reason": "PaLM 8B and 540B showed similar deltas on contaminated and cleaned test sets, arguing against memorization alone"
+   },
+   "zh": {
+    "reason": "PaLM 8B与540B在污染与清洗测试集上的性能差值相似，说明仅靠记忆无法解释"
+   },
+   "de": {
+    "sentences": {
+     "1": "⟦a156 [14]⟧ zeigten jedoch ähnliche Leistungsdeltas für das PaLM-8B- und das 540B-Modell bei der Bewertung kontaminierter (d. h. wenn ein Teil des Testsatzes im Vortrainingskorpus des Modells enthalten ist) und bereinigter Testsätze."
+    },
+    "takeaway": "Memorierung allein erklärt die starke skalierte Leistung bei der medizinischen Fragebeantwortung nicht",
+    "reason": "PaLM 8B und 540B zeigten ähnliche Deltas auf kontaminierten und bereinigten Testsätzen, was gegen reine Memorierung spricht"
+   }
+  },
+  "S5.p4.1": {
+   "note": "terminology consistency",
+   "de": {
+    "sentences": {
+     "3": "Darüber hinaus waren die Vorteile von Skalierung und Instruction-Tuning beim MedQA-Datensatz, der für alle diese Modelle als außerhalb der Domäne liegend betrachtet werden kann, wesentlich ausgeprägter."
+    }
+   }
+  },
+  "S5.p5.1": {
+   "note": "de typo",
+   "zh": {
+    "sentences": {
+     "0": "然而，我们在消费者医学问答数据集上的人工评估结果明确指出，仅有规模是不够的。",
+     "2": "不过，Med-PaLM的结果表明，借助指令提示微调，我们获得了一种数据和参数高效的对齐技术，可用于改善与准确性、事实性、一致性、安全性、危害和偏见相关的因素，有助于缩小与临床专家的差距，并使这些模型更接近真实世界的临床应用。"
+    },
+    "reason": "指令提示微调在准确性、事实性、一致性、安全性、危害和偏见上对齐Med-PaLM，缩小但未消除与临床医生的差距"
+   },
+   "de": {
+    "sentences": {
+     "0": "Unsere Ergebnisse der menschlichen Bewertung auf den Datensätzen zur medizinischen Verbraucherfragebeantwortung zeigen jedoch deutlich, dass Skalierung allein nicht ausreicht.",
+     "2": "Die Med-PaLM-Ergebnisse zeigen jedoch, dass wir mit Instruction-Prompt-Tuning eine daten- und parametereffiziente Ausrichtungstechnik haben, die nützlich ist, um Faktoren im Zusammenhang mit Genauigkeit, Faktizität, Konsistenz, Sicherheit, Schaden und Bias zu verbessern, wodurch die Lücke zu klinischen Experten verringert und diese Modelle näher an reale klinische Anwendungen herangeführt werden."
+    }
+   }
+  },
+  "S6.p1.1": {
+   "note": "de grammar (subject mismatch)",
+   "de": {
+    "sentences": {
+     "1": "Sie wies jedoch mehrere Einschränkungen auf, die wir im Folgenden ausführlich diskutieren; zudem skizzieren wir Richtungen für die zukünftige Forschung."
+    }
+   }
+  },
+  "S6.SS1.p1.1": {
+   "note": "de gender of Benchmark inconsistent",
+   "de": {
+    "sentences": {
+     "0": "Erstens ist der MultiMedQA-Benchmark zwar vielfältig und enthält Fragen aus einer Vielzahl von Quellen aus der professionellen Medizin, der medizinischen Forschung und von Verbrauchern, doch ist er keineswegs erschöpfend.",
+     "1": "Wir planen, den Benchmark in Zukunft zu erweitern, um eine größere Vielfalt medizinischer und wissenschaftlicher Domänen (z. B. Biologie) und Formate einzubeziehen."
+    }
+   }
+  },
+  "S6.SS1.p2.1": {
+   "note": "topic not verbatim; 'unlike actual decisions' overgeneralized 'not true for all'",
+   "en": {
+    "takeaway": "Benchmarks should reflect real clinical workflows; multiple-choice tasks are inherently easier",
+    "reason": "Their expert-compiled vignettes have a generally preferred answer, which not all medical decisions have"
+   },
+   "zh": {
+    "takeaway": "基准应反映真实临床工作流程，选择题任务本质上更容易",
+    "reason": "其案例由专家编写并有普遍偏好的答案，而并非所有医疗决策都如此"
+   },
+   "de": {
+    "takeaway": "Benchmarks sollten reale klinische Arbeitsabläufe abbilden, Multiple-Choice-Aufgaben sind von Natur aus einfacher",
+    "reason": "Ihre von Fachleuten erstellten Vignetten haben eine allgemein bevorzugte Antwort, was nicht für alle medizinischen Entscheidungen gilt"
+   }
+  },
+  "S6.SS2.p1.1": {
+   "note": "zh: 'human evaluation' rendered as expert evaluation; de topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "尽管Flan-PaLM能够在若干医学多项选择题问答基准上达到最先进的性能，但我们的人工评估清楚地表明，这些模型在许多临床重要维度上尚未达到临床专家水平。"
+    },
+    "reason": "人工评估显示，尽管基准准确率高，但在许多临床重要维度上仍有差距"
+   },
+   "de": {
+    "sentences": {
+     "0": "Während Flan-PaLM auf mehreren Multiple-Choice-Benchmarks zur medizinischen Fragebeantwortung Spitzenleistungen erreichen konnte, legt unsere menschliche Bewertung klar nahe, dass diese Modelle auf vielen klinisch wichtigen Achsen nicht das Niveau klinischer Expertinnen und Experten erreichen."
+    },
+    "takeaway": "Flan-PaLM erreicht Spitzenwerte bei Multiple-Choice, aber kein klinisches Expertenniveau",
+    "topic": "klinisches Expertenniveau"
+   }
+  },
+  "S6.I1.i2.p1.1": {
+   "note": "zh 'human in the loop' rendering; topic not verbatim",
+   "zh": {
+    "sentences": {
+     "0": "具备检测不确定性并将其有效传达给人在回路中的用户（无论是临床医生还是普通用户）的能力。"
+    },
+    "takeaway": "模型需检测并传达不确定性，面向人在回路中的用户"
+   }
+  },
+  "S6.SS3.p1.1": {
+   "note": "zh lost the slash in 'and/or'",
+   "zh": {
+    "sentences": {
+     "2": "此外，共识往往只存在于与某些群体（例如数量更多和/或权力更大者）相关的主题上，而由于各种原因（例如有争议的主题、发病率较低、资金较少），某些受这些主题影响的亚群体可能缺乏共识。",
+     "3": "另外，危害的概念可能因人群而异（例如，对较小群体的遗传学研究可能揭示出真实但与群体文化信仰不符的信息，从而可能对该群体成员造成危害）。",
+     "4": "专家对危害的评估也可能因地点、亲身经历和文化背景而异。",
+     "5": "我们对潜在危害的评分是主观估计，感知危害的差异也可能源于我们临床医生评分者和普通评分者在健康素养上的差异，或者在现实环境中可能因⟦a161 [6]⟧研究中接收并依据健康问题答案采取行动者的社会文化背景与健康素养而异。",
+     "6": "进一步研究可以检验问题答案的感知有用性和危害是否随答案内容的可理解性与可行动性评分而变化⟦a162 [77]⟧。"
+    },
+    "reason": "共识与危害随时间、权力、文化、地点和评分者健康素养而变，感知危害只是主观估计"
+   }
+  },
+  "S6.SS3.p2.1": {
+   "note": "topic cut mid-phrase",
+   "en": {
+    "topic": "generalizability"
+   },
+   "zh": {
+    "topic": "可推广性"
+   },
+   "de": {
+    "topic": "Verallgemeinerbarkeit"
+   }
+  },
+  "S6.SS3.p3.1": {
+   "note": "en reason over budget; de tense",
+   "en": {
+    "reason": "Participatory research, expert review and larger rater pools would allow validity testing; UX and HCI studies must precede real use"
+   },
+   "de": {
+    "reason": "Partizipative Forschung, Expertenprüfung und größere Bewerterpools würden Validitätstests ermöglichen, vor realer Nutzung sind UX- und HCI-Studien nötig"
+   }
+  },
+  "S6.SS4.p1.1": {
+   "note": "de topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "我们当前的偏见评估方法存在局限，无法作为对潜在危害、公平性或公正性的全面评估。",
+     "3": "大型语言模型与医疗保健的交汇，为负责任且合乎伦理地创新稳健的偏见、公平性与健康公平评估及缓解工具创造了独特机遇。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "0": "Unser derzeitiger Ansatz zur Bewertung von Bias ist begrenzt und dient nicht als umfassende Beurteilung potenzieller Schäden, Fairness oder Chancengleichheit.",
+     "3": "Die Schnittstelle von großen Sprachmodellen und Gesundheitswesen eröffnet einzigartige Möglichkeiten für verantwortungsvolle und ethische Innovation robuster Bewertungs- und Minderungswerkzeuge für Bias, Fairness und gesundheitliche Chancengleichheit."
+    },
+    "takeaway": "Die derzeitige Bias-Bewertung ist begrenzt und nicht umfassend für Fairness oder Chancengleichheit",
+    "topic": "Bias-Bewertung"
+   }
+  },
+  "S6.SS4.p2.1": {
+   "note": "de typo",
+   "zh": {
+    "sentences": {
+     "4": "此外，上述旨在构建评估方法以实现大型语言模型健康公平的研究活动，需要跨学科协作，以确保各种科学视角与方法能够被应用于理解健康的社会与情境层面这一任务⟦a169 [58, 62, 27]⟧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "4": "Darüber hinaus erfordern die vorgenannten Forschungsaktivitäten zum Aufbau von Bewertungsmethoden zur Erreichung gesundheitlicher Chancengleichheit bei großen Sprachmodellen eine interdisziplinäre Zusammenarbeit, um sicherzustellen, dass verschiedene wissenschaftliche Perspektiven und Methoden auf die Aufgabe angewendet werden können, die sozialen und kontextuellen Aspekte von Gesundheit zu verstehen ⟦a169 [58, 62, 27]⟧."
+    },
+    "reason": "Bewertungen sollten Patientenwerte widerspiegeln, in nachgelagerten klinischen Anwendungsfällen verankert sein und die Sensitivität gegenüber demografischen Störungen in Prompts prüfen"
+   }
+  },
+  "S6.SS4.p3.1": {
+   "note": "reason: same attention as encoding clinical knowledge, not as knowledge",
+   "en": {
+    "reason": "The authors call it a critical agenda deserving the same rigor and attention as encoding clinical knowledge"
+   },
+   "zh": {
+    "sentences": {
+     "0": "为大型语言模型开发评估框架是一项关键的研究议程，应以与在语言模型中编码临床知识同等的严谨和关注来推进。"
+    },
+    "reason": "作者视其为关键研究议程，应与编码临床知识同等严谨、同等重视"
+   },
+   "de": {
+    "reason": "Die Autoren sehen darin eine kritische Forschungsagenda, die so viel Strenge und Aufmerksamkeit verdient wie die Kodierung klinischen Wissens",
+    "topic": "Bewertungsrahmenwerke"
+   }
+  },
+  "S6.SS4.p4.1": {
+   "note": "de topic not verbatim; zh1 garbled clause",
+   "zh": {
+    "sentences": {
+     "1": "尽管近期研究令人意外地表明，思维链提示中推理的有效性对该策略在多步推理挑战中提升大语言模型性能的作用贡献甚微⟦a170 [87]⟧，但进一步的研究可以显著扩大参与提示构建和范例答案选择的临床医生范围，从而探究参与此项活动的临床医生类型在多个维度上的差异如何影响大语言模型的行为，例如临床医生的人口统计学特征、地域、专业、亲身经历等。"
+    }
+   },
+   "de": {
+    "topic": "Vielfalt unter Klinikern"
+   }
+  },
+  "S7.p1.1": {
+   "note": "reason invented a causal link",
+   "en": {
+    "reason": "Medicine is an especially complex domain for LLMs, though they could make medical AI easier, safer and more equitable"
+   },
+   "zh": {
+    "sentences": {
+     "0": "基础AI模型和大语言模型的出现，为重新思考医学AI的开发、使其使用更简便、更安全、更公平带来了重大机遇。"
+    },
+    "reason": "医学是LLM应用格外复杂的领域，但LLM也带来让医学AI更简便、更安全、更公平的机遇"
+   },
+   "de": {
+    "reason": "Die Medizin ist eine besonders komplexe Domäne für LLMs, die medizinische KI aber einfacher, sicherer und gerechter machen könnten"
+   }
+  },
+  "S7.SS0.SSSx1.p1.1": {
+   "note": "topic cut mid-phrase / not verbatim",
+   "en": {
+    "takeaway": "This project was an extensive collaboration of Google Research and DeepMind teams",
+    "topic": "extensive collaboration"
+   },
+   "zh": {
+    "takeaway": "本项目是Google Research与DeepMind多团队的广泛合作",
+    "topic": "广泛合作"
+   },
+   "de": {
+    "takeaway": "Das Projekt war eine umfangreiche Zusammenarbeit von Teams bei Google Research und DeepMind",
+    "topic": "umfangreiche Zusammenarbeit"
+   }
+  },
+  "S1a.p1.1": {
+   "note": "takeaway over budget; zh topic not verbatim",
+   "en": {
+    "takeaway": "Med-PaLM came from instruction prompt tuning with soft prompt length 100, adding 1.84M parameters"
+   },
+   "zh": {
+    "takeaway": "Med-PaLM经软提示长度100的指令提示微调得到，含184万可训练参数"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir führten Instruction-Prompt-Tuning auf Flan-PaLM 540B mit einer Soft-Prompt-Länge von 100 durch, um Med-PaLM zu erzeugen."
+    },
+    "takeaway": "Med-PaLM entstand durch Instruction-Prompt-Tuning mit Soft-Prompt-Länge 100 und 1,84 Mio. trainierbaren Parametern",
+    "topic": "Soft-Prompt-Länge"
+   }
+  },
+  "S1a.p2.1": {
+   "note": "takeaway over budget, topic not verbatim; zh0 ungrammatical; de 'rank'",
+   "en": {
+    "takeaway": "Model selection by clinician ranking picked learning rate 0.003 and weight decay 0.00001"
+   },
+   "zh": {
+    "sentences": {
+     "0": "我们请一位临床医生对若干留出的HealthSearchQA、MedicationQA和LiveQA示例（未用于训练或人工评估）的回答进行排序，以此进行模型选择，并选择表现最好的检查点。"
+    },
+    "takeaway": "模型选择由临床医生排序完成，选定学习率0.003、权重衰减0.00001"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir führten die Modellauswahl durch, indem wir einen Kliniker baten, Antworten zu mehreren zurückgehaltenen HealthSearchQA-, MedicationQA- und LiveQA-Beispielen (nicht für Training oder menschliche Bewertung verwendet) in eine Rangfolge zu bringen, und wählten den Checkpoint, der am besten abschnitt.",
+     "2": "Das Modell, das wir für die menschliche Bewertung auswählten, hatte eine Lernrate von 0,003 und einen Weight-Decay-Faktor von 0,00001."
+    },
+    "takeaway": "Modellauswahl per Klinikerranking ergab Lernrate 0,003 und Weight Decay 0,00001",
+    "topic": "Modellauswahl"
+   }
+  },
+  "S2a.p1.1": {
+   "note": "takeaway missed the unit's finding (low variance, 0.078)",
+   "en": {
+    "takeaway": "Self-consistency results vary little: four MedQA repeats give variance 0.078",
+    "reason": "Stochastic temperature sampling causes some expected variation, so the best model was rerun four times on MedQA"
+   },
+   "zh": {
+    "takeaway": "自洽性结果波动很小：MedQA重复4次方差为0.078",
+    "reason": "温度采样的随机解码带来预期波动，因此用最佳模型在MedQA上重复评估4次"
+   },
+   "de": {
+    "reason": "Temperatur-Sampling verursacht erwartbare Schwankungen, daher wurde das beste Modell viermal auf MedQA wiederholt evaluiert"
+   }
+  },
+  "S3a.p1.1": {
+   "note": "zh topic vague; de 'modernste Leistung'",
+   "zh": {
+    "topic": "自洽性提示"
+   },
+   "de": {
+    "sentences": {
+     "0": "Wir führten Ablationen durch, die das Flan-PaLM 540B-Modell mit den Few-Shot-, Chain-of-Thought- (CoT-) und Self-Consistency-Prompting-Strategien bei klinischen MMLU-Themen verglichen ⟦a176 [29]⟧.",
+     "3": "Über diese Themen hinweg erreicht Flan-PaLM 540B State-of-the-Art-Leistung."
+    },
+    "takeaway": "Self-Consistency-Prompting übertrifft Few-Shot und CoT bei den meisten klinischen MMLU-Themen",
+    "reason": "Einige Themen bevorzugen Standard-Few-Shot oder CoT, dennoch erreicht Flan-PaLM 540B über diese Themen hinweg State-of-the-Art-Leistung"
+   }
+  },
+  "S3.T1a.cap": {
+   "note": "terminology consistency",
+   "de": {
+    "sentences": {
+     "0": "Vergleich der Leistung von Flan-PaLM 540B-Modellen mit Few-Shot-, Chain-of-Thought- (CoT-) und Self-Consistency-(SC-)Prompting bei klinischen MMLU-Themen."
+    },
+    "takeaway": "Tabelle vergleicht Flan-PaLM 540B mit Few-Shot, CoT und Self-Consistency bei klinischen MMLU-Themen"
+   }
+  },
+  "S4a.p1.1": {
+   "note": "zh 缩放 for scaling, inconsistent with 规模扩展",
+   "zh": {
+    "sentences": {
+     "0": "我们在⟦a178 Figure A.1⟧中提供了在MedQA和MedMCQA数据集上使用少样本提示比较PaLM和Flan-PaLM模型的规模扩展图，并在⟦a179 Figure A.2⟧中提供了另一张比较使用少样本提示的Flan-PaLM与使用自洽性提示的Flan-PaLM的规模扩展图。",
+     "1": "我们观察到强劲的规模扩展性能，并看到随着我们扩大LLM模型规模，性能增长更陡。"
+    },
+    "takeaway": "规模扩展图对比PaLM与Flan-PaLM少样本及Flan-PaLM自洽性",
+    "reason": "更大LLM模型规模带来更陡的性能提升，表明规模扩展效果强劲",
+    "topic": "规模扩展图"
+   }
+  },
+  "S4.F1.cap": {
+   "note": "topic vague",
+   "en": {
+    "topic": "PaLM and Flan-PaLM"
+   },
+   "zh": {
+    "sentences": {
+     "0": "在MedQA和MedMCQA上使用少样本提示的PaLM和Flan-PaLM的规模扩展图"
+    },
+    "takeaway": "PaLM和Flan-PaLM在MedQA和MedMCQA上少样本提示的规模扩展图",
+    "topic": "PaLM和Flan-PaLM"
+   }
+  },
+  "S4.F2.cap": {
+   "note": "topic vague",
+   "en": {
+    "topic": "self-consistency"
+   },
+   "zh": {
+    "sentences": {
+     "0": "在MedQA和MedMCQA上使用少样本的Flan-PaLM与使用少样本加思维链（CoT）加自洽性（SC）的Flan-PaLM的规模扩展图"
+    },
+    "takeaway": "Flan-PaLM少样本与少样本加思维链和自洽性的规模扩展图",
+    "topic": "自洽性"
+   },
+   "de": {
+    "topic": "Self-Consistency"
+   }
+  },
+  "S6a.p1.1": {
+   "note": "zh topic over budget after terminology fix",
+   "zh": {
+    "sentences": {
+     "1": "然而，鉴于指令提示微调具有通用性，该技术也可应用于多项选择题数据集。",
+     "2": "我们可以学习共享的软提示参数，将其前置到各多项选择题数据集各不相同的指令和/或少样本示例之前。"
+    },
+    "takeaway": "指令提示微调也可借共享软提示用于选择题数据集",
+    "topic": "选择题数据集"
+   },
+   "de": {
+    "sentences": {
+     "0": "Med-PaLM wurde mit Instruction-Prompt-Tuning trainiert, um die Qualität der von Flan-PaLM erzeugten Langtext-Generierungen zu verbessern.",
+     "1": "Angesichts der Allgemeinheit des Instruction-Prompt-Tunings kann die Technik jedoch auch auf Multiple-Choice-Datensätze angewendet werden.",
+     "2": "Wir können gemeinsame Soft-Prompt-Parameter lernen, die Anweisungen und/oder Few-Shot-Beispielen vorangestellt werden, welche für jeden Multiple-Choice-Datensatz variieren."
+    },
+    "takeaway": "Instruction-Prompt-Tuning kann auch Multiple-Choice-Datensätze mit gemeinsamen Soft-Prompts adressieren",
+    "topic": "Multiple-Choice-Datensätze"
+   }
+  },
+  "S6a.p2.1": {
+   "note": "zh topic '67.2%' meaningless alone; de copied source typo 'i'",
+   "zh": {
+    "topic": "MedQA准确率"
+   },
+   "de": {
+    "sentences": {
+     "0": "In einem vorläufigen Experiment trainierten wir Flan-PaLM mit Instruction-Prompt-Tuning auf MedQA, MedMCQA, PubMedQA und MMLU (klinische Themen).",
+     "3": "Das resultierende Modell erreichte eine Genauigkeit von 67,2% auf MedQA unter Verwendung von Chain-of-Thought und Self-Consistency, was in etwa dem entsprechenden Ergebnis mit Flan-PaLM in ⟦a183 Section 4⟧ entspricht."
+    },
+    "takeaway": "Instruction-Prompt-Tuning auf vier Datensätzen erreichte 67,2% MedQA-Genauigkeit"
+   }
+  },
+  "S7.T3.cap": {
+   "note": "topics: de fragment, zh over budget",
+   "zh": {
+    "topic": "共识一致性"
+   },
+   "de": {
+    "topic": "Übereinstimmung"
+   }
+  },
+  "S7.T4.cap": {
+   "note": "terminology consistency",
+   "zh": {
+    "sentences": {
+     "0": "可能的危害程度 虽然29.6%的Flan-PaLM回答被判定为可能造成危害，但Med-PaLM的这一数字降至6.0%，与临床医生生成的回答（在6.5%的案例中被判定为可能有害）相比表现良好"
+    }
+   }
+  },
+  "S7.T5.cap": {
+   "note": "de topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "回答造成危害的可能性 虽然19.4%的Flan-PaLM回答被判定为可能导致危害，但Med-PaLM的这一数字降至3.1%，与临床医生生成的回答相当，后者在1.6%的案例中也被判定为可能有害。"
+    },
+    "takeaway": "可能危害从Flan-PaLM的19.4%降至Med-PaLM的3.1%",
+    "topic": "可能危害"
+   },
+   "de": {
+    "topic": "Wahrscheinlicher Schaden"
+   }
+  },
+  "S7.T6.cap": {
+   "note": "de topic fragment; doubled 'während'",
+   "de": {
+    "sentences": {
+     "1": "Hinsichtlich der Belege für korrekten Abruf und korrekte Schlussfolgerung medizinischen Wissens fanden wir, dass Klinikerantworten 97,8% bzw. 97,7% erreichten, Flan-PaLM nur 76,3% bzw. 85,7% und Med-PaLM 95,4% bzw. 93,5%."
+    },
+    "topic": "Verständnis"
+   }
+  },
+  "S7.T8.cap": {
+   "note": "reason had a false 'so' (degradation is relative to Flan-PaLM)",
+   "en": {
+    "reason": "Clinician answers showed such content in only 1.4% of cases; Med-PaLM surprisingly seemed to degrade further"
+   },
+   "zh": {
+    "reason": "临床医生回答仅1.4%含有此类内容，而Med-PaLM似乎意外地进一步变差"
+   },
+   "de": {
+    "reason": "Klinikerantworten zeigten solche Inhalte nur in 1,4% der Fälle, Med-PaLM schien sich überraschenderweise weiter zu verschlechtern"
+   }
+  },
+  "S7.T9.cap": {
+   "note": "topic not verbatim",
+   "en": {
+    "topic": "Missing important information"
+   },
+   "zh": {
+    "topic": "缺失重要信息"
+   }
+  },
+  "S7.T10.cap": {
+   "note": "de term consistent with section (verzerrt)",
+   "de": {
+    "sentences": {
+     "0": "Mögliche Verzerrung Flan-PaLM-Antworten enthielten in 7,9% der Fälle verzerrte Informationen."
+    },
+    "takeaway": "Verzerrte Informationen sanken von 7,9% bei Flan-PaLM auf 0,7% bei Med-PaLM",
+    "topic": "Verzerrte Informationen"
+   }
+  },
+  "S7.T11.cap": {
+   "note": "de topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "普通用户对回答是否捕捉用户意图的评估 Flan-PaLM的回答在90.8%的案例中被判定直接回应用户的问题意图。"
+    },
+    "takeaway": "普通用户判定Med-PaLM回答94.0%切合意图",
+    "topic": "普通用户"
+   },
+   "de": {
+    "topic": "Laiennutzer"
+   }
+  },
+  "S7.T12.cap": {
+   "note": "de topic fragment",
+   "zh": {
+    "sentences": {
+     "0": "普通用户对回答有用性的评估 虽然Flan-PaLM的回答仅在59.6%的案例中被判定有用，但Med-PaLM回答的这一数字提高到80.1%。"
+    }
+   },
+   "de": {
+    "topic": "Hilfreichkeit"
+   }
+  },
+  "S9.T18.cap": {
+   "note": "topic cut mid-phrase",
+   "en": {
+    "topic": "MedQA"
+   },
+   "de": {
+    "topic": "MedQA"
+   }
+  },
+  "S9.T19.cap": {
+   "note": "topic cut mid-phrase",
+   "en": {
+    "topic": "MedMCQA"
+   },
+   "de": {
+    "topic": "MedMCQA"
+   }
+  },
+  "S9.T20.cap": {
+   "note": "topic cut mid-phrase",
+   "en": {
+    "topic": "PubMedQA"
+   },
+   "de": {
+    "topic": "PubMedQA"
+   }
+  },
+  "S9.T21.cap": {
+   "note": "topic cut mid-phrase",
+   "en": {
+    "topic": "MMLU"
+   },
+   "de": {
+    "topic": "MMLU"
+   }
+  },
+  "S4.SS1.p2.1": {
+   "note": "distinct topic within its section",
+   "zh": {
+    "topic": "MedQA得分"
+   }
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "topics: zh cut mid-phrase, de not the subject",
+   "zh": {
+    "topic": "MultiMedQA"
+   },
+   "de": {
+    "topic": "MultiMedQA"
+   }
+  },
+  "S2.SS0.SSS0.Px1": {
+   "note": "de topic was a clause",
+   "de": {
+    "topic": "LLMs"
+   }
+  },
+  "S2.SS0.SSS0.Px2": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "biomedizinische Sprachmodelle"
+   }
+  },
+  "S3.SS1": {
+   "note": "de title left in English",
+   "de": {
+    "title": "Datensätze"
+   }
+  },
+  "S3.SS1.SSS1": {
+   "note": "takeaway misread clinician answers as a standardization of the datasets; de title",
+   "en": {
+    "takeaway": "MultiMedQA joins six medical QA datasets and new HealthSearchQA, with clinician answers for a subset"
+   },
+   "zh": {
+    "takeaway": "MultiMedQA整合六个数据集并新增HealthSearchQA，部分问题配有临床医生的标准化回答"
+   },
+   "de": {
+    "title": "MultiMedQA: ein Benchmark für medizinische Fragebeantwortung",
+    "takeaway": "MultiMedQA vereint sechs medizinische QA-Datensätze und das neue HealthSearchQA, mit Klinikerantworten für einen Teil"
+   }
+  },
+  "S3.SS1.SSS1.Px1": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "MedQA"
+   }
+  },
+  "S3.SS1.SSS1.Px3": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "PubMedQA"
+   }
+  },
+  "S3.SS1.SSS1.Px7": {
+   "note": "grammar: redundant 'and expands it'; de topic clause",
+   "en": {
+    "takeaway": "HealthSearchQA adds 3375 commonly searched consumer questions; MultiMedQA will expand further"
+   },
+   "zh": {
+    "takeaway": "HealthSearchQA新增3375个常被搜索的消费者问题，MultiMedQA将继续扩展"
+   },
+   "de": {
+    "takeaway": "HealthSearchQA ergänzt 3375 häufig gesuchte Verbraucherfragen, MultiMedQA soll weiter wachsen",
+    "topic": "HealthSearchQA"
+   }
+  },
+  "S3.SS2": {
+   "note": "de title/topic terminology, topic cut",
+   "de": {
+    "title": "Rahmen für die menschliche Bewertung",
+    "takeaway": "Ein Rahmenwerk zur menschlichen Bewertung langer medizinischer Antworten wird vorgeschlagen",
+    "topic": "menschlichen Bewertung"
+   }
+  },
+  "S3.SS2.SSS1": {
+   "note": "de topic",
+   "de": {
+    "topic": "Kliniker-Bewertungsrahmen"
+   }
+  },
+  "S3.SS2.SSS2": {
+   "note": "zh title order and term; topics",
+   "zh": {
+    "title": "普通用户（非专家）评估",
+    "topic": "普通用户"
+   },
+   "de": {
+    "title": "Bewertung durch Laiennutzer (Nicht-Experten)",
+    "topic": "Laien"
+   }
+  },
+  "S3.SS3": {
+   "note": "de topic cut",
+   "de": {
+    "takeaway": "LLMs werden durch Prompting und Instruction-Prompt-Tuning an die medizinische Domäne angepasst",
+    "topic": "medizinische Domäne"
+   }
+  },
+  "S3.SS3.SSS1.Px1": {
+   "note": "zh takeaway: 'decoder-only' mistranslated",
+   "zh": {
+    "takeaway": "PaLM是仅含解码器的密集激活Transformer，用7800亿token训练"
+   }
+  },
+  "S3.SS3.SSS1.Px2": {
+   "note": "grammar; de topic fragment",
+   "en": {
+    "takeaway": "Instruction-tuned Flan-PaLM beats PaLM; both are tested at 8B, 62B and 540B",
+    "topic": "Instruction-tuned Flan-PaLM"
+   },
+   "zh": {
+    "takeaway": "经指令微调的Flan-PaLM优于PaLM，两者均在8B、62B与540B规模评测"
+   },
+   "de": {
+    "takeaway": "Das instruktionsoptimierte Flan-PaLM übertrifft PaLM, beide werden mit 8B, 62B und 540B getestet",
+    "topic": "Flan-PaLM"
+   }
+  },
+  "S3.SS3.SSS2": {
+   "note": "de spelling, topic",
+   "zh": {
+    "takeaway": "数据高效提示与提示微调使LLM对齐医学",
+    "topic": "提示微调"
+   },
+   "de": {
+    "takeaway": "Dateneffizientes Prompting und Prompt-Tuning richten LLMs auf die Medizin aus",
+    "topic": "Prompt-Tuning"
+   }
+  },
+  "S3.SS3.SSS2.Px1": {
+   "note": "de terminology",
+   "de": {
+    "takeaway": "Die Studie nutzt Few-Shot-, Chain-of-Thought- und Self-Consistency-Prompting",
+    "topic": "Prompting"
+   }
+  },
+  "S3.SS3.SSS2.Px2": {
+   "note": "de typos, topic cut",
+   "de": {
+    "title": "Few-Shot-Prompting",
+    "takeaway": "Kliniker erstellten datensatzspezifische Few-Shot-Prompts mit datensatzabhängiger Beispielzahl",
+    "topic": "Few-Shot-Prompts"
+   }
+  },
+  "S3.SS3.SSS2.Px3": {
+   "note": "de title case, Reasoning, topic fragment",
+   "de": {
+    "title": "Chain-of-Thought-Prompting",
+    "takeaway": "CoT-Prompting ergänzt Few-Shot-Beispiele um schrittweises Schlussfolgern für medizinische Fragen",
+    "topic": "CoT-Prompting"
+   }
+  },
+  "S3.SS3.SSS2.Px4": {
+   "note": "zh terminology",
+   "zh": {
+    "title": "自洽性提示",
+    "takeaway": "自洽性采样多个输出并取多数投票"
+   }
+  },
+  "S3.SS3.SSS2.Px5": {
+   "note": "terminology consistency",
+   "de": {
+    "takeaway": "Prompt-Tuning passt eingefrorene LLMs günstig an, und Instruction-Prompt-Tuning ergibt Med-PaLM"
+   }
+  },
+  "S3.SS3.SSS3": {
+   "note": "zh topic; de title terminology",
+   "zh": {
+    "topic": "指令提示微调"
+   },
+   "de": {
+    "title": "Instruction-Prompt-Tuning",
+    "takeaway": "Instruction-Prompt-Tuning richtet LLMs mit Soft-Prompts vor Hard-Prompts auf die medizinische Domäne aus",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S3.SS3.SSS4": {
+   "note": "de grammar (double 'an')",
+   "de": {
+    "takeaway": "Med-PaLM passt Flan-PaLM per Instruction-Prompt-Tuning mit 40 von Klinikern kuratierten Beispielen an die Medizin an",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S4": {
+   "note": "ablations do not expose gaps; de English 'Question Answering'",
+   "en": {
+    "takeaway": "Flan-PaLM sets medical QA state of the art; ablations explain it, human evaluation exposes gaps"
+   },
+   "zh": {
+    "takeaway": "Flan-PaLM刷新医学问答纪录，消融实验解释其来源，人工评估揭示差距"
+   },
+   "de": {
+    "takeaway": "Flan-PaLM erzielt Bestwerte bei der medizinischen Fragebeantwortung, Ablationen erklären sie, menschliche Bewertung zeigt Lücken",
+    "topic": "medizinischen Fragebeantwortung"
+   }
+  },
+  "S4.SS2": {
+   "note": "terminology consistency",
+   "de": {
+    "title": "State-of-the-Art-Leistung auf MedMCQA und PubMedQA"
+   }
+  },
+  "S4.SS3": {
+   "note": "de topic terminology",
+   "de": {
+    "title": "State-of-the-Art-Leistung bei klinischen MMLU-Themen",
+    "takeaway": "Flan-PaLM 540B erreicht den State of the Art bei klinischen MMLU-Themen",
+    "topic": "klinischen MMLU-Themen"
+   }
+  },
+  "S4.SS4": {
+   "note": "uncertainty is not a performance driver",
+   "en": {
+    "takeaway": "Ablations probe instruction tuning, scale, CoT, self-consistency and uncertainty in Flan-PaLM's performance"
+   },
+   "de": {
+    "topic": "Ablationen"
+   }
+  },
+  "S4.SS4.SSS0.Px1": {
+   "note": "de title",
+   "de": {
+    "title": "Instruction-Tuning verbessert die Leistung bei der medizinischen Fragebeantwortung",
+    "takeaway": "Instruction-Tuning verbessert die medizinische Fragebeantwortung in allen Modellgrößen",
+    "topic": "Instruction-Tuning"
+   }
+  },
+  "S4.SS4.SSS0.Px2": {
+   "note": "de topic over budget",
+   "de": {
+    "topic": "Skalierung"
+   }
+  },
+  "S4.SS4.SSS0.Px4": {
+   "note": "terminology consistency",
+   "de": {
+    "title": "Self-Consistency (SC) führt zu einer starken Verbesserung der Multiple-Choice-Leistung",
+    "takeaway": "Self-Consistency verbessert die Multiple-Choice-Leistung von Flan-PaLM deutlich, außer bei PubMedQA"
+   }
+  },
+  "S4.SS4.SSS0.Px5": {
+   "note": "82.5% holds only for answered questions at 0.45 deferral; proxy is 'simple'",
+   "en": {
+    "takeaway": "A simple self-consistency uncertainty proxy enables selective prediction: 82.5% MedQA accuracy when deferring 45%"
+   },
+   "zh": {
+    "takeaway": "以自洽性为简单不确定性代理做选择性预测，拒答45%时MedQA准确率达82.5%",
+    "topic": "选择性预测"
+   },
+   "de": {
+    "takeaway": "Ein einfacher Self-Consistency-Unsicherheitsproxy ermöglicht selektive Vorhersage: 82,5 % MedQA-Genauigkeit bei 45 % Zurückhaltung"
+   }
+  },
+  "S4.SS5": {
+   "note": "de topic fragment",
+   "de": {
+    "title": "Ergebnisse der menschlichen Bewertung",
+    "topic": "Kliniker"
+   }
+  },
+  "S4.SS5.SSS0.Px2": {
+   "note": "zh grammar; de topic fragment",
+   "zh": {
+    "takeaway": "Med-PaLM缩小但未消除与临床医生在理解、检索与推理上的差距"
+   },
+   "de": {
+    "topic": "Med-PaLM"
+   }
+  },
+  "S4.SS5.SSS0.Px3": {
+   "note": "terminology consistency",
+   "zh": {
+    "takeaway": "指令提示微调减少遗漏但增加错误内容"
+   },
+   "de": {
+    "takeaway": "Instruction-Prompt-Tuning reduziert fehlende Inhalte, erhöht aber inkorrekte Inhalte in Med-PaLM-Antworten"
+   }
+  },
+  "S4.SS5.SSS0.Px4": {
+   "note": "topic",
+   "zh": {
+    "title": "可能危害的程度与可能性",
+    "takeaway": "指令提示微调将潜在危害从29.7%降至5.9%，与临床医生相当",
+    "topic": "潜在危害"
+   },
+   "de": {
+    "takeaway": "Instruction-Prompt-Tuning senkte den potenziellen Schaden von 29,7% auf 5,9% und erreichte das Niveau der Kliniker",
+    "topic": "potenziellen Schaden"
+   }
+  },
+  "S4.SS5.SSS0.Px5": {
+   "note": "factual: 7.9% to 0.8% is not 'halving', and 0.8% is below clinicians' 1.4%",
+   "en": {
+    "takeaway": "Med-PaLM cuts biased answers from Flan-PaLM's 7.9% to 0.8%, below clinicians' 1.4%"
+   },
+   "zh": {
+    "takeaway": "Med-PaLM偏见答案从7.9%降至0.8%，低于临床医生的1.4%",
+    "topic": "偏见答案"
+   },
+   "de": {
+    "takeaway": "Med-PaLM senkt verzerrte Antworten von 7,9 % (Flan-PaLM) auf 0,8 %, unter die 1,4 % der Kliniker"
+   }
+  },
+  "S4.SS5.SSS0.Px6": {
+   "note": "topics",
+   "zh": {
+    "title": "普通用户评估",
+    "takeaway": "普通用户对Med-PaLM的评价高于Flan-PaLM但低于临床医生",
+    "topic": "普通用户"
+   },
+   "de": {
+    "topic": "Laien"
+   }
+  },
+  "S5": {
+   "note": "topics; de awkward 'Frage-Antwort-Verhalten'",
+   "zh": {
+    "takeaway": "规模与指令提示微调提升医学问答，但Med-PaLM仍逊于临床医生",
+    "topic": "指令提示微调"
+   },
+   "de": {
+    "takeaway": "Skalierung und Instruction-Prompt-Tuning verbessern die medizinische Fragebeantwortung, Med-PaLM bleibt aber hinter Klinikern zurück",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S6": {
+   "note": "de topic",
+   "de": {
+    "topic": "Einschränkungen"
+   }
+  },
+  "S6.SS3": {
+   "note": "zh terminology",
+   "zh": {
+    "title": "改进人工评估方法",
+    "takeaway": "人工评估需经验证的工具、更大更多样的评分者群体与参与式设计",
+    "topic": "人工评估"
+   }
+  },
+  "S6.SS4": {
+   "note": "equity is not equality (zh 平等, de Gleichstellung); de topic fragment",
+   "zh": {
+    "title": "公平性与公正性考量"
+   },
+   "de": {
+    "title": "Überlegungen zu Fairness und Chancengleichheit",
+    "takeaway": "Die Bias-Bewertung ist begrenzt, gesundheitliche Chancengleichheit braucht partizipative, kontextualisierte und interdisziplinäre Forschung",
+    "topic": "Bias-Bewertung"
+   }
+  },
+  "S6.SS5": {
+   "note": "de topic over budget",
+   "de": {
+    "topic": "Einsatz von LLMs"
+   }
+  },
+  "S7.SS0.SSSx1": {
+   "note": "zh name rendering consistent with text",
+   "zh": {
+    "takeaway": "Google Research与DeepMind多团队广泛合作完成本项目",
+    "topic": "Google Research"
+   }
+  },
+  "S1a": {
+   "note": "de article",
+   "de": {
+    "takeaway": "Med-PaLM nutzte Instruction-Prompt-Tuning mit einem Soft-Prompt der Länge 100 und klinikerbasierte Modellauswahl",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S3a": {
+   "note": "SOTA is not attributed to self-consistency; en topic fragment",
+   "en": {
+    "takeaway": "Self-consistency helps on most MMLU clinical topics, and Flan-PaLM 540B is state of the art",
+    "topic": "Self-consistency"
+   },
+   "zh": {
+    "takeaway": "自洽性在多数MMLU临床主题上最佳，Flan-PaLM 540B达到最先进水平",
+    "topic": "自洽性"
+   },
+   "de": {
+    "takeaway": "Self-Consistency hilft bei den meisten klinischen MMLU-Themen, Flan-PaLM 540B erreicht State of the Art",
+    "topic": "Self-Consistency"
+   }
+  },
+  "S4a": {
+   "note": "zh title 缩放; zh topic cut",
+   "zh": {
+    "title": "规模扩展图",
+    "topic": "PaLM与Flan-PaLM"
+   }
+  },
+  "S5a": {
+   "note": "de topic fragment",
+   "de": {
+    "topic": "Systemtyp"
+   }
+  },
+  "S6a": {
+   "note": "zh/de terminology for multiple-choice; topics",
+   "zh": {
+    "title": "Med-PaLM多项选择题评估",
+    "takeaway": "指令提示微调也可用于多项选择题医学问答",
+    "topic": "指令提示微调"
+   },
+   "de": {
+    "title": "Multiple-Choice-Evaluierung von Med-PaLM",
+    "takeaway": "Instruction-Prompt-Tuning lässt sich auch auf medizinische Multiple-Choice-Fragen anwenden",
+    "topic": "Instruction-Prompt-Tuning"
+   }
+  },
+  "S7a": {
+   "note": "de topic cut",
+   "de": {
+    "topic": "Bewertungsergebnisse"
+   }
+  }
+ }
+}

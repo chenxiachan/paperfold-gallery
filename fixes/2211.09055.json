@@ -1,0 +1,1021 @@
+{
+ "units": {
+  "abstract1.1": {
+   "note": "takeaway was a bare formula and topic a cut ('If $Pr..$ for'); state the abstract's main claim",
+   "en": {
+    "takeaway": "Every union-closed family has an element in a ⟦a2 $0.01$⟧ fraction of its sets",
+    "reason": "This first constant lower bound follows from an entropy inequality: ⟦a10 $H(A\\cup B)>H(A)$⟧ for independent samples if ⟦a7 $Pr[i\\in A]<0.01$⟧ for all ⟦a8 $i$⟧ and ⟦a9 $H(A)>0$⟧",
+    "topic": "union-closed family"
+   },
+   "zh": {
+    "takeaway": "每个并封闭集族都有元素出现在⟦a2 $0.01$⟧比例的集合中",
+    "reason": "这是首个常数下界，源自独立样本的熵不等式：若对所有⟦a8 $i$⟧有⟦a7 $Pr[i\\in A]<0.01$⟧且⟦a9 $H(A)>0$⟧，则⟦a10 $H(A\\cup B)>H(A)$⟧",
+    "topic": "并封闭集族"
+   },
+   "de": {
+    "takeaway": "Jede vereinigungsabgeschlossene Familie hat ein Element in einem ⟦a2 $0.01$⟧-Anteil ihrer Mengen",
+    "reason": "Diese erste konstante untere Schranke folgt aus einer Entropieungleichung: ⟦a10 $H(A\\cup B)>H(A)$⟧ für unabhängige Stichproben, falls ⟦a7 $Pr[i\\in A]<0.01$⟧ für alle ⟦a8 $i$⟧ und ⟦a9 $H(A)>0$⟧",
+    "topic": "vereinigungsabgeschlossene Familie"
+   }
+  },
+  "S1.p1.1": {
+   "note": "conjecture is 'at least half', not 'half'; reformulations are not 'proved'; zh sentence 9 had the takeaway appended; zh terminology (并封闭集族, 伯努利)",
+   "en": {
+    "takeaway": "Frankl's conjecture: every union-closed family has an element in at least half its sets",
+    "reason": "Over 40 years, work proved special cases or reformulated the problem; Knill and Wójick gave the best general bound",
+    "topic": "Frankl's conjecture"
+   },
+   "zh": {
+    "sentences": {
+     "9": "我们建议感兴趣的读者参阅 Bruhn 和 Schaudt 的综述⟦a29 [4]⟧，以深入了解该问题的先前工作。",
+     "0": "我们研究并封闭的有限集族。",
+     "1": "一个族⟦a11 $\\mathcal{F}\\subseteq 2^{[n]}$⟧被称为并封闭的，如果对每个⟦a12 $A,B\\in\\mathcal{F}$⟧都有⟦a13 $A\\cup B\\in\\mathcal{F}$⟧。",
+     "3": "由于问题陈述的简洁性，并封闭集猜想在过去 40 年间受到了大量关注，有超过 50 篇论文证明了特殊情形或给出了该问题的重述⟦a18 [4]⟧。"
+    },
+    "takeaway": "Frankl 猜想：每个并封闭集族都有元素出现在至少一半的集合中",
+    "reason": "40 年来的工作证明了特殊情形或给出重述，Knill 与 Wójick 给出最佳一般界",
+    "topic": "Frankl 猜想"
+   },
+   "de": {
+    "takeaway": "Frankls Vermutung: Jede vereinigungsabgeschlossene Familie hat ein Element in mindestens der Hälfte ihrer Mengen",
+    "reason": "Frühere Arbeiten über 40 Jahre bewiesen Spezialfälle oder formulierten das Problem um; Knill und Wójick lieferten die beste allgemeine Schranke",
+    "topic": "Frankls Vermutung"
+   }
+  },
+  "Thmtheorem1.p1.1": {
+   "note": "topic not in takeaway; add 'for all i'",
+   "en": {
+    "takeaway": "Entropy inequality: if ⟦a34 $Pr[i\\in A]\\leq 0.01$⟧ for all ⟦a33 $i\\in[n]$⟧, then ⟦a35 $H(A\\cup B)\\geq 1.26H(A)$⟧",
+    "topic": "Entropy inequality"
+   },
+   "zh": {
+    "takeaway": "熵不等式：若对所有⟦a33 $i\\in[n]$⟧有⟦a34 $Pr[i\\in A]\\leq 0.01$⟧，则⟦a35 $H(A\\cup B)\\geq 1.26H(A)$⟧",
+    "topic": "熵不等式"
+   },
+   "de": {
+    "takeaway": "Entropieungleichung: Gilt ⟦a34 $Pr[i\\in A]\\leq 0.01$⟧ für alle ⟦a33 $i\\in[n]$⟧, dann folgt ⟦a35 $H(A\\cup B)\\geq 1.26H(A)$⟧",
+    "topic": "Entropieungleichung"
+   }
+  },
+  "S1.p3.1": {
+   "note": "reason used raw $H(A)$ instead of a marker; zh terminology (并封闭集族, 伯努利)",
+   "en": {
+    "reason": "Uniform samples from a union-closed family give ⟦a41 $H(A\\cup B)\\leq H(A)$⟧, since uniform maximizes entropy over the family"
+   },
+   "zh": {
+    "reason": "从并封闭集族均匀抽样时⟦a41 $H(A\\cup B)\\leq H(A)$⟧，因为均匀分布使族上的熵最大",
+    "sentences": {
+     "1": "注意如果我们从并封闭集族⟦a40 $\\mathcal{F}$⟧中独立均匀随机地抽取⟦a39 $A,B$⟧，那么⟦a41 $H(A\\cup B)\\leq H(A)$⟧。"
+    }
+   },
+   "de": {
+    "reason": "Gleichverteilte Stichproben aus einer vereinigungsabgeschlossenen Familie ergeben ⟦a41 $H(A\\cup B)\\leq H(A)$⟧, da die Gleichverteilung die Entropie über der Familie maximiert"
+   }
+  },
+  "Thmtheorem2.p1.1": {
+   "note": "zh/de reason unidiomatic ('联系回', 'verbindet zurück zu'); zh terminology (并封闭集族, 伯努利)",
+   "zh": {
+    "reason": "该推论将熵定理与 Frankl 原本的富集元素猜想联系起来",
+    "sentences": {
+     "0": "令⟦a45 $\\mathcal{F}\\subseteq 2^{[n]}$⟧为并封闭集族，⟦a46 $\\mathcal{F}\\neq\\{\\emptyset\\}$⟧。"
+    },
+    "takeaway": "并封闭集族有一元素出现在至少 0.01 比例的集合中",
+    "topic": "并封闭集族"
+   },
+   "de": {
+    "reason": "Dieses Korollar verknüpft den Entropiesatz mit Frankls ursprünglicher Vermutung über ein häufiges Element"
+   }
+  },
+  "S1.p6.1": {
+   "note": "de takeaway ungrammatical",
+   "de": {
+    "takeaway": "Beispiel 2 setzt ⟦a59 $A=[n]$⟧ mit Wahrscheinlichkeit ⟦a60 $p$⟧ und sonst die leere Menge"
+   }
+  },
+  "S1.p7.1": {
+   "note": "raw formula in takeaway; 'crossing' unclear; extremality is the author's hypothesis, not suggested by the reversal",
+   "en": {
+    "takeaway": "Both examples have the same entropy ratio, above 1 exactly when ⟦a66 $p<\\frac{3-\\sqrt{5}}{2}$⟧",
+    "reason": "Equality holds at ⟦a68 $p=\\frac{3-\\sqrt{5}}{2}$⟧ and the inequality reverses above; the author hypothesizes these examples are extremal",
+    "topic": "entropy ratio"
+   },
+   "zh": {
+    "takeaway": "两例的熵比值相同，且恰在⟦a66 $p<\\frac{3-\\sqrt{5}}{2}$⟧时大于 1",
+    "reason": "在⟦a68 $p=\\frac{3-\\sqrt{5}}{2}$⟧处取等，超过后不等式反转；作者猜想这些例子是极端情形",
+    "topic": "熵比值"
+   },
+   "de": {
+    "takeaway": "Beide Beispiele haben dasselbe Entropieverhältnis, größer als 1 genau für ⟦a66 $p<\\frac{3-\\sqrt{5}}{2}$⟧",
+    "reason": "Bei ⟦a68 $p=\\frac{3-\\sqrt{5}}{2}$⟧ gilt Gleichheit, darüber kehrt sich die Ungleichung um; der Autor vermutet, dass diese Beispiele extremal sind",
+    "topic": "Entropieverhältnis"
+   }
+  },
+  "S1.p9.1": {
+   "note": "takeaway dropped the condition A1=1; reason used raw math instead of marker a85; de sentence 3 dangling 'für alle'; zh terminology (并封闭集族, 伯努利)",
+   "en": {
+    "takeaway": "Example 3 draws ⟦a77 $A_{1}$⟧ Bernoulli ⟦a78 $p$⟧; if ⟦a79 $A_{1}=1$⟧, other coordinates are iid Bernoulli ⟦a81 $q=0.99$⟧",
+    "reason": "If ⟦a82 $A_{1}=0$⟧ all other coordinates are zero, and the chain rule gives ⟦a85 $H(A)=H(A_{1},A_{>1})=H(A_{1})+H(A_{>1}|A_{1})$⟧"
+   },
+   "zh": {
+    "takeaway": "例 3 中⟦a77 $A_{1}$⟧为伯努利⟦a78 $p$⟧；若⟦a79 $A_{1}=1$⟧，其余坐标为独立同分布的伯努利⟦a81 $q=0.99$⟧",
+    "reason": "若⟦a82 $A_{1}=0$⟧则其余坐标全为零，链式法则给出⟦a85 $H(A)=H(A_{1},A_{>1})=H(A_{1})+H(A_{>1}|A_{1})$⟧",
+    "sentences": {
+     "1": "首先从概率为⟦a78 $p$⟧的伯努利分布中抽取⟦a77 $A_{1}$⟧。",
+     "2": "然后，在事件⟦a79 $A_{1}=1$⟧的条件下，从概率为⟦a81 $q=0.99$⟧的独立同分布伯努利分布中抽取每个⟦a80 $A_{i}$⟧。"
+    }
+   },
+   "de": {
+    "sentences": {
+     "3": "Andernfalls, wenn ⟦a82 $A_{1}=0$⟧, ist jedes ⟦a83 $A_{i}=0$⟧."
+    },
+    "takeaway": "Beispiel 3: ⟦a77 $A_{1}$⟧ ist Bernoulli mit ⟦a78 $p$⟧; bei ⟦a79 $A_{1}=1$⟧ sind übrige Koordinaten iid Bernoulli mit ⟦a81 $q=0.99$⟧",
+    "reason": "Wenn ⟦a82 $A_{1}=0$⟧, sind alle anderen Koordinaten null, und die Kettenregel liefert ⟦a85 $H(A)=H(A_{1},A_{>1})=H(A_{1})+H(A_{>1}|A_{1})$⟧"
+   }
+  },
+  "S1.p10.1": {
+   "note": "raw math in takeaway and reason; topic not in takeaway",
+   "en": {
+    "takeaway": "Entropy formulas: ⟦a86 $H(A)=H(p)+pH(q)(n-1)$⟧, and the union's entropy has three terms",
+    "reason": "A similar calculation gives ⟦a87 $H(A\\cup B)=H(2p-p^{2})+2p(1-p)H(q)(n-1)+p^{2}H(2q-q^{2})(n-1)$⟧",
+    "topic": "Entropy formulas"
+   },
+   "zh": {
+    "takeaway": "熵公式：⟦a86 $H(A)=H(p)+pH(q)(n-1)$⟧，并集的熵有三个类似项",
+    "reason": "类似计算给出⟦a87 $H(A\\cup B)=H(2p-p^{2})+2p(1-p)H(q)(n-1)+p^{2}H(2q-q^{2})(n-1)$⟧",
+    "topic": "熵公式"
+   },
+   "de": {
+    "takeaway": "Entropieformeln: ⟦a86 $H(A)=H(p)+pH(q)(n-1)$⟧, und die Entropie der Vereinigung hat drei Terme",
+    "reason": "Eine ähnliche Rechnung liefert ⟦a87 $H(A\\cup B)=H(2p-p^{2})+2p(1-p)H(q)(n-1)+p^{2}H(2q-q^{2})(n-1)$⟧",
+    "topic": "Entropieformeln"
+   }
+  },
+  "S1.p11.1": {
+   "note": "topic not in takeaway; raw math in reason; de sentence 3 word order",
+   "en": {
+    "takeaway": "For large ⟦a88 $n$⟧ and small ⟦a89 $p$⟧, ⟦a91 $2p(1-p)H(q)(n-1)$⟧ is the dominant term of ⟦a90 $H(A\\cup B)$⟧",
+    "reason": "In Example 3 this term reflects exactly one of ⟦a92 $A_{1},B_{1}$⟧ being ⟦a93 $1$⟧, so ⟦a94 $\\frac{H(A\\cup B)}{H(A)}\\approx 2(1-p)$⟧; also ⟦a95 $H(A\\cup B|A_{1}=B_{1}=1)$⟧ is small relative to ⟦a96 $H(A|A_{1}=1)$⟧",
+    "topic": "dominant term"
+   },
+   "zh": {
+    "takeaway": "当⟦a88 $n$⟧大、⟦a89 $p$⟧小时，⟦a91 $2p(1-p)H(q)(n-1)$⟧是⟦a90 $H(A\\cup B)$⟧的主导项",
+    "reason": "例 3 中该项对应⟦a92 $A_{1},B_{1}$⟧恰有一个为⟦a93 $1$⟧，故⟦a94 $\\frac{H(A\\cup B)}{H(A)}\\approx 2(1-p)$⟧；且⟦a95 $H(A\\cup B|A_{1}=B_{1}=1)$⟧相对⟦a96 $H(A|A_{1}=1)$⟧很小",
+    "topic": "主导项"
+   },
+   "de": {
+    "sentences": {
+     "3": "Beachten Sie, dass in diesem Fall die Entropie ⟦a95 $H(A\\cup B|A_{1}=B_{1}=1)$⟧ klein im Vergleich zu ⟦a96 $H(A|A_{1}=1)$⟧ ist."
+    },
+    "takeaway": "Der dominante Term von ⟦a90 $H(A\\cup B)$⟧ ist ⟦a91 $2p(1-p)H(q)(n-1)$⟧ für großes ⟦a88 $n$⟧ und kleines ⟦a89 $p$⟧",
+    "reason": "In Beispiel 3 entspricht dieser Term dem Fall, dass genau eines von ⟦a92 $A_{1},B_{1}$⟧ gleich ⟦a93 $1$⟧ ist, also ⟦a94 $\\frac{H(A\\cup B)}{H(A)}\\approx 2(1-p)$⟧; zudem ist ⟦a95 $H(A\\cup B|A_{1}=B_{1}=1)$⟧ klein gegenüber ⟦a96 $H(A|A_{1}=1)$⟧",
+    "topic": "dominante Term"
+   }
+  },
+  "S1.p12.1": {
+   "note": "topic 'entropy inequality' not in takeaway; the limit is on strengthening Theorem 1, and Section 5 only might reach 0.5; zh terminology (并封闭集族, 伯努利)",
+   "en": {
+    "takeaway": "Limitation: Examples 1 and 2 allow ⟦a99 $H(A\\cup B)\\leq H(A)$⟧ when ⟦a98 $Pr[A_{i}=1]\\geq\\frac{3-\\sqrt{5}}{2}$⟧",
+    "reason": "Since this threshold is below 0.5, strengthening Theorem 1 cannot resolve the conjecture; Section 5 uses uniformity to aim for 0.5",
+    "topic": "Limitation"
+   },
+   "zh": {
+    "takeaway": "局限：例 1、2 表明⟦a98 $Pr[A_{i}=1]\\geq\\frac{3-\\sqrt{5}}{2}$⟧时可有⟦a99 $H(A\\cup B)\\leq H(A)$⟧",
+    "reason": "该阈值低于 0.5，故仅加强定理 1 无法解决猜想；第 5 节借助均匀性力求达到 0.5",
+    "topic": "局限",
+    "sentences": {
+     "1": "因为⟦a100 $\\frac{3-\\sqrt{5}}{2}<0.5$⟧，任何对定理⟦a101 1⟧更强的界都不足以解决并封闭集猜想。"
+    }
+   },
+   "de": {
+    "takeaway": "Grenze des Ansatzes: Die Beispiele 1 und 2 erlauben ⟦a99 $H(A\\cup B)\\leq H(A)$⟧, wenn ⟦a98 $Pr[A_{i}=1]\\geq\\frac{3-\\sqrt{5}}{2}$⟧",
+    "reason": "Da diese Schwelle unter 0,5 liegt, kann eine Verschärfung von Satz 1 die Vermutung nicht lösen; Abschnitt 5 nutzt die Gleichverteilung, um 0,5 anzustreben",
+    "topic": "Grenze des Ansatzes"
+   }
+  },
+  "S2.p1.1": {
+   "note": "raw math in en takeaway; formula/word topics not usable",
+   "en": {
+    "takeaway": "Notation: ⟦a105 $\\log(x)$⟧ is the base 2 logarithm, and ⟦a108 $X\\cup X^{\\prime}$⟧ denotes ⟦a109 $\\max(X,X^{\\prime})$⟧",
+    "topic": "Notation"
+   },
+   "zh": {
+    "takeaway": "记号：⟦a105 $\\log(x)$⟧以 2 为底，⟦a108 $X\\cup X^{\\prime}$⟧表示⟦a109 $\\max(X,X^{\\prime})$⟧",
+    "topic": "记号"
+   },
+   "de": {
+    "takeaway": "Notation: ⟦a105 $\\log(x)$⟧ ist der Logarithmus zur Basis 2, ⟦a108 $X\\cup X^{\\prime}$⟧ bedeutet ⟦a109 $\\max(X,X^{\\prime})$⟧",
+    "topic": "Notation"
+   }
+  },
+  "S2.p2.1": {
+   "note": "citation as plain [6] instead of marker; de topic an inflected fragment",
+   "en": {
+    "reason": "Cover and Thomas ⟦a110 [6]⟧ give additional background on information theory"
+   },
+   "de": {
+    "topic": "Eigenschaften der bedingten Entropie"
+   }
+  },
+  "S2.I1.i1.p1.1": {
+   "note": "raw $X_{<i}$ in reason; topic over budget",
+   "en": {
+    "topic": "Chain Rule",
+    "reason": "It decomposes joint entropy into conditional entropies, each given the prefix ⟦a112 $X_{<i}=(X_{1},\\cdots,X_{i-1})$⟧"
+   },
+   "de": {
+    "reason": "Sie zerlegt die gemeinsame Entropie in bedingte Entropien, jeweils bedingt auf das Präfix ⟦a112 $X_{<i}=(X_{1},\\cdots,X_{i-1})$⟧"
+   }
+  },
+  "S2.I1.i2.p1.1": {
+   "note": "topic 'random variables' did not name the unit; en takeaway over budget; zh takeaway awkward",
+   "en": {
+    "takeaway": "A second property is stated for random variables ⟦a114 $X$⟧, ⟦a115 $Y$⟧ and a function ⟦a116 $f(Y)$⟧",
+    "topic": "second property"
+   },
+   "zh": {
+    "takeaway": "陈述关于随机变量⟦a114 $X$⟧、⟦a115 $Y$⟧与函数⟦a116 $f(Y)$⟧的第二个性质",
+    "topic": "第二个性质"
+   },
+   "de": {
+    "topic": "zweite Eigenschaft"
+   }
+  },
+  "S2.p4.1": {
+   "note": "topic cut ('Property (2'); a topic ending in ')' is cut by the locator",
+   "en": {
+    "takeaway": "Quick proof of property (2)",
+    "topic": "Quick proof"
+   },
+   "zh": {
+    "takeaway": "快速证明性质 (2)",
+    "topic": "快速证明"
+   },
+   "de": {
+    "takeaway": "Kurzer Beweis von Eigenschaft (2)",
+    "topic": "Kurzer Beweis"
+   }
+  },
+  "S2.p6.1": {
+   "note": "topic cut ('property (2')",
+   "en": {
+    "takeaway": "Property (2): the proof is complete",
+    "topic": "proof is complete"
+   },
+   "zh": {
+    "topic": "证明完毕"
+   },
+   "de": {
+    "takeaway": "Eigenschaft (2): Beweis abgeschlossen",
+    "topic": "Beweis abgeschlossen"
+   }
+  },
+  "S3.p1.1": {
+   "note": "topic 'bits' too vague; de 'offenbaren' unidiomatic for revealing bits",
+   "en": {
+    "takeaway": "Proof strategy: reveal the bits of ⟦a121 $A\\cup B$⟧ and ⟦a122 $A$⟧ one at a time",
+    "topic": "Proof strategy"
+   },
+   "zh": {
+    "takeaway": "证明策略：逐个揭示⟦a121 $A\\cup B$⟧与⟦a122 $A$⟧的比特",
+    "topic": "证明策略"
+   },
+   "de": {
+    "sentences": {
+     "2": "Die Beweisstrategie beruht darauf, die Bits von ⟦a121 $A\\cup B$⟧ und ⟦a122 $A$⟧ einzeln aufzudecken und in jedem Schritt zu zeigen, dass"
+    },
+    "takeaway": "Beweisstrategie: die Bits von ⟦a121 $A\\cup B$⟧ und ⟦a122 $A$⟧ einzeln aufdecken",
+    "reason": "Jeder Schritt muss die Entropieungleichung pro Schritt erfüllen, die die Kettenregel später aufsummiert",
+    "topic": "Beweisstrategie"
+   }
+  },
+  "S3.p1.2": {
+   "note": "chain-rule summation is not telescoping",
+   "en": {
+    "reason": "Summing the per-step inequalities over all coordinates gives the factor 1.26"
+   }
+  },
+  "S3.p2.1": {
+   "note": "de relative pronoun 'dessen' pointed at 'Schritt'; distinct topic",
+   "de": {
+    "reason": "Das Lemma, dessen Beweis in Abschnitt 4 steht, liefert die Entropieschranke für einen einzelnen Schritt",
+    "topic": "Gleichung"
+   },
+   "en": {
+    "topic": "Equation"
+   },
+   "zh": {
+    "topic": "等式"
+   }
+  },
+  "Thmlemma1.p1.1": {
+   "note": "X and X' are independent, not 'coupled'; C is not yet a 'history' here",
+   "en": {
+    "takeaway": "Lemma 1 bounds the conditional entropy of two independent Bernoulli draws with ⟦a135 $\\mathbb{E}[X]\\leq 0.01$⟧",
+    "reason": "⟦a131 $X$⟧ has ⟦a134 $Pr[X=1|C=c]=p_{c}$⟧, and ⟦a138 $X^{\\prime}$⟧ is drawn the same way from an iid copy ⟦a136 $C^{\\prime}$⟧"
+   },
+   "zh": {
+    "takeaway": "引理1给出⟦a135 $\\mathbb{E}[X]\\leq 0.01$⟧下两个独立伯努利变量的条件熵界",
+    "reason": "⟦a131 $X$⟧满足⟦a134 $Pr[X=1|C=c]=p_{c}$⟧，⟦a138 $X^{\\prime}$⟧按同一方式由独立同分布副本⟦a136 $C^{\\prime}$⟧采样"
+   },
+   "de": {
+    "takeaway": "Lemma 1 schätzt die bedingte Entropie zweier unabhängiger Bernoulli-Ziehungen mit ⟦a135 $\\mathbb{E}[X]\\leq 0.01$⟧ ab",
+    "reason": "⟦a131 $X$⟧ erfüllt ⟦a134 $Pr[X=1|C=c]=p_{c}$⟧, und ⟦a138 $X^{\\prime}$⟧ wird ebenso aus einer iid-Kopie ⟦a136 $C^{\\prime}$⟧ gezogen"
+   }
+  },
+  "S3.p3.1": {
+   "note": "raw math in reason; topic 'sequences' vague",
+   "en": {
+    "takeaway": "Lemma 1 has a succinct restatement for sequences with ⟦a146 $\\mathbb{E}_{c}[p_{c}]\\leq 0.01$⟧",
+    "reason": "It is phrased directly in the finite sequence ⟦a145 $\\{p_{c}\\}_{c\\in S}\\subset[0,1]$⟧ and its mean",
+    "topic": "succinct restatement"
+   },
+   "zh": {
+    "takeaway": "引理1可简洁重述为满足⟦a146 $\\mathbb{E}_{c}[p_{c}]\\leq 0.01$⟧的序列之界",
+    "reason": "它直接以有限序列⟦a145 $\\{p_{c}\\}_{c\\in S}\\subset[0,1]$⟧及其均值表述",
+    "topic": "简洁重述"
+   },
+   "de": {
+    "takeaway": "Knappe Umformulierung: Lemma 1 als Schranke für Folgen mit ⟦a146 $\\mathbb{E}_{c}[p_{c}]\\leq 0.01$⟧",
+    "reason": "Sie wird direkt über die endliche Folge ⟦a145 $\\{p_{c}\\}_{c\\in S}\\subset[0,1]$⟧ und ihren Mittelwert formuliert",
+    "topic": "Knappe Umformulierung"
+   }
+  },
+  "S3.p5.1": {
+   "note": "raw formula; the conjecture is an entropy gain for E[X] below the threshold, not 'sufficient'",
+   "en": {
+    "takeaway": "Unoptimized constant ⟦a151 $0.01$⟧; an entropy gain is conjectured whenever ⟦a152 $\\mathbb{E}[X]<\\frac{3-\\sqrt{5}}{2}$⟧",
+    "topic": "Unoptimized constant"
+   },
+   "zh": {
+    "takeaway": "未优化的常数⟦a151 $0.01$⟧；猜想只要⟦a152 $\\mathbb{E}[X]<\\frac{3-\\sqrt{5}}{2}$⟧即有熵增益",
+    "topic": "未优化的常数"
+   },
+   "de": {
+    "takeaway": "Nicht optimierte Konstante ⟦a151 $0.01$⟧; vermutet wird ein Entropiegewinn, sobald ⟦a152 $\\mathbb{E}[X]<\\frac{3-\\sqrt{5}}{2}$⟧",
+    "topic": "Nicht optimierte Konstante"
+   }
+  },
+  "S3.p6.1": {
+   "note": "topic 'Lemma 1' repeated across the section; the unit is about the main result",
+   "en": {
+    "topic": "Main result"
+   },
+   "zh": {
+    "topic": "主要结果"
+   },
+   "de": {
+    "topic": "Hauptresultat"
+   }
+  },
+  "Thmtheorem3.p1.1": {
+   "note": "de uses 'Satz' for theorem everywhere else",
+   "de": {
+    "takeaway": "Satz 1: ⟦a162 $H(A\\cup B)\\geq 1.26H(A)$⟧ gilt, wenn ⟦a160 $Pr[i\\in A]\\leq 0.01$⟧",
+    "topic": "Satz 1"
+   }
+  },
+  "S3.p7.1": {
+   "note": "topic 'coordinate' a cut of 'per-coordinate'",
+   "en": {
+    "topic": "per-coordinate inequality"
+   },
+   "zh": {
+    "topic": "逐坐标不等式"
+   },
+   "de": {
+    "topic": "Ungleichung pro Koordinate"
+   }
+  },
+  "S3.p9.1": {
+   "note": "de 'Bedingung auf' means 'condition', not 'conditioning'",
+   "de": {
+    "sentences": {
+     "2": "Die Konditionierung auf ⟦a169 $A_{<i},B_{<i}$⟧ vereinfacht die Analyse erheblich, da diese iid sind."
+    },
+    "takeaway": "Die Konditionierung auf ⟦a166 $A_{<i},B_{<i}$⟧ macht die Analyse mit Lemma 1 handhabbar",
+    "topic": "Konditionierung"
+   }
+  },
+  "S3.p10.1": {
+   "note": "raw $1.26$ in takeaway; zh used another unit's formula; distinct topic",
+   "en": {
+    "takeaway": "Applying the chain rule repeatedly finishes the proof of the 1.26 bound",
+    "topic": "1.26 bound"
+   },
+   "zh": {
+    "takeaway": "反复应用链式法则，完成 1.26 熵不等式的证明",
+    "topic": "1.26 熵不等式"
+   },
+   "de": {
+    "takeaway": "Wiederholte Anwendung der Kettenregel schließt den Beweis mit dem Faktor 1,26 ab",
+    "topic": "Faktor 1,26"
+   }
+  },
+  "S4.p1.1": {
+   "note": "formula topic; the point is that iid is the only assumption",
+   "en": {
+    "takeaway": "The only assumption: ⟦a175 $A_{<i}$⟧ and ⟦a176 $B_{<i}$⟧ are iid over a finite set ⟦a177 $S$⟧",
+    "reason": "Lemma 1 assumes nothing else, so all other structure of ⟦a175 $A_{<i}$⟧ and ⟦a176 $B_{<i}$⟧ can be forgotten",
+    "topic": "only assumption"
+   },
+   "zh": {
+    "takeaway": "唯一假设：⟦a175 $A_{<i}$⟧和⟦a176 $B_{<i}$⟧在有限集⟦a177 $S$⟧上独立同分布",
+    "reason": "引理1不需要其他假设，故可忘记⟦a175 $A_{<i}$⟧和⟦a176 $B_{<i}$⟧的其余结构",
+    "topic": "唯一假设"
+   },
+   "de": {
+    "takeaway": "Einzige Annahme: ⟦a175 $A_{<i}$⟧ und ⟦a176 $B_{<i}$⟧ sind iid über einer endlichen Menge ⟦a177 $S$⟧",
+    "reason": "Lemma 1 setzt nichts weiter voraus, daher kann jede weitere Struktur von ⟦a175 $A_{<i}$⟧ und ⟦a176 $B_{<i}$⟧ vergessen werden",
+    "topic": "Einzige Annahme"
+   }
+  },
+  "S4.p1.2": {
+   "note": "topic cut ('Lemma 1 is', 'Lemma 1 gilt')",
+   "en": {
+    "takeaway": "Lemma 1 assumes the mean bound ⟦a178 $\\mathbb{E}_{c}[p_{c}]\\leq 0.01=\\mu$⟧",
+    "topic": "mean bound"
+   },
+   "zh": {
+    "takeaway": "引理1假设均值界⟦a178 $\\mathbb{E}_{c}[p_{c}]\\leq 0.01=\\mu$⟧",
+    "topic": "均值界"
+   },
+   "de": {
+    "takeaway": "Lemma 1 setzt die Mittelwertschranke ⟦a178 $\\mathbb{E}_{c}[p_{c}]\\leq 0.01=\\mu$⟧ voraus",
+    "topic": "Mittelwertschranke"
+   }
+  },
+  "S4.p2.1": {
+   "note": "de 'Enthüllung' unidiomatic for revealing a bit",
+   "de": {
+    "sentences": {
+     "4": "Genau das wird in Beispiel 2 geschehen, das in der Einleitung diskutiert wird: Nach dem Aufdecken des ersten Bits ⟦a185 $A_{1}$⟧ werden alle nachfolgenden Bits deterministisch."
+    }
+   }
+  },
+  "S4.p3.1": {
+   "note": "reason 'gives the wrong conditional entropy' unclear; zh 强化 vs 加强 elsewhere; de 'uniform' vs 'gleichverteilt' elsewhere",
+   "en": {
+    "reason": "A counterexample with ⟦a190 $X$⟧, ⟦a191 $C$⟧ uniform over ⟦a192 $\\{0,1,2,3\\}$⟧ gives ⟦a202 $H(f(X,X^{\\prime})|C,C^{\\prime})=0$⟧, so proofs must use the union"
+   },
+   "zh": {
+    "sentences": {
+     "2": "然而，这个加强命题最终被证明是假的。"
+    },
+    "takeaway": "引理1对任意函数⟦a187 $f$⟧的信息论加强命题为假",
+    "reason": "以⟦a190 $X$⟧和⟦a191 $C$⟧在⟦a192 $\\{0,1,2,3\\}$⟧上均匀分布的反例给出⟦a202 $H(f(X,X^{\\prime})|C,C^{\\prime})=0$⟧，故证明须利用并函数",
+    "topic": "信息论加强"
+   },
+   "de": {
+    "sentences": {
+     "3": "Betrachten wir den Fall, in dem sowohl ⟦a190 $X$⟧ als auch ⟦a191 $C$⟧ gleichverteilt auf der Menge ⟦a192 $\\{0,1,2,3\\}$⟧ sind.",
+     "4": "Weiterhin sei ⟦a193 $X|C$⟧ gleichverteilt auf ⟦a194 $\\{0,2\\}$⟧, wenn ⟦a195 $C\\in\\{0,2\\}$⟧, und ⟦a196 $X|C$⟧ sei gleichverteilt auf ⟦a197 $\\{1,3\\}$⟧, wenn ⟦a198 $C\\in\\{1,3\\}$⟧."
+    },
+    "reason": "Ein Gegenbeispiel mit ⟦a190 $X$⟧, ⟦a191 $C$⟧ gleichverteilt auf ⟦a192 $\\{0,1,2,3\\}$⟧ liefert ⟦a202 $H(f(X,X^{\\prime})|C,C^{\\prime})=0$⟧, daher muss ein Beweis die Vereinigung nutzen"
+   }
+  },
+  "S4.p4.1": {
+   "note": "single-author paper ('The authors'); false 'so' in reason; topic cut ('inequality (5'); zh 紧致 means compact",
+   "en": {
+    "takeaway": "Direct estimation of the terms in inequality (⟦a204 5⟧) with ⟦a205 $\\mathcal{C}_{0}=\\{c|p_{c}\\leq 0.1\\}$⟧ and its complement ⟦a206 $\\mathcal{C}_{1}=\\mathcal{C}_{0}^{c}$⟧",
+    "reason": "The two natural strategies failed; the wasteful argument is surely far from tight, and a sketch comes first",
+    "topic": "Direct estimation"
+   },
+   "zh": {
+    "sentences": {
+     "1": "我们的论证相当浪费，肯定远不是紧的。"
+    },
+    "takeaway": "直接估计不等式(⟦a204 5⟧)中的项，用⟦a205 $\\mathcal{C}_{0}=\\{c|p_{c}\\leq 0.1\\}$⟧及其补集⟦a206 $\\mathcal{C}_{1}=\\mathcal{C}_{0}^{c}$⟧划分",
+    "reason": "两种自然策略均未奏效；该论证相当浪费，远不是紧的，先给出证明概要",
+    "topic": "直接估计"
+   },
+   "de": {
+    "takeaway": "Direkte Abschätzung der Terme in Ungleichung (⟦a204 5⟧) mit ⟦a205 $\\mathcal{C}_{0}=\\{c|p_{c}\\leq 0.1\\}$⟧ und dem Komplement ⟦a206 $\\mathcal{C}_{1}=\\mathcal{C}_{0}^{c}$⟧",
+    "reason": "Beide naheliegenden Strategien scheiterten; das Argument ist verschwenderisch und sicher weit von der Optimalität entfernt, zuerst kommt eine Beweisskizze",
+    "topic": "Direkte Abschätzung"
+   }
+  },
+  "S4.p6.1": {
+   "note": "topic a formula cut; 'so' falsely made the notation a consequence of the bound",
+   "en": {
+    "takeaway": "Thus ⟦a208 $Pr[C_{0}]\\geq 0.9$⟧; event notation writes ⟦a209 $\\mathcal{C}_{0}$⟧ for ⟦a210 $C\\in\\mathcal{C}_{0}$⟧",
+    "topic": "event notation"
+   },
+   "zh": {
+    "takeaway": "因此⟦a208 $Pr[C_{0}]\\geq 0.9$⟧；事件记号以⟦a209 $\\mathcal{C}_{0}$⟧表示⟦a210 $C\\in\\mathcal{C}_{0}$⟧",
+    "topic": "事件记号"
+   },
+   "de": {
+    "takeaway": "Somit gilt ⟦a208 $Pr[C_{0}]\\geq 0.9$⟧; als Ereignisnotation steht ⟦a209 $\\mathcal{C}_{0}$⟧ für ⟦a210 $C\\in\\mathcal{C}_{0}$⟧",
+    "topic": "Ereignisnotation"
+   }
+  },
+  "S4.p7.1": {
+   "note": "de sentence 0 had 'sowohl' without 'als auch'",
+   "de": {
+    "sentences": {
+     "0": "Wir bemerken zunächst, dass bedingt auf das Ereignis, dass beide Bedingungen ⟦a214 $C,C^{\\prime}\\in C_{0}$⟧ gelten, die Entropie ⟦a215 $H(X\\cup X^{\\prime})$⟧ um einen konstanten Faktor größer sein wird als ⟦a216 $\\frac{H(X)+H(X^{\\prime})}{2}$⟧."
+    }
+   }
+  },
+  "S4.p8.1": {
+   "note": "topic a fragment ('When exactly one'); single author",
+   "en": {
+    "takeaway": "Mixed case: if exactly one of ⟦a217 $c,c^{\\prime}\\in\\mathcal{C}_{0}$⟧ holds, ⟦a218 $H(X\\cup X^{\\prime})\\geq 0.9H(X)$⟧",
+    "reason": "This property is then used to prove a further entropy inequality",
+    "topic": "Mixed case"
+   },
+   "zh": {
+    "takeaway": "混合情形：若⟦a217 $c,c^{\\prime}\\in\\mathcal{C}_{0}$⟧中恰有一个成立，则⟦a218 $H(X\\cup X^{\\prime})\\geq 0.9H(X)$⟧",
+    "reason": "该性质随后用于证明另一个熵不等式",
+    "topic": "混合情形"
+   },
+   "de": {
+    "takeaway": "Gemischter Fall: Gilt genau eines von ⟦a217 $c,c^{\\prime}\\in\\mathcal{C}_{0}$⟧, so ist ⟦a218 $H(X\\cup X^{\\prime})\\geq 0.9H(X)$⟧",
+    "reason": "Diese Eigenschaft dient anschließend zum Beweis einer weiteren Entropieungleichung",
+    "topic": "Gemischter Fall"
+   }
+  },
+  "S4.p10.1": {
+   "note": "topic cut ('equations (7) and (8'); takeaway over budget; zh 紧致 means compact",
+   "en": {
+    "takeaway": "Example 3 motivated the decomposition in (7) and (8); the term ⟦a227 $Pr[\\mathcal{C}_{1}]^{2}H(X,X^{\\prime}|C,C^{\\prime}\\in\\mathcal{C}_{1})$⟧ is dropped",
+    "topic": "decomposition"
+   },
+   "zh": {
+    "sentences": {
+     "5": "然而，引理 ⟦a232 1⟧ 的紧版本将需要更精细的分析。"
+    },
+    "reason": "该项非负，且剩余之和已超过 ⟦a231 $H(X|C)$⟧，不过紧的版本需要更细致的分析",
+    "topic": "分解"
+   },
+   "de": {
+    "takeaway": "Beispiel 3 motivierte die Zerlegung in (7) und (8); der Term ⟦a227 $Pr[\\mathcal{C}_{1}]^{2}H(X,X^{\\prime}|C,C^{\\prime}\\in\\mathcal{C}_{1})$⟧ wird verworfen",
+    "topic": "Zerlegung"
+   }
+  },
+  "Thmlemma2.p1.1": {
+   "note": "formula topic named a condition, not the unit",
+   "en": {
+    "takeaway": "Lemma 2: for ⟦a233 $p,p^{\\prime}\\leq 0.1$⟧, ⟦a234 $H(p+p^{\\prime}-pp^{\\prime})\\geq 1.4\\left(\\frac{H(p)+H(p^{\\prime})}{2}\\right)$⟧",
+    "topic": "Lemma 2"
+   },
+   "zh": {
+    "takeaway": "引理2：对⟦a233 $p,p^{\\prime}\\leq 0.1$⟧，有⟦a234 $H(p+p^{\\prime}-pp^{\\prime})\\geq 1.4\\left(\\frac{H(p)+H(p^{\\prime})}{2}\\right)$⟧",
+    "topic": "引理2"
+   },
+   "de": {
+    "takeaway": "Lemma 2: Für ⟦a233 $p,p^{\\prime}\\leq 0.1$⟧ gilt ⟦a234 $H(p+p^{\\prime}-pp^{\\prime})\\geq 1.4\\left(\\frac{H(p)+H(p^{\\prime})}{2}\\right)$⟧",
+    "topic": "Lemma 2"
+   }
+  },
+  "S4.p12.1": {
+   "note": "raw math in takeaway and reason; reason was a fragment",
+   "en": {
+    "takeaway": "The ratio bound ⟦a248 $f(p,p^{\\prime})>g(0.2)=1.45$⟧ holds on ⟦a239 $(p,p^{\\prime})\\in D$⟧, proving Lemma 2",
+    "reason": "Concavity of ⟦a240 $H$⟧ and ⟦a243 $p+p^{\\prime}-pp^{\\prime}\\geq 0.9(p+p^{\\prime})$⟧ reduce it to ⟦a245 $g(p)=\\frac{H(0.9p)}{H(0.5p)}$⟧, minimized at ⟦a247 $p=0.2$⟧",
+    "topic": "ratio bound"
+   },
+   "zh": {
+    "takeaway": "比值界⟦a248 $f(p,p^{\\prime})>g(0.2)=1.45$⟧在⟦a239 $(p,p^{\\prime})\\in D$⟧上成立，从而证明引理2",
+    "reason": "由⟦a240 $H$⟧的凹性与⟦a243 $p+p^{\\prime}-pp^{\\prime}\\geq 0.9(p+p^{\\prime})$⟧化为⟦a245 $g(p)=\\frac{H(0.9p)}{H(0.5p)}$⟧，后者在⟦a247 $p=0.2$⟧取最小值",
+    "topic": "比值界"
+   },
+   "de": {
+    "takeaway": "Die Verhältnisschranke ⟦a248 $f(p,p^{\\prime})>g(0.2)=1.45$⟧ gilt auf ⟦a239 $(p,p^{\\prime})\\in D$⟧ und beweist Lemma 2",
+    "reason": "Die Konkavität von ⟦a240 $H$⟧ und ⟦a243 $p+p^{\\prime}-pp^{\\prime}\\geq 0.9(p+p^{\\prime})$⟧ führen auf ⟦a245 $g(p)=\\frac{H(0.9p)}{H(0.5p)}$⟧, minimal bei ⟦a247 $p=0.2$⟧",
+    "topic": "Verhältnisschranke"
+   }
+  },
+  "Thmlemma3.p1.1": {
+   "note": "formula topic a cut of the bound",
+   "en": {
+    "takeaway": "Lemma 3: for any ⟦a249 $p,p^{\\prime}\\in[0,1]$⟧, ⟦a250 $H(p+p^{\\prime}-pp^{\\prime})\\geq(1-p)H(p^{\\prime})$⟧",
+    "topic": "Lemma 3"
+   },
+   "zh": {
+    "takeaway": "引理3：对任意⟦a249 $p,p^{\\prime}\\in[0,1]$⟧，有⟦a250 $H(p+p^{\\prime}-pp^{\\prime})\\geq(1-p)H(p^{\\prime})$⟧",
+    "topic": "引理3"
+   },
+   "de": {
+    "takeaway": "Lemma 3: Für beliebige ⟦a249 $p,p^{\\prime}\\in[0,1]$⟧ gilt ⟦a250 $H(p+p^{\\prime}-pp^{\\prime})\\geq(1-p)H(p^{\\prime})$⟧",
+    "topic": "Lemma 3"
+   }
+  },
+  "S4.p13.1": {
+   "note": "raw formula in takeaway",
+   "en": {
+    "takeaway": "Lemma 3 follows from the concavity of ⟦a251 $H$⟧",
+    "topic": "concavity"
+   },
+   "zh": {
+    "takeaway": "引理3由⟦a251 $H$⟧的凹性推出",
+    "topic": "凹性"
+   },
+   "de": {
+    "takeaway": "Lemma 3 folgt aus der Konkavität von ⟦a251 $H$⟧",
+    "topic": "Konkavität"
+   }
+  },
+  "S4.p13.2": {
+   "note": "topic repeated the lemma's own topic; de 'schließt ab' unidiomatic",
+   "en": {
+    "topic": "Lemma 3's proof"
+   },
+   "zh": {
+    "topic": "引理3的证明"
+   },
+   "de": {
+    "takeaway": "Der Beweis von Lemma 3 ist abgeschlossen",
+    "topic": "Beweis von Lemma 3"
+   }
+  },
+  "S4.p14.1": {
+   "note": "formula topic not in takeaway; de 'Bedingung' wrong for conditional distribution",
+   "en": {
+    "takeaway": "Distribution notation: ⟦a254 $q(c)=Pr[C=c]$⟧, and ⟦a259 $q_{0}(c)=\\frac{q(c)}{Pr[C\\in\\mathcal{C}_{0}]}$⟧ for ⟦a258 $c\\in\\mathcal{C}_{0}$⟧",
+    "topic": "Distribution notation"
+   },
+   "zh": {
+    "takeaway": "分布记号：⟦a254 $q(c)=Pr[C=c]$⟧，且对⟦a258 $c\\in\\mathcal{C}_{0}$⟧有⟦a259 $q_{0}(c)=\\frac{q(c)}{Pr[C\\in\\mathcal{C}_{0}]}$⟧",
+    "topic": "分布记号"
+   },
+   "de": {
+    "takeaway": "Verteilungsnotation: ⟦a254 $q(c)=Pr[C=c]$⟧ und ⟦a259 $q_{0}(c)=\\frac{q(c)}{Pr[C\\in\\mathcal{C}_{0}]}$⟧ für ⟦a258 $c\\in\\mathcal{C}_{0}$⟧",
+    "reason": "Diese bezeichnen die Verteilung von ⟦a253 $C$⟧ und ihre bedingte Verteilung unter ⟦a257 $C\\in\\mathcal{C}_{0}$⟧",
+    "topic": "Verteilungsnotation"
+   }
+  },
+  "S4.F1.cap": {
+   "note": "raw formula in takeaway and as topic",
+   "en": {
+    "takeaway": "Plotted ratio: minimum ⟦a262 $1.496$⟧ at ⟦a263 $p=p^{\\prime}=0.1$⟧ over ⟦a261 $0\\leq p,p^{\\prime}\\leq 0.1$⟧",
+    "topic": "Plotted ratio"
+   },
+   "zh": {
+    "takeaway": "比值图像：在⟦a261 $0\\leq p,p^{\\prime}\\leq 0.1$⟧上最小值为⟦a262 $1.496$⟧，于⟦a263 $p=p^{\\prime}=0.1$⟧取得",
+    "topic": "比值图像"
+   },
+   "de": {
+    "takeaway": "Graph des Verhältnisses: Minimum ⟦a262 $1.496$⟧ bei ⟦a263 $p=p^{\\prime}=0.1$⟧ über ⟦a261 $0\\leq p,p^{\\prime}\\leq 0.1$⟧",
+    "topic": "Graph des Verhältnisses"
+   }
+  },
+  "Thmlemma4.p1.1": {
+   "note": "formula topic named the assumption, not the unit",
+   "en": {
+    "topic": "Lemma 4"
+   },
+   "zh": {
+    "topic": "引理4"
+   },
+   "de": {
+    "topic": "Lemma 4"
+   }
+  },
+  "S4.p16.1": {
+   "note": "topic a bare number",
+   "en": {
+    "topic": "Multiplying both sides"
+   },
+   "zh": {
+    "topic": "两边乘以"
+   },
+   "de": {
+    "topic": "Multiplikation beider Seiten"
+   }
+  },
+  "S4.p17.1": {
+   "note": "topic repeated the lemma's own topic; de 'schließt ab' unidiomatic",
+   "en": {
+    "topic": "Lemma 4's proof"
+   },
+   "zh": {
+    "topic": "引理4的证明"
+   },
+   "de": {
+    "takeaway": "Der Beweis von Lemma 4 ist abgeschlossen",
+    "topic": "Beweis von Lemma 4"
+   }
+  },
+  "Thmlemma5.p1.1": {
+   "note": "formula topic named the assumption, not the unit",
+   "en": {
+    "topic": "Lemma 5"
+   },
+   "zh": {
+    "topic": "引理5"
+   },
+   "de": {
+    "topic": "Lemma 5"
+   }
+  },
+  "S4.p18.1": {
+   "note": "topic repeated the lemma's own topic; de 'schließt ab' unidiomatic",
+   "en": {
+    "topic": "Lemma 5's proof"
+   },
+   "zh": {
+    "topic": "引理5的证明"
+   },
+   "de": {
+    "takeaway": "Der Beweis von Lemma 5 ist abgeschlossen",
+    "topic": "Beweis von Lemma 5"
+   }
+  },
+  "S4.p20.1": {
+   "note": "raw math in takeaway",
+   "en": {
+    "takeaway": "To show ⟦a268 $H(X\\cup X^{\\prime}|C,C^{\\prime})\\geq 1.26H(X|C)$⟧, the entropy is split over three disjoint events"
+   },
+   "de": {
+    "takeaway": "Um ⟦a268 $H(X\\cup X^{\\prime}|C,C^{\\prime})\\geq 1.26H(X|C)$⟧ zu zeigen, wird die Entropie über drei disjunkte Ereignisse zerlegt"
+   }
+  },
+  "S4.p22.1": {
+   "note": "raw math; 'beat factors' unclear; topic a bare formula",
+   "en": {
+    "takeaway": "Combining the event bounds gives ⟦a277 $H(X\\cup X^{\\prime}|C,C^{\\prime})\\geq 1.26H(X|C)$⟧",
+    "reason": "Lemma 4 gives factor 1.26 on event (1), Lemma 5 factor 1.62 on event (2), and event (3) is non-negative",
+    "topic": "event bounds"
+   },
+   "zh": {
+    "takeaway": "合并各事件的界即得⟦a277 $H(X\\cup X^{\\prime}|C,C^{\\prime})\\geq 1.26H(X|C)$⟧",
+    "reason": "引理4给事件(1)带来 1.26 倍，引理5给事件(2)带来 1.62 倍，事件(3)的熵非负",
+    "topic": "各事件的界"
+   },
+   "de": {
+    "takeaway": "Die Schranken der Ereignisse ergeben zusammen ⟦a277 $H(X\\cup X^{\\prime}|C,C^{\\prime})\\geq 1.26H(X|C)$⟧",
+    "reason": "Lemma 4 liefert Faktor 1,26 für Ereignis (1), Lemma 5 Faktor 1,62 für Ereignis (2), und Ereignis (3) ist nichtnegativ",
+    "topic": "Schranken der Ereignisse"
+   }
+  },
+  "S4.p23.1": {
+   "note": "topic repeated; de 'schließt ab' unidiomatic",
+   "en": {
+    "takeaway": "Lemma 1's proof concludes",
+    "topic": "Lemma 1's proof"
+   },
+   "zh": {
+    "topic": "引理1的证明"
+   },
+   "de": {
+    "takeaway": "Der Beweis von Lemma 1 ist abgeschlossen",
+    "topic": "Beweis von Lemma 1"
+   }
+  },
+  "S5.p1.1": {
+   "note": "a tight Lemma 1 is hypothetical ('would'); raw math; zh raw \\( \\) LaTeX; missing article; zh terminology (并封闭集族, 伯努利)",
+   "en": {
+    "takeaway": "A tight Lemma 1 would yield only a ⟦a279 $\\frac{3-\\sqrt{5}}{2}$⟧ bound, short of one half",
+    "reason": "Since ⟦a280 $\\frac{3-\\sqrt{5}}{2}<\\frac{1}{2}$⟧, additional ideas are needed to resolve the union-closed conjecture"
+   },
+   "zh": {
+    "sentences": {
+     "3": "在本节中，我们讨论实现这一加强的一个潜在方向。",
+     "1": "引理⟦a278 1⟧的紧版本将蕴含并封闭集族中最大元素频率的⟦a279 $\\frac{3-\\sqrt{5}}{2}$⟧下界。",
+     "2": "由于⟦a280 $\\frac{3-\\sqrt{5}}{2}<\\frac{1}{2}$⟧，还需要额外的想法才能解决并封闭集猜想。"
+    },
+    "takeaway": "紧的引理1也只能给出⟦a279 $\\frac{3-\\sqrt{5}}{2}$⟧的下界，不到二分之一",
+    "reason": "由于⟦a280 $\\frac{3-\\sqrt{5}}{2}<\\frac{1}{2}$⟧，需要额外的想法才能解决并封闭集猜想"
+   },
+   "de": {
+    "takeaway": "Ein scharfes Lemma 1 würde nur die Schranke ⟦a279 $\\frac{3-\\sqrt{5}}{2}$⟧ liefern, weniger als ein Halb"
+   }
+  },
+  "S5.p2.1": {
+   "note": "topic cut ('quantifies how'); zh raw \\( \\) LaTeX and garbled topic; zh terminology (并封闭集族, 伯努利)",
+   "en": {
+    "takeaway": "KL-divergence ⟦a288 $D(A\\cup B||A)$⟧ measures how far ⟦a283 $A\\cup B$⟧ is from uniform",
+    "reason": "For ⟦a281 $p$⟧ near ⟦a282 $\\frac{1}{2}$⟧, ⟦a283 $A\\cup B$⟧ seems far from uniform, so ⟦a284 $|\\mathcal{F}\\cup\\mathcal{F}|>|\\mathcal{F}|$⟧ may hold although ⟦a286 $H(A\\cup B)\\leq H(A)$⟧",
+    "topic": "KL-divergence"
+   },
+   "zh": {
+    "takeaway": "KL散度⟦a288 $D(A\\cup B||A)$⟧衡量⟦a283 $A\\cup B$⟧偏离均匀的程度",
+    "reason": "当⟦a281 $p$⟧接近⟦a282 $\\frac{1}{2}$⟧时其分布似乎远非均匀，故即使⟦a286 $H(A\\cup B)\\leq H(A)$⟧，仍可能有⟦a284 $|\\mathcal{F}\\cup\\mathcal{F}|>|\\mathcal{F}|$⟧",
+    "topic": "KL散度",
+    "sentences": {
+     "3": "当⟦a289 $A$⟧是并封闭集族⟦a290 $\\mathcal{F}$⟧上的均匀分布时，成立⟦a291⟧"
+    }
+   },
+   "de": {
+    "takeaway": "Die KL-Divergenz ⟦a288 $D(A\\cup B||A)$⟧ misst, wie weit ⟦a283 $A\\cup B$⟧ von der Gleichverteilung entfernt ist",
+    "reason": "Für ⟦a281 $p$⟧ nahe ⟦a282 $\\frac{1}{2}$⟧ scheint ⟦a283 $A\\cup B$⟧ weit von der Gleichverteilung entfernt; daher könnte ⟦a284 $|\\mathcal{F}\\cup\\mathcal{F}|>|\\mathcal{F}|$⟧ gelten, obwohl ⟦a286 $H(A\\cup B)\\leq H(A)$⟧",
+    "topic": "KL-Divergenz"
+   }
+  },
+  "S5.p3.1": {
+   "note": "zh raw \\( \\) LaTeX; de 'gilt ... gleich' ungrammatical; zh sentence 0 term; zh terminology (并封闭集族, 伯努利)",
+   "zh": {
+    "sentences": {
+     "0": "我们可以对更一般的分布⟦a293 $A$⟧研究量⟦a292 $D(A\\cup B||A)+H(A\\cup B)$⟧，比如当⟦a294 $A$⟧不是均匀分布，或⟦a295 $\\mathcal{F}$⟧不是并封闭集族时。"
+    },
+    "takeaway": "对单个比特，⟦a299 $D(A\\cup B||A)+H(A\\cup B)$⟧恰在⟦a298 $p=0.5$⟧时等于⟦a300 $H(A)=1.0$⟧",
+    "reason": "当⟦a301 $p<0.5$⟧时，该量反而满足式(10)的不等式"
+   },
+   "de": {
+    "takeaway": "Für ein einzelnes Bit ist ⟦a299 $D(A\\cup B||A)+H(A\\cup B)$⟧ genau bei ⟦a298 $p=0.5$⟧ gleich ⟦a300 $H(A)=1.0$⟧"
+   }
+  },
+  "S5.p3.2": {
+   "note": "reason overclaimed ('lets the authors conclude the conjecture'); topic cut ('equation (10'); zh raw LaTeX; zh '支撑集落在F之外' says the whole support",
+   "en": {
+    "takeaway": "Dichotomy: if equation (10) holds, ⟦a304 $A$⟧ is non-uniform on ⟦a305 $\\mathcal{F}$⟧ or ⟦a306 $A\\cup B$⟧ escapes ⟦a307 $\\mathcal{F}$⟧",
+    "reason": "This dichotomy is why proving the strengthened inequality would imply the union-closed sets conjecture",
+    "topic": "Dichotomy"
+   },
+   "zh": {
+    "sentences": {
+     "0": "如果式(⟦a302 10⟧)对某个分布⟦a303 $A$⟧成立，我们可以断定：要么⟦a304 $A$⟧不是⟦a305 $\\mathcal{F}$⟧上的均匀分布，要么分布⟦a306 $A\\cup B$⟧的支撑集超出了⟦a307 $\\mathcal{F}$⟧。"
+    },
+    "takeaway": "二分法：若式(10)成立，则⟦a304 $A$⟧不是⟦a305 $\\mathcal{F}$⟧上的均匀分布，或⟦a306 $A\\cup B$⟧的支撑超出⟦a307 $\\mathcal{F}$⟧",
+    "reason": "正因这一二分法，证明加强的不等式即可推出并封闭集猜想",
+    "topic": "二分法"
+   },
+   "de": {
+    "takeaway": "Dichotomie: Gilt Gleichung (10), so ist ⟦a304 $A$⟧ nicht gleichverteilt über ⟦a305 $\\mathcal{F}$⟧ oder ⟦a306 $A\\cup B$⟧ verlässt ⟦a307 $\\mathcal{F}$⟧",
+    "reason": "Wegen dieser Dichotomie würde der Nachweis der verschärften Ungleichung die Vermutung über vereinigungsabgeschlossene Mengen implizieren",
+    "topic": "Dichotomie"
+   }
+  },
+  "S5.p4.1": {
+   "note": "de topic cut; 'would follow' rendered as fact; zh terminology (并封闭集族, 伯努利)",
+   "de": {
+    "takeaway": "Die Vermutung über vereinigungsabgeschlossene Mengen würde aus dem Nachweis der verschärften Ungleichung folgen",
+    "topic": "Vermutung über vereinigungsabgeschlossene Mengen"
+   },
+   "zh": {
+    "sentences": {
+     "0": "因此，只要证明以下命题，并封闭集猜想即可得证："
+    },
+    "takeaway": "并封闭集猜想可由证明这一加强的不等式推出",
+    "topic": "并封闭集猜想"
+   }
+  },
+  "Thmconjecture1.p1.1": {
+   "note": "zh raw \\( \\) LaTeX",
+   "zh": {
+    "takeaway": "猜想1：对独立同分布的⟦a308 $A,B$⟧，若⟦a310 $Pr[i\\in A]<0.5$⟧且⟦a312 $H(A)>0$⟧，则⟦a313 $H(A\\cup B)+D(A\\cup B||A)>H(A)$⟧",
+    "reason": "建立该猜想即可通过信息论方法解决并封闭集猜想"
+   }
+  },
+  "S6.p1.1": {
+   "note": "raw math in reason; de takeaway and zh topic over budget; topic now names the result",
+   "en": {
+    "topic": "first constant bound",
+    "reason": "The methods yield ⟦a315 $H(A\\cup B)\\geq C_{p}H(a)$⟧ for a constant ⟦a316 $C_{p}>0$⟧ depending on ⟦a317 $p=\\max\\limits_{i}{Pr[A_{i}=1]}$⟧, not the strongest possible"
+   },
+   "zh": {
+    "topic": "首个常数下界",
+    "reason": "方法可得⟦a315 $H(A\\cup B)\\geq C_{p}H(a)$⟧，其中常数⟦a316 $C_{p}>0$⟧依赖于⟦a317 $p=\\max\\limits_{i}{Pr[A_{i}=1]}$⟧，但并非最强"
+   },
+   "de": {
+    "takeaway": "Die Entropie der Vereinigung zweier iid-Stichproben liefert die erste konstante Schranke für Frankls Vermutung",
+    "reason": "Die Methoden liefern ⟦a315 $H(A\\cup B)\\geq C_{p}H(a)$⟧ mit einer Konstanten ⟦a316 $C_{p}>0$⟧, die von ⟦a317 $p=\\max\\limits_{i}{Pr[A_{i}=1]}$⟧ abhängt, jedoch nicht mit der stärkstmöglichen",
+    "topic": "erste konstante Schranke"
+   }
+  },
+  "S6.I1.i1.p1.1": {
+   "note": "formula topic; the paper later calls this item Question 1",
+   "en": {
+    "takeaway": "Question 1: does ⟦a322 $H(A\\cup B)\\geq\\frac{H(2p-p^{2})}{H(p)}H(A)$⟧ hold whenever ⟦a320 $Pr[A_{i}=1]\\leq p$⟧ for all ⟦a321 $i$⟧",
+    "topic": "Question 1"
+   },
+   "zh": {
+    "takeaway": "问题1：若对所有⟦a321 $i$⟧有⟦a320 $Pr[A_{i}=1]\\leq p$⟧，是否有⟦a322 $H(A\\cup B)\\geq\\frac{H(2p-p^{2})}{H(p)}H(A)$⟧",
+    "topic": "问题1"
+   },
+   "de": {
+    "takeaway": "Frage 1: Gilt ⟦a322 $H(A\\cup B)\\geq\\frac{H(2p-p^{2})}{H(p)}H(A)$⟧, sobald ⟦a320 $Pr[A_{i}=1]\\leq p$⟧ für alle ⟦a321 $i$⟧",
+    "topic": "Frage 1"
+   }
+  },
+  "S6.I1.i3.p1.1": {
+   "note": "formula topic not in takeaway; raw $X$ in reason; 'other' assumptions dropped",
+   "en": {
+    "takeaway": "Question: under what other assumptions does ⟦a324 $H(A\\cup B)>H(A)$⟧ hold",
+    "reason": "For example, how small must ⟦a328 $p$⟧ be if ⟦a327 $Pr[X\\subseteq A]<p$⟧ for every ⟦a326 $X\\in\\binom{[n]}{k}$⟧",
+    "topic": "other assumptions"
+   },
+   "zh": {
+    "takeaway": "问题：在何种其他假设下⟦a324 $H(A\\cup B)>H(A)$⟧成立",
+    "reason": "例如，若对每个⟦a326 $X\\in\\binom{[n]}{k}$⟧都有⟦a327 $Pr[X\\subseteq A]<p$⟧，⟦a328 $p$⟧需要多小",
+    "topic": "其他假设"
+   },
+   "de": {
+    "takeaway": "Frage: Unter welchen anderen Annahmen gilt ⟦a324 $H(A\\cup B)>H(A)$⟧",
+    "reason": "Etwa: Wie klein muss ⟦a328 $p$⟧ sein, wenn ⟦a327 $Pr[X\\subseteq A]<p$⟧ für jedes ⟦a326 $X\\in\\binom{[n]}{k}$⟧ gilt",
+    "topic": "Annahmen"
+   }
+  },
+  "S6.p3.1": {
+   "note": "raw math; 'the KL term cannot help' dropped 'without additional assumptions'",
+   "en": {
+    "takeaway": "Three later publications prove tight versions of Lemma 1, improving the bound to ⟦a331 $\\frac{3-\\sqrt{5}}{2}\\approx.38$⟧",
+    "reason": "Sawin confirms Question 1 for ⟦a333 $p\\leq\\frac{3-\\sqrt{5}}{2}$⟧; Sawin and Ellis refute Conjecture 1, and without extra assumptions the KL term cannot help",
+    "topic": "tight versions"
+   },
+   "zh": {
+    "takeaway": "三篇后续论文证明了引理1的紧版本，将界改进为⟦a331 $\\frac{3-\\sqrt{5}}{2}\\approx.38$⟧",
+    "reason": "Sawin 在⟦a333 $p\\leq\\frac{3-\\sqrt{5}}{2}$⟧时证实问题1；Sawin 与 Ellis 的构造否定猜想1，且无额外假设时 KL 项无助于改进",
+    "topic": "紧版本"
+   },
+   "de": {
+    "takeaway": "Drei spätere Arbeiten beweisen scharfe Versionen von Lemma 1 und verbessern die Schranke auf ⟦a331 $\\frac{3-\\sqrt{5}}{2}\\approx.38$⟧",
+    "reason": "Sawin bestätigt Frage 1 für ⟦a333 $p\\leq\\frac{3-\\sqrt{5}}{2}$⟧; Konstruktionen von Sawin und Ellis widerlegen Vermutung 1, und ohne weitere Annahmen hilft der KL-Term nicht",
+    "topic": "scharfe Versionen"
+   }
+  },
+  "Sx1.p1.1": {
+   "note": "zh takeaway dropped who is thanked; topics cut",
+   "zh": {
+    "takeaway": "作者感谢 Michael Saks 与 Swastik Kopparty 的讨论与审阅",
+    "topic": "Michael Saks"
+   },
+   "de": {
+    "topic": "Michael Saks"
+   }
+  },
+  "S1.p4.1": {
+   "zh": {
+    "sentences": {
+     "0": "我们注意到定理⟦a50 1⟧在比并封闭集猜想更一般的设定下成立，因为我们允许⟦a51 $A$⟧从族⟦a52 $\\mathcal{F}$⟧上的任意概率分布中抽取。"
+    },
+    "reason": "该设定比仅做均匀抽样的并封闭集猜想更一般"
+   },
+   "note": "zh terminology: 并封闭集族 / 并封闭集猜想 / 伯努利 used consistently"
+  },
+  "S1.p5.1": {
+   "zh": {
+    "sentences": {
+     "0": "例 1：令⟦a53 $A=(A_{1},A_{2},\\cdots,A_{n})$⟧是⟦a54 $[n]$⟧的随机子集，使得每个⟦a55 $A_{i}$⟧是概率为⟦a56 $p$⟧的独立同分布伯努利随机变量。"
+    },
+    "takeaway": "例 1 具有概率为 ⟦a56 $p$⟧ 的独立同分布伯努利坐标",
+    "topic": "伯努利坐标"
+   },
+   "note": "zh terminology: 并封闭集族 / 并封闭集猜想 / 伯努利 used consistently"
+  }
+ },
+ "sections": {
+  "abstract": {
+   "note": "de topic cut mid-phrase; zh takeaway missing 的",
+   "zh": {
+    "takeaway": "并封闭集族中总存在元素出现在常数0.01比例的集合中"
+   },
+   "de": {
+    "topic": "Vereinigungsabgeschlossene Familien"
+   }
+  },
+  "S1": {
+   "note": "called the 0.01-fraction element 'abundant' (the paper's word for at least half); de ungrammatical",
+   "en": {
+    "takeaway": "An entropy theorem yields, in every union-closed family, an element in a ⟦a48 $0.01$⟧ fraction of sets",
+    "topic": "entropy theorem"
+   },
+   "zh": {
+    "takeaway": "熵定理表明每个并封闭集族都有元素出现在0.01比例的集合中",
+    "topic": "熵定理"
+   },
+   "de": {
+    "takeaway": "Ein Entropiesatz liefert in jeder vereinigungsabgeschlossenen Familie ein Element in einem 0,01-Anteil der Mengen",
+    "topic": "Entropiesatz"
+   }
+  },
+  "S2": {
+   "note": "de topic was a 5-word cut",
+   "de": {
+    "topic": "Entropieeigenschaften"
+   }
+  },
+  "S3": {
+   "note": "zh topic was the whole formula takeaway",
+   "zh": {
+    "takeaway": "引理1在⟦a160 $Pr[i\\in A]\\leq 0.01$⟧下推出⟦a162 $H(A\\cup B)\\geq 1.26H(A)$⟧",
+    "topic": "引理1"
+   }
+  },
+  "S5": {
+   "note": "zh takeaway had raw \\( \\) LaTeX instead of a marker",
+   "zh": {
+    "takeaway": "紧的引理1只能给出⟦a279 $\\frac{3-\\sqrt{5}}{2}$⟧的界，尚不足以解决猜想"
+   }
+  },
+  "S6": {
+   "note": "de title: standard heading for a paper's conclusion",
+   "de": {
+    "title": "Fazit"
+   }
+  },
+  "Sx1": {
+   "note": "topics were fragments",
+   "en": {
+    "topic": "discussions and feedback"
+   },
+   "zh": {
+    "topic": "讨论与反馈"
+   },
+   "de": {
+    "topic": "Diskussionen und Rückmeldungen"
+   }
+  }
+ }
+}
