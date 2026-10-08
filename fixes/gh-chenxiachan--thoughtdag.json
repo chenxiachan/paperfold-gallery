@@ -1,0 +1,547 @@
+{
+  "units": {
+    "u0": {
+      "note": "de: 'verzweigen' here is reflexive (sich verzweigen)",
+      "de": {
+        "sentences": {"0": "KI-Gespräche, die sich auf einer unendlichen Leinwand verzweigen."},
+        "takeaway": "KI-Gespräche verzweigen sich auf einer unendlichen Leinwand"
+      }
+    },
+    "u1": {
+      "note": "en reason was a sentence fragment; de 'Drähte' for wires, the document's term is 'Verbindungen'",
+      "en": {
+        "reason": "This lets you explore a side question, connect useful paths, and choose what the model sees next"
+      },
+      "de": {
+        "sentences": {"1": "Verbindungen sind der Kontext."},
+        "takeaway": "Jeder Austausch wird zu einem Knoten, und Verbindungen sind der Kontext"
+      }
+    },
+    "fig5.cap": {
+      "note": "zh: 'License' left untranslated; zh topic 'License' did not appear in the zh takeaway",
+      "zh": {
+        "sentences": {"0": "许可证"},
+        "topic": "许可条款"
+      }
+    },
+    "u4": {
+      "note": "a navigation row of section links; the takeaway claimed the 0.5 update ships CLI, Harness and Desktop entry points, which the README does not say",
+      "en": {
+        "takeaway": "Navigation links lead to the 0.5 update, CLI, Harness and Desktop sections",
+        "reason": "Further links lead to how it works, how it differs, and research",
+        "topic": "0.5 update"
+      },
+      "zh": {
+        "takeaway": "导航链接指向0.5更新、CLI、Harness与桌面应用各节",
+        "topic": "0.5更新"
+      },
+      "de": {
+        "takeaway": "Navigationslinks führen zu den Abschnitten Update 0.5, CLI, Harness und Desktop-App",
+        "topic": "Update 0.5"
+      }
+    },
+    "u5": {
+      "note": "de: Sie and du mixed in the document, unified to du; recall unified to 'Abruf' (was 'Rückgriff')",
+      "de": {
+        "sentences": {"0": "Bring relevante frühere Gespräche in die Frage ein, die du jetzt stellst."},
+        "reason": "Der Abruf bildet die Grundlage für den folgenden dreistufigen Ablauf des Abschnitts"
+      }
+    },
+    "u6": {
+      "note": "de: address unified to du",
+      "de": {
+        "sentences": {"0": "Finde frühere Arbeit."}
+      }
+    },
+    "u7": {
+      "note": "takeaway overstated: the layer 'helps identify topics and rank relevant excerpts', it does not select topics; de address unified to du",
+      "en": {
+        "takeaway": "The optional Jev decision layer helps identify topics and rank relevant excerpts",
+        "topic": "Jev decision layer"
+      },
+      "zh": {
+        "takeaway": "可选的 Jev 决策层帮助识别主题并对相关摘录排序",
+        "topic": "Jev 决策层"
+      },
+      "de": {
+        "sentences": {
+          "0": "Wähle aus, was dazugehört.",
+          "2": "Dein gewähltes Sprachmodell entwickelt die Antwort."
+        },
+        "takeaway": "Die optionale Jev-Entscheidungsschicht hilft, Themen zu identifizieren und relevante Auszüge zu bewerten",
+        "topic": "Jev-Entscheidungsschicht"
+      }
+    },
+    "u8": {
+      "note": "de: 'Kontextfenster' means an LLM's context window, not the context panel; recall unified to 'Abruf'; address unified to du",
+      "de": {
+        "sentences": {
+          "0": "Prüfe, was zurückkommt.",
+          "1": "Bei aktiviertem Abruf listet der Kontextbereich die Dossiers und Auszüge auf, die einer Anfrage hinzugefügt wurden.",
+          "2": "Prüfe ihre Quellen oder schließe einzelne Elemente aus, bevor du fortfährst."
+        },
+        "takeaway": "Der Kontextbereich listet Dossiers und Auszüge einer Anfrage auf",
+        "topic": "Kontextbereich"
+      }
+    },
+    "fig12.cap": {
+      "note": "en reason 'timing is not end-to-end retrieval' unclear; de retrieval unified to 'Retrieval' (Abruf now means recall)",
+      "en": {
+        "reason": "The replay ends with historical nodes converging into Jev; it does not time end-to-end retrieval"
+      },
+      "zh": {
+        "reason": "动画回放结尾历史节点汇聚到 Jev，该计时并非端到端检索耗时"
+      },
+      "de": {
+        "sentences": {"2": "Dies ist keine Ende-zu-Ende-Zeitmessung des Retrievals."},
+        "reason": "Die Wiedergabe endet mit historischen Knoten, die in Jev zusammenlaufen; die Zeitmessung umfasst kein Ende-zu-Ende-Retrieval"
+      }
+    },
+    "u12": {
+      "note": "de: retrieval unified to 'Retrieval' (Abruf now means recall)",
+      "de": {
+        "sentences": {"3": "Retrieval und Antworterzeugung sind ausgeschlossen; dies misst weder Geschwindigkeit noch Genauigkeitsgewinne des Gesamtprodukts."},
+        "reason": "Retrieval und Antworterzeugung sind ausgeschlossen, daher geht es weder um Geschwindigkeit noch Genauigkeit des Gesamtprodukts"
+      }
+    },
+    "u13": {
+      "note": "de: 'fällt der Rückgriff auf Regeln zurück' ambiguous; recall unified to 'Abruf'",
+      "de": {
+        "sentences": {"0": "Ohne Entscheidungsmodell greift der Abruf auf Regeln zurück."},
+        "takeaway": "Ohne Entscheidungsmodell greift der Abruf auf Regeln zurück",
+        "topic": "Entscheidungsmodell"
+      }
+    },
+    "u14": {
+      "note": "two separate guide links; the takeaway claimed history and recall are configured together with Jev",
+      "en": {
+        "takeaway": "Separate guides cover setting up history and recall and configuring Jev",
+        "topic": "recall"
+      },
+      "zh": {
+        "takeaway": "分别有指南介绍历史与召回的设置及 Jev 的配置",
+        "topic": "召回"
+      },
+      "de": {
+        "takeaway": "Eigene Anleitungen erklären die Einrichtung von Verlauf und Abruf sowie die Jev-Konfiguration",
+        "topic": "Abruf"
+      }
+    },
+    "u15": {
+      "note": "reason: 'so the desktop app is unnecessary' was a false causal link; de address unified to du, 'Konversationen' unified to 'Gespräche'",
+      "en": {
+        "reason": "For users who remember a file, phrase or URL but not the session, no desktop app is needed"
+      },
+      "zh": {
+        "reason": "适合记得文件、短语或 URL 却忘了所在会话的用户，且无需打开桌面应用"
+      },
+      "de": {
+        "sentences": {
+          "0": "Du erinnerst dich an eine Datei, einen Ausdruck oder eine URL, aber nicht an die Sitzung?",
+          "1": "Durchsuche lokale Gespräche und springe zur passenden Runde, ohne die Desktop-App zu öffnen."
+        },
+        "takeaway": "Lokale Gespräche durchsuchen und von der CLI zur passenden Runde springen",
+        "reason": "Für alle, die sich an Datei, Ausdruck oder URL erinnern, aber nicht an die Sitzung, ganz ohne Desktop-App",
+        "topic": "Lokale Gespräche"
+      }
+    },
+    "u16": {
+      "note": "zh: 'agent' left in English, the document uses 智能体; de address unified to du",
+      "zh": {
+        "sentences": {"1": "运行 ⟦a14 thoughtdag setup mcp⟧，向你的智能体暴露只读的历史工具。"},
+        "reason": "检索相关轮次，取代为智能体重放整段会话"
+      },
+      "de": {
+        "sentences": {
+          "1": "Führe ⟦a14 thoughtdag setup mcp⟧ aus, um deinem Agenten schreibgeschützte Werkzeuge für den Verlauf bereitzustellen.",
+          "2": "Rufe die relevanten Runden ab, statt eine ganze Sitzung erneut abzuspielen."
+        }
+      }
+    },
+    "u17": {
+      "note": "reason had the wrong subject: the user chooses the context on the canvas, the canvas does not select it; zh lowercase 'harness'; zh topic same as fig27; de 'Zug' for turn (document uses 'Runde'), Canvas unified to Leinwand, address unified to du",
+      "en": {
+        "reason": "You choose the context on the canvas, and the harness then runs the next turn"
+      },
+      "zh": {
+        "sentences": {
+          "0": "在 Harness 内，可在聊天与 ThoughtDAG 的图之间切换。",
+          "1": "在画布上选择上下文，由 Harness 运行下一轮。"
+        },
+        "takeaway": "在 Harness 内切换聊天与 ThoughtDAG 图",
+        "reason": "在画布上选定上下文后，由 Harness 运行下一轮",
+        "topic": "ThoughtDAG 图"
+      },
+      "de": {
+        "sentences": {
+          "0": "Wechsle im Harness zwischen dem Chat und ThoughtDAGs Graphen.",
+          "1": "Wähle den Kontext auf der Leinwand; der Harness führt die nächste Runde aus."
+        },
+        "takeaway": "Im Harness wechselst du zwischen Chat und ThoughtDAGs Graphen",
+        "reason": "Du wählst den Kontext auf der Leinwand, dann führt der Harness die nächste Runde aus",
+        "topic": "ThoughtDAGs Graphen"
+      }
+    },
+    "u18": {
+      "note": "de: address unified to du",
+      "de": {
+        "sentences": {"0": "In der Desktop-App von DeepSeek Harness (0.2.0-rc.2 oder später): Öffne Plugins, suche nach ⟦a16 dsh-thoughtdag⟧, installiere es und starte Harness neu."},
+        "takeaway": "Installiere dsh-thoughtdag über Plugins und starte Harness neu",
+        "topic": "Plugins"
+      }
+    },
+    "u19": {
+      "note": "reason dropped the 'or' between Node 22.19+ and 24+, reading as if both were required; de Canvas unified to Leinwand",
+      "en": {
+        "reason": "It requires Node 22.19+ or 24+, and DeepSeek Harness 0.1.2-rc.1 or later"
+      },
+      "zh": {
+        "reason": "需要 Node 22.19+ 或 24+，以及 DeepSeek Harness 0.1.2-rc.1 或更高版本"
+      },
+      "de": {
+        "sentences": {"0": "Das Plugin bündelt die Leinwand und die Speicherschicht."},
+        "takeaway": "Das Plugin bündelt die Leinwand und die Speicherschicht",
+        "reason": "Es erfordert Node 22.19+ oder 24+ sowie DeepSeek Harness 0.1.2-rc.1 oder später",
+        "topic": "Speicherschicht"
+      }
+    },
+    "fig27.cap": {
+      "note": "zh topic 'ThoughtDAG' duplicated u17's and named nothing; de Canvas unified to Leinwand",
+      "zh": {
+        "topic": "ThoughtDAG 画布"
+      },
+      "de": {
+        "sentences": {"0": "Wechsel vom Chat zur ThoughtDAG-Leinwand innerhalb von DeepSeek Harness, wobei eine Frage gestellt und in einem neuen Knoten fortgefahren wird."},
+        "takeaway": "Vom Chat zur ThoughtDAG-Leinwand wechseln und in einem neuen Knoten fortfahren",
+        "topic": "ThoughtDAG-Leinwand"
+      }
+    },
+    "u22": {
+      "note": "de: Canvas (here feminine, elsewhere masculine or neuter) unified to Leinwand",
+      "de": {
+        "sentences": {"0": "Oder ⟦a19 download for macOS, Windows or Linux⟧, verbinde ein Modell und öffne die Beispiel-Leinwand."},
+        "takeaway": "Lade ThoughtDAG für macOS, Windows oder Linux herunter, verbinde ein Modell, öffne die Beispiel-Leinwand",
+        "topic": "ThoughtDAG"
+      }
+    },
+    "u25": {
+      "note": "zh topic '模型输入' was not verbatim in the takeaway ('模型的输入')",
+      "zh": {
+        "topic": "模型的输入"
+      }
+    },
+    "u26": {
+      "note": "topic 'model' named nothing distinct from u25; zh recall rendered 回忆, the document uses 召回",
+      "en": {
+        "topic": "Preview"
+      },
+      "zh": {
+        "sentences": {"1": "连线选择对话路径；显式引用与已启用的召回可在其旁追加材料。"},
+        "reason": "连线选择路径，显式引用与已启用的召回可在其旁追加材料",
+        "topic": "预览"
+      },
+      "de": {
+        "topic": "Vorschau"
+      }
+    },
+    "u27": {
+      "note": "takeaway added 'in ThoughtDAG'; the README says nodes and edges serve different purposes and then places ThoughtDAG among other tools",
+      "en": {
+        "takeaway": "Nodes and edges serve different purposes, and the section shows where ThoughtDAG fits",
+        "topic": "Nodes and edges"
+      },
+      "zh": {
+        "takeaway": "节点与边各有不同用途，本节说明 ThoughtDAG 的定位",
+        "topic": "节点与边"
+      },
+      "de": {
+        "takeaway": "Knoten und Kanten dienen unterschiedlichen Zwecken; der Abschnitt zeigt, wo ThoughtDAG steht",
+        "topic": "Knoten und Kanten"
+      }
+    },
+    "u28": {
+      "note": "takeaway dropped 'research' from 'autonomous research agent'; de topic was a clause over budget; de Harness gender (masculine elsewhere), 'Historie' unified to 'Verlauf'",
+      "en": {
+        "takeaway": "ThoughtDAG is not an autonomous research agent or a coding harness replacement",
+        "topic": "ThoughtDAG"
+      },
+      "zh": {
+        "takeaway": "ThoughtDAG 不是自主研究智能体，也不替代编码工具链",
+        "topic": "ThoughtDAG"
+      },
+      "de": {
+        "sentences": {
+          "1": "ThoughtDAG ist kein autonomer Recherche-Agent und kein Ersatz für deinen Coding-Harness.",
+          "2": "Retrieval kann relevanten Verlauf übersehen, und generierte Dossiers müssen weiterhin geprüft werden."
+        },
+        "takeaway": "ThoughtDAG ist kein autonomer Recherche-Agent und kein Ersatz für den Coding-Harness",
+        "reason": "Retrieval kann relevanten Verlauf übersehen, und generierte Dossiers müssen weiterhin geprüft werden",
+        "topic": "ThoughtDAG"
+      }
+    },
+    "u29": {
+      "note": "source says 'without the full conversation text'; reason invented a compactness motive, the README says it is for sharing how an investigation unfolded; topic duplicated fig50's; de compound needs hyphens; Canvas unified to Leinwand",
+      "en": {
+        "takeaway": "Thought Map exports carry nodes, wires and structural counts without the full conversation text",
+        "reason": "It shows others how an investigation branched, narrowed and came together",
+        "topic": "Thought Map exports"
+      },
+      "zh": {
+        "takeaway": "Thought Map 导出含节点、连线与结构计数，不含完整对话文本",
+        "reason": "用于分享一次探究如何分叉、收窄并汇聚",
+        "topic": "Thought Map 导出"
+      },
+      "de": {
+        "sentences": {"0": "Exportiere die Leinwand als Thought Map: Knoten, Verbindungen und strukturelle Zählwerte, ohne den vollständigen Gesprächstext."},
+        "takeaway": "Thought-Map-Exporte enthalten Knoten, Verbindungen und strukturelle Zählwerte, nicht den vollständigen Gesprächstext",
+        "reason": "Damit lässt sich teilen, wie sich eine Untersuchung verzweigte, verengte und wieder zusammenfügte",
+        "topic": "Thought-Map-Exporte"
+      }
+    },
+    "fig50.cap": {
+      "note": "reason overclaimed ('spans the range of shapes the canvas can produce'); topic duplicated u29's; de compound needs hyphens; Canvas unified to Leinwand",
+      "en": {
+        "takeaway": "Four Thought Maps show exploration patterns from single thread to branching literature review",
+        "reason": "The examples contrast how differently investigations can unfold on the canvas",
+        "topic": "exploration patterns"
+      },
+      "zh": {
+        "takeaway": "四份 Thought Map 导出展示从单一线索到分叉文献综述的探索模式",
+        "reason": "这组示例对比了探究在画布上的不同展开方式",
+        "topic": "探索模式"
+      },
+      "de": {
+        "sentences": {"0": "Vier Thought-Map-Exporte mit unterschiedlichen Explorationsmustern, von einem einzelnen Strang bis zu einer verzweigten Literaturübersicht."},
+        "takeaway": "Vier Thought-Map-Exporte zeigen Explorationsmuster vom einzelnen Strang bis zur verzweigten Literaturübersicht",
+        "reason": "Die Beispiele zeigen, wie unterschiedlich Untersuchungen auf der Leinwand verlaufen können",
+        "topic": "Explorationsmuster"
+      }
+    },
+    "u31": {
+      "note": "reason claimed setup instructions 'follow this step'; the line is a link to the setup guide; de address unified to du",
+      "en": {
+        "reason": "The linked local setup guide gives the details"
+      },
+      "zh": {
+        "reason": "所附的本地设置指南提供详细说明"
+      },
+      "de": {
+        "sentences": {"0": "Konfiguriere ein Modell in der App oder über Umgebungsvariablen."},
+        "takeaway": "Konfiguriere ein Modell in der App oder über Umgebungsvariablen",
+        "reason": "Die verlinkte Anleitung zur lokalen Einrichtung enthält die Details",
+        "topic": "Modell"
+      }
+    },
+    "u32": {
+      "note": "de: Canvas unified to Leinwand",
+      "de": {
+        "sentences": {"0": "Die ⟦a23 browser demo⟧ enthält eine Beispiel-Leinwand, die keinen API-Schlüssel benötigt."}
+      }
+    },
+    "u33": {
+      "note": "zh topic '模型端点' was not in the zh takeaway; '评分了' awkward",
+      "zh": {
+        "takeaway": "试点以精确匹配对9个模型端点的1485条回答评分",
+        "topic": "模型端点"
+      }
+    },
+    "u34": {
+      "note": "reason drew a wrong inference (the 161 of recomputing does not show persistence); zh 'context' rendered 情境 and 'protocol' 协议; de 'Pilot' needs dative, now Pilotstudie",
+      "en": {
+        "reason": "Recomputing descendants repaired 161; deleting a wrong claim alone may leave its consequences in later replies"
+      },
+      "zh": {
+        "sentences": {
+          "2": "报告包含实验方案、结果与局限性。",
+          "3": "这是一项上下文干预实验，而非通用的模型排行榜。"
+        },
+        "reason": "重新计算后代修复161个；仅删除错误主张可能把其后果留在后续回答中"
+      },
+      "de": {
+        "sentences": {"1": "In unserer synthetischen Pilotstudie reparierte das alleinige Entfernen der Quelle 152 von 162 betroffenen Modellfällen; das Entfernen des kontaminierten Subgraphen reparierte 162, und das Neuberechnen der Nachkommen reparierte 161."},
+        "reason": "Das Neuberechnen der Nachkommen reparierte 161; das bloße Löschen einer falschen Aussage kann Folgen in späteren Antworten hinterlassen"
+      }
+    },
+    "u35": {
+      "note": "zh 'protocol' rendered 协议, here an experimental protocol (实验方案)",
+      "zh": {
+        "reason": "这些指引可让读者查看试点发现背后的实验方案与局限性"
+      }
+    },
+    "u36": {
+      "note": "de: Canvas unified to Leinwand",
+      "de": {
+        "sentences": {"0": "Leinwände, Dokumente, der Index und Dossiers werden lokal gespeichert."},
+        "takeaway": "Leinwände, Dokumente, Index und Dossiers werden lokal gespeichert",
+        "topic": "Dossiers"
+      }
+    },
+    "u37": {
+      "note": "reason invented a causal link ('so export backups'); zh called the harness 框架",
+      "en": {
+        "reason": "Inside DeepSeek Harness, inference uses the harness's providers and keys; export backups and review text before sharing"
+      },
+      "zh": {
+        "sentences": {"1": "在 DeepSeek Harness 内部，推理使用 Harness 自身的提供商与密钥。"},
+        "reason": "在 DeepSeek Harness 内，推理改用 Harness 的提供商与密钥；分享前应导出备份并检查文本"
+      },
+      "de": {
+        "reason": "Innerhalb von DeepSeek Harness nutzt die Inferenz dessen Anbieter und Schlüssel; exportiere Backups und prüfe Text vor dem Teilen"
+      }
+    },
+    "u38": {
+      "note": "de: address unified to du; topic was a clause",
+      "de": {
+        "sentences": {"0": "Beiträge sind willkommen, beginne mit ⟦a32 CONTRIBUTING.md⟧."},
+        "topic": "Beiträge"
+      }
+    },
+    "u40": {
+      "note": "en takeaway 'ThoughtDAG is MIT' ungrammatical",
+      "en": {
+        "takeaway": "ThoughtDAG is MIT licensed, © 2026 Xia Chen, with Roadmap, Feedback and Cite links",
+        "topic": "MIT"
+      }
+    }
+  },
+  "sections": {
+    "abstract": {
+      "note": "zh '按上下文分支' (branching by context) misread the line; de 'Drähte' unified to 'Verbindungen'",
+      "zh": {
+        "takeaway": "ThoughtDAG 在无限画布上分支 AI 对话，连线即上下文",
+        "topic": "无限画布"
+      },
+      "de": {
+        "takeaway": "ThoughtDAG verzweigt KI-Gespräche auf einer unendlichen Leinwand, auf der Verbindungen den Kontext bilden",
+        "topic": "unendlichen Leinwand"
+      }
+    },
+    "sec-new-in-05-thoughtdag-jev": {
+      "note": "takeaway said 'from the command line'; this section is about recall in the app, the command line is the next section",
+      "en": {
+        "takeaway": "ThoughtDAG 0.5 with Jev brings relevant past context into current questions",
+        "topic": "past context"
+      },
+      "zh": {
+        "takeaway": "ThoughtDAG 0.5 借助 Jev 将相关过往上下文引入当前提问",
+        "topic": "过往上下文"
+      },
+      "de": {
+        "takeaway": "ThoughtDAG 0.5 mit Jev holt relevanten früheren Kontext in aktuelle Fragen",
+        "topic": "früheren Kontext"
+      }
+    },
+    "sec-find-past-context-from-the-command-line": {
+      "note": "de 'Konversationen' unified to 'Gespräche'",
+      "de": {
+        "takeaway": "Die CLI von ThoughtDAG durchsucht lokale Gespräche und springt zur passenden Runde",
+        "topic": "lokale Gespräche"
+      }
+    },
+    "sec-inside-deepseek-harness": {
+      "note": "zh title '深入' means 'deep dive', the heading means ThoughtDAG inside the harness; de Canvas unified to Leinwand",
+      "zh": {
+        "title": "在 DeepSeek Harness 中使用"
+      },
+      "de": {
+        "takeaway": "DeepSeek Harness führt ThoughtDAGs Graphen über ein installierbares Plugin mit Leinwand und Speicherschicht aus",
+        "topic": "DeepSeek Harness"
+      }
+    },
+    "sec-the-desktop-app": {
+      "note": "wrong subject: the user reads documents in the app, the app does not read them",
+      "en": {
+        "takeaway": "In the desktop app, read documents beside branching conversations with your own model connection",
+        "topic": "desktop app"
+      },
+      "zh": {
+        "takeaway": "在桌面应用中，借助自有模型连接，在分支对话旁阅读文档",
+        "topic": "桌面应用"
+      },
+      "de": {
+        "takeaway": "In der Desktop-App liest du Dokumente neben verzweigten Gesprächen, mit deiner eigenen Modellverbindung",
+        "topic": "Desktop-App"
+      }
+    },
+    "sec-the-one-rule": {
+      "note": "de takeaway ungrammatical bare infinitive as subject; de topic was a clause",
+      "de": {
+        "takeaway": "Verbindungen sind der Kontext: Das Verbinden von Gesprächspfaden formt die Eingabe des Modells",
+        "topic": "Verbindungen"
+      }
+    },
+    "sec-how-thoughtdag-differs": {
+      "note": "takeaway said dossiers can miss context; the README says retrieval can miss history and dossiers need checking; de 'seine Retrieval' ungrammatical, topic a clause over budget",
+      "en": {
+        "takeaway": "ThoughtDAG is not an autonomous research agent; retrieval can miss history and dossiers need checking",
+        "topic": "ThoughtDAG"
+      },
+      "zh": {
+        "takeaway": "ThoughtDAG 不是自主研究智能体，检索可能遗漏历史，档案仍需核查",
+        "topic": "ThoughtDAG"
+      },
+      "de": {
+        "takeaway": "ThoughtDAG ist kein autonomer Recherche-Agent; Retrieval kann Verlauf übersehen, Dossiers müssen geprüft werden",
+        "topic": "ThoughtDAG"
+      }
+    },
+    "sec-export-the-shape-of-your-thinking": {
+      "note": "wrong subject: the user exports the canvas as a Thought Map; de topic cut with its verb; Canvas unified to Leinwand",
+      "en": {
+        "takeaway": "A Thought Map captures the canvas shape, not the full conversation text",
+        "topic": "Thought Map"
+      },
+      "zh": {
+        "takeaway": "Thought Map 呈现画布结构，不含完整对话文本",
+        "topic": "Thought Map"
+      },
+      "de": {
+        "takeaway": "Eine Thought Map zeigt die Struktur der Leinwand, nicht den vollständigen Gesprächstext",
+        "topic": "Thought Map"
+      }
+    },
+    "sec-run-from-source": {
+      "note": "zh and de topics did not name the subject (running from source)",
+      "zh": {
+        "topic": "从源代码运行"
+      },
+      "de": {
+        "topic": "Quellcode"
+      }
+    },
+    "sec-browser-demo": {
+      "note": "zh topic cut mid-phrase ('无需API密钥，但') and takeaway lacked its subject; de Canvas unified to Leinwand",
+      "zh": {
+        "takeaway": "浏览器演示无需 API 密钥，但缺少桌面版的本地功能",
+        "topic": "浏览器演示"
+      },
+      "de": {
+        "takeaway": "Die Browser-Demo bietet eine Beispiel-Leinwand ohne API-Schlüssel, aber ohne die lokalen Desktop-Funktionen",
+        "topic": "Browser-Demo"
+      }
+    },
+    "sec-context-intervention-benchmark-pilot-v2": {
+      "note": "zh title rendered context as 情境; the document uses 上下文",
+      "zh": {
+        "title": "上下文干预基准 · 试点 v2"
+      }
+    },
+    "sec-models-cost-privacy": {
+      "note": "zh topic '画布文档' fused two items into a false compound; de Canvas unified to Leinwand",
+      "zh": {
+        "takeaway": "画布、文档、索引与档案存于本地，远程模型调用会外发内容",
+        "topic": "远程模型调用"
+      },
+      "de": {
+        "takeaway": "Leinwände, Dokumente, Index und Dossiers bleiben lokal; Remote-Modellaufrufe senden Inhalte an Anbieter",
+        "topic": "Remote-Modellaufrufe"
+      }
+    },
+    "sec-contributors": {
+      "note": "de topic was a clause",
+      "de": {
+        "topic": "Beiträge"
+      }
+    }
+  }
+}

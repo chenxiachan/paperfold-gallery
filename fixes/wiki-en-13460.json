@@ -1,0 +1,493 @@
+{
+ "units": {
+  "mwBQ.cap": {
+   "note": "zh topic named hyperlinks instead of the hypertext documents the English topic names",
+   "zh": {
+    "topic": "超文本文档"
+   }
+  },
+  "mwDA.cap": {
+   "note": "zh takeaway made Bush, not the Memex, the subject of 'is proto-hypertext'",
+   "zh": {
+    "takeaway": "布什1945年提出的Memex是一种超文本雏形设备"
+   }
+  },
+  "mwEw.cap": {
+   "note": "reason said the demo combined hardware and software; the source says the NLS system did",
+   "en": {
+    "reason": "The 90-minute \"Mother of All Demos\" presented NLS, a hardware and software system; its 40th anniversary was celebrated in San Francisco"
+   },
+   "zh": {
+    "reason": "90分钟的“所有演示之母”展示了软硬件结合的NLS系统，2009年在旧金山纪念40周年"
+   },
+   "de": {
+    "reason": "Die 90-minütige \"Mother of All Demos\" stellte NLS vor, ein System aus Hardware und Software; ihr 40. Jahrestag wurde in San Francisco gefeiert"
+   }
+  },
+  "u4": {
+   "note": "zh sentences misaligned (sentence 1 held half of source sentence 0) and used a dash; 500 words rendered as 500 characters; zh topic not in takeaway; de sentence 1 unidiomatic",
+   "zh": {
+    "sentences": {
+     "0": "（……）“超文本”是一个新近创造的词。“Hyper-”取的是数学意义上的扩展与一般化（如“超空间”“超立方体”），而非医学意义上的“过度”（如“多动症”）。",
+     "1": "它并不暗示规模大小：一个超文本可以只有 500 个词左右。“Hyper-”指的是结构，而不是规模。"
+    },
+    "takeaway": "尼尔森称“hyper-”取数学意义上的扩展，而非过度",
+    "reason": "它指结构而非规模，仅约500词的超文本也算",
+    "topic": "数学意义"
+   },
+   "de": {
+    "sentences": {
+     "1": "Über die Größe sagt das nichts aus: Ein Hypertext könnte nur etwa 500 Wörter enthalten. „Hyper-“ bezieht sich auf Struktur und nicht auf die Größe."
+    }
+   }
+  },
+  "u5": {
+   "note": "zh topic was not a phrase of its takeaway",
+   "zh": {
+    "topic": "1967年的短文"
+   }
+  },
+  "mwMQ": {
+   "note": "en and zh topic 'Greek prefix' did not appear in the takeaway; de topic was a bare prepositional phrase",
+   "en": {
+    "takeaway": "\"Hyper-\", from a Greek prefix meaning \"over\" or \"beyond\", signifies overcoming linear constraints"
+   },
+   "zh": {
+    "takeaway": "“hyper-”源自希腊语前缀，意为“超越”，指突破线性限制"
+   },
+   "de": {
+    "takeaway": "Die griechische Vorsilbe hyper- bedeutet „über“ oder „jenseits“, also Überwindung linearen Textes",
+    "topic": "griechische Vorsilbe"
+   }
+  },
+  "mwMw": {
+   "note": "en topic was not a phrase of its takeaway",
+   "en": {
+    "topic": "term \"hypertext\""
+   }
+  },
+  "mwNQ": {
+   "note": "de takeaway added 'erneut' (again), which the source does not say",
+   "de": {
+    "takeaway": "Ted Nelson prägte 1965 Hypertext und Hypermedia und äußerte sich 1992 dazu"
+   }
+  },
+  "u9": {
+   "note": "takeaways said hypermedia is little used; Nelson says it is much less used than hypertext",
+   "en": {
+    "takeaway": "Nelson holds that \"hypertext\" is accepted while \"hypermedia\" is much less used"
+   },
+   "zh": {
+    "takeaway": "尼尔森认为“超文本”已被接受，“超媒体”则用得少得多"
+   },
+   "de": {
+    "takeaway": "Nelson zufolge ist Hypertext akzeptiert, „Hypermedia“ dagegen weit weniger gebräuchlich"
+   }
+  },
+  "mwVg": {
+   "note": "de used a literal rendering instead of the published German title of Borges's story",
+   "de": {
+    "sentences": {
+     "0": "1941 veröffentlichte Jorge Luis Borges \"Der Garten der Pfade, die sich verzweigen\", eine Kurzgeschichte, die häufig als Inspiration für das Konzept des Hypertexts gilt.⟦a5 [5]⟧"
+    }
+   }
+  },
+  "mwXg": {
+   "note": "reason said the never-built Memex enabled associative trails (source: would enable); zh proto-hypertext term and names inconsistent with the rest of the document; de topic was a fragment",
+   "en": {
+    "reason": "Never implemented, it could link only whole microfilm frames in chains, though it was meant to support associative trails"
+   },
+   "zh": {
+    "sentences": {
+     "0": "1945年，范内瓦·布什在《大西洋月刊》上发表文章《诚如所思》，描述了一种超前的超文本雏形设备，他称之为Memex。",
+     "3": "由于Memex从未实现，且只能以相对粗糙的方式链接内容，即把整个缩微胶卷画幅串成链，因此它仅被视为超文本雏形设备，但它直接启发了特德·尼尔森和道格拉斯·恩格尔巴特发明超文本，因而在超文本史上具有根本意义。"
+    },
+    "takeaway": "Memex仅是超文本雏形设备，却直接启发了尼尔森与恩格尔巴特",
+    "reason": "它从未实现，只能把整个缩微胶卷画幅串成链，但按设想可支持联想轨迹"
+   },
+   "de": {
+    "reason": "Er wurde nie implementiert und konnte nur ganze Mikrofilmbilder verketten, sollte aber assoziative Spuren ermöglichen",
+    "topic": "Bushs Memex"
+   }
+  },
+  "mwZA.cap": {
+   "note": "zh name of Ted Nelson made consistent with the rest of the document",
+   "zh": {
+    "sentences": {
+     "0": "特德·尼尔森正在介绍Project Xanadu，这是一个构想于20世纪60年代的理论超文本模型，其首个不完整的实现直到1998年才首次发布。⟦a6 [6]⟧"
+    },
+    "takeaway": "尼尔森的Project Xanadu构想于60年代，1998年才不完整问世"
+   }
+  },
+  "mwbg": {
+   "note": "takeaway said Nelson helped build FRESS (the source says only that FRESS succeeded his HES); reason overstated 'arguably the first'; topics not in takeaway or cut; de rendered experts as Expertinnen and browse as durchsuchen; zh names made consistent",
+   "en": {
+    "takeaway": "Nelson coined 'hypertext' in 1965 and helped build the Hypertext Editing System at Brown",
+    "reason": "Its successor FRESS served a poetry class, arguably the first online scholarly community; Nelson's Pale Fire demo for IBM never happened",
+    "topic": "Nelson"
+   },
+   "zh": {
+    "sentences": {
+     "0": "1965年，特德·尼尔森创造了“hypertext”（超文本）和“hypermedia”（超媒体）这两个术语，作为他为创建和使用链接内容而开发的模型的一部分（首次发表引用为1965年）。⟦a7 [7]⟧他后来与安德里斯·范·达姆合作，于1967年在布朗大学开发了超文本编辑系统（Hypertext Editing System，用于文本编辑）。",
+     "1": "该系统使用IBM 2250终端实现，并配有光笔作为指点设备。⟦a8 [8]⟧到1976年，其后继系统FRESS被用于一门诗歌课，学生可以浏览一组相互链接的诗歌，以及专家、教师和其他学生的讨论，这可以说是世界上第一个在线学术社区；⟦a9 [9]⟧范·达姆称其“预示了维基、博客以及各类共同编写的文档”。⟦a10 [10]⟧尼尔森称，他在20世纪60年代就开始实现自己理论构想的一个超文本系统，名为Project Xanadu，但其首个不完整的公开版本直到1998年才完成。⟦a11 [6]⟧在此期间，尼尔森还提议在向IBM的演示中使用弗拉基米尔·纳博科夫1962年的小说《微暗的火》，意在展示超文本如何支持复杂的非线性文学分析。",
+     "2": "这部小说以一首长诗配以大量自我指涉的评注和索引构成，体现了尼尔森认为定义超文本的联想式链接与用户主导导航的原则。⟦a12 [11]⟧其分层设计使读者能够沿多条阐释路径阅读文本，类似于后来在数字超文本系统中实现的分支结构。"
+    },
+    "takeaway": "尼尔森1965年创造“超文本”，并参与开发布朗大学的超文本编辑系统",
+    "reason": "其后继系统FRESS用于诗歌课，可以说是首个在线学术社区；《微暗的火》演示未成",
+    "topic": "尼尔森"
+   },
+   "de": {
+    "sentences": {
+     "1": "Es wurde mit dem Terminal IBM 2250 und einem Lichtgriffel implementiert, der als Zeigegerät diente.⟦a8 [8]⟧ Bis 1976 wurde sein Nachfolger FRESS in einem Poesiekurs eingesetzt, in dem Studierende eine hyperverlinkte Sammlung von Gedichten und Diskussionen von Fachleuten, Lehrenden und anderen Studierenden durchstöbern konnten, was wohl die weltweit erste Online-Gelehrtengemeinschaft war⟦a9 [9]⟧, die laut van Dam \"Wikis, Blogs und Gemeinschaftsdokumente aller Art vorwegnahm\".⟦a10 [10]⟧ Ted Nelson sagte in den 1960er Jahren, er habe mit der Implementierung eines von ihm theoretisierten Hypertextsystems begonnen, das Project Xanadu genannt wurde, doch seine erste, unvollständige öffentliche Version wurde erst viel später, 1998, fertiggestellt.⟦a11 [6]⟧ In dieser Zeit schlug Nelson außerdem vor, Vladimir Nabokovs Roman Pale Fire von 1962 als Teil einer Demonstration für IBM zu verwenden, um zu zeigen, wie Hypertext komplexe, nichtlineare Formen der literarischen Analyse unterstützen könnte."
+    },
+    "takeaway": "Nelson prägte 1965 „Hypertext“ und half, an der Brown University das Hypertext Editing System zu entwickeln",
+    "reason": "Sein Nachfolger FRESS diente einem Poesiekurs, wohl der ersten Online-Gelehrtengemeinschaft; Nelsons Pale-Fire-Demo für IBM fand nie statt",
+    "topic": "Nelson"
+   }
+  },
+  "mwlQ": {
+   "note": "zh name of Douglas Engelbart made consistent with the rest of the document",
+   "zh": {
+    "sentences": {
+     "0": "道格拉斯·恩格尔巴特于1962年在斯坦福研究院独立开始研发其NLS系统，但由于经费、人员和设备的获取延误，其关键功能直到1968年才完成。",
+     "1": "同年12月，恩格尔巴特首次向公众演示了一种“超文本”（指编辑）界面，这场演示后来被称为“所有演示之母”。"
+    },
+    "takeaway": "恩格尔巴特的NLS始于1962年，1968年公开演示"
+   }
+  },
+  "mwmQ": {
+   "note": "de topic was a clause fragment",
+   "de": {
+    "topic": "Scrapbook-System"
+   }
+  },
+  "mwnw": {
+   "note": "de gave the Aspen Movie Map masculine gender; the German form is die (Karte)",
+   "de": {
+    "sentences": {
+     "0": "Als erste Hypermedia-Anwendung gilt allgemein die Aspen Movie Map, die 1978 implementiert wurde.",
+     "1": "Die Movie Map erlaubte es Nutzern, in einer virtuellen Stadtlandschaft beliebig zu wählen, in welche Richtung sie fahren wollten, in zwei Jahreszeiten (aus tatsächlichen Fotografien) sowie als 3-D-Polygone."
+    },
+    "takeaway": "Die Aspen Movie Map von 1978 gilt allgemein als erste Hypermedia-Anwendung"
+   }
+  },
+  "mwog": {
+   "note": "zh rendered videotex as 视讯 (video communication); the standard term is 可视图文",
+   "zh": {
+    "sentences": {
+     "0": "在法国，1982年推出的Minitel系统通过电话线路和可视图文终端，使公众广泛获得交互式数字内容。",
+     "2": "尽管它基于可视图文（videotex）而非后来超文本系统的动态链接协议，Minitel仍使许多用户接触到在非线性信息网络中导航的做法。"
+    }
+   }
+  },
+  "mwrA": {
+   "note": "en topic not in takeaway and awkward 'Halasz's identified'; reason's 'rather than commercial success' attached to the list of challenges; de topic a fragment",
+   "en": {
+    "takeaway": "NoteCards' impact lay mainly in research insights, notably the hypertext challenges Halasz identified",
+    "reason": "Its impact lay in research, not commerce; Halasz's challenges included search in large hypertexts, composite structures, versioning and collaboration"
+   },
+   "zh": {
+    "takeaway": "NoteCards的影响主要在研究洞见，如Halasz指出的超文本挑战",
+    "reason": "其影响在研究而非商业；Halasz指出的挑战含大型超文本搜索、复合结构、版本管理与协作",
+    "topic": "NoteCards的影响"
+   },
+   "de": {
+    "takeaway": "Die Wirkung von NoteCards lag vor allem in Forschungsinsichten, etwa den von Halasz benannten Hypertext-Herausforderungen",
+    "reason": "Es wirkte in der Forschung statt kommerziell; zu Halasz' Herausforderungen zählten Suche in großen Hypertexten, zusammengesetzte Strukturen, Versionierung und Kollaboration",
+    "topic": "Wirkung von NoteCards"
+   }
+  },
+  "mwsQ": {
+   "note": "en topic was not a phrase of its takeaway",
+   "en": {
+    "topic": "ENQUIRE"
+   }
+  },
+  "mwug": {
+   "note": "zh takeaway ungrammatical; de takeaway lacked the genitive (Busa Index) and used the unusual 'über Aquin'; de topic",
+   "zh": {
+    "takeaway": "Busa的Index Thomisticus于1980年完成，被称为首部关于阿奎那的重要超文本作品"
+   },
+   "de": {
+    "takeaway": "Busas Index Thomisticus, 1980 fertiggestellt, gilt als erstes bedeutendes Hypertext-Werk über Thomas von Aquin",
+    "topic": "Index Thomisticus"
+   }
+  },
+  "mw1w": {
+   "note": "takeaway dated the commercialization to 1983; the source says HyperTies was developed in 1983 and later commercialized",
+   "en": {
+    "takeaway": "Shneiderman's HyperTies, developed in 1983 and later commercialized, produced the first commercial electronic book"
+   },
+   "de": {
+    "takeaway": "Shneidermans 1983 entwickeltes HyperTies brachte das erste kommerzielle elektronische Buch hervor"
+   }
+  },
+  "mw6w": {
+   "note": "takeaway said HyperCard sparked the ACM conference, a causal claim the source does not make; de 'Konvention' and 'Brown Universitys' wrong",
+   "en": {
+    "takeaway": "HyperCard's 1987 release fueled broad hypertext enthusiasm, and the first ACM Hypertext conference followed"
+   },
+   "zh": {
+    "takeaway": "HyperCard于1987年发布，引发超文本热潮，同年首届ACM超文本会议召开"
+   },
+   "de": {
+    "sentences": {
+     "0": "Im August 1987 veröffentlichte Apple Computer HyperCard für die Macintosh-Reihe auf der MacWorld-Messe.",
+     "1": "Seine Wirkung führte zusammen mit dem Interesse an Peter J. Browns GUIDE (von OWL vermarktet und früher im selben Jahr veröffentlicht) und Intermedia der Brown University zu breitem Interesse an und Begeisterung für Hypertext, Hypermedia, Datenbanken und neue Medien im Allgemeinen."
+    },
+    "takeaway": "HyperCards Veröffentlichung 1987 weckte breite Hypertext-Begeisterung; im selben Jahr folgte die erste ACM-Hypertext-Konferenz"
+   }
+  },
+  "mw-A": {
+   "note": "en topic not in takeaway; de topic a verb fragment; zh name made consistent",
+   "en": {
+    "topic": "Autodesk"
+   },
+   "zh": {
+    "sentences": {
+     "0": "与此同时，已为其Xanadu系统工作并倡导了二十多年的尼尔森，说服Autodesk投资他的革命性构想。"
+    }
+   },
+   "de": {
+    "topic": "Autodesk"
+   }
+  },
+  "mwAQc": {
+   "note": "zh takeaway said 'arbitrary links'; de 'begann die Schaffung'/'begannen das Web' unidiomatic and takeaway over budget",
+   "zh": {
+    "takeaway": "1992年Lynx的链接可通达各处文档，开启了互联网上的Web"
+   },
+   "de": {
+    "sentences": {
+     "1": "Seine Fähigkeit, Hypertextlinks innerhalb von Dokumenten bereitzustellen, die bis in Dokumente überall im Internet reichen konnten, leitete die Entstehung des Web im Internet ein."
+    },
+    "takeaway": "Die Links des Lynx-Browsers von 1992 erreichten Dokumente überall und leiteten das Web im Internet ein",
+    "topic": "Links des Lynx-Browsers"
+   }
+  },
+  "mwAQk": {
+   "note": "de rendered overshadowed as überlagert (superimposed); de topic a fragment; zh reason was a dangling clause",
+   "zh": {
+    "reason": "尽管Web缺少集成浏览器/编辑器等功能，早期系统仍被盖过"
+   },
+   "de": {
+    "sentences": {
+     "1": "Infolgedessen wurden alle früheren Hypertextsysteme vom Erfolg des Web in den Schatten gestellt, obwohl es viele Funktionen jener früheren Systeme vermissen ließ, wie integrierte Browser/Editoren (eine Funktion des ursprünglichen WorldWideWeb-Browsers, die nicht in die meisten anderen frühen Webbrowser übernommen wurde)."
+    },
+    "takeaway": "Webserver vervielfachten sich von 500 (1993) auf über 10.000 (1994); frühere Systeme gerieten in den Schatten",
+    "reason": "Frühe Systeme gerieten in den Schatten, obwohl dem Web Funktionen wie integrierte Browser/Editoren fehlten",
+    "topic": "Webserver"
+   }
+  },
+  "mwAQs": {
+   "note": "zh topic over the 6 character budget",
+   "zh": {
+    "topic": "超文本实现"
+   }
+  },
+  "u38": {
+   "note": "de 'computergestützte Instruktion' is a calque; the German term is computergestützter Unterricht",
+   "de": {
+    "sentences": {
+     "0": "Electronic Document System: ein Anfang der 1980er Jahre entstandener Text- und Grafikeditor für interaktive Hypertexte wie Reparaturanleitungen für Geräte und computergestützten Unterricht."
+    },
+    "reason": "Typische Verwendungen waren Reparaturanleitungen für Geräte und computergestützter Unterricht"
+   }
+  },
+  "u44": {
+   "note": "notecards rendered differently than in the NoteCards history paragraph (zh 记事卡, de Notizkarten)",
+   "zh": {
+    "sentences": {
+     "0": "NoteCards：20 世纪 80 年代中期施乐 PARC 的系统，采用记事卡隐喻和图形浏览器进行思想处理"
+    },
+    "takeaway": "NoteCards 是施乐 PARC 采用记事卡隐喻的思想处理系统"
+   },
+   "de": {
+    "sentences": {
+     "0": "NoteCards: ein Mitte der 1980er Jahre entstandenes System von Xerox PARC, das eine Notizkarten-Metapher und einen grafischen Browser für die Ideenverarbeitung verwendete"
+    },
+    "takeaway": "NoteCards war Mitte der 1980er Jahre ein System von Xerox PARC zur Ideenverarbeitung mit einer Notizkarten-Metapher"
+   }
+  },
+  "u48": {
+   "note": "de gave Workbench masculine gender (die Workbench)",
+   "de": {
+    "sentences": {
+     "0": "Amigaguide: 1990 mit der Commodore Amiga Workbench veröffentlicht."
+    },
+    "takeaway": "Amigaguide wurde 1990 mit der Commodore Amiga Workbench veröffentlicht"
+   }
+  },
+  "u51": {
+   "note": "de takeaway adjective ending wrong for masculine Dokumenteditor",
+   "de": {
+    "takeaway": "PaperKiller ist ein speziell für Hypertext entworfener Dokumenteditor"
+   }
+  },
+  "mwAUk": {
+   "note": "en reason far over budget",
+   "en": {
+    "reason": "The Electronic Literature Organization holds annual conferences on hypertext fiction and poetry, and World Wide Web conferences have relevant papers"
+   }
+  },
+  "mwAV4": {
+   "note": "en takeaway over budget; reason implied Storyspace and Intermedia were made in the 1990s (source: became available then); de sentence 3 lost its citation markers; zh topic named electronic literature instead of hypertext fiction",
+   "en": {
+    "takeaway": "Hypertext fiction, among the earliest electronic literature genres, began with 1986 and 1987 works",
+    "reason": "It grew alongside hypertext software; Storyspace and Intermedia, designed for literary hypertext, became available in the 1990s"
+   },
+   "zh": {
+    "topic": "超文本小说"
+   },
+   "de": {
+    "sentences": {
+     "3": "Judy Malloys Uncle Roger (1986) und Michael Joyces afternoon, a story (1987) gelten allgemein als die ersten Werke der Hypertext-Fiktion.⟦a31 [28]⟧⟦a32 [29]⟧"
+    },
+    "reason": "Sie wuchs mit Hypertext-Software; Storyspace und Intermedia, für literarischen Hypertext entwickelt, wurden in den 1990er Jahren verfügbar"
+   }
+  },
+  "mwAXA": {
+   "note": "takeaway dropped the source's hedge 'in some ways'; de sentence 3 lost its citation marker",
+   "en": {
+    "takeaway": "Myst, built in HyperCard, in some ways redefined interactive fiction via puzzles and exploration",
+    "reason": "Puzzles and exploration replaced hypertextual narrative; the game's Ages were separate HyperCard stacks totaling over 2500 cards"
+   },
+   "zh": {
+    "takeaway": "Myst 在某些方面以谜题和探索重新定义了互动小说",
+    "reason": "谜题和探索取代了超文本叙事；游戏由多个纪元堆栈构成，共2500多张卡片"
+   },
+   "de": {
+    "sentences": {
+     "3": "In gewisser Weise definierte Myst die interaktive Fiktion neu, indem es Rätsel und Erkundung als Ersatz für hypertextuelle Erzählung nutzte.⟦a33 [30]⟧"
+    },
+    "takeaway": "Myst, in HyperCard gebaut, definierte interaktive Fiktion durch Rätsel und Erkundung in gewisser Weise neu",
+    "reason": "Rätsel und Erkundung ersetzten hypertextuelle Erzählung; die Ages des Spiels waren separate HyperCard-Stacks mit über 2500 Karten"
+   }
+  },
+  "mwAXg": {
+   "note": "takeaway made the critics say hypertext signals a paradigm shift (that is the medium theorists' view); topic not in takeaway; de 'echoet' is not German, 'Mediumstheoretiker' and 'Spuren zum Lesen' unidiomatic",
+   "en": {
+    "takeaway": "Critics of hypertext say it inhibits linear reading; media theorists see a paradigm shift",
+    "reason": "Easy linking can make narratives incoherent and fragmented, though critics value multiple views; hypertext shifts media toward decentralization"
+   },
+   "zh": {
+    "takeaway": "批评者称超文本妨碍线性阅读，媒介理论家则视之为范式转换",
+    "reason": "轻易链接可致叙事零碎难懂，但批评者重视多视角；超文本使媒介走向去中心化"
+   },
+   "de": {
+    "sentences": {
+     "0": "Kritiker von Hypertext behaupten, dass er die alte, lineare Leseerfahrung behindert, indem er mehrere verschiedene Lesepfade schafft.",
+     "2": "In manchen Fällen kann Hypertext der Entwicklung ansprechender Geschichten abträglich sein (im Fall von Hypertext-Spielbüchern), wo die Leichtigkeit des Verknüpfens von Fragmenten zu nicht zusammenhängenden oder unverständlichen Erzählungen führen kann.⟦a34 [31]⟧ Jedoch sehen sie durchaus Wert in seiner Fähigkeit, mehrere verschiedene Sichten auf denselben Gegenstand auf einfache Weise darzustellen.⟦a35 [32]⟧ Dies greift die Argumente von 'Medientheoretikern' wie Marshall McLuhan auf, die die sozialen und psychologischen Auswirkungen der Medien betrachten."
+    },
+    "takeaway": "Kritiker von Hypertext sagen, er behindere lineares Lesen; Medientheoretiker sehen einen Paradigmenwechsel",
+    "reason": "Leichtes Verknüpfen kann Erzählungen zersplittert und unverständlich machen, doch Kritiker schätzen mehrere Sichten; Hypertext dezentralisiert die Medien"
+   }
+  },
+  "mwAYg": {
+   "note": "takeaway called all the dozens of works multimodal, which the source says only of one; topic not in takeaway",
+   "en": {
+    "takeaway": "Women and feminist artists produced dozens of hypertext works in the 1990s",
+    "topic": "feminist artists"
+   },
+   "zh": {
+    "takeaway": "90年代，女性艺术家和女性主义艺术家创作了数十部超文本作品",
+    "topic": "女性艺术家"
+   },
+   "de": {
+    "takeaway": "Frauen und feministische Künstlerinnen produzierten in den 1990er Jahren Dutzende Hypertext-Werke",
+    "topic": "feministische Künstlerinnen"
+   }
+  },
+  "mwAZE.cap": {
+   "note": "de 'Lesung' means a public reading event; the caption means the act of reading",
+   "de": {
+    "sentences": {
+     "0": "Ein Screenshot vom Lesen von Shelley Jacksons Patchwork Girl, wobei sich Fenster übereinander schichten"
+    }
+   }
+  },
+  "mwAZc": {
+   "note": "zh takeaway ended in a dangling phrase",
+   "zh": {
+    "takeaway": "超文本小说形式多样，结构各异，下文列出其中四种"
+   }
+  },
+  "u62": {
+   "note": "zh takeaway used the non-standard 一头多尾",
+   "zh": {
+    "takeaway": "树状超文本小说像树一样分支，一个开头，多种结局"
+   }
+  },
+  "u64": {
+   "note": "de typo Multimediatschicht",
+   "de": {
+    "takeaway": "Geschichtete Hypertext-Fiktion verbindet eine Textschicht mit einer Multimediaschicht"
+   }
+  },
+  "u65": {
+   "note": "en takeaway far over budget; de takeaway left English and Computer Science untranslated",
+   "en": {
+    "takeaway": "Andries van Dam's 1974 Brown University film documents hypertext as an educational experiment",
+    "reason": "The experiment spanned English and Computer Science; the 15-minute film is on IMDb and in full on the Internet Archive"
+   },
+   "zh": {
+    "reason": "实验涉及英语与计算机科学；片长约15分钟，IMDb有条目，互联网档案馆有全片"
+   },
+   "de": {
+    "takeaway": "Andries van Dams Film von 1974 dokumentiert Hypertext als Bildungsexperiment an der Brown University",
+    "reason": "Das Experiment betraf Englisch und Informatik; der 15-minütige Film ist bei IMDb und vollständig im Internet Archive verfügbar"
+   }
+  }
+ },
+ "sections": {
+  "sec-etymology": {
+   "note": "zh topic was cut mid-phrase; zh takeaway omitted hypermedia",
+   "zh": {
+    "takeaway": "“hyper-”表示超越线性文本的结构，尼尔森创造了超文本与超媒体",
+    "topic": "超文本"
+   }
+  },
+  "sec-types-and-uses-of-hypertext": {
+   "note": "en takeaway over budget; zh topic named the Web rather than the section's subject",
+   "en": {
+    "takeaway": "Hypertext can be static or dynamic, with varied linking; the Web is its most famous implementation"
+   },
+   "zh": {
+    "topic": "超文本"
+   }
+  },
+  "sec-history": {
+   "note": "en and de topics were cut mid-clause",
+   "en": {
+    "topic": "Hypertext"
+   },
+   "de": {
+    "topic": "Hypertext"
+   }
+  },
+  "sec-academic-conferences": {
+   "note": "en and de topics were clause fragments",
+   "en": {
+    "topic": "Hypertext research"
+   },
+   "de": {
+    "topic": "Hypertextforschung"
+   }
+  },
+  "sec-hypertext-fiction": {
+   "note": "zh takeaway omitted the criticism for fragmentation",
+   "zh": {
+    "takeaway": "超文本小说是早期电子文学体裁，因空间叙事受赞誉，也因碎片化受批评"
+   }
+  },
+  "sec-forms": {
+   "note": "topic repeated the previous section's; the section is about the four forms",
+   "en": {
+    "topic": "four structural forms"
+   },
+   "zh": {
+    "topic": "四种结构"
+   }
+  }
+ }
+}
