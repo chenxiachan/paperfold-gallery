@@ -31,12 +31,17 @@
   --hl: #FFE07A; --hl-ink: #D9A400;   /* the reader's highlights */
   --col: 700px;
   --ease: cubic-bezier(.2, .8, .2, 1);
+  /* a filled button, its words, and what floats over the page (a toast, the settings) */
+  --btn: #6B5CE7; --btn-hover: #5A4AD9; --on-btn: #fff;
+  --pop: 0 1px 2px rgba(30, 22, 8, .05), 0 14px 36px -14px rgba(30, 22, 8, .38);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --surface: #1B1915; --card: #24211C; --ink: #EDE9E3; --ink-2: #C9C3BA; --muted: #9C958B;
     --faint: #5E5850; --line: #3A362F; --line-2: #2E2B25; --accent: #A79FF4; --accent-soft: #2D2850;
     --accent-deep: #CFC9FA; --rule: #8A847C; --hl: #8A7024; --hl-ink: #E8C04A;
+    --btn: #6B5CE7; --btn-hover: #7B6DF0; --on-btn: #fff;
+    --pop: 0 1px 2px rgba(0, 0, 0, .3), 0 18px 44px -14px rgba(0, 0, 0, .65);
   }
   :root:not([data-theme="light"]) .fbody img { background: #fff; border-radius: 4px; }
 }
@@ -482,7 +487,7 @@ li.u.has-notes::after { left: calc(-1.3em - 13px); }
 .npop textarea, .npop input { width: 100%; font: 14px/1.5 var(--sans); color: var(--ink); background: var(--surface); border: 1px solid var(--line);
   border-radius: 8px; padding: 7px 9px; outline: none; resize: vertical; }
 .npop textarea:focus, .npop input:focus { border-color: var(--accent); }
-.npop .np-q { font-weight: 650; color: var(--ink); margin-bottom: 4px; }
+.npop .np-q { font-weight: 650; color: var(--ink); margin-bottom: 4px; white-space: pre-wrap; }
 .npop .np-turn + .np-turn { border-top: 1px solid var(--line-2); padding-top: 8px; margin-top: 4px; }
 .npop .np-input { margin-top: 6px; }
 .ncard .nc-n { font-style: normal; font-weight: 600; font-size: 11px; color: var(--accent); background: var(--card); border-radius: 999px; padding: 0 5px; margin-left: 3px; }
@@ -515,7 +520,7 @@ li.u.has-notes::after { left: calc(-1.3em - 13px); }
 .ch-input { width: 100%; font: 14px/1.5 var(--sans); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 9px;
   padding: 7px 10px; outline: none; resize: none; }
 .ch-input:focus { border-color: var(--accent); }
-.chat .np-q { font-weight: 650; color: var(--ink); margin-bottom: 4px; }
+.chat .np-q { font-weight: 650; color: var(--ink); margin-bottom: 4px; white-space: pre-wrap; }
 .chat .np-turn + .np-turn { border-top: 1px solid var(--line-2); padding-top: 8px; margin-top: 6px; }
 .chat .np-a p { margin: 0 0 7px; } .chat .np-a ul, .chat .np-a ol { margin: 0 0 7px; padding-left: 18px; }
 .chat .np-a code { font: .9em var(--mono); background: var(--surface); padding: 0 3px; border-radius: 3px; }
@@ -588,7 +593,7 @@ html.morphing .chatbtn { pointer-events: none; }
 .sv-err { margin: 6px 0 0; font-size: 12.5px; color: var(--r-limitation); }
 .sv-acts { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
 .sv-acts button { font: 600 13.5px var(--sans); border-radius: 999px; padding: 7px 16px; cursor: pointer; border: 1px solid var(--line); background: none; color: var(--ink-2); }
-.sv-acts .sv-go { background: var(--accent); border-color: var(--accent); color: #fff; }
+.sv-acts .sv-go { background: var(--btn); border-color: var(--btn); color: var(--on-btn); }
 .sv-acts .sv-go:disabled { opacity: .5; cursor: default; }
 .sv-busy { display: flex; align-items: center; gap: 10px; min-height: 34px; font: 500 13.5px var(--sans); color: var(--muted); }
 .sv-busy svg { width: 24px; height: 24px; flex: none; }
@@ -1134,56 +1139,56 @@ window.DR_I18N = (() => {
   for (const [code, words] of Object.entries(Z)) Object.assign(S[code], words);
   // the app's own updates (desktop/main.js): a newer release, downloaded and installed when the reader says
   const upd = (w) => ({ up_new: w[0], up_get: w[1], up_getting: w[2], up_ready: w[3], up_restart: w[4], up_failed: w[5], up_retry: w[6],
-    up_check: w[7], up_latest: w[8], up_check_failed: w[9], up_note: w[10], up_done: w[11], up_whatsnew: w[12], up_star: w[13], up_star_why: w[14] });
+    up_check: w[7], up_latest: w[8], up_check_failed: w[9], up_note: w[10], up_done: w[11], up_whatsnew: w[12], up_star: w[13] });
   const U = {
     en: upd(['TextFold {v} is out.', 'Download', 'Downloading the update… {p}%', 'TextFold {v} is ready.', 'Restart to update',
       'The update could not be downloaded.', 'Try again', 'Check for updates', 'This is the newest version.', 'Could not check for updates.',
       'When it starts, the app asks GitHub whether a newer version is out. Nothing of yours is sent.',
-      'TextFold {v} is installed.', 'What’s new', 'Star on GitHub', 'A star helps other readers find TextFold.']),
+      'TextFold {v} is installed.', 'What’s new', 'Star on GitHub']),
     zh: upd(['TextFold {v} 已发布。', '下载', '正在下载更新… {p}%', 'TextFold {v} 已下载好。', '重启并更新',
       '更新没能下载下来。', '重试', '检查更新', '已经是最新版本。', '没能检查更新。',
       '软件启动时会到 GitHub 查有没有新版本，不发送你的任何内容。',
-      'TextFold {v} 已经装好。', '这一版的新内容', '在 GitHub 上点星', '点个星，能让更多读者找到 TextFold。']),
+      'TextFold {v} 已经装好。', '这一版的新内容', '在 GitHub 上点星']),
     'zh-Hant': upd(['TextFold {v} 已發布。', '下載', '正在下載更新… {p}%', 'TextFold {v} 已下載完成。', '重新啟動並更新',
       '更新沒能下載下來。', '重試', '檢查更新', '已經是最新版本。', '沒能檢查更新。',
       '軟體啟動時會到 GitHub 查有沒有新版本，不傳送你的任何內容。',
-      'TextFold {v} 已經裝好。', '這一版的新內容', '在 GitHub 上加星', '加個星，能讓更多讀者找到 TextFold。']),
+      'TextFold {v} 已經裝好。', '這一版的新內容', '在 GitHub 上加星']),
     ja: upd(['TextFold {v} が公開されました。', 'ダウンロード', 'アップデートをダウンロード中… {p}%', 'TextFold {v} の準備ができました。', '再起動してアップデート',
       'アップデートをダウンロードできませんでした。', 'もう一度', 'アップデートを確認', '最新のバージョンです。', 'アップデートを確認できませんでした。',
       '起動時に、新しいバージョンがあるか GitHub に確認します。あなたの内容は送信しません。',
-      'TextFold {v} をインストールしました。', '新しい内容', 'GitHub でスターを付ける', 'スターは、ほかの読者が TextFold を見つける助けになります。']),
+      'TextFold {v} をインストールしました。', '新しい内容', 'GitHub でスターを付ける']),
     ko: upd(['TextFold {v} 버전이 나왔습니다.', '다운로드', '업데이트 다운로드 중… {p}%', 'TextFold {v} 준비가 끝났습니다.', '다시 시작해 업데이트',
       '업데이트를 다운로드하지 못했습니다.', '다시 시도', '업데이트 확인', '최신 버전입니다.', '업데이트를 확인하지 못했습니다.',
       '앱을 시작할 때 GitHub에 새 버전이 있는지 확인합니다. 사용자의 내용은 보내지 않습니다.',
-      'TextFold {v} 설치를 마쳤습니다.', '새로운 점', 'GitHub에서 별 주기', '별을 주시면 다른 독자가 TextFold를 찾기 쉬워집니다.']),
+      'TextFold {v} 설치를 마쳤습니다.', '새로운 점', 'GitHub에서 별 주기']),
     es: upd(['Ya está TextFold {v}.', 'Descargar', 'Descargando la actualización… {p} %', 'TextFold {v} está listo.', 'Reiniciar para actualizar',
       'No se pudo descargar la actualización.', 'Reintentar', 'Buscar actualizaciones', 'Esta es la versión más reciente.', 'No se pudieron buscar actualizaciones.',
       'Al abrirse, la app pregunta a GitHub si hay una versión nueva. No envía nada tuyo.',
-      'TextFold {v} ya está instalado.', 'Novedades', 'Dale una estrella en GitHub', 'Una estrella ayuda a que otros lectores encuentren TextFold.']),
+      'TextFold {v} ya está instalado.', 'Novedades', 'Dale una estrella en GitHub']),
     fr: upd(['TextFold {v} est disponible.', 'Télécharger', 'Téléchargement de la mise à jour… {p} %', 'TextFold {v} est prêt.', 'Redémarrer pour mettre à jour',
       'La mise à jour n’a pas pu être téléchargée.', 'Réessayer', 'Rechercher des mises à jour', 'C’est la version la plus récente.', 'Impossible de rechercher des mises à jour.',
       'Au démarrage, l’app demande à GitHub si une version plus récente existe. Rien de ce qui est à vous n’est envoyé.',
-      'TextFold {v} est installé.', 'Nouveautés', 'Mettre une étoile sur GitHub', 'Une étoile aide d’autres lecteurs à trouver TextFold.']),
+      'TextFold {v} est installé.', 'Nouveautés', 'Mettre une étoile sur GitHub']),
     de: upd(['TextFold {v} ist da.', 'Herunterladen', 'Update wird geladen … {p} %', 'TextFold {v} ist bereit.', 'Neu starten und aktualisieren',
       'Das Update konnte nicht geladen werden.', 'Erneut versuchen', 'Nach Updates suchen', 'Das ist die neueste Version.', 'Die Suche nach Updates ist fehlgeschlagen.',
       'Beim Start fragt die App bei GitHub nach einer neueren Version. Von deinen Inhalten wird nichts gesendet.',
-      'TextFold {v} ist installiert.', 'Neu in dieser Version', 'Auf GitHub einen Stern geben', 'Ein Stern hilft anderen Lesern, TextFold zu finden.']),
+      'TextFold {v} ist installiert.', 'Neu in dieser Version', 'Auf GitHub einen Stern geben']),
     pt: upd(['O TextFold {v} já saiu.', 'Baixar', 'Baixando a atualização… {p}%', 'O TextFold {v} está pronto.', 'Reiniciar para atualizar',
       'Não foi possível baixar a atualização.', 'Tentar de novo', 'Procurar atualizações', 'Esta é a versão mais recente.', 'Não foi possível procurar atualizações.',
       'Ao abrir, o app pergunta ao GitHub se há uma versão mais nova. Nada seu é enviado.',
-      'O TextFold {v} foi instalado.', 'Novidades', 'Dar uma estrela no GitHub', 'Uma estrela ajuda outros leitores a encontrar o TextFold.']),
+      'O TextFold {v} foi instalado.', 'Novidades', 'Dar uma estrela no GitHub']),
     it: upd(['È uscito TextFold {v}.', 'Scarica', 'Download dell’aggiornamento… {p}%', 'TextFold {v} è pronto.', 'Riavvia per aggiornare',
       'Non è stato possibile scaricare l’aggiornamento.', 'Riprova', 'Cerca aggiornamenti', 'Questa è la versione più recente.', 'Non è stato possibile cercare aggiornamenti.',
       'All’avvio l’app chiede a GitHub se c’è una versione più recente. Non invia nulla di tuo.',
-      'TextFold {v} è installato.', 'Novità', 'Metti una stella su GitHub', 'Una stella aiuta altri lettori a trovare TextFold.']),
+      'TextFold {v} è installato.', 'Novità', 'Metti una stella su GitHub']),
     ru: upd(['Вышел TextFold {v}.', 'Скачать', 'Загрузка обновления… {p}%', 'TextFold {v} готов.', 'Перезапустить и обновить',
       'Не удалось скачать обновление.', 'Повторить', 'Проверить обновления', 'Это последняя версия.', 'Не удалось проверить обновления.',
       'При запуске приложение спрашивает GitHub, нет ли новой версии. Ваши данные не отправляются.',
-      'TextFold {v} установлен.', 'Что нового', 'Поставить звезду на GitHub', 'Звезда помогает другим читателям найти TextFold.']),
+      'TextFold {v} установлен.', 'Что нового', 'Поставить звезду на GitHub']),
     hi: upd(['TextFold {v} आ गया है।', 'डाउनलोड करें', 'अपडेट डाउनलोड हो रहा है… {p}%', 'TextFold {v} तैयार है।', 'अपडेट के लिए फिर से शुरू करें',
       'अपडेट डाउनलोड नहीं हो सका।', 'फिर से कोशिश करें', 'अपडेट देखें', 'यह सबसे नया संस्करण है।', 'अपडेट नहीं देखे जा सके।',
       'शुरू होते समय ऐप GitHub से पूछता है कि कोई नया संस्करण आया है या नहीं। आपकी कोई सामग्री नहीं भेजी जाती।',
-      'TextFold {v} इंस्टॉल हो गया है।', 'नया क्या है', 'GitHub पर स्टार दें', 'एक स्टार से दूसरे पाठकों को TextFold ढूँढने में मदद मिलती है।']),
+      'TextFold {v} इंस्टॉल हो गया है।', 'नया क्या है', 'GitHub पर स्टार दें']),
   };
   for (const [code, words] of Object.entries(U)) Object.assign(S[code], words);
   S.en.up_dev = 'Run from the code, this copy does not update itself.';
@@ -3213,7 +3218,7 @@ window.DR_I18N = (() => {
       body = turns.map((x, k) => turnHtml(x, k === turns.length - 1)).join('') +
         (turns.length && turns[turns.length - 1].model ? `<div class="np-model">${esc(turns[turns.length - 1].model)}</div>` : '') +
         (turns.length ? '' : tryRow(t.n_pstarters)) +
-        (waiting ? '' : `<input class="np-input" type="text" placeholder="${esc(turns.some((x) => x.a) ? t.n_more : t.n_ask_ph)}" value="${esc(failed ? turns[turns.length - 1].q : '')}">`);
+        (waiting ? '' : `<textarea class="np-input" rows="2" placeholder="${esc(turns.some((x) => x.a) ? t.n_more : t.n_ask_ph)}">${esc(failed ? turns[turns.length - 1].q : '')}</textarea>`);
     } else {
       body = `<textarea class="np-text" rows="3" placeholder="${esc(t.n_note_ph)}">${esc(n.text || '')}</textarea>`;
     }
@@ -3256,7 +3261,7 @@ window.DR_I18N = (() => {
   });
   npop.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { e.preventDefault(); closeNote(); return; }
-    if (e.key === 'Enter' && e.target.matches('.np-input') && e.target.value.trim()) { e.preventDefault(); askNote(popNote, e.target.value.trim()); }
+    if (e.key === 'Enter' && !e.shiftKey && !e.isComposing && e.target.matches('.np-input') && e.target.value.trim()) { e.preventDefault(); askNote(popNote, e.target.value.trim()); }   // Shift+Enter: a new line, as in the chat
   });
   npop.addEventListener('click', (e) => {
     const b = e.target.closest('button');
@@ -3300,6 +3305,12 @@ window.DR_I18N = (() => {
     if (level < 4 && !localLevel.has(uid)) setTimeout(() => { if (!busy && !localLevel.has(uid)) toggleUnit(uid); }, 480);
   }
   addEventListener('scroll', () => { if (popNote) placePop(); }, { passive: true });
+  // typing into a note scrolled out of sight brings its passage back (and the note with it, on the scroll above):
+  // the keys never go into a box no one sees, and scrolling away to read while writing stays possible
+  npop.addEventListener('beforeinput', () => {
+    const r = npop.getBoundingClientRect(), el = popNote && targetEl(popNote.anchor);
+    if (el && (r.bottom < 0 || r.top > innerHeight)) el.scrollIntoView({ block: 'center' });
+  });
 
   // a question goes to the model with the turns before it; the note keeps the question at once, the answer fills it in
   async function askNote(n, q) {
@@ -3879,7 +3890,8 @@ math { font-size: 1.05em; }
   //    on a paragraph shows where it is on its page; reading on carries the pages along; a click on a page goes to its
   //    paragraph ──
   const PDF_OK = (!!D.app && /^(\d{4}\.\d{4,5}|pmc\d+|ppr\d+|(biorxiv|medrxiv)-[0-9.]+|pdf-[0-9a-f]{16})$/.test(D.meta.id))   // (pdf.has_source)
-    || !!(D.pdf && D.pdfjs);   // a saved page that carries its PDF, and PDF.js to show it
+    || !!(D.pdf && D.pdfjs)   // a saved page that carries its PDF, and PDF.js to show it
+    || !!D.pdfAt;   // a gallery's page: the PDF and PDF.js beside it, on the same host
   const CMP_KEY = 'pf-compare';
   const cmpBtn = h('button', 'cmpbtn');
   cmpBtn.type = 'button';
@@ -3941,7 +3953,7 @@ math { font-size: 1.05em; }
     pane.addEventListener('drop', (e) => {
       e.preventDefault(); e.stopPropagation();
       const f = e.dataTransfer.files[0];
-      if (f) givePdf(pane, f);
+      if (f && D.app) givePdf(pane, f);   // (only the app can keep it)
     });
     loadPdf(pane);
   }
@@ -3956,6 +3968,13 @@ math { font-size: 1.05em; }
         lib = await import(js(D.pdfjs.lib));
         lib.GlobalWorkerOptions.workerSrc = js(D.pdfjs.worker);
         data = Uint8Array.from(atob(D.pdf), (c) => c.charCodeAt(0));
+      } else if (D.pdfAt) {   // a gallery's page: the file and PDF.js next to it
+        const at = (p) => new URL(p, location.href).href;
+        lib = await import(at(`${D.pdfAt.pdfjs}pdf.min.mjs`));
+        lib.GlobalWorkerOptions.workerSrc = at(`${D.pdfAt.pdfjs}pdf.worker.min.mjs`);
+        const r = await fetch(at(D.pdfAt.file));
+        if (!r.ok) throw Object.assign(new Error('no pdf'), { open: D.meta.abs_url });
+        data = new Uint8Array(await r.arrayBuffer());
       } else {
         lib = await import('/static/vendor/pdfjs/pdf.min.mjs');
         lib.GlobalWorkerOptions.workerSrc = '/static/vendor/pdfjs/pdf.worker.min.mjs';
@@ -3992,6 +4011,7 @@ math { font-size: 1.05em; }
       p.append(a);
       msg.append(p);
     }
+    if (!D.app) return;   // a page that is a file keeps no PDF given to it
     const drop = h('div', 'pp-drop', esc(t.pdf_drop)), pick = h('button', 'pp-pick', esc(t.pdf_pick)), input = document.createElement('input');
     pick.type = 'button';
     input.type = 'file'; input.accept = 'application/pdf,.pdf'; input.hidden = true;
